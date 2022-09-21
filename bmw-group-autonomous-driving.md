@@ -1,46 +1,29 @@
-# Acknowledgements 致谢
-We want to acknowledge the BMW Group for the opportunity to learn, grow, and analyze a fascinating LeSS Huge case in a highly competitive and challenging environment. We also thank all LeSS Trainers and Coaches who were present at the BMW Group during this journey.
-我们想要向宝马集团致谢，感谢他们给我们机会去学习，成长和分析一个如此迷人的LeSS巨型的案例，在一个高度竞争且挑战的环境中。我们也想感谢所有参与到这场宝马集团的旅程的LeSS的培训师和教练们。
+# 致谢
+我们想要向宝马集团致谢，感谢他们给我们机会去学习、成长，并分析一个在高度竞争且挑战的环境中极有吸引力的LeSS巨型案例。我们也想感谢所有参与到这场宝马集团的旅程的LeSS的培训师和教练们。
 
-We sincerely thank our mentors [Mark Bregenzer](https://less.works/profiles/mark-bregenzer) and [Viktor Grgic](https://less.works/profiles/viktor-grgic), who accompanied our development from the early days. And special thanks to Viktor Grgic for re-viewing and re-writing this experience report and always finding time to talk with us.
 我们真诚的感谢我们的导师[Mark Bregenzer](https://less.works/profiles/mark-bregenzer)和[Viktor Grgic](https://less.works/profiles/viktor-grgic), 他们从最一开始就陪伴着我们。而且我们要特别的感谢Viktor Grgic，因为他对于经验报告的反馈和改写以及随时随地的讨论。
 
-[Craig Larman](https://less.works/profiles/craig-larman), thank you for your endless patience with us when (again) re-writing the case study and coaching us. [Bas Vodde](https://less.works/profiles/bas-vodde), thank you for your support, for continuously answering our (often nagging) questions, and supporting us on our way.
-[Craig Larman](https://less.works/profiles/craig-larman)，感谢你在不停的改写和教练我们时的无限耐心。[Bas Vodde](https://less.works/profiles/bas-vodde)，感谢你的支持和不听的回答我们的问题，以及一路的支持。
+[Craig Larman](https://less.works/profiles/craig-larman)，感谢你在不停的改写和辅导我们时的无限耐心。[Bas Vodde](https://less.works/profiles/bas-vodde)，感谢你的支持和不停的回答我们的问题，以及一路的支持。
 
-A big thank you to our colleagues and friends for their support!
-And most strongly, we thank our families for their endless mental support on this journey.
-还要非常感谢我们的同事和朋友的支持。
+还要非常感谢我们的同事和朋友的支持！
+而且，最重要的是，感谢我们的家人，是他们在这段旅程中给了我们无尽的精神上的支持。
 
-It was and continues to be a deep and transformational learning experience for us.
-对于我们来说这是一场持续的，深入的且变革性的学习经历。
+对于我们来说这是一场持续的、深入的且变革性的学习经历。
 
-# Introduction 介绍
-The BMW Group decided to go through a significant change to deliver the highest customer value, learn faster than competitors, and create an easily adaptable organization to ensure its first two goals. It is still in the middle of its journey.
-宝马集团决定经历一场重要的变革，为了组织能够交付最高的客户价值、学习的速度比竞争对手更快以及创建一个轻松可适应的组织以确保前两个目标的实现。目前正值变革之中。
+# 介绍
+宝马集团决定经历一场重要的变革，为了组织能够交付最高的客户价值、比竞争对手更快的学习速度，以及创建一个容易适应的组织以确保前两个目标的实现。目前依然是在旅程中。
 
-This report is an in-depth examination of BMW Group’s LeSS adoption in the autonomous driving department. It covers mid-2016 until October 2019, and the LeSS adoption is still ongoing.
-本片报告是关于在宝马集团自动驾驶部门深入实践探索LeSS导入。它包括了从2016年年中到2019年的实践，目前LeSS的导入仍旧在进行中。
+本篇报告是关于在宝马集团自动驾驶部门深入实践探索LeSS导入。它包括了从2016年年中到2019年10月的实践，目前LeSS导入仍旧在进行中。
 
-The authors are [Konstantin Ribel](https://less.works/profiles/konstantin-ribel) and [Michael Mai](https://less.works/profiles/michael-mai). The real names of the people are left out for legal reasons.
-本报告的作者是[Konstantin Ribel](https://less.works/profiles/konstantin-ribel)和[Michael Mai](https://less.works/profiles/michael-mai)。由于法律原因，涉及到的人的没有使用真实姓名。
+本报告的作者是[Konstantin Ribel](https://less.works/profiles/konstantin-ribel)和[Michael Mai](https://less.works/profiles/michael-mai)。由于法律原因，涉及到的人并没有使用真实姓名。
 
-The report is structured with multiple views (perspectives) on to the change:
-1.	Timeline View
-2.	Technology View
-Start with any view you like!
-报告基于变革的多角度组织如下：  
+报告基于变革的多个角度组织如下：  
 1. 时间线角度   
 2. 技术角度   
-你可以从任何你喜欢的角度开始！
+你可以从任何喜欢的角度开始！
 
-**Terms**: LeSS and Scrum terms are capitalized, such as: Sprint, Product Backlog, Team. Note: *Team* is the role in LeSS whereas *team* is the general concept of a team.
-**术语**：LeSS 和 Scrum 术语都是大写的，例如：Sprint、Product Backlog、Team。 
-注意：*团队（Team）*是 LeSS中的角色，*团队（team）*即是团队的一般概念。
-
-# Background 背景
-On BMW Group’s journey as an automobile designer and manufacturer, its main focus is to provide more safety, comfort, flexibility, and quality through Level 3 autonomous driving (AD) (see [Figure 1](#fig001)). There are many challenges to overcome on the way to AD, and perhaps the most significant is its inherent complexity.
-在宝马集团作为汽车设计师和制造商的旅程中，其致力于是通过3级自动驾驶 (AD) 提供更多安全性、舒适性、灵活性和质量（见[图1](#fig001)）。在通往AD的道路上要克服许多挑战，也许最重要的是AD其固有的复杂性。
+# 背景
+在宝马集团作为汽车设计师和制造商的旅程中，其致力于通过3级自动驾驶 (AD) 提供更多安全性、舒适性、灵活性和质量（见[图1](#fig001)）。在通往AD的道路上要克服许多挑战，也许最重要的是AD其固有的复杂性。
 
 <a name="fig001"></a>
 <figure>
@@ -48,28 +31,21 @@ On BMW Group’s journey as an automobile designer and manufacturer, its main fo
   <figcaption>Figure 1: Autonomous Driving Levels.</figcaption>
 </figure>
 
-To create something as complex and software intensive as AD, BMW Group has to shift from a 100-year-old company of mechanical engineering and manufacturing skill to a software company and treat AD as a complex software research and development (R&D) initiative. It sounds like a revolution and a paradigm shift. It is!
-为了创造像AD这样复杂和软件密集型的系统，宝马集团必须从一家拥有100年历史的机械工程和制造技术公司转变为一家软件公司，并将AD视为一项复杂的软件研发 (R&D) 计划。 这听起来像是一场革命和范式转变。 的确就是这样！
+为了创造像AD这样复杂和软件密集型的系统，宝马集团必须从一家拥有100年历史的机械工程和制造技术公司转变为一家软件公司，并将AD视为一项复杂的软件研发计划。这听起来像是一场革命和范式转变。的确就是这样！
 
-As an early step, BMW Group gathered all the people to be involved in AD and co-located them at *one* site—the BMW Autonomous Driving Campus. Why? Because they anticipated that succeeding in such a hard problem—combined with a paradigm shift—would be even more difficult if *multiple* sites were involved.
-作为早期的一步，BMW集团召集了所有参与AD的人员，并将他们集中在*一个*地点 - BMW自动驾驶园区。为什么？因为他们预计，如果涉及*多个*地点，成功解决如此困难的问题（结合范式转变）将更加困难。
+作为早期的一步，BMW集团召集了所有参与AD的人员，并将他们集中在*一个*地点 - BMW自动驾驶园区。为什么？因为他们预计，如果涉及*多个*地点，成功解决如此困难的问题 - 结合范式转变 - 将更加困难。
 
-Then the BMW Group did what no one expected: they deeply changed their traditional organizational design towards one optimized for making learning and adaptation easier in a large group. And for that they took inspiration from LeSS.
-然后，宝马集团做了一件出乎意料的事情：他们彻底改变了传统的组织设计，转向一种优化的组织设计，使大集团的学习和适应更容易。 为此，他们从LeSS中获得了灵感。
+然后，宝马集团做了一件出乎意料的事情：他们深入改变了传统的组织设计，转向一种为大团队更容易学习和适应来优化的组织设计。为此，他们从LeSS中获得了灵感。
 
-So far, the journey has been full of failures and pain, but also full of positive effects such as closer collaboration between departments, leading to less inventory and handoff between groups of people. A higher focus on self-managing teams and frequent retrospectives led to teams designing and owning their processes. Higher emphasis on technical excellence led to better software design, cleaner code, and a more adaptive technical stack.
-到目前为止，这个旅程充满了失败和痛苦，但也充满了积极的影响，例如部门之间的协作更加紧密、减少库存和团队之间的交接。 对团队自管理的更高关注和频繁的回顾，导致团队设计和拥有他们自己的流程。对技术卓越性的高度重视导致了更好的软件设计、更简洁的代码和更具适应性的技术堆栈。
+到目前为止，这个旅程充满了失败和痛苦，但也充满了积极的影响，例如部门之间的协作更加紧密、减少库存和团队之间的交接。对团队自管理的更高关注和频繁的回顾，导致团队设计和拥有他们自己的流程。对技术卓越性的高度重视导致了更好的软件设计、更简洁的代码和更具适应性的技术堆栈。
 
-# Timeline View 时间线角度
-Three pronouns *I*, *we* and *they* provide different perspectives in the timeline view. It starts with the author’s personal experience—*I* and *we* form. Then it transitions to the *they* form, presenting an external view on many situations, providing a more impartial observation followed by a root-causes analysis and suggested measures.
-三个代词*我*、*我们*和*她们*在时间线视图中提供了不同的视角。一切始于作者的个人经历 - *我*和*我们*的形成。 然后过渡到*她们*的形式，在许多情况下呈现外部观点，提供更客观的观察，然后进行根本原因分析和建议的措施。
+# 时间线角度
+三个代词*我*、*我们*和*他们*在时间线角度中提供了不同的视角。先从作者的个人经历开始 - *我*和*我们*。然后过渡到*他们*，对许多情况呈现外部观点，提供更客观的观察，然后再是根因分析和建议措施。
 
-## How it all began 如何开始的
-After a successful launch of a new car in 2015, I (Konstantin Ribel) was looking for a new challenge. The Highly Autonomous Driving project had just commenced at that time. I joined the project at the beginning of 2016.
-在 2015 年成功推出新车后，我(Konstantin Ribel)正在寻找新的挑战。当时，高度自动驾驶项目刚刚开始。 我在 2016 年初加入了这个项目。
+## 这一切是如何开始的
+在2015年成功推出新车后，我（Konstantin Ribel）正在寻找新的挑战。当时，高度自动驾驶项目刚刚开始。我在2016年初加入了这个项目。
 
-One of my main tasks was to create an efficient working model for developing our complex AD open platform, which involved BMW Group, cooperation partners, and vendors. For a standard complexity Advanced Driver-Assistance Systems (ADAS) Electronic Control Unit (ECU), we usually have a team interfacing with *one* vendor to develop it. For the AD open platform and its multi-processor hardware design, we estimated 5-10 times greater complexity, *several* vendors, and cooperation partners. We further discovered that if we scaled this up linearly, we would probably need 10-15 times more people solely for the vendors’ project management interface (see [Figure 2](#fig002)). I realized that something had to change to improve it.
-我的主要任务之一是创建一个高效的工作模式来开发我们复杂的AD开放平台，该平台涉及宝马集团、合作伙伴和供应商。对于一个标准复杂度的高级驾驶辅助系统（ADAS）的电子控制单元（ECU），我们通常用一个团队对接*一个*供应商来开发它。对于AD开放平台及其多处理器硬件设计，我们估计复杂度要高5-10倍，需要*多个*供应商和合作伙伴。 我们进一步发现，如果我们以线性方式扩大规模，仅是用于供应商的项目管理接口，我们可能就需要增加10-15倍的人员（参见[图2](#fig002)）。我意识到必须改变一些东西来改进。
+我的主要任务之一是创建一个高效的工作模式来开发我们复杂的AD开放平台，该平台涉及宝马集团、合作伙伴和供应商。对于一个标准复杂度的高级驾驶辅助系统（ADAS）的电子控制单元（ECU），我们通常用一个团队对接*一个*供应商来开发它。对于AD开放平台及其多处理器硬件设计，我们估计复杂度要高5-10倍，需要*多个*供应商和合作伙伴。我们进一步发现，如果我们以线性方式扩大规模，仅是用于供应商的项目管理接口，我们可能就需要增加10-15倍的人员（参见[图2](#fig002)）。我意识到必须改变一些东西来改进。
 
 <a name="fig002"></a>
 <figure>
@@ -77,16 +53,12 @@ One of my main tasks was to create an efficient working model for developing our
   <figcaption>Figure 2: ECU schematic.</figcaption>
 </figure>
 
-While looking for a solution, I read several Scrum and agile development books. Then I was recommended to talk to Mark Bregenzer—an agile coach and LeSS trainer. I met Mark and explained our situation. His answer was, “You need way fewer people than you can imagine. You need to change the organizational structure.” After this meeting, Mark recommended that I participate in a [Certified LeSS Practitioner](https://less.works/courses/less-practitioner) (CLP) course with Craig Larman.
-在寻找解决方案时，我阅读了几本 Scrum 和敏捷开发书籍。然后我被推荐与敏捷教练和LeSS培训师Mark Bregenzer 交谈。 我遇到了马克并解释了我们的情况。他的回答是：“你需要的人比你想象的要少得多。你需要改变组织结构。” 会议结束后，Mark建议我参加Craig Larman的[认证LeSS实践者](https://less.works/courses/less-practitioner)(CLP)课程。
+在寻找解决方案时，我阅读了几本Scrum和敏捷开发书籍。然后我被推荐与敏捷教练和LeSS培训师Mark Bregenzer交谈。我遇到了Mark并解释了我们的情况。他的回答是：“你需要的人比你想象的要少得多。你需要改变组织结构。” 会议结束后，Mark建议我参加Craig Larman的[认证LeSS实践者](https://less.works/courses/less-practitioner)（CLP）课程。
 
-I participated in the CLP course in June 2016 in Berlin. On the second day of the CLP course, I realized that all of my roles at work manifested the lean wastes—”moments or actions that do not add value but consume resources.” [[1](#references), p. 58]. Who wants their work to be a waste? I was devastated. After the course, I realized that I wanted to reduce the lean waste in the environment I worked in, and I was sure that my colleagues would want that too.
-我于2016年6月在柏林参加了CLP课程。在CLP课程的第二天，我意识到我在工作中的所有角色都体现了精益浪费——“没有增加价值但消耗资源的时刻或行动” [[1](#references), p. 58]。谁希望自己的工作是一种浪费？我很沮丧。课程结束后，我意识到我想减少我工作环境中的精益浪费，我确信我的同事也会想要这样。
+我于2016年6月在柏林参加了CLP课程。在CLP课程的第二天，我意识到我在工作中的所有角色都体现了精益浪费 - “没有增加价值但消耗资源的时刻或行动” [[1](#references), p. 58]。谁希望自己的工作是一种浪费？我很沮丧。课程结束后，我意识到我想减少我工作环境中的精益浪费，我确信我的同事也会想要这样。
 
-When I returned to the office, I tried to convince my line manager’s superior (“Paul”) that we should adopt LeSS in our department. Initially, this was anything but successful. We had a dispute about how this was never going to work in our environment. It was a very disappointing experience for me. However, I recalled Craig frequently repeating the following phrase during the CLP course: “Think and act like a politician [when introducing change], not like an engineer.” I realized that I needed to act differently and stopped pushing this topic.
-当我回到办公室时，我试图说服我的line manager的上司（“Paul”），我们应该在我们的部门采用LeSS。 最初，我并没有成功。我们对这在我们的环境中如何永远不会工作存在争议。这对我来说是一次非常令人失望的经历。然而，我记得Craig在CLP课程中经常重复以下说法：“[在引入变革时] 像政治家一样思考和行动，而不是像工程师一样。” 我意识到我需要采取不同的行动，并停止推动这个话题。
+当我回到办公室时，我试图说服我的line manager的上司（“Paul”）应该在我们的部门采用LeSS。最初，我并没有成功。我们对这在我们的环境中如何永远不会工作存在争议。这对我来说是一次非常令人失望的经历。然而，我记得Craig在CLP课程中经常重复以下说法：“[在引入变革时]像政治家一样思考和行动，而不是像工程师一样。” 我意识到我需要采取不同的行动，并停止强推这个话题。
 
-Let’s take a look at this story from a different perspective.
 让我们从不同的角度来看这个故事。
 
 <a name="fig003"></a>
@@ -95,20 +67,15 @@ Let’s take a look at this story from a different perspective.
   <figcaption>Figure 3: The bigger picture.</figcaption>
 </figure>
 
-Between September 2015 and March 2016, an effort was made to set up an organizational unit for future ADAS systems, including AD. Еxecutives of several departments worked together to accomplish this task. On April 1st, 2016, Several departments from different organizational units merged to form the new department for autonomous driving and ADAS (ADD—autonomous driving department).
-2015 年 9 月至 2016 年 3 月期间，我们试图为未来的 ADAS 系统（包括 AD）建立一个组织单元。 多个部门的主管齐心协力完成了这项任务。 2016 年 4 月 1 日，来自不同组织单位的多个部门为自动驾驶与 ADAS合并组成了新的部门 - ADD（自动驾驶部门）。
+2015年9月至2016年3月期间，我们试图为未来的ADAS系统（包括AD）建立一个组织单元。多个部门的主管齐心协力完成了这项任务。2016年4月1日，来自不同组织单位的多个部门为自动驾驶与ADAS合并组成了新的部门 - ADD（自动驾驶部门）。
 
-A short time after ADD’s start, there was an insight that within the existing setup, there was, among other issues, a high amount of coordination overhead and hand-off between departments, groups, and roles that were slowing us down. It was a weak starting position for a complex product with many uncertainties and unknowns, such as AD. To improve this situation, the ADD executive board worked between June and December 2016 on a new working model and organizational setup.
 在ADD启动后不久，我们发现在现有设置中，除其他问题外，部门、组和角色之间的大量协调开销和交接使我们放慢了速度。 对于具有许多不确定性和未知数的复杂产品（例如AD）来说，这是一个薄弱的起点。为了改善这种情况，ADD执行委员会在2016年6月至2016年12月期间就新的工作模式和组织设置进行了工作。
 
-During this time, Craig Larman was on-site and taught our developers legacy-code TDD. I invited Paul to meet Craig at the end of November 2016. He took the offer. Craig and Paul spoke for about 20 minutes. Those who have met Craig know how honest and precise he can be. During their conversation, I did not know whether it was a good idea to let them talk to each other. Among other topics, Craig introduced Paul to [Larman’s Laws of Organizational Behavior](https://www.craiglarman.com/wiki/index.php?title=Larman%27s_Laws_of_Organizational_Behavior) and shared with him the English proverb “you are never a prophet in your own land.” The further the conversation went, the more uncertain I became about its result. When Paul and I left the room, Paul said: “This was the best sales pitch I’ve ever experienced.” It was a success! Paul became the first like-minded person on the executive level. The momentum for the change began to rise.
-在此期间，Craig Larman在现场教授我们的开发人员遗留代码的测试驱动开发。我邀请Paul在2016年11月末与Craig会面。他接受了这个提议。Carig和Paul谈了大约20分钟。见过Craig的人都知道他可以多么坦率和尖锐。在他们交谈时，我不知道让他们互相交谈是否是个好主意。除了其它话题，Criag还向Paul介绍了[Larman的组织行为法则](https://www.craiglarman.com/wiki/index.php?title=Larman%27s_Laws_of_Organizational_Behavior)，并与他分享了英语谚语“在自己的土地上，你永远不是先知”。谈话越深入，我就越不确定谈话的结果会如何。当Paul和我离开房间时，Paul说：“这是我经历过的最好的推销。” 成功了！ Paul成为高管级别里第一个与我志同道合的人。 变革的势头开始上升。
+在此期间，Craig Larman在现场教授我们的开发人员遗留代码的测试驱动开发。我邀请Paul在2016年11月末与Craig会面。他接受了这个提议。Carig和Paul谈了大约20分钟。见过Craig的人都知道他可以多么坦率和尖锐。在他们交谈时，我不知道让他们互相交谈是否是个好主意。除了其它话题，Criag还向Paul介绍了[Larman的组织行为法则](https://www.craiglarman.com/wiki/index.php?title=Larman%27s_Laws_of_Organizational_Behavior)，并与他分享了英语谚语“在自己的土地上，你永远不是先知”。谈话越深入，我就越不确定谈话的结果会如何。当Paul和我离开房间时，Paul说：“这是我经历过的最好的推销。” 成功了！Paul成为高管级别里第一个与我志同道合的人。变革的势头开始上升。
 
-A so-called migration team, which I was part of, was founded in January 2017. To represent the whole organizational system, this team consisted of managers and employees from different levels. It allowed us to discuss ideas through different abstraction levels. We continued to work on the working model that the ADD executive group had come up with the year before. We discussed different use cases, everyday situations, and how they would look if we adopted this working model. We were continuously working on the proposal to improve the situation we had.
-在2017年1月份，一个所谓的迁移团队成立了，而我是其中一员。为了代表整个组织体系，这个团队由不同层次的经理和员工组成。这样的团队使得我们可以在不同的抽象层次来讨论想法。我们继续完善ADD执行小组前一年提出的工作模式。我们讨论了不同的用例、日常情况以及如果我们采用这种工作模型它们会是什么样子。我们一直在努力提出改善我们所面临情况的建议。
+在2017年1月份，一个所谓的迁移团队成立了，而我是其中一员。为了代表整个组织体系，这个团队由不同层次的经理和员工组成。这样的团队使我们可以在不同的抽象层次上讨论想法。我们继续完善ADD执行小组前一年提出的工作模式。我们讨论了不同的用例、日常情况以及如果我们采用这种工作模型它们会是什么样子。我们一直在努力提出改善我们所面临情况的建议。
 
-Meanwhile, Paul convinced the ADD executives to have a 4-day workshop with Craig Larman on systems thinking and organizational design for large-scale agile development, also known as the [Certified LeSS Executive](https://less.works/courses/less-executive.html) course. To ensure full executive representation and due to their availability, this event took place a few months later. To get the ball rolling before then, in April 2017 I organized a one-day introduction workshop with Mark Bregenzer.
-与此同时，Paul说服ADD高管与Craig Larman一起举办为期4天的研讨会，主题是大规模敏捷开发的系统思维和组织设计，也称为[认证LeSS高管](https://less.works/courses/less-executive.html)课程。我们想要确保所有高管的参加，但是由于他们的时间安排，该活动不得不在几个月后举行。为了在那之前能动起来，2017年4月，我与Mark Bregenzer组织了一个为期一天的介绍研讨会。
+与此同时，Paul说服ADD高管与Craig Larman一起举办为期4天的研讨会，主题是大规模敏捷开发的系统思维和组织设计，也称为[认证LeSS高管](https://less.works/courses/less-executive.html)（CLE）课程。我们想要确保所有高管的参加，但是由于他们的时间安排，该活动不得不在几个月后举行。为了在那之前能动起来，2017年4月，我与Mark Bregenzer组织了一个为期一天的介绍研讨会。
 
 <a name="fig004"></a>
 <figure>
@@ -122,33 +89,24 @@ Meanwhile, Paul convinced the ADD executives to have a 4-day workshop with Craig
   <figcaption>Figure 5: Executives are learning and exercising systems thinking.</figcaption>
 </figure>
 
-The content, presented by Mark, inspired participants. It was evident that we needed to move in this direction. This initial workshop created the next significant momentum shift.
-Mark介绍的内容激发了参与者的灵感。很明显，我们需要朝着这个方向前进。 这个最初的研讨会创造了下一个重要的转变的动力。
+Mark介绍的内容激发了参与者的灵感。很明显，我们需要朝着这个方向前进。这个最初的研讨会创造了下一个重要的转变动力。
 
-At this point, the ADD executives were certain that to really change the behavior and the organization’s working model, they needed to change the organizational *structure*.
-在这时，ADD 高管确信，要真正改变行为和组织的工作模式，他们需要改变组织*结构*。
+在这时，ADD高管确信，要真正改变行为和组织的工作模式，他们需要改变组织*结构*。
 
-**Summary of Beginning Lessons**
-* Think and act like a politician, not like an engineer
-* Gain allies across different hierarchy levels and align your shared goal—real change is only possible as a group, both top-down and bottom-up. LeSS guide: [Three Adoption Principles](https://less.works/less/adoption/three-principles) [[3](#references), p. 55-59].
-* Educate all senior executives and directors, especially those with true decision-making powers [[3](#references), p. 57].
-* “You’re never a prophet in your own land.” Engage an external expert, experienced in large-scale organizational design for agile development. This expert—a great trainer and a great coach—will have a focus on the *Why* and will make a positive difference in your LeSS adoption. More on this topic in the section “Teach why” in the book Large-Scale Scrum [[3](#references), p. 60].
-  * (LeSS guide: Getting Started)
 **开始阶段的复盘总结**   
+
 * 像政治家一样思考和行动，而不是像工程师一样   
-* 在不同的组织层级中获得盟友并对齐你们的共同目标——真正的改变只有作为一个群体才有可能，既是自上而下又是自下而上。 LeSS 指南：[三个采用原则](https://less.works/less/adoption/three-principles) [[3](#references), p. 55-59]   
+* 在不同的组织层级中获得盟友并对齐你们共同的目标 - 真正的改变只有作为一个群体才有可能，既自上而下又自下而上。 LeSS指南：[三个采用原则](https://less.works/less/adoption/three-principles) [[3](#references), p. 55-59]   
 * 培训所有高级管理人员和董事，尤其是那些拥有真正决策权的人 [[3](#references), p. 57]   
-* “在自己的土地上，你永远不是先知。” 聘请在敏捷开发的大规模组织设计方面经验丰富的外部专家。 这位专家 - 一位出色的培训师和一位出色的教练 - 将专注于*为什么*这么做，并将在你的LeSS导入中产生积极影响。有关此主题的更多信息，请参阅《大规模 Scrum》[[3](#references), p. 3] 一书中的“Teach Why”部分   
-*（LeSS 指南：入门）
+* “在自己的土地上，你永远不是先知。” 聘请在敏捷开发的大规模组织设计方面经验丰富的外部专家。这位专家 - 一位出色的培训师和一位出色的教练 - 将专注于*为什么*这么做，并将在你的LeSS导入中产生积极影响。有关此主题的更多信息，请参阅《大规模Scrum》[[3](#references), p. 3] 一书中“教授为什么”的部分   
+*（LeSS指南：启动）
 
-## Preparation Phase 准备阶段
-### The Way to the Insight that Organizational Change is Necessary 认识到组织变革是必要的
+## 准备阶段
+### 认识到组织变革是必要的
 
-> LeSS adoption involves big organizations and many minds with deeply rooted assumptions about how organizations should work. Successful adoption requires challenging these assumptions and simplifying the organizational structure, with all the explosive politics and “loss of face” that working across a big group entails. Adoption needs everyone to improve towards a shared goal. [[3](#references), p. 54]
-> LeSS导入涉及到大型组织和许多根深蒂固的假设组织应该如何工作的想法。成功的引入LeSS需要挑战这些假设并简化组织结构，而这一切也都是伴随着在大团队中存在的‘政治’和‘丢脸’。LeSS引入需要每个人都朝着共同的目标前进。[[3](#references), p. 54]
+> LeSS导入涉及到大型组织和许多根深蒂固的假设组织应该如何工作的想法。成功导入LeSS需要挑战这些假设并简化组织结构，而这一切也都是伴随着在大团队中存在的‘政治’和‘丢脸’。LeSS导入需要每个人都朝着共同的目标前进。[[3](#references), p. 54]
 
-Our starting position was a common hierarchy (see [Figure 6](#fig006)).
-我们的起始位置是一个常见的层次结构（见[图6](#fig006)）。
+我们的起点是一个常见的层次结构（见[图6](#fig006)）。
 
 <a name="fig006"></a>
 <figure>
@@ -156,25 +114,16 @@ Our starting position was a common hierarchy (see [Figure 6](#fig006)).
   <figcaption>Figure 6: Typical hierarchy.</figcaption>
 </figure>
 
-ADD inherited from its origin departments more than 15 different roles with defined interfaces, clearly describing where someone’s work starts and ends. With this setup, we successfully delivered many great cars to our customers. However, it is fertile ground for the lean-thinking wastes, such as hand-off, coordination overhead, and many others. Since waste inhibits adaptivity in complex product development, especially large-scale, we had a compelling motivation to change.
-ADD从原先部门继承了超过15个不同角色，这些角色定义了接口来清晰地描述某人工作的开始和结束。通过这种设置，我们曾经成功地向客户交付了许多优质汽车。然而，它却是精益思维中浪费的沃土，例如交接、协调开销都造成浪费。由于浪费抑制了复杂产品开发 - 尤其是大规模产品开发 - 的适应性，因此我们有强烈的动力去改变。
+ADD从原先部门继承了超过15个不同角色，这些角色定义了接口用以清晰地描述某人工作的开始和结束。通过这种设置，我们曾经成功地向客户交付了许多优质汽车。然而，它却是精益思维中浪费的沃土，例如交接、协调开销都造成浪费。由于浪费抑制了复杂产品开发 - 尤其是大规模产品开发 - 的适应性，因此我们有强烈的动力去改变。
 
-This phase started in May 2017, directly after the one-day introduction workshop with Mark Bregenzer. At this point, the answers to the following questions were open:
-
-1. How do we want to work?
-2. Which working model are we going to adopt?
-3. If it will be Scrum-based, which scaling framework is it going to be?
-
-这一阶段于2017年5月开始，紧跟在与Mark Bregenzer为期一天的介绍研讨会之后。在这一时间点上，针对以下的问题的答案都是开放的：
+这一阶段于2017年5月开始，紧跟在与Mark Bregenzer为期一天的介绍研讨会之后。在这一时间点上，针对以下问题的答案都是开放的：
 
 1. 我们想怎么工作？
 2. 我们将采用哪种工作模式？
 3. 如果它是基于Scrum的，我们会使用哪个规模化框架？
 
-To answer these questions, we needed to include the whole organizational system, including all relevant stakeholders from the rest of the BMW Group. We set up two teams. The existing migration team was too large, and therefore we shrunk it. The second was the executive team with a maximum of 10 members, as shown in [Figure 7](#fig007).
-为了回答这些问题，我们需要包括整个组织系统，这就意味着包括来自宝马集团其他部门的所有相关利益相关者。 我们成立了两个团队。现有的迁移团队太大，因此我们将其缩小。第二个团队是高管团队，成员最多为10人，如[图7](#fig007)所示。
+为了回答这些问题，我们需要包括整个组织系统，这就意味着包括来自宝马集团其他部门的所有利益相关者。我们成立了两个团队。现有的迁移团队太大，因此我们将其缩小。第二个团队是高管团队，成员最多为10人，如[图7](#fig007)所示。
 
-With this setup, we involved people who were highly engaged in product development and managers with far-reaching decision making powers. It allowed us to verify ideas and make decisions quickly.
 通过这种设置，我们让高度参与产品开发的人员和具有深远决策权的经理都参与进来。它使我们能够验证想法并快速做出决定。
 
 <a name="fig007"></a>
@@ -183,14 +132,11 @@ With this setup, we involved people who were highly engaged in product developme
   <figcaption>Figure 7: Teams covering the whole organizational system. Stakeholders and interface partners not shown.</figcaption>
 </figure>
 
-Further, there was Mark Bregenzer, who challenged our assumptions about organizational structures and coached us on the Why. We worked full-time on this topic.
 此外还有Mark Bregenzer，他挑战我们对组织结构的假设，并就’为什么’辅导我们。我们全职投入在这项工作上。
 
-Both teams and Mark worked in *diverge-merge* cycles. The migration team and executive team representatives explored answers to the question: How do we want to work? In a multi-team setup, both teams debated the rationale behind possible solutions. The representatives worked out organizational designs which hypothetically would support the proposed solutions. Then, the whole ADD board (C-1 and C-2 level) and the executive team reviewed both teams’ proposals, meaning the answers to the “How do we want to work?” question and the supporting organizational design.
-团队和Mark在*分歧-合并*的周期中工作。 迁移团队和高管团队代表探讨了以下问题的答案：我们希望如何工作？ 在多团队设置中，两个团队就可能的解决方案背后的基本原理进行了辩论。代表们依据解决方案制定了组织设计。 然后，整个ADD委员会（C-1和C-2级别）和执行团队评审了两个团队的提案，即“我们想如何工作？”的答案以及对应的组织设计。
+团队和Mark在*发散-合并*的周期中工作。迁移团队和高管团队代表探讨了以下问题的答案：我们希望如何工作？在多团队设置中，两个团队就可能的解决方案背后的基本原理进行了辩论。代表们依据解决方案制定了组织设计。然后，整个ADD委员会（C-1和C-2级别）和执行团队评审了两个团队的提案，即“我们想如何工作？”的答案以及对应的组织设计。
 
-Both teams worked closely together, allowing fast feedback and short iteration times for their ideas.
-两个团队密切合作，以便于他们的想法可以快速反馈并且迭代时间较短。
+两个团队密切合作，以使他们的想法可以快速反馈并且迭代时间较短。
 
 <a name="fig008"></a>
 <figure>
@@ -198,41 +144,27 @@ Both teams worked closely together, allowing fast feedback and short iteration t
   <figcaption>Figure 8: Close cross-team collaboration across functions and hierarchies.</figcaption>
 </figure>
 
-A few weeks later, after both teams gained many insights, the organizational design’s optimization goal became apparent. First, no one in the world knew *exactly how* to make an autonomous-driving car production-ready. Therefore, learning *what* and *how to do it* becomes vital. Consequently, it requires an organization to become a *learning organization*.
 几周后，在两个团队都获得了很多见解之后，组织设计的优化目标变得明显。首先，世界上没有人确切知道如何做可以量产的自动驾驶汽车。因此，学习‘What’以及‘How’变得至关重要。这也就要求组织成为一个*学习型组织*。
 
-Second, faster feedback loops improve learning. Since no one had yet built an (SAE Level 3 and higher) autonomously driving car, learning from reality, adapting the Product Backlog, and working on the highest-priority items was necessary for any hope of succeeding. That meant short cycle time, early integration, and prototype cars driving on public roads. In other words, using feedback loops to learn and then to decide what to work on next. Consequently, the ability to always work on the newly discovered most critical items requires an adaptive organization.
-其次，更快的反馈循环可以改善学习。由于还没有人制造出（SAE3级及更高级别）自动驾驶汽车，因此任何成功的希望都必须是从‘现实中学习’、‘调整产品待办列表’并‘处理最高优先级的项目’中得来的。这意味着短周期时间、早期集成和在公共道路上行驶的原型车。换句话说，使用反馈循环来学习，然后决定下一步做什么。因此，始终处理新发现的最关键事项的能力需要一个适应性强的组织。
+其次，更快的反馈循环可以改善学习。由于还没有人制造出（SAE3级及更高级别的）自动驾驶汽车，因此任何成功的希望都必须是从‘现实中学习’、‘调整产品待办列表’并‘处理最高优先级的项目’中得来的。这意味着短周期时间、早期集成和在公共道路上行驶的原型车。换句话说，使用反馈循环来学习，然后决定下一步做什么。因此，始终处理新发现的最关键事项的能力需要一个适应性强的组织。
 
-The above led to the following optimization goals:
-
-1. Ability to learn faster than competitors
-2. Based on that learning, ability to work on and deliver the highest customer value
-3. Easily adaptable organization to ensure (1) and (2)
-
-以上这些发现得出了如下的需优化目标：
+以上这些发现得出了如下优化目标：
 
 1. 比竞争对手学得更快的能力
 2. 基于学习，致力于和交付最高客户价值的能力
 3. 易于适应的组织，以确保 (1) 和 (2)
 
-It was necessary to remove waste to achieve the optimization goals. First, coordination overhead needed reduction. For example, identifying the right people with experience and expertise for focused discussions, and particularly excluding middle management, to avoid individual tactical career games that disturb these discussions and usually increase the overhead.
 有必要消除浪费以实现优化目标。首先，需要减少协调开销。例如，识别具有经验和专业知识的合适人员来进行聚焦的讨论，尤其是排除中层管理人员，以避免‘个人战术职业游戏’干扰这些讨论（通常会增加开销）。
 
-Second, hand-off waste, especially between component teams, single-function silos, and individual responsibilities, needed removal. The guiding goal was: increase shared responsibility across functional groups.
 其次，需要清除交接浪费，尤其是在组件团队、单一职能‘筒仓‘和个人职责之间。指导目标是：增加职能部门之间的共同责任。
 
-We thoroughly analyzed whether all of it was achievable with LeSS in our domain. For this analysis, we invited people who were not part of the migration and executive teams, who had different roles and use cases. We let those people challenge the LeSS working model and thoroughly discussed their use cases, such as defects handling and coming to a driving approval for public roads in the context of safety-critical software and shared common code. The discussions focused on how we can achieve the use case results with LeSS.
-我们详尽分析了在我们的领域中使用 LeSS 是否可以实现所有这些。对于此分析，我们邀请了不属于迁移和高管团队的人员，他们具有不同的角色和用例。我们让这些人挑战LeSS工作模型，并彻底讨论了他们的Use Case，例如缺陷处理和在安全关键软件和共享公共代码的背景下获得公共道路的驾驶批准。讨论的重点是我们如何使用LeSS 实现用例结果。
+我们详尽分析了在我们的领域中使用LeSS是否可以实现所有这些。对于此分析，我们邀请了不属于迁移和高管团队的人员，他们具有不同的角色和用例。我们让这些人挑战LeSS工作模型，并彻底讨论了他们的用例，例如缺陷处理和在安全关键软件和共享公共代码的背景下获得公共道路的驾驶批准。讨论的重点是我们如何用LeSS来实现用例的结果。
 
-We were looking for use cases where it was not possible. We didn’t find any.
 我们不停寻找没法实现的用例，但最终我们没有找到。
 
-The executive team had in addition to LeSS other proposals on how to achieve the result. Only *one* required any changes in the organizational *structure*—the hard way. The others just needed changes in *practices*—the easy way. The executives already learned that just changing the practices without restructuring the organization design does not change much of anything. Some executives called those attempts “more of the same” with different labels.
-除了 LeSS 之外，执行团队还有其他关于如何实现结果的方案。 只有*一个*需要对组织*结构*进行更改 - 艰难方式。 其他的方案只需要改变*实践* - 简单方式。 高管们已经了解到，仅仅改变实践而不重组组织设计的方式并不会改变任何事情。 些高管称这些尝试只是贴了不同标签的“老调重弹”。
+除了LeSS之外，执行团队还有其它关于如何实现结果的方案。只有*一个*需要对组织*结构*进行更改 - 艰难方式。其它的方案只需要改变*实践* - 简单方式。高管们已经了解到，仅仅改变实践而不重组组织设计的方式并不会改变任何事情。一些高管称这些尝试只是贴了不同标签的“老调重弹”。
 
-In contrast, LeSS required deep changes in the organizational structure—the harder way, but more likely to support the goals. The decision was to adopt LeSS (June 2017).
-相比之下，LeSS 需要对组织结构进行深刻的改变 - 这是一种更难的方式，但更有可能支持我们达到目标。 在2017年6月我们决定采用 LeSS。
+相比之下，LeSS 需要对组织结构进行深刻的改变 - 这是一种更难的方式，但更有可能支持我们达到目标。在2017年6月我们决定采用LeSS。
 
 <a name="fig009"></a>
 <figure>
@@ -240,9 +172,8 @@ In contrast, LeSS required deep changes in the organizational structure—the ha
   <figcaption>Figure 9: Easy vs. hard way. On the right: a climbing wall with an overhang.</figcaption>
 </figure>
 
-### Product Definition 产品定义
-AD is driven by customer demands and legal requirements. New technologies and seamless connectivity are paving the way. The technological challenges are enormous. Building up data centers, training AI algorithms, virtual test and validation, developing new sensors from scratch, bringing non-automotive high-performance hardware to the car and qualifying it for automotive use, and complex system architecture just to name a few.
-AD由客户需求和法律要求驱动，新技术和无缝连接正在为实现需求而铺平道路。 技术挑战是巨大的，例如建立数据中心、训练AI算法、虚拟测试和验证、从头开始开发新传感器、将非汽车高性能硬件引入汽车并使其符合汽车使用要求，以及复杂的系统架构等等。
+### 产品定义
+AD由客户需求和法律要求驱动，新技术和无缝连接正在为实现需求而铺平道路。技术挑战是巨大的，例如建立数据中心、训练AI算法、虚拟测试和验证、从头开始开发新传感器、将非汽车高性能硬件引入汽车并使其符合汽车使用要求，以及复杂的系统架构等等。
 
 <a name="fig010"></a>
 <figure>
@@ -250,29 +181,19 @@ AD由客户需求和法律要求驱动，新技术和无缝连接正在为实现
   <figcaption>Figure 10: Technological challenges.</figcaption>
 </figure>
 
-#### What is the Product for This LeSS Adoption? 在这次LeSS导入中产品是什么？
-> The product definition determines the scope of your Product Backlog and who makes a good Product Owner. When adopting LeSS, it determines the amount of organizational change you can expect and who needs to be involved. [[3](#references), p. 157]
+#### 在这次LeSS导入中产品是什么？
 > 产品定义决定了你的产品待办列表的范围，以及谁会是好的产品负责人。采用LeSS时，产品定义决定了你可以预期的组织变革程度以及需要参与的人员。[[3](#references), p. 157]
 
-A customer would most probably describe AD as a mobility service spanning a range from a smartphone app, over mobile networks, cars, sensors, algorithms, actuators, tires to road infrastructure. The list is long, and this is just a technical perspective. From a legal perspective, there are insurance questions to deal with, road clearances, law changes, etc. Many parties need to be involved, to live up to this product definition. In addition to BMW Group, there are governments in each country, insurance companies, vendors, service providers, and many others. The customer perspective might be correct, and simultaneously, it is unfeasible to start a LeSS adoption at this scale.
-客户很可能会认为AD就是一种移动服务，涵盖范围从智能手机应用程序、移动网络、汽车、传感器、算法、执行器、轮胎到道路基础设施。这个清单很长但这只是从技术角度来看的清单。如果从法律的角度来看，则需要处理保险问题、道路清关、法律变更等。为了满足这个产品定义，则需要多方参与，除了宝马集团，还包括各国政府、保险公司、供应商、服务提供商等等。 客户的观点可能是正确的，同时，没法从这样的规模开始导入LeSS。
-
-There are forces that restrained the product definition:
-
-1.	Organizational boundaries for the LeSS adoption;
-2.	The parties which can be involved
-
-Both forces naturally restrained the product definition to a car with an autonomous-driving feature where the BMW Group was the main party. This product definition required collaboration with other departments within the BMW Group and vendors who did not adopt LeSS.
+客户很可能会认为AD就是一种移动服务，涵盖范围从智能手机应用程序、移动网络、汽车、传感器、算法、执行器、轮胎到道路基础设施。这个清单很长但这只是从技术角度来看的清单。如果从法律的角度来看，则需要处理保险问题、道路清关、法律变更等。为了满足这个产品定义，则需要多方参与，除了宝马集团，还包括各国政府、保险公司、供应商、服务提供商等等。客户的观点可能是正确的，但同时，没法从这样的规模开始导入LeSS。
 
 有一些因素会限制产品的定义：
 
-1. LeSS采用的组织边界；
+1. LeSS导入的组织边界；
 2. 能够参与进来的各方
 
-这两个因素将产品定义限制在以宝马集团为主的具有自动驾驶功能的汽车上。该产品定义需要与宝马集团内的其他部门以及未采用 LeSS 的供应商合作。
+这两个因素将产品定义限制在以宝马集团为主的具有自动驾驶功能的汽车上。该产品定义需要与宝马集团内的其他部门以及未采用LeSS的供应商合作。
 
-[Figure 11](#fig011) provides an overview of the organizational structures within the BMW Group. Each department within R&D had its dedicated senior VP. The ADD senior VP sponsored this LeSS adoption, which naturally limited it to the organizational boundaries of ADD. Consequently, existing interfaces and working models to other departments and parties outside the ADD needed to remain intact.
-[图11](#fig011)概述了宝马集团的组织结构。 研发的每个部门都有其专门的高级副总裁。 ADD高级副总裁支持这次LeSS导入，这也自然限制了LeSS导入在ADD的组织范围内。因此，与ADD之外的其他部门和各方的现有接口和工作模型需要保持不变。
+[图11](#fig011)概述了宝马集团的组织结构。研发的每个部门都有其专门的高级副总裁。ADD高级副总裁支持这次LeSS导入，这也自然限制了LeSS导入在ADD的组织范围内。因此，与ADD之外的其他部门和各方的现有接口和工作模型需要保持不变。
 
 <a name="fig011"></a>
 <figure>
@@ -280,40 +201,30 @@ Both forces naturally restrained the product definition to a car with an autonom
   <figcaption>Figure 11: Boundaries for the change.</figcaption>
 </figure>
 
-> Most product development is organized as projects—every new product release is a new project. Organizations manage development by managing projects ... [[1](#references), p. 236]
-> 大多数产品开发都是按项目组织的——每个新产品发布就是一个新项目。组织通过管理项目来管理产品开发…… [[1](#references), p. 236]
+> 大多数产品开发都是按项目组织的 - 每个新产品发布就是一个新项目。组织通过管理项目来管理产品开发…… [[1](#references), p. 236]
 
-This quote describes perfectly the situation at BMW Group. Let’s take ACC ([Active Cruise Control](https://www.youtube.com/watch?v=rvWCJbYtq7Q)) as an example. The BMW Group released its first version of ACC in 2000. With each further release, ACC gained new improvements and could handle more and more traffic situations. The product enhancements over multiple releases make it a product development case.
-这句话完美地描述了宝马集团的情况。 我们以 ACC（[主动巡航控制](https://www.youtube.com/watch?v=rvWCJbYtq7Q)）为例。 宝马集团于 2000 年发布了其第一个版本的 ACC。随着每一次发布，ACC获得新的改进可以处理越来越多的交通情况。 通过多个版本的产品增强使其成为产品开发案例。
+这句话完美地描述了宝马集团的情况。我们以 ACC（[主动巡航控制](https://www.youtube.com/watch?v=rvWCJbYtq7Q)）为例。宝马集团于2000年发布了其第一个版本的ACC。随着每一次发布，ACC获得新的改进可以处理越来越多的交通情况。通过多个版本的产品增强使其成为产品开发案例。
 
-A term needs definition before continuation.
 在继续之前有个术语需要定义一下。
 
-**Start of Production (SoP)**: A major milestone. It involves an updated or new car model whose production will start after this release. Further, the technology stack (hardware and software) is updated.
-**开始生产 (Start of Production - SOP)**：作为一个重要的里程碑， 涉及更新或新的汽车模型，其生产将在此版本之后开始。 此外，技术栈（硬件和软件）也会被更新。尽管是长期的产品，但SoP仍以项目来组织。
-Despite the long-lived products, the SoPs were organized as projects.
+**开始生产 (Start of Production - SOP)**：作为一个重要的里程碑，涉及更新或新的汽车模型，其生产将在此版本之后开始。此外，技术栈（硬件和软件）也会被更新。
 
-ADD had two big projects, SoP 2018 and SoP 2021. To ensure stable delivery for SoP 2018, involved people were excluded from the LeSS adoption. They could join the LeSS organization after the release. Therefore, their organizational setup remained mostly unchanged.
-ADD有两个大项目，SoP2018和SoP2021。为了确保SoP 2018的稳定交付，相关人员被排除在LeSS采用之外。 他们可以在发布后加入LeSS组织。 因此，他们的组织设置基本保持不变。
+尽管是长期的产品，但SoP仍以项目来组织。
 
-This decision also excluded the SoP 2018 product scope from the possible product definition.
-该决定还将SoP 2018产品范围排除在可能的产品定义之外。
+ADD有两个大项目，SoP2018和SoP2021。为了确保SoP2018的稳定交付，相关人员被排除在LeSS采用之外。他们可以在发布后加入LeSS组织。因此，他们的组织设置基本保持不变。
 
-As a consequence, the product definition for the LeSS adoption became the release scope of SoP 2021, excluding the SoP 2018. Mainly ADAS functionality on [SAE Level](https://www.sae.org/news/2019/01/sae-updates-j3016-automated-driving-graphic) 2 and AD for SAE Level 3. It involved the development of sensors, computing hardware, and software. It also required collaborating with departments and vendors outside ADD, who did not adopt LeSS.
-因此，LeSS导入的产品定义变成了SoP 2021的发布范围，不包括SoP 2018。主要是SAE Level 2上的ADAS功能和 SAE Level 3上的AD。它涉及传感器、计算硬件和软件的开发 . 它还需要与没有采用LeSS的ADD以外的部门和供应商合作。
+该决定还将SoP2018产品范围排除在可能的产品定义之外。
 
-Further, AD should be offered as a separate Autonomous Driving Platform (ADP) to other automobile OEMs.
+因此，LeSS导入的产品定义变成了SoP2021的发布范围，不包括SoP2018。主要是SAE Level 2上的ADAS功能和SAE Level 3上的AD。它涉及传感器、计算硬件和软件的开发。它还需要与没有采用LeSS的ADD以外的部门和供应商合作。
+
 此外，AD应作为单独的自动驾驶平台 (ADP) 提供给其他汽车OEM。
 
-### Establish the Complete LeSS Structure At The Start 从一开始就建立完整的LeSS组织架构
-LeSS requires small, end-to-end, self-managed teams coordinating towards a common goal while sharing the responsibility to achieve it. Our starting position was far away from the intended one (see chapter [The Way to the Insight that Org. Change is necessary](#the-way-to-the-insight-that-organizational-change-is-necessary)). Further, our mindset, which formed over decades, supported single-function groups, heroism, component teams, and only one career path that required a switch from technical to a management career. We had concerns that without changing the rewards system, people would not change. Therefore, we faced the question, “If, when people cooperate they are individually worse off, why would they cooperate?” [[6](#src006)].
-LeSS需要小型的、端到端的、自我管理的团队为实现共同目标而进行协调，同时分担实现该目标的责任。 我们的起始位置与预期的位置相去甚远（参见[认识到组织变革是必要的](#the-way-to-the-insight-that-organizational-change-is-necessary)一章）。 此外，我们数十年来形成的思维方式支持单一职能团队、英雄主义、组件团队，并且只有一条需要从技术转向管理的职业通道。 我们担心如果不改变奖励制度，人们就不会改变。 因此，我们面临这样一个问题：“如果人们合作时，他们个人的情况会变得更糟，他们为什么要合作？” [[6](#src006)]。
+### 从一开始就建立完整的LeSS组织架构
+LeSS要求小型的、端到端的、自我管理的团队为实现共同目标而进行协调，同时分担实现该目标的责任。我们的起始位置与预期的位置相去甚远（参见[认识到组织变革是必要的](#the-way-to-the-insight-that-organizational-change-is-necessary)一章）。此外，我们数十年来形成的思维方式支持单一职能团队、英雄主义、组件团队，并且只有一条需要从技术转向管理的职业通道。我们担心如果不改变奖励制度，人们就不会改变。因此，我们面临这样一个问题：“如果人们合作时，他们个人的情况会变得更糟，他们为什么要合作？” [[6](#src006)]。
 
-It led us to the insight that we needed to create an organizational design which would foster a culture “... in which it becomes individually useful for people to cooperate” [[6](#src006)]. You can find more on this topic in the [Culture Follows Structure](https://less.works/less/structure/index.html) guide.
-它使我们认识到我们需要创建一种组织设计，以培养一种文化“……在这种文化中，人们合作变得对个人有用”[[6](#src006)]。 你可以在[文化跟随结构](https://less.works/less/structure/index.html)指南中找到有关此主题的更多信息。
+它使我们认识到我们需要创建一种组织设计，以培养一种文化“……在这种文化中，合作变得对个人有用”[[6](#src006)]。 你可以在[文化跟随结构](https://less.works/less/structure/index.html)指南中找到有关此主题的更多信息。
 
-The [LeSS Rule](https://less.works/less/rules/index.html) “... establish the complete LeSS structure ’at the start’” was followed. We designed our new organizational structure guided by the typical LeSS Huge organizational chart (see [Figure 12](#fig012)).
-我们遵循[LeSS规则](https://less.works/less/rules/index.html)“……‘从一开始’就建立完整的LeSS结构”。 我们以典型的LeSS Huge组织结构图为指导设计了新的组织结构（参见[图12](#fig012)）。
+我们遵循[LeSS规则](https://less.works/less/rules/index.html)“……‘从一开始’就建立完整的LeSS结构”。我们以典型的LeSS巨型组织结构图为指导设计了新的组织结构（参见[图12](#fig012)）。
 
 <a name="fig012"></a>
 <figure>
@@ -321,11 +232,9 @@ The [LeSS Rule](https://less.works/less/rules/index.html) “... establish the c
   <figcaption>Figure 12: Organizational structure for LeSS Huge.</figcaption>
 </figure>
 
-Both the migration and executive teams played an important role in inspecting previous organizational structure, and applying [systems thinking](https://less.works/less/principles/systems-thinking.html) to change the organization towards the “learning and adaptiveness” goal.
 迁移团队和高管团队在审视以前的组织结构并应用[系统思维](https://less.works/less/principles/systems-thinking.html)将组织往“学习和适应”的目标转向上都发挥了重要作用。
 
-We had concerns that any cross-functional and team-based organization would, over time, inevitably revert to the old paradigm of single-function groups. The deeply ingrained BMW culture and structure, which was very different from the desired one, was (and remains) a strong force that reaffirmed our concerns. We decided to resolve this by making significant and immediate changes in the structure (see [Figure 13](#fig013)). We adopted this to counter the tendency to fall back into old habits. The following paragraphs explain each part of the structure.
-我们担心，随着时间的推移，任何跨职能和基于团队的组织都会不可避免地回归到单一职能团队的旧范式。 根深蒂固的BMW文化和结构与理想的文化和结构截然不同，它曾经（并且仍然）是一股强大的力量，再次证实了我们的担忧。 我们决定通过立即对结构进行重大更改来解决这个问题（参见[图13](#fig013)）。 我们采用这种方法来对抗回归旧习惯的趋势。以下段落解释了结构的每个部分。
+我们担心，随着时间的推移，任何跨职能和基于团队的组织都会不可避免地回归到单一职能团队的旧范式。根深蒂固的宝马文化和结构与理想的文化和结构截然不同，它曾经（并且仍然）是一股强大的力量，再次证实了我们的担忧。我们决定通过立即对结构进行重大更改来解决这个问题（参见[图13](#fig013)）。我们采用这种方法来对抗回归旧习惯的趋势。以下段落解释了结构的每个部分。
 
 <a name="fig013"></a>
 <figure>
@@ -333,9 +242,8 @@ We had concerns that any cross-functional and team-based organization would, ove
   <figcaption>Figure 13: New organizational setup.</figcaption>
 </figure>
 
-#### Step 1 - Set up a Development Department (Feature Teams and a Management Team) 第一步：设立开发部门（特性和一个管理团队）
-This step starts by removing one full hierarchy level, the role of team leaders (C-4 level, see [Figure 14](#fig014)), which leads to a remaining group of line managers each being disciplinarily responsible for approximately 60 product developers. Which, in turn, creates several opportunities to form cross-functional and cross-component teams.
-首先我们完全去除了一个层级，即Team Leader的角色（C-4级别，参见[图14](#fig014)），结果是留下的Line Manager每个人都要负责大约60名产品开发人员。这随之创造了几个机会来组建跨职能和跨组件的团队。
+#### 第一步：设立开发部门（多个特性团队和一个管理团队）
+首先我们完全去除了一个层级，即Team Leader的角色（C-4级别，参见[图14](#fig014)），结果是留下的Line Manager每个人都要负责大约60名产品开发人员。这随之创造了一些机会来组建跨职能和跨组件的团队。
 
 <a name="fig014"></a>
 <figure>
@@ -343,140 +251,93 @@ This step starts by removing one full hierarchy level, the role of team leaders 
   <figcaption>Figure 14: Role of team leaders removed.</figcaption>
 </figure>
 
-How to set up connections of feature team members with line managers (which was required at the BMW Group)? We considered two options.
-如何建立特性团队成员与Line Manager的汇报关系（这在宝马集团是必需的）？我们考虑了两种选择。
+如何建立特性团队成员与Line Manager的汇报关系（这在宝马集团是必需的）？我们考虑了两种选项。
 
-##### Option 1: Feature Team Members Having the Same Line Manager 选择1：特性团队成员都有同一个Line Manager
-One option was to arrange the eight teams (one [Requirement Area](https://less.works/less/less-huge/requirement-areas)) per each line manager.
-一种选择是为每位line manager安排八个团队（一个[需求领域](https://less.works/less/less-huge/requirement-areas)）。
+##### 选项1：特性团队成员都有同一个Line Manager
+一个选项是为每位line manager安排八个团队（一个[需求领域](https://less.works/less/less-huge/requirement-areas)）。
 
-Advantages? We couldn’t think of any except variations of local optimizations.
-好处？除了局部优化以外我们想不出任何其他的。
+好处？除了局部优化以外我们想不出任何其它的。
 
-Disadvantages? The concept of Requirement Areas demands *flexibility*. They must be *easily* set up and dissolved. It must be *cheap* to reassign a team from one Requirement Area to another. However, this option brings a degree of organizational stiffness with it. If a Requirement Area is an organizational unit, reporting to one line manager, then it would require formal organizational changes to, for example, reassign a team from one Requirement Area to another, or dissolve the Requirement Area.
 缺点？需求领域的概念需要*灵活性*。它们必须*易于*设置和解散。将团队从一个需求区域重新分配到另一个需求区域必须*方便*。选项1会带来一定程度的组织僵化。如果需求领域是一个组织单位，向一位Line Manager报告，那么比如将团队从一个需求领域重新分配到另一个需求领域，或解散需求领域，都将需要正式的组织变更。
 
-Other disadvantages when considering this option over time and scale:
-当考虑到时间和规模时，此选项的其他缺点：
+当考虑到时间和规模时，此选项的其它缺点：
 
-When coming closer to a release date, delivery pressure would increase. Then, old behavioral patterns could revive. The managers could be made “responsible” for their teams’ performance, leading to command-and-control behavior. In this situation, managers would be likely to focus on the teams rather than on the *system for the teams*. This, in turn, would lead to managers interfering with teams and their Scrum Master’s area of concern.
 当接近发布日期时，交付压力会增加。此时，旧的行为模式可能会复活。管理者会肩负起对他团队绩效负责的重担，从而导致指挥-控制的行为模式的复活。在这种情况下，管理者可能会关注团队而不是*团队的系统*。这随之会导致经理干扰团队和他们的Scrum Master所关注的方面。
 
-Further, in the previous setup, the future line managers were single-function group managers (e.g., manager of the architecture group) on C-3 level, having team leaders on C-4 level reporting to them. Therefore, they were likely to be biased towards (1) their original single-function activity and (2) building up an informal layer of team leaders (even though the *official* position of team leaders was removed). Why would they do that, and why is this a problem?
 此外，在之前的设置中，未来的Line Manager是C-3级别的单职能经理（例如架构组经理），C-4级别的Team Leader向他们报告。因此，他们很可能倾向于（1）他们最初的单一职能活动和（2）建立一个非正式的team leader层（即使team leader的*官方*职位被取消）。他们为什么要这样做，为什么这是一个问题？
 
-First, note that promotions would remain manager-driven. And climbing up the career ladder at the BMW Group requires at some point to demonstrate management skills. Therefore, it’s possible that employees attending more to the specialty of the manager (e.g. architecture) might gain more favor, and even be informally supported by the manager to take a more active “leading” role in their team. This could create an informal hierarchy within an ostensibly self-managing team and “...destroy the team’s shared responsibility and cohesion.” [[3](#references), p. 63]
 首先，请注意升职仍将由经理驱动。在宝马集团攀登职业阶梯需要在某些时候展示管理技能。因此，更多地关注经理的专业（例如架构师）的员工可能会获得更多的青睐，甚至得到经理的非正式支持，以让他们在团队中扮演更积极的“领导”角色。这可能会在一个表面上自我管理的团队中创建一个非正式的层次结构，并“……破坏团队的共同责任和凝聚力”。 [[3](#references), p. 63]
 
-##### Option 2: Feature Team Members Having Different Line Managers 选择2：特性团队成员有不同的Line Manages
-The second option’s main goal was a high degree of flexibility in changing Requirement Areas as needed.
+##### 选项2：特性团队成员有不同的Line Manager
 第二个选项的主要目标是在根据需要更改需求领域时具有高度的灵活性。
 
-We considered teams with developers having different line managers (see [Figure 13](#fig013)). With this setup, each line manager would have around 60 product developers distributed over many teams.
-我们考虑团队中的开发人员有不同的Line Managers（参见[图13](#fig013)）。通过这种设置，每个Line Manger将有大约60名产品开发人员分布在多个团队中。
+我们考虑团队中的开发人员有不同的Line Managers（参见[图13](#fig013)）。通过这种设置，每个Line Manager将有大约60名产品开发人员分布在多个团队中。
 
-Advantages? A high degree of flexibility to easily change Requirement Areas without changing formal organizational structures.
 好处？组织结构高度灵活，无需更改正式组织结构即可轻松更改需求领域。
 
-Further, this setup would expectedly force line managers to optimize globally. How? This option would *equally* authorize line managers towards the teams. It would likely reduce the effect of managers using their authority towards a specific “my team” to optimize locally. It would create the context that the line managers act as an aligned management team towards the teams—a positive application of the “culture follows structure” pattern.
 此外，这种设置预计会迫使Line Mangers在全球范围内进行优化。怎么做到的呢？此选择使得各个Line Managers对团队的权力趋向*均等*。这可能会降低管理者利用他们对特定“我的团队”的权力在本地进行优化的效果。它将创建一个环境，Line Manager们能以一致的行为面对团队。——“文化遵循结构”模式的积极应用。
 
-Disadvantages? None obvious to us, but there were open questions. Previously, the org-chart reflected single-function groups and personalized responsibilities, which made it easy to find someone for problem X. With cross-functional teams and shared responsibility, this information was not visible in the org-chart anymore. How would other BMW Group departments, which remained in a traditional organizational setup, communicate with ADD?
-缺点？我们没有看到明显的，但的确是有一些悬而未决的问题。以前，组织结构图反映了单一职能组和个性化的职责，这使得为问题找到负责人很容易。由于跨职能团队和分担责任，这些信息在组织结构图中不再可见。保留在传统组织架构中的其他宝马集团部门将如何与 ADD 进行沟通？
+缺点？我们没有看到明显的，但的确是有一些悬而未决的问题。以前，组织结构图反映了单一职能组和个性化的职责，这使得为问题找到负责人很容易。由于跨职能团队和分担责任，这些信息在组织结构图中不再可见。保留在传统组织架构中的其他宝马集团部门将如何与ADD进行沟通？
 
-Further, how to escalate and to whom, when the responsibilities become shared and the organizational structure detached from the product architecture?
 此外，当责任分担并且组织结构与产品架构分离时，如何升级问题以及向谁升级问题？
 
-Existing LeSS guides can address those questions—for example, *Leading Team* [[3](#references), p. 308] who commit to a long-term topic, for example, collaboration with an adjacent department. Since ADD did not experience those practices before, it was hard to imagine how they would work out.
-现有的 LeSS 指南可以解决这些问题, 例如致力于诸如与相关部门合作之类长期主题的*领头羊团队*[[3](#references), p. 308]。由于ADD之前没有经历过这些做法，很难想象它们会如何工作。
+现有的LeSS指南可以解决这些问题, 例如致力于诸如与相关部门合作之类长期主题的*领头羊团队*[[3](#references), p. 308]。由于ADD之前没有经历过这些做法，很难想象它们会如何工作。
 
-We chose to leave those questions open and answer them using inspect & adapt.
 我们选择让这些问题保持开放，并使用检查和调整来回答它们。
 
-The advantages were so important to us that we decided to start with this setup.
 这些优势对我们来说非常重要，因此我们决定从这个选项2开始。
 
-#### Step 2 - Set up a PO Team 第二步 – 创建一个PO团队
-Who should be the Product Owner? As described in the guide [Find a Product Owner Given Your Type of Development](https://less.works/less/framework/product-owner.html#FindaProductOwnerGivenYourTypeofDevelopment) [[3](#references), p. 173], the first step in finding a PO is to know your *development type*.
-谁应该是产品负责人？如[根据开发类型来找到产品负责人](https://less.works/less/framework/product-owner.html#FindaProductOwnerGivenYourTypeofDevelopment)指南中所述 [[3](#references), p. 173]，寻找PO的第一步是了解您的*开发类型*。
+#### 第二步 – 创建一个PO团队
+谁应该是产品负责人？如[根据开发类型来找到产品负责人](https://less.works/less/framework/product-owner.html#FindaProductOwnerGivenYourTypeofDevelopment)指南中所述 [[3](#references), p. 173]，寻找PO的第一步是了解你的*开发类型*。
 
-On the one hand, our product—AD—is part of a larger product, the car. In that sense, it was like internal component development. On the other hand, the paying customer needs to add the AD feature to the car configuration and pay extra.
-一方面，我们的产品——AD——是更大的产品——汽车的一部分。从这个意义上说，它就像内部组件开发。另一方面，客户需要额外付费以在汽车配置中添加AD功能。
+一方面，我们的产品（AD）是更大的产品（汽车）的一部分。从这个意义上说，它就像内部组件开发。另一方面，客户需要额外付费以在汽车配置中添加AD功能。
 
-The pivotal point was that the original vision, first set by the head of ADD, was to also offer AD as a separate Autonomous Driving Platform (ADP) to other automobile OEMs. In those ways, it was an external product itself.
 关键点在于，最初由ADD负责人设定的产品愿景是将AD作为单独的自动驾驶平台 (ADP) 提供给其他汽车OEM。 从这方面来看，它本身就是一个外部产品。
 
-For external products the LeSS guide [Who should be Product Owner?](https://less.works/less/framework/product-owner.html#FindaProductOwnerGivenYourTypeofDevelopment) [[3](#references), p. 173] recommends looking for a PO in the Product Management department, such as head of Product Management. Further, the guide defines:
 对于外部产品，LeSS指南[谁应该是产品负责人？](https://less.works/less/framework/product-owner.html#FindaProductOwnerGivenYourTypeofDevelopment)[[3](#references), p. 173] 建议在产品管理部门寻找PO，例如产品管理负责人。此外，该指南定义：
 
-> As Product Owner, you have the *independent authority* to make serious business decisions, to choose and change content, release dates, priorities, vision, etc. Of course, you collaborate with stakeholders, but a real Product Owner has the final decision-making authority. [[3](#references), p. 175, emphasis added]
-> 作为产品负责人，您拥有独立的权力来做出重要的业务决策，选择和更改内容、发布日期、优先级、愿景等。当然，PO需要与利益相关者合作，但真正的产品负责人拥有最终决策权。[[3](#references), p. 175, 添加了强调]
+> 作为PO（产品负责人），你拥有独立的权力来做出重要的业务决策，选择和更改内容、发布日期、优先级、愿景等。当然，PO需要与利益相关者合作，但真正的PO拥有最终决策权。[[3](#references), p. 175, 添加了强调]
 
-Several factors constrained the PO choice.
 有几个因素限制了PO的选择。
 
-The BMW Group had (and still has) a wide range of products, consisting of complex systems. The development and maintenance of which involve tens of thousands of people. The company’s structure reflected the car’s sub-systems, which increased its complexity and fragmentation over the years, especially with the increasing importance of software in each sub-system.
 宝马集团拥有（并且仍然拥有）范围广泛的产品，包括复杂的系统。其中的开发和维护涉及数万人。该公司的结构反映了汽车的子系统，多年来这些子系统的复杂性和分散性逐渐增加，尤其随着每个子系统中软件的重要性日益增加。
 
-Therefore, no one has the required independent authority to make *or change* serious business decisions, not even the CEO. Instead, all serious business decisions are made jointly in committees. Therefore, we knew that the independent decision-making authority of our future PO would be somewhat limited.
-因此，任何人都无法的独立的制定*或改变*重要的商业决策，即使是CEO也不成。 相反，所有重要的商业决策都是在委员会中共同做出的。由此，我们知道未来的PO的独立决策权会受到一定的限制。
+因此，任何人都无法的独立的制定*或改变*重要的商业决策，即使是CEO也不成。相反，所有重要的商业决策都是在委员会中共同做出的。由此，我们知道未来的PO的独立决策权会受到一定的限制。
 
-There were two rationales for choosing a PO from within ADD: (1) the vision of offering the ADP to other automobile OEMs and (2) the fact that LeSS was being adopted at ADD, not at the whole BMW Group scale.
-从ADD中选择PO有两个理由：(1) 向其他汽车OEM提供ADP的愿景；(2) ADD正在采用LeSS，而不是在整个 BMW集团范围内采用。
+从ADD中选择PO有两个理由：(1) 向其他汽车OEM提供ADP的愿景；(2) ADD正在采用LeSS，而不是在整个宝马集团范围内采用。
 
-The head of a previously-existing department was already responsible for all ADAS and AD *customer offerings*; he also held the budget to develop them and decided how to spend it. In the sense of independent decision authority, he had, not the ultimate, but a lot of it. Of course, he needed to align with stakeholders and consider the entire BMW Group’s product range when making decisions. This person became the PO. The APOs were recruited from different parts of ADD.
-先前存在的部门负责人已经负责所有ADAS和AD*客户产品*；他还掌握了开发它们的预算并有权决定如何使用它。在独立决策权的意义上，他不拥有最终的决策权，但的确拥有很多权力。当然，他需要与利益相关者保持一致，并在做出决策时考虑整个宝马集团的产品系列。因此，这个人成为了PO。 APO则是从ADD的不同部分招募的。
+先前存在的部门负责人已经负责所有ADAS和AD*客户产品*；他还掌握了开发它们的预算并有权决定如何使用它。在独立决策权的意义上，他不拥有最终的决策权，但的确拥有很多权力。当然，他需要与利益相关者保持一致，并在做出决策时考虑整个宝马集团的产品系列。因此，这个人成为了PO。APO则是从ADD的不同部分招募的。
 
-Unfortunately, as will be explored later, “a lot of” the authority was not enough to establish a properly-structured and prioritized Product Backlog.
 不幸的是，正如稍后将探讨的那样，“很多”权限不足以建立一个结构合理且优先排序的产品待办列表。
 
-The PO and APOs formed the PO team.
 无论怎样，PO和APO组成了PO团队。
 
-#### Step 3 - Set up a Competence and Coaching Department 第三步：建立一个能力和教练部门
-> Software is created by people. Improving people improves products. [[3](#references), p. 111]
+#### 第三步：建立一个能力和教练部门
 > 软件是由人创造的。改进人就改进了产品。 [[3](#references), p. 111]
 
-*Relentless* training and coaching are necessary to achieve mastery in any aspect to improve the product. To support this idea, we created a Competence and Coaching department, as described in the guide [Organizational Structure for LeSS Huge](https://less.works/less/less-huge/organizational-structure) [[3](#references), p. 111]. It consisted of Scrum Masters, technical coaches, and process-related staff, such as industry-standardization experts.
-坚持不懈的培训和指导对于在任何方面达到精通以改进产品都是必要的。为了践行这个观点，我们创建了一个能力和教练部门，如[LeSS Huge组织结构](https://less.works/less/less-huge/organizational-structure)指南 [[3](#references), p. 111]所描述的。它由 Scrum Master、技术教练和与流程相关的员工（例如行业标准化专家）组成。
+*坚持不懈的*培训和辅导对于在任何方面达到精通以改进产品都是必要的。为了践行这个观点，我们创建了一个能力和教练部门，如[LeSS巨型组织结构](https://less.works/less/less-huge/organizational-structure)指南 [[3](#references), p. 111]所描述的。它由Scrum Master、技术教练和与流程相关的员工（例如行业标准化专家）组成。
 
-Why were the Scrum Masters in this department? The Scrum Masters’ responsibility is to teach Scrum (and LeSS) and how to derive value with it, coach the teams, the (A)PO, the line managers, and the whole organization applying it, and last but not least, to act as a *mirror*. This sort of coaching, especially when acting as a mirror, requires everyone to be on the same conceptual level as the Scrum Master. It is even more critical when previous career paths and grading of individuals influence the perception of different roles and their hierarchy levels.
-为什么Scrum Master在这个部门？Scrum Master 的职责是教授Scrum（和LeSS）以及如何利用它获得价值，指导团队、（A）PO、Line Manager以及应用它的整个组织，最后也是同样重要的一点是，作一面镜子。这种教练，尤其是在充当*镜子*时，要求每个人都与Scrum Master处于同一角度去思考。当个人以前的职业道路和等级会影响不同角色和他们层级的看法时，这一点就更加重要了。
-
-The typical case at the BMW Group is that the higher the salary grading, the higher the person is in the hierarchy. The grading usually comes with experience and demonstrated skills. Most Scrum Masters had lower grading than APOs and line managers. This raised two questions:
-
-1.	How will the Scrum Masters perceive and approach the higher graded APOs and line managers when coaching?
-2.	How will the APOs and line managers perceive the “less experienced” (based on their grading) Scrum Masters?
+为什么Scrum Master在这个部门？Scrum Master的职责是教授Scrum（和LeSS）以及如何利用它获得价值，指导团队、PO/APO、Line Manager以及应用它的整个组织，最后也是同样重要的一点是，作一面*镜子*。这种教练，尤其是在充当镜子时，要求每个人都与Scrum Master处于同一角度去思考。当个人以前的职业道路和等级会影响不同角色和他们层级的看法时，这一点就更加重要了。
 
 宝马集团的典型情况是，工资级别越高，这个人在层级中的地位也越高。Grade通常取决于经验和展示的技能。大多数 Scrum Master的Grade低于APO和line manager。这导致了两个问题：
 
 1. Scrum Master 在指导时将如何看待和接触更高级别的APO和line manager？
 2. APO和line manager如何看待“经验不足”（基于他们的Grade）Scrum Master？
 
-And let’s also add the IPA (individual performance appraisal) to the coaching perspective. One’s direct line manager conducts the yearly IPA. It results in changing one’s grading and salary. Further, it is up to the line manager what data they use for the performance appraisal.
-让我们也将 IPA（个人绩效评估）添加到教练的角度。一个人的Line Manager进行年度 IPA，这会影响到一个人的Grade和薪水。此外，line manager决定他们使用哪些数据进行绩效评估。
+让我们也将 IPA（个人绩效评估）添加到教练的角度。一个人的Line Manager进行年度IPA，这会影响到一个人的Grade和薪水。此外，line manager决定他们使用哪些数据进行绩效评估。
 
-Consider the following hypothetical situation. Suppose a few teams and their Scrum Master have the same line manager. The Scrum Master observes that anti-patterns concerning self-management underpin the line manager’s behavior. What will the Scrum Master do?
+考虑以下假设情况。假设几个团队和他们的Scrum Master有相同的line manager。Scrum Master观察到Line Manager的行为助长了自我管理的反模式。Scrum Master会做什么？
 
-1.	Will the Scrum Master act unbiased as a mirror towards the line manager and make this behavior transparent, risking hurt egos and risking an adverse IPA. *Or*? ...
-2.	Will the Scrum Master accept this behavior mostly or entirely favoring a better IPA for herself as a Scrum Master?
-
-考虑以下假设情况。假设几个团队和他们的Scrum Master有相同的line manager。S Scrum Master观察到Line Manager的行为支撑了自我管理的反模式。 Scrum Master会做什么？
-
-1. Scrum Master 否会不偏不倚地充当Line Manager的一面镜子，并让这种行为变得透明，冒着伤害自尊和冒着负面IPA的风险。或者？ …
+1. Scrum Master是会不偏不倚地充当Line Manager的一面镜子，并让这种行为变得透明，冒着伤害自尊和冒着负面IPA的风险。或者？ …
 2. Scrum Master会接受这种行为，或者为了自己更好的IPA结果而支持这种行为？
 
-During the discussion of the new processes and the organizational structure, especially the Competence and Coaching department, we reasoned that most Scrum Masters would be biased and would choose the second option. But we wanted to create an environment where Scrum Masters could act as fearless and as unbiased as possible.
-在讨论新的流程和组织结构，尤其是能力和教练部门时，我们推断大多数 Scrum Master 会有偏见，会选择第二个选项。但我们想创造一个环境，让Scrum Master可以尽可能地无所畏惧和不偏不倚。
+在讨论新的流程和组织结构，尤其是能力和教练部门时，我们推断大多数Scrum Master会有偏见，会选择第二个选项。但我们想创造一个环境，让Scrum Master可以尽可能地无所畏惧和不偏不倚。
 
-Further and considering the above, BMW Group employees were not accustomed to directly talking to higher management without consulting their direct manager beforehand. Therefore, the risk that top-management would get filtered information instead of the real picture from Scrum Masters was considered harmful.
 此外，考虑到上述情况，宝马集团的员工不习惯在没有事先咨询Line Manager的情况下直接与高层管理人员交谈。因此，高层管理人员从Scrum Master那里获得过滤信息而不是真实情况的风险被认为是有害的。
 
-To address these problems and create an environment where Scrum Masters can carry out their job as free as possible, we explicitly wanted the Scrum Masters to have a different line manager than team members. This decision led us to place the Scrum Masters in the Competence and Coaching department.
 为了解决这些问题并创造一个让Scrum Master可以尽可能自由地开展工作的环境，我们明确希望Scrum Master拥有与团队成员不同的line manager。这个决定导致我们将Scrum Master安排在能力和教练部门。
 
-#### The Result 结果
-The resulting organizational chart looked as shown in [Figure 15](#fig#015).
+#### 结果
 最终的组织结构图如[图15](#fig#015)所示。
 
 <a name="fig015"></a>
@@ -485,11 +346,9 @@ The resulting organizational chart looked as shown in [Figure 15](#fig#015).
   <figcaption>Figure 15: Resulting organizational structure.</figcaption>
 </figure>
 
-There were three main departments within ADD. The PO, APOs, and their supporting staff comprised the Product Owner department. All Product Developers and line managers were in the Development department. And the Competence and Coaching department contained all Scrum Masters, technical coaches, and additional industry-standardization experts.
-ADD 内有三个主要部门。 PO、APO及其支持人员组成了产品负责人部门。所有产品开发人员和line manager都在开发部门。能力和教练部门包含所有Scrum Master、技术教练和其他行业标准化专家。
+ADD内有三个主要部门。PO、APO及其支持人员组成了产品负责人部门。所有产品开发人员和line manager都在开发部门。能力和教练部门包含所有Scrum Master、技术教练和其他行业标准化专家。
 
-Those three departments together sourced the Requirement Areas. APO from the PO department, the teams from the Development department, and the Scrum Masters from the Competence and Coaching department.
-这三个部门共同输送组成了需求领域：来自PO部门的APO、来自开发部门的团队以及来自能力和教练部门的 Scrum Master。
+这三个部门共同输送组成了需求领域：来自PO部门的APO、来自开发部门的团队以及来自能力和教练部门的Scrum Master。
 
 ## A New Age—the First Requirement Area—Begins
 The first of the [Three Adoption Principles](https://less.works/less/adoption/three-principles) [[3](#references), p. 55]—*Deep and Narrow over Broad and Shallow*—describes that LeSS should preferably be adopted in one product group well, instead of applying LeSS in many groups poorly. In case of LeSS Huge, LeSS adoptions should start with one [Requirement Area](https://less.works/less/less-huge/requirement-areas.html) and reach a good state before further scaling.
