@@ -938,19 +938,25 @@ Facing the blunt reality, and understanding and living out the rules and practic
 
 It is too early to draw any conclusions from the recent adaptations. They need close observation and analysis over time. The results of this could be the next volume of this report.
 
-# Technology View
+# 技术角度Technology View
 In this part, several technical aspects are explored: what went well, what fell short, and what to learn for the next time. To create a better understanding of the starting situation, here’s a brief outline of the technical situation before the adoption started. The following chapters provide more details as needed.
+在这一部分中，探讨了几个技术方面：哪些进展顺利，哪些不足，以及下一次需要学习什么。为了更好地理解开始情况，这里简要介绍了转型开始之前的技术情况。以下章节将提供更多详细信息。
 
-## Before Adoption
+## 转型之前Before Adoption
 The BMW Group started exploring ADAS decades before the adoption. The exploration routes diverged in fairly disconnected research projects such as Ph.D. studies, outsourcing, and other academic research projects. Most of the time, each of these routes were connected by project plans and feature descriptions, but vastly disconnected in actual design and code. This led to a wide variety of code bases and tools.
+宝马集团在转型之前几十年就开始探索ADAS驾驶辅助系统。在博士科研、外包和其他学术研究项目等众多不相关联的研究项目中，探索路线有所不同。在大多数情况下，项目计划和功能描述将这些路线链接起来，但在实际设计和代码中却有很大的脱节。这导致了有各种各样的代码库和工具。
 
 By the way, in my role as a technical coach, I ([Michael Mai](https://less.works/profiles/michael-mai)) observe that this is a common pattern when software development is treated as multiple projects rather than as one product.
+顺便说一句，作为一名技术教练，我（[Michael Mai](https://less.works/profiles/michael-mai)）发现，当软件开发被视为多个项目而不是一个产品时，这是一种常见的模式。
 
 The academic projects frequently used Matlab and Simulink. The outsourcers that had been engaged by the BMW Group used Matlab or C. This complicated collaboration and also explained some of the divergent concepts in the code base.
+学术项目经常使用Matlab和Simulink。宝马集团雇佣的外包商使用Matlab或C。这种复杂的协作也解释了代码库中的一些分歧。
 
 Noteworthy with respect to achieving the difficult goal of at least a Level 3 AD, there was no focus on modern machine-learning (“ML”, “AI”) approaches, in stark contrast to the extremely ML-centric approaches taken by the most accomplished leaders in the field (e.g., Waymo, Tesla). Rather, the BMW Group continued to explore and apply traditional control methods, such as imperative programming with formulas, as had been used previously in relatively simple driving-control problems, used in cruise-control.
+值得注意的是，想要实现至少Level 3的自动驾驶的高难度目标，宝马却没有关注现代机器学习（“ML”、“AI”）方法，这与该领域最有成就的领导者（如Waymo、Tesla）采取的以机器学习为中心的方法形成鲜明对比。相反，宝马集团继续探索和应用传统的控制方法，如使用公式的指令式编程，这种方法之前普遍用于巡航控制的相对简单的驾驶控制问题中。
 
 The BMW Group centralized some of their research and development effort into three bigger in-house groups: SoP 2018, SoP 2021 highly-automated driving (HAD), and SoP 2021 fully-automated driving (FAD). Those groups did have different knowledge, experience and exposure to vehicle-grade product development. Also, those groups joined at different times into the adoption (see [Figure 24](#fig024)). See also [Figure 17](#fig017) and [Fake Volunteers](#fake-volunteers).
+宝马集团将部分研发工作集中在三个大的内部团队：SoP 2018、SoP 2021高阶自动驾驶（HAD）和SoP 2021全自动驾驶（FAD）。这些团队在车规级产品开发方面有不同的知识、经验和参与程度。此外，这些团队在不同的时间加入到转型中（参见[图24]（#fig024））。另请参见[图17]（#fig017）和[假志愿者]（35;假志愿者）。
 
 <a name="fig024"></a>
 <figure>
@@ -959,134 +965,194 @@ The BMW Group centralized some of their research and development effort into thr
 </figure>
 
 The SoP 2021 groups, which consisted mostly of researchers and new hires from university, collaborated closer and formed the starting seed for the LeSS adoption. So, *there were few experienced software developers, with limited experience in building products for vehicles, and with compartmentalized domain knowledge in ADAS*.
+SoP 2021团队主要由研究人员和大学刚毕业的新员工组成，他们紧密合作，形成了LeSS转型的起始种子。他们中经验丰富的软件开发人员很少，车载产品开发的经验有限并且还是在跟ADAS辅助驾驶不同的领域。
 
 In preparation for the major ADD initiative, management assumed that growing the group by new hires from university would introduce modern software development skills, and modern clean and well-designed code, into the code base—another indicator of managers lacking proven skills in software development. Given the limited experience that those new non-top-tier joiners (from university or from the market) could contribute, it was a hope in vain. Chapter [People](#people) explores additional reasons.
+在准备ADD计划时，管理层认为，团队中增加大学刚毕业的新员工，可以将现代软件开发技能以及现代整洁和设计良好的代码引入代码库，这是管理人员缺乏软件开发技能的另一个迹象。鉴于这些新的非顶级加入者（来自大学或者行业中）能够贡献的经验有限，这次团队扩张是徒劳的。第[People]（#People）章探讨了其他原因。
 
 The inexperienced SoP 2021 groups made the fundamental architectural decision to directly couple to the robot-research-based message-oriented middleware platform [ROS](https://www.ros.org/). ROS is used for many research papers on robotics, but the design philosophy of ROS is incompatible with the vehicle target platform.
+缺乏经验的SoP 2021团队做出的基础架构决策是直接使用基于机器人研究的消息中间件平台[ROS](https://www.ros.org/). ROS用于机器人学的许多研究论文，但ROS的设计理念与汽车平台不兼容。
 
 Because of the (1) bifurcation into HAD and FAD project groups, and because (2) they were organized into multiple component teams (the traditional model that the managers knew, from building physical components), and because of (3) the lack of skill in software development and large-scale coordination, there had been *essentially no alignment on software concepts and design across the multiple code bases these groups created. And those groups’ divergent code bases only interacted at the level of ROS messages*.
+由于（1）分为HAD和FAD项目组，以及（2）他们被分成多个组件团队（这是管理人员熟悉的传统模式，在以前开发硬件组件中就是这么做的），以及（3）缺乏软件开发和大规模协调的技能，在这些团队创建的多个代码库中，软件概念和设计基本上没有一致性。这些项目组的不同代码库仅在ROS消息级别上有交互。
 
 Due to differences in project objectives the “alignment” in concepts and software was rated lower priority—despite its obvious essential nature for delivering a real product. Yet another sign of the lack of experience amongst management and developers in large-scale and complex software development. So, both the HAD and FAD code bases were very divergent. In addition to this difference, both groups independently organized themselves into *component teams*, as previously promoted by BMW managers for their prior relatively trivial and smaller software initiatives, naively unaware of the risks and lack of learning and adaptiveness this created when trying to create a difficult research-intensive end-to-end AD robot that in reality would need lots of learning-based feedback and change. These reasons led to little alignment.
+由于项目目标的差异，概念和软件的“一致性”被评为较低优先级，尽管这些是交付量产产品的关键。这是管理层和开发人员缺乏大规模复杂软件开发经验的另一个迹象。因此，HAD和FAD的代码库差异很大。除此之外，这两个项目组独立组建了各自的“组件团队”，正如宝马管理人员之前在相对次要和较小的软件项目所提倡的那样。在开发一个高难度的研究密集型端到端自动驾驶机器人时，需要大量基于学习的反馈和改变，宝马管理人员天真地没有意识到风险并且缺乏学习和适应性。这些原因导致了几乎没有一致性。
 
 The SoP 2018 group was the veteran *traditional* engineering group with product development experience (see [Unmet Prerequisites for Scaling Adaptive Product Development](#unmet-prerequisites-for-scaling-adaptive-product-development) for why this group exists and why the LeSS adoption didn’t include this group from the start). Due to their deployment-target-constrained toolchain, they had to use a restricted subset of C++, and were largely a group of traditional C programmers. They had little or no experience in modern and large-scale software-intensive design approaches based on more recent industry standards, such as object-oriented design (OOD). This lack of OOD skill contributed to the decision not evolving the SoP 2018 code base into the new product’s code base. Note that without that skill the developers could not effectively design modern C++ code within a new system orders of magnitude more complex and different from anything they had done before.
+SoP 2018组是具有产品开发经验的资深*传统*工程团队（参见[扩展适应性产品开发的未满足先决条件]（#扩展自适应产品发展的未满足的先决条件），了解为什么该团队存在，以及为什么LeSS转型一开始时没有将该团队纳入）。由于他们的部署目标受限的工具链，他们不得不使用受限的C++子集，并且他们主要是一群传统的C程序员。他们在较新的行业标准（如面向对象设计（OOD））的现代大规模软件密集型设计方法方面几乎没有经验。由于缺乏OOD技能，因此决定不将SoP 2018的代码库融合到新产品的代码库。请注意，如果没有这项技能，开发人员就无法在一个新的系统中有效地设计现代C++代码，新系统比他们以前做的任何事情都要复杂和不同。
 
 The different sub-groups struggled on shared software design and concepts in their communication and thinking. Their distinct past, goals and code base did not prepare the groups for joint development. Still, the objective of management was joining these groups, despite their differences, into one. Why? For (1) these are BMW Group employees and should be enabled to work on a new product, (2) it was mistakenly assessed that further development would require a substantial increase in staff (see [People](#people) for details), (3) harvesting the fruits of decade long research and putting it into a product—which requires more than just the researchers, and (4) closing the gap between research, gaining insights, and putting the insights into a product for customers.
+在不同的小组在交流和思考中，对共享软件的设计和想法很挣扎。他们独特的过去、目标和代码库并不支持联合开发。然而，管理层的目标是将这些小组联合起来，尽管他们存在差异。为什么？（1）他们是宝马集团的员工，应该能参与开发新产品，（2）错误地评估进一步开发将需要大量增加员工（详见[人员]（#People）），（3）将十年科研成果投入到一个不光只是科研人员参与的产品中，（4）弥合纯科研的差距，获得洞见，并将洞见应用于量产产品。
 
 And picking up on point (2), “big staff for big work”, most of the BMW management had a background in mechanical and electrical engineering and production, and incorrectly viewed software R&D like a *manufacturing* problem rather than an R&D problem, where *in manufacturing more bodies can mean more progress*. But of course, *in software R&D, adding lots of bodies rather than the right talent, aggravates problems and progress*. So, yet another sign of lack of modern and large-scale complex software management expertise, starting at the board level.
+说到第（2）点，“大项目需要大团队”，宝马的大多数管理层都有机械和电气工程和制造业的背景，他们错误地将软件研发视为一个生产问题，而不是研发问题，在生产过程中，更多的人意味着进展更快。但是，*在软件研发中，增加大量的人数而不是合适的人才，会恶化问题和阻碍进展。因此，这是自董事会层向下的另一个缺乏现代和大规模复杂软件管理专业知识的迹象。
 
 The following sections focus on organizational, political, and personal dysfunctions and system dynamics that resulted in this challenging technical landscape. Some ideas and tried proposals to overcome this situation are included and discussed as well.
+以下章节重点讨论组织、政治和人的障碍以及导致这一具有挑战性的技术环境的系统动态。还包括并讨论了解决这种情况的一些想法和尝试性建议。
 
-## One Product, One Repository, One Branch
+
+## One Product, One Repository, One Branch 一个产品、一个仓库、一个分支
 Before the LeSS adoption, there were more than 150 repositories and several hundred branches. As mentioned, the design and repository structure of the code base was strongly influenced by the fact that the groups worked in multiple projects, and as component teams.
+在LeSS转型之前，有150多个代码仓库和数百个分支。如前文所述，仓库设计和结构受到以下原因的严重影响：各个组以项目制在各项目中工作，并且是组件团队。
 
 Another sign of the lack of experience in modern large-scale adaptive development, by both management and developers, was the lack of awareness of the many problems that would be caused by all those repositories and branches when the disparate groups had to come together and ship one common product. The old multiple-projects and component teams model delayed seeing those problems by delaying integration.
+管理层和开发人员缺乏现代大规模开发经验的另一个迹象是，他们没有意识到当不同的团队必须合到一起并交付一个共同的产品时，众多仓库和分支会导致许多问题。以前多个项目和组件团队的模式在较后的阶段进行集成，导致这个问题的发现也较晚。
 
 Fortunately, one of the first steps of the new ADD department was the definition of the product. This definition of a single product started to unify those groups and create the motivation for one repository, one branch. The main requirements that led to the decision of one repository, one branch were:
+幸运的是，新的ADD部门进行的早起行动中之一是对产品的进行定义。“一个产品”的定义开始使各小组形成一体，以及一个仓库、一个分支。导致决定一个仓库、一个分支的主要需求是：
 
-* Focus work effort for the product
-  * Otherwise milestones are endangered
-* Consistent implementation of legal requirements and amendments
-  * Otherwise the product is not legal to sell
-* Consistent implementation of business and user experience requirement
-  * Otherwise the product is unable to sell
+* 将工作重点放在产品上Focus work effort for the product
+  * 否则里程碑将受到威胁Otherwise milestones are endangered
+* 持续实施的法律要求和修正案 Consistent implementation of legal requirements and amendments
+  * 否则产品无法销售 Otherwise the product is not legal to sell
+* 业务和用户体验需求的持续实施 Consistent implementation of business and user experience requirement
+  * 否则产品卖不出去 Otherwise the product is unable to sell
 
 The chosen versioning tool was [GIT](https://git-scm.com/), where “one branch” means “master”. The practice to work only on master (the equivalent is *trunk* in many tools) is called [trunk-based development](https://paulhammant.com/2013/04/05/what-is-trunk-based-development/).
+选择的版本控制工具是[GIT](https://git-scm.com/)，“一个分支”就是指“主分支”。仅在master上开发的实践（在许多工具中相当于*主干*）称为[主干开发](https://paulhammant.com/2013/04/05/what-is-trunk-based-development/).
 
 However, there was still a major delayed-integration problem: Previously, the groups focused *separately* on Level 3 and Level 4 driving. For commercial risk-management the Level 3 functionality needed to be stable first, since the vision was to at least offer a Level 3 AD, and therefore it had a higher management attention and influence on Product Backlog ordering. Still, many managers realized that if Level 4 development would have been dropped, the race for Level 4 in the market would have been lost to the competitors. So, *both streams were followed in parallel*. I will explore in appropriate sections these opposing mindsets and their harmful impact on integration, and more broadly on product development.
+然而，仍然存在集成较晚这个严重问题：之前，两个组分别关注L3和L4级自动驾驶。在商业风险管理上，L3级功能首先需要可靠，因为愿景是至少提供L3级自动驾驶，因此它对产品代表列表有更高的管理关注度和影响力。尽管如此，许多管理者意识到，如果L4级开发被降低，在市场上的L4级竞争上将输给竞争对手。因此，*两个流并行进行*。我将在其他章节中探讨这些对立的心态及其对集成的负面影响，以及更广泛地程度对产品开发的负面影响。
 
-#### Internal Partners and Deviation From the One Branch Rule
+#### 内部合作伙伴以及单分支规则的偏差Internal Partners and Deviation From the One Branch Rule
 The energy generated from the single product definition for ADD to merge repositories and branches also drove the separation from other departments within BMW Group.
+ADD单一产品定义带来的仓库和分支合并所产生的活力也推动了宝马集团内部其他部门的分离。
 
 The separation revealed the desire of managers to differentiate one from each other. In the perspective of the other managers, the ADD manager created a super department that consumes other departments—meaning also consuming their own department. Department reduction is usually in the interest of the product and higher management, but rarely in the interest of (middle) management heading these departments. Therefore, the corollary of one/wider product definition is the need of other department’s managers to distinguish themselves, for example by *local optimization* in their department to justify continued existence.
+这种分离显示出管理者希望彼此区别开来。从其他管理者的角度来看,ADD管理者创建了一个超级部门，该部门吞噬其他部门-也就是这些管理者的部门。部门缩减通常是为了产品和高层的利益，但很少是为了这些部门（中层）管理着的利益。因此，一个/更广泛的产品定义的必然结果是，其他部门的经理需要区分自己，例如通过在其部门进行“局部优化”，以证明其存在感。
 
 For example, the department tasked with human-machine interface (HMI: displays, head-up display, steering wheel, radio control, etc.) development argued that it also had other vehicle projects as clients. Therefore, their management argued (1) centralizing design capacity is “optimal” (of course, actually a *local* optimization), (2) splitting the design team and joining the ADD group would disrupt their multiple HMI *projects*, and (3) if the design team would have been dispersed then every project’s timeline would be in jeopardy. Needless to say, this traditional HMI and design department is—like many other departments in BMW Group—organized to control *suppliers* of design, user-experience studies, and related software and hardware.
+例如，负责人机界面（HMI：车机屏幕、HUD抬头显示、方向盘、广播按钮等）开发的部门认为，他们也有其他车型项目的客户。因此，他们的管理层辩论道（1）集中设计是“最优的”（当然，实际上是一个*局部*最优），（2）分离设计团队并加入ADD团队会破坏他们的多个HMI*项目*，以及（3）如果设计团队分散，则每个项目的时间计划都会有风险。不用说，这个传统的人机界面和设计部门与宝马集团的许多其他部门一样，组建起来的目的是控制供应商的设计、用户体验研究以及相关软件和硬件。
 
 The way BMW Group organizes vehicle development, vehicle manufacturing, and vehicle projects is also used by departments to claim independence from ADD’s product vision. The unspoken argument is that the existing status quo (local) optimization shouldn’t be changed or challenged by any “super” department.
+宝马集团组织车型开发、车型制造和车型项目的方式也被各部门用来声称他们独立于ADD的产品愿景。潜台词是，任何“超级”部门都不应改变或挑战现有的（局部优化）的现状。
 
 Since the organization design of an overall system’s inter-department collaboration is the responsibility of C-level management, and this system was apparently not understood by them to be problematic (and thus not improved) for the success of ADD, it illustrates that C-level management also did not have the knowledge or skills to manage the internal creation of very large and complex software. It is probable they continued to view the problem as requiring their traditional supplier-management model.
+由于整个系统部门间协作的组织设计是董事管理层的责任，而且董事管理层显然不理解现有系统对于ADD的成功是存在问题的（因此没有改进），这说明董事管理层也不具备管理大型复杂软件的知识和技能。他们很可能继续认为需要延续他们的传统供应商管理模式。
 
-#### Research Collaborators and Deviation From the One Branch Rule
+
+#### 科研合作者和单分支规则的偏差Research Collaborators and Deviation From the One Branch Rule
 Integrating research results into the product and the product code is important for ADD, therefore ADD maintains several such research projects.
+将科研结果集成到产品和产品代码中对于ADD来说很重要，因此ADD维护了几个这样的科研项目。
 
 Management decided for separate repositories and therefore long-delayed integration. Some reasons why management decided for this were (1) high degree of uncertainty which proposal under research would finally go into the product, (2) several non-BMW Group researchers were involved; therefore, management limited the amount of unrelated BMW Group’s code, (3) unacceptably poor software design and code quality in research code, and (4) researchers experimented with different programming languages.
+管理者决定这些项目使用单独的仓库，因此集成的时间很晚。管理者决定这样做的一些原因是：（1）科研成果是否纳入到产品中有高度不确定性，（2）有一些非宝马集团的科研人员参与；因此，管理层限制了无关宝马集团代码的数量，（3）科研代码中的软件设计和代码质量差得令人无法接受，（4）科研人员使用不同的编程语言。
 
 Some of the consequences of this delayed integration were (1) divergent concepts, (2) implication for subsequent algorithms, data structure and evaluation, and (3) vastly different understanding of the problem and details the research code solves, which led to challenges during integration and adjustments of the product’s software design.
+较晚集成的一些后果是：（1）概念分歧，（2）对后续算法、数据结构和评估的影响，以及（3）对科研代码解决问题的理解及细节存在很大差异，这导致了在集成以及对软件设计修改有很大挑战。
 
-#### External Partners and Deviation From the One Branch Rule
+#### 外部合作伙伴和单分支规则偏差External Partners and Deviation From the One Branch Rule
 At BMW Group, a common approach is to slice the code base into pieces (one slice/piece = one repository) for each partner (depending on the contractual collaboration level). ADD management adopted this naive approach. The issue with this is (1) it emphasizes conforming to the existing (traditional) contracts model, (2) therefore it is locally optimized for contracts, not product success or end-to-end collaboration, (3) by optimizing for the traditional partner-contract model effective integration and collaboration is impaired, and (4) the total solution, which requires adaptive collaboration and frequent integration for success, is severely hampered. All this is a sign of missing experience of modern large-scale adaptive development practice, lack of understanding of how much more complex this initiative is, the kinds of collaboration and integration and repository practices needed, and senior management more concerned with “good” contracts than working software.
+在宝马集团，一种常见的方法是为每个合作伙伴（取决于合同协作级别）将代码库分割成多个片段（一个片段=一个仓库）。ADD管理采用了这种幼稚的方法。这带来的问题有：（1）它强调符合现有（传统）合同模型，（2）因此，针对每个合同进行局部优化，而不是为了产品成功或端到端协作，（3）为了传统合同模型的合作方式进行优化，有效集成和协作受到影响，以及（4）整体解决方案需要适应性协作和频繁集成才能取得成功。所有这一切都表明，现代大规模适应性开发实践缺乏经验，缺乏对这一举措的复杂性、所需的协作和集成以及仓库管理实践的理解，高级管理层更关心“优秀”的合同而不是工作软件。
 
-#### “Off Car” Functions and Deviation From the One Branch Rule
+#### “非车上”的功能和单分支规则偏差 “Off Car” Functions and Deviation From the One Branch Rule
 Even though there was now a “one product” definition, due to the lack of insight and experience by management and developers, they continued with delayed integration and multiple repositories or branches for a variety of components and “projects”.
+尽管现在有“一个产品”的定义，但由于管理层和开发人员缺乏洞察力和经验，他们继续延迟集成，并为各种组件和“项目”创建多个仓库或分支。
 
 For example, the data center and data retrieval related components hadn’t been integrated with the regular product development for long periods. This affected the data retrieval and reprocessing capability of the data center and processing cluster. Due to this non-integration, mass-processing of data for validation or simulation was not possible due to incompatible data or not useful data due to obsolete (because of the delayed integration) code used in cluster processing.
+例如，数据中心和数据检索相关组件长期未与常规产品开发进行集成。这影响了数据中心和处理集群的数据检索和再处理能力。由于未集成，使用大量数据进行测试验证以及仿真的工作无法进行，因为存在不兼容数据或无效数据（较晚集成导致集群处理存在过时代码）
 
 Only after the issue was painfully obvious enough, did developers and managers start merging efforts of code and people. Yet moving people around—another quick fix—to deal with these self-inflicted wounds discouraged management from thinking about the proper organization of people and underlying causes, and therefore the staff size of ADD increased even more.
+只有在这个问题非常明显之后，开发人员和管理人员才开始合并代码和人员的工作。然而，将员工转移到另一个快速解决方案来处理这些自我造成的创伤，阻碍了管理层思考人员的适当组织和根本原因，因此，ADD的员工规模甚至增加了更多。
 
-#### Platform and Vendor-Specific Code and Deviation From the One Branch Rule
+#### Platform and Vendor-Specific Code and Deviation From the One Branch Rule 平台和供应商特定代码以及与单分支规则偏差
+
 Senior management had a vision of ADD being a platform that could be used by OEMs. Given the high-level R&D difficulty of the problem and the unprecedented experience and staff at BMW, this was arguably wishful thinking amongst the deal makers and C-level.
+高层的愿景是，ADD是一个可以提供给众多车企主机厂的平台。考虑高研发难度，以及宝马及员工以前并未有相关经验，这其实是投资者和管理层的一厢情愿。
 
 In any event, wishful thinking won, and management decided to split platform-dependent (=vendor specific) and platform-independent code into separate repositories, since they and the developers did not understand or have the software skill to separate the pieces architecturally while keeping just one repository. The split resulted in even more complicated development and delayed integration issues on all participating OEM parties—including ADD.
+然而，一厢情愿的想法赢得了胜利，管理层决定将依赖于平台（=供应商特定）和独立于平台的代码拆分为独立的代码仓库，因为管理层和开发人员不了解或不具备在架构上分离代码而同时只保留一个仓库的软件技能。拆分导致了包括ADD在内的所有参与主机厂的开发更加复杂和延迟集成问题。
 
-#### A Rushed Merging of Repositories
+#### A Rushed Merging of Repositories 仓促合并仓库
+
 The first Requirement Area started with a subset of the 2021-release code base; it also consisted only of the first batch of [Fake Volunteers](#fake-volunteers). The ramping up was decided by management even before the beginning of the adoption—also referred to as organizational cut-over. Management explicitly stated that things that worked before, should also work after any employee completed joining the adoption, otherwise those employees would be more productive and kept in the old structure. This led to a very hastily merging of multiple repositories (code bases) that had little alignment. Other than pushing to rush it, management left the precise procedure to the developers on how to achieve this.
+第一个需求领域是从2021要发布代码库的一个子集开始；它也只包括第一批[假志愿者]（#假志愿者）。甚至在转型开始之前，管理层就决定了人员升级，也被称为组织切换。管理层明确表示，以前有效的方法，在任何员工完全加入转型后也应该会有效，否则这些员工应该留在旧的组织架构中。这导致了多个几乎没有对齐的仓库（代码库）的仓促合并。除了催促开发，管理层将如何实现这一目标的具体方法交给了开发人员。
 
 Due to this management directive and their push to “go faster”, there was a rushed big-bang of putting all repositories at once into one repository and figuring out rectification and alignment later. That approach was based on reproducing steps from the old build system in stitching build artefacts together. This stitching-big-bang approach did not create the time or interest for aligning software design or misaligned concepts and just deferred these critical problems. This would lead to many problems later, and illustrated the classic “faster is slower” dynamic so often pushed by management teams.
+由于这一管理指示和他们对“更快”的压力，出现了先将所有仓库同时合入一个仓库中、之后再修改及对其的瞬间大爆炸。从旧构建系统中进行复制，然后将构建工件拼接在一起。这种“拼接大爆炸”方法并没有为统一软件设计或概念不一致的创造时间，只是将问题延后暴露了。这将在以后导致许多问题，并说明了经常在管理团队的推动的下”快即是慢“。
 
-## Software Design and Architecture
-First, some broad context and influences:
+## Software Design and Architecture 软件设计和架构
+
+First, some broad context and influences: 首先，一些广义的背景和影响：
 
 As discussed, most developers had been researchers with ADD. This influenced their choice of software design. Originated in an environment that rewards *single*-person-excellence by for example handing out Ph.D. titles, their natural grasp of development is in isolation. This resulted among other things in the many repositories before the big-merge.
+如前所述，大多数开发人员都是ADD的科研人员。这影响了他们对软件设计的选择。起源于个人英雄主义的环境，例如获得博士学位，他们进行开发工作的自然是孤立的。这导致了大合并之前有许多仓库。
 
 Also an influencing factor: being part of a large corporation influences mindset. One is that of clinging on to weak solutions due to a *sunk cost* bias.
+另一个影响因素是：作为大公司的一部分会影响思维方式。其中一种是由于“沉没成本”而坚持弱解决方案。
 
 Some more context: (1) the code base should be maintainable for 20 and more years, (2) legal obligation influences the update cycle, (3) variability of sensors, (4) variability in protocols and semantic primitives among different OEMs, and (5) ongoing research and experimentation.
+更多的上下文背景：（1）代码库需可维护20年以上，（2）法规要求影响更新周期，（3）传感器的变化性，（4）不同主机厂之间协议和语义元素的可变性，以及（5）正在进行的研究和实验。
 
-### Explicit Coding or Machine Learning? Expertise and Hiring Dynamics
+### Explicit Coding or Machine Learning? Expertise and Hiring Dynamics 基于规则编码还是机器学习？专业知识和招聘动态
 The general architectural approach of ADP is *explicitly coded* software. Especially in contrast to other important vendors and their reported successes, failures, and their increasing focus on close to a “100%” ML (“AI”) approach to autonomous driving: why is ADD sticking to the traditional alternative?
+ADP自动驾驶平台的一般架构方法是*基于规则编码*。特别是与其他重要的供应商及他们宣称的成功、失败以及他们越来越关注接近“100%”的ML（“AI”）自动驾驶方法相比：为什么ADD坚持传统的方案？
 
 The origin of most developers is research. The tendency in their (German) academic experience is working on one hypothesis in detail with a strong emphasis on one-person excellence. This develops perseverance and dedication, but also narrow-mindedness. This leads to *reducing* options for solving the challenge of autonomous driving. Some of the options are ML or a combination of explicit code and ML.
+大多数开发人员的起始是从科研。他们（德国）的学术经验倾向于基于某个假设进行，并注重个人的卓越。这培养了毅力和奉献精神，但也培养了心胸狭窄。这导致解决自动驾驶挑战的选项减少。有些选项是机器学习或者规则编码与机器学习的组合。
 
 Why did the management not question the current approach more rigorously, especially since the global leaders were increasingly publicly emphasizing that a key lesson learned was to focus on end-to-end ML? Firstly, most managers were blinded or biased by their own (German) academic career.
+为什么管理层没有更严格地质疑当前的方法，尤其是因为全球行业领导者越来越公开强调，他们学到的一个关键教训是关注端到端的机器学习？首先，大多数管理者都被自己（德国）的学术生涯蒙蔽了双眼或带有偏见。
 
 Secondly, they had unwarranted trust in their researchers. Only a few managers have experience with large, complex and adaptive software development, only a few have the necessary background and skills to acquire this experience, and most *are reluctant to actually visit the place of actual work and look into the code and grasp what is really going on in the details of the software* (see [Missing Understanding of and Motivation for Go See](#missing-understanding-of-and-motivation-for-go-see)). This combination leads to the belief that the employees, especially those with *academic* degrees, are experts in actually creating large and complex software, and skillful design for AD. Due to the lack and reluctance to question their “experts”, they just went along. There was no serious questioning of the status quo, the “experts”, or investigation of what external experienced experts were doing.
+其次，他们对他们的科研人员有过度的信任。只有少数管理人员具有大型、复杂和自适应软件开发的经验，也只有少数人具备学习这种经验的必要背景和技能，大多数*不愿意实际访问实际工作地点，查看代码并了解软件细节中的真实情况*（参见[对Go-see的理解和动机缺失]（#对Go-see的了解和动机缺失））。这导致了相信员工特别是那些拥有*学位的员工，是在实际创建大型复杂软件和自动驾驶设计方面的专家。由于缺乏和不愿质疑他们的“专家”，他们只是随之而去。对现状、“专家”或外部有经验的专家所做的研究没有提出质疑。
 
 Thirdly, some managers did have suspicions if the chosen path was the correct one, but didn’t manage to challenge the internal authorities, or their manager-peers, to seriously explore alternatives. The reasons for not following up their suspicions are manyfold, cannot be discussed here in full, and would therefore mostly be speculation, but it is a common pattern in business that managers do not raise alarms that challenge the status quo, to avoid disputes or harming their future career prospects.
+第三，一些管理者确实怀疑过所选择的路径是否正确，但没有设法挑战内部权威或他们的同级管理者、认真探索替代方案。导致他们没有对怀疑采取后续行动的原因是多方面的，不能在此进行全面讨论，因此主要是猜测。但管理者不对现状拉响警报，以避免争议或损害他们未来的职业前景，是商业上的一种常见模式。
 
 Fourthly, consider if the managers would have decided to actually favor another approach, based on ML. Which employees would have been able to carry out the implementation of the product, and what would have been the impact on the timeline? None had the skills and experience, and “it would take too long.” One of the early technical coaches, Craig Larman, on recognizing the lack of talent, had early-on recommended to the senior management a risk-mitigation strategy to start a second parallel initiative staffed with the very best global experts that money could buy, including ML experts, but this was rejected.
+第四，想想管理者是否曾经想过采用机器学习的方式。哪些员工能够执行产品的实施，以及对时间线有什么影响？没有人有这样的技能和经验，而且”要花的时间太久了“。早期的技术教练之一克雷格·拉曼（Craig Larman）认识到人才的缺乏，很早就向高级管理层建议了一项风险缓解战略，启动第二个平行计划，由花钱可以雇佣到的最优秀的全球专家组成，包括机器学习专家，但遭到拒绝。
 
 Given that many of the developers had been researchers from an academic environment honoring the hero-paradigm, with overwhelmingly explicitly-coded solutions in their theses, turning down alternatives is easier than committing effort to explore the dramatically different approach of an ML-based architecture.
+考虑到许多开发人员都是来自一个崇尚英雄主义的学术环境的科研人员，他们的论文中绝大多数都是基于规则编码的解决方案，拒绝替代方案比花精力探索机器学习架构的截然不同方法更容易。
 
 Why was turning down alternatives easy for developers? Researchers are recognized by their expertise. Building sufficient expertise to question a familiar path takes time, opportunities, and dedication... items not easily found in a competitive peer-to-peer environment in a company, especially with command-and-control structure, and personalized bonus systems which don't honor exploring alternatives. Permitting an alternative outside view is almost equal to confessing of not being an “expert”—something most academics avoid.
+为什么拒绝替代方案对开发人员来说很容易？科研人员因为专业知识而得到认可。建立足够的专业知识来质疑一个常见的方法需要时间、机会和奉献精神……这些在公司里的竞争环境中很难找到，尤其是在命令与控制的组织结构中以及不崇尚探索替代方案的个人奖金系统中。允许一个另类的外部观点几乎等同于承认自己不是“专家”——这是大多数学者所避免的。
 
 Why did ADD only consider their “experts” (researchers) opinions and not the opinions of modern-skilled software developers? Well-established and successful companies with a strong track-record in traditional engineering solutions, consider their own as experts. Asking top-decile externals challenge their self-understanding.
+为什么ADD只考虑他们的“专家”（科研人员）意见，而不考虑经验丰富且技术栈更为现代的软件开发人员的意见？在传统工程领域成熟且成功的公司将自己视为专家。要求最顶尖的外部人员挑战自我认知。
 
 The typical thinking of managers: long-term employees provide solid arguments for long-term products as those have to stick to the decisions long-term. This thinking is misguided as the connection from decisions to employees’ stickiness is false. Employees normally have other strong reasons to stay, for example family, friends, local ties, and company fringe benefits. *Externals opt to stay*—if permitted by budget and managers and are therefore a better indicator of wise strategies than internals.
+管理者的典型思维是：待的时间长的员工为长期产品提供坚实的论据，因为他们必须坚持长远的决策。这种想法是错误的，因为决策与员工时间长短之间的联系是错误的。员工通常有其他强烈的理由留下来，例如家人、朋友、当地关系和公司附带福利*如果预算和管理人员允许，外部人员也会选择留下来，因此，外部人员比内部人员更能体现明智的战略。
 
 Why hadn’t ADD hired top-decile software developers? Top developers tend to favor (1) self-managed work (very limited manager interference), (2) working closely with other top developers, (3) working for purpose, (4) working for appreciation, as well as (5) be unwilling to work for traditional and software-unskilled managers.
+什么ADD没有雇佣最顶尖的软件开发人员？顶级开发人员倾向于（1）自我管理的工作（管理人员的干预非常有限），（2）与其他优秀开发人员密切合作，（3）有目的地工作，（4）为了被认可而工作，以及（5）不愿意为传统和软件技能不强的管理人员工作。
 
 Putting a light on the hiring process with regard to software *design* approaches reveals an unintended effect. BMW Group has well established processes for staffing and hiring. By *BMW Group’s C-level management decision* to operate their AD development as a department with close ties, ADD inherited those hiring processes.
+将软件*设计*方法与招聘过程进行类比会有一种意想不到的效果。宝马集团拥有完善的人员配置和招聘流程。通过*宝马集团的董事管理决策*将自动驾驶开发作为紧密相连的部门运营，ADD继承了这些招聘流程。
 
 Essential components in the hiring process include interviews by potential future colleagues, and a programming exercise. The selection of the interview partners and the programming exercise plays an important role in how diversity in software engineering and software design approaches is fostered or crippled. Imagine, a candidate is interviewed by a BMW staff member with a strong traditional, non-OOD and non-ML mindset. Any candidate with strong OOD or ML skills has *contradictory* design advice. Also, if the programming exercise is drafted to test basic programming skills and no challenges in large-scale design or applying OOD or ML, the candidate gets the impression that ADD poses no adequate challenge and is no place to prosper.
+招聘过程中的基本组成部分包括与将来可能共事的同事进行面试和编程。面试官和编程题目的选择在如何增强或削弱软件工程和软件设计方法的多样性方面起着重要作用。想象一下，一名候选人被一名具有资深传统、非OOD和非机器学习思维的宝马员工面试。任何具经验丰富的OOD或机器学习的候选人都有矛盾的设计建议。此外，如果编程题目是为了测试基本编程技能，并且在大规模设计或应用OOD或机器学习中没有挑战，那么候选人会得到这样的印象：ADD没有足够的挑战，也不是一个能在里面成长的地方。
 
 Now, ADD does have a few researchers with some academic focus on ML and supporting infrastructure. They are also assembled in an ML Community. But to make a difference they need to have substantial proof (driven from data). Generating strong “proof” requires a massive amount of time and capacity—yet neither is provided by skeptical managers.
+现在，ADD确实有一些科研人员在机器学习和相关基础设施方面有一些学术关注。他们也在机器学习社区中。但要想有所作为，他们需要有充分的证据（来自数据）。产生强有力的“证据”需要大量的时间和精力，但怀疑的管理者无法提供时间和精力。
 
 Finally, the whole discussion on explicit vs. ML algorithm is overshadowed in Germany by the unclear legal situation. It is not clear if ML is allowed to make decisions for driving a vehicle. In the current situation, the BMW Group manager’s approach is to conform to traditional approaches in fear of unclear legal repercussions.
+最后，在德国，关于基于规则编码vs机器学习算法的整个讨论被尚未明确的法规所掩盖。不清楚是否允许机器学习做出驾驶车辆的决定。在目前的情况下，宝马集团经理的方法是遵循传统方法，以免产生法律不明确带来的后果。
 
-### Modular Software and Integration—Deliberate vs. Coincidental Design
+### Modular Software and Integration—Deliberate vs. Coincidental Design 模块化软件和集成VS巧合设计
 The many separate code bases before [One Product, One Repository, One Branch](#one-product-one-repository-one-branch) complicated the creation of collaborative components and delayed integration. The resulting integration nightmare was worked around with many tweaks, fixes, and temporary actions. Most of these “fixes” were abandoned as soon as the integration phase was completed—most developers ignored those “fixes” as they didn’t contribute to their component’s core capability.
+在[一个产品、一个仓库、一个分支]（#一个产品、一个仓库和一个分支）之前的许多独立代码库使创建按组件协作复杂化，并延迟了集成。由此产生的集成噩梦通过许多修改、修复和临时操作得以解决。大多数这些“修复”在集成阶段一完成就被放弃了。大多数开发人员忽视了这些“修复”，因为它们对组件的核心能力并没有什么贡献。
 
 One of the root causes for the integration challenges were divergent concepts, ideas, and software design, which in turn were a result of the system in place before the adoption started. None of these were tackled during the rushed merge of repositories (see [A Rushed Merging of Repositories](#a-rushed-merging-of-repositories)).
+集成挑战的根本原因之一是不同的概念、想法和软件设计，而这又是在转型之前的体系所造成的。在仓促合并仓库的过程中，这些问题都没有得到解决（请参见[仓促合并的仓库]（#仓促合并的仓库））。
 
 Why didn’t the *managers* address the design issues? Their primary focus has been getting all developers into direct disciplinary (and functional) control again, which implied a focus on connecting disconnected and disparate code, not on harmonizing design and concepts. Also, those managers had overconfident beliefs on easily solving these hard issues, due to limited modern large-scale software development experience.
+为什么“管理者”没有解决设计问题？他们的主要关注点是让所有开发人员再次进入有纪律的控制，这意味着关注将断开和不同的代码连接起来，而不是和谐一致的设计和概念。此外，由于现代大型软件开发经验有限，这些管理者对解决这些难题有些过度自信。
 
 Why didn’t the *developers* address the design issues? The guiding principle for most developers at ADD is their component, since as discussed they mostly organized as component teams and had no experience working together to create a cohesive large-scale product.
+为什么开发人员没有解决设计问题？ADD的大多数开发人员的指导原则是他们的组件，因为正如所讨论的，他们大多按组件团队而组建，没有合作创建有紧密结合大规模产品的经验。
 
-### Not Asking the Right Questions
+### Not Asking the Right Questions 没有提出正确的问题
 BMW Groups used to outsource most of its software development. ADD is the first modern and really large-scale adaptive development at BMW. Therefore, *ADD’s experience and ability asking guiding questions which lead to a good long-term software design is limited*.
+宝马集团过去将其大部分软件开发外包。ADD是宝马公司第一个现代化且真正大规模的开发。因此，*问出方向性的问题会建立良好的长期软件设计，而ADD在这方面的经验和能力是有限的*。
 
 Why is asking good guiding questions required for designing a good software product? Questions provoke and frame current and future use of the product, current and future flexibility, current and future challenges. Unskilled questions diverge time and effort. Separating good from unskilled or not helpful questions is typically only mastered with experience, domain-insight, diversity, sufficient foresight, and grasp of the market.
+为什么设计好的软件产品需要提出好的方向性问题？这些问题引发并界定了产品的当前和未来使用、当前和未来的灵活性、当前和将来的挑战。没技巧的问题分散了时间和精力。通常，只有通过经验、领域洞察力、多样性、足够的预见性和对市场的把握，才能将好的问题与没技巧或没有帮助的问题区分开来。
 
 Which systems dynamic led ADD to not asking good guiding questions? The strong emphasis of *outsourcing software-related work* contributed to this inability. BMW Group tries to understand the problem space, dissect the problems into subproblems, and hand those to vendors. The issues here are: (1) by slicing the problem space into smaller chunks the risk of losing track of the original problem is huge (especially when a skillful overall solution is not actually known for autonomous driving), (2) opportunities from “lower” domains to solve the original problem won’t be incorporated into the original problem, (3) the separation leads to suboptimal solutions, and (4) the separation leads to narrow-minded thinking.
+哪些系统动态会导致ADD提不出好的方向性问题？对将软件相关工作外包的依赖强调造成了这种无能为力。宝马集团试图分析问题领域，将问题分解为子问题，并将其交给供应商。这带来的影响是：（1）通过将问题空间分割成更小的块，失去对原始问题跟踪的风险是巨大的（特别是当自动驾驶的成熟整体解决方案实际上还没有找到），（2）在“较低”领域可能解决原始问题的方法不会被纳入解决原始问题中，（3）拆分导致次优解决方案，（4）拆分导致狭隘思维模式。
 
 ## Green Build
 A “green build” is a combination of (1) completed integration, (2) completed automated code quality checks without any faults, and (3) all completion of all prescribed tests (unittest, integration tests, integrated tests, (sub)system tests) without detecting any faults. The “green build” indicator is therefore an expression of the organization’s ability to produce a product continuously and therefore its capability of generating strong and salient feedback for learning and adapting, and... potential revenue.
