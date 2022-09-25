@@ -1,20 +1,28 @@
-# Incremental LeSS Adoption at SolarWinds
+# Incremental LeSS Adoption at SolarWinds 在Solarwinds的增量LeSS实践
 
 **Disclaimer:** This text describes the situation in one of the SolarWinds product groups until 2017, i.e. roughly three years before the event known as the [Sunburst supply chain attack](https://www.cynet.com/attack-techniques-hands-on/sunburst-backdoor-c2-communication-protocol/) that happened in late 2020. Any statements in the text are unrelated to the attack.
+免责证明：本文描述了一个SolarWinds产品组织在2017年之前的情况，大约3年前，在2020年末发生了被称为“Sunburst供应链攻击”的事件。文中的任何描述都与攻击无关。
 
-## Background
+## Background 背景
 
 SolarWinds is a leading provider of IT management software, its products are used by tens of thousands of IT professionals around the world and allow them to have a better overview of their networks, applications, databases and other elements of the company IT infrastructure. One of its first products, Network Performance Monitor has been in development since 2001.
+SolarWinds是领先的IT管理软件供应商，其产品被全球数万IT专业人士使用，使他们能够更好地了解他们的网络、应用程序、数据库和公司IT基础设施的其他元素。作为该公司的首批产品之一，网络性能监视器从2001年开始开发。
 
 Soon after, the second product with a similar focus followed. Both products together created a family of products called the Orion family.  The company realized that both products have many things in common and created a common platform - Core - the subject of this case study. Core has been developed by a group of 5-6 teams.
+不久之后，第二款产品也出现了类似的关注而被跟进。这两款产品共同创造了一个产品家族，被称为“Orion家族（Orion family）”。该公司意识到这两款产品有许多共同点，并创建了一个共同的平台-Core-本案例研究的主题。Core由5-6个团队开发。
 
 The company was successful and over time added the third, fourth, and even tenth product.
+公司已经取得了成功，并且随着时间的推移，增加了第三、第四甚至第十种产品。
 
 This caused the platform to expand the number of use cases to cover. In addition to serving more modules from a technical point of view, the Core teams (which are component teams) needed to coordinate work with more and more module groups (consisting of other component teams). As always with component teams, that led to a complicated planning and estimating process that took months, and of course was significantly invalidated after the planning, due to the realities of change and imperfect insight. The company hired many managers and fake “Product Owners” (actually, project managers and business analysts) to deal with the coordination problems, and with each additional manager prioritization was even more fuzzy because each had their own agenda and priority list. These management “quick fixes”  always “fixed” the situation only temporarily because their long-term effect was increasing the organizational complexity.
+这导致该平台扩展了用户用例的数量用于覆盖（更多的产品）。除了从技术角度为更多模块提供服务外，Core团队（即组件团队）还需要与越来越多的模块组织（包括其他组件团队）协调工作。与其他组件团队一样，这导致了复杂的计划和评估过程，需要耗时数月，当然，由于变更的实际情况和有缺陷的理解，在计划之后（评估）很明显的无效。该公司已经雇佣了许多经理和假的“产品负责人”（实际上，是项目经理和业务分析师）来处理协调的问题，每增加一个经理，优先级就会更加模糊，因为每个人都有自己的议程和优先级列表。这种管理“快速解决”，每次仅仅只是暂时“解决”只能这种情况，因为它们（增加项目经理和业务分析师这些角色）的长期影响，是增加了组织的复杂性。
 
 The management was frustrated. There were so many capabilities they wanted to add to Core (new UI look and feel, support for high availability, make customer upgrade experience seamless). But the Core group was so occupied by the module requests and maintaining the current features that it had no capacity to add new capabilities to the product. Management came with the following approach: separate greenfield initiatives each focused on developing a new capability for all modules (e.g. a new UI framework, a new installer) - another instance of a quick fix. Predictably, that further increased the integration complexity and time to deliver the whole product build to customers.
+管理层感到很沮丧，他们曾经希望向Core中增加许多功能（新的UI样式和感觉，支持高可用性，使客户的升级体验无缝）。但是Core组被模块的请求和维护当前特性占用了太多时间，从而没有能力向产品中添加新的功能。管理层采用了如下方法：独立的绿地新方案（separate greenfield initiatives），每个（方案）都专注于为所有模块增加新的功能（例如：一个新的UI框架，一个新的安装程序）--作为另一快速解决的实例。可以预测的是，这进一步增加了集成的复杂性，以及向客户交付完整产品构建的时间。
 
 These quick fixes failed because they didn’t address the root cause - the _existence_ of the Core teams (component teams), since the number of component teams increases planning complexity, dependencies, delay of delivering end-to-end customer features, and the need for coordination. The need for coordination is often handled by adding more coordinators (a management _quick fix_) which further decreases the ability of the teams to understand the whole product and creates a pressure for more strict component boundaries which again increases planning complexity. Of course,the whole vicious cycle can be eliminated or avoided if component teams are removed, or not introduced in the first place. [Figure 1](#figure1) illustrates the dynamics in a system model.
+这些“快速解决”的失败，是因为他们（管理层）没有设法解决根本原因-Core团队（组件团队）
+的存在，由于组件团队的数量，增加了计划的复杂性，依赖性，交付端到端的客户功能的延迟，以及协调的需求。协调需求通常会通过增加更多的协调人（一种“快速解决”的管理手段）来解决，这进一步降低了团队理解整体产品的能力，同时对更严格的组件边界创造了压力，这进一步增加了计划的复杂性。当然，如果所有的组件团队被移除，或者不在一开始就尝试，整个恶性循环就可以被消除或者避免。图1说明了系统模型中的相互作用和影响方式
 
 <a name="figure1"></a>
 <figure>
@@ -23,27 +31,38 @@ These quick fixes failed because they didn’t address the root cause - the _exi
 </figure>
 
 However, Core _was_ introduced as a dedicated component group. Then, predictably, the following dynamic started (referring to [11 laws of systems thinking](https://en.wikipedia.org/wiki/The_Fifth_Discipline) here). Adding a new coordinator was a “quick fix” that temporarily reduced coordination complexity. However as a result, organizational complexity grew, so after a while the need for coordination was even higher than before. (Law 3: Behavior grows better before it grows worse.) The delay between these two events made it more difficult to see. (Law 7: Cause and effect are not closely related in time and space.)
+然而，Core是作为一个专用的组件组织被引入的，之后可以预测的是，以下的相互作用开始了（这里可以参考系统思考的11个定律）。增加一个新的协调员，是一个“快速解决方案”，暂时降低了协调的复杂性。然而结果是，组织的复杂性增长了，因此一段时间之后，协调的需求甚至比以前更高（定律3：福兮祸之所伏）。这两个结果之间的延迟使它更难被察觉到（定律7：在时间和空间上，因果并不密切相关）。
 
 Having more coordinators (and thus higher organizational complexity) was a result of a long-term adhoc response to problems. It has its roots in the past, when the first coordinator was added, and then the next and then next and next. (Law 1: Today’s problems come from yesterday’s solutions). Each of these steps was seemingly innocent and harmless and seemed to make sense at the time - add one more coordinator. (Law 4: The easy way out usually leads back in.) With each additional coordinator, teams and senior management became more addicted to the results of the coordinators work (usually some intermediate artifacts such as a project plan, status report, acceptance criteria written down for each “story”). Soon nobody could imagine organizing work without them. (Law 5: The cure can be worse than a disease.)
+拥有更多的协调员（因此组织的复杂性更高）是对问题的长期临时响应的结果。它的根源在过去，当第一个协调员被添加的时候，然后会有下一个，然后会有一个接一个（定律1：今天的问题源于昨天的解决方案）。这些步骤中的每一步看似都是无罪的和无害的，而且在当时看起来也是有道理的-再增加一个协调员（定律4：最简单的出路通常会导致返回）。每增加一名协调员，团队和高级管理层都会变得更加依赖于协调员工作的成果（通常是一些中间的工件，例如项目计划，状态报告，每个“故事”的验收标准）。很快的，没有人能够想象没有他们的话如何组织工作（定律5：治疗可能比疾病更糟糕）。
 
-
-## Scope of the Adoption
+## Scope of the Adoption 实践范围
 
 The root cause of the coordination problems and more coordinators was the very existence of component teams, and so the solution is their elimination. But it wasn’t possible to make this structural change because of the false (and false dichotomy) management belief that work organized to (large) component teams is the _only_ way of developing large products..
+协调问题和更多协调人的根本原因是典型的组件团队们的存在，因此解决方案就是要消除他们。但是由于错误的（以及错误的对立），管理层相信组织一个（大型的）组件团队工作是开发大型产品的唯一方法。
 
 Given the constraint that we couldn’t eliminate the Core group, to at least achieve some minor improvement in increasing adaptiveness and more likely working on valuable items, we decided to change the following organizational design elements for some minor incremental improvements
+考虑到我们（组织）不能消除Core组的这个限制，为了至少在提高适应性和更多的可能为有价值的事项工作上，实现一些小范围的改进，我们决定变革以下组织设计要素，以进行一些小范围的增量改进：
 
 * Define the “Product” as broad as possible
 * Reduce the number of explicit and implicit backlogs in the organization
 * Reduce number of coordinators
 
+* 定义尽可能广泛的“产品”
+* 减少组织中明确的和不明确的待办事项列表
+* 减少协调员数量
+
 This case study shows how we used these elements to make the first incremental step towards the system optimizing goal of _increased adaptiveness_ to more easily learn and pivot to working on newly-discovered more-valuable items.
+本案例的研究展示了我们如何使用这些要素，向提高适应性的系统优化目标迈出第一步，以便于容易的学习，转向为新发现的更有价值的事项工作。
 
 Because we didn’t eliminate the first-order influencing factor - the existence of component teams - it led to a slow and painful partial LeSS adoption and the improvement towards the system optimizing goal was limited.
+由于我们（组织）并没有消除一级的影响因素-组件团队们的存在-这导致了缓慢的和痛苦的部分LeSS实践，以及对系统优化目标的改进有限。
 
 For example, the decision to use Core as an initial “Product” didn’t allow us to prepare a potentially-shippable Product more often, which delayed feedback from customers.
+例如，使用Core作为初始“产品”的决定，不允许我们（组织）更频繁的准备好一个潜在的可交付的产品，这延迟了来着客户的反馈。
 
 The perceived progress made in the first step is shown in [Figure 2](#figure2).
+通过第一步取得的可视化进展在图2中展示：
 
 <a name="figure2"></a>
 <figure>
@@ -52,6 +71,7 @@ The perceived progress made in the first step is shown in [Figure 2](#figure2).
 </figure>
 
 The partial adoption continued later with further steps that are out of scope of this case study. These steps included further broadening of the product definition and reducing the number of backlogs. See [Figure 3](#figure3).
+之后，本案例在研究范围之外继续采用了进一步的部分实践。这些步骤包括进一步扩展产品定义和减低待办事项列表的数量。参见图3。
 
 <a name="figure3"></a>
 <figure>
@@ -61,12 +81,15 @@ The partial adoption continued later with further steps that are out of scope of
 
 
 But first things first. Let’s describe how the product development group had been organized before the adoption.
+但是首先第一件事，让我们描述产品开发小组在实践之前是如何组织的。
 
-### Initial state
+### Initial state 初始状态
 
 Architectural Background: The Orion family consisted of multiple “modules” (i.e. components), e.g. NPM (Network Performance Monitor), SAM (Server & Application Monitor) and VMAN (Virtualization Manager). Each module focuses on monitoring a different aspect of the customer company infrastructure. For example, NPM monitors traffic on key network interfaces, VMAN monitors e.g. virtual machines, disks. A module can be downloaded and installed separately but all modules can also be installed together on the same server (as a product _suite_).
+架构背景：Orion家族（Orion family）由多个“模块”（即组件）组成，例如NPM（网络性能监视器Network Performance Monitor），SAM（服务器和应用程序监视器Server & Application Monitor），还有VMAN（虚拟管理器Server & Application Monitor）。每个模块关注于监控客户公司基础设施的不同方面。例如，NPM监控关键网络接口上的流量，VMAN监控例如。虚拟机、磁盘。一个模块可以独立被下载和安装，但是所有模块也可以一起安装在同一台服务器上（作为一个产品套件）。
 
 Before the LeSS adoption the development organization was structured in the typical local optimization of _component teams_, in the following way (see [Figure 4](#figure4)):
+在LeSS实践之前，开发组织是在组件团队的典型部分优化中被构建的，如下所示（见图4）：
 
 * **Module teams** - each module group (e.g. NPM, SAM, VMAN) typically had its own development group consisting of one to three teams
 * **Core group** - responsible for maintaining the majority of the shared components (e.g. user management, DB access layer) and some user-centric features (e.g. node and volume monitoring) consisting of 5 (later 6) teams.
@@ -74,71 +97,99 @@ Before the LeSS adoption the development organization was structured in the typi
 * **Initiative teams** - as the need for _shared_ services or components was growing and the Core team was unable to deal with the need to deliver new features, separate greenfield initiatives were set up by management. Like the Core group, each focused on developing a new capability for _all_ modules (e.g. a new UI framework, a new installer)
 * **Other groups** - some roles like architects or UI designers were not members of the engineering teams but created separate functional groups.
 
+* 模块团队-每个模块组（如NPM、SAM、VMAN）通常有自己的开发组，由1到3个团队组成
+* Core组-负责维护大多数的共享组件（如用户管理、数据库访问层）和一些以用户为中心的功能（如节点和卷监控），由5个（后来6个）团队组成。
+    * 本案例研究的范围是该组的部分LeSS实践。
+* 新方案团队-由于对共享服务或组件的需求不断增长，Core团队无法满足处理新功能的需求，管理层制定了单独的绿地新计划。与Core组一样，每个小组都专注于为所有模块开发新功能（例如，新的UI框架，新的安装程序）
+* 其他组-有些角色例如架构师或UI设计师不是工程团队的成员，但是创建了独立的职能组。
+
 <a name="figure4"></a>
 <figure>
 <img src="/img/case-studies/solarwinds/component-team-organization.png" alt="Initial Component Organization">
   <figcaption>Figure 4: Orion product group organizational structure before LeSS adoption. For module groups, the number of teams is indicated by the number of team icons.</figcaption>
 </figure>
 
-## Approach to adoption
+## Approach to adoption 实践方法
 
-### Initial Product Definition
+### Initial Product Definition 初始产品定义
 
 To maximize adaptiveness it would be ideal to use a product definition that is as broad and end/user/customer-centric as practical (Book 3). “Define Your Product Guide” from Book 3 recommends defining the Product using expanding and restraining questions. Let’s revisit how they had been applied in our case.
+为了最大限度地提高适应性，最理想的是使用尽可能广泛的和实际以终端/用户/客户为中心的产品定义（第3册）。第3册中的“定义你的产品指南”建议使用扩展的和控制的问题去定义产品。让我们重新回顾一下它们在我们的案例中是如何应用的。
 
-
-#### Expanding questions
+#### Expanding questions 扩展性的问题
 
 **What would the end customers answer if we ask them, “What is our Product?”.**
+**如果我们问他们 “我们的产品是什么？” ，终端客户会回答什么。**
 
 The answer to this question would probably be “SolarWinds”. Taking into account that Orion customers probably don’t know the complete SolarWinds portfolio and think SolarWinds=Orion we can safely modify this answer to “SolarWinds Orion Suite”
+这个问题的答案可能是“SolarWinds”。考虑到Orion客户可能不知道完整的SolarWinds产品组合，并且认为SolarWinds=Orion，我们可以安全地将此答案修改为“SolarWinds Orion套件”。
 
 **Do we have components that are shared or functionality that is the same across our current Products?**
+**我们是否有共享的或者跨越当前所有产品中相同的功能的组件？**
 
 Yes, actually the majority of the code for Orion family was shared. It also shared the same UI patterns like dashboards, charts, menus, etc.
+是的，实际上Orion家族的大部分代码都是共享的。它还共享相同的UI模式，如仪表盘、图表、菜单等等。
 
 **Our Product is part of? What problem does the Product solve for end-customers?**
+**我们的产品属于哪一个部分？这个产品为终端客户解决了什么问题？**
 
 The users (who are almost equal to customers according to the SolarWinds business model) need to monitor their company infrastructure and be informed about any important events happening there.
+用户（根据SolarWinds业务模型，他们几乎等同于客户）需要监控他们的公司基础设施，并了解那里发生的任何重要事件。
 
-
-#### Restraining questions
+#### Restraining questions 限制性问题
 
 **What is the Product vision? Who are the customers? What is the Product’s customer domain?**
+**产品愿景是什么？客户是谁？产品的客户领域是什么？**
 
 Different Orion modules serve different customers - e.g. network engineers vs system engineers. However, there are commonalities between the Products and the company actively tries to cross-sell multiple modules to customers who had already bought one module. So the answer to this question would advise us not to restrain the product definition.
+不同的Orion模块服务于不同的客户-例如网络工程师和系统工程师。然而，这些产品之间存在共性，公司积极尝试向已经购买了一个模块的客户交叉销售多个模块。因此，这个问题的答案会建议我们不要去限制产品定义。
 
 **What development is within our company? How much structural change is practical?**
+**在我们公司内部的发展是什么？有多少结构性的变革是可行的？**
 
 The last question was the most difficult. The guide includes considering department boundaries as a possible way to restrain initial product definition, especially if there are dysfunctional management-political forces that make it difficult to go broader. Further guides then recommend expanding product definition later. That makes the initial change politically easier as the amount of structural change for LeSS adoption is minimized.
+最后一个问题是最难的。该指南包括考虑部门边界作为限制初始产品定义的可能方式，特别是如果存在障碍的政策管理力量，会使其（变革）难以扩展。之后，进一步的指南建议扩展产品定义。这使得最初的变革在政策上更容易，因为LeSS实践的架构变革的数量被最小化。
 
 On the other hand, there is a risk that the departments represent component teams and therefore an initially defined “Product” will cover only a set of components and not be a true end-to-end customer-focused Product. Also, without a structural change it is easy to miss how deep (front-to-back) LeSS adoptions are supposed to be, as the other supporting roles or intermediate artifacts will most likely remain intact, because they need to serve the departments not participating in the LeSS adoption and will likely interfere with the adopting group. Therefore, while the initial adoption may be easier, the forces in the rest of the organization may be strong enough to revert the initial change later.
+另一方面，这里存在这样一种风险，即部门代表组件团队，因此最初定义的“产品”将仅覆盖一组组件，而不是真正的以客户为中心的端到端产品。同时，没有架构变革的话，很容易忽略LeSS实践的能达到什么预期的深度（前端到后端），作为其他支持角色或者中间的工件将可能保持不变，因为它们需要服务于不参与LeSS实践的部门，并且可能妨碍实践组。因此，虽然最初的实践可能更容易，但是组织剩余部分的力量可能足够强大，可以在之后恢复最初的变革。
 
 Another weakness of starting with a partial product definition that is only a set of components (rather than a true front-to-back definition) relates to manager status quo political games: The managers of the existing component teams will want to keep the existing structures so that their positions are not threatened. By allowing a “Product” definition to start with just a set of components opens the door to distorting the change intention so that components can be incorrectly called a “Product” and then component managers can be (fake) “Product Owners.” This has been observed many times in the myriad fake “scaling agile” adoptions around the world.
+从部分产品定义开始的另一个缺点是，它只是一组组件（而不是真正的前端到后端的定义），与管理者目前的政治博弈有关：现有组件团队的管理者希望保留现有的架构，以使其职位不受威胁。通过允许“产品”定义仅从一组组件开始，打开了扭曲变革意图的大门，从而组件可以被错误地称为“产品”，然后组件管理者可以成为（假的）“产品负责人”。这已经在世界各地许多虚假的“规模化敏捷”采用中被多次观察到。
 
 An alternative way of thinking would be to ignore this question and keep the initial product definition unrestrained. That would typically mean that we are in a LeSS Huge situation, which makes the adoption more complex - we would need to include multiple groups into the initial discussions, adoption would take more time (with one Requirement Area at a time) and would therefore be more vulnerable by company politics.
+另一种可以选择的思维方式是忽略这个问题，同时保持初始的产品定义是不受限制的。这通常意味着我们处于一个LeSS巨型（LeSS Huge）的环境，这使得实践更加复杂-我们需要将多个组纳入到初始的讨论，实践也会花费更多时间（一次只需要一个需求领域Requirement Area），因此会被公司政治影响变得更受伤害。
 
 
-#### Choosing the Product
+#### Choosing the Product 选择产品
 
 As you can see, it is not an easy choice. In our case, if we take the output of the _expanding_ questions (SolarWinds Orion Suite) as input to this step we end up with the Product consisting of hundreds of thousands of lines of code in C#, C++, Javascript, SQL, python, go, VB6. The total number of teams developing the Product is 30-40 even if we do not count additional roles currently not included in the teams (architects, UI designers). Even if we imagine removing all coordination roles and imagine reduction of required developers for a simplified Product, it will still mean that we need more (probably a way more) than recommended 8 teams for a smaller LeSS adoption. This means that we are in a LeSS Huge situation.
+正如你们所见，这不是一个容易的选择。在我们的案例中，如果我们将扩展问题（SolarWinds Orion套件）的输出，作为这一步骤的输入，我们最终得到的产品由数十万行C#、C++、Javascript、SQL、python、go、VB6代码组成。开发产品的团队总数为30-40个，即使我们不计算团队中当前未包含的额外角色（架构师、UI设计师）。即使我们设想移除所有的协调角色，并且设想减少简化的产品所需的开发人员，这仍然意味着我们需要比小的LeSS实践所推荐的8个团队更多（可能更多）。这意味着我们处于一个LeSS巨型（LeSS Huge）的环境。
 
 Out of the two options described above we had chosen the first one: restrain the initial product definition to one department - “Core” (a multi-component group highlighted in [Figure 4](#figure4)). Why? Doing structural change for multiple departments in multiple locations seemed … scary. We assumed that our initial “Product” will later become a Requirements Area for a larger Product, so we tried to keep other properties compatible with a typical Requirements Area definition, namely:
+在上述两个选项中，我们选择了第一个：将初始的产品定义限制为一个部门——“Core”（图4中高亮显示的一个多组件组）。为什么？在多个地点，为多个部门做组织架构变革似乎…是可怕的。我们假设我们最初的“产品”以后将成为更大的产品的一个需求区域（Requirements Area），因此我们尝试保持其他属性与一个典型的需求区域的定义相互兼容，即：
 
 * Appropriate size - five teams at the time of adoption, later expanded to six teams
 * Partial customer orientation - although “Core” served as a shared collection of components and services for other parts of the Orion suite, the Core teams had been able to deliver some customer-oriented features themselves (for example, monitoring and visualizing CPU utilization of a network element)
 
+* 适当的规模-实践的时候为五个团队，之后扩展为六个团队
+* 部分的客户导向-尽管“Core” 作为组件的共享集合，为Orion套件其他部分服务，Core团队他们自己已经能够自己交付一些面向客户的功能（例如，监控和可视化网络元素的CPU利用率）
+
 To reduce confusion, we will further use the term “partial Product”, “partial-Product Backlog”, etc. when referring to Core and the term “Product” only when referring to the Product after expanding questions (the Orion suite).
+为了减少混淆，当提到Core时，我们将进一步使用术语“部分产品”、“部分产品待办列表”等。同时仅在扩展问题之后提及产品时，才会使用术语“产品”（Orion套件）。
 
 We believed that this partial Product would serve as a role model for the other departments later - delivering customer-oriented features with a decreased need for coordination by managers. However, later we realized that it was not a good first choice. In particular the fact that Core was primarily a multi-component group and served internal stakeholders instead of customers led to typical problems:
-
-
+我们相信，这一部分的产品之后将作为其他部门的榜样-交付面向客户的功能，减少管理者的协调需求。然而，后来我们意识到这不是一个好的第一选择。特别地，Core主要是一个多组件的组，用于服务于内部相关方而不是客户，这一事实导致了有代表性的问题：
 
 * Partial-Product Backlog was full of technically-oriented component tasks instead of end-to-end customer features (see section [Product Backlog](#product-backlog))
 * Major coordination effort was still required to integrate Core work with module and initiative work to deliver customer-oriented features. A customer-oriented feature often needed implementation in both module and Core codebase. Due to the fact that both groups had different partial-Product Backlogs, this work had to be planned, tracked and checked at the end.
 * One month long test phase before each release was another example of coordination effort required between modules and Core.
 
+* 部分产品待办列表充斥着技术导向的组件任务，而不是端到端的客户功能（参见“产品待办列表”一节）
+* 仍然需要大量的协调努力，将Core的工作与模块和新方案工作整合起来，用于交付面向客户的功能。一个面向客户的功能，通常需要在模块和Core代码库两者中实现。由于两个组都有不同的部分产品待办列表，因此必须在最后对这项工作进行计划、跟踪和检查。
+* 每次发布前一个月的测试阶段，是模块和Core之间需要协调努力的另一个例子。
+
 For completeness, there was one more reason considered but dropped against choosing “Core” as the initial scope of the product definition, which we were aware of from the beginning: the fact that the Core teams had been located in two sites (Brno, Czech Republic and Lviv, Ukraine). We had at least a little concern that including two sites of teams in the first step of the change would be too risky. Moreover, the Lviv teams had been employees of a vendor, not SolarWinds itself. However, this disadvantage was perceived as relatively small. Nevertheless, we were careful to overcome communication boundaries that naturally arose and including the two sites didn’t turn out to be a major obstacle.
+为了完整性，还有一个原因被考虑，但是反对选择“Core”作为产品定义的初始范围，我们从一开始就意识到：事实是Core团队已经位于两个地点（捷克共和国布尔诺和乌克兰利沃夫）。我们至少有一点担心，在变革的第一步就包括两个办公地点的团队会太危险。此外，利沃夫团队是供应商的员工，而不是SolarWinds它本身（的员工）。然而，这一不利条件被认为相对较小。尽管如此，我们还是小心地克服了自然产生的沟通边界，包括这两个办公地点并不是一个主要的障碍。
 
 <a name="figure5"></a>
 <figure>
@@ -148,6 +199,7 @@ For completeness, there was one more reason considered but dropped against choos
 </figure>
 
 With Core as an initial Product (see [Figure 5](#figure5)) we can show progress of the partial adoption on a feature team adoption map on [Figure 6](#figure6).
+将Core作为一个初始的产品（参见图5），我们可以在图6的特性团队实践地图上显示部分实践的进度。
 
 <a name="figure6"></a>
 <figure>
