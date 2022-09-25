@@ -1,28 +1,27 @@
-# Incremental LeSS Adoption at SolarWinds 在Solarwinds的增量LeSS实践
+# Incremental LeSS Adoption at SolarWinds 在Solarwinds的增量LeSS导入
 
 **Disclaimer:** This text describes the situation in one of the SolarWinds product groups until 2017, i.e. roughly three years before the event known as the [Sunburst supply chain attack](https://www.cynet.com/attack-techniques-hands-on/sunburst-backdoor-c2-communication-protocol/) that happened in late 2020. Any statements in the text are unrelated to the attack.
-免责证明：本文描述了一个SolarWinds产品组织在2017年之前的情况，大约3年前，在2020年末发生了被称为“Sunburst供应链攻击”的事件。文中的任何描述都与攻击无关。
+免责证明：本文描述了其中一个SolarWinds产品组在2017年之前的情况，也就是在2020年末发生的被称为“Sunburst供应链攻击”事件大约3年之前。文中的任何描述都与攻击无关。
 
 ## Background 背景
 
 SolarWinds is a leading provider of IT management software, its products are used by tens of thousands of IT professionals around the world and allow them to have a better overview of their networks, applications, databases and other elements of the company IT infrastructure. One of its first products, Network Performance Monitor has been in development since 2001.
-SolarWinds是领先的IT管理软件供应商，其产品被全球数万IT专业人士使用，使他们能够更好地了解他们的网络、应用程序、数据库和公司IT基础设施的其他元素。作为该公司的首批产品之一，网络性能监视器从2001年开始开发。
+SolarWinds是领先的IT管理软件供应商，其产品被全球数万IT专业人士使用，使他们能够更好地了解他们的网络、应用程序、数据库和公司IT基础设施的其它元素。作为该公司的首批产品之一，网络性能监视器从2001年就在开发了。
 
 Soon after, the second product with a similar focus followed. Both products together created a family of products called the Orion family.  The company realized that both products have many things in common and created a common platform - Core - the subject of this case study. Core has been developed by a group of 5-6 teams.
-不久之后，第二款产品也出现了类似的关注而被跟进。这两款产品共同创造了一个产品家族，被称为“Orion家族（Orion family）”。该公司意识到这两款产品有许多共同点，并创建了一个共同的平台-Core-本案例研究的主题。Core由5-6个团队开发。
+不久之后，跟进了第二款有着类似焦点的产品。这两款产品共同形成了一个产品家族，被称为“Orion家族（Orion family）”。该公司意识到这两款产品有许多共同点，于是创建了一个公共平台Core - 本案例研究的主题。Core由5-6个团队开发。
 
 The company was successful and over time added the third, fourth, and even tenth product.
-公司已经取得了成功，并且随着时间的推移，增加了第三、第四甚至第十种产品。
+公司是成功的，并且随着时间的推移，增加了第三、第四甚至第十款产品。
 
 This caused the platform to expand the number of use cases to cover. In addition to serving more modules from a technical point of view, the Core teams (which are component teams) needed to coordinate work with more and more module groups (consisting of other component teams). As always with component teams, that led to a complicated planning and estimating process that took months, and of course was significantly invalidated after the planning, due to the realities of change and imperfect insight. The company hired many managers and fake “Product Owners” (actually, project managers and business analysts) to deal with the coordination problems, and with each additional manager prioritization was even more fuzzy because each had their own agenda and priority list. These management “quick fixes”  always “fixed” the situation only temporarily because their long-term effect was increasing the organizational complexity.
-这导致该平台扩展了用户用例的数量用于覆盖（更多的产品）。除了从技术角度为更多模块提供服务外，Core团队（即组件团队）还需要与越来越多的模块组织（包括其他组件团队）协调工作。与其他组件团队一样，这导致了复杂的计划和评估过程，需要耗时数月，当然，由于变更的实际情况和有缺陷的理解，在计划之后（评估）很明显的无效。该公司已经雇佣了许多经理和假的“产品负责人”（实际上，是项目经理和业务分析师）来处理协调的问题，每增加一个经理，优先级就会更加模糊，因为每个人都有自己的议程和优先级列表。这种管理“快速解决”，每次仅仅只是暂时“解决”只能这种情况，因为它们（增加项目经理和业务分析师这些角色）的长期影响，是增加了组织的复杂性。
+这导致该平台扩大了需要覆盖的用户用例的数量。除了从技术角度为更多模块提供服务外，Core团队（是组件团队）还需要与越来越多的模块组（由其他组件团队组成）协调工作。与组件团队一直都有的问题一致，这导致了需要耗时数月的复杂的计划和评估过程，当然，由于实际会有变更和理解偏差，在计划之后评估显然会变得无效。该公司雇佣了许多经理和假的“产品负责人”（实际上是项目经理和业务分析师）来处理协调的问题，每增加一个经理，优先级就会更加模糊，因为每个人都有自己的议程和优先级列表。这些管理上的“速效方案”总只是暂时“解决”了问题，因为它们的长期影响反而是增加了组织的复杂度。
 
 The management was frustrated. There were so many capabilities they wanted to add to Core (new UI look and feel, support for high availability, make customer upgrade experience seamless). But the Core group was so occupied by the module requests and maintaining the current features that it had no capacity to add new capabilities to the product. Management came with the following approach: separate greenfield initiatives each focused on developing a new capability for all modules (e.g. a new UI framework, a new installer) - another instance of a quick fix. Predictably, that further increased the integration complexity and time to deliver the whole product build to customers.
-管理层感到很沮丧，他们曾经希望向Core中增加许多功能（新的UI样式和感觉，支持高可用性，使客户的升级体验无缝）。但是Core组被模块的请求和维护当前特性占用了太多时间，从而没有能力向产品中添加新的功能。管理层采用了如下方法：独立的绿地新方案（separate greenfield initiatives），每个（方案）都专注于为所有模块增加新的功能（例如：一个新的UI框架，一个新的安装程序）--作为另一快速解决的实例。可以预测的是，这进一步增加了集成的复杂性，以及向客户交付完整产品构建的时间。
+管理层感到沮丧。他们曾经希望在Core中增加许多能力（新的UI样式和感觉，支持高可用性，无缝的客户升级体验）。但是Core组被模块的请求和维护当前特性占用了太多时间，从而没有产能向产品中添加新的功能。管理层采用了如下方法：独立的新建项目，每个项目专注于为所有模块增加一种新的能力（例如：一个新的UI框架，一个新的安装程序）- 又一个快速方案的例子。可以预测的是，这进一步增加了集成的复杂度，以及向客户交付完整产品构建的时间。
 
 These quick fixes failed because they didn’t address the root cause - the _existence_ of the Core teams (component teams), since the number of component teams increases planning complexity, dependencies, delay of delivering end-to-end customer features, and the need for coordination. The need for coordination is often handled by adding more coordinators (a management _quick fix_) which further decreases the ability of the teams to understand the whole product and creates a pressure for more strict component boundaries which again increases planning complexity. Of course,the whole vicious cycle can be eliminated or avoided if component teams are removed, or not introduced in the first place. [Figure 1](#figure1) illustrates the dynamics in a system model.
-这些“快速解决”的失败，是因为他们（管理层）没有设法解决根本原因-Core团队（组件团队）
-的存在，由于组件团队的数量，增加了计划的复杂性，依赖性，交付端到端的客户功能的延迟，以及协调的需求。协调需求通常会通过增加更多的协调人（一种“快速解决”的管理手段）来解决，这进一步降低了团队理解整体产品的能力，同时对更严格的组件边界创造了压力，这进一步增加了计划的复杂性。当然，如果所有的组件团队被移除，或者不在一开始就尝试，整个恶性循环就可以被消除或者避免。图1说明了系统模型中的相互作用和影响方式
+这些速效方案的失败，是因为它们没有设法解决根本原因 - Core团队（组件团队）的存在，因为组件团队的数量增加了计划的复杂度、依赖、交付端到端客户特性的延迟，以及协调的需求。协调需求通常会通过增加更多的协调人（一种管理速效方案）来解决，这进一步降低了团队理解整体产品的能力，同时产生压力以有更严格的组件边界，从而进一步增加了计划的复杂度。当然，如果移除所有的组件团队，或者一开始就没有引入，整个恶性循环就可以被消除或者避免。[图1](#figure1)以一个系统模型呈现了该动态。
 
 <a name="figure1"></a>
 <figure>
@@ -31,10 +30,10 @@ These quick fixes failed because they didn’t address the root cause - the _exi
 </figure>
 
 However, Core _was_ introduced as a dedicated component group. Then, predictably, the following dynamic started (referring to [11 laws of systems thinking](https://en.wikipedia.org/wiki/The_Fifth_Discipline) here). Adding a new coordinator was a “quick fix” that temporarily reduced coordination complexity. However as a result, organizational complexity grew, so after a while the need for coordination was even higher than before. (Law 3: Behavior grows better before it grows worse.) The delay between these two events made it more difficult to see. (Law 7: Cause and effect are not closely related in time and space.)
-然而，Core是作为一个专用的组件组织被引入的，之后可以预测的是，以下的相互作用开始了（这里可以参考系统思考的11个定律）。增加一个新的协调员，是一个“快速解决方案”，暂时降低了协调的复杂性。然而结果是，组织的复杂性增长了，因此一段时间之后，协调的需求甚至比以前更高（定律3：福兮祸之所伏）。这两个结果之间的延迟使它更难被察觉到（定律7：在时间和空间上，因果并不密切相关）。
+然而，Core是作为一个专用的组件组织被引入的，之后可以预测的是，以下的动态就开启了（参考[系统思考的11条法则](https://en.wikipedia.org/wiki/The_Fifth_Discipline)）。增加一个新的协调员，是一个“速效方案”，暂时降低了协调的复杂度。然而结果是，组织的复杂度增长了，因此一段时间之后，协调的需求甚至比以前更高（法则3：在情况变糟之前会先变好）。这两个事件之间的延迟又使它更难被察觉到（法则7：因和果在时空上并不紧密相连）。
 
 Having more coordinators (and thus higher organizational complexity) was a result of a long-term adhoc response to problems. It has its roots in the past, when the first coordinator was added, and then the next and then next and next. (Law 1: Today’s problems come from yesterday’s solutions). Each of these steps was seemingly innocent and harmless and seemed to make sense at the time - add one more coordinator. (Law 4: The easy way out usually leads back in.) With each additional coordinator, teams and senior management became more addicted to the results of the coordinators work (usually some intermediate artifacts such as a project plan, status report, acceptance criteria written down for each “story”). Soon nobody could imagine organizing work without them. (Law 5: The cure can be worse than a disease.)
-拥有更多的协调员（因此组织的复杂性更高）是对问题的长期临时响应的结果。它的根源在过去，当第一个协调员被添加的时候，然后会有下一个，然后会有一个接一个（定律1：今天的问题源于昨天的解决方案）。这些步骤中的每一步看似都是无罪的和无害的，而且在当时看起来也是有道理的-再增加一个协调员（定律4：最简单的出路通常会导致返回）。每增加一名协调员，团队和高级管理层都会变得更加依赖于协调员工作的成果（通常是一些中间的工件，例如项目计划，状态报告，每个“故事”的验收标准）。很快的，没有人能够想象没有他们的话如何组织工作（定律5：治疗可能比疾病更糟糕）。
+拥有更多的协调员（因此更高的组织复杂度）是对问题长期临时响应的结果。它的根源在过去，当第一个协调员被添加的时候，然后就有下一个，一个接一个（法则1：今天的问题来自于昨天的解）。这些步骤中的每一步看似都是无恶意和无害的，而且在当时看起来也有道理 - 再增加一个协调员（法则4：选择最容易的办法往往会无功而返）。每增加一名协调员，团队和高层管理都会变得更加依赖于协调员工作的成果（通常是一些中间的工件，例如项目计划、状态报告、为每个“故事”写下的验收标准）。很快地，没有人能够想象不靠他们组织工作（法则5：对策可能比问题更糟糕）。
 
 ## Scope of the Adoption 实践范围
 
