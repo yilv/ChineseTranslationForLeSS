@@ -1089,92 +1089,125 @@ ADP自动驾驶平台的一般架构方法是*基于规则编码*。特别是与
 
 哪些系统动态会导致ADD提不出好的方向性问题？非常强调*外包软件相关的工作*造成了这种能力的缺失。宝马集团试图分析问题领域，将问题分解为子问题，并将其交给供应商。这带来的影响是：（1）通过将问题空间分割成更小的块，失去对原始问题跟踪的风险是巨大的（特别是当自动驾驶的成熟整体解决方案实际上还没有找到），（2）丧失了从“更底层”领域来解决原始问题的机会，（3）拆分导致次优解决方案，（4）拆分导致狭隘思维模式。
 
-## Green Build
+## Green Build 绿色构建
 A “green build” is a combination of (1) completed integration, (2) completed automated code quality checks without any faults, and (3) all completion of all prescribed tests (unittest, integration tests, integrated tests, (sub)system tests) without detecting any faults. The “green build” indicator is therefore an expression of the organization’s ability to produce a product continuously and therefore its capability of generating strong and salient feedback for learning and adapting, and... potential revenue.
+“绿色构建”是（1）完成的集成，（2）完成的自动化代码质量检查，没有任何错误，以及（3）完成的所有规定的测试（单元测试、集成测试、集成试验、（子）系统测试），没有任何错误。因此，“绿色构建”指标是组织持续开发产品的能力、以及为学习和适应提供强大且重要反馈的能力，和潜在收入的表现。
 
-#### Build System Before the Change
+#### Build System Before the Change 转型前的构建系统
 Before the beginning of the adoption, the groups were organized for independent work ([Figure 24](#fig024)) which was reflected in their code bases as well as their build systems. They simply stitched build artefacts together which only occasionally worked due to integration issues.
+在开始转型之前，各个组是按独立的工作所组织起来（[图24]（#fig024）），这反映在他们的代码库和构建系统中。他们只是简单地将构建工件缝合在一起，由于集成问题，这些构建工件偶尔运行。
 
-**Key point**: Not every component-build or piecewise-build leads to agile end-to-end development discipline with short feedback.
+**Key point**: Not every component-build or piecewise-build leads to agile end-to-end development discipline with short feedback.  **关键点**：并不是按组件构建或分段构建就会导致敏捷端到端开发的反馈链路短。
 
 With the rushed merging of code repositories ([Merging Repositories](#a-rushed-merging-of-repositories)) the build system had to be subsequently changed. Revealing inconsistencies in build processes, tools, and infrastructure.
+随着代码库的仓促合并（[合并仓库]（#仓库仓促合并）），构建系统随之必须进行更改。这显示出构建过程、工具和基础设施的不一致性。
 
-### Evolving the Build System
+### Evolving the Build System 升级构建系统
 Another sign of the lack of skill was the difficulty of getting a new effective build system in place. It took several external experts and veterans of software-based product development to get across that “never change a running system”, which is deeply ingrained in some BMW Group’s managers, is one of the surest (if not fastest) way to *get stuck* also applies to build systems.
+缺乏技能的另一个迹象是难以建立新的有效构建系统。几位外部专家和软件开发的资深人士了解到，“不要对能运行的系统进行改动”在宝马集团的一些管理人员中根深蒂固，这是最明显（如果不是最快的话）的导致工作“卡住”的方法之一，构建系统也是如此。
 
-*The crucial part of a good build system: it provides fast feedback on the integration of the product*. Even if multi-stage build techniques are applied.
+*The crucial part of a good build system: it provides fast feedback on the integration of the product*. Even if multi-stage build techniques are applied. *一个好的构建系统的关键是：它能提供关于产品集成的快速反馈*。即使是用了多阶段构建。
 
 Why did the PO, APO, and management stick to the old insufficient build system? Partially due to the habit of management at BMW Group that views everything as a project. The tendency of thinking projects implies thinking in terms of: a start, an end, and nothing in between. This thinking discourages frequent feedback, and therefore encourages thinking of a fast integrated feedback as waste.
+为什么PO、APO和管理层坚持旧的非充分构建系统？部分原因是宝马集团的管理层习惯将一切都视为一个项目。按项目方式意味着从以下方面进行思考：开始、结束，中间没有任何东西。这种想法不鼓励频繁反馈，因此快速集成反馈的想法被视为浪费。
 
 Why hadn’t there been any movement from the developers to improve the build system? Here are several aspects at play: (1) The personal incentivization plan (IPA) didn’t favor such activities unless a manager had been convinced prior, (2) the work of the developers was optimized for working in isolation, (3) the developers had been tasked with details rather than a product, (4) they hadn’t been developers for the most parts, but researchers with focus on their research topic, and (5) there had been very few developers that had experienced the pleasure of fast integrated feedback from a good build system. In addition to that (6) exchange with other groups was mostly on research topics and not on product development topics.
+为什么开发人员没有采取任何行动来改进构建系统？有几个方面：（1）个人激励计划（IPA）不支持此类活动，除非事先说服了管理者，（2）开发人员被按照独立工作进行优化，（3）开发人员被分配的是任务细节而不是产品需求，（4）大多数都不是真正开发人员，而是关注在学术问题上的科研人员（5）只有极少数开发人员体验过好的构建系统带来快速集成反馈的乐趣。除此之外，（6）与其他小组的交流主要是在科研主题上，而不是产品开发相关。
 
 Why hadn’t there been more guiding conditions to align on integrated product development by management? Foremost, management at BMW Group thinks in terms of departments, not in products. Even vehicle projects are thought of (1) projects and (2) which department is working on. Only with several [LeSS for Executive](https://less.works/courses/less-executive) trainings this started to change at ADD. The vice president of ADD started several months after the start of the adoption, insisting on reviewing the Sprint result in the vehicle—this got the “Build and Integration” Community started and searching for better alternatives to the old build system.
+为什么管理层在集成产品开发方面没有更多的指导呢？首先，宝马集团的管理层从部门而不是产品的角度思考问题。即使是车型项目也被认为是（1）项目和（2）哪个部门正在做。在几个管理者参加过LeSS for Executive(https://less.works/courses/less-executive)培训后，ADD开始改变。在转型开始几个月后开始，ADD的副主管持续Review车上Sprint的成果，这使得“构建和集成”社区开始开展，并寻找替代旧构建系统的更优方案。
 
 One interfacing department tasked by upper management with integrating code to the vehicle was experimenting with [Bazel](https://bazel.build/), so Bazel was the prime candidate to replace the old build system.
+负责将代码集成到车辆的一个接口部门正在尝试[Bazel](https://bazel.build/)因此，Bazel是替换旧构建系统的主要候选。
 
-#### Under the Radar
+#### Under the Radar 在雷达下（未被注意到）
 The proof of concept was done under the radar, meaning it hadn’t been on the Product Backlog. Why was it needed to do it this way?
+概念验证是在雷达下完成的，这意味着它不在产品待办列表中。为什么要这样做？
 
 In a healthy Scrum and LeSS environment, the Product Backlog consists of improvements and items to be implemented. The process of getting anything into the Product Backlog at that time was heavily influenced by the previous working model, meaning: project requirements, project managers, and very special non-development individual contributed items.
+在一个健康的Scrum和LeSS的环境中，产品待办事项由改进和需要实现的条目组成。当时，将什么内容纳入产品待办列表的过程受到以前工作模式的严重影响，即：项目需求、项目经理和非常特殊的非开发项的个人条目。
 
 Also, in a healthy Scrum and LeSS environment, there is no need to discuss technical details with PO, APO, or managers apart from implications regarding features and the product. So, no need for Product Backlog so-called ‘items’ for refactoring or experimenting with technical details.
+此外，在一个健康的Scrum和LeSS的环境中，除了功能和产品之外，不需要与PO、APO或经理讨论技术细节。因此，产品代办列表中无需建立所谓的重构或者带技术细节的实验条目。
 
 Why did the teams seek approval from their APO for this kind of technical work? In a research-heavy environment, the need for qualified data to prove a point or starting an approach is high by peers, APOs, and management. Generating qualified data is time consuming, in the case of evaluating an alternative build tool, its potential and weaknesses, it requires forking and migrating a relevant piece of the code base. This is nothing that can be done with one hour a week of playing around, but takes a significant fraction of the team's capacity. When talking about “a significant fraction” the BMW Group’s company culture calls for approval from “higher” authority. In a Large-Scale Scrum environment, the (A)PO appears like such a higher authority, even as this (A)PO should not be concerned with technical details.
+为什么团队要寻求APO对此类技术工作的批准？在重科研的环境中，同行、APO和管理层都非常需要合格的数据来证明一个观点或开始一种方法。产出合格的数据非常耗时，在评估替代构建工具的可行性和缺点时，需要fork开分支和迁移代码库的相关部分。这不是一周一个小时就能完成的事情，而需要花团队的很大一部分时间。当需要花“很大一部分”时，宝马集团的公司文化是需要“更高”管理层的批准。在大规模Scrum环境中，（a）PO看起来像是一个更高的管理层，即使这个（a）PO不应该涉及技术细节。
 
 What is the consequence of having such research and exploration tasks solely on the team’s Sprint Backlog without reference to the transparency of the Product Backlog? Normally, small research and refactoring tasks resided only in the Sprint Backlog (rather than the Product Backlog) without any hassle, because they would just create lots of minor noise for the PO or APO in the context of large-scale development, which has so many of these minor tasks every Sprint, forever. On the other hand, as explored in the LeSS guide “Handling Special Items” [[3](#references), p. 207], *big* “engineering improvement” or research tasks that involve *major* investment decisions or that *beneficially educate* the PO or APOs, or that lead to *useful conflict* discussions with the teams, are worth putting into the Product Backlog. The difference here is (1) magnitude of change, (2) familiarity with the change, and (3) implication on company processes. Changes in this area are not common and therefore require additional learning from anyone working on this item. Bypassing the Product Backlog shortened the normal learning, validation, and improvement mechanism. The consequence of this “avoid the walking and talking to APO” and putting this task into the Product Backlog, are delays, disappointments, frustrations, and magnified confusion.
+将这些研究和探索任务单独放在团队的Sprint待办列表中，而不是放在产品代办列表中去体现透明度，会产生什么后果？通常，小型研究和重构任务只存在于Sprint待办事项（而不是产品待办事项）中，没有任何麻烦，因为在大规模开发的背景下，它们只会给PO或APO带来许多小噪声，因为大规模开发在每次Sprint中永远都有些小任务。另一方面，如LeSS指南“处理特殊条目”[[3]（#references），第207页]中所述，*大型“技术优化”或涉及*重大*投资决策或*有学习收益*的研究型任务，或能够给团队创造*有益冲突*讨论的条目，都值得纳入产品待办事项列表。这里的区别在于（1）变化的幅度，（2）对变化的熟悉程度，以及（3）对公司流程的影响。这部分的变化并不常见，因此需要从从事这一部分的人那里得到更多的学习。绕过产品代办列表缩短了正常的学习、验证和改进机制。这种“避免与APO交谈”并将这些任务放入产品待办列表的结果是带来延迟、失望、沮丧和更大的混乱。
 
 Why did the team think it is a good idea to put this experiment under the radar instead of putting it into the Product Backlog? ADD’s PO and APO have a heavy focus on incremental features rather than the product-as-a-whole. Is there a difference? *In terms of the product, there is no difference; in terms of a product’s feature catalog that had been agreed upon with the upper management, the board, marketing, and other departments, there is a great difference between features and the product*. In other words: the APOs in ADD at that time did a local optimization for outputting features in isolation, but not features in a viable product... that can be viably built with a good build system.
+为什么团队认为把这个实验放在雷达下、而不是放在产品待办列表中是个好主意？ADD的PO和APO重点关注增量功能，而不是整体产品。这两者有区别吗？就产品而言，没有区别；就与上层管理层、董事会、市场营销部和其他部门约定的产品功能清单而言，功能与产品之间存在很大差异。换句话说：当时ADD中的APO进行了局部优化，以单独输出功能，但不是可以通过良好的构建系统进行构建的可行产品中的功能。
 
 The difference plays out here in a way that at that time, almost no “special items” were present in the Product Backlog. And the process of getting potential items for the Product Backlog was designed only for *feature*-related items. So, the fear of the development team was, if they started the walk to the APO for this particular experimentation item, they would be postponed until after SoP and therefore postponed... for about *two years*. Another classic “faster is slower” dynamic, aggravated by management without an understanding of modern build systems or modern building of large-scale software, when the aim is adaptiveness.
+不同之处在于，当时产品待办列表中几乎没有“特殊条目”。产品待办列表中增加潜在条目的过程仅针对*功能*相关条目而设计。因此，开发团队担心的是，如果他们开始为这个特定的实验条目与APO进行讨论，这些实验条目会被推到SoP之后考虑，大约是当时的两年之后。另一个经典的“快即是慢”情形，由于管理层不了解现代构建系统或大规模软件的现代构建，当目标需要适应性时，这种情况会加剧。
 
 This situation also highlights the entanglement of technical transition and organization, insufficiently utilizing the idea of Communities, and the miss-practice of utilizing teams up-to 100% (see “Avoid...Fake queue reduction by increased multitasking or utilization rates” [[1](#references), p. 99]). Later, Scrum Masters with the support of the teams, pushed that Communities contribute Product Backlog items and eventually are heard by PO and APO about their opinion on ordering regarding other Product Backlog items.
+这种情况还突出了技术变革和组织之间的牵扯，没有充分利用社区的理念，以及将团队使用率达到100%的错误做法（见“避免...通过增加并行任务或利用率带来虚假的等待队列减少”[[1]（#references），第99页]）。后来，Scrum Masters在团队的支持下，通过推动社区来贡献产品待办列表，PO和APO听取了他们的意见并与其他产品待办条目进行排序。
 
-#### "Rogue” Unofficial Group
+#### "Rogue” Unofficial Group “流氓”非正式团体
 After presenting the promising results of an experimental build system to APOs individually, interest was raised, but due to an initial estimate of 2-3 Sprints to complete the migration, no Product Backlog item was created and there was no Product Backlog refinement to improve the estimate. To the credit of the APO, they believed their developers; but they didn’t confirm the understanding of the developers regarding scope, process-integration, influence on the working environment, migration effort, and central infrastructure—despite the obvious too-small estimation.
+在分别向APO展示了一个实验性构建系统充满希望的结果后，大家的兴趣提升了，但由于初步估计需要2-3次Sprint才能完成迁移，因此没有创建代办条目和进行代办列表梳理来改进估算。APO相信他们的开发人员，尽管估算明显偏低，他们没跟开发人员确认对范围、流程集成、对运行环境的影响、迁移工作量和整体基础设施的理解。
 
 As a result, no APO maintained the build-system experiment in focus. As a consequence, there hadn’t been any team dedicated to this experiment. Only some developers from different teams joined and worked on this topic. This time with keep-me-informed by some APOs.
+因此，没有APO将构建系统实验当成重点。结果，没有任何团队专注在构建系统实验。只有来自不同团队的一些开发人员加入进行相关工作。这一次，一些APO说随时将情况告知他们。
 
-#### Management Push
+#### Management Push 管理层推动
 The accumulation of shortcomings reached at some time “real” management attention. Management finally acknowledged more decisive support, which led to the creation of three temporary groups with dedicated focus:
+问题的积累在某个时候引起了“真正”管理层的关注。管理层最终认可了投入更多关键支持，这引发成立了三个专注于以下方面的临时小组：
 
-* Complete migration from catkin and cmake to Bazel
-* Improve build speed
-* Stabilize build reliability
+* Complete migration from catkin and cmake to Bazel 从catkin和cmake完全迁移到Bazel
+* Improve build speed 提升构建速度
+* Stabilize build reliability 将构建的可靠性稳定下来
 
-**Key point**: Avoid creating new (temporary) structures; prefere providing clear focus and abilities to inquire support for existing teams.
+**Key point**: Avoid creating new (temporary) structures; prefere providing clear focus and abilities to inquire support for existing teams. **关键点**：避免创建新的（临时）架构；给现有团队提供重点关注和能力，以及支持。
 
 By assigning these tasks to temporary groups instead of permanent feature teams, management constrained their organization to learn. In a healthy LeSS environment, experts would be invited by the tasked feature team to work on the new topic and learn from the expert to the extent that the feature team can then maintain the system or even improve it on their own. Experts may be external or internal [Travelers](https://less.works/less/framework/coordination-and-integration#Travelerstoexploitandbreakbottlenecksandcreateskill).
+通过将这些任务分配给临时工作组而不是长期特性团队，管理层限制了组织的学习。在一个健康的LeSS环境中，遇到新课题时特性团队将邀请专家加入，并向专家学习，以便特性团队能够维护系统，甚至自己改进系统。专家可以是外部专家也可以是内部专家[旅行者](https://less.works/less/framework/coordination-and-integration#Travelerstoexploitandbreakbottlenecksandcreateskill).
 
 Why did management staff those temporary groups with members from a variety of feature teams? APOs are committed by their IPA to certain feature completion delivery at the end of a release, if complete feature teams would be committed to improve the build issues, the associated APOs would fail on their personal incentivization plan.
+为什么管理层要为这些临时小组配备来自各个功能团队的成员？APO通过他们的个人绩效来承诺在发布时能交付哪些功能，如果某个功能团队花精力改善构建问题，那么这个团队的APO将无法完成其个人绩效计划。
 
 Also, the behavior of forming temporary groups reveals the mental pattern of classical project management of “throwing experts at the problem to solve it,” which only solves the issue in the short term. LeSS, on the other hand, advises the route of *setting the right conditions for those issues to be fixed long-term*.
+此外，组建临时工作组的行为也体现出了经典项目管理的思维模式，即“让专家来解决问题”，这只能解决短期问题。相反，LeSS建议采取“为长期问题的解决创造相应条件”的路线。
 
-#### It Is Not My Build System
+#### It Is Not My Build System 这不是我的构建系统
 One fascinating dynamic was that most developers did not consider contributing to solve build system issues. The reasons for that lie mostly in the organizational system in place before. Before, there was strong separation of responsibilities and accountabilities. Team A is responsible for road modeling, team B from braking, and so on, and also Team Z for the build scripts; and even a complete department dedicated to build-related issues. This enforced the mindset of “it is not my job”.
+一个有趣的动态是，大多数开发人员之前都没有想过为解决构建问题做出贡献。其原因主要在于之前的组织体系。在此之前，责任和义务有着很强的割裂。团队A负责道路建模，团队B负责制动，团队Z负责构建脚本等等；甚至有一个专门辅助构建相关问题的部门。这强化了“这不是我的工作”的思维。
 
 Therefore, it is remarkable that developers started consenting to their coworker’s proposals in that area. *It reflects a change in company culture: accepting peer-generated proposals is essential*.
+因此，值得注意的是，开发人员开始接受其同事的建议*这反映了公司文化的转变：接受同行提出的建议至关重要*。
 
 From a LeSS point of view: this demonstrates the difficulty in taking ownership in a company’s culture not yet fully transformed. The adoption of communities as a utility to self-manage on a multi-team level was (and still is) in progress.
+从LeSS的角度来看：这表明了在尚未完全转变的公司文化中承担责任感的困难。将社区作为在多团队层面上进行自我管理的做法已经（并且仍在）在进行中。
 
-### Lack of Manager Support for a Green Build Solution
+### Lack of Manager Support for a Green Build Solution 缺乏管理者对绿色构建解决方案的支持
 Given that the build is neither a product feature nor a technical detail within the product, who is responsible and why didn’t they act? Managers are responsible to create an environment that empowers teams to build the product and take accountability on removal of impediments that surpass the powers of the teams—therefore managers are accountable for the build.
+鉴于构建既不是产品特性，也不是产品中的技术细节，那么谁是负责人以及为什么他们不采取行动？经理有责任创造这样的环境，让团队有能力构建产品，并负责移出团队能力范围外的障碍，因此，经理对构建负责。
 
 In the past many BMW Group’s managers outsourced this responsibility and therefore lost insights and ability to improve the build system. Some ADD’s managers cared enough for the build and struggled with scheduling tasks. Why? ADD is new to the concept of self-management of teams, therefore it faced confusions on how to handle such situations. Challenges such as (1) who is responsible for detecting issues with the build system, (2) where to report those issues, (3) who is responsible for proposing and finalizing solutions, and (4) how to get any solution implemented.
+过去，许多宝马集团的经理将此责任外包，因此失去了改进构建系统的洞察和能力。一些ADD的管理人员对构建非常关心，但在安排任务上却很艰难。为什么会这样？ADD刚接触团队自管理的理念，因此在如何处理此类情况方面面临困惑。挑战包括（1）谁负责检查构建系统的问题，（2）在哪里报告这些问题，（3）谁负责提出并最终确定解决方案，以及（4）如何实现解决方案。
 
 The struggle originates in the old organizational systems, its formal structure, and the company culture it had cultivated. Traditionally managers would be assigned, in the new model enthusiasts are to sense and respond on their own. LeSS advocates the structural element of “Communities” to support the self-management on cross-team level. The “Build and Integration” Community was founded a few weeks after the beginning of the adoption. Still, the company culture was slowly changing which resulted in several other consequences, more on this in chapter [Communities](#communities).
+这种艰难源于旧的组织制度、架构和它所培养的公司文化。传统上，管理者是被指派的，在新的模式中，感兴趣的人会自己察觉并做出反应。LeSS倡导“社区”的结构元素，以支持跨团队层面的自管理。“构建和集成”社区是在转型开始后几周成立的。尽管如此，公司文化的转变仍在缓慢，这导致了其他一些后果，更多内容见第[社区]章（#社区）。
 
-### Component Build and Code Structure is Coupled to Builds
+### Component Build and Code Structure is Coupled to Builds 组件构建和代码结构与构建耦合
 Another core aspect of a Green Build is the actual code, its structure, and usage by tests. In an environment that continuously modifies the code base, a strong emphasis rests on its structure, readability hence understandability, and ease to evolve. Following the struggles of the code base’s origin, neither the structure, nor the understandability, nor the ease to evolve is a given at ADD.
+绿色构建的另一个关键在于实际代码、其结构和测试使用。在一个不断修改代码库的环境中，需要重点关注其结构、可读性、易懂性和易修改性。在初始代码库的之后，ADD既没有给出结构，也没有给出可理解性，也没有提供易于修改的特性。
 
 The highly-coupled components created by component teams with weak skill to collaborate and evolve a good overarching design, complicated the creation of true unit test, true component test, and true component builds. The consequence led to long-running and error-prone builds and tests. Several technical approaches to fix this situation had been tried, but failed as they didn’t tackle the root cause.
+组件团队创建的高度耦合组件不易于协作和良好总体设计的演进，这让创建真正的单元测试、真正的组件测试和真正的组件构建的变得复杂。结果导致了长期运行且容易出错的构建和测试。已经尝试过几种技术方法来解决这种情况，但都失败了，因为它们没有解决根本原因。
 
 Why was there more focus on components, rather than collaboration or the overall product? The answers vary but are typically (1) classical motivation, and (2) research-like focus and mastery in single topics which materialize as components.
+为什么更多地关注组件，而不是协作或整体产品？答案各不相同，但通常是（1）经典动机，以及（2）专注在科研类主题和对单个主题的精通，这些主题变成了组件。
 
 Why hadn’t management requested focus on collaborative components and the product? Managers didn’t directly prohibit needed deep changes, but the context they provided left little room for deliberation processes, re-designing the code base, and tests. Another classic of “faster is slower” dynamic, aggravated by management without an understanding of modern build systems or modern building of large-scale software, when the aim is adaptiveness.
+为什么管理层没有要求关注组件协作和产品？管理者并没有直接禁止必要的深度更改，但他们提供的环境几乎没有给流程、重新设计代码库和测试留下空间。另一个经典的“快即是慢”动态模式，在目标是适应性的情况下，由于管理层不了解现代构建系统或大规模软件的构建，这种动态模式变得更严重。
 
 Would a technical-complexity-control manager have prevented or solved this situation? The question in itself reveals a deep misunderstanding of the system dynamics: Technology (usage of technology for implementing a thought) is only one part of the dynamic; people, organization, and processes are the major parts. Thus, *the framing of the question already diverges from an appropriate solution*. Aside: the question also reveals a confession, that they (1) lack Go See, and (2) lack experience in modern large-scale adaptive development.
+如果是懂技术且能管理复杂状况的经理会阻止或解决这种情况吗？这个问题本身揭示了对系统动态的严重误解：技术（使用技术实现某个想法）只是动态的一部分；人员、组织和流程是主要部分。因此，*问这个问题已经偏离了合适的解决方案*。此外：这个问题也揭示了，他们（1）缺乏Go See实地观察，（2）缺乏现代大规模适应性开发的经验。
 
-### Long-Living Branches
+### Long-Living Branches 长期存在的分支
 <a name="fig025"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig025.png" alt="Dynamics of a Green Build is influenced by developers' ability to integrate and test changes fast and frequently.">
@@ -1182,10 +1215,13 @@ Would a technical-complexity-control manager have prevented or solved this situa
 </figure>
 
 ADD’s developers with their limited experience in large-scale development and limited experience in skillfully designing large-scale software systems struggled working on one branch. Their past working structure fostered working on separate code bases (and repositories). The [rushed merge](#a-rushed-merging-of-repositories) didn’t change the fundamental developer’s experience so they continued to struggle working on one branch with hundreds of teams.
+ADD的开发人员在大规模开发方面经验有限，而且在熟练设计大规模软件系统方面经验也有限，因此他们在单分支上开发很艰难。他们过去的工作结构促使了在各自单独的代码库（和仓库）上工作。[仓促合并]（#a-rushed-merging-of-repositories）并没有改变开发人员的基础经验，因此数百个团队继续在一个分支上艰难工作。
 
 This inability to collaborate effectively on one branch leads to many long-living branches. Why? First, the old system fostered single-minded excellence in components which resulted in isolated code bases. The closest resemblance with isolated coded bases in a mono-repository are long-living branches. Secondly, most developers are actual researchers and no programmers. This leads to missing skills in design, coding, incremental developing software, and effective communication and collaboration in and via code.
+无法在一个分支上有效协作导致了长期存在的分支。为什么？首先，旧系统养成了在组件上个体卓越，导致了代码库的孤立。与一个仓库内多个孤立代码库最相似的是长期分支。其次，大多数开发人员实际都是的科研人员，而不是程序员。这导致在设计、编码、增量开发软件以及通过代码进行有效沟通与协作方面缺乏技能。
 
 The lack of sufficient modern experienced developers resulted in a systematic inability to self-educate on how to develop incrementally on a large code base with one branch.
+由于缺乏足够的经验丰富的现代化开发人员，无法系统化地自我训练如何在单分支的大型代码库上进行增量开发。
 
 <a name="fig026"></a>
 <figure>
@@ -1194,15 +1230,20 @@ The lack of sufficient modern experienced developers resulted in a systematic in
 </figure>
 
 The resulting huge and complex patches while merging those long-living branches to master (see [Figure 26](#fig026)), led to challenges for the already highly-loaded build system. Why? The previously discussed lack of component builds and tests led to whole system clean rebuilds and retests each time. Due to the group’s prior focus on components instead of units, many tests incurred running verification tests with time-consuming simulation.
+在将这些长期分支合并到主分支时，产生了巨大而复杂的补丁（参见[图26]（#fig026）），这给已经高负荷的构建系统带来了挑战。为什么？前面讨论了缺乏组件构建和测试，导致了每次都要进行整个系统的重新构建和重新测试。由于小组先前关注的是组件而不是单元，因此许多测试都需要运行验证测试，这些验证测试需要跑耗时很长的仿真。
 
 The long running builds were also one reason for long-living branches. Why? Due to cycle-times of 4-8h on avg. from push to red/green, many teams adopted the malpractice of accumulating many commits on their long-living branch and then trying to punch a merge to master-branch once a Sprint. A disaster, of course.
+长期运行的构建也是长期分支存在的原因之一。为什么？由于从push到red/green的平均周期为4-8小时，许多团队采取了一种弊端方式，即在其长期分支上积攒了许多commit提交，然后每个Sprint完成时将他们一起合并到主分支。这显然是一场灾难。
 
 One consequence of those complex big-batch once-a-Sprint merges were frequent red builds. Why? As soon as several long-living branches in a poorly-designed software system are merged, hard-to-avoid/resolve conflicts occur as the inconsistent design of the components is exposed. Each merge conflict requires manual correction and re-merging to master, which triggers the same pattern again, with just one commit less.
+这些复杂的大批量一次性Sprint合并的后果之一是频繁出现红色构建。为什么？当几个长期分支合并到设计粗糙的软件系统中，就很难避免/解决冲突，因为组件的设计不一致暴露出来。每次合并冲突都需要手工修改并重新合并到主分支，这将再次触发相同的情况，只是commit少了一次。
 
-#### Extensive Conformity Checks
+#### Extensive Conformity Checks 大量的一致性检查
 The not-owning-the-product mindset of many developers (driven from component teams and management behaviors) led to the system of builds enforcing extensive verification for conformity and testing its viability. Therefore, conformity rules ([Figure 27](#fig027)) and good development practice for large development on product level haven't been followed. This resulted in manager’s quick-fixing of the system, by introducing mandatory automated build steps for conformity and rule compliance for each build. Why for each build? Traditional management thinking is calling for *assigning responsibility for failure*, therefore each failure needs to be pin-pointed to one single individual.
+许多开发人员不具备产品思维模式（在组件团队和管理行为的影响下），导致构建系统被迫执行大量的一致性验证及可行性测试。因此，没有遵循产品级大规模开发的一致性规则（[图27]（#fig027））和良好开发实践。这导致管理者通过为每次构建引入强制性自动构建步骤来检查一致性和合规性，以能够快速修复系统。为什么每次构建要这么做？传统的管理思想要求“为失败分配责任”，因此每个失败都需要具体到一个人。
 
 BMW Group’s culture is to avoid “failures” (in builds and in other ways) and view them as a problem, rather than a culture of experimentation to fail fast and then to learn and adapt from “failures”.
+宝马集团的文化是避免“失败”（在构建以及其他方面），并将其视为一个问题，而不是进行实验及快速失败，然后从“失败”中学习。
 
 <a name="fig027"></a>
 <figure>
@@ -1210,70 +1251,98 @@ BMW Group’s culture is to avoid “failures” (in builds and in other ways) a
   <figcaption>Figure 27: Dynamics of build and test cycle times to team’s following standards.</figcaption>
 </figure>
 
-### Organizational Wizardry
-#### The Quick-Fix Build Sheriff Reaction
+### Organizational Wizardry 组织“魔法”
+#### The Quick-Fix Build Sheriff Reaction 权宜之计-构建警长
 One management reaction to the build problems was to introduce a rotating *build sheriff* (manager) role. The quick-fix of adding this role led to increasing distance and offloading of responsibility to that role. Why?
+管理层对构建问题的一种应对是引入一个轮换的“构建警长”（经理）角色。增加此角色的权宜之计导致了该角色责任的距离增加及压力减小。为什么？
 
 Caring about the result of a team’s commit in a build is influenced by the duration of the build, and by who is responsible for problems. So, with the long build cycle and the build sheriff role, the caring and in turn the felt responsibility for the result decreased.
+构建的时长及谁对问题负责会影响团队对commit结果的关心。因此，随着构建周期的延长和构建警长的角色，对结果的关心以及对结果的责任感也随之降低。
 
 The decreased responsibility for build results resulted in quickly degrading builds. This was the opposite effect to that intended by the naive intervention of assigning a build manager to the task.
+构建结果责任的降低导致了构建的质量快速下降。这与预想的分配一个构建警长的天真预期恰好相反。
 
 The effect of reduced responsibility became only apparent with growing numbers of teams. As long as there had been only about 8 teams, the not-bad social connectedness between the teams prevented this dynamic. But with more teams, the weaker social connectedness and the discussed dynamic became apparent.
+随着团队数量的增加，责任降低带来的影响才变得明显。当不到8个团队时，团队之间良好的连接能防止这样的状况发生。但随着团队数量的增加，连接变弱那么责任降低带来的影响就变得明显了。
 
 Neither managers nor developers learnt that putting a manager (or a tool) between responsibility and the teams degrades the process of taking ownership and responsibility for the whole product.
+无论是经理还是开发人员都没有认识到，将警长/经理（或工具）置于责任和团队之间会降低整个产品的主人翁精神和责任。
 
-#### Highlight Blame and the Dynamics which Follows
+#### Highlight Blame and the Dynamics which Follows 指责和随之而来的动态
 The line between transparency and blame is thin and easily crossed with a build monitor that highlights the particular team that pushed last before a failed build. The official phrase was “Stop and Fix assigned Team”—the designated team that broke the build (based on green-red transition on the build monitor) which lasted until the build was green again. The intent was for transparency and reducing the load of email received every day. Unofficially, all developers who cared for the build were annoyed that a broken build wasn’t fixed ASAP and wished for more public pressure to fix the broken builds.
+透明性和指责之间的界限很薄，并且很容易与构建显示器一起发挥作用，显示器能显示在构建失败之前最后提交代码的是哪个特定团队。正式说法是“停止并修复”，即破坏构建的那个团队（基于构建监视器上的由绿到红转换），该团队一直修复到构建再次变绿。其目的是为了提高透明度，减少每天收到的电子邮件数量。非正式下，所有关心构建的开发人员都会对一个损坏的构建没有尽快修复感到恼火，并希望能有更多的公众压力来修复损坏的构建。
 
 The blame-casting doesn’t work on root cause (missing whole product focus), it only highlights the complexity of the system, delayed feedback from the build system, developers’ focus on components rather than the product, insufficient software design, and missing meaningful component builds and tests.
+推卸责任并不能解决根本原因（缺少对整个产品的关注），只突出了系统的复杂性、延迟了构建系统的反馈、开发人员关注在组件上而不是产品、软件设计不足以及缺少重要的组件构建和测试。
 
 The blame-casting induced an interesting other dynamic: as soon as the first team “A” (unintentionally) triggered a green-to-red transition, other teams increased their merge and push frequency. Why? First, due to long and sometimes non-linear merge processes of the auto-merge procedures on the build system, team A may not be responsible for the transition to red. Regardless, by setting the blame on team A, other teams *pushed their commits, concealed within team A’s blame*. They didn’t fear being held responsible for a potential build degradation, as the build was already red. *This contributed to the practice of delaying pushes until the first team had been assigned the blame*.
+推卸责任引发了另一个有趣的动态：当第一个团队“A”（无意中）触发了从绿色变到红色时，其他团队在此时增加了合并和推送的频率。为什么？首先，由于构建系统上自动合并的过程很长，有时甚至是非线性的，团队A可能不是造成导致变成红色的原因。不管怎样，通过将责任归咎于团队A，其他团队*提交代码，并在团队A被指责时被掩盖住*。他们并不害怕承担构建可能出现降级的责任，因为构建此时已经是红色的。*这导致了延迟提交代码的做法，直到某个团队开始被指责*。
 
 By introducing a technical system to assign blame, the dynamics led to an even more occluded situation. *At times, those liberated phases of ignoring build status led to amazing collaboration across teams and code-wise integration; at other times, the whole system simply choked*.
+通过引入一种技术体系来分配指责，这种动态导致了一种更加封闭的局面*在不在乎构建状态的开放阶段，跨团队间的协作和代码级集成是惊人的；在关注构建状态的时候，整个系统都是阻塞的。
 
 The naive call from traditional management to simply “stop the line” until the build is restored was rarely heard. ADD’s managers quickly realized that stopping all work would only degrade the situation as changes accumulate on long-living branches. In addition, prohibiting hundreds of teams to work is prohibitively expensive. The corollary to Toyota’s “stop the line” philosophy: *fix the root cause*, was not realized by ADD’s managers or developers.
+传统管理层发出“暂停工作”直到构建恢复的天真呼吁，却很少有人听。ADD的经理们很快意识到，暂停一切工作只会使情况恶化，因为长期分支上积攒了代码变更。此外，让数百个团队停下工作的成本高得令人望而却步。丰田“暂停生产线”理念的推论是：“修复根本原因”，ADD的经理和开发人员并没有意识到这一点。
 
-### Don’t Focus on Not-Red—Focus on Green
+### Don’t Focus on Not-Red—Focus on Green 不要关注非红色，关注绿色
 All of the above experiments, processes, and technical aids focus on “not-red”; all of them failed. Why did they fail? They did not focus on the one thing that matters; rather, they focused on avoiding weaknesses.
+所有上述实验、流程和技术支援都关注于“非红色”；但都失败了。为什么他们失败了？他们没有关注在重要的事情；相反，他们专注于避免短处。
 
 Why didn’t ADD strengthen “caring” and foster “ownership for the product” within the employees more?
+为什么ADD没有更多地加强对员工的“关心”和“对产品的责任感”？
 
 Among other reasons, there are several major systemic root causes: (1) the C-level chosen organization setup of ADD as a department within BMW Group incurred several constraints (e.g., company mindset of outsourcing and its ramifications, company culture “excellence in details (component) not the whole (product)”, procurement processes, vendor collaboration paradigms, HR policies), (2) the staff composition, the resulting attitude, and conformity to company culture, and (3) unchanged policies in HR and vendor-collaboration on all levels.
+在众多原因中，有几个关键的系统性原因：（1）ADD作为宝马集团内部一个部门，董事层在设计组织时受到局限（例如，公司外包理念及其影响、公司文化“注重细节（组件）而非整体（产品）”、采购流程、供应商合作模式、人力资源政策），（2）员工组成、由此产生的态度和跟公司文化的匹配性，以及（3）各级人力资源和供应商合作政策不变。
 
 The unchanged HR policy of personalized bonus system with focus on components and specialties contradicts the required skills of large-scale, adaptive products. *Modern product development of large, complex, and adaptive systems is no longer a matter of excellence on single-focus execution but a multi-learn/skill of quick adaptation on the product level goals*. The HR managers, which are in a separate reporting line than ADD, discarded all arguments for a bonus system based on product success; they measured and rewarded local optimizations by individual managers and developers, not global optimization.
+保持不变的人力资源政策依然是以组件和专业为重点的个人奖金体系，这与大规模、适应性产品所需的技能相矛盾。*大型、复杂和自适应系统的现代产品开发的关键不再是个体优秀，而是针对产品目标进行快速适应的学习/技能*。HR经理属于ADD外的独立汇报线，他们放弃了产品成功为基准的奖金制度；他们通过度量及奖励个体经理与员工进行局部优化，而不是全局优化。
 
 The unchanged vendor-collaboration policies led to the same uninsightful execution of thrown-over-the-wall tasks. ADD didn’t acknowledge the possibilities of the changes in procurement processes, and instead just introduced a new middleman role to try to quick-fix the unskillful collaborations.
+保持不变的供应商合作策略导致了同样无意识地将任务传递过去就不管了。ADD没有意识到采购流程改变的可能性，而是引入了一个新的中间人角色，来试图快速修复合作不熟练。
 
 The by-design tight control from C-level managers posed another constraint. The choice to operate ADD as a department within BMW Group, would have still left options. For example, different wage agreements, independent HR policies, and more liberal processes. But the C-level managers discouraged this level of change in their organization.
+董事层的严格管控造成了另一个局限。ADD被作为宝马集团内的一个部门来运营，但仍有其他不同的方式。例如，可以有不同的工资体系、独立的人力资源政策和更自由的流程。但是，董事层不允许在他们的组织内做这种层级的改变。
 
-## Communities
-### Mandated and Mandatory Communities
+## Communities 社区
+### Mandated and Mandatory Communities 强制和必要的社区
 Following “the past is part of the present” many teams demanded formal procedures for cross-team decisions. This reflects that behavioral changes in large organizations are influenced by structural changes ([Larman’s Law #5](https://www.craiglarman.com/wiki/index.php?title=Larman%27s_Laws_of_Organizational_Behavior)), but unlike the structural changes, behavioral changes aren't realized immediately. This (temporary) need gave rise to the idea of “mandated communities” and “mandatory communities”. Both contradicting the idea of volunteering and definition of Communities. To explain: mandated communities can make decisions for the whole development group (which contradicts “Communities cannot make decisions for the teams, but they can produce something that the teams decide to adopt” [[3](#references), p. 296]); mandatory communities are mandatory to attend for representatives of all development teams (which contradicts “Participation in Communities is completely voluntary” [[3](#references), p. 295]).
+依照“过去亦是现在的一部分”，许多团队要求制定正式的跨团队决策流程。这反映出大型组织的行为变化受到组织结构变化的影响（[Larman定律#5](https://www.craiglarman.com/wiki/index.php?title=Larman%27s_Laws_of_Organizational_Behavior))但与组织结构变化不同的是，行为变化不会立刻体现出来。这种（暂时的）需求产生了“强制社区”和“必要社区“的概念。这两者都与自愿的理念和社区的定义相矛盾。解释：强制社区可以做出整个开发团队的决策（这与“社区不能为团队做出决策，但他们可以产出东西由团队决策采用”[[3]（#参考），p.296]相矛盾）；强制社区要求所有开发团队必须有代表参加（这与“社区参与是完全自愿的”[[3]（#参考文献），第295页]相矛盾）。
 
 Why does volunteering have significance in Communities? (1) the openness for sharing and learning, high-value collaboration and contribution is higher in a volunteering (or at least not-forced) setup than a forced setup, and (2) volunteering members are more motivated to share and explain recommendations, and are more invested in adjusting recommendations to actual teams and use. The corollary is: if management feels the need to revert to a forced setup, the investments in compliance checks (e.g., conformity builds), process-supported compliance boards, explicit proclamation of new standards, etc. increase.
+为什么自愿参加在社区中具有重要意义？（1） 在自愿参加（或至少不是强制）环境中，分享和学习、高价值协作和贡献的开放度高于强制环境，并且（2）自愿的成员更愿意分享和解释建议，更愿意根据实际团队和使用情况调整建议。由此得出的结论是：如果管理层认为有必要回到强制的方式，那么一致性检查（如构建一致）、流程的合规委员会、新标准的明确公告等方面的投入就会增加。
 
-Please note the difference between community and Community.
+Please note the difference between community and Community. 请注意社区(community)和团体(Community)是有区别的。
 
 Examples of mandated community: *software architecture* community and *build and integration* community; example of mandatory community: *simulation* community.
+强制性社区示例：*软件架构*社区和*构建和集成*社区；必要性社区示例：仿真社区。
 
 To make the voting in mandated communities “meaningful”, the concept of “core member” and quorum was introduced. To make the community meetings “meaningful”, an appointed facilitator was nominated, and prepared agendas on fixed schedules were sent out in advance. And to make the communities “consequential and meaningful” a manager was formally appointed but never present. The structure of these “communities” reflected much of the old BMW Group’s classic working group, with one change: no classical manager present. Developers' adherence to the decisions was meager in the first years.
+为了使强制社区的投票“有意义”，引入了“核心成员”和法定人数的概念。为了使社区会议“有意义”，一位主持人被推选出来，并提前发送了按固定时间表制定的议程。为了使社区“具有重要性和意义”，正式任命了一名经理，但从未到场。这些“社区”的结构在很大程度上反映了宝马集团旧的的经典工作方式，只有一个不同：没有经理在场。在最初的几年里，开发人员对决策的遵守程度很低。
 
 Why was the developers’ adherence meager? The abrupt shift from the self-management to the power-driven model with “mandated communities” conflicted with the slowly evolving adoption of self-management within the teams. The more the teams realized the freedom, responsibility, and accountability of self-management teams, the larger the resentments grew towards the command-driven “mandated communities”.
+为什么开发者的遵守程度很低？因为突然从自我管理转变到权力驱动模式，强制社区与团队内部慢慢进化为自我管理相冲突。团队越是意识到自我管理团队的自由、责任和义务，对命令式的“授权社区”的不满就越大。
 
 What led to the de-focusing of many developers from communities? Communities were increasingly perceived as places for formal discussions and decision-making rather than learning and achieving cross-team (functional) agreements. The lack of holistic product guidance by PO and APOs contributed to this perception. During forming and reforming of Requirement Areas, teams moved from one Area to another. On occasions, a community had members primarily from one Area. This directed topics inadvertently towards one Area’s focus, which complicated the acceptance of communities as places for cross-team and cross-Area learning and coordination. The *quick-fix of mandatory attendance* for mandated communities fixed only the issue of representation, not the root cause of missing the whole product focus in many developers.
+是什么导致许多开发人员渐渐离开社区？社区越来越被视为正式讨论和决策的场所，而不是学习和达成跨团队（职能）约定的场所。PO和APO缺乏全面产品指引也导致了这个情况。在需求领域的形成和改进过程中，团队从一个需求领域转移到另一个领域。有时，某个社区的成员的大多数来自一个需求领域。这无意中把话题引向了该领域，这使得社区作为跨团队和跨领域学习与协作的场所变得更难。强制社区的“强制参加这个快速解决方案”只解决了有人参加的问题，而没有解决根因-许多开发人员拳法对整体产品的关注。
 
 One important secondary aspect of communities and their decisions is the ISO 9001. The process-standard ISO 9001 was adopted by BMW Group for the whole group decades ago. The basic idea of the standard is to document important process decisions and demands following these decisions. ADD’s “Coaching and Standards department” mistakenly assumed that “mandated communities” produce these kinds of decisions. Therefore, the pure existence of “mandated communities” complicated the process of quality and process improvements at ADD.
+社区及其决策的带来的间接结果之一是ISO 9001。几十年前，宝马集团为整个集团采用了ISO 9001过程标准。该标准的基本思想是记录重要的过程决策和相关需求。ADD的“培训与规范部门”错误地认为“强制社区”会做出此类决策。因此，“强制社区”的存在使ADD的质量和流程改进过程变得复杂。
 
 Why did ADD’s “Coaching and Standards department” make this mistake? The (by design) close similarity of managed communities with BMW Group’s traditional working groups and its formal power to decide played an important role; from an external not-LeSS-informed auditor perspective, these structures are relabeled manager-driven working groups with the lack of joining managers. Therefore, the pure existence and definition of “mandated communities” and BMW Group’s demand for ISO compliance, led to the process: some decisions of mandated communities are relevant for ISO process changes and therefore needs to be documented, tracked, and followed-up differently.
+为什么ADD的“培训与规范部门”犯了这个错误？社区与宝马集团传统工作组的相似性及其正式决策权在其中作用很大；从外部不了解LeSS的审计师角度来看，这些结构被重新定义为管理驱动的工作组，除了经理经理加入。因此，“强制社区”的存在和定义以及宝马集团对ISO合规性的要求导致了这一过程：授权社区的一些决策与ISO过程变更相关，因此需要以不同的方式记录、跟踪和跟进。
 
 How did this mistake complicate the process of quality and process improvement? There are many aspects of how this complicated improvements: (1) the added “paper” process increased the disconnection from idea to effect (similar to the delay-feedback effect), (2) the increased distance from improvement idea to actual improvement disconnected potential contributors, and (3) the formal process discouraged improvement experiments. All this despite the effort of the “Coaching and Standards department” to make this lightweight and as unobtrusive as possible—the pure possibility and knowledge of these processes discourage many developers from proposing improvements.
+这个错误是如何使质量和流程改进过程复杂化的？复杂化的改进有很多方面：（1）增加的“纸面”过程增强了想法与效果之间的脱节（类似于延迟反馈效应），（2）改进想法与实际改进之间的距离增加，使潜在贡献者退出，以及（3）正式的过程不利于进行改进实验。尽管“培训与规范部门”努力使其尽可能轻量级和不引人注目，但这些过程本事和知识阻止了许多开发人员提出改进建议。
 
 For a better frame of reference: only a fraction of the decisions and processes produced by mandated communities are relevant for ISO; improvement experiments from Retrospective and Overall Retrospective are typically not relevant for ISO process changes. For example, mandatory information in commit messages and its format, mandatory data types to represent physical units, definitions and tools for testing, folder layout and file naming conventions.
+为了获得更好的参考：只有一小部分由强制社区制定的决策和流程与ISO相关；回顾会和整体回顾会的改进实验通常与ISO中的流程变更无关。例如，commit提交消息及其格式中的必填信息、物理单元的必填数据类型、测试工具、文件夹布局和文件命名约定。
 
-### Inflation of Communities
+### Inflation of Communities 社区的膨胀
 ADD inherited from BMW Group many HR policies, especially those for bonuses and career advancements. Some of these policies influenced the number and quality of communities.
+ADD继承了宝马集团的许多人力资源政策，尤其是奖金和职业发展政策。其中一些政策影响了社区的数量和质量。
 
 [Figure 28](#fig028) displays a not-so-obvious conflict between product, organization, and employee value.
+[图28]（#fig028）显示了产品、组织和员工价值之间不太明显的冲突。
 
 <a name="fig028"></a>
 <figure>
@@ -1282,68 +1351,85 @@ ADD inherited from BMW Group many HR policies, especially those for bonuses and 
 </figure>
 
 Some additional context to understand the dynamics of [Figure 28](#fig028): in BMW Group, working groups and study groups are common. Those materialize on topics of concern and interest for the company. Typically, the facilitators are managers (or on the manager career track). So, being a facilitator has an influence on career advancement, personal bonuses, and salary level.
+[图28]的一些额外背景（#fig028）：在宝马集团，工作小组和研究小组是常见的。这些都体现在公司关心和感兴趣的话题上。通常，推动者是经理（或在管理路线上的人）。因此，作为一名推动者对职业发展、个人奖金和工资水平都有影响。
 
 Within LeSS, Communities are emergent structures for learning and coordinating with by-design low barriers for creating, changing, and removing Communities. This unrestricted process in combination *with unchanged HR policies*, appraisal procedures, career advancement models, and personal bonus systems, started a dynamic leading to more and more “communities”.
+在LeSS中，社区是学习和协调的新兴结构，创建、更改和删除社区的障碍都很小。这种不受限制的过程加上*不变的人力资源政策*、工作评估流程、职业发展模式和个人奖金制度，开启了一个动态的过程，导致出现越来越多的“社区”。
 
 Why? As HR did not provide any change on career paths or bonus system some developers tried to map the old ways to the new ways. They identified communities as something close to working groups, which had been essential check-points in the old model for their career advancement.
+为什么？由于HR没有对职业发展或奖金制度做出任何改变，一些开发人员试图将旧方法映射到新方法。他们将社区视为类似工作组的东西，工作组是旧模式中职业发展的重要检查点。
 
-### The Quick-Fix of “Expert Teams”
+### The Quick-Fix of “Expert Teams” 权宜之计 - “专家团队”
 ADD does not include all aspects of the product, for example, hardware architecture. So, special attention to the interfaces from the non-traditional ADD structures to the traditional BMW Group structure is required.
+ADD中并不包括产品的所有层面，例如硬件架构。因此，需要特别关注非传统的ADD组织结构与传统宝马集团组织结构之间的接口。
 
-#### Hardware-related Architecture
+#### Hardware-related Architecture 硬件相关架构
 Handling the aspect of hardware-related architecture started in the first Requirement Area with two architects from the old architecture team joining two separate regular feature teams—essentially leading teams. It was planned to form a regular Community to support learning across teams and Areas.
+硬件相关架构方面的工作从第一个需求领域开始，来自旧架构团队的两名架构师分别加入了两个独立且比较领先的功能团队。计划是成立一个社区，以支持跨团队和区域的学习。
 
 This approach (architect as team members) failed in this early stage due to several aspects: (1) the items for the feature teams in the early Sprints didn’t touch hardware-related architecture, and (2) the architect team members were still heavily involved in the BMW Group’s architecture group.
+这种方法（架构师作为团队成员）在早期阶段失败了，原因有几个方面：（1）功能团队在早期Sprint中没有涉及硬件相关架构，（2）作为功能团队成员的架构师仍然大量参与宝马集团的架构团队工作中。
 
 Why hadn’t there been hardware-related architecture items for these leading teams in the first Sprints? ADD started with vehicle prototypes and simulations before the adoption. Some details were unclear, but the big decisions were made, so the fake PO (real PO joined later) prioritized non-hardware-architecture topics, for example, software architecture-related topics and other features.
+为什么在早期的Sprint中，这些领先的团队没有硬件相关的架构工作项？在转型前，ADD是从车辆原型和仿真开始。一些细节尚不清楚，但重大决定已经做决策了，因此伪PO（真正的PO后来才加入）优先考虑非硬件架构的主题，例如软件架构相关和其他功能。
 
 Why were the architect team members occupied if no relevant items were processed by their team? Within the BMW Group, the architecture group is a network of precursors, events, and decisions—it’s a slowly moving normative, partially political body. So, for ADD as a department to stay connected to corporate’s mainstream, close ties in the form of members joining and actively contributing is essential. This led to the architect team members spending only a fraction of their time in their actual ADD team.
+那么在团队没有相关事项的情况下，为什么架构师团队成员还很忙？在宝马集团内部，架构组是一个先驱、事件和决策的网络。因此，ADD作为与整个公司关联在一起的一个部门，有成员加入和积极贡献的密切联系至关重要。这导致架构师团队成员在实际的ADD团队中只花费了一小部分时间。
 
 ADD’s management soon placed hardware-related architecture responsibility to a dedicated “architecture expert team”. This team received added responsibility to explicitly connect with teams for sharing and learning. To clarify: this team didn’t have any obligation to implement features or work on the Product Backlog, just focusing on “hardware-related architecture”.
+ADD管理层很快将与硬件相关的架构责任交给了一个专门的“架构专家团队”。该团队的额外责任是与各团队建立连接进行分享和学习。澄清一下：这个团队没有义务实现特性或处理产品待办项，只关注“硬件相关架构”。
 
 To contrast this with software-related architecture (i.e., software design): here, more developers involved themselves voluntarily from the start. They formed the “Software Architecture Community” which quickly transformed into a mandated community. Only after years, some core members of this mandated community were moved into the new “software architecture expert team”. This was a quick-fix for increased manager’s awareness of lacking software design capabilities in the teams and flaws in Product Backlog ordering.
+与软件相关架构（例如软件设计）相比：在软件这边，更多的开发人员从一开始就自愿参与。他们成立了“软件架构社区”，但很快转变为一个强制社区。几年后，这个强制社区的一些核心成员被调入了新的“软件架构专家团队”。这个短期快速修复的权宜之计管理者意识到了团队中缺乏软件设计能力，以及产品代办列表排序存在不足。
 
 One of the consequences was that most feature teams underestimated hardware-related change requests and pushed the deadlines of approval processes hard. Which then led to the gratifying learning that during Product Backlog Refinement items need skimming if hardware-related changes are needed and needs appropriate planning.
+其后果之一是，大多数功能团队低估了与硬件相关的变更请求，并很艰难地赶上审批流程的截止日期。这导致了令人满意的学习成果，即在产品代办列表梳理时，如果涉及硬件的变更，则只需要略读该条目，并制定需要合适的计划。
 
-#### Dependability
+#### Dependability 可靠性
 Another “expert team” case is Dependability. Dependability in ADD’s context is safety, security, durability, maintainability, and (partially) compliance to regulatory requirements.
 The content of dependability is essential for the product and should therefore be part of the Definition of Done and part of the Product Backlog Refinement. Due to the history of project thinking, component thinking, management accountability, and traditional management thinking, a dedicated group focusing on dependability existed before the start of the adoption.
+另一个“专家团队”的案例是可靠性。ADD环境中的可靠性是指安全性、安全性、耐久性、可维护性和（部分）符合监管要求。
+可靠性对产品至关重要，因此应成为“DoD完成的定义”的一部分，也是“产品代办列表”的一部分。由于项目思维、组件思维、管理责任制和传统管理思维的历史，在转型之前，就存在一个专注于可靠性的专门小组。
 
 The dependability group joined late; about the time of SoP 2018 people joining. Before that, the developers considered “normal” due diligence and (softer) aspects of their Definition of Done. With the dependability group joining, the Definition of Done was revised with a gradually more complete Done.
+可靠性小组的加入较晚；差不多在SoP 2018的人员加入的时候。在此之前，开发人员考虑了“常规”必需项的和“完成的定义”的（软性）部分。随着可靠性小组的加入，完成的定义被修改为一个逐渐完整的“完成”。
 
 The tasks within the dependability group before joining the adoption focused heavily among other things on tasking and coordinating suppliers for audits and studies, definition of safety goals, definition of low-level hardware requirements, coordination with regulators, and integration of regulations into safety goals. In the classical vehicle projects, those safety goals are then passed to the development managers to be considered for planning, execution and testing.
+在转型之前，可靠性小组的任务主要是分配任务和协调供应商，进行审计和研究、定义安全目标、定义低级别硬件要求、与监管机构协调以及将法规整合到安全目标中。在经典的车型项目中，这些安全目标随后被传递给开发经理，由开发经理进行规划、执行和测试。
 
 Most of the dependability groups activity before was “aside” normal team activity, therefore this aside-characteristic was first preserved. The intention is to gradually expand teams’ capability and realization of the real Done. Until this is achieved, the dependability group is part of the “undone” activity.
+之前大多数可靠性小组的活动都是在正常团队活动“之外”，因此这“之外”的特点首先被保留下来。目的是逐步提升团队的能力，和实现真正的“完成”。在实现这一点之前，可信性组是“未完成”活动的一部分。
 
 After joining, the dependability group stayed apart as a separate group. Like the “architecture expert team”, they received the additional duty to work closely with APO and teams during Product Backlog Refinements. Depending on the APO realization of the need, this approach only barely improved the teams’ realization of the real Done for the product.
+在加入后，可靠性小组作为一个单独的小组。与“架构专家团队”一样，他们额外承担了与APO和团队密切合作来进行产品代办列表梳理的职责。由于APO对需求的认知不同，这种方法只能勉强提高团队对产品真正完成的认知。
 
 To clarify: “Dependability Expert Team” members joined on occasion Product Backlog Refinements events and contributed to the understanding of the real Done and all the little details this requires. The automated testing suites were adjusted for inspection by “Dependability Expert Team” members, other experts, and stakeholders.
+澄清一下：“可靠性专家团队”成员偶尔会参加产品代办列表梳理，帮助贡献以理解真正的“完成”和所需的小细节。自动化测试套件经过调整，以供“可靠性专家团队”成员、其他专家和利益相关者检查。
 
+# Abbreviations 缩写
 
-# Abbreviations
-
-| Abbreviations | Meaning                                                                                                                                     |
+| 缩写词 | 含义                                                                                                                                     |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| ACC           | [Active Cruise Control](https://www.youtube.com/watch?v=rvWCJbYtq7Q)                                                                        |
-| AD            | Autonomous Driving                                                                                                                          |
-| ADAS          | [Advanced Driver-Assistance Systems](https://en.wikipedia.org/wiki/Advanced_driver-assistance_systems) (up until and including SAE Level 2) |
-| ADD           | Automated and Autonomous Driving Department                                                                                                 |
-| ADP           | Autonomous Driving Platform                                                                                                                 |
-| AI            | Artificial Intelligence                                                                                                                     |
-| ASIL          | [Automotive Safety Integrity Level](https://en.wikipedia.org/wiki/Automotive_Safety_Integrity_Level)                                        |
-| CLP           | Certified LeSS Practitioner                                                                                                                 |
-| DCC           | [Dynamic Cruise Control](https://www.youtube.com/watch?v=1-dNIPy9SxE)                                                                       |
-| ECU           | Electronic Control Unit                                                                                                                     |
-| E2E           | End-to-End                                                                                                                                  |
-| GHE           | Git Hub Enterprise. A self-hosted version of Git Hub.                                                                                       |
-| IPA           | Individual Performance Appraisal                                                                                                            |
-| ML            | Machine Learning                                                                                                                            |
-| PO            | Product Owner                                                                                                                               |
-| SCM           | Software Configuration Management                                                                                                           |
-| SoP           | Start of Production                                                                                                                         |
-| SWP           | Software Partner                                                                                                                            |
-| TDD           | Test Driven Development                                                                                                                     |
-| VP            | Vice President                                                                                                                              |
+| ACC           | [Active Cruise Control自适应巡航]                                                                         |
+| AD            | Autonomous Driving 自动驾驶                                                                                                 |
+| ADAS          | [Advanced Driver-Assistance Systems 辅助驾驶，L2级]
+| ADD           | Automated and Autonomous Driving Department  自动驾驶部门                                                                                                |
+| ADP           | Autonomous Driving Platform 自动驾驶平台                                                                                                          |
+| AI            | Artificial Intelligence  人工智能                                                                                                                    |
+| ASIL          | [Automotive Safety Integrity Level汽车安全完整性等级]                                        |
+| CLP           | Certified LeSS Practitioner  认证的LeSS实践者                                                                                                               |
+| DCC           | [Dynamic Cruise Control 动态巡航]                                   |
+| ECU           | Electronic Control Unit  电子控制单元                                                                                                                   |
+| E2E           | End-to-End  端到端                                                                                                                            |
+| GHE           | Git Hub Enterprise. A self-hosted version of Git Hub. Git Hub公司。 Git Hub自托管                                                                                      |
+| IPA           | Individual Performance Appraisal 个人表现评估                                                                                                           |
+| ML            | Machine Learning 机器学习                                                                                                                           |
+| PO            | Product Owner    产品负责人                                                                                                                           |
+| SCM           | Software Configuration Management   软件配置管理                                                                                                        |
+| SoP           | Start of Production  量产                                                                                                                       |
+| SWP           | Software Partner   软件合作方                                                                                                                         |
+| TDD           | Test Driven Development  测试驱动开发                                                                                                                   |
+| VP            | Vice President   副总裁                                                                                                                           |
 
 
 # References
