@@ -1412,29 +1412,28 @@ To clarify: “Dependability Expert Team” members joined on occasion Product B
 
 # Abbreviations 缩写
 
-| 缩写词 | 含义                                                                                                                                     |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| ACC           | [Active Cruise Control自适应巡航]                                                                         |
-| AD            | Autonomous Driving 自动驾驶                                                                                                 |
-| ADAS          | [Advanced Driver-Assistance Systems 辅助驾驶，L2级]
-| ADD           | Automated and Autonomous Driving Department  自动驾驶部门                                                                                                |
-| ADP           | Autonomous Driving Platform 自动驾驶平台                                                                                                          |
-| AI            | Artificial Intelligence  人工智能                                                                                                                    |
-| ASIL          | [Automotive Safety Integrity Level汽车安全完整性等级]                                        |
-| CLP           | Certified LeSS Practitioner  认证的LeSS实践者                                                                                                               |
-| DCC           | [Dynamic Cruise Control 动态巡航]                                   |
-| ECU           | Electronic Control Unit  电子控制单元                                                                                                                   |
-| E2E           | End-to-End  端到端                                                                                                                            |
-| GHE           | Git Hub Enterprise. A self-hosted version of Git Hub. Git Hub公司。 Git Hub自托管                                                                                      |
-| IPA           | Individual Performance Appraisal 个人表现评估                                                                                                           |
-| ML            | Machine Learning 机器学习                                                                                                                           |
-| PO            | Product Owner    产品负责人                                                                                                                           |
-| SCM           | Software Configuration Management   软件配置管理                                                                                                        |
-| SoP           | Start of Production  量产                                                                                                                       |
-| SWP           | Software Partner   软件合作方                                                                                                                         |
-| TDD           | Test Driven Development  测试驱动开发                                                                                                                   |
-| VP            | Vice President   副总裁                                                                                                                           |
-
+| 缩写词 | 含义 |
+|----|----|
+| ACC           | [自适应巡航（Active Cruise Control）](https://www.youtube.com/watch?v=rvWCJbYtq7Q) |
+| AD            | 自动驾驶（Autonomous Driving） |
+| ADAS          | [高级辅助驾驶系统（Advanced Driver-Assistance Systems）](https://en.wikipedia.org/wiki/Advanced_driver-assistance_systems)，直到且包含L2级 |
+| ADD           | 自动驾驶部门（Automated and Autonomous Driving Department）|
+| ADP           | 自动驾驶平台（Autonomous Driving Platform）|
+| AI            | 人工智能（Artificial Intelligence） |
+| ASIL          | [汽车安全完整性等级（Automotive Safety Integrity Level）](https://en.wikipedia.org/wiki/Automotive_Safety_Integrity_Level) |
+| CLP           | 认证LeSS实践者（Certified LeSS Practitioner） |
+| DCC           | [动态巡航（Dynamic Cruise Control）](https://www.youtube.com/watch?v=1-dNIPy9SxE) |
+| ECU           | 电子控制单元（Electronic Control Unit）  |
+| E2E           | 端到端（End-to-End） |
+| GHE           | GitHub企业版（GitHub Enterprise），GitHub的自托管版本 |
+| IPA           | 个人绩效评估（Individual Performance Appraisal）  |
+| ML            | 机器学习（Machine Learning）  |
+| PO            | 产品负责人（Product Owner） |
+| SCM           | 软件配置管理（Software Configuration Management） |
+| SoP           | 量产（Start of Production） |
+| SWP           | 软件合作方（Software Partner） |
+| TDD           | 测试驱动开发（Test Driven Development） |
+| VP            | 副总裁（Vice President） |
 
 # References
 
