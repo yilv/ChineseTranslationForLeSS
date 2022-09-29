@@ -349,14 +349,18 @@ ADD内有三个主要部门。PO、APO及其支持人员组成了PO部门。所�
 
 这三个部门共同输送组成了需求领域：来自PO部门的APO、来自开发部门的团队以及来自能力和教练部门的SM。
 
-## A New Age—the First Requirement Area—Begins
+## A New Age—the First Requirement Area—Begins 一个新时代——第一个需求领域——开始了
 The first of the [Three Adoption Principles](https://less.works/less/adoption/three-principles) [[3](#参考文献), p. 55]—*Deep and Narrow over Broad and Shallow*—describes that LeSS should preferably be adopted in one product group well, instead of applying LeSS in many groups poorly. In case of LeSS Huge, LeSS adoptions should start with one [Requirement Area](https://less.works/less/less-huge/requirement-areas.html) and reach a good state before further scaling.
+[三条导入原则](https://less.works/less/adoption/three-principles)中的第一条[[3](#参考文献), p. 55] - *深而窄胜过广而浅* - 意思是LeSS最好应该优先在单个产品组中深入地导入，而不是在许多组中粗浅地应用LeSS。在LeSS 巨型的情况下，LeSS的导入应该从一个需求领域开始，做到良好的状态后，再进一步规模化。
 
 Since this is a LeSS Huge case, ADD followed the principle described above, and the LeSS adoption started with one Requirement Area.
+这是一个LeSS巨型的案例，ADD遵循了上述原则，LeSS的导入从一个需求领域开始。
 
 [Figure 16](#fig016) gives a visual scheme of the Requirement Areas’ scope as the LeSS adoption grew. The X-axis represents the cross-functionality of the teams. It shows the level of difficulty. The actions on the right are not a composition of the ones on the left. Developing on a rapid prototyping platform and testing in a car is simpler than integrating and testing the same software on the target platform and in a car. Expanding the scope to multiple ECUs increases the complexity and difficulty a team has to face. Including the co-creation of mobility as a service means working on the whole system, which is impractical, at least today.
+[图16](#fig016)展示了随着LeSS导入时间的增长，需求领域的范围变化。X轴代表团队的跨职能程度。它显示了跨职能的难度水平。右侧的活动并不是由左侧的活动组成的。在快速原型平台上开发并在汽车上测试比在目标平台和汽车上集成并测试相同的软件要简单。将范围扩大到多个ECU会增加一个团队必须面对的复杂度和难度。职能扩展到共同创造移动服务意味着团队需要工作在整个系统上，至少在今天，这是不现实的。
 
 The Y-axis shows the product scope, which ranges from a single component to a customer problem.
+Y轴显示的是产品范围，从单一组件到某个客户问题。
 
 <a name="fig016"></a>
 <figure>
@@ -365,31 +369,47 @@ The Y-axis shows the product scope, which ranges from a single component to a cu
 </figure>
 
 The starting point was component-based development on a rapid prototyping platform (step 1 in [Figure 16](#fig016)), far away from the full product scope.
+起点是在快速原型平台上开发组件（[图16](#fig016)中的第1步），远离完整的产品范围。
 
 The focus area of the first Requirement Area needed to include the next step towards cross-functional Feature Teams. It was the following:
+第一个需求领域的关注点需要包括演进到跨职能的特性团队。包括以下内容：
 
 1.	develop a build system sufficient for scaling and adding further Requirement Areas
 2.	simple [Dynamic Cruise Control](https://www.youtube.com/watch?v=1-dNIPy9SxE) (DCC) as it involved only a few SW components
 
-Step 1 in [Figure 16](#fig016).
+1. 开发一个满足规模化和更多需求领域的构建系统
+2. 简单的[动态巡航控制](https://www.youtube.com/watch?v=1-dNIPy9SxE)（DCC），因为它只涉及几个软件组件。
 
-### Prerequisites and Constraints
+Step 1 in [Figure 16](#fig016).
+[图16](#fig016)中的第1步。
+
+### Prerequisites and Constraints 前提条件和制约因素
 Another principle of the [Three Adoption Principles](https://less.works/less/adoption/three-principles) [[3](#参考文献), p. 55] is to use volunteers.
+[三条导入原则](https://less.works/less/adoption/three-principles)的另一条原则[[3](#参考文献), p. 55]是使用志愿者。
 
 > Use volunteers! True volunteering is a powerful way of engaging people’s minds and hearts. [[3](#参考文献), p. 58]
+使用志愿者！真正的自愿是吸引人们的思想和心灵的有力方式。[[3](#参考文献), p. 58]
 
 The intention was to start small with volunteers.
+我们的意图是与志愿者一起从小做起。
 
 At this point, managers’ education consisted of the 1-day introduction to LeSS, [Craig’s Readings Preparing for LeSS for Executives](http://www.craiglarman.com/wiki/index.php?title=Readings_Preparing_for_LeSS_for_Executives), and coaching by Mark Bregenzer. [Certified LeSS Executive](https://less.works/courses/less-executive) (CLE) courses took place later, together with [Certified LeSS Practitioner](https://less.works/courses/less-practitioner) (CLP) courses of the first Requirement Area’s participants.
+针对这点，我们给管理者安排的培训包括1天的LeSS介绍、[Craig给LeSS管理者课程的阅读准备](http://www.craiglarman.com/wiki/index.php?title=Readings_Preparing_for_LeSS_for_Executives)，以及Mark Bregenzer的教练辅导。紧随其后是[认证LeSS管理者](https://less.works/courses/less-executive)（CLE）课程以及参与第一个需求领域所有人会参加[认证LeSS实践者](https://less.works/courses/less-practitioner)（CLP）课程。
 
 Setting up the first Requirement Area was constrained as follows.
+设立第一个需求领域的约束条件如下。
 
 1.	The size of the first Requirement Area should have been around 70 people.
 2.	The transitioning process to the first Requirement Area had to start at the beginning of August, which meant during the summer school holidays.
 3.	Functional managers of existing functional/component teams were required to temporarily live a double role when transitioning into the LeSS organization. Those would be (1) a line manager in a LeSS organization and (2) a functional manager in the previous organization. This setup would ensure that employees not yet joining the LeSS organization remain with their functional manager.
 
-#### Parallel Organization
+1. 第一个需求领域的规模应该是70人左右。
+2. 第一个需求领域的过渡过程必须从8月初开始，此时是学校暑假期间。
+3. 现有职能/组件团队的职能经理在过渡到LeSS组织时需要暂时扮演双重角色。这些人将是（1）LeSS组织的部门经理和（2）原组织的职能经理。这种设置将确保尚未加入LeSS组织的员工仍与他们的职能经理在一起。
+
+#### Parallel Organization 并行组织
 Constraint #1 and the size of ADD (around 800 people) led us to have a parallel organization as described in the respective guide [[3](#references), p. 74]. Looking at [Figure 16](#fig016) makes it clear that the scope of the build system and simple DCC (step 2) would be in the LeSS organization. Everything else (steps 3, 4, and 5) would need to remain in the former organizational structure to ensure stable delivery and stable interfaces to the outside of ADD and BMW Group. [Figure 17](#fig017) visualizes the notion of LeSS, non-LeSS organization, and people working for SoP 2018.
+约束条件#1和ADD的规模（大约800人）导致我们有一个并行组织，正如指南[[3](#references), p. 74]中所描述的那样。观察[图16](#fig016)可以清楚地看到，构建系统和简单的DCC（第2步）将在LeSS组织的范围内。其余的（第3、4、5步）都需要保留在以前的组织架构中，以确保稳定的交付以及与ADD和宝马集团外部的稳定接口。[图17](#fig017)展示了LeSS、非LeSS组织和为SoP 2018工作的人员的结构。
 
 <a name="fig017"></a>
 <figure>
@@ -398,48 +418,69 @@ Constraint #1 and the size of ADD (around 800 people) led us to have a parallel 
 </figure>
 
 The parallel organization and the concept of “only volunteers should join the first Requirement Area” resulted in the third constraint.
+并行组织和“只有志愿者应该加入第一个需求领域”的概念导致了第3个制约因素。
 
-#### Fake Volunteers
+#### Fake Volunteers 伪志愿者
 As mentioned in the section [Product Definition](#product-definition), ADD had two major milestones, SoP 2018 and SoP 2021. The people working on SoP 2018 remained in the former organization to ensure the release; they could not join the LeSS organization. Consequently, nearly all product developers, who delivered a car to series production at least once in their life, were not available for the first Requirement Area. This thinking in projects and, as a repercussion, still organizing people around work restricted the pool of available people with the required skills for successful product development in this context. See [Organize by Customer Value](https://less.works/less/structure/organizing_by_customer_value) [[3](#references), p. 78] for more information on the topic of organizing people around work vs. work around people.
+在[产品定义](#产品定义)一节中有提到，ADD有两个主要的里程碑，SoP 2018和SoP 2021。从事SoP 2018工作的人员仍留在原组织中以确保发布；他们不能加入LeSS组织。因此，几乎所有的产品开发人员，至少有过一次将汽车交付到量产，都不能参加第一个需求领域。考虑到项目，围绕工作来组织人员，限制了一些拥有成功产品开发所需技能的人参与进来。关于围绕工作组织人员与围绕人员组织工作这一主题的更多信息，请参见[按客户价值组织](https://less.works/less/structure/organizing_by_customer_value)[[3](#参考文献), p. 78]。
 
 Further, the beginning of August was also the beginning of the summer school holidays in Bavaria, Germany (see constraint #2). At this time, people with families were on their summer holidays, which reduced the pool of available people even further. The resulting pool of possible volunteers consisted mainly of long-term researchers who never developed a car to the production stage, people who freshly joined ADD, and few experienced key players.
+此外，8月初也是德国巴伐利亚州学校暑假的开始（见制约因素#2）。这个时候，有家庭的人都在享受暑期假日，这进一步减少了可参与的人数。因此，潜在的志愿者队伍主要包括从未经历从汽车研发到交付生产阶段的长期研究人员，刚加入ADD的人，以及少数有经验的关键人物。
 
 The shortage of available people, combined with the demand to start the LeSS adoption with eight teams in the first Requirement Area, led to forcing people to become “volunteers.” The order of actions before the first Requirement Area amplified this effect. First, people from the group of potential volunteers volunteered—in some cases, with a little push. Second, after managers provided a list of “volunteers,” they immediately started with CLP classes to educate people on LeSS and give them an idea of what it means to work in a LeSS organization.
+可用人员的短缺，加上导入LeSS的第一个需求领域需要8个团队，这导致人们被迫成为“志愿者”。第一个需求领域之前的行动顺序放大了这种影响。首先，潜在志愿者群体自愿加入——有些人是因为一些推动才进来的。其次，在管理人员提供了一份“志愿者”名单后，这些人才通过CLP课程接受了LeSS培训，了解在LeSS组织中工作意味着什么。
 
 Observations during CLP classes showed that some “volunteers” were poorly informed and had little understanding of what it means to work in a LeSS organization. It was the time when the “volunteers” understood what they volunteered for. Some people did not like what they learned. They did not want to be part of the first Requirement Area and became prisoners of the system.
+在CLP课堂上的观察表明，一些“志愿者”并没有真正的知道和理解在LeSS组织中工作的含义。这时，“志愿者”才明白他们志愿参与了什么。有些人不喜欢他们课堂上学到的内容。他们不想成为第一个需求领域的一部分，变成了系统的囚犯。
 
 The guide [Getting Started](https://less.works/less/adoption/getting-started.html) [[3](#references), p. 59], advises the opposite order—step 0: educate everyone *first*, before volunteering. That wasn’t done.
+[如何开始](https://less.works/less/adoption/getting-started.html)指南[[3](#参考文献), p. 59]，建议采用相反的顺序——第0步：在寻找志愿者之前，*首先*培训每个人。这一点并没有做到。
 
-### After the Start—Revisit Parallel Organization
+### After the Start—Revisit Parallel Organization 启动后 - 再谈并行组织
 Before the LeSS adoption at the BMW Group, managers were usually involved in deciding what the actual work was and how to do it. Further, they conducted individual performance appraisals (IPA) and other line manager related tasks, for example, escalations with vendors and organizational changes. Let’s define this type of manager as a traditional manager.
+在宝马集团采用LeSS之前，经理们通常参与决定实际工作是什么以及如何处理。此外，他们会做IPA和其他与LM相关的任务，例如，上报与供应商和组织级变化相关问题。我们把这种类型的经理定义为传统经理。
 
 In LeSS, a [Product Owner](https://less.works/less/framework/product-owner.html) is responsible for the vision of a product and optimizing its impact by prioritizing the Product Backlog—the *What*. The teams, and *only the teams*, decide the *How* of turning the features or needs into a product. The work of both roles is overlapping intentionally. They should support each other.
+在LeSS中，[PO](https://less.works/less/framework/product-owner.html)对产品的愿景负责，并通过对产品待办列表 - *做什么* - 进行优先排序来优化愿景的影响。团队，*也只有团队*，才能决定*怎么做*将这些功能或需求转化为产品。是有意让这两个角色的工作重叠的。他们应该互相支持。
 
 The existing paradigm at ADD—having clear lines of responsibility—led to the understanding that the duties or tasks of those roles are mutually exclusive. It became: a Product Owner decides on the What, and teams decide on the How.
+在ADD现有的范式 - 有明确的责任线 - 导致大家认为这些角色的职责或任务边界清晰，没有重叠。现在变成了：产品负责人决定做什么，而团队决定怎么做。
 
 Regular Scrum, and LeSS in this regard, don’t define the role of a line manager. What should line managers do?
+Scrum和LeSS在这方面并没有定义LM的角色。LM应该做什么？
 
 > ... the role of management changes significantly from managing the work to creating the conditions for teams to thrive ... [[1](#references), p. 241].
+> ……管理层的角色发生了很大的变化，以前是管理工作，现在变成了为团队的发展创造条件…… [[1](#参考文献), p.241]。
 
 In other words, their role is to improve the value-delivery capability of the organizational system.
+换句话说，他们的角色是提高组织系统的价值交付能力。
 
 ADD defined the responsibilities for the LeSS organization precisely this way. The Product Owner department was responsible for the *what*. The line managers’ roles in the Development department was to improve the delivery capability of the organizational system, and the teams decided on the *how*.
+ADD正是这样定义了LeSS组织的职责。PO部门负责*做什么*。开发部门的LM角色是提高组织系统的交付能力，而团队则决定*怎么做*。
 
 Constraint #3 (see [Prerequisites and Constraints](#prerequisites-and-constraints)) specified that a manager transitioning from a traditional manager to a line manager in the new organization would temporarily need to have a double role. The first would be their previous role as a traditional manager. The second would be their new line manager role. This dual role situation would persist as long as the prior group’s subordinates remained in the non-LeSS organization. In other words, a manager who is part of the LeSS organization would still carry out traditional management, deciding on the what and how, in the non-LeSS organization.
+约束条件#3（见[前提条件和制约因素](#前提条件和制约因素)）讲到，经理从传统经理过渡到在新组织中的直线经理，需要暂时承担双重角色。第一重是他们以前作为传统经理的角色。第二重是他们新的直线经理的角色。只要前一组的下属还在非LeSS系统的组织中，这种双重角色的情况就会一直存在。换句话说，一个属于LeSS组织的经理仍然会在非LeSS组织中进行传统的管理，决定做什么和怎么做。
 
 The double role setup would violate the distinction of product ownership, line management in LeSS, and traditional management. The concerns about the boundary violation of the roles and organizations led to a rejection of constraint #3. Consequently, the remaining people in the non-LeSS organization became manager free, and no one coordinated the what and the how for them—an unusual situation for those people.
+双重角色的设置影响到了产品所有权、LeSS中的直线管理和传统管理的区分。对破坏角色边界的顾虑导致了大家拒绝第3条约束。因此，非LeSS组织中剩下的人变成没有管理者，没有人为他们协调做什么和怎么做 - 这对这些人来说很不正常。
 
 Further, most key players with full system knowledge, if available, transited to the first Requirement Area.
+此外，大多数拥有完整系统知识的关键人物，如果可能的话，都转到了第一个需求领域。
 
 The sum of those circumstances made the rest of the ADD organization strongly dependent on the LeSS organization and they could not deliver without the people in the LeSS organization anymore.
+这些情况综合在一起使得ADD组织的其他成员对LeSS组织产生了强烈的依赖，不依靠LeSS组织的人，他们就无法交付。
 
 Simultaneously the LeSS organization focused on increasing its delivery capability as a Requirement Area. But, the delivery capability of the entire group working for SoP 2021 decreased, and interfaces to the rest of the BMW Group weakened. Why? Mainly because approximately 250 people in the non-LeSS organization lacked an understandable structure and were lost. Many people stopped doing whatever they were responsible for.
+同时，LeSS组织专注于提高其作为需求领域的交付能力。但是，为SoP 2021工作的整个小组的交付能力下降了，与宝马集团其他部门的联系也削弱了。为什么呢？主要是因为在非LeSS组织中大约有250人缺乏一个可理解的组织架构，并且迷失了方向。许多人不再做他们所负责的任何事情。
 
 Further, some people of the LeSS organization focused so much on the Requirement Area that they dropped communication and interfaces to the rest of the organization. The pressure for finding a solution increased rapidly, and the lead coach (the first LeSS coach and trainer in this LeSS adoption) became heavily involved in helping to find one. Additional LeSS coaches were engaged in continuing coaching of the first Requirement Area.
+此外，LeSS组织中的一些人非常关注需求领域，以至于他们放弃了与组织其他成员的沟通和联系。寻找解决方案的压力迅速增加，首席教练（在这次导入LeSS过程中的第一位LeSS教练和培训师）开始大量参与帮助寻找解决方案。其他的LeSS教练也参与到第一个需求领域的持续辅导中。
 
 The people of the non-LeSS organization needed to work with their colleagues from the LeSS organization. Usually, because someone needed help on topic X, and the topic X expert was in the first Requirement Area. But both groups had significantly different ways of working. “We want to do X in our cross-functional team” vs. “we want to split X across several single-function teams.” Explanations of why the people in the LeSS organization wanted to approach and solve things in different ways led to heated discussions and a higher tension between both groups. Both groups did not speak the same language any longer.
+非LeSS组织的人需要与LeSS组织的同事一起工作。通常情况下，因为有人需要在主题X上得到帮助，而主题X的专家是在第一个需求领域。但两个小组的工作方式明显不同。“我们想在我们的跨职能团队中做X”与“我们想拆分X放到几个单一职能的团队来做”。解释为什么LeSS组织中的人想用不同的方式来处理和解决事情，导致了激烈的讨论和两组之间更紧张的关系。两组人不再说同样的语言了。
 
 Based on this insight, the CLP classes took place independently of the actual transition into the LeSS organization. The entire ADD received CLP classes within one year. However, by the time the people transitioned into a LeSS organization, their knowledge from CLP classes faded, which created further difficulties in the new Requirement Areas.
+基于这种洞察，CLP课程的开展与LeSS转型是相对独立的。整个ADD在一年内都接受了CLP课程。然而，当人们过渡到LeSS组织时，他们从CLP课程中获得的知识已经淡忘了，这给新的需求领域带来了更多的困难。
 
 ## Adding More Requirement Areas
 Activities such as getting the LeSS organization up and running, creating a solution for the people in the non-LeSS organization, clarifying which legacy code should be part of future development, and many other issues absorbed lots of time and energy. Therefore, progress was rather slow.
