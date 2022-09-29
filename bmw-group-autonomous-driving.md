@@ -482,25 +482,36 @@ The people of the non-LeSS organization needed to work with their colleagues fro
 Based on this insight, the CLP classes took place independently of the actual transition into the LeSS organization. The entire ADD received CLP classes within one year. However, by the time the people transitioned into a LeSS organization, their knowledge from CLP classes faded, which created further difficulties in the new Requirement Areas.
 基于这种洞察，CLP课程的开展与LeSS转型是相对独立的。整个ADD在一年内都接受了CLP课程。然而，当人们过渡到LeSS组织时，他们从CLP课程中获得的知识已经淡忘了，这给新的需求领域带来了更多的困难。
 
-## Adding More Requirement Areas
+## Adding More Requirement Areas 增加更多的需求领域
 Activities such as getting the LeSS organization up and running, creating a solution for the people in the non-LeSS organization, clarifying which legacy code should be part of future development, and many other issues absorbed lots of time and energy. Therefore, progress was rather slow.
+合作表彰奖活动，诸如让LeSS组织建立和运行、为非LeSS组织的人创建一个解决方案、明确哪些遗留代码应该是未来发展的一部分，以及许多其他问题都耗费了很多的时间和精力。因此，进展是相当缓慢的。
 
 There was eagerness for expanding the LeSS organization and starting a second Requirement Area. A few factors motivated it. First, there was a strong desire to become better. It seemed that transitioning people from the almost structureless non-LeSS organization to the LeSS organization would resolve some issues and soothe the pain. Second, the majority of people from the non-LeSS organization who participated in a CLP course were self-motivated to join the LeSS organization as fast as possible. Third, the ADD needed to demonstrate features to their stakeholders and the press. Thus, it was natural that the Senior VP of ADD wanted to see and experience feature increments in the car.
+人们渴望扩大LeSS组织并开始第二个需求领域。有几个因素促使人民这样做。首先，人们有强烈的愿望，希望变得更好。似乎将人们从几乎没有结构的非LeSS组织过渡到LeSS组织会解决一些问题并抚平痛苦。第二，来自非LeSS组织的大多数人参加了CLP课程，他们都有自我激励，想尽快加入LeSS组织。第三，ADD需要向他们的利益相关者和媒体展示功能。因此，ADD的高级副总裁自然希望看到并体验汽车的功能增量。
 
 It is worth noting that it is necessary to fulfil some conditions to keep a LeSS organization healthy, especially when adding teams. Those are:
+值得注意的是，要保持LeSS组织的健康发展，必须满足一些条件，特别是在增加团队时。这些条件是：
 
 1. A common structure for the Product Backlog of all teams and Requirement Areas
 2. A working build system which ensures fast feedback
 
+1. 所有团队的产品待办列表和需求领域的通用结构
+2. 一个能确保快速反馈并工作构建系统
+
 At this stage, the Product Backlog of the first Requirement Area started mutating to a multi-level, tree-like requirements set, introducing dependencies between items, which obscured the overview of work to be done, the direction to go, and burdened prioritization already for only one Requirement Area. The Product Backlog started to deviate from the most Product Backlog related guides, especially from *Don’t “Manage Dependencies” but Minimize Constraints* [[3](#references), p. 198] and *Three Levels Max* [[3](#references), p. 222].
+在这个阶段，第一个需求领域的产品待办列表开始变异为一个多层次的、树状的需求集，引入了项目之间的依赖关系，这掩盖了要做的工作的概况、要去的方向，并给一个需求领域的优先级带来了负担。产品待办列表开始偏离大多数与其相关的指南，特别是不要 "管理依赖关系"而是最小化约束[3，第198页]和最大三层[[3](#参考文献)，第222页]。
 
 Before the LeSS adoption two “project groups” had created prototype code for some aspects of autonomous driving; the two sets of experimental code contained lots of duplication and inconsistencies across them. To “speed” things up (another *quick fix*), the entire legacy code from these two bases was merged to the new master branch, with little automated testing, leaving the feature and code coverage at an insufficient level (for more details see [Merging Repositories](#merging-repositories)). Consequently, shared code ownership became significantly more difficult. The build system and infrastructure were not ready for this structure and load. The whole system became slow, and feedback times increased significantly. As a consequence, trunk-based development with fast feedback cycles became impossible (more on this topic in the [Technology View](#technology-view) chapter).
+在采用LeSS之前，有两个 "项目组 "为自动驾驶的某些方面创建了原型代码；这两套实验性代码中包含了很多重复和不一致的地方。为了 "加快 "进度（另一种快速解决方法），这两个代码库的全部遗留代码被合并到新的主干分支，几乎没有自动测试，使功能测试和测试代码覆盖率处于不足的水平（更多细节见合并代码库）。因此，共享代码所有权变得更加困难。构建系统和基础设施还没有准备好应对这种结构和负载。整个系统变得很慢，反馈时间也大大增加。因此，基于主干的开发和快速的反馈周期变得不可能了（更多关于这个主题的内容请见技术观点章节）。
 
 The second Requirement Area kicked off with a broken backlog and build system. And the scope for the LeSS organization expanded to *all* software components and sensors, yet still being developed on only the rapid prototyping platform (step 3 in [Figure 16](#fig016)).
+第二个需求领域以一个破碎的待办列表和构建系统拉开序幕。而LeSS组织的范围扩大到所有的软件组件和传感器，但仍然只在快速原型平台上开发（[图16](#fig016)中的第3步）。
 
 To expand from one Requirement Area to many while sustaining transparency about item priorities in the Product Backlog, it must have a common structure for all Requirement Areas. It enables the PO to better grasp what’s going on, and to prioritize and change teams between Requirement Areas—a quality of *organizational adaptiveness*. But, the tool, which was used as an electronic Product Backlog, and the people using it, created obstacles. Combined with the obscure multi-level, tree-like requirements set in the Product Backlog, its structures between Requirement Areas (existing and planned) began to diverge at about this time—a *local optimization*. See also *Guide: Tools for Large Product Backlogs* [[3](#references), p. 210].
+为了从一个需求领域扩展到许多需求领域，同时保持产品待办列表中项目优先级的透明度，则必须对所有需求领域有一个通用结构。它使PO能够更好地掌握当前的进度，并在需求领域之间确定优先次序和改变团队——这是组织适应性的质量。但是，这个被用作电子产品待办列表的工具，以及使用它的人，造成了障碍。结合产品待办列表中晦涩难懂的多层次、树状的需求设置，它在需求领域（现有的和计划的）之间的结构大约在这个时候开始出现分歧，这是一种局部优化。也请看*指南：大型产品待办列表的工具* [[3](#参考文献), p. 210]。
 
 Unfortunately, even with these clear weaknesses in place, adding new Requirement Areas continued for the next few months (see [Figure 18](#fig018)).
+不幸的是，即使有了这些明显的劣势，在接下来的几个月里，仍继续增加新的需求领域（见[图18](#fig018)）。
 
 <a name="fig018"></a>
 <figure>
@@ -509,12 +520,16 @@ Unfortunately, even with these clear weaknesses in place, adding new Requirement
 </figure>
 
 With each step, the scope of the LeSS organization expanded. Adding four Requirement Areas expanded the scope to step 4 represented in [Figure 16](#fig016). With all nine Requirement Areas, the scope reached its maximum, the entire context of ADD (step 5 in [Figure 16](#fig016)), yet myriad weaknesses underlay this too-rapid expansion.
+随着每一步的推进，LeSS组织的范围也在扩大。增加四个需求领域后，范围扩大到[图16](#fig016)中的第4步。有了所有的九个需求领域，范围达到了最大，即整个ADD的范围（[图16](#fig016)中的第5步），然而，无数的劣势支撑着这种过快的扩张。
 
 Numerous experiments were necessary to find a meaningful scope for each Requirement Area. It took several restructurings, inspect & adapt cycles. During those restructurings, the flexibility of a LeSS structured organization became visible. Since Requirement Areas were *not* part of an organizational chart or unit, the restructuring process was quick. The fastest restructuring of Requirement Areas (inception until complete implementation), happened within one week.
+为了给每个需求领域找到一个有意义的范围，必须进行大量的实验。经过了多次重组、检查和适应周期。在这些重组过程中，LeSS结构的组织的灵活性变得明显。由于需求领域不是组织架构图或部门的一部分，重组过程很快。最快的一次需求领域重组（从开始到完全实施），一周之内完成。
 
 That was the good news: an adaptive organization. But the bad news was that a key driver for this frequent restructuring was expanding too fast.
+这是个好消息：一个适应性强的组织。但坏消息是，这种频繁重组的一个关键驱动因素是扩张速度太快。
 
 Although a LeSS Huge organizational structure allows such flexibility, it is intended to accommodate changing priorities in the customer-centric view, and it comes with some *switching costs*. Due to interrupting evolved inter-team relationships and established collaboration within one Requirement Area, and the non-trivial domain learning required for teams moving to a new area, *frequent* restructuring of Requirement Areas has issues.
+尽管LeSS Huge组织结构允许这样的灵活性，但它的目的是为了适应以客户为中心的视角下不断变化的优先级，它也伴随着一些转变成本。由于中断了一个需求领域内已建立的团队内关系和协作，以及团队转移到一个新领域所需的非琐碎的领域学习，需求领域的频繁重组存在问题。
 
 ## Retrospective On The Timeline View
 > Adjusting organizational structure is relatively easy, but changing mindset takes time, discussion, introspection, and learning. [[1](#references), p. 229]
