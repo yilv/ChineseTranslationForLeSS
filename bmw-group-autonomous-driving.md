@@ -1116,14 +1116,18 @@ To keep the pace and magnitude of change bound to a manageable level, starting w
 The individual performance appraisal should have been removed or changed to minimize its negative impact and to support teamwork and self-management. An in-depth education, including Scrum basics, would have laid a more solid ground for the adoption.
 个人绩效评估应该被取消或改变，以减少其负面影响，支持团队合作和自我管理。深入的教育，包括Scrum的基础知识，将为采用这种方法奠定更坚实的基础。
 
-## Summary and Positive Effects
+## Summary and Positive Effects 总结和积极的影响
 With the start of the LeSS adoption, the amount of euphoria was high, and so too were the expectations on the whole new organization. Time passed, it became visible that expectations were far from being met, and the euphoria turned into pain. Where did this pain come from?
+当初LeSS采用的开始，人们的兴奋度很高，对整个新组织的期望也很高。随着时间的推移，人们发现期望远远没有得到满足，欣喜变成了痛苦。这种痛苦来自哪里？
 
 > ...in a larger product group (say, 500 people) adopting large-scale Scrum, systemic weaknesses are exposed in the organizational design—in structure, processes, rewards, people, and tasks. [[1](#references), p. 290]
+> ……在一个较大的产品组（比如说500人）采用大规模的Scrum时，组织设计中的系统性缺陷会暴露出来，包括结构、流程、奖励、人员和任务。[[1](#参考文献), p. 290]
 
 Indeed, so did the weaknesses of the prior organizational design at ADD, which led to this situation. It is naive to expect that after decades of building up organizational and technical debt, suddenly overnight, the behavior of a rock-solid build system and continuous integration would be in place. Paying off those debts will take years, and the practices and technical agility will improve gradually.
+事实上，ADD之前的组织设计的弱点也是如此，也导致了这种情况。期望经过几十年的组织和技术债务的积累，突然在一夜之间，坚如磐石的构建系统和持续集成的行为就会到位，这是天真的想法。还清这些债务需要数年时间，而实践和技术敏捷性也会逐渐改善。
 
 Technical agility constrains organizational agility—or phrased in reverse “[Organizational Agility is constrained by Technical Agility](https://less.works/less/technical-excellence/index.html).” Therefore, the highly flexible organizational structure there was at ADD, provided only limited benefits. Instead, the gap between how ADD wanted to work and how the technical infrastructure and product code base allowed it to work was the pain. Some changes had to be reverted, and some adapted to get the organization going again (see [Figure 22](#fig022)).
+技术敏捷性制约着组织敏捷性，或者反过来说"[组织敏捷性受制于技术敏捷性](https://less.works/less/technical-excellence/index.html)"。因此，在ADD存在的高度灵活的组织架构，只提供了有限的好处。相反，ADD想要的工作方式与技术基础设施和产品代码库所允许的工作方式之间的差距才是痛苦所在。一些变化不得不被撤销，一些则被调整，以使组织重新运转（见[图22](#fig022)）。
 
 <a name="fig022"></a>
 <figure>
@@ -1132,48 +1136,67 @@ Technical agility constrains organizational agility—or phrased in reverse “[
 </figure>
 
 > **Do not expect this to go fast; it will take years or perhaps decades**—in fact, forever, considering the pillar of continuous improvement. A good sense of humor, an informal supportive community of practice, and patience is especially helpful in organizational improvement. Celebrate small steps forward. Especially in the work of organizational redesign, we encourage our clients to **keep in mind systems thinking and the dynamic of local optimization**. [[1](#references), p. 284, emphasis added]
+> **不要指望这个过程会很快，它需要几年甚至几十年的时间——事实上** - 考虑到持续改进这个支柱，它是永远的。良好的幽默感，非正式的支持性实践社区，以及耐心，对组织改进特别有帮助。庆祝前进的一小步。特别是在组织重新设计的工作中，我们鼓励我们的客户牢记系统思维和局部优化的动态。[[1](#参考文献), p. 284, 强调是后加的]
 
-#### Learnings and Positive Effects
+#### Learnings and Positive Effects 知识和积极的影响
 A key purpose of LeSS is to make already-existing issues visible again. Hence, when the euphoria settled and the product focus increased, the issues and failures described in this report became visible. Then, to correct the errors and make up for what ADD lost so far, the introduction of inevitable changes began.
+LeSS的一个关键目的是让已经存在的问题再次显现。因此，当欣喜若狂的情绪稳定下来，产品的关注度提高后，本报告中描述的问题和失败就变得明显了。然后，为了纠正错误，弥补ADD到目前为止的损失，开始引入不可避免的改变。
 
 Despite the dysfunctions and pain ADD was in, these have led to positive effects and learnings.
+尽管ADD出现了功能障碍和痛苦，但这些都带来了积极的影响和知识。
 
 An important learning is that *whole product focus* and an *inspiring product vision* are crucial for successful adaptive development.
+一个重要的经验是，整个产品的关注度和鼓舞人心的产品愿景对于成功的适应性开发至关重要。
 
-##### Collaboration Between Departments
+##### Collaboration Between Departments 部门之间的合作
 Established cross-area events, such as reviews, Product Backlog refinements, and retrospectives, led to better collaboration between departments. Further, fewer roles and a higher degree of cross-functional teams reduced hand-overs and politics between departments—less “we vs. them” thinking.
+既定的跨领域活动，如评审会、产品待办列表的梳理会，以及回顾会，推动了部门之间更好的合作。此外，更少的角色和更高程度的跨职能团队减少了部门之间的交接和政治斗争，没有 "我们与他们 "的想法。
 
 Multiple departments, even those adjacent to ADD, are working based on the same principles. Therefore, there are fewer escalations at the department borders necessary.
+多个部门，甚至那些与ADD相邻的部门，都在基于相同的原则来工作。因此，在部门边界的必要问题升级变少。
 
-##### Higher Focus on Self-Managing Teams and Frequent Retrospectives
+##### Higher Focus on Self-Managing Teams and Frequent Retrospectives 更加注重自我管理的团队和频繁的回顾
 Since the LeSS introduction, there is a sharper focus on *teams* rather than individuals, while demanding and supporting self-management. By far, more decisions are made by teams today compared to earlier, leading to less hand-off and information scatter.
+自从引入LeSS后，人们更加关注团队而不是个人，同时要求并支持自我管理。到目前为止，与早期相比，现在更多的决定是由团队做出的，这导致了更少的交接和信息分散。
 
 Further, retrospectives, inspections, and adaptations occur each Sprint, which hardly ever happened before the LeSS adoption. Meaning root-causes are being analyzed and fixed much more frequently.
+此外，每个Sprint都会出现回顾、检查和调整，这在采用LeSS之前几乎从未发生过。这意味着根本原因被更频繁地分析和解决。
 
-##### Technical Excellence
+##### Technical Excellence 技术的精益求精
 The attention to technical excellence increased significantly with the start of the LeSS adoption. It led to a higher focus on virtualization and automation.
+随着LeSS采用的开始，对技术的精益求精的关注度明显提高。它引领了对虚拟化和自动化的高度重视。
 
 Coaching on technical excellence increased the awareness of its importance and implications. It led to modern C++, clean(er) code, TDD, etc. Merging the research with the development group amplified the progress on technical excellence. Further, cross-team collaboration improved shared code ownership.
+对技术的精益求精的辅导提高了人们对其重要性和影响的认识。它引领了Modern C++、代码整洁、TDD等等。将研究与开发小组合并，扩大了技术的精益求精方面的进展。此外，跨团队合作提高了共享代码的所有权。
 
 There is also more try, inspect, and adapt to learn from the real product environment instead of finding a “solution” to a problem without writing any code.
+也有更多的尝试、检查和适应，从真实的产品环境中学习，而不是不写任何代码就找到问题的"解决方案"。
 
-##### ADD Learned to Drive the LeSS Adoption Themselves
+##### ADD Learned to Drive the LeSS Adoption Themselves ADD学会了自己驱动LeSS的采用
 When an external coach is engaged to help a company adopt LeSS, the coach usually takes the driving person’s role. On the positive side, this approach leads to fewer failures in the beginning. On the contrary, as soon as the coach leaves, the company must learn to continue alone, which could be hard without a coach.
+当一个外部教练参与帮助一个公司采用LeSS时，教练通常会扮演驱动者的角色。从积极的方面来说，这种方法在一开始会导致较少的失败。相反，一旦教练离开，公司必须学会独自继续，这在没有教练的情况下是很难的。
 
 In this case, BMW Groups’ internal people took the driving person’s role. The coach focused very much on enabling the internal employees to make the adoption themselves. Doing so led to some failures due to still limited internal experience, which the ADD learned from. This way, the product group can still pursue the LeSS adoption themselves even after all external coaches’ engagement ended.
+在这种情况下，宝马集团的内部人员承担了驱动者的角色。教练非常注重让内部员工自己进行LeSS采用。这样做导致了一些失败，因为内部经验仍然有限，而ADD从这些失败中学习。这样一来，即使在所有外部教练的参与结束后，产品组仍然可以自己追求LeSS的采用。
 
 ADD got used to real adaptations. Therefore, it is easier to initiate changes when necessary.
+ADD习惯了真正的适应性。因此，在必要时更容易启动变革。
 
 From this point on, the change must be continuous and sustainable, made in small steps, going towards the initial optimizing goals.
+从这一点来说，变革必须是连续的、可持续的，以小步快跑的方式进行，朝着最初的优化目标前进。
 
 Two steps forward, one step back, still brings you ahead!
+前进两步，后退一步，仍能让你前进！
 
-## Outlook
+## Outlook 展望
 During the writing period of this report, further adaptations took place at ADD. Teams of a Requirement Area and their dedicated line manager are one organizational unit now. Line managers have a much narrower scope of concern and can focus on teams of one Requirement Area. APOs and Scrum Masters remain in other separate organizational units.
+在本报告撰写期间，ADD进行了进一步的调整。现在，一个需求领域的团队和他们专门的直线经理是一个组织部门。直线经理的关注范围变窄，可以专注于一个需求领域内的团队。APO和Scrum Master仍然在其他独立的组织部门中。
 
 Prioritization is starting to happen. The product focus is increasing fast, allowing everyone to inspect and adapt based on product-related issues.
+优先级排序开始发生了。对产品的关注度正在快速增加，使每个人都能根据产品相关问题进行检查和调整。
 
 It seems that ADD is entering the fourth phase of the Satir change model—the integration phase. Overlaying the Satir change model pattern with [Shu-Ha-Ri](https://www.makigami.info/continuous-improvement-tools/shuhari-japanese-learning-system/) stages gives a better understanding of why it is happening this way, and how the future could look like (see [Figure 23](#fig023)).
+似乎ADD正在进入萨蒂尔变革模型的第四阶段——整合阶段。将萨蒂尔变革模型模式与[守破离](https://www.makigami.info/continuous-improvement-tools/shuhari-japanese-learning-system/)阶段叠加在一起，可以更好地理解为什么如此发生，以及未来会是什么样子（见[图23](#fig023)）。
 
 <a name="fig023"></a>
 <figure>
@@ -1182,8 +1205,10 @@ It seems that ADD is entering the fourth phase of the Satir change model—the i
 </figure>
 
 Facing the blunt reality, and understanding and living out the rules and practices help enter the *integration phase*, which also correlates with the *Ha* stage. In the Ha stage, people in an organization must reflect on the meaning and purpose of everything that they learned. Therefore, they come to a deeper understanding of the art—in this case, large-scale adaptive development—than pure repetitive practice can allow.
+面对直白的现实，理解并践行规则和实践有助于进入整合阶段，这也与破阶段相关。在破阶段，组织中的人必须反思他们所学的一切的意义和目的。因此，他们对艺术——这里指的是大规模的适应性开发——有了更深刻的理解，而不是纯粹的重复性实践。
 
 It is too early to draw any conclusions from the recent adaptations. They need close observation and analysis over time. The results of this could be the next volume of this report.
+从最近的适应性发展中得出任何结论还为时过早。它们需要经过一段时间的密切观察和分析。这方面的结果可能是本报告的下一卷。
 
 # 技术视角
 在这一部分中，探讨了几个技术方面：哪些进展顺利，哪些不足，以及下一次需要学习什么。为了更好地理解起点，这里简要介绍了转型开始之前的技术情况。以下章节将提供更多详细信息。
