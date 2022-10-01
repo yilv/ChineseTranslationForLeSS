@@ -12,7 +12,7 @@
 # 介绍
 宝马集团决定经历一场重要的变革，为了组织能够交付最高的客户价值、比竞争对手更快的学习速度，以及创建一个容易适应的组织以确保前两个目标的实现。目前依然是在旅程中。
 
-本篇报告是关于在宝马集团自动驾驶部门深入实践探索LeSS导入。它包括了从2016年年中到2019年10月的实践，目前LeSS导入仍旧在进行中。
+本篇报告是关于在宝马集团ADD（Automated and Autonomous Driving Department/自动驾驶部门）深入实践探索LeSS导入。它包括了从2016年年中到2019年10月的实践，目前LeSS导入仍旧在进行中。
 
 本报告的作者是[Konstantin Ribel](https://less.works/profiles/konstantin-ribel)和[Michael Mai](https://less.works/profiles/michael-mai)。由于法律原因，涉及到的人并没有使用真实姓名。
 
@@ -24,7 +24,7 @@
 你可以从任何喜欢的角度开始！
 
 # 背景
-在宝马集团作为汽车设计师和制造商的旅程中，其致力于通过3级自动驾驶 (AD) 提供更多安全性、舒适性、灵活性和质量（见[图1](#fig001)）。在通往AD的道路上要克服许多挑战，也许最重要的是AD其固有的复杂性。
+在宝马集团作为汽车设计师和制造商的旅程中，其致力于通过L3级AD（Autonomous Driving/自动驾驶) 提供更多安全性、舒适性、灵活性和质量（见[图1](#fig001)）。在通往AD的道路上要克服许多挑战，也许最重要的是AD其固有的复杂性。
 
 <a name="fig001"></a>
 <figure>
@@ -46,7 +46,7 @@
 ## 这一切是如何开始的
 在2015年成功推出新车后，我（Konstantin Ribel）正在寻找新的挑战。当时，高度自动驾驶项目刚刚开始。我在2016年初加入了这个项目。
 
-我的主要任务之一是创建一个高效的工作模式来开发我们复杂的AD开放平台，该平台涉及宝马集团、合作伙伴和供应商。对于一个标准复杂度的高级驾驶辅助系统（ADAS）的电子控制单元（ECU），我们通常用一个团队对接*一个*供应商来开发它。对于AD开放平台及其多处理器硬件设计，我们估计复杂度要高5-10倍，需要*多个*供应商和合作伙伴。我们进一步发现，如果我们以线性方式扩大规模，仅是用于供应商的项目管理接口，我们可能就需要增加10-15倍的人员（参见[图2](#fig002)）。我意识到必须改变一些东西来改进。
+我的主要任务之一是创建一个高效的工作模式来开发我们复杂的AD开放平台，该平台涉及宝马集团、合作伙伴和供应商。对于一个标准复杂度的ADAS（Advanced Driver-Assistance Systems/高级驾驶辅助系统）的ECU（Electronic Control Unit/电子控制单元），我们通常用一个团队对接*一个*供应商来开发它。对于AD开放平台及其多处理器硬件设计，我们估计复杂度要高5-10倍，需要*多个*供应商和合作伙伴。我们进一步发现，如果我们以线性方式扩大规模，仅是用于供应商的项目管理接口，我们可能就需要增加10-15倍的人员（参见[图2](#fig002)）。我意识到必须改变一些东西来改进。
 
 <a name="fig002"></a>
 <figure>
@@ -58,7 +58,7 @@
 
 我于2016年6月在柏林参加了CLP课程。在CLP课程的第二天，我意识到我在工作中的所有角色都体现了精益浪费 - “没有增加价值但消耗资源的时刻或行动” [[1](#参考文献), 第58页]。谁希望自己的工作是一种浪费？我很沮丧。课程结束后，我意识到我想减少我工作环境中的精益浪费，我确信我的同事也会想要这样。
 
-当我回到办公室时，我试图说服我的LM（Line Manager/直线经理）的上司（“Paul”）应该在我们的部门采用LeSS。最初，我并没有成功。我们对这在我们的环境中如何永远不会工作存在争议。这对我来说是一次非常令人失望的经历。然而，我记得Craig在CLP课程中经常重复以下说法：“[在引入变革时]像政治家一样思考和行动，而不是像工程师一样。” 我意识到我需要采取不同的行动，并停止强推这个话题。
+当我回到办公室时，我试图说服我的LM（Line Manager/直线经理）的上司（“Paul”）应该在我们的部门导入LeSS。最初，我并没有成功。我们对这在我们的环境中如何永远不会工作存在争议。这对我来说是一次非常令人失望的经历。然而，我记得Craig在CLP课程中经常重复以下说法：“[在引入变革时]像政治家一样思考和行动，而不是像工程师一样。” 我意识到我需要采取不同的行动，并停止强推这个话题。
 
 让我们从不同的角度来看这个故事。
 
@@ -68,7 +68,7 @@
   <figcaption>Figure 3: The bigger picture.</figcaption>
 </figure>
 
-2015年9月至2016年3月期间，我们试图为未来的ADAS系统（包括AD）建立一个组织单元。多个部门的主管齐心协力完成了这项任务。2016年4月1日，来自不同组织单位的多个部门为自动驾驶与ADAS合并组成了新的部门 - ADD（自动驾驶部门）。
+2015年9月至2016年3月期间，我们试图为未来的ADAS系统（包括AD）建立一个组织单元。多个部门的主管齐心协力完成了这项任务。2016年4月1日，来自不同组织单位的多个部门为AD与ADAS合并组成了新的部门 - ADD。
 
 在ADD启动后不久，我们发现在现有设置中，除其他问题外，部门、组和角色之间的大量协调开销和交接使我们放慢了速度。 对于具有许多不确定性和未知数的复杂产品（例如AD）来说，这是一个薄弱的起点。为了改善这种情况，ADD执行委员会在2016年6月至2016年12月期间就新的工作模式和组织设置进行了工作。
 
@@ -76,7 +76,7 @@
 
 在2017年1月份，一个所谓的迁移团队成立了，而我是其中一员。为了代表整个组织体系，这个团队由不同层次的经理和员工组成。这样的团队使我们可以在不同的抽象层次上讨论想法。我们继续完善ADD执行小组前一年提出的工作模式。我们讨论了不同的用例、日常情况以及如果我们采用这种工作模型它们会是什么样子。我们一直在努力提出改善我们所面临情况的建议。
 
-与此同时，Paul说服ADD高管与Craig Larman一起举办为期4天的研讨会，主题是大规模敏捷开发的系统思维和组织设计，也称为[认证LeSS高管](https://less.works/courses/less-executive.html)（CLE）课程。我们想要确保所有高管的参加，但是由于他们的时间安排，该活动不得不在几个月后举行。为了在那之前能动起来，2017年4月，我与Mark Bregenzer组织了一个为期一天的介绍研讨会。
+与此同时，Paul说服ADD高管与Craig Larman一起举办为期4天的研讨会，主题是大规模敏捷开发的系统思维和组织设计，也称为[CLE](https://less.works/courses/less-executive.html)（Certified LeSS Executive/认证LeSS高管）课程。我们想要确保所有高管的参加，但是由于他们的时间安排，该活动不得不在几个月后举行。为了在那之前能动起来，2017年4月，我与Mark Bregenzer组织了一个为期一天的介绍研讨会。
 
 <a name="fig004"></a>
 <figure>
@@ -97,7 +97,7 @@ Mark介绍的内容激发了参与者的灵感。很明显，我们需要朝着�
 **开始阶段的复盘总结**   
 
 * 像政治家一样思考和行动，而不是像工程师一样   
-* 在不同的组织层级中获得盟友并对齐你们共同的目标 - 真正的改变只有作为一个群体才有可能，既自上而下又自下而上。 LeSS指南：[三个采用原则](https://less.works/less/adoption/three-principles) [[3](#参考文献), 第55-59页]   
+* 在不同的组织层级中获得盟友并对齐你们共同的目标 - 真正的改变只有作为一个群体才有可能，既自上而下又自下而上。 LeSS指南：[三个导入原则](https://less.works/less/adoption/three-principles) [[3](#参考文献), 第55-59页]   
 * 培训所有高级管理人员和董事，尤其是那些拥有真正决策权的人 [[3](#参考文献), 第57页]   
 * “在自己的土地上，你永远不是先知。” 聘请在敏捷开发的大规模组织设计方面经验丰富的外部专家。这位专家 - 一位出色的培训师和一位出色的教练 - 将专注于*为什么*这么做，并将在你的LeSS导入中产生积极影响。有关此主题的更多信息，请参阅《大规模Scrum》[[3](#参考文献), 第3页] 一书中“教授为什么”的部分   
 *（LeSS指南：启动）
@@ -145,9 +145,9 @@ ADD从原先部门继承了超过15个不同角色，这些角色定义了接口
   <figcaption>Figure 8: Close cross-team collaboration across functions and hierarchies.</figcaption>
 </figure>
 
-几周后，在两个团队都获得了很多见解之后，组织设计的优化目标变得明显。首先，世界上没有人确切知道如何做可以量产的自动驾驶汽车。因此，学习‘What’以及‘How’变得至关重要。这也就要求组织成为一个*学习型组织*。
+几周后，在两个团队都获得了很多见解之后，组织设计的优化目标变得明显。首先，世界上没有人确切知道如何做可以量产的自动驾驶汽车。因此，学习*做什么*以及*怎么做*变得至关重要。这也就要求组织成为一个*学习型组织*。
 
-其次，更快的反馈循环可以改善学习。由于还没有人制造出（SAE3级及更高级别的）自动驾驶汽车，因此任何成功的希望都必须是从‘现实中学习’、‘调整产品待办列表’并‘处理最高优先级的项目’中得来的。这意味着短周期时间、早期集成和在公共道路上行驶的原型车。换句话说，使用反馈循环来学习，然后决定下一步做什么。因此，始终处理新发现的最关键事项的能力需要一个适应性强的组织。
+其次，更快的反馈循环可以改善学习。由于还没有人制造出（L3级及更高级别的）自动驾驶汽车，因此任何成功的希望都必须是从现实中学习、调整产品待办列表，并处理最高优先级的条目中得来的。这意味着短周期时间、早期集成和在公共道路上行驶的原型车。换句话说，使用反馈循环来学习，然后决定下一步做什么。因此，始终处理新发现的最关键条目的能力需要一个适应性强的组织。
 
 以上这些发现得出了如下优化目标：
 
@@ -155,9 +155,9 @@ ADD从原先部门继承了超过15个不同角色，这些角色定义了接口
 2. 基于学习，致力于和交付最高客户价值的能力
 3. 易于适应的组织，以确保 (1) 和 (2)
 
-有必要消除浪费以实现优化目标。首先，需要减少协调开销。例如，识别具有经验和专业知识的合适人员来进行聚焦的讨论，尤其是排除中层管理人员，以避免‘个人战术职业游戏’干扰这些讨论（通常会增加开销）。
+有必要消除浪费以实现优化目标。首先，需要减少协调开销。例如，识别具有经验和专业知识的合适人员来进行聚焦的讨论，尤其是排除中层管理人员，以避免个人战术职业游戏干扰这些讨论（通常会增加开销）。
 
-其次，需要清除交接浪费，尤其是在组件团队、单一职能‘筒仓‘和个人职责之间。指导目标是：增加职能部门之间的共同责任。
+其次，需要清除交接浪费，尤其是在组件团队、单一职能筒仓和个人职责之间。指导目标是：增加职能部门之间的共同责任。
 
 我们详尽分析了在我们的领域中使用LeSS是否可以实现所有这些。对于此分析，我们邀请了不属于迁移和高管团队的人员，他们具有不同的角色和用例。我们让这些人挑战LeSS工作模型，并彻底讨论了他们的用例，例如缺陷处理和在安全关键软件和共享公共代码的背景下获得公共道路的驾驶批准。讨论的重点是我们如何用LeSS来实现用例的结果。
 
@@ -165,7 +165,7 @@ ADD从原先部门继承了超过15个不同角色，这些角色定义了接口
 
 除了LeSS之外，执行团队还有其它关于如何实现结果的方案。只有*一个*需要对组织*结构*进行更改 - 艰难方式。其它的方案只需要改变*实践* - 简单方式。高管们已经了解到，仅仅改变实践而不重组组织设计的方式并不会改变任何事情。一些高管称这些尝试只是贴了不同标签的“老调重弹”。
 
-相比之下，LeSS 需要对组织结构进行深刻的改变 - 这是一种更难的方式，但更有可能支持我们达到目标。在2017年6月我们决定采用LeSS。
+相比之下，LeSS需要对组织结构进行深刻的改变 - 这是一种更难的方式，但更有可能支持我们达到目标。在2017年6月我们决定导入LeSS。
 
 <a name="fig009"></a>
 <figure>
@@ -183,7 +183,7 @@ AD由客户需求和法律要求驱动，新技术和无缝连接正在为实现
 </figure>
 
 #### 在这次LeSS导入中产品是什么？
-> 产品定义决定了你的产品待办列表的范围，以及谁会是好的PO（Product Owner/产品负责人）。采用LeSS时，产品定义决定了你可以预期的组织变革程度以及需要参与的人员。[[3](#参考文献), 第157页]
+> 产品定义决定了你的产品待办列表的范围，以及谁会是好的PO（Product Owner/产品负责人）。导入LeSS时，产品定义决定了你可以预期的组织变革程度以及需要参与的人员。[[3](#参考文献), 第157页]
 
 客户很可能会认为AD就是一种移动服务，涵盖范围从智能手机应用程序、移动网络、汽车、传感器、算法、执行器、轮胎到道路基础设施。这个清单很长但这只是从技术视角来看的清单。如果从法律的角度来看，则需要处理保险问题、道路清关、法律变更等。为了满足这个产品定义，则需要多方参与，除了宝马集团，还包括各国政府、保险公司、供应商、服务提供商等等。客户的观点可能是正确的，但同时，没法从这样的规模开始导入LeSS。
 
@@ -192,7 +192,7 @@ AD由客户需求和法律要求驱动，新技术和无缝连接正在为实现
 1. LeSS导入的组织边界；
 2. 能够参与进来的各方
 
-这两个因素将产品定义限制在以宝马集团为主的具有自动驾驶功能的汽车上。该产品定义需要与宝马集团内的其他部门以及未采用LeSS的供应商合作。
+这两个因素将产品定义限制在以宝马集团为主的具有自动驾驶特性的汽车上。该产品定义需要与宝马集团内的其他部门以及未导入LeSS的供应商合作。
 
 [图11](#fig011)概述了宝马集团的组织结构。研发的每个部门都有其专门的高级副总裁。ADD高级副总裁支持这次LeSS导入，这也自然限制了LeSS导入在ADD的组织范围内。因此，与ADD之外的其他部门和各方的现有接口和工作模型需要保持不变。
 
@@ -208,17 +208,17 @@ AD由客户需求和法律要求驱动，新技术和无缝连接正在为实现
 
 在继续之前有个术语需要定义一下。
 
-**开始生产 (Start of Production - SOP)**：作为一个重要的里程碑，涉及更新或新的汽车模型，其生产将在此版本之后开始。此外，技术栈（硬件和软件）也会被更新。
+**SoP（Start of Production/开始量产)**：作为一个重要的里程碑，涉及更新或新的汽车模型，其生产将在此版本之后开始。此外，技术栈（硬件和软件）也会被更新。
 
 尽管是长期的产品，但SoP仍以项目来组织。
 
-ADD有两个大项目，SoP2018和SoP2021。为了确保SoP2018的稳定交付，相关人员被排除在LeSS采用之外。他们可以在发布后加入LeSS组织。因此，他们的组织设置基本保持不变。
+ADD有两个大项目，SoP2018和SoP2021。为了确保SoP2018的稳定交付，相关人员被排除在LeSS导入之外。他们可以在发布后加入LeSS组织。因此，他们的组织设置基本保持不变。
 
 该决定还将SoP2018产品范围排除在可能的产品定义之外。
 
-因此，LeSS导入的产品定义变成了SoP2021的发布范围，不包括SoP2018。主要是SAE Level 2上的ADAS功能和SAE Level 3上的AD。它涉及传感器、计算硬件和软件的开发。它还需要与没有采用LeSS的ADD以外的部门和供应商合作。
+因此，LeSS导入的产品定义变成了SoP2021的发布范围，不包括SoP2018。主要是SAE（Society of Automotive Engineers/汽车工程师学会）L2级的ADAS功能和L3级的AD。它涉及传感器、计算硬件和软件的开发。它还需要与没有导入LeSS的ADD以外的部门和供应商合作。
 
-此外，AD应作为单独的自动驾驶平台 (ADP) 提供给其他汽车主机厂。
+此外，AD应作为单独的ADP（Autonomous Driving Platform/自动驾驶平台）提供给其它汽车主机厂。
 
 ### 从一开始就建立完整的LeSS组织架构
 LeSS要求小型的、端到端的、自我管理的团队为实现共同目标而进行协调，同时分担实现该目标的责任。我们的起始位置与预期的位置相去甚远（参见[认识到组织变革是必要的](#the-way-to-the-insight-that-organizational-change-is-necessary)一章）。此外，我们数十年来形成的思维方式支持单一职能团队、英雄主义、组件团队，并且只有一条需要从技术转向管理的职业通道。我们担心如果不改变奖励制度，人们就不会改变。因此，我们面临这样一个问题：“如果人们合作时，他们个人的情况会变得更糟，他们为什么要合作？” [[6](#参考文献)]。
@@ -291,9 +291,9 @@ LeSS要求小型的、端到端的、自我管理的团队为实现共同目标�
 #### 第二步 – 创建一个PO团队
 谁应该是PO？如[根据开发类型来找到PO](https://less.works/less/framework/product-owner.html#FindaProductOwnerGivenYourTypeofDevelopment)指南中所述 [[3](#参考文献), 第173页]，寻找PO的第一步是了解你的*开发类型*。
 
-一方面，我们的产品（AD）是更大的产品（汽车）的一部分。从这个意义上说，它就像内部组件开发。另一方面，客户需要额外付费以在汽车配置中添加自动驾驶特性。
+一方面，我们的产品（AD）是更大的产品（汽车）的一部分。从这个意义上说，它就像内部组件开发。另一方面，客户需要额外付费以在汽车配置中添加AD特性。
 
-关键点在于，最初由ADD负责人设定的产品愿景是将AD作为单独的自动驾驶平台 (ADP) 提供给其他汽车主机厂。 从这方面来看，它本身就是一个外部产品。
+关键点在于，最初由ADD负责人设定的产品愿景是将AD作为单独的ADP提供给其他汽车主机厂。 从这方面来看，它本身就是一个外部产品。
 
 对于外部产品，LeSS指南[谁应该是PO？](https://less.works/less/framework/product-owner.html#FindaProductOwnerGivenYourTypeofDevelopment)[[3](#参考文献), 第173页] 建议在产品管理部门寻找PO，例如产品管理负责人。此外，该指南定义：
 
@@ -305,7 +305,7 @@ LeSS要求小型的、端到端的、自我管理的团队为实现共同目标�
 
 因此，任何人都无法的独立的制定*或改变*重要的商业决策，即使是CEO也不成。相反，所有重要的商业决策都是在委员会中共同做出的。由此，我们知道未来的PO的独立决策权会受到一定的限制。
 
-从ADD中选择PO有两个理由：(1) 向其他汽车主机厂提供ADP的愿景；(2) ADD正在采用LeSS，而不是在整个宝马集团范围内采用。
+从ADD中选择PO有两个理由：(1) 向其他汽车主机厂提供ADP的愿景；(2) ADD正在导入LeSS，而不是在整个宝马集团范围内导入。
 
 先前存在的部门负责人已经负责所有ADAS和AD*客户产品*；他还掌握了开发它们的预算并有权决定如何使用它。在独立决策权的意义上，他不拥有最终的决策权，但的确拥有很多权力。当然，他需要与利益相关者保持一致，并在做出决策时考虑整个宝马集团的产品系列。因此，这个人成为了PO。APO则是从ADD的不同部分招募的。
 
@@ -325,7 +325,7 @@ LeSS要求小型的、端到端的、自我管理的团队为实现共同目标�
 1. SM在指导时将如何看待和接触更高级别的APO和LM？
 2. APO和LM如何看待“经验不足”（基于他们的级别）的SM？
 
-让我们也将 IPA（个人绩效考评）添加到教练的角度。一个人的LM进行年度IPA，这会影响到一个人的级别和薪水。此外，LM决定他们使用哪些数据进行绩效评估。
+让我们也将IPA（Individual Performance Appraisal/个人绩效考评）添加到教练的角度。一个人的LM进行年度IPA，这会影响到一个人的级别和薪水。此外，LM决定他们使用哪些数据进行绩效评估。
 
 考虑以下假设情况。假设几个团队和他们的SM有相同的LM。SM观察到LM的行为助长了自我管理的反模式。SM会做什么？
 
@@ -351,9 +351,9 @@ ADD内有三个主要部门。PO、APO及其支持人员组成了PO部门。所�
 
 这三个部门共同输送组成了需求领域：来自PO部门的APO、来自开发部门的团队以及来自能力和教练部门的SM。
 
-## A New Age—the First Requirement Area—Begins 一个新时代——第一个需求领域——开始了
+## A New Age—the First Requirement Area—Begins 一个新时代 - 第一个需求领域 - 开始了
 The first of the [Three Adoption Principles](https://less.works/less/adoption/three-principles) [[3](#参考文献), p. 55]—*Deep and Narrow over Broad and Shallow*—describes that LeSS should preferably be adopted in one product group well, instead of applying LeSS in many groups poorly. In case of LeSS Huge, LeSS adoptions should start with one [Requirement Area](https://less.works/less/less-huge/requirement-areas.html) and reach a good state before further scaling.
-[三条导入原则](https://less.works/less/adoption/three-principles)中的第一条[[3](#参考文献), 第55页] - *深而窄胜过广而浅* - 意思是LeSS最好应该优先在单个产品组中深入地导入，而不是在许多组中粗浅地应用LeSS。在LeSS 巨型的情况下，LeSS的导入应该从一个需求领域开始，做到良好的状态后，再进一步规模化。
+[三条导入原则](https://less.works/less/adoption/three-principles)中的第一条[[3](#参考文献), 第55页] - *深而窄胜过广而浅* - 意思是LeSS最好应该优先在单个产品组中深入地导入，而不是在许多组中粗浅地应用LeSS。在LeSS巨型的情况下，其导入应该从一个[需求领域](https://less.works/less/less-huge/requirement-areas.html)开始，做到良好的状态后，再进一步规模化。
 
 Since this is a LeSS Huge case, ADD followed the principle described above, and the LeSS adoption started with one Requirement Area.
 这是一个LeSS巨型的案例，ADD遵循了上述原则，LeSS的导入从一个需求领域开始。
@@ -396,7 +396,7 @@ The intention was to start small with volunteers.
 我们的意图是与志愿者一起从小做起。
 
 At this point, managers’ education consisted of the 1-day introduction to LeSS, [Craig’s Readings Preparing for LeSS for Executives](http://www.craiglarman.com/wiki/index.php?title=Readings_Preparing_for_LeSS_for_Executives), and coaching by Mark Bregenzer. [Certified LeSS Executive](https://less.works/courses/less-executive) (CLE) courses took place later, together with [Certified LeSS Practitioner](https://less.works/courses/less-practitioner) (CLP) courses of the first Requirement Area’s participants.
-针对这点，我们给管理者安排的培训包括1天的LeSS介绍、[Craig给LeSS管理者课程的阅读准备](http://www.craiglarman.com/wiki/index.php?title=Readings_Preparing_for_LeSS_for_Executives)，以及Mark Bregenzer的教练辅导。紧随其后是[认证LeSS管理者](https://less.works/courses/less-executive)（CLE）课程以及参与第一个需求领域所有人会参加[认证LeSS实践者](https://less.works/courses/less-practitioner)（CLP）课程。
+针对这点，我们给管理者安排的培训包括1天的LeSS介绍、[Craig给LeSS管理者课程的阅读准备](http://www.craiglarman.com/wiki/index.php?title=Readings_Preparing_for_LeSS_for_Executives)，以及Mark Bregenzer的教练辅导。紧随其后是CLE课程以及参与第一个需求领域所有人会参加[CLP](https://less.works/courses/less-practitioner)（Cerified LeSS Practitioner/认证LeSS实践者）课程。
 
 Setting up the first Requirement Area was constrained as follows.
 设立第一个需求领域的约束条件如下。
@@ -411,7 +411,7 @@ Setting up the first Requirement Area was constrained as follows.
 
 #### Parallel Organization 并行组织
 Constraint #1 and the size of ADD (around 800 people) led us to have a parallel organization as described in the respective guide [[3](#references), p. 74]. Looking at [Figure 16](#fig016) makes it clear that the scope of the build system and simple DCC (step 2) would be in the LeSS organization. Everything else (steps 3, 4, and 5) would need to remain in the former organizational structure to ensure stable delivery and stable interfaces to the outside of ADD and BMW Group. [Figure 17](#fig017) visualizes the notion of LeSS, non-LeSS organization, and people working for SoP 2018.
-约束条件#1和ADD的规模（大约800人）导致我们有一个并行组织，正如指南[[3](#references), 第74页]中所描述的那样。观察[图16](#fig016)可以清楚地看到，构建系统和简单的DCC（第2步）将在LeSS组织的范围内。其余的（第3、4、5步）都需要保留在以前的组织架构中，以确保稳定的交付以及与ADD和宝马集团外部的稳定接口。[图17](#fig017)展示了LeSS、非LeSS组织和为SoP 2018工作的人员的结构。
+约束条件#1和ADD的规模（大约800人）导致我们有一个并行组织，正如指南[[3](#references), 第74页]中所描述的那样。观察[图16](#fig016)可以清楚地看到，构建系统和简单的DCC（第2步）将在LeSS组织的范围内。其余的（第3、4、5步）都需要保留在以前的组织架构中，以确保稳定的交付以及与ADD和宝马集团外部的稳定接口。[图17](#fig017)展示了LeSS、非LeSS组织和为SoP2018工作的人员的结构。
 
 <a name="fig017"></a>
 <figure>
@@ -424,7 +424,7 @@ The parallel organization and the concept of “only volunteers should join the 
 
 #### Fake Volunteers 伪志愿者
 As mentioned in the section [Product Definition](#product-definition), ADD had two major milestones, SoP 2018 and SoP 2021. The people working on SoP 2018 remained in the former organization to ensure the release; they could not join the LeSS organization. Consequently, nearly all product developers, who delivered a car to series production at least once in their life, were not available for the first Requirement Area. This thinking in projects and, as a repercussion, still organizing people around work restricted the pool of available people with the required skills for successful product development in this context. See [Organize by Customer Value](https://less.works/less/structure/organizing_by_customer_value) [[3](#references), p. 78] for more information on the topic of organizing people around work vs. work around people.
-在[产品定义](#产品定义)一节中有提到，ADD有两个主要的里程碑，SoP 2018和SoP 2021。从事SoP 2018工作的人员仍留在原组织中以确保发布；他们不能加入LeSS组织。因此，几乎所有的产品开发人员，至少有过一次将汽车交付到量产，都不能参加第一个需求领域。考虑到项目，围绕工作来组织人员，限制了一些拥有成功产品开发所需技能的人参与进来。关于围绕工作组织人员与围绕人员组织工作这一主题的更多信息，请参见[按客户价值组织](https://less.works/less/structure/organizing_by_customer_value)[[3](#参考文献), 第78页]。
+在[产品定义](#产品定义)一节中有提到，ADD有两个主要的里程碑，SoP2018和SoP2021。从事SoP2018工作的人员仍留在原组织中以确保发布；他们不能加入LeSS组织。因此，几乎所有的产品开发人员，至少有过一次将汽车交付到量产，都不能参加第一个需求领域。考虑到项目，围绕工作来组织人员，限制了一些拥有成功产品开发所需技能的人参与进来。关于围绕工作组织人员与围绕人员组织工作这一主题的更多信息，请参见[按客户价值组织](https://less.works/less/structure/organizing_by_customer_value)[[3](#参考文献), 第78页]。
 
 Further, the beginning of August was also the beginning of the summer school holidays in Bavaria, Germany (see constraint #2). At this time, people with families were on their summer holidays, which reduced the pool of available people even further. The resulting pool of possible volunteers consisted mainly of long-term researchers who never developed a car to the production stage, people who freshly joined ADD, and few experienced key players.
 此外，8月初也是德国巴伐利亚州学校暑假的开始（见制约因素#2）。这个时候，有家庭的人都在享受暑期假日，这进一步减少了可参与的人数。因此，潜在的志愿者队伍主要包括从未经历从汽车研发到交付生产阶段的长期研究人员，刚加入ADD的人，以及少数有经验的关键人物。
@@ -436,17 +436,17 @@ Observations during CLP classes showed that some “volunteers” were poorly in
 在CLP课堂上的观察表明，一些“志愿者”并没有真正的知道和理解在LeSS组织中工作的含义。这时，“志愿者”才明白他们志愿参与了什么。有些人不喜欢他们课堂上学到的内容。他们不想成为第一个需求领域的一部分，变成了系统的囚犯。
 
 The guide [Getting Started](https://less.works/less/adoption/getting-started.html) [[3](#references), p. 59], advises the opposite order—step 0: educate everyone *first*, before volunteering. That wasn’t done.
-[如何开始](https://less.works/less/adoption/getting-started.html)指南[[3](#参考文献), 第59页]，建议采用相反的顺序——第0步：在寻找志愿者之前，*首先*培训每个人。这一点并没有做到。
+[如何开始](https://less.works/less/adoption/getting-started.html)指南[[3](#参考文献), 第59页]，建议采用相反的顺序 - 第0步：在寻找志愿者之前，*首先*培训每个人。这一点并没有做到。
 
 ### After the Start—Revisit Parallel Organization 启动后 - 再谈并行组织
 Before the LeSS adoption at the BMW Group, managers were usually involved in deciding what the actual work was and how to do it. Further, they conducted individual performance appraisals (IPA) and other line manager related tasks, for example, escalations with vendors and organizational changes. Let’s define this type of manager as a traditional manager.
-在宝马集团采用LeSS之前，经理们通常参与决定实际工作是什么以及如何处理。此外，他们会做IPA和其他与LM相关的任务，例如，上报与供应商和组织级变化相关问题。我们把这种类型的经理定义为传统经理。
+在宝马集团导入LeSS之前，经理们通常参与决定实际工作是什么以及如何处理。此外，他们会做IPA和其他与LM相关的任务，例如，上报与供应商和组织级变化相关问题。我们把这种类型的经理定义为传统经理。
 
 In LeSS, a [Product Owner](https://less.works/less/framework/product-owner.html) is responsible for the vision of a product and optimizing its impact by prioritizing the Product Backlog—the *What*. The teams, and *only the teams*, decide the *How* of turning the features or needs into a product. The work of both roles is overlapping intentionally. They should support each other.
-在LeSS中，[PO](https://less.works/less/framework/product-owner.html)对产品的愿景负责，并通过对产品待办列表 - *做什么* - 进行优先排序来优化愿景的影响。团队，*也只有团队*，才能决定*怎么做*将这些功能或需求转化为产品。是有意让这两个角色的工作重叠的。他们应该互相支持。
+在LeSS中，[PO](https://less.works/less/framework/product-owner.html)对产品的愿景负责，并通过对产品待办列表 - *做什么* - 进行优先排序来优化愿景的影响。团队，*也只有团队*，才能决定*怎么做*将这些特性或需求转化为产品。是有意让这两个角色的工作重叠的。他们应该互相支持。
 
 The existing paradigm at ADD—having clear lines of responsibility—led to the understanding that the duties or tasks of those roles are mutually exclusive. It became: a Product Owner decides on the What, and teams decide on the How.
-在ADD现有的范式 - 有明确的责任线 - 导致大家认为这些角色的职责或任务边界清晰，没有重叠。现在变成了：产品负责人决定做什么，而团队决定怎么做。
+在ADD现有的范式 - 有明确的责任线 - 导致大家认为这些角色的职责或任务边界清晰，没有重叠。现在变成了：PO决定做什么，而团队决定怎么做。
 
 Regular Scrum, and LeSS in this regard, don’t define the role of a line manager. What should line managers do?
 Scrum和LeSS在这方面并没有定义LM的角色。LM应该做什么？
@@ -461,7 +461,7 @@ ADD defined the responsibilities for the LeSS organization precisely this way. T
 ADD正是这样定义了LeSS组织的职责。PO部门负责*做什么*。开发部门的LM角色是提高组织系统的交付能力，而团队则决定*怎么做*。
 
 Constraint #3 (see [Prerequisites and Constraints](#prerequisites-and-constraints)) specified that a manager transitioning from a traditional manager to a line manager in the new organization would temporarily need to have a double role. The first would be their previous role as a traditional manager. The second would be their new line manager role. This dual role situation would persist as long as the prior group’s subordinates remained in the non-LeSS organization. In other words, a manager who is part of the LeSS organization would still carry out traditional management, deciding on the what and how, in the non-LeSS organization.
-约束条件#3（见[前提条件和制约因素](#前提条件和制约因素)）讲到，经理从传统经理过渡到在新组织中的直线经理，需要暂时承担双重角色。第一重是他们以前作为传统经理的角色。第二重是他们新的直线经理的角色。只要前一组的下属还在非LeSS系统的组织中，这种双重角色的情况就会一直存在。换句话说，一个属于LeSS组织的经理仍然会在非LeSS组织中进行传统的管理，决定做什么和怎么做。
+约束条件#3（见[前提条件和制约因素](#前提条件和制约因素)）讲到，经理从传统经理过渡到在新组织中的LM，需要暂时承担双重角色。第一重是他们以前作为传统经理的角色。第二重是他们新的LM角色。只要前一组的下属还在非LeSS系统的组织中，这种双重角色的情况就会一直存在。换句话说，一个属于LeSS组织的经理仍然会在非LeSS组织中进行传统的管理，决定做什么和怎么做。
 
 The double role setup would violate the distinction of product ownership, line management in LeSS, and traditional management. The concerns about the boundary violation of the roles and organizations led to a rejection of constraint #3. Consequently, the remaining people in the non-LeSS organization became manager free, and no one coordinated the what and the how for them—an unusual situation for those people.
 双重角色的设置影响到了产品所有权、LeSS中的直线管理和传统管理的区分。对破坏角色边界的顾虑导致了大家拒绝第3条约束。因此，非LeSS组织中剩下的人变成没有管理者，没有人为他们协调做什么和怎么做 - 这对这些人来说很不正常。
@@ -473,7 +473,7 @@ The sum of those circumstances made the rest of the ADD organization strongly de
 这些情况综合在一起使得ADD组织的其他成员对LeSS组织产生了强烈的依赖，不依靠LeSS组织的人，他们就无法交付。
 
 Simultaneously the LeSS organization focused on increasing its delivery capability as a Requirement Area. But, the delivery capability of the entire group working for SoP 2021 decreased, and interfaces to the rest of the BMW Group weakened. Why? Mainly because approximately 250 people in the non-LeSS organization lacked an understandable structure and were lost. Many people stopped doing whatever they were responsible for.
-同时，LeSS组织专注于提高其作为需求领域的交付能力。但是，为SoP 2021工作的整个小组的交付能力下降了，与宝马集团其他部门的联系也削弱了。为什么呢？主要是因为在非LeSS组织中大约有250人缺乏一个可理解的组织架构，并且迷失了方向。许多人不再做他们所负责的任何事情。
+同时，LeSS组织专注于提高其作为需求领域的交付能力。但是，为SoP2021工作的整个小组的交付能力下降了，与宝马集团其他部门的联系也削弱了。为什么呢？主要是因为在非LeSS组织中大约有250人缺乏一个可理解的组织架构，并且迷失了方向。许多人不再做他们所负责的任何事情。
 
 Further, some people of the LeSS organization focused so much on the Requirement Area that they dropped communication and interfaces to the rest of the organization. The pressure for finding a solution increased rapidly, and the lead coach (the first LeSS coach and trainer in this LeSS adoption) became heavily involved in helping to find one. Additional LeSS coaches were engaged in continuing coaching of the first Requirement Area.
 此外，LeSS组织中的一些人非常关注需求领域，以至于他们放弃了与组织其他成员的沟通和联系。寻找解决方案的压力迅速增加，首席教练（在这次导入LeSS过程中的第一位LeSS教练和培训师）开始大量参与帮助寻找解决方案。其他的LeSS教练也参与到第一个需求领域的持续辅导中。
@@ -504,7 +504,7 @@ At this stage, the Product Backlog of the first Requirement Area started mutatin
 在这个阶段，第一个需求领域的产品待办列表开始变为一个多层次的、树状的需求集，引入了条目之间的依赖，这掩盖了要做工作的整体概况、演进的方向，并对只是一个需求领域的优先级排序也已经带来了负担。产品待办列表开始偏离大多数与其相关的指南，特别是*不要“管理依赖”而是最小化约束* [[3](#参考文献)，第198页]和*最多三层* [[3](#参考文献)，第222页]。
 
 Before the LeSS adoption two “project groups” had created prototype code for some aspects of autonomous driving; the two sets of experimental code contained lots of duplication and inconsistencies across them. To “speed” things up (another *quick fix*), the entire legacy code from these two bases was merged to the new master branch, with little automated testing, leaving the feature and code coverage at an insufficient level (for more details see [Merging Repositories](#merging-repositories)). Consequently, shared code ownership became significantly more difficult. The build system and infrastructure were not ready for this structure and load. The whole system became slow, and feedback times increased significantly. As a consequence, trunk-based development with fast feedback cycles became impossible (more on this topic in the [Technology View](#technology-view) chapter).
-在导入LeSS之前，有两个“项目组”为自动驾驶的某些方面已经创建了原型代码；这两套实验性代码中包含了很多重复和不一致的地方。为了“加快”进度（另一个*速效方案*），来自这两个代码库的整个遗留代码被合并到新的主干分支，几乎没有自动化测试，使得特性和代码的覆盖率处于不足的水平（更多细节见[合并代码库](#仓促合并仓库)）。因此，共享代码所有权变得更加困难。构建系统和基础设施还没有准备好应对这种结构和负载。整个系统变得很慢，反馈时间也大大增加。因此，有着快速反馈周期的主干开发变得不可能（更多关于这个主题的内容请见[技术视角](#技术视角)章节）。
+在导入LeSS之前，有两个“项目组”为自动驾驶的某些方面已经创建了原型代码；这两套实验性代码中包含了很多重复和不一致的地方。为了“加快”进度（又一个*速效方案*），来自这两个代码库的整个遗留代码被合并到新的主干分支，几乎没有自动化测试，使得特性和代码的覆盖率处于不足的水平（更多细节见[合并代码库](#仓促合并仓库)）。因此，共享代码所有权变得更加困难。构建系统和基础设施还没有准备好应对这种结构和负载。整个系统变得很慢，反馈时间也大大增加。因此，有着快速反馈周期的主干开发变得不可能（更多关于这个主题的内容请见[技术视角](#技术视角)章节）。
 
 The second Requirement Area kicked off with a broken backlog and build system. And the scope for the LeSS organization expanded to *all* software components and sensors, yet still being developed on only the rapid prototyping platform (step 3 in [Figure 16](#fig016)).
 第二个需求领域以一个破碎的待办列表和构建系统拉开序幕。而LeSS组织的范围扩大到*所有的*软件组件和传感器，但仍然只在快速原型平台上开发（[图16](#fig016)中的第3步）。
@@ -535,7 +535,7 @@ Although a LeSS Huge organizational structure allows such flexibility, it is int
 
 ## Retrospective On The Timeline View 时间线视角上的回顾
 > Adjusting organizational structure is relatively easy, but changing mindset takes time, discussion, introspection, and learning. [[1](#references), p. 229]
-> 调整组织架构相对容易，但改变思维方式需要时间、讨论、反省和学习。[[1](#参考文献), p. 229]
+> 调整组织架构相对容易，但改变思维方式需要时间、讨论、反省和学习。[[1](#参考文献), 第229页]
 
 The BMW Group’s LeSS adoption can be visualized with the help of the Satir change model. [Figure 19](#fig019) shows the journey to the current state and how it could look like in the future.
 宝马集团LeSS的导入可以借助萨蒂尔变革模型来进行展现。[图19](#fig019)显示了通向当前状态的历程以及未来可能的样子。
@@ -570,26 +570,26 @@ Let’s elaborate on what the product development system is, using Jay Galbraith
 </figure>
 
 Craig Larman and Bas Vodde observed in their book *Scaling Lean & Agile Development* that a Scrum or LeSS adoption directly alters the *processes* and *structural* elements. In ADD’s case, precisely those elements were focused on when preparing for the LeSS adoption.
-Craig Larman和Bas Vodde在他们的《规模化精益和敏捷开发》一书中指出，Scrum或LeSS的采用直接改变了流程和结构的要素。在ADD的案例中，在准备导入LeSS时，正是聚焦于这些要素。
+Craig Larman和Bas Vodde在他们的《规模化精益和敏捷开发》一书中指出，Scrum或LeSS的导入直接改变了流程和结构的要素。在ADD的案例中，在准备导入LeSS时，正是聚焦于这些要素。
 
 Structure and processes are only *two* parts of an organization’s design, and often too many efforts are spent on just them and too little on the other elements.
 结构和流程只是一个组织设计的两个部分，往往在这两个部分上花费了太多的精力，而在其他要素上花费的精力太少。
 
 > Structure is usually overemphasized because it affects status and power... [14, p. 4]
-> 结构通常被过分强调，因为它影响到地位和权力…… [14, p. 4]
+> 结构通常被过分强调，因为它影响到地位和权力…… [[14](#参考文献), 第4页]
 
 The Star Model elements are highly interwoven and have influential forces on one another, which *together* influence the behavior, culture, and performance of the organization. Therefore, alignment between *all elements is crucial* for an organization to be effective. Otherwise, the organizational capability *decreases*. Galbraith put it this way:
 星型模型的各个要素是高度交织在一起的，互相影响，它们又共同影响着组织的行为、文化和绩效。因此，所有元素之间的协调对于一个组织的有效性至关重要。否则，组织能力就会下降。Galbraith这样说：
 
 > For an organization to be effective, *all the policies* (elements in the Star Model™) must be aligned and interacting harmoniously with one another. [14, p. 5, explanation in parenthesis added, emphasis added]
-> 一个组织要想有效，所有的政策（星型模型™中的元素）都必须保持一致，并相互和谐地互动。[14，第5页，括号内的解释是后加的，重点是后加的] 。
+> 一个组织要想有效，所有的政策（星型模型™中的元素）都必须保持一致，并相互和谐地互动。[[14](#参考文献)，第5页，括号内的解释是后加的，重点是后加的] 。
 
 This retrospective analysis is structured using the Star Model elements.
 这篇回顾性分析是使用星型模型的元素来组织的。
 
 ### Strategy & Task 战略与任务
 > Effective team self-management is impossible unless someone in authority sets the direction for the team’s work. [12, p. 62]
-> 除非有权威人士为团队的工作指明方向，否则不可能实现有效的团队自我管理。[12, p. 62]
+> 除非有权威人士为团队的工作指明方向，否则不可能实现有效的团队自我管理。[[12](#参考文献), 第62页]
 
 Despite a LeSS introduction and decision to manage *product* development as product development, the reality felt like *project* development.
 尽管引入了LeSS并决定将产品开发作为产品开发来管理，但现实中的感觉更像是项目开发。
@@ -601,7 +601,7 @@ Before the LeSS adoption, such a modular system contract (an actual document) wa
 在导入LeSS之前，这样的模块化系统合同（一个实际的文件）是在ADD和产品管理部门之间签署的。
 
 The traditional automotive industry still does long-delayed integration rather than frequent. Therefore, there was (and still is) a BMW Group-wide general car project timeline, which defined fixed integration steps and other milestones across all involved departments on the way to the start of production so that they can synchronize their work on a slow cycle.
-传统的汽车行业仍然是做长期延迟的集成，而不是频繁的集成。因此，过去（现在也是）有一个宝马集团范围内的通用汽车项目时间表，它定义了固定的集成步骤和所有参与部门在开始生产途中的其他里程碑，以便他们可以在一个缓慢的周期内同步工作。
+传统的汽车行业仍然是做长期延迟的集成，而不是频繁的集成。因此，过去（现在也是）有一个宝马集团范围内的通用汽车项目时间表，它定义了固定的集成步骤和所有参与部门在开始量产途中的其他里程碑，以便他们可以在一个缓慢的周期内同步工作。
 
 [Figure 21](#fig021) illustrates the setup between the modular system contract, the general car project timeline, and ADD.
 [图21](#fig021)说明了模块化系统合同、通用汽车项目时间表和ADD之间的设置。
@@ -619,16 +619,16 @@ Interestingly, the people conveying this message ignored the evidence that, at l
 有趣的是，传达这一信息的人忽视了这样的证据，至少在过去的十年中，产品组从来没有在一个给定的期限内交付 "一切"。通常有一个密集的工作模式（就像一个任务组），有人把不太重要的主题放在次优先位置，以专注于关键的任务。
 
 Further, the scope described in the modular system contract was, to a degree, negotiable. What was that degree? All the features a customer could experience in the latest car model must also be available in a new model. Therefore, the scope of existing features was a must-have. However, the content of new features was negotiable.
-此外，模块化系统合同中描述的范围在某种程度上是可以协商的。这个程度是什么？客户在最新的车型中可以体验到的所有功能也必须在新模型中提供。因此，现有功能的范围是必须具备的。然而，新功能的内容是可以协商的。
+此外，模块化系统合同中描述的范围在某种程度上是可以协商的。这个程度是什么？客户在最新的车型中可以体验到的所有特性也必须在新模型中提供。因此，现有特性范围是必须具备的。然而，新特性的内容是可以协商的。
 
 Despite the evidence, those circumstances diminished the acceptance of reducing-the-scope discussions (at least at an early stage), leading to no prioritization because “everything was crucial.” The resulting behavior was “we need everything.” Wishful thinking! Of course, if everything is equally important, everything is equally unimportant. Only one year before the release, deprioritization started—meaning re-negotiations of the scope and date. Such late re-negotiations were—and still are—common and in line with other BMW Group projects; therefore, they were expected.
-尽管已经有历史证据，对缩小范围讨论（至少在早期阶段）的接受程度还是减少了，这导致没有优先次序，因为 "所有都很重要"。由此产生的行为是 "我们需要所有"。一厢情愿的想法! 当然，如果所有东西都同样重要，那么所有东西也同样不重要。仅仅在发布前一年，取消优先级的工作开始了——意味着对范围和日期的重新谈判。这种晚期的重新谈判在过去和现在都很常见，并且与宝马集团的其他项目相一致；因此，这是在意料之中的。
+尽管已经有历史证据，对缩小范围讨论（至少在早期阶段）的接受程度还是减少了，这导致没有优先次序，因为 "所有都很重要"。由此产生的行为是 "我们需要所有"。一厢情愿的想法! 当然，如果所有东西都同样重要，那么所有东西也同样不重要。仅仅在发布前一年，取消优先级的工作开始了——意味着对范围和日期的重新谈判。这种晚期的重新谈判在过去和现在都很常见，并且与宝马集团的其它项目相一致；因此，这是在意料之中的。
 
 Another aspect led to an unprioritized so-called “Product Backlog” (so-called since, per definition, a real Product Backlog would be prioritized, providing a clear direction). Most not-really-APOs “APOs” were project managers who had also previously been developers.
 还有一个原因导致了所谓的 "产品待办列表"（所谓的是因为根据定义，真正的产品待办列表会有优先级，提供一个明确的方向）没有优先级。大多数所谓的 "APOs"是项目经理，他们以前也是开发者。
 
 The first Requirement Area started with such “APOs” acting as a fake PO because it was only one Requirement Area, and the person who later became the PO was not fully available. Sometime after starting the first Requirement Area, both “APOs” rejected coaching, especially on setting up a real Product Backlog. Why?
-第一个需求领域开始时，这些 "APO "作为一个假的PO来工作的，因为只有一个需求领域，而后来成为PO的人当时又在忙别的。在第一个需求领域开始后的某个时候，两个 "APO"都拒绝了辅导，特别是在建立一个真正的产品待办列表方面。为什么呢？
+第一个需求领域开始时，这些“APO”作为一个伪PO来工作的，因为只有一个需求领域，而后来成为PO的人当时又在忙别的。在第一个需求领域开始后的某个时候，两个 "APO"都拒绝了辅导，特别是在建立一个真正的产品待办列表方面。为什么呢？
 
 To start with, the learnings emerging during the initial coaching sessions were undoubtedly uncomfortable. For example, accepting that the idea of *managing the product complexity* by splitting it into small parts is an illusion and that instead, empirical control, learning from product experience feedback, and prioritization are a better approach.
 首先，最初的辅导环节中的学习内容无疑是令人不舒服的。例如，接受通过将产品分割成很小的部分来管理产品复杂性的想法是一种错觉，相反，经验控制、从产品经验反馈中学习以及优先级排序是更好的方法。
@@ -640,7 +640,7 @@ The resulting lack of PO/APO and Product Backlog competence led to a “Product 
 因此，PO/APO和产品待办列表能力的缺乏，导致 "产品待办列表 "中充满了多个抽象层级的技术任务，而且这些任务之间存在诸多依赖关系，这也是PO对产品待办列表进行优先级排序的主要障碍。
 
 **Key point**: Most “APOs” could not keep the whole product focus and derive valuable items for the next Sprints. Instead, they tried to split everything into small parts—a decades-of-practice habit and a fear response of forgetting something.
-**关键点**：大多数 "APO"不能保持对整个产品的关注并为下一个Sprints准备有价值的条目。相反，他们试图把所有的东西分成很小的部分——这是几十年来的习惯，也是害怕忘记某些东西的反应。
+**关键点**：大多数 "APO"不能保持整体产品焦点并为下一个迭代准备有价值的条目。相反，他们试图把所有的东西分成很小的部分——这是几十年来的习惯，也是害怕忘记某些东西的反应。
 
 Those circumstances were very convenient for the teams because technical tasks narrowed their focus to just one or two components but didn’t motivate them to learn the customer language, nor to learn across a broader set of components and skills to increase their learning and *adaptiveness*. In consequence, the so-called “Product Backlog” consisted mainly of technical tasks instead of customer-centric items. The result was two other anti-patterns. (1) Re-prioritization on the product level became difficult—in fact, close to impossible—because technical tasks naturally depended more on each other. And (2) collaboration and coordination opportunities between teams when finding technical solutions for customer-centric problems were hard to find. Why? Because technical tasks typically reflect only a small part of the whole system, for example, one component, but customer-centric items usually span multiple system elements.
 这些情况对团队来说是非常方便的，因为技术任务将他们的注意力缩小到了一两个组件上，但并没有激励他们去学习客户的语言，也没有激励他们学习更广泛的组件和技能，以增加他们的学习和适应能力。因此，所谓的 "产品待办列表 "主要由技术任务组成，而不是以客户为中心的条目。其结果是另外两种反模式。(1) 在产品层面上重新确定优先级变得很困难——事实上，几乎是不可能的——因为技术任务自然是相互依赖的。(2) 在为以客户为中心的问题寻找技术解决方案时，很难找到团队之间的合作和协调机会。为什么呢？因为技术任务通常只反映整个系统的一小部分，例如一个组件，但以客户为中心的条目通常跨越多个系统元素。
@@ -649,13 +649,13 @@ Both anti-patterns led to overloaded so-called “APOs.” Some of them acted as
 这两种反模式导致了所谓的 "APO"的工作超载。他们有些人的行为更像是单一团队的 "PO"，在他们的需求领域内针对团队的产品待办列表排优先级，这加强和放大了条目从产品需求到技术任务的螺旋式下降。
 
 The result? Lack of whole-product focus and prioritization, leading to high busyness and *output* of completed technical tasks, but very low output of completed customer features, and thus no useful *outcome*. This typhoon of technical tasks made it impossible for the PO to have a meaningful whole-product overview, to order the so-called “Product Backlog,” which disempowered him and made him dependent on the technically involved “APOs”—he had to believe what the “APOs” told him.
-其结果是什么？缺乏对整个产品的关注和优先级考虑，导致了高度的忙碌和完成了大量的技术任务，但完成客户功能的产出却很低，没有产生有用的结果。这种技术任务的台风使PO不可能拥有一个有意义的整体产品视角，也不可能给所谓的 "产品待办列表"排序，这使他失去了权力，并使他依赖于技术的 "APO"——他不得不相信 "APO"告诉他的东西。
+其结果是什么？缺乏对整个产品的关注和优先级考虑，导致了高度的忙碌和完成了大量的技术任务，但完成客户特性的产出却很低，没有产生有用的结果。这种技术任务的台风使PO不可能拥有一个有意义的整体产品视角，也不可能给所谓的 "产品待办列表"排序，这使他失去了权力，并使他依赖于技术的 "APO"——他不得不相信 "APO"告诉他的东西。
 
 Why didn’t the PO clean up this mess? Why didn’t he enforce a real Product Backlog enabling him to order it? One cause is the lack of time for the job as PO. The person playing the PO role had many other duties; for example, VP of a department, project manager of a project external but adjacent to ADD, and most importantly, he was occupied with the SoP 2018 release. And there are very likely other reasons that remain invisible to us.
-PO为什么不收拾这个烂摊子？为什么他没有推行一个真正的产品待办列表，使他能够排序？一个原因是作为PO的工作时间太少。扮演PO角色的人有许多其他职责；例如，一个部门的副总裁，一个外部但与ADD相邻的项目的项目经理，最重要的是，他的时间被SoP 2018的发布所占用。很可能还有其他我们看不见的原因。
+PO为什么不收拾这个烂摊子？为什么他没有推行一个真正的产品待办列表，使他能够排序？一个原因是作为PO的工作时间太少。扮演PO角色的人有许多其他职责；例如，一个部门的副总裁，一个外部但与ADD相邻的项目的项目经理，最重要的是，他的时间被SoP2018的发布所占用。很可能还有其他我们看不见的原因。
 
 It begs the questions of why a “free” PO was not chosen and why we thought an overburdened person could effectively learn and do a complicated new approach?
-这引出了一个问题，为什么不选择一个 "自由"的PO，为什么我们认为一个负担过重的人可以有效地学习并采用一种复杂的新方法？
+这引出了一个问题，为什么不选择一个“自由”的PO，为什么我们认为一个负担过重的人可以有效地学习并采用一种复杂的新方法？
 
 No-one, at least to my knowledge (Konstantin here), questioned whether or not this person should become PO. He was considered a perfect fit for the PO role by people on all hierarchy levels. Why? Because before the LeSS adoption, he was the VP of the customer offerings department and re-prioritization was in his job’s nature.
 因为至少据我了解（这里指Konstantin），没有人质疑这个人是否应该成为PO。所有层级的人都认为他是一个非常适合担任PO角色的人。为什么呢？因为在导入LeSS之前，他是客户服务部门的副总裁，重新排优先级是他工作的本质。
@@ -673,13 +673,13 @@ Further, he knew about the problem of technical tasks “Product Backlog.” But
 此外，他知道技术任务 "产品待办列表 "的问题。但是，他决定支持这些所谓的 "APO"，主要是因为在 "APO"眼中，首席教练是一个从未向生产交付过汽车的人，这让教练在 "APO"和PO眼中的地位降低了。因此，PO更信任他的"APO"。
 
 > ... the failure to establish a compelling direction runs two significant risks: that team members will pursue whatever purposes they *personally prefer*, but *without any common focus*; or that they gradually will fade into the woodwork ... [12, p. 80, emphasis added]
-> ……如果不能确立一个令人信服的方向，就会有两个重大的风险：团队成员会追求他们*个人喜欢的*任何目的，但*没有任何共同的焦点*；或者他们会逐渐淡出……[12，第80页，强调是后加的]
+> ……如果不能确立一个令人信服的方向，就会有两个重大的风险：团队成员会追求他们*个人喜欢的*任何目的，但*没有任何共同的焦点*；或者他们会逐渐淡出……[[12](#参考文献)，第80页，强调是后加的]
 
 How could this situation be resolved?
 如何解决这种情况？
 
 > The key is to identify who has the legitimate authority for direction setting and then to make sure that that person or group exercises it *competently*, *convincingly*, and *without apology*. Team performance greatly depends on how well this is done. [12, p. 63, emphasis added]
-> 关键是要确定谁有制定方向的合法权力，然后确保这个人或团体能*胜任地*、*令人信服地*、*毫无歉意地*行使权力。团队的绩效在很大程度上取决于这一点做得如何。[12，第63页，强调是后加的] 。
+> 关键是要确定谁有制定方向的合法权力，然后确保这个人或团体能*胜任地*、*令人信服地*、*毫无歉意地*行使权力。团队的绩效在很大程度上取决于这一点做得如何。[[12](#参考文献)，第63页，强调是后加的] 。
 
 A better approach would have been to free up the PO of other duties, which have little to do with product ownership. Further, replace the so-called APOs with real ones who focus on the product instead of technical solutions.
 一个更好的方法是解除PO的其他职责，这些职责与产品所有权关系不大。此外，用真正的APO取代所谓的APO，他们应关注产品而不是技术解决方案。
@@ -688,20 +688,20 @@ Further, de-escalation and mediation sessions would probably have been helpful t
 此外，降级和调解会议可能会有助于重新建立PO和APO的辅导。
 
 Moreover, a Product Backlog (PB) transformation from SW component-centric and technical tasks to customer-centric features would enable the *PB’s prioritization* and allow teams to solve real customer problems.
-此外，从以软件组件为中心的技术任务到以客户为中心的功能的产品待办列表（PB）的转变将使针对PB进行优先级排序成为可能，并使团队能够解决真正的客户问题。
+此外，从以软件组件为中心的技术任务到以客户为中心的特性的产品待办列表（PB）的转变将使针对PB进行优先级排序成为可能，并使团队能够解决真正的客户问题。
 
 *Whole product focus* is crucial! Inviting users, paying customers, and subject-matter experts to the Product Backlog Refinement (PBR) sessions would have helped establish a *customer* language, gain *whole product focus*, and deliver the ADD product incrementally with evolving customer features rather than completing technical tasks.
-*整个产品的关注*是至关重要的! 邀请用户、付费客户和领域专家参加产品待办列表梳理（PBR）会议，将有助于建立客户语言，获得整个产品的关注，并通过不断发展的客户功能逐步交付ADD产品，而不是完成技术任务。
+*整体产品焦点*是至关重要的! 邀请用户、付费客户和领域专家参加产品待办列表梳理（PBR）会议，将有助于建立*客户*语言，获得*整体产品焦点*，并通过不断发展的客户特性逐步交付ADD产品，而不是完成技术任务。
 
 How to involve customers in PBR and comply with information-protection policies? It is worth realizing that many of BMW Group employees are also *customers*. They drive BMW cars and experience the product themselves. The only constraint would be to involve those who don’t understand the technical details and only speak the customer language—for example, people from HR, legal, or procurement.
-如何让客户参与PBR并遵守信息保护政策呢？值得注意的是，宝马集团的许多员工也是客户。他们驾驶宝马汽车，亲自体验产品。唯一的限制是让那些不了解技术细节、只会说客户语言的人参与进来——例如，来自人力资源、法律或采购的人。
+如何让客户参与PBR并遵守信息保护政策呢？值得注意的是，宝马集团的许多员工也是*客户*。他们驾驶宝马汽车，亲自体验产品。唯一的限制是让那些不了解技术细节、只会说客户语言的人参与进来——例如，来自人力资源、法律或采购的人。
 
 ### Structure 结构
 > The job of managers is to build an environment in which teams continuously deliver and continuously improve. [[3](#references), p. 69]
-> 管理者的工作是建立一种环境，在这种环境里，团队能够不断地完成任务并不断地改进。[[3](#参考文献), p. 69]
+> 管理者的工作是建立一种环境，在这种环境里，团队能够不断地完成任务并不断地改进。[[3](#参考文献), 第69页]
 
 > Managers’ role is to improve the product development system by practicing Go See, encouraging Stop & Fix, and “experiments over conformance.” [[3](#references), p. 115]
-> 管理者通过实践 "Go See"，鼓励 "停止和修正"，以及 "实验而不是一致性"，来改善产品开发系统。[[3](#参考文献), p. 115]
+> 管理者通过实践 "Go See"，鼓励 "停止和修正"，以及 "实验而不是一致性"，来改善产品开发系统。[[3](#参考文献), 第115页]
 
 The starting structure allowed a high degree of organizational adaptiveness, which we experienced when reforming Requirement Areas. Since Requirement Areas were *not* part of an organizational chart or unit, the restructuring process was quick.
 起步结构提供了高度的组织适应性，我们在重组需求领域时体验了这点。由于需求领域不是组织架构图或部门的一部分，重组过程是快速的。
@@ -713,28 +713,28 @@ One cause lies in the BMW Group’s traditional career paths, where good hands-o
 其中一个原因在于宝马集团的传统职业发展路径，即优秀的、动手能力强的工程师在其技术生涯的顶端成为平庸的管理者。因此，晴转阴的管理者比例很高，降低了经理人组织和管理非LeSS组织的能力，随后导致其处于不健康的状态，这驱使人们更快地进入LeSS组织。
 
 Another cause—likely related to the previous—was the non-LeSS group’s inability to work independently from the LeSS organization due to a lack of experts, who mainly were in the SoP 2018 project and the LeSS organization. This situation is a consequence of thinking in and organizing people around projects instead of products.
-另一个原因——可能与前者有关——是由于缺乏专家，非LeSS小组无法独立于LeSS组织工作，这些专家主要在SoP 2018项目和LeSS组织中。这种情况是围绕项目而不是产品进行思考和组织人员造成的结果。
+另一个原因——可能与前者有关——是由于缺乏专家，非LeSS小组无法独立于LeSS组织工作，这些专家主要在SoP2018项目和LeSS组织中。这种情况是围绕项目而不是产品进行思考和组织人员造成的结果。
 
 Despite the thoughtful groundwork of organizational structure and striving for self-managing teams and collaboration in communities of practice, people perceived self-management, particularly in communities, as ineffective. This was because of a vast amount of unskillful decisions and weak decision-making, due in part to the lack of experience and ability in decision-making amongst developers (since this was previously done by people in specialist roles and managers) and also in part to the lack of experience and skill amongst the Scrum Masters, who did not effectively coach the teams or communities in participatory decision-making protocols.
-尽管在组织架构上做了周到的基础工作，并努力实现自我管理的团队和实践社区的合作，但人们认为自我管理，特别是社区的自我管理是低效的。这是因为大量未经过深思熟虑的决定和薄弱的决策过程，部分原因是开发人员缺乏决策的经验和能力（因为以前是由专家和经理完成的），部分原因是Scrum Master缺乏经验和技能，他们没有有效地指导团队或社区的参与式决策协议。
+尽管在组织架构上做了周到的基础工作，并努力实现自我管理的团队和实践社区的合作，但人们认为自我管理，特别是社区的自我管理是低效的。这是因为大量未经过深思熟虑的决定和薄弱的决策过程，部分原因是开发人员缺乏决策的经验和能力（因为以前是由专家和经理完成的），部分原因是SM缺乏经验和技能，他们没有有效地指导团队或社区的参与式决策协议。
 
 As a *quick fix*, for this and related reasons, senior managers revived C-4 level managers and specialist roles around two years after starting the first Requirement Area. Further, the organizational structure fossilized such that Requirement Areas became official organizational units, which leads to *rigid hard-to-eliminate* groups instead of adaptive birth/grow/shrink/die Requirement Areas, which are essential within LeSS Huge. Further, official organizational groups reinforce the silo problems. Unfortunately, this insight was either never present or forgotten at ADD, which led to ignoring the guide [LeSS Huge Organization](https://less.works/less/less-huge/organizational-structure).
-因此，高级管理人员使用权宜之计，在开始第一个需求领域的两年后恢复了C-4级别的管理人员和专家角色。此外，组织架构的僵化使"需求领域"成为正式的组织单位，这导致了僵化的难以消除的团体，而不是适应性的 "需求领域"的诞生/成长/收缩/消亡，而这在LeSS巨型中是必不可少的。此外，官方的组织团体强化了筒仓问题。不幸的是，这种洞察要么从未出现过，要么在ADD时被遗忘，这导致忽视了[LeSS巨型组织](https://less.works/less/less-huge/organizational-structure)指南。
+作为一个*速效方案*，因为这以及相关原因，高层管理者在开始第一个需求领域的两年后恢复了C-4级别的管理人员和专家角色。此外，组织架构的僵化使需求领域成为正式的组织单位，这导致了它僵化并难以消除，而不是适应性地诞生/成长/收缩/消亡，而这在LeSS巨型中至关重要。此外，官方的组织团体强化了筒仓问题。不幸的是，这种洞察在ADD要么从未出现过，要么被遗忘了，从而导致忽视了[LeSS巨型组织](https://less.works/less/less-huge/organizational-structure)指南。
 
 > Avoid having the Requirements Areas be equal to the organizational structure as it leads to them being difficult to change. [[3](#references), p. 110]
-> 避免让需求领域等同于组织架构，因为这将导致它们难以改变。[[3](#参考文献), p. 110]
+> 避免让需求领域等同于组织架构，因为这将导致它们难以改变。[[3](#参考文献), 第110页]
 
 Let’s elaborate on why many decisions were unskillful, and decision-making was ineffective.
 让我们来阐述一下为什么许多决定是未经过深思熟虑的，决策过程是低效的。
 
 When changing from manager-led to self-managing teams and communities, managers’ and sometimes Scrum Masters’ thinking was, “Either the teams/communities are self-managing, or I need to step in, breaking the self-management.”
-当从管理者领导的团队和社区转变为自我管理的团队和社区时，管理者，有时是Scrum Master，他们的想法是："要么团队/社区自我管理，要么我需要插手，打破自我管理"。
+当从管理者领导的团队和社区转变为自我管理的团队和社区时，管理者，有时是SM，他们的想法是："要么团队/社区自我管理，要么我需要插手，打破自我管理"。
 
 **Key point**: This was a *false dichotomy*. Instead, it should have been: “I need to *help them become self-managing.*”
 **关键点**：这是一个错误的二分法。相反，它应该是："我需要帮助他们实现自我管理"。
 
 Driven by the fear of breaking self-management, managers left the teams and communities mostly to themselves. Since they had to make decisions, the most inadequate and naive decision protocol became their default, *majority voting*, another *quick fix* not seen, and even worse, supported by junior Scrum Masters. The experienced people were a small minority and were outvoted most times. Therefore, most decisions were unskillful and ineffective.
-在打破自我管理的恐惧的驱使下，经理们让团队和社区主要靠他们自己自己。由于他们必须做出决定，最不充分和最幼稚的决定协议成为他们的默认方式，即少数服从多数，这是另一个没有看到的权宜之计，更糟糕的是，它得到了初级Scrum Master的支持。有经验的人是少数，而且大多数时候都被投票淘汰。因此，大多数的决定都是没有经过深思熟虑的和无效的。
+在打破自我管理的恐惧的驱使下，经理们让团队和社区主要靠他们自己自己。由于他们必须做出决定，最不充分和最幼稚的决定协议成为他们的默认方式，即少数服从多数，这是又一个没有看到的*速效方案*，更糟糕的是，它得到了初级SM的支持。有经验的人是少数，而且大多数时候都被投票淘汰。因此，大多数的决定都是没有经过深思熟虑的和无效的。
 
 **Key point**: We failed to establish a skill hierarchy (without specialist roles) and introduce adequate decision-making protocols, such as a quorum of skilled and experienced people makes decisions.
 **关键点**：我们没有成功建立一个技能等级制度（没有专家角色），也没有引入适当的决策协议，例如由有技能和有经验的人组成的法定人数来做决定。
@@ -760,16 +760,16 @@ Third, make the differences between the skill levels transparent so that people 
 ### Processes 流程
 #### Do Continuous Improvement Towards Perfection... *Continuously* 持续改进，迈向完美……*持续地*
 We wanted to follow the [Deep and Narrow over Broad and Shallow](https://less.works/less/adoption/three-principles) [[3](#references), p. 55] adoption principle and adopt LeSS step-by-step, one Requirement Area slowly after another. The contract engaging coaches defined a fixed-price package of bringing 70 people into the LeSS organization at a time.
-我们想遵循[深而窄优于广而浅](https://less.works/less/adoption/three-principles) [[3](#参考文献), p. 55]的导入原则，一步一步地导入LeSS，一个需求领域接着一个需求领域。教练的合同定义了一个固定的价格包，即每次将70人带入LeSS组织。
+我们想遵循[深而窄优于广而浅](https://less.works/less/adoption/three-principles) [[3](#参考文献), 第55页]的导入原则，一步一步地导入LeSS，一个需求领域接着一个需求领域。教练的合同定义了一个固定的价格包，即每次将70人带入LeSS组织。
 
 The emphasis on complying with the contract was strong, especially in the beginning. Otherwise, there would be less “value” for the same money—a *contract game*. This dynamic led to the... *prerequisite of having 70 people in the first Requirement Area*! Combined with the demand of starting the LeSS adoption at the beginning of summer holidays, and therefore little availability of people, this led to *forced* “volunteering” (see also [Prerequisites and Constraints](#prerequisites-and-constraints) and [Fake Volunteers](#fake-volunteers)). Thus, most Requirement Areas started with this number of people.
 尤其是在开始的时候十分强调遵守合同。否则，花同样的钱会得到更少的 "价值"——合同游戏。这种动态导致了……第一个需求领域必须有70人。再加上要求在暑假开始时开始导入LeSS，因此几乎没有人可用，这导致了强迫性的 "志愿者"（见[前提条件和制约因素](#前提条件和制约因素)以及[伪志愿者](#伪志愿者)）。因此，大多数需求领域都是从这个人数开始的。
 
 The contract also contained a project plan—a Gantt chart describing when the LeSS adoption starts and ends. This project plan, based on ignorance of skillful change and improvement, aimed to comply with the purchasing processes and BMW Groups’ policies. Behind the scenes, of course, there was no intention by those understanding adaptiveness for it to be used as an actual project plan.
-合同还包含了一个项目计划——描述LeSS导入开始和结束时间的甘特图。这个项目计划，体现了有效的变革和改进的无知，只是未了遵守采购流程和宝马集团的政策。当然，在幕后，那些了解适应性的人并不打算把它作为一个实际的项目计划来使用。
+合同还包含了一个项目计划 - 描述LeSS导入开始和结束时间的甘特图。这个项目计划，体现了有效的变革和改进的无知，只是未了遵守采购流程和宝马集团的政策。当然，在幕后，那些了解适应性的人并不打算把它作为一个实际的项目计划来使用。
 
 But of course Murphy’s law came true: senior managers discovered this project plan, and then ADD followed it, mainly because it indicated an end date of a *continuous* change. Consequently, and this plan is only one cause, the LeSS organization expanded mostly according to plan rather than according to what made sense! See also [Adding More Requirement Areas](#adding-more-requirement-areas) and [Structure](#structure).
-但是，墨菲定律当然应验了：高级经理们发现了这个项目计划，然后ADD就遵循了它，主要是因为它指明了一个持续变化的结束日期。结果，这个计划只是一个原因，LeSS组织扩张主要是按照计划而不是按照更有实际意义的方式。请参阅[增加更多需求领域](#增加更多需求领域)和[结构](#结构)。
+但是，墨菲定律当然应验了：高层管理者发现了这个项目计划，然后ADD就遵循了它，主要是因为它指明了一个持续变化的结束日期。结果，这个计划只是一个原因，LeSS组织扩张主要是按照计划而不是按照更有实际意义的方式。请参阅[增加更多需求领域](#增加更多需求领域)和[结构](#结构)。
 
 **Key point**: Continuous Improvement Towards Perfection was seen and run as a project instead of *continuously*.
 **关键点**：追求完美的持续改进被看作是一个项目，而不是*持续地*进行。
@@ -782,7 +782,7 @@ One cause is that people were used to working this way. Another is that the impo
 一个原因是人们已经习惯了这种工作方式。另一个原因是，在很大程度上，并不是使用和参与流程的人制造流程。
 
 **Key Point**: In LeSS, *teams* are responsible for their processes. It is a direct consequence of having self-managing teams. See *Guide: Understand Taylor and Fayol* [[3](#references), p. 115].
-**关键点**：在LeSS中，团队要对他们的流程负责。这是自我管理的团队的直接结果。见*指南：理解泰勒和法约尔* [[3](#参考文献), p. 115]。
+**关键点**：在LeSS中，团队要对他们的流程负责。这是自我管理的团队的直接结果。见*指南：理解泰勒和法约尔* [[3](#参考文献), 第115页]。
 
 One of the differences between self-managing and manager-led teams is the responsibility for their processes. Self-managing teams *own* their processes. Since this understanding was lacking at the BMW Group and due to organizational size and dependencies external to ADD, most people *rented* the processes rather than owned them.
 自我管理的团队和经理领导的团队之间的区别之一是对他们的流程负责程度。自我管理的团队拥有他们的流程。由于宝马集团缺乏这种认识，并且由于组织规模和ADD外部的依赖性，大多数人租用了流程而不是拥有它们。
@@ -791,19 +791,19 @@ Let’s take a look at the reasons why people did not take responsibility for th
 让我们来看看人们没有对他们的流程负责的原因。
 
 During the first two years of the LeSS adoption, people had doubts about their ability to align with LeSS principles and rules when changing existing or designing new processes. To resolve this situation, Scrum Masters coached [LeSS principles](https://less.works/less/principles/index.html) and helped to create or improve processes. It is a healthy dynamic.
-在导入LeSS的头两年，人们怀疑自己是否有能力按照[LeSS原则](https://less.works/less/principles/index.html)和规则来改变现有流程或设计新流程。为了解决这种情况，Scrum Master对LeSS原则进行辅导，并帮助创建或改进流程。这是一种健康的动态。
+在导入LeSS的头两年，人们怀疑自己是否有能力按照[LeSS原则](https://less.works/less/principles/index.html)和规则来改变现有流程或设计新流程。为了解决这种情况，SM对LeSS原则进行辅导，并帮助创建或改进流程。这是一种健康的动态。
 
 During the preparation phase, before the LeSS adoption, this dynamic was foreseen. To ensure alignment with LeSS and industry standards, the *Competence and Coaching* department, which consisted of Scrum Masters and industry-standardization experts, became the official body responsible for processes.
-在准备阶段，在导入LeSS之前，这种动态是可以预见的。为了确保与LeSS和行业标准保持一致，由Scrum Master和行业标准专家组成的能力和辅导部门成为负责流程的官方机构。
+在准备阶段，在导入LeSS之前，这种动态是可以预见的。为了确保与LeSS和行业标准保持一致，由SM和行业标准专家组成的能力和辅导部门成为负责流程的官方机构。
 
 Why did the Scrum Masters allow themselves to get involved in something so obvious that they should not? Due to little Scrum experience in the entire ADD, there was a deeply engraved understanding that Scrum is somewhat a process. As a corollary, there were *no masters of Scrum*. Instead, there were junior Scrum Masters who did not foresee the dysfunctions the “responsible for processes” label would create.
-为什么Scrum Master们会允许自己参与到如此明显不应该参与的事情中去？由于整个ADD几乎没有Scrum的经验，人们骨子里认为Scrum在某种程度上是一种流程。作为一个推论，没有Scrum的大师。相反，有一些初级的Scrum Master，他们并没有预见到 "负责流程 "的标签会造成问题。
+为什么SM们会允许自己参与到如此明显不应该参与的事情中去？由于整个ADD几乎没有Scrum的经验，人们骨子里认为Scrum在某种程度上是一种流程。作为一个推论，没有*Scrum大师*。相反，有一些初级的SM，他们并没有预见到“负责流程”的标签会造成紊乱。
 
 The official “responsible for processes” label created a mental barrier in people’s minds. People sought approval from the Competence and Coaching department for any changes in any process. After some time, this turned into handing problems over to the Competence and Coaching department and expecting them to drive their resolution.
 官方的"对流程负责"的标签在人们的头脑中造成了一个心理障碍。人们对任何流程的改变都要寻求能力和教练部门的批准。一段时间后，这变成了把问题交给能力与教练部门，并期望他们能推动问题的解决。
 
 As a *quick fix*, the Competence and Coaching department was split into two—(1) A unit of industry-standardization experts and (2) a homogeneous Scrum Master organizational unit. Two functional groups, each with their single-function line manager. This was an example of the “default organizational problem-solving technique. (1) Discover a problem—the blah-blah problem. (2) Create new role—the blah-blah manager. (3) Assign problem to new role.” [[3](#references), p. 120]
-作为权宜之计，能力与教练部门被分成了两部分：（1）一个行业标准专家小组和（2）一个同质化的Scrum Master组织小组。两个职能小组，每个小组都有其单一职能的部门经理。这是一个 "默认组织级问题解决方式"的例子。(1) 发现一个问题——某某某问题。(2) 建立新的角色——某某某经理。(3) 将问题分配给新的角色"。[[3](#参考文献), p. 120]
+作为一个*速效方案*，能力与教练部门被分成了两部分：（1）一个行业标准专家单元和（2）一个同质化的SM组织单元。两个职能部门，每个部门都有其单一职能的LM。这是一个 "默认的组织问题解决方式"的例子。(1) 发现一个问题 - 某某某问题。(2) 建立新的角色 - 某某某经理。(3) 将问题分配给新的角色"。[[3](#参考文献), 第120页]
 
 In the long run, one negative and unforeseen side-effect was that the industry-standardization experts unit ended up creating various unskillful processes for the teams since they had little hands-on experience nor insights. In retrospect, with more focus on the experiment *Avoid...Adoption with top-down management support* [[2](#references), p. 374], we might have been able to anticipate this since it warns of this very problem.
 从长远来看，一个负面的、未曾预料到的副作用是，工业标准化专家小组最终为团队创造了各种不恰当的流程，因为他们没有什么实践经验，也没有什么洞察力。现在回过头来看，如果更加注重实验，避免……通过自上而下的管理支持[[2](#参考文献)，第374页]，我们也许能够预见到这一点，因为这正是它警告的问题。
@@ -825,16 +825,16 @@ During preparation for the LeSS adoption, coaches strongly emphasized the import
 在准备导入LeSS的过程中，教练们十分强调改变奖励制度（包括工资模式）以支持产品开发系统的其他要素的重要性。
 
 Specifically, subjective *manager-driven* promotions and manager-based *individual* performance appraisals (IPAs) needed significant changes to support *self-managing* teams. Why?
-具体来说，主观的经理驱动的晋升和基于经理的个人绩效评估（IPA）需要重大改变，以支持自我管理的团队。为什么？
+具体来说，主观的经理驱动的晋升和基于经理的IPA需要重大改变，以支持自我管理的团队。为什么？
 
 Manager-driven promotions drive the desire for manager-based IPAs, yet the manager (appraiser) virtually never has the insightful information to skillfully appraise. And then there are biases—conscious and otherwise. Combined with long cycle times (in this case 12 months!) between IPAs, the feedback becomes *superficial* and *unrelated* to the individual’s specific behavior. Hence, the feedback quality for the individual’s betterment is highly questionable.
-经理驱动的晋升推动了对基于经理的个人绩效评估的渴望，然而经理（评估者）几乎从来没有掌握经过深刻洞察的信息来熟练地进行评估。还有就是偏见——有意识的和无意识的。再加上IPA之间的长周期（这里是12个月！），反馈变得肤浅，与个人的具体行为无关。因此，对个人的改进的反馈质量是非常值得怀疑的。
+经理驱动的晋升推动了对基于经理的IPA的渴望，然而经理（考评者）几乎从来没有掌握经过深刻洞察的信息来熟练地进行评估。还有就是偏见——有意识的和无意识的。再加上IPA之间的长周期（这里是12个月！），反馈变得肤浅，与个人的具体行为无关。因此，对个人的改进的反馈质量是非常值得怀疑的。
 
 Further, since manager-driven promotions are *subjective*, people start to believe that promotions are less related to performance but more related to having the “right” relationships and an ingratiating personality. Jeffrey Pfeffer described this dynamic in his worth-reading *Harvard Business Review* article *Six Dangerous Myths About Pay*.
 此外，由于经理驱动的晋升是主观的，人们开始相信，晋升与业绩关系不大，而与拥有 "正确的 "关系和讨好的个性有关。Jeffrey Pfeffer在他值得一读的《哈佛商业评论》的文章中描述了这种动态，即关于薪酬的六个危险神话。
 
 This leads to individualism, heroism, and other dysfunctions in an intended self-managing *teamwork* environment.
-这导致了个人主义、英雄主义和其他在预期的自我管理的团队工作环境中的功能障碍。
+这导致了个人主义、英雄主义和其他在预期的自我管理的团队工作环境中的紊乱。
 
 At ADD, C-3 level managers, together with the HR department, had the aspiration to change the existing IPA to support teamwork and make the rules for individual career advancements transparent. But they failed.
 在ADD，C-3级别的管理人员和人力资源部门一起，有志于改变现有IPA并支持团队合作，使个人职业发展的规则透明化。但他们失败了。
@@ -849,7 +849,7 @@ This dynamic made the already-subjective IPAs even more subjective. Later, an em
 这种动态使本来就很主观的IPA变得更加主观。后来，一项员工满意度调查证实了人们对这种情况和他们的经理的挫败感。迫切的改进是必要的。
 
 As a *quick fix* senior managers revived managers on the C-4 level to decrease the span and generate a false feeling of objectiveness in the next IPA cycle. Back to the status quo!
-作为一个权宜之计，高级管理人员恢复了C-4级别的管理人员，以减少管理范围，并在下一个IPA周期产生一种虚假的客观感觉。回到现状!
+作为一个*速效方案*，高层管理者恢复了C-4级别的管理人员，以减少管理范围，并在下一个IPA周期产生一种虚假的客观感觉。回到现状!
 
 **Conclusion**
 **结论**
@@ -861,10 +861,10 @@ When introducing a significant change, such as a LeSS adoption, and changing onl
 with the structure and processes to influence the strategic direction. Reward
 systems are effective only when they form a consistent package in
 combination with the other design choices (elements in the Star Model™). [14, p. 4, explanation in parenthesis added]
-> 星型模型™表明，奖励制度必须与结构和流程相一致，从而影响战略方向。只有当奖励制度与其他设计选择（星型模型™中的元素）结合起来形成一致的组合时，才会有效。[14，第4页，括号内的解释为新增内容] 。
+> 星型模型™表明，奖励制度必须与结构和流程相一致，从而影响战略方向。只有当奖励制度与其他设计选择（星型模型™中的元素）结合起来形成一致的组合时，才会有效。[[14](#参考文献)，第4页，括号内的解释为新增内容] 。
 
 If upper managers don’t exercise systems thinking, then the system will “revert to mean” simply because everybody knows it. Only changing parts of the system and having high expectations causes pain. It forms the opinion, “We have tried X, it does not work,” and leads to reactive responses, which usually result in *quick-fix reactions*.
-如果上层管理者不进行系统思考，那么系统就会 "恢复到平均值"，仅仅是因为每个人都知道它。只改变系统的一部分，并有很高的期望值，会造成痛苦。它形成了这样的观点，"我们已经尝试过X，它不起作用"，并导致被动反应，而这种反应通常是快速修复的反应。
+如果上层管理者不进行系统思考，那么系统就会 "恢复到平均值"，仅仅是因为每个人都知道它。只改变系统的一部分，并有很高的期望值，会造成痛苦。它形成了这样的观点，"我们已经尝试过X，它不起作用"，并导致被动响应，通常造成*快速修复的反应*。
 
 **What could be an alternative?**
 **有怎样的替代方案呢？**
@@ -894,12 +894,12 @@ Feedback for betterment is supposed to be a two-way conversation, conducted freq
 >
 > It seems foolish to have a manager serving in the self-conflicting role as a counselor (helping a man to improve his performance) when, at the same time, he is presiding as a judge over the same employee’s salary... [18]
 
-> 为员工提供反馈，使其能够做得更好，这与通过提供（或不提供）奖励来控制他们的做法决不应该混淆或结合。[17, p. 185]
+> 为员工提供反馈，使其能够做得更好，这与通过提供（或不提供）奖励来控制他们的做法决不应该混淆或结合。[[17](#参考文献), 第185页]
 > 
-> 当一个经理作为顾问（帮助一个人提高他的绩效），同时又作为法官主持同一个雇员的薪资时，他担任自我矛盾的角色，这似乎是愚蠢的……[18] 。
+> 当一个经理作为顾问（帮助一个人提高他的绩效），同时又作为法官主持同一个雇员的薪资时，他担任自我矛盾的角色，这似乎是愚蠢的……[[18](#参考文献)] 。
 
 In a Scrum environment, the team members and their Scrum Master—who are working closely together and understand in detail each other’s work—have the opportunity to give feedback to each other *every* Sprint Retrospective. Since this is standard practice, the value of this purpose in IPAs vanishes.
-在Scrum环境中，团队成员和他们的Scrum Master——他们紧密合作并详细了解对方的工作——有机会在每次Sprint回顾会中互相反馈。由于这是标准的做法，IPA中这一目的的价值消失了。
+在Scrum环境中，团队成员和他们的SM - 他们紧密合作并详细了解对方的工作——有机会在每次迭代回顾会中互相反馈。由于这是标准的做法，IPA中这一目的的价值消失了。
 
 What is left are promotions.
 剩下的就是晋升了。
@@ -914,13 +914,13 @@ In this context, *salary is just a hygiene factor*. Therefore, it is useful to t
 在这种情况下，工资只是一个保健因素。因此，把它作为补偿，而不是作为一种业绩上的奖励，是很有用的。考虑到这一点，整个由经理驱动和影响的工资调整的做法变得无效，可以被取消。
 
 > Do your best to make sure they (employees) don’t feel exploited. Then do *everything in your power to help them put money out of their minds*. [17, p. 182, explanation added in parenthesis]
-> 尽力确保他们（员工）不会感到被剥削。然后尽你所能，帮助他们把钱抛在脑后。[17，第182页，括号内的解释为新增内容]
+> 尽力确保他们（员工）不会感到被剥削。然后尽你所能，帮助他们把钱抛在脑后。[[17](#参考文献)，第182页，括号内的解释为新增内容]
 
 Note that the *non-monetary* rewards (e.g., decision authority, recognition) associated with promotions are more likely to act as intrinsic motivators.
 请注意，与晋升相关的非货币奖励（如决策权、认可）更有可能作为内在激励因素。
 
 Dr. Richard Hackman (who was a leading expert on teams, at Harvard university) mentions three conditions for rewards to work. (1) “team members must *understand* what it is that is wanted and rewarded.” (2) “There must be trustworthy *indicators* of the degree to which the desired outcome actually have been achieved.” (3) “... members must perceive that they have *leverage* on the attainment of those outcomes, that their collective behavior directly shapes the outcomes that trigger the rewards.” [12, p. 138-139].
-理查德·哈克曼博士（Dr. Richard Hackman，哈佛大学研究团队的主要专家）提到了奖励发挥作用的三个条件。(1) "团队成员必须明白想要的和奖励的是什么"。(2) "必须有值得信赖的指标来衡量所需结果的实际实现程度"。(3) "……成员必须认识到他们对这些结果的实现具有影响力，他们的集体行为直接决定了触发奖励的结果。" [12, p. 138-139].
+理查德·哈克曼博士（Dr. Richard Hackman，哈佛大学研究团队的主要专家）提到了奖励发挥作用的三个条件。(1) "团队成员必须明白想要的和奖励的是什么"。(2) "必须有值得信赖的指标来衡量所需结果的实际实现程度"。(3) "……成员必须认识到他们对这些结果的实现具有影响力，他们的集体行为直接决定了触发奖励的结果。" [[12](#参考文献), 第138-139页].
 
 *Formulaic-criteria promotions* could help to achieve all three points. They would also indicate the Product Developer (PD) level.
 *公式化标准的晋升*可以帮助实现所有这三点。它们也将表明产品开发人员（PD）的水平。
@@ -940,16 +940,16 @@ Just like in ADD’s case, managers couldn’t change HR policies or remove the 
 1. *Try...Discuss with your team how to do appraisals* [[1](#references), p. 275]
 2. *Try...Fill in the forms* [[1](#references), p. 275]
 
-1. 尝试……与你的团队讨论如何进行考核[1，第275页] 。
-2. 尝试……填写表格 [1, p. 275] 。
+1. 尝试……与你的团队讨论如何进行考核[[1](#参考文献)，第275页] 。
+2. 尝试……填写表格 [[1](#参考文献), 第275页] 。
 
 In step one, managers and the teams need to discuss the dysfunctions manager-based individual performance appraisals and manager-driven promotions create. After they reached a shared understanding and understood that the process is unskillful and wasteful, they must *agree* on how to handle the unchanged HR policies in the future.
-在第一步中，管理者和团队需要讨论基于管理者的个人绩效评估和管理者驱动的晋升所产生的功能障碍。在他们达成共同的理解，明白这个过程是不熟练和费时的之后，他们必须就未来如何处理未改变的人力资源政策达成一致。
+在第一步中，管理者和团队需要讨论基于管理者的个人绩效评估和管理者驱动的晋升所产生的紊乱。在他们达成共同的理解，明白这个过程是不熟练和费时的之后，他们必须就未来如何处理未改变的人力资源政策达成一致。
 
 In step two, after recognizing the process is a waste, they do the process with the *least effort and attention* and then go quickly back to the useful work: *shipping the product*.
 第二步，在认识到这是一个费时的过程之后，他们用最少的精力和注意力去做这个过程，然后迅速回到有用的工作上：交付产品。
 
-### People 人
+### People 人员
 Basic systems thinking—and the Star Model’s interwoven nature (see [Figure 20](#fig020))—shows that people need a holistic appropriate organizational design to succeed.
 基本的系统思考和星型模型的交织性质（见[图20](#fig020)）表明，人们需要一个整体的、适当的组织设计才能成功。
 
@@ -957,7 +957,7 @@ Basic systems thinking—and the Star Model’s interwoven nature (see [Figure 2
 **关键点**：人们的态度和其他星型模型的元素需要结合在一起，才能使组织有效。
 
 The team members were coming from a traditional organization, manager-led and organized in single-function groups and component teams. The LeSS adoption required people who *want* to work cross-component in *shared code* and cross-functional solving customer problems—a quite different attitude.
-团队成员来自一个传统的组织，由经理领导，以单一功能小组和组件团队的方式组织。导入LeSS需要人们在共享代码和跨职能解决客户问题的情况下跨组件工作——这是很不同的态度。
+团队成员来自一个传统的组织，由经理领导，以单一职能部门和组件团队的方式组织。导入LeSS需要人们在共享代码和跨职能解决客户问题的情况下跨组件工作 - 这是很不同的态度。
 
 Many people had difficulties working this way, regardless of whether they wanted this or not. Over time, most teams reverted to a component-team-like setup. Let’s explore the driving forces behind this phenomenon.
 不管他们是否希望如此，许多人在以这种方式工作时遇到了困难。随着时间的推移，大多数团队又恢复了类似组件团队的设置。让我们探讨一下这一现象背后的驱动力。
@@ -972,16 +972,16 @@ Another cause was the peoples’ desire to narrow their focus to fewer, ideally 
 **原因一：**
 
 Before the LeSS adoption, ADD estimated (based on software components) the additional number of people required to develop AD. How much more complex will each software component become, and how many more people will we need to cope with that? This implies that the dominant mental model about organizational structure was based on components instead of customer-centric features.
-在导入LeSS之前，ADD估计过（基于软件组件）开发AD所需的人数。每个软件组件会变得多么复杂？而我们还需要多少人去应付这个问题？这意味着关于组织结构的主流心智模式是基于组件而不是基于以客户为中心的功能。
+在导入LeSS之前，ADD估计过（基于软件组件）开发AD所需的人数。每个软件组件会变得多么复杂？而我们还需要多少人去应付这个问题？这意味着关于组织结构的主流心智模式是基于组件而不是基于以客户为中心的特性。
 
 Hiring efforts before the LeSS adoption attracted many new people with a component-thinking attitude since people with specific expertise in specific algorithmic fields were looked for. Further, most new-hires came from universities or their first jobs and had little to no product development experience, especially working in shared code.
 在导入LeSS之前，招聘工作吸引了许多具有组件思维的新人，因为他们需要的是在特定算法领域具有特殊专长的人。此外，大多数新员工来自大学或这是他们的第一份工作，几乎没有产品开发经验，特别是在共享代码中工作。
 
 With the LeSS introduction, the *initial* customer-centric end-to-end Product Backlog items rarely covered peoples’ existing expertise. The fear of losing their competencies and the illusion of losing their market value made the people demand to work only on “items” (i.e., single-specialist tasks) covering their specialization, especially since this was why ADD hired them in the first place.
-随着LeSS的引入，最初以客户为中心的端到端产品待办列表条目很少涵盖人们现有的专业知识。对失去能力的恐惧和失去市场价值的错觉使人们要求只做涵盖他们专业的 "条目"（即单一专业的任务），尤其是这是ADD当初雇用他们的原因。
+随着LeSS的引入，最初以客户为中心的端到端产品待办条目很少涵盖人们现有的专业知识。对失去能力的恐惧和失去市场价值的错觉使人们要求只做涵盖他们专业的 "条目"（即单一专业的任务），尤其是这是ADD当初雇用他们的原因。
 
 The traditional-management need of utilizing people in their specialization, combined with some manager’s unwillingness to help their subordinates resolve their issues, led to accepting the peoples’ demands and creating work (tasks rather than customer features) designed for their single specialty—another *quick fix*.
-传统的管理需要利用人们的专长，再加上一些经理不愿意帮助他们的下属解决问题，导致他们接受了人们的要求，并为他们的单一专长设计了工作（任务而不是客户特性），这又是一个快速解决的办法。
+传统的管理需要利用人们的专长，再加上一些经理不愿意帮助他们的下属解决问题，导致他们接受了人们的要求，并为他们的单一专长设计了工作（任务而不是客户特性） - 又一个*速效方案*。
 
 A more useful approach would have been to take only real volunteers into the LeSS organization. Further, help each person individually resolve the issues they had, mainly a widespread false dichotomy of “Either I do what I like and good at (single specialization), or I’m a generic feature team member.” In the worst case of not wanting to work in such an environment, managers should have assisted individuals in finding another position.
 一个更有用的方法是只带真正的志愿者进入LeSS组织。此外，帮助每个人单独解决他们的问题，主要是普遍存在的 "要么我做我喜欢和擅长的事情（单一专业），要么我是一个普通的特性团队成员 "的错误二分法。不想在这样的环境中工作，最坏情况是，管理人员应该协助个人寻找另一个职位。
@@ -1015,7 +1015,7 @@ The product development system’s parts are interwoven and highly influential o
 产品开发系统的各个部分是相互交织在一起的，并且相互之间有很大的影响。它是一个系统！ADD没能理解这一点。
 
 This section will examine some of the symptoms and their influences. In addition to what we present below, we wonder if there were deeper forces at play that we haven’t been able to see. Common deeper forces of organizational dysfunction include personal relationship favoritism, sabotaging changes that challenge the status quo of manager positions (so that reverting to the status quo becomes an option), and so much more.
-本节将研究一些症状和它们的影响。除了下面介绍的内容外，我们想知道是否有更深层次的力量在起作用，而我们却没能看到。常见的组织功能障碍的深层力量包括个人关系的偏袒，破坏挑战管理者职位现状的变革（使恢复现状成为一种选择），以及其他许多因素。
+本节将研究一些症状和它们的影响。除了下面介绍的内容外，我们想知道是否有更深层次的力量在起作用，而我们却没能看到。常见的组织紊乱的深层力量包括个人关系的偏袒，破坏挑战管理者职位现状的变革（使恢复现状成为一种选择），以及其他许多因素。
 
 One crucial observation at ADD is that many (described so far) issues were correctly foreseen. Still, many chosen “solutions” avoided (in reality, just postponed) the problems instead of confronting directly and solving them.
 在ADD的一个关键观察是，许多（到目前为止所描述的）问题被正确地预见了。但是，许多选择的 "解决方案 "避免了（实际上只是推迟了）这些问题，而不是直接面对和解决这些问题。
@@ -1024,7 +1024,7 @@ One cause of this effect was minimal systems thinking. Mainly due to—often sel
 造成这种影响的一个原因是太少系统思考。主要是由于——往往是自己造成的——时间压力，从问题到解决方案在空间上的快速跳跃，确信手头问题的原因是显而易见的。因此，导致了更多的问题，时间压力，和更少的系统思考——一个增强回路。
 
 Another cause was the many sunshine managers—a delayed effect of lacking a technical career path—who did not understand and therefore did not warn about or explain any consequence when people disregarded agreements and guidelines or bluntly ignored agreed-upon tasks. Active sabotaging had little to no consequences (for saboteurs), resulting in more dysfunctions. One result was a too-fast expansion of the LeSS organization—an overarching symptom and cause of many other harmful effects.
-另一个原因是许多过去还不错的经理——缺乏技术职业路径的延迟效应——他们不理解，也无法警告或解释人们无视协议和准则或直截了当地忽视商定的任务会有什么后果。主动破坏几乎没有任何后果（对破坏者而言），导致了更多的功能障碍。一个结果是LeSS组织的过快扩张——这是一个首要的症状，也是许多其他有害影响的原因。
+另一个原因是许多过去还不错的经理——缺乏技术职业路径的延迟效应——他们不理解，也无法警告或解释人们无视协议和准则或直截了当地忽视商定的任务会有什么后果。主动破坏几乎没有任何后果（对破坏者而言），导致了更多的紊乱。一个结果是LeSS组织的过快扩张 - 这是一个首要的症状，也是许多其他有害影响的原因。
 
 The retrospective on the timeline view results in five symptomatic categories.
 时间轴上的回顾性观点导致了五种症状类别：
@@ -1046,10 +1046,10 @@ The retrospective on the timeline view results in five symptomatic categories.
 **规模化适应性产品开发的先决条件未得到满足**
 
 In the beginning, the organization feared that a profound change would disturb the delivery capability of SoP 2018. Combined with *treating products as projects*, it increased the distance between the people involved in SoP 2018 and SoP 2021. The project structure forced the delivery of SoP 2018. Therefore, we started the LeSS adoption, although most people experienced in production-ready car development were unavailable. The technologies, design approach, complexity, organizational design, and ways of working between SoP 2018 and SoP 2021 was utterly different. Therefore, it is very uncertain that involving SoP 2018 people into the first Requirement Area would make the LeSS adoption less painful. However, their experience from really shipping, and the required focus on whole-product overview when a group is getting close to delivery, would have been invaluable in the SoP 2021 non-LeSS organization, especially at the early stage.
-一开始，组织担心一场深刻的变革会扰乱SoP 2018的交付能力。再加上把产品当作项目，增加了参与SoP 2018和SoP 2021的人之间的距离。项目结构对SoP 2018的交付施加压力。因此，我们开始导入LeSS，尽管大多数有量产汽车开发经验的人都不在。SoP 2018和SoP 2021之间的技术、设计方法、复杂性、组织设计和工作方式都完全不同。因此，让SoP2018的人参与到第一个需求领域会不会让导入LeSS不那么痛苦是非常不确定的。然而，他们从真正的交付中获得的经验，以及当一个小组接近交付时需要关注整个产品的概况，在SoP 2021的非LeSS组织中是非常宝贵的，特别是在早期阶段。
+一开始，组织担心一场深刻的变革会扰乱SoP2018的交付能力。再加上把产品当作项目，增加了参与SoP2018和SoP2021的人之间的距离。项目结构对SoP2018的交付施加压力。因此，我们开始导入LeSS，尽管大多数有量产汽车开发经验的人都不在。SoP2018和SoP2021之间的技术、设计方法、复杂性、组织设计和工作方式都完全不同。因此，让SoP2018的人参与到第一个需求领域会不会让导入LeSS不那么痛苦是非常不确定的。然而，他们从真正的交付中获得的经验，以及当一个小组接近交付时需要关注整个产品的概况，在SoP2021的非LeSS组织中是非常宝贵的，特别是在早期阶段。
 
 The forced “volunteers” led to dysfunctions in the first Requirement Area. The creation of a positive showcase for further scaling was not possible. However, due to running continuous improvement as a *project* (thus, with an *end*) instead of *continuously*, ADD still executed the “scale-up” plan.
-强制的 "志愿者 "导致了第一个需求领域的功能失调。为进一步扩大规模，需要展示一个积极的结果，但这在当时做不到。然而，由于将持续改进作为一个项目（因此，有一个终点）而不是持续进行，ADD仍然执行了 "扩大规模 "计划。
+强制的 "志愿者 "导致了第一个需求领域的紊乱。为进一步扩大规模，需要展示一个积极的结果，但这在当时做不到。然而，由于将持续改进作为一个项目（因此，有一个终点）而不是持续进行，ADD仍然执行了 "扩大规模 "计划。
 
 More significantly, the importance of a rock-solid build system and continuous integration as behavior was underestimated and ignored because of inexperience in large-scale agile software development and weak software craftsmanship.
 更重要的是，由于缺乏大规模敏捷软件开发的经验和薄弱的软件工艺技能，一个坚如磐石的构建系统和持续集成行为的重要性被低估和忽视了。
@@ -1058,10 +1058,10 @@ The modular-system contract between ADD and the Product Management department an
 在ADD和产品管理部门之间的模块化系统合同和 "我们需要交付所有的东西 "的精神导致了没有优先级和对缩小范围的讨论接受度较低。失败的PO/APO辅导导致了所谓产品待办列表充满了技术任务。
 
 Both resulted in a lack of whole-product focus and prioritization, leading to high busyness and *output* of completed technical tasks, but very low output of completed customer features, and thus no useful *outcome*. This typhoon of technical tasks made it impossible for the PO to have a meaningful whole-product overview, to order the so-called “Product Backlog,” which disempowered him and made him dependent on the technically-involved “APOs”—he had to believe what the “APOs” told him.
-两者都导致了缺乏对整个产品的关注和优先级，导致了高度的忙碌以及产出大量技术任务的完成，但完成客户功能的产出却很低，因此也没有有用的结果。这种技术任务的台风使得PO不可能有一个有意义的整体产品视角，也不可能安排所谓的 "产品待办列表"，这使他失去了权力，并使他依赖于涉及技术的 "APO"——他不得不相信 "APO "告诉他的东西。
+两者都导致了缺乏对整个产品的关注和优先级，导致了高度的忙碌以及产出大量技术任务的完成，但完成客户特性的产出却很低，因此也没有有用的结果。这种技术任务的台风使得PO不可能有一个有意义的整体产品视角，也不可能安排所谓的 "产品待办列表"，这使他失去了权力，并使他依赖于涉及技术的 "APO"——他不得不相信 "APO "告诉他的东西。
 
 Further, managers and a vast number of junior Scrum Masters failed to establish effective decision-making protocols in communities of practice and teams.
-此外，经理和大量的初级Scrum Master未能在实践社区和团队中建立有效的决策协议。
+此外，经理和大量的初级SM未能在实践社区和团队中建立有效的决策协议。
 
 <a name="missing-understanding-of-and-motivation-for-go-see"></a>
 **Missing Understanding of and Motivation for Go See**
@@ -1080,7 +1080,7 @@ See also the respective guides, *Guide: Go See* [[3](#references), p. 125], and 
 也请参见相应的指南，《指南：Go See》[[3](#参考文献)，第125页]，和《指南：作为教师和学习者的经理》[[3](#参考文献)，第128页]。
 
 Second, the area of concern for managers was too broad; it defused their efforts and limited their motivation for practicing Go See. Individual, incentivized targets and the individual performance appraisal (IPA) for managers supported this behavior; it did not include teams’ feedback. Instead, it was done solely by their line manager.
-其次，管理者关注的领域过于宽泛；这就化解了他们的努力，限制了他们实践Go See的积极性。个人的激励目标和管理人员的个人绩效评估（IPA）支持这种行为；它不包括团队的反馈。相反，这只是由他们的部门经理完成的。
+其次，管理者关注的领域过于宽泛；这就化解了他们的努力，限制了他们实践Go See的积极性。个人的激励目标和管理人员的IPA支持这种行为；它不包括团队的反馈。相反，这只是由他们的部门经理完成的。
 
 **Missing Motivation for Teamwork**
 **缺乏团队合作的驱动力**
@@ -1092,14 +1092,14 @@ One cause for the missing motivation for teamwork was the unchanged and opaque I
 **缺乏对技术扶持和精益求精的关注**
 
 The attention gap for technical enabling and excellence led to negative reinforcing loops. The deployment to the actual target platform, or at least an emulated environment, was undervalued mainly due to decades of early software component development and late integration. Instead, ADD used a (not suitable for production) rapid-prototyping platform for a long time. Consequently, the software evolved towards only being suitable for the rapid-prototyping platform, hiding design flaws and undermining the *whole product focus*.
-对技术扶持和精益求精的关注差距导致了负面的增强回路。低估了需要在实际的目标平台，或者至少是一个模拟的环境部署，这主要是由于过去几十年开发中，习惯于组件开发和较晚集成导致的。相反，ADD在很长一段时间内使用了一个（不适合生产的）快速原型平台。因此，软件朝着只适用于快速原型开发平台的方向发展，隐藏了设计缺陷， 没有关注整个产品。
+对技术扶持和精益求精的关注差距导致了负面的增强回路。低估了需要在实际的目标平台，或者至少是一个模拟的环境部署，这主要是由于过去几十年开发中，习惯于组件开发和较晚集成导致的。相反，ADD在很长一段时间内使用了一个（不适合生产的）快速原型平台。因此，软件朝着只适用于快速原型开发平台的方向发展，隐藏了设计缺陷并损害了*整体产品焦点*。
 
 #### What Should Have Happened To Keep the Magnitude of the Chaos Phase Bounded? 为了保持混沌阶段的规模，应该采取什么措施？
 First and foremost, ensure that *continuous improvement* was understood and established as such—no fixed end of “completing the change!” *Continuous improvement towards perfection* is a *life long* undertaking. At ADD, this part might have been rationally understood. However, since *culture follows structure*, peoples’ behavior showed the opposite.
 首先，也是最重要的，确保理解持续改进并强调持续改进——没有 "完成变革"的固定终点！追求完美的持续改进是一项终身的事业。在ADD，理性上大家可能已经理解这个道理。然而，由于文化遵循结构，人们的行为显示出相反的情况。
 
 Second, set up a stable parallel organization. Have one Product Backlog for both organizations. It would motivate one code base and prevent separation in code. Further, it would influence the entire product group to work on the highest customer value.
-第二，建立一个稳定的平行组织。两个组织都有一个产品待办列表。这将驱动一个代码库，防止代码分离。此外，它还会影响整个产品组的工作，使其为客户提供最高的价值。
+第二，建立一个稳定的并行组织。两个组织都有一个产品待办列表。这将驱动一个代码库，防止代码分离。此外，它还会影响整个产品组的工作，使其为客户提供最高的价值。
 
 Build up the LeSS organization with real volunteers, expand it slowly and carefully, and only when the preconditions are in place, including a prioritized common Product Backlog for all teams and Requirement Areas, and a working build system which ensures fast feedback.
 用真正的志愿者建立LeSS组织，只有在前提条件具备的情况下，慢慢地、小心地扩张它，条件包括所有团队和需求领域共享一份产品待办列表并排过优先级，以及一个可用的构建系统来确保快速反馈。
@@ -1108,13 +1108,13 @@ Crucially, follow the standard advice in LeSS Huge to incrementally expand one R
 最重要的是，遵循LeSS巨型的标准建议，逐步扩张，每次只扩张一个需求领域。
 
 Remove complexity by treating products as what they are—products. Treating them still as projects leads to organizing people around just tasks and creates further dysfunctions. This approach would have brought the people from SoP 2018 and SoP 2021 closer together. People would have been able to benefit from each other’s experiences. It would also enable one common Product Backlog for the entire product group.
-将产品看作产品，而非项目，这样可以消除复杂性。如果仍然把它们当作项目来对待，就会导致人们仅仅围绕任务来组织，并产生进一步的功能障碍。这种方法将使SoP 2018和SoP 2021的人们更加紧密地联系在一起。人们将能够从彼此的经验中受益。这也将使整个产品组有一个共同的产品待办列表。
+将产品看作产品，而非项目，这样可以消除复杂性。如果仍然把它们当作项目来对待，就会导致人们仅仅围绕任务来组织，并产生进一步的紊乱。这种方法将使SoP2018和SoP2021的人们更加紧密地联系在一起。人们将能够从彼此的经验中受益。这也将使整个产品组有一个共同的产品待办列表。
 
 To keep the pace and magnitude of change bound to a manageable level, starting with SoP 2018 would have been a wiser choice. Within SoP 2018, the number of knowns—for example, target platform, processes, build pipeline—was much higher. Those circumstances would have made it easier to move from single-function and component teams towards feature teams. Further, the SoP 2018 setup change would be confined to one Requirement Area, focusing on the transition towards feature teams, avoiding premature expansion of the LeSS organization.
-为了将变革的速度和规模保持在可控的水平，从SoP 2018开始是一个更明智的选择。在SoP 2018中，已知的东西——例如，目标平台、流程、构建流水线——要多得多。这些情况会让我们更容易从单一功能和组件团队转向特性团队。此外，2018年的SoP设置变化将被限制在一个需求领域，重点是向特性团队的过渡，避免过早扩张LeSS组织。
+为了将变革的速度和规模保持在可控的水平，从SoP2018开始是一个更明智的选择。在SoP2018中，已知的东西 - 例如，目标平台、流程、构建流水线 - 要多得多。这些情况会让我们更容易从单一职能和组件团队转向特性团队。此外，SoP2018设置的变化将被限制在一个需求领域，重点是向特性团队的过渡，避免过早扩张LeSS组织。
 
 The individual performance appraisal should have been removed or changed to minimize its negative impact and to support teamwork and self-management. An in-depth education, including Scrum basics, would have laid a more solid ground for the adoption.
-个人绩效评估应该被取消或改变，以减少其负面影响，支持团队合作和自我管理。深入的教育，包括Scrum的基础知识，将为采用这种方法奠定更坚实的基础。
+个人绩效评估应该被取消或改变，以减少其负面影响，支持团队合作和自我管理。深入的教育，包括Scrum的基础知识，将为导入奠定更坚实的基础。
 
 ## Summary and Positive Effects 总结及积极影响
 With the start of the LeSS adoption, the amount of euphoria was high, and so too were the expectations on the whole new organization. Time passed, it became visible that expectations were far from being met, and the euphoria turned into pain. Where did this pain come from?
@@ -1214,15 +1214,15 @@ It is too early to draw any conclusions from the recent adaptations. They need c
 在这一部分中，探讨了几个技术方面：哪些进展顺利，哪些不足，以及下一次需要学习什么。为了更好地理解起点，这里简要介绍了转型开始之前的技术情况。以下章节将提供更多详细信息。
 
 ## 转型之前
-宝马集团在转型之前几十年就开始探索ADAS。在博士研究、外包和其他学术研究等众多不相关联的研究项目中，探索路线有所不同。在大多数情况下，项目计划和功能描述将这些路线链接起来，但在实际设计和代码中却有很大的脱节。这导致了各种各样的代码库和工具。
+宝马集团在转型之前几十年就开始探索ADAS。在博士研究、外包和其他学术研究等众多不相关联的研究项目中，探索路线有所不同。在大多数情况下，项目计划和特性描述将这些路线链接起来，但在实际设计和代码中却有很大的脱节。这导致了各种各样的代码库和工具。
 
 顺便说一句，作为一名技术教练，我（[Michael Mai](https://less.works/profiles/michael-mai)）发现，当软件开发被视为多个项目而不是一个产品时，这是一种常见的模式。
 
 学术项目经常使用Matlab和Simulink。宝马集团雇佣的外包商使用Matlab或C。这使得协作复杂化，也解释了代码库中一些分歧的概念。
 
-值得注意的是，关于实现至少Level 3的自动驾驶的高难度目标，宝马并没有关注现代机器学习方法，这与该领域最有成就的领导者（如Waymo、Tesla）采取的以机器学习为中心的方法形成鲜明对比。相反，宝马集团继续探索和应用传统的控制方法，如基于公式的指令式编程，就像之前在巡航控制里相对简单的驾驶控制问题中使用那样。
+值得注意的是，关于实现至少L3级AD的高难度目标，宝马并没有关注现代机器学习方法，这与该领域最有成就的领导者（如Waymo、Tesla）采取的以机器学习为中心的方法形成鲜明对比。相反，宝马集团继续探索和应用传统的控制方法，如基于公式的指令式编程，就像之前在巡航控制里相对简单的驾驶控制问题中使用那样。
 
-宝马集团将一些研发工作集中在三个大的内部团队：SoP 2018、SoP 2021高阶自动驾驶（HAD）和SoP 2021全自动驾驶（FAD）。这些团队在车规级产品开发方面有不同的知识、经验和参与程度。此外，这些团队在不同的时间加入到转型中（参见[图24]（#fig024））。另请参见[图17]（#fig017）和[假志愿者]（#fake-volunteers）。
+宝马集团将一些研发工作集中在三个大的内部团队：SoP2018、SoP2021 HAD（Highly-Automated Driving/高度自动驾驶）和SoP2021 FAD（Fully-Automated Driving/全自动驾驶）。这些团队在车规级产品开发方面有不同的知识、经验和参与程度。此外，这些团队在不同的时间加入到转型中（参见[图24](#fig024)）。另请参见[图17]（#fig017）和[伪志愿者](#伪志愿者)。
 
 <a name="fig024"></a>
 <figure>
@@ -1230,19 +1230,19 @@ It is too early to draw any conclusions from the recent adaptations. They need c
   <figcaption>Figure 24: Joining of groups.</figcaption>
 </figure>
 
-SoP 2021团队主要由研究人员和大学刚毕业的新员工组成，他们紧密合作，形成了LeSS转型的起始种子。因此，*他们中经验丰富的软件开发人员很少，车载产品开发的经验有限，并且只具备ADAS中分隔的领域知识*。
+SoP2021团队主要由研究人员和大学刚毕业的新员工组成，他们紧密合作，形成了LeSS转型的起始种子。因此，*他们中经验丰富的软件开发人员很少，车载产品开发的经验有限，并且只具备ADAS中分隔的领域知识*。
 
-在准备ADD计划时，管理层认为团队中增加的大学刚毕业的新员工可以将现代软件开发技能以及现代整洁和设计良好的代码引入代码库 - 这是管理人员缺乏软件开发技能的另一个迹象。鉴于这些新的非顶级加入者（来自大学或者行业中）能够贡献的经验有限，这次团队扩张是徒劳的。[人员]（#People）章节探讨了其他原因。
+在准备ADD计划时，管理层认为团队中增加的大学刚毕业的新员工可以将现代软件开发技能以及现代整洁和设计良好的代码引入代码库 - 这是管理人员缺乏软件开发技能的另一个迹象。鉴于这些新的非顶级加入者（来自大学或者行业中）能够贡献的经验有限，这次团队扩张是徒劳的。[人员](#人员)章节探讨了其他原因。
 
-缺乏经验的SoP 2021团队做出的基础架构决策是直接使用基于机器人研究的消息中间件平台[ROS](https://www.ros.org/). ROS被用于许多机器人技术的研究论文，但它的设计理念与汽车平台并不兼容。
+缺乏经验的SoP2021团队做出的基础架构决策是直接使用基于机器人研究的消息中间件平台[ROS](https://www.ros.org/). ROS被用于许多机器人技术的研究论文，但它的设计理念与汽车平台并不兼容。
 
 由于（1）分为HAD和FAD项目组，以及（2）他们被分成多个组件团队（这是管理人员从构建物理组件中所熟悉的传统模式），以及（3）缺乏软件开发和大规模协调的技能，*在这些团队创建的多个代码库中，软件概念和设计基本上没有一致性。这些项目组的不同代码库仅在ROS消息级别上有交互*。
 
-由于项目目标的差异，概念和软件的“一致性”被评为较低优先级 - 尽管它是交付一个真正产品的关键。这是管理层和开发人员缺乏大规模复杂软件开发经验的另一个迹象。因此，HAD和FAD的代码库差异很大。除此之外，这两个项目组独立组建了各自的*组件团队*，正如宝马管理人员之前在相对次要和较小的软件项目所提倡的那样。在开发一个高难度的研究密集型端到端自动驾驶机器人时，需要大量基于学习的反馈和改变，宝马管理人员天真地没有意识到由此带来的风险以及缺乏学习和适应性。这些原因导致了几乎没有一致性。
+由于项目目标的差异，概念和软件的“一致性”被评为较低优先级 - 尽管它是交付一个真正产品的关键。这是管理层和开发人员缺乏大规模复杂软件开发经验的另一个迹象。因此，HAD和FAD的代码库差异很大。除此之外，这两个项目组独立组建了各自的*组件团队*，正如宝马管理人员之前在相对次要和较小的软件项目所提倡的那样。在开发一个高难度的研究密集型端到端AD机器人时，需要大量基于学习的反馈和改变，宝马管理人员天真地没有意识到由此带来的风险以及缺乏学习和适应性。这些原因导致了几乎没有一致性。
 
-SoP 2018组是具有产品开发经验的资深*传统*工程团队（参见[规模化适应性产品开发的先决条件未得到满足](#unmet-prerequisites-for-scaling-adaptive-product-development)以了解为什么该团队存在，以及为什么LeSS转型一开始时没有将该团队纳入）。由于他们的部署目标受限的工具链，他们不得不使用受限的C++子集，并且他们主要是一群传统的C程序员。他们在诸如面向对象设计（OOD）这些基于较新行业标准的现代大规模软件密集型设计方法上几乎没有经验。缺乏OOD技能这一因素促成了不将SoP 2018的代码库融合到新产品代码库的决策。请注意，如果没有这项技能，开发人员就无法在一个新的系统中有效地设计现代C++代码，新系统比他们以前做的任何事情都要复杂和不同。
+SoP2018组是具有产品开发经验的资深*传统*工程团队（参见[规模化适应性产品开发的先决条件未得到满足](#unmet-prerequisites-for-scaling-adaptive-product-development)以了解为什么该团队存在，以及为什么LeSS转型一开始时没有将该团队纳入）。由于他们的部署目标受限的工具链，他们不得不使用受限的C++子集，并且他们主要是一群传统的C程序员。他们在诸如面向对象设计（OOD）这些基于较新行业标准的现代大规模软件密集型设计方法上几乎没有经验。缺乏OOD技能这一因素促成了不将SoP2018的代码库融合到新产品代码库的决策。请注意，如果没有这项技能，开发人员就无法在一个新的系统中有效地设计现代C++代码，新系统比他们以前做的任何事情都要复杂和不同。
 
-不同的小组在交流和思考中，对共享软件的设计和想法很挣扎。他们不同的过去、目标和代码库并不支持联合开发。然而，管理层的目标是将这些小组联合起来，尽管他们存在差异。为什么？（1）他们是宝马集团的员工，应该能参与开发新产品，（2）错误地评估进一步开发将需要大量增加员工（详见[人员](#People)），（3）将十年研究成果放到一个产品中 - 要求不只是研究人员，（4）弥合研究间的差距，获得洞见，并将洞见应用于客户产品。
+不同的小组在交流和思考中，对共享软件的设计和想法很挣扎。他们不同的过去、目标和代码库并不支持联合开发。然而，管理层的目标是将这些小组联合起来，尽管他们存在差异。为什么？（1）他们是宝马集团的员工，应该能参与开发新产品，（2）错误地评估进一步开发将需要大量增加员工（详见[人员](#人员)），（3）将十年研究成果放到一个产品中 - 要求不只是研究人员，（4）弥合研究间的差距，获得洞见，并将洞见应用于客户产品。
 
 说到第（2）点，“大项目需要大团队”，宝马的大多数管理层都有机械和电气工程和制造业的背景，他们错误地将软件研发视为一个生产问题，而不是研发问题，*在生产过程中，更多的人意味着进展更快*。但是，*在软件研发中，增加大量的人而不是合适的人，会恶化问题和阻碍进展*。因此，这是自董事会层向下的另一个缺乏现代和大规模复杂软件管理专业知识的迹象。
 
@@ -1265,14 +1265,14 @@ SoP 2018组是具有产品开发经验的资深*传统*工程团队（参见[规
 
 选择的版本控制工具是[GIT](https://git-scm.com/)，“一个分支”就是指“主分支”。仅工作在主分支（相当于许多工具中的*主干*）上的实践被称为[主干开发](https://paulhammant.com/2013/04/05/what-is-trunk-based-development/).
 
-然而，仍然存在一个主要的延迟集成问题：之前，两个组*分别*关注L3和L4级自动驾驶。考虑商业风险管理，L3级功能首先需要可靠，因为愿景是至少提供L3级自动驾驶，因此它在产品待办列表排序上有着更高的管理关注度和影响力。尽管如此，许多管理者意识到，如果L4级开发被抛弃，在市场L4级竞争上就将输给竞争对手。因此，*两者被并行跟进*。我将在合适的章节中探讨这些对立的心态，及其对集成 - 并且在更广泛程度上对产品开发 - 的有害影响。
+然而，仍然存在一个主要的延迟集成问题：之前，两个组*分别*关注L3级和L4级驾驶。考虑商业风险管理，L3级功能首先需要可靠，因为愿景是至少提供L3级AD，因此它在产品待办列表排序上有着更高的管理关注度和影响力。尽管如此，许多管理者意识到，如果L4级开发被抛弃，在市场L4级竞争上就将输给竞争对手。因此，*两者被并行跟进*。我将在合适的章节中探讨这些对立的心态，及其对集成 - 并且在更广泛程度上对产品开发 - 的有害影响。
 
 #### 内部合作伙伴与偏离单分支规则
 ADD单一产品定义带来的仓库和分支合并所产生的活力也推动了其与宝马集团内部其他部门的分离。
 
 这种分离显示出管理者希望彼此区别开来。从其他管理者的角度来看，ADD管理者创建了一个超级部门，该部门吞噬其他部门 - 也就是这些管理者的部门。部门缩减通常是为了产品和高层的利益，但很少是为了这些部门（中层）管理着的利益。因此，一个/更广泛的产品定义的附带结果是，其他部门的经理需要区分自己，例如通过在其部门*局部优化*以有理由继续存在。
 
-例如，负责人机界面（HMI：车机屏幕、HUD抬头显示、方向盘、广播按钮等）开发的部门认为，他们也有其他车型项目的客户。因此，他们的管理层主张（1）集中设计是“最优的”（当然，实际上是一个*局部*优化），（2）分离设计团队并加入ADD团队会破坏他们的多个人机界面*项目*，以及（3）如果设计团队分散，则每个项目的时间计划都会有风险。不用说，这个传统的人机界面和设计部门与宝马集团的许多其他部门一样，组建起来的目的是控制供应商的设计、用户体验研究以及相关软件和硬件。
+例如，负责人机界面（HMI：车机屏幕、HUD抬头显示、方向盘、广播按钮等）开发的部门认为，他们也有其它车型项目的客户。因此，他们的管理层主张（1）集中设计是“最优的”（当然，实际上是一个*局部*优化），（2）分离设计团队并加入ADD团队会破坏他们的多个人机界面*项目*，以及（3）如果设计团队分散，则每个项目的时间计划都会有风险。不用说，这个传统的人机界面和设计部门与宝马集团的许多其他部门一样，组建起来的目的是控制供应商的设计、用户体验研究以及相关软件和硬件。
 
 宝马集团组织车型开发、车型制造和车型项目的方式也被各部门用来声称他们独立于ADD的产品愿景。潜台词是，任何“超级”部门都不应改变或挑战已经存在的（局部优化）现状。
 
@@ -1302,7 +1302,7 @@ ADD单一产品定义带来的仓库和分支合并所产生的活力也推动�
 
 #### 仓促合并仓库
 
-第一个需求领域是从2021要发布代码库的一个子集开始；它也只包括第一批[假志愿者](#fake-volunteers)。甚至在转型开始之前，管理层就决定了人员升级，也被称为组织切换。管理层明确表示，任何员工在完全加入转型后，以前有效的东西现在也应该有效，否则这些员工应该留在旧的组织架构中。这导致了多个几乎没有对齐的仓库（代码库）的仓促合并。除了催促开发，管理层将如何实现这一目标的具体方法交给了开发人员。
+第一个需求领域是从2021要发布代码库的一个子集开始；它也只包括第一批[伪志愿者](#伪志愿者)。甚至在转型开始之前，管理层就决定了人员升级，也被称为组织切换。管理层明确表示，任何员工在完全加入转型后，以前有效的东西现在也应该有效，否则这些员工应该留在旧的组织架构中。这导致了多个几乎没有对齐的仓库（代码库）的仓促合并。除了催促开发，管理层将如何实现这一目标的具体方法交给了开发人员。
 
 由于这一管理指示和催促“加快”，出现了瞬间大爆炸 - 先将所有仓库同时合入一个仓库中，之后再整改对齐。该方式是基于复制旧构建系统中的步骤，然后将构建工件拼接在一起。这种“拼接大爆炸”方法并没有为统一软件设计或不一致的概念创造出时间或者兴趣，而只是推迟了这些关键问题。这将在以后导致许多问题，呈现了经典的常由管理团队推动的”快即是慢“的动态。
 
@@ -1317,13 +1317,13 @@ ADD单一产品定义带来的仓库和分支合并所产生的活力也推动�
 更多的上下文：（1）代码库需可维护20年以上，（2）法规要求影响更新周期，（3）传感器的变化性，（4）不同主机厂之间协议和语义元素的可变性，以及（5）正在进行的研究和实验。
 
 ### 基于规则编码还是机器学习？专业知识和招聘动态
-ADP自动驾驶平台的一般架构方法是*基于规则编码*。特别是与其他重要的供应商及他们宣称的成功、失败以及他们越来越关注接近“100%”的ML（“AI”）自动驾驶方法相比：为什么ADD坚持传统的方案？
+ADP的一般架构方法是*基于规则编码*。特别是与其他重要的供应商及他们宣称的成功、失败以及他们越来越关注接近“100%”的机器学习（“AI”）自动驾驶方法相比：为什么ADD坚持传统的方案？
 
 大多数开发人员的起始是做研究。他们（德国）的学术经验倾向于深入地工作在某个假设上，并注重个人的卓越。这培养了毅力和奉献精神，但也造成了思想狭隘。这导致*减少了*解决自动驾驶挑战的选项。有些选项是机器学习或者规则编码与机器学习的组合。
 
 为什么管理层没有更严格地质疑当前的方法，尤其是因为全球行业领导者越来越公开强调，他们学到的一个关键教训是关注端到端的机器学习？首先，大多数管理者都被自己（德国）的学术生涯蒙蔽了双眼或带有偏见。
 
-其次，他们对研究人员有过度的信任。只有少数管理人员具有大型、复杂和自适应软件开发的经验，也只有少数人具备学习这种经验的必要背景和技能，大多数*不愿意真正访问实际工作地点，查看代码并了解软件细节中的真实情况*（参见[对Go-see的理解和动机缺失](#missing-understanding-of-and-motivation-for-go-see)）。这些因素加起来导致了相信员工，特别是那些拥有*学位*的员工，是在实际创建大型复杂软件和自动驾驶设计方面的专家。由于缺乏和不愿质疑他们的“专家”，他们只是附和。没有质疑现状和“专家”，或是去调查外部有经验的专家在做的工作。
+其次，他们对研究人员有过度的信任。只有少数管理人员具有大型、复杂和自适应软件开发的经验，也只有少数人具备学习这种经验的必要背景和技能，大多数*不愿意真正访问实际工作地点，查看代码并了解软件细节中的真实情况*（参见[对Go-see的理解和动机缺失](#missing-understanding-of-and-motivation-for-go-see)）。这些因素加起来导致了相信员工，特别是那些拥有*学位*的员工，是在实际创建大型复杂软件和AD设计方面的专家。由于缺乏和不愿质疑他们的“专家”，他们只是附和。没有质疑现状和“专家”，或是去调查外部有经验的专家在做的工作。
 
 第三，一些管理者确实怀疑过所选择的路径是否正确，但没有设法挑战内部权威或他们的同级管理者、认真探索替代方案。导致他们没有对怀疑采取后续行动的原因是多方面的，没法在此进行全面讨论，因此主要是猜测。但管理者不对现状拉响警报，以避免争议或损害他们未来的职业前景，是商业上的一种常见模式。
 
@@ -1339,7 +1339,7 @@ ADP自动驾驶平台的一般架构方法是*基于规则编码*。特别是与
 
 为什么ADD没有雇佣最顶尖的软件开发人员？顶级开发人员倾向于（1）自我管理的工作（管理人员的干预非常有限），（2）与其他优秀开发人员密切合作，（3）有目的地工作，（4）为了被认可而工作，以及（5）不愿意为传统和软件技能不强的管理人员工作。
 
-将软件*设计*方法与招聘过程进行类比会有一种意想不到的效果。宝马集团拥有完善的人员配置和招聘流程。通过*宝马集团的董事管理决策*将自动驾驶开发作为紧密相连的部门运营，ADD继承了这些招聘流程。
+将软件*设计*方法与招聘过程进行类比会有一种意想不到的效果。宝马集团拥有完善的人员配置和招聘流程。通过*宝马集团的董事管理决策*将AD开发作为紧密相连的部门运营，ADD继承了这些招聘流程。
 
 招聘过程中的基本组成部分包括与将来可能共事的同事进行面试和编程。面试官和编程题目的选择在如何增强或削弱软件工程和软件设计方法的多样性方面起着重要作用。想象一下，一名候选人被一名具有资深传统、非OOD和非机器学习思维的宝马员工面试。任何具有很强OOD或机器学习技能的候选人都会提出*对立的*设计建议。此外，如果编程题目是为了测试基本编程技能，而在大规模设计或应用OOD或机器学习上没有挑战，那么候选人会得到这样的印象：ADD没有足够的挑战，也不是一个能在里面成长的地方。
 
@@ -1391,7 +1391,7 @@ Why hadn’t there been any movement from the developers to improve the build sy
 为什么开发人员没有采取任何行动来改进构建系统？有几个方面在起作用：（1）个人激励计划（IPA）不支持此类活动，除非事先说服了管理者，（2）开发人员被按照独立工作进行优化，（3）开发人员被分配的是任务细节而不是产品需求，（4）大多数都不是真正的开发人员，而是关注在学术问题上的研究人员（5）只有极少数开发人员体验过好的构建系统带来快速集成反馈的乐趣。除此之外，（6）与其他小组的交流主要是在研究主题上，而不是产品开发相关。
 
 Why hadn’t there been more guiding conditions to align on integrated product development by management? Foremost, management at BMW Group thinks in terms of departments, not in products. Even vehicle projects are thought of (1) projects and (2) which department is working on. Only with several [LeSS for Executive](https://less.works/courses/less-executive) trainings this started to change at ADD. The vice president of ADD started several months after the start of the adoption, insisting on reviewing the Sprint result in the vehicle—this got the “Build and Integration” Community started and searching for better alternatives to the old build system.
-为什么管理层在集成产品开发方面没有更多的指导呢？首先，宝马集团的管理层从部门而不是产品的角度思考问题。即使是车型项目也以，（1）项目和（2）哪个部门在做，来思考。只有在几次[LeSS高管](https://less.works/courses/less-executive)培训后，ADD才开始有所改变。在转型开始几个月后，ADD的副主管开始坚持在车上评审迭代成果，这使“构建和集成”社区得以启动，来寻找替代旧构建系统的更优方案。
+为什么管理层在集成产品开发方面没有更多的指导呢？首先，宝马集团的管理层从部门而不是产品的角度思考问题。即使是车型项目也以，（1）项目和（2）哪个部门在做，来思考。只有在几次CLE培训后，ADD才开始有所改变。在转型开始几个月后，ADD的副主管开始坚持在车上评审迭代成果，这使“构建和集成”社区得以启动，来寻找替代旧构建系统的更优方案。
 
 One interfacing department tasked by upper management with integrating code to the vehicle was experimenting with [Bazel](https://bazel.build/), so Bazel was the prime candidate to replace the old build system.
 负责将代码集成到车辆的一个接口部门正在尝试[Bazel](https://bazel.build/)，因此，Bazel是替换旧构建系统的主要候选。
@@ -1404,13 +1404,13 @@ In a healthy Scrum and LeSS environment, the Product Backlog consists of improve
 在一个健康的Scrum和LeSS的环境中，产品待办列表由改进和需要实现的条目组成。当时，将任何内容都纳入产品待办列表的过程受到以前工作模式的严重影响，即：项目需求、项目经理和非常特殊的非开发个人贡献的条目。
 
 Also, in a healthy Scrum and LeSS environment, there is no need to discuss technical details with PO, APO, or managers apart from implications regarding features and the product. So, no need for Product Backlog so-called ‘items’ for refactoring or experimenting with technical details.
-此外，在一个健康的Scrum和LeSS的环境中，除了有关功能和产品的影响之外，不需要与PO、APO或经理讨论技术细节。因此，产品待办列表中无需建立所谓的重构或者技术细节的实验条目。
+此外，在一个健康的Scrum和LeSS的环境中，除了有关特性和产品的影响之外，不需要与PO、APO或经理讨论技术细节。因此，产品待办列表中无需建立所谓的重构或者技术细节的实验条目。
 
 Why did the teams seek approval from their APO for this kind of technical work? In a research-heavy environment, the need for qualified data to prove a point or starting an approach is high by peers, APOs, and management. Generating qualified data is time consuming, in the case of evaluating an alternative build tool, its potential and weaknesses, it requires forking and migrating a relevant piece of the code base. This is nothing that can be done with one hour a week of playing around, but takes a significant fraction of the team's capacity. When talking about “a significant fraction” the BMW Group’s company culture calls for approval from “higher” authority. In a Large-Scale Scrum environment, the (A)PO appears like such a higher authority, even as this (A)PO should not be concerned with technical details.
 为什么团队要寻求APO对此类技术工作的批准？在重研究的环境中，同行、APO和管理层都非常需要合格的数据来证明一个观点或开始一种方法。产出合格的数据非常耗时，在评估替代构建工具的可行性和缺点时，需要fork开分支和迁移代码库的相关部分。这不是每周花一个小时就能完成的事情，而需要花团队的很大一部分时间。当需要花“很大一部分”时，宝马集团的公司文化是需要“更高”管理层的批准。在大规模Scrum环境中，(A)PO看起来像是一个更高的管理层，即使这个(A)PO不应该涉及技术细节。
 
 What is the consequence of having such research and exploration tasks solely on the team’s Sprint Backlog without reference to the transparency of the Product Backlog? Normally, small research and refactoring tasks resided only in the Sprint Backlog (rather than the Product Backlog) without any hassle, because they would just create lots of minor noise for the PO or APO in the context of large-scale development, which has so many of these minor tasks every Sprint, forever. On the other hand, as explored in the LeSS guide “Handling Special Items” [[3](#references), p. 207], *big* “engineering improvement” or research tasks that involve *major* investment decisions or that *beneficially educate* the PO or APOs, or that lead to *useful conflict* discussions with the teams, are worth putting into the Product Backlog. The difference here is (1) magnitude of change, (2) familiarity with the change, and (3) implication on company processes. Changes in this area are not common and therefore require additional learning from anyone working on this item. Bypassing the Product Backlog shortened the normal learning, validation, and improvement mechanism. The consequence of this “avoid the walking and talking to APO” and putting this task into the Product Backlog, are delays, disappointments, frustrations, and magnified confusion.
-将这些研究和探索任务单独放在团队的Sprint待办列表中，而不是放在产品待办列表中去体现透明度，会产生什么后果？通常，小型研究和重构任务只存在于迭代待办列表（而不是产品待办列表）中，没有任何麻烦；因为在大规模开发的背景下，每次迭代永远都有些小任务，把它们纳入产品待办列表只会给PO或APO带来许多小噪声。另一方面，如LeSS指南“处理特殊条目”[[3](#参考文献)，第207页]中所述，*大型*“技术优化”或涉及*重大*投资决策或*有学习收益*的研究型任务，或能够给团队创造*有益冲突*讨论的条目，都值得纳入产品待办列表。这里的区别在于（1）变化的幅度，（2）对变化的熟悉程度，以及（3）对公司流程的影响。在这个领域的变更并不常见，因此需要工作于这个条目上的人额外学习。绕过产品待办列表缩短了正常的学习、验证和改进机制。这样“不跟APO说”并将这些任务放入产品待办列表的结果是延迟、失望、沮丧和更大的混乱。
+将这些研究和探索任务单独放在团队的迭代待办列表中，而不是放在产品待办列表中去体现透明度，会产生什么后果？通常，小型研究和重构任务只存在于迭代待办列表（而不是产品待办列表）中，没有任何麻烦；因为在大规模开发的背景下，每次迭代永远都有些小任务，把它们纳入产品待办列表只会给PO或APO带来许多小噪声。另一方面，如LeSS指南“处理特殊条目”[[3](#参考文献)，第207页]中所述，*大型*“技术优化”或涉及*重大*投资决策或*有学习收益*的研究型任务，或能够给团队创造*有益冲突*讨论的条目，都值得纳入产品待办列表。这里的区别在于（1）变化的幅度，（2）对变化的熟悉程度，以及（3）对公司流程的影响。在这个领域的变更并不常见，因此需要工作于这个条目上的人额外学习。绕过产品待办列表缩短了正常的学习、验证和改进机制。这样“不跟APO说”并将这些任务放入产品待办列表的结果是延迟、失望、沮丧和更大的混乱。
 
 Why did the team think it is a good idea to put this experiment under the radar instead of putting it into the Product Backlog? ADD’s PO and APO have a heavy focus on incremental features rather than the product-as-a-whole. Is there a difference? *In terms of the product, there is no difference; in terms of a product’s feature catalog that had been agreed upon with the upper management, the board, marketing, and other departments, there is a great difference between features and the product*. In other words: the APOs in ADD at that time did a local optimization for outputting features in isolation, but not features in a viable product... that can be viably built with a good build system.
 为什么团队认为让这个实验偷偷进行而不是放在产品待办列表中是个好主意？ADD的PO和APO重点关注增量特性，而不是整体产品。这两者有区别吗？*就产品而言，没有区别；就与上层管理层、董事会、市场营销部和其他部门约定的产品特性清单而言，特性与产品之间存在很大差异。*换句话说：当时ADD中的APO对产出单个特性进行了局部优化，而不是一个可行产品中的特性... 这只有良好的构建系统才行。
@@ -1419,7 +1419,7 @@ The difference plays out here in a way that at that time, almost no “special i
 不同之处在于，当时产品待办列表中几乎没有“特殊条目”。产品待办列表中增加潜在条目的过程仅针对*特性*相关条目而设计。因此，开发团队担心的是，如果他们开始为这个特定的实验条目与APO进行讨论，这些实验条目会被推到SoP之后考虑，大约是当时的*两年*之后。另一个经典的“快即是慢”动态，当目标是适应性时，管理层不了解现代构建系统或大规模软件的现代构建，加剧了这种情况。
 
 This situation also highlights the entanglement of technical transition and organization, insufficiently utilizing the idea of Communities, and the miss-practice of utilizing teams up-to 100% (see “Avoid...Fake queue reduction by increased multitasking or utilization rates” [[1](#references), p. 99]). Later, Scrum Masters with the support of the teams, pushed that Communities contribute Product Backlog items and eventually are heard by PO and APO about their opinion on ordering regarding other Product Backlog items.
-这种情况还突显了技术变革和组织之间的牵扯，没有充分利用社区的理念，以及将团队使用率达到100%的错误做法（见“避免...通过增加并行任务或利用率带来虚假的等待队列减少”[[1](#参考文献)，第99页]）。后来，SM在团队的支持下，通过推动社区来贡献产品待办条目，PO和APO最终听取了他们在与其它产品待办条目之间如何排序的意见。
+这种情况还突显了技术变革和组织之间的牵扯，没有充分利用社区的理念，以及将团队使用率达到100%的错误做法（见“避免...通过增加并行任务或利用率带来虚假的队列减少”[[1](#参考文献)，第99页]）。后来，SM在团队的支持下，通过推动社区来贡献产品待办条目，PO和APO最终听取了他们在与其它产品待办条目之间如何排序的意见。
 
 #### "Rogue” Unofficial Group “流浪汉”非正式团体
 After presenting the promising results of an experimental build system to APOs individually, interest was raised, but due to an initial estimate of 2-3 Sprints to complete the migration, no Product Backlog item was created and there was no Product Backlog refinement to improve the estimate. To the credit of the APO, they believed their developers; but they didn’t confirm the understanding of the developers regarding scope, process-integration, influence on the working environment, migration effort, and central infrastructure—despite the obvious too-small estimation.
@@ -1550,7 +1550,7 @@ The line between transparency and blame is thin and easily crossed with a build 
 透明性和指责之间的界限很薄，当构建显示器突显出在构建失败之前最后提交代码的那个团队时就容易过线。正式说法是“停止并修复” - 破坏构建的那个团队（基于构建监视器上的由绿到红转换）一直修复到构建再次变绿。其目的是为了提高透明度，减少每天收到的电子邮件数量。非正式下，所有关心构建的开发人员都会对一个损坏的构建没有尽快修复感到恼火，并希望能有更多的公众压力来促进修复损坏的构建。
 
 The blame-casting doesn’t work on root cause (missing whole product focus), it only highlights the complexity of the system, delayed feedback from the build system, developers’ focus on components rather than the product, insufficient software design, and missing meaningful component builds and tests.
-归咎于某个团队并不能解决根本原因（缺少对整个产品的关注），只是突显了系统的复杂性、来自构建系统延迟了的反馈、开发人员关注组件而不是产品、软件设计不足以及缺少有意义的组件构建和测试。
+归咎于某个团队并不能解决根本原因（缺少整体产品焦点），只是突显了系统的复杂性、来自构建系统延迟了的反馈、开发人员关注组件而不是产品、软件设计不足以及缺少有意义的组件构建和测试。
 
 The blame-casting induced an interesting other dynamic: as soon as the first team “A” (unintentionally) triggered a green-to-red transition, other teams increased their merge and push frequency. Why? First, due to long and sometimes non-linear merge processes of the auto-merge procedures on the build system, team A may not be responsible for the transition to red. Regardless, by setting the blame on team A, other teams *pushed their commits, concealed within team A’s blame*. They didn’t fear being held responsible for a potential build degradation, as the build was already red. *This contributed to the practice of delaying pushes until the first team had been assigned the blame*.
 归咎于某个团队引发了另一个有趣的动态：当第一个团队“A”（无意中）触发了从绿色变到红色时，其他团队在此时增加了合并和推送的频率。为什么？首先，由于构建系统上自动合并的过程很长，有时甚至是非线性的，团队A可能不是造成导致变成红色的原因。不管怎样，通过将责任归咎于团队A，其他团队*提交代码，掩盖在对团队A的责难中*。他们并不害怕承担构建可能出现降级的责任，因为构建此时已经是红色的。*这促进了延迟提交代码的做法，直到有第一个团队被归咎*。
@@ -1600,7 +1600,7 @@ Why was the developers’ adherence meager? The abrupt shift from the self-manag
 为什么开发者的遵守程度很低？因为突然从自我管理转变到基于“授权社区”的权力驱动模式，与团队内部慢慢进化为自我管理相冲突。团队越是意识到自我管理团队的自由、责任和义务，对命令式的“授权社区”的不满就越大。
 
 What led to the de-focusing of many developers from communities? Communities were increasingly perceived as places for formal discussions and decision-making rather than learning and achieving cross-team (functional) agreements. The lack of holistic product guidance by PO and APOs contributed to this perception. During forming and reforming of Requirement Areas, teams moved from one Area to another. On occasions, a community had members primarily from one Area. This directed topics inadvertently towards one Area’s focus, which complicated the acceptance of communities as places for cross-team and cross-Area learning and coordination. The *quick-fix of mandatory attendance* for mandated communities fixed only the issue of representation, not the root cause of missing the whole product focus in many developers.
-是什么导致许多开发人员渐渐离开社区？社区越来越被视为正式讨论和决策的场所，而不是学习和达成跨团队（职能）约定的场所。PO和APO缺乏全面产品指引也导致了这个情况。在需求领域的组建和重组过程中，团队从一个需求领域转移到另一个领域。有时，某个社区的成员大多数来自一个需求领域。这无意中把话题引向了该领域，这使得接受社区作为跨团队和跨领域学习与协作的场所变得更为复杂。授权社区的“强制参加这个速效方案”只解决了有人代表的问题，而没有解决许多开发人员缺乏整体产品关注的根因。
+是什么导致许多开发人员渐渐离开社区？社区越来越被视为正式讨论和决策的场所，而不是学习和达成跨团队（职能）约定的场所。PO和APO缺乏全面产品指引也导致了这个情况。在需求领域的组建和重组过程中，团队从一个需求领域转移到另一个领域。有时，某个社区的成员大多数来自一个需求领域。这无意中把话题引向了该领域，这使得接受社区作为跨团队和跨领域学习与协作的场所变得更为复杂。授权社区的“强制参加这个速效方案”只解决了有人代表的问题，而没有解决许多开发人员缺乏整体产品焦点的根因。
 
 One important secondary aspect of communities and their decisions is the ISO 9001. The process-standard ISO 9001 was adopted by BMW Group for the whole group decades ago. The basic idea of the standard is to document important process decisions and demands following these decisions. ADD’s “Coaching and Standards department” mistakenly assumed that “mandated communities” produce these kinds of decisions. Therefore, the pure existence of “mandated communities” complicated the process of quality and process improvements at ADD.
 社区及其决策的一个重要的次要方面是ISO 9001。几十年前，宝马集团为整个集团采用了ISO 9001过程标准。该标准的基本思想是记录重要的过程决策和相关需求。ADD的“辅导与规范部门”错误地认为“授权社区”会做出此类决策。因此，“授权社区”的存在本身就使ADD的质量和流程改进过程变得复杂。
@@ -1670,7 +1670,7 @@ The content of dependability is essential for the product and should therefore b
 可靠性内容对产品至关重要，因此应成为“完成的定义”的一部分，也是产品待办列表梳理的一部分。由于项目思维、组件思维、管理责任制和传统管理思维的历史，在转型之前存在一个专注于可靠性的专门小组。
 
 The dependability group joined late; about the time of SoP 2018 people joining. Before that, the developers considered “normal” due diligence and (softer) aspects of their Definition of Done. With the dependability group joining, the Definition of Done was revised with a gradually more complete Done.
-可靠性小组的加入较晚；差不多在SoP 2018的人员加入的时候。在此之前，开发人员考虑了“常规”必需项的和“完成的定义”的（软性）部分。随着可靠性小组的加入，完成的定义被修改为一个逐渐完整的“完成”。
+可靠性小组的加入较晚；差不多在SoP2018的人员加入的时候。在此之前，开发人员考虑了“常规”必需项的和“完成的定义”的（软性）部分。随着可靠性小组的加入，完成的定义被修改为一个逐渐完整的“完成”。
 
 The tasks within the dependability group before joining the adoption focused heavily among other things on tasking and coordinating suppliers for audits and studies, definition of safety goals, definition of low-level hardware requirements, coordination with regulators, and integration of regulations into safety goals. In the classical vehicle projects, those safety goals are then passed to the development managers to be considered for planning, execution and testing.
 在转型之前，可靠性小组的任务主要是分配任务和协调供应商进行审计和研究、定义安全目标、定义底层硬件要求、与监管机构协调以及将法规整合到安全目标中。在经典的车型项目中，这些安全目标随后被传递给开发经理，由开发经理进行规划、执行和测试。
@@ -1704,7 +1704,7 @@ To clarify: “Dependability Expert Team” members joined on occasion Product B
 | ML            | 机器学习（Machine Learning）  |
 | PO            | 产品负责人（Product Owner） |
 | SCM           | 软件配置管理（Software Configuration Management） |
-| SoP           | 量产（Start of Production） |
+| SoP           | 开始量产（Start of Production） |
 | SWP           | 软件合作方（Software Partner） |
 | TDD           | 测试驱动开发（Test Driven Development） |
 | VP            | 副总裁（Vice President） |
