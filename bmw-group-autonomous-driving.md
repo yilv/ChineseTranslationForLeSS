@@ -29,7 +29,7 @@
 <a name="fig001"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig001.png" alt="Autonomous Driving Levels">
-  <figcaption>Figure 1: Autonomous Driving Levels.</figcaption>
+  <figcaption>图1：自动驾驶分级</figcaption>
 </figure>
 
 为了创造像AD这样复杂和软件密集型的系统，宝马集团必须从一家拥有100年历史的机械工程和制造技术公司转变为一家软件公司，并将AD视为一项复杂的软件研发计划。这听起来像是一场革命和范式转变。的确就是这样！
@@ -51,7 +51,7 @@
 <a name="fig002"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig002.png" alt="ECU schematic">
-  <figcaption>Figure 2: ECU schematic.</figcaption>
+  <figcaption>图2：ECU原理图</figcaption>
 </figure>
 
 在寻找解决方案时，我阅读了几本Scrum和敏捷开发书籍。然后我被推荐与敏捷教练和LeSS培训师Mark Bregenzer交谈。我遇到了Mark并解释了我们的情况。他的回答是：“你需要的人比你想象的要少得多。你需要改变组织结构。” 会议结束后，Mark建议我参加Craig Larman的[认证LeSS实践者](https://less.works/courses/less-practitioner)（CLP）课程。
@@ -65,7 +65,7 @@
 <a name="fig003"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig003.png" alt="The bigger picture">
-  <figcaption>Figure 3: The bigger picture.</figcaption>
+  <figcaption>图3：全局图</figcaption>
 </figure>
 
 2015年9月至2016年3月期间，我们试图为未来的ADAS系统（包括AD）建立一个组织单元。多个部门的主管齐心协力完成了这项任务。2016年4月1日，来自不同组织单位的多个部门为AD与ADAS合并组成了新的部门 - ADD。
@@ -76,18 +76,18 @@
 
 在2017年1月份，一个所谓的迁移团队成立了，而我是其中一员。为了代表整个组织体系，这个团队由不同层次的经理和员工组成。这样的团队使我们可以在不同的抽象层次上讨论想法。我们继续完善ADD执行小组前一年提出的工作模式。我们讨论了不同的用例、日常情况以及如果我们采用这种工作模型它们会是什么样子。我们一直在努力提出改善我们所面临情况的建议。
 
-与此同时，Paul说服ADD高管与Craig Larman一起举办为期4天的研讨会，主题是大规模敏捷开发的系统思维和组织设计，也称为[CLE](https://less.works/courses/less-executive.html)（Certified LeSS Executive/认证LeSS高管）课程。我们想要确保所有高管的参加，但是由于他们的时间安排，该活动不得不在几个月后举行。为了在那之前能动起来，2017年4月，我与Mark Bregenzer组织了一个为期一天的介绍研讨会。
+与此同时，Paul说服ADD高管与Craig Larman一起举办为期4天的研讨会，主题是大规模敏捷开发的系统思考和组织设计，也称为[CLE](https://less.works/courses/less-executive.html)（Certified LeSS Executive/认证LeSS高管）课程。我们想要确保所有高管的参加，但是由于他们的时间安排，该活动不得不在几个月后举行。为了在那之前能动起来，2017年4月，我与Mark Bregenzer组织了一个为期一天的介绍研讨会。
 
 <a name="fig004"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig004.png" alt="Mark Bregenzer is debriefing a systems thinking exercise">
-  <figcaption>Figure 4: Mark Bregenzer is debriefing a systems thinking exercise.</figcaption>
+  <figcaption>图4：Mark Bregenzer正在讲解一个系统思考练习</figcaption>
 </figure>
 
 <a name="fig005"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig005.png" alt="Executives are learning and exercising systems thinking">
-  <figcaption>Figure 5: Executives are learning and exercising systems thinking.</figcaption>
+  <figcaption>图5：高管们正在学习和练习系统思考</figcaption>
 </figure>
 
 Mark介绍的内容激发了参与者的灵感。很明显，我们需要朝着这个方向前进。这个最初的研讨会创造了下一个重要的转变动力。
@@ -107,12 +107,12 @@ Mark介绍的内容激发了参与者的灵感。很明显，我们需要朝着�
 
 > LeSS导入涉及到大型组织和许多根深蒂固的假设组织应该如何工作的想法。成功导入LeSS需要挑战这些假设并简化组织结构，而这一切也都是伴随着在大团队中存在的‘政治’和‘丢脸’。LeSS导入需要每个人都朝着共同的目标前进。[[3](#参考文献), 第54页]
 
-我们的起点是一个常见的层次结构（见[图6](#fig006)）。
+我们的起点是一个常见的层级结构（见[图6](#fig006)）。
 
 <a name="fig006"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig006.png" alt="Typical hierarchy">
-  <figcaption>Figure 6: Typical hierarchy.</figcaption>
+  <figcaption>图6：典型的层级结构</figcaption>
 </figure>
 
 ADD从原先部门继承了超过15个不同角色，这些角色定义了接口用以清晰地描述某人工作的开始和结束。通过这种设置，我们曾经成功地向客户交付了许多优质汽车。然而，它却是精益思维中浪费的沃土，例如交接、协调开销都造成浪费。由于浪费抑制了复杂产品开发 - 尤其是大规模产品开发 - 的适应性，因此我们有强烈的动力去改变。
@@ -130,7 +130,7 @@ ADD从原先部门继承了超过15个不同角色，这些角色定义了接口
 <a name="fig007"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig007.png" alt="Teams covering the whole organizational system. Stakeholders and interface partners not shown.">
-  <figcaption>Figure 7: Teams covering the whole organizational system. Stakeholders and interface partners not shown.</figcaption>
+  <figcaption>图7：覆盖整个组织系统的团队（未显示利益相关者和接口人）</figcaption>
 </figure>
 
 此外还有Mark Bregenzer，他挑战我们对组织结构的假设，并就’为什么’辅导我们。我们全职投入在这项工作上。
@@ -142,7 +142,7 @@ ADD从原先部门继承了超过15个不同角色，这些角色定义了接口
 <a name="fig008"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig008.png" alt="Close cross-team collaboration across functions and hierarchies.">
-  <figcaption>Figure 8: Close cross-team collaboration across functions and hierarchies.</figcaption>
+  <figcaption>图8：跨越职能和层级结构的紧密跨团队协作</figcaption>
 </figure>
 
 几周后，在两个团队都获得了很多见解之后，组织设计的优化目标变得明显。首先，世界上没有人确切知道如何做可以量产的自动驾驶汽车。因此，学习*做什么*以及*怎么做*变得至关重要。这也就要求组织成为一个*学习型组织*。
@@ -170,7 +170,7 @@ ADD从原先部门继承了超过15个不同角色，这些角色定义了接口
 <a name="fig009"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig009.png" alt="Easy vs. hard way. On the right: a climbing wall with an overhang.">
-  <figcaption>Figure 9: Easy vs. hard way. On the right: a climbing wall with an overhang.</figcaption>
+  <figcaption>图9：简单与艰难的方式（右侧：带有悬垂的攀岩墙）</figcaption>
 </figure>
 
 ### 产品定义
@@ -179,7 +179,7 @@ AD由客户需求和法律要求驱动，新技术和无缝连接正在为实现
 <a name="fig010"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig010.png" alt="Technological challenges">
-  <figcaption>Figure 10: Technological challenges.</figcaption>
+  <figcaption>图10：技术挑战</figcaption>
 </figure>
 
 #### 在这次LeSS导入中产品是什么？
@@ -199,7 +199,7 @@ AD由客户需求和法律要求驱动，新技术和无缝连接正在为实现
 <a name="fig011"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig011.png" alt="Boundaries for the change">
-  <figcaption>Figure 11: Boundaries for the change.</figcaption>
+  <figcaption>图11：变革的边界</figcaption>
 </figure>
 
 > 大多数产品开发都是按项目组织的 - 每个新产品发布就是一个新项目。组织通过管理项目来管理产品开发…… [[1](#参考文献), 第236页]
@@ -230,17 +230,17 @@ LeSS要求小型的、端到端的、自我管理的团队为实现共同目标�
 <a name="fig012"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig012.png" alt="Organizational structure for LeSS Huge">
-  <figcaption>Figure 12: Organizational structure for LeSS Huge.</figcaption>
+  <figcaption>图12：LeSS巨型的组织结构</figcaption>
 </figure>
 
-迁移团队和高管团队在审视以前的组织结构并应用[系统思维](https://less.works/less/principles/systems-thinking.html)将组织往“学习和适应”的目标转向上都发挥了重要作用。
+迁移团队和高管团队在审视以前的组织结构并应用[系统思考](https://less.works/less/principles/systems-thinking.html)将组织往“学习和适应”的目标转向上都发挥了重要作用。
 
 我们担心，随着时间的推移，任何跨职能和基于团队的组织都会不可避免地回归到单一职能团队的旧范式。根深蒂固的宝马文化和结构与理想的文化和结构截然不同，它曾经（并且仍然）是一股强大的力量，再次证实了我们的担忧。我们决定通过立即对结构进行重大更改来解决这个问题（参见[图13](#fig013)）。我们采用这种方法来对抗回归旧习惯的趋势。以下段落解释了结构的每个部分。
 
 <a name="fig013"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig013.png" alt="New organizational setup">
-  <figcaption>Figure 13: New organizational setup.</figcaption>
+  <figcaption>图13：新的组织设置</figcaption>
 </figure>
 
 #### 第一步：设立开发部门（多个特性团队和一个管理团队）
@@ -249,7 +249,7 @@ LeSS要求小型的、端到端的、自我管理的团队为实现共同目标�
 <a name="fig014"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig014.png" alt="Role of team leaders removed.">
-  <figcaption>Figure 14: Role of team leaders removed.</figcaption>
+  <figcaption>图14：去除了TL角色</figcaption>
 </figure>
 
 如何建立特性团队成员与LM的汇报关系（这在宝马集团是必需的）？我们考虑了两种选项。
@@ -267,7 +267,7 @@ LeSS要求小型的、端到端的、自我管理的团队为实现共同目标�
 
 此外，在之前的设置中，未来的LM是C-3级别的单职能经理（例如架构组经理），C-4级别的TL向他们报告。因此，他们很可能倾向于（1）他们最初的单一职能活动和（2）建立一个非正式的TL层（即使TL的*官方*职位被取消）。他们为什么要这样做，为什么这是一个问题？
 
-首先，请注意升职仍将由经理驱动。在宝马集团攀登职业阶梯需要在某些时候展示管理技能。因此，更多地关注经理的专业（例如架构师）的员工可能会获得更多的青睐，甚至得到经理的非正式支持，以让他们在团队中扮演更积极的“领导”角色。这可能会在一个表面上自我管理的团队中创建一个非正式的层次结构，并“……破坏团队的共同责任和凝聚力”。 [[3](#参考文献), 第63页]
+首先，请注意升职仍将由经理驱动。在宝马集团攀登职业阶梯需要在某些时候展示管理技能。因此，更多地关注经理的专业（例如架构师）的员工可能会获得更多的青睐，甚至得到经理的非正式支持，以让他们在团队中扮演更积极的“领导”角色。这可能会在一个表面上自我管理的团队中创建一个非正式的层级结构，并“……破坏团队的共同责任和凝聚力”。 [[3](#参考文献), 第63页]
 
 ##### 选项2：特性团队成员有不同的LM
 第二个选项的主要目标是在根据需要更改需求领域时具有高度的灵活性。
@@ -339,12 +339,12 @@ LeSS要求小型的、端到端的、自我管理的团队为实现共同目标�
 为了解决这些问题并创造一个让SM可以尽可能自由地开展工作的环境，我们明确希望SM拥有与团队成员不同的LM。这个决定导致我们将SM安排在能力和教练部门。
 
 #### 结果
-最终的组织结构图如[图15](#fig#015)所示。
+最终产生的组织结构如[图15](#fig#015)所示。
 
 <a name="fig015"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig015.png" alt="Resulting organizational structure">
-  <figcaption>Figure 15: Resulting organizational structure.</figcaption>
+  <figcaption>图15：最终产生的组织结构</figcaption>
 </figure>
 
 ADD内有三个主要部门。PO、APO及其支持人员组成了PO部门。所有产品开发人员和LM都在开发部门。能力和教练部门包含所有SM、技术教练和其他行业标准化专家。
@@ -359,7 +359,7 @@ Since this is a LeSS Huge case, ADD followed the principle described above, and 
 这是一个LeSS巨型的案例，ADD遵循了上述原则，LeSS的导入从一个需求领域开始。
 
 [Figure 16](#fig016) gives a visual scheme of the Requirement Areas’ scope as the LeSS adoption grew. The X-axis represents the cross-functionality of the teams. It shows the level of difficulty. The actions on the right are not a composition of the ones on the left. Developing on a rapid prototyping platform and testing in a car is simpler than integrating and testing the same software on the target platform and in a car. Expanding the scope to multiple ECUs increases the complexity and difficulty a team has to face. Including the co-creation of mobility as a service means working on the whole system, which is impractical, at least today.
-[图16](#fig016)展示了随着LeSS导入时间的增长，需求领域的范围变化。X轴代表团队的跨职能程度。它显示了跨职能的难度水平。右侧的活动并不是由左侧的活动组成的。在快速原型平台上开发并在汽车上测试比在目标平台和汽车上集成并测试相同的软件要简单。将范围扩大到多个ECU会增加一个团队必须面对的复杂度和难度。职能扩展到共同创造移动服务意味着团队需要工作在整个系统上，至少在今天，这是不现实的。
+[图16](#fig016)展示了需求领域范围随LeSS导入的进展而变化的可视图。X轴代表团队的跨职能程度。它显示了跨职能的难度水平。右侧的活动并不是由左侧的活动组成的。在快速原型平台上开发并在汽车上测试比在目标平台和汽车上集成并测试相同的软件要简单。将范围扩大到多个ECU会增加一个团队必须面对的复杂度和难度。职能扩展到共同创造移动服务意味着团队需要工作在整个系统上，至少在今天，这是不现实的。
 
 The Y-axis shows the product scope, which ranges from a single component to a customer problem.
 Y轴显示的是产品范围，从单一组件到某个客户问题。
@@ -367,7 +367,7 @@ Y轴显示的是产品范围，从单一组件到某个客户问题。
 <a name="fig016"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig016.png" alt="Scope of the LeSS organization over time">
-  <figcaption>Figure 16: Scope of the LeSS organization over time.</figcaption>
+  <figcaption>图16：随时间推移的LeSS组织范围</figcaption>
 </figure>
 
 The starting point was component-based development on a rapid prototyping platform (step 1 in [Figure 16](#fig016)), far away from the full product scope.
@@ -416,7 +416,7 @@ Constraint #1 and the size of ADD (around 800 people) led us to have a parallel 
 <a name="fig017"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig017.png" alt="LeSS, non-LeSS organization and the SoP 2018 project">
-  <figcaption>Figure 17: LeSS, non-LeSS organization and the SoP 2018 project.</figcaption>
+  <figcaption>图17：LeSS、非LeSS组织和SoP2018项目</figcaption>
 </figure>
 
 The parallel organization and the concept of “only volunteers should join the first Requirement Area” resulted in the third constraint.
@@ -518,7 +518,7 @@ Unfortunately, even with these clear weaknesses in place, adding new Requirement
 <a name="fig018"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig018.png" alt="Requirement Area ramp up over time">
-  <figcaption>Figure 18: Requirement Area ramp up over time.</figcaption>
+  <figcaption>图18：随时间推移需求领域的增长</figcaption>
 </figure>
 
 With each step, the scope of the LeSS organization expanded. Adding four Requirement Areas expanded the scope to step 4 represented in [Figure 16](#fig016). With all nine Requirement Areas, the scope reached its maximum, the entire context of ADD (step 5 in [Figure 16](#fig016)), yet myriad weaknesses underlay this too-rapid expansion.
@@ -543,7 +543,7 @@ The BMW Group’s LeSS adoption can be visualized with the help of the Satir cha
 <a name="fig019"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig019.png" alt="Journey of BMW Group’s LeSS adoption. Based on the Satir change model.">
-  <figcaption>Figure 19: Journey of BMW Group’s LeSS adoption. Based on the <a href="https://stevenmsmith.com/ar-satir-change-model/">Satir change model</a>.</figcaption>
+  <figcaption>图19：宝马集团LeSS导入的旅程，基于<a href="https://stevenmsmith.com/ar-satir-change-model/">萨提亚改变模型</a></figcaption>
 </figure>
 
 The journey consists of 5 phases. This retrospective view elaborates on the Chaos phase only.
@@ -566,7 +566,7 @@ Let’s elaborate on what the product development system is, using Jay Galbraith
 <a name="fig020"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig020.png" alt="Jay Galbraith’s organizational design framework, called the Star Model. This version is from 1998.">
-  <figcaption>Figure 20: Jay Galbraith’s organizational design framework, called the Star Model. This version is from 1998.</figcaption>
+  <figcaption>图20：Jay Galbraith的组织设计框架，叫作星形模型。这个版本来自于1998年</figcaption>
 </figure>
 
 Craig Larman and Bas Vodde observed in their book *Scaling Lean & Agile Development* that a Scrum or LeSS adoption directly alters the *processes* and *structural* elements. In ADD’s case, precisely those elements were focused on when preparing for the LeSS adoption.
@@ -609,7 +609,7 @@ The traditional automotive industry still does long-delayed integration rather t
 <a name="fig021"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig021.png" alt="ADD-external constraints which should influence the Product Backlog.">
-  <figcaption>Figure 21: ADD-external constraints which should influence the Product Backlog.</figcaption>
+  <figcaption>图21：影响产品待办列表的ADD外部限制</figcaption>
 </figure>
 
 Over decades managers conveyed the message that “we need to deliver *everything* and on time,” meaning the contract’s scope, by the release date agreed upon. The message turned into a mantra, spread and believed in by many people, not just managers. Consequently, the desire to deliver everything was high, and the message continued to spread. Further, this ethos arose in the context of creating *electro-mechanical components* such as a braking system; which are *infinitely* less complex, less variable, and less research-oriented than the profoundly hard job of creating AD software.
@@ -643,7 +643,7 @@ The resulting lack of PO/APO and Product Backlog competence led to a “Product 
 **关键点**：大多数 "APO"不能保持整体产品焦点并为下一个迭代准备有价值的条目。相反，他们试图把所有的东西分成很小的部分——这是几十年来的习惯，也是害怕忘记某些东西的反应。
 
 Those circumstances were very convenient for the teams because technical tasks narrowed their focus to just one or two components but didn’t motivate them to learn the customer language, nor to learn across a broader set of components and skills to increase their learning and *adaptiveness*. In consequence, the so-called “Product Backlog” consisted mainly of technical tasks instead of customer-centric items. The result was two other anti-patterns. (1) Re-prioritization on the product level became difficult—in fact, close to impossible—because technical tasks naturally depended more on each other. And (2) collaboration and coordination opportunities between teams when finding technical solutions for customer-centric problems were hard to find. Why? Because technical tasks typically reflect only a small part of the whole system, for example, one component, but customer-centric items usually span multiple system elements.
-这些情况对团队来说是非常方便的，因为技术任务将他们的注意力缩小到了一两个组件上，但并没有激励他们去学习客户的语言，也没有激励他们学习更广泛的组件和技能，以增加他们的学习和适应能力。因此，所谓的 "产品待办列表 "主要由技术任务组成，而不是以客户为中心的条目。其结果是另外两种反模式。(1) 在产品层面上重新确定优先级变得很困难——事实上，几乎是不可能的——因为技术任务自然是相互依赖的。(2) 在为以客户为中心的问题寻找技术解决方案时，很难找到团队之间的合作和协调机会。为什么呢？因为技术任务通常只反映整个系统的一小部分，例如一个组件，但以客户为中心的条目通常跨越多个系统元素。
+这些情况对团队来说是非常方便的，因为技术任务将他们的注意力缩小到了一两个组件上，但并没有激励他们去学习客户的语言，也没有激励他们学习更广泛的组件和技能，以增加他们的学习和适应能力。因此，所谓的 "产品待办列表 "主要由技术任务组成，而不是以客户为中心的条目。其结果是另外两种反模式。(1) 在产品层面上重新确定优先级变得很困难 - 事实上，几乎是不可能的——因为技术任务自然是相互依赖的。(2) 在为以客户为中心的问题寻找技术解决方案时，很难找到团队之间的合作和协调机会。为什么呢？因为技术任务通常只反映整个系统的一小部分，例如一个组件，但以客户为中心的条目通常跨越多个系统元素。
 
 Both anti-patterns led to overloaded so-called “APOs.” Some of them acted as single-team “POs,” prioritizing specific team backlogs in their Requirement Area, which reinforced and amplified the downward spiral from a product-requirement to technical-task perspective.
 这两种反模式导致了所谓的 "APO"的工作超载。他们有些人的行为更像是单一团队的 "PO"，在他们的需求领域内针对团队的产品待办列表排优先级，这加强和放大了条目从产品需求到技术任务的螺旋式下降。
@@ -1039,7 +1039,7 @@ The retrospective on the timeline view results in five symptomatic categories.
 2. 过快地扩张到许多需求领域
 3. 缺乏对Go See的理解和驱动力
 4. 缺乏团队合作的驱动力
-5. 缺乏对技术扶持和精益求精的关注
+5. 缺乏对技术扶持和卓越的关注
 
 <a name="unmet-prerequisites-for-scaling-adaptive-product-development"></a>
 **Unmet Prerequisites for Scaling Adaptive Product Development**
@@ -1089,10 +1089,10 @@ One cause for the missing motivation for teamwork was the unchanged and opaque I
 导致团队合作驱动力缺失的一个原因是一成不变的不透明的IPA，在某些情况下，还有融入了另一个因素：某些人员的奖金与一些特定目标或结果关联。这促进了个人主义，而不是任何层面的团队合作。
 
 **Missing focus on technical enabling and excellence**
-**缺乏对技术扶持和精益求精的关注**
+**缺乏对技术扶持和卓越的关注**
 
 The attention gap for technical enabling and excellence led to negative reinforcing loops. The deployment to the actual target platform, or at least an emulated environment, was undervalued mainly due to decades of early software component development and late integration. Instead, ADD used a (not suitable for production) rapid-prototyping platform for a long time. Consequently, the software evolved towards only being suitable for the rapid-prototyping platform, hiding design flaws and undermining the *whole product focus*.
-对技术扶持和精益求精的关注差距导致了负面的增强回路。低估了需要在实际的目标平台，或者至少是一个模拟的环境部署，这主要是由于过去几十年开发中，习惯于组件开发和较晚集成导致的。相反，ADD在很长一段时间内使用了一个（不适合生产的）快速原型平台。因此，软件朝着只适用于快速原型开发平台的方向发展，隐藏了设计缺陷并损害了*整体产品焦点*。
+对技术扶持和卓越的关注差距导致了负面的增强回路。低估了需要在实际的目标平台，或者至少是一个模拟的环境部署，这主要是由于过去几十年开发中，习惯于组件开发和较晚集成导致的。相反，ADD在很长一段时间内使用了一个（不适合生产的）快速原型平台。因此，软件朝着只适用于快速原型开发平台的方向发展，隐藏了设计缺陷并损害了*整体产品焦点*。
 
 #### What Should Have Happened To Keep the Magnitude of the Chaos Phase Bounded? 为了保持混沌阶段的规模，应该采取什么措施？
 First and foremost, ensure that *continuous improvement* was understood and established as such—no fixed end of “completing the change!” *Continuous improvement towards perfection* is a *life long* undertaking. At ADD, this part might have been rationally understood. However, since *culture follows structure*, peoples’ behavior showed the opposite.
@@ -1132,11 +1132,11 @@ Technical agility constrains organizational agility—or phrased in reverse “[
 <a name="fig022"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig022.png" alt="Technical agility constrains organizational agility.">
-  <figcaption>Figure 22: Technical agility constrains organizational agility.</figcaption>
+  <figcaption>图22：技术敏捷性制约着组织敏捷性</figcaption>
 </figure>
 
 > **Do not expect this to go fast; it will take years or perhaps decades**—in fact, forever, considering the pillar of continuous improvement. A good sense of humor, an informal supportive community of practice, and patience is especially helpful in organizational improvement. Celebrate small steps forward. Especially in the work of organizational redesign, we encourage our clients to **keep in mind systems thinking and the dynamic of local optimization**. [[1](#references), p. 284, emphasis added]
-> **不要指望这个过程会很快，它需要几年甚至几十年的时间** — 事实上，考虑到持续改进这个支柱，它将是永远的。良好的幽默感，非正式的支持性实践社区，以及耐心在组织改进中特别有帮助。庆祝小的进展。特别是在组织重新设计的工作中，我们鼓励我们的客户牢记系统思维和局部优化的动态。[[1](#参考文献), 第284页, 强调是后加的]
+> **不要指望这个过程会很快，它需要几年甚至几十年的时间** — 事实上，考虑到持续改进这个支柱，它将是永远的。良好的幽默感，非正式的支持性实践社区，以及耐心在组织改进中特别有帮助。庆祝小的进展。特别是在组织重新设计的工作中，我们鼓励我们的客户牢记系统思考和局部优化的动态。[[1](#参考文献), 第284页, 强调是后加的]
 
 #### Learnings and Positive Effects 学习及积极影响
 A key purpose of LeSS is to make already-existing issues visible again. Hence, when the euphoria settled and the product focus increased, the issues and failures described in this report became visible. Then, to correct the errors and make up for what ADD lost so far, the introduction of inevitable changes began.
@@ -1201,7 +1201,7 @@ It seems that ADD is entering the fourth phase of the Satir change model—the i
 <a name="fig023"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig023.png" alt="Journey of BMW Group’s LeSS adoption overlaid with Shu-Ha-Ri stages. Based on the Satir change model.">
-  <figcaption>Figure 23: Journey of BMW Group’s LeSS adoption overlaid with <a href="https://www.makigami.info/continuous-improvement-tools/shuhari-japanese-learning-system/">Shu-Ha-Ri</a> stages. Based on the <a href="https://stevenmsmith.com/ar-satir-change-model/">Satir change model</a>.</figcaption>
+  <figcaption>图23：叠加上<a href="https://www.makigami.info/continuous-improvement-tools/shuhari-japanese-learning-system/">守破离</a>阶段的宝马集团LeSS导入旅程（基于<a href="https://stevenmsmith.com/ar-satir-change-model/">萨提亚改变模型</a>）</figcaption>
 </figure>
 
 Facing the blunt reality, and understanding and living out the rules and practices help enter the *integration phase*, which also correlates with the *Ha* stage. In the Ha stage, people in an organization must reflect on the meaning and purpose of everything that they learned. Therefore, they come to a deeper understanding of the art—in this case, large-scale adaptive development—than pure repetitive practice can allow.
@@ -1222,12 +1222,12 @@ It is too early to draw any conclusions from the recent adaptations. They need c
 
 值得注意的是，关于实现至少L3级AD的高难度目标，宝马并没有关注现代机器学习方法，这与该领域最有成就的领导者（如Waymo、Tesla）采取的以机器学习为中心的方法形成鲜明对比。相反，宝马集团继续探索和应用传统的控制方法，如基于公式的指令式编程，就像之前在巡航控制里相对简单的驾驶控制问题中使用那样。
 
-宝马集团将一些研发工作集中在三个大的内部团队：SoP2018、SoP2021 HAD（Highly-Automated Driving/高度自动驾驶）和SoP2021 FAD（Fully-Automated Driving/全自动驾驶）。这些团队在车规级产品开发方面有不同的知识、经验和参与程度。此外，这些团队在不同的时间加入到转型中（参见[图24](#fig024)）。另请参见[图17]（#fig017）和[伪志愿者](#伪志愿者)。
+宝马集团将一些研发工作集中在三个大的内部组：SoP2018、SoP2021 HAD（Highly-Automated Driving/高度自动驾驶）和SoP2021 FAD（Fully-Automated Driving/全自动驾驶）。那些组在车辆级产品开发方面有不同的知识、经验和参与程度。此外，那些组在不同的时间加入到转型中（参见[图24](#fig024)）。另请参见[图17]（#fig017）和[伪志愿者](#伪志愿者)。
 
 <a name="fig024"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig024.png" alt="Joining of groups">
-  <figcaption>Figure 24: Joining of groups.</figcaption>
+  <figcaption>图24：不同组的加入</figcaption>
 </figure>
 
 SoP2021团队主要由研究人员和大学刚毕业的新员工组成，他们紧密合作，形成了LeSS转型的起始种子。因此，*他们中经验丰富的软件开发人员很少，车载产品开发的经验有限，并且只具备ADAS中分隔的领域知识*。
@@ -1488,7 +1488,7 @@ Would a technical-complexity-control manager have prevented or solved this situa
 <a name="fig025"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig025.png" alt="Dynamics of a Green Build is influenced by developers' ability to integrate and test changes fast and frequently.">
-  <figcaption>Figure 25: Dynamics of a Green Build is influenced by developers' ability to integrate and test changes fast and frequently.</figcaption>
+  <figcaption>图25：开发人员快速频繁地集成和测试变更的能力影响绿色构建的动态</figcaption>
 </figure>
 
 ADD’s developers with their limited experience in large-scale development and limited experience in skillfully designing large-scale software systems struggled working on one branch. Their past working structure fostered working on separate code bases (and repositories). The [rushed merge](#a-rushed-merging-of-repositories) didn’t change the fundamental developer’s experience so they continued to struggle working on one branch with hundreds of teams.
@@ -1503,7 +1503,7 @@ The lack of sufficient modern experienced developers resulted in a systematic in
 <a name="fig026"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig026.png" alt="All subsequent merges of long-living branches to master incur a high likelihood of severe merge conflicts.">
-  <figcaption>Figure 26: All subsequent merges of long-living branches to master incur a high likelihood of severe merge conflicts.</figcaption>
+  <figcaption>图26：所有后续从长期存在的分支往主干的合回很可能发生严重的合并冲突</figcaption>
 </figure>
 
 The resulting huge and complex patches while merging those long-living branches to master (see [Figure 26](#fig026)), led to challenges for the already highly-loaded build system. Why? The previously discussed lack of component builds and tests led to whole system clean rebuilds and retests each time. Due to the group’s prior focus on components instead of units, many tests incurred running verification tests with time-consuming simulation.
@@ -1525,7 +1525,7 @@ BMW Group’s culture is to avoid “failures” (in builds and in other ways) a
 <a name="fig027"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig027.png" alt="Dynamics of build and test cycle times to team’s following standards.">
-  <figcaption>Figure 27: Dynamics of build and test cycle times to team’s following standards.</figcaption>
+  <figcaption>图27：构建和测试周期时间影响团队遵循标准的动态</figcaption>
 </figure>
 
 ### Organizational Wizardry 组织“魔法”
@@ -1624,7 +1624,7 @@ ADD继承了宝马集团的许多人力资源政策，尤其是奖金和职业�
 <a name="fig028"></a>
 <figure>
   <img src="/img/case-studies/bmw-group-ad/fig028.png" alt="The Dynamics of Inflation of Communities.">
-  <figcaption>Figure 28: The Dynamics of Inflation of Communities.</figcaption>
+  <figcaption>图28：社区膨胀的动态</figcaption>
 </figure>
 
 Some additional context to understand the dynamics of [Figure 28](#fig028): in BMW Group, working groups and study groups are common. Those materialize on topics of concern and interest for the company. Typically, the facilitators are managers (or on the manager career track). So, being a facilitator has an influence on career advancement, personal bonuses, and salary level.
