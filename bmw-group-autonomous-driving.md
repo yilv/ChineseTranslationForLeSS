@@ -538,7 +538,7 @@ Although a LeSS Huge organizational structure allows such flexibility, it is int
 > 调整组织架构相对容易，但改变思维方式需要时间、讨论、反省和学习。[[1](#参考文献), 第229页]
 
 The BMW Group’s LeSS adoption can be visualized with the help of the Satir change model. [Figure 19](#fig019) shows the journey to the current state and how it could look like in the future.
-宝马集团LeSS的导入可以借助萨蒂尔变革模型来进行展现。[图19](#fig019)显示了通向当前状态的历程以及未来可能的样子。
+宝马集团LeSS的导入可以借助萨提亚改变模型来进行展现。[图19](#fig019)显示了通向当前状态的历程以及未来可能的样子。
 
 <a name="fig019"></a>
 <figure>
