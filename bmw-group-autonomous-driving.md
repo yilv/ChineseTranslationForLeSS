@@ -620,14 +620,12 @@ ADD利用这一优势来频繁地改变需求领域，这主要是由于LeSS组�
 
 让我们来阐述一下为什么许多决定是未经过深思熟虑的，决策过程是低效的。
 
-When changing from manager-led to self-managing teams and communities, managers’ and sometimes Scrum Masters’ thinking was, “Either the teams/communities are self-managing, or I need to step in, breaking the self-management.”
 当从管理者领导转变为自管理团队和社区时，管理者 - 有时也有SM - 的想法是，“要么团队/社区自管理，要么我需要介入，从而打破自管理。”
 
 **关键点**：这是一个错误的二分法。相反，它应该是："我需要帮助他们实现自管理"。
 
 由于害怕打破自管理，经理们让团队和社区主要靠他们自己。因为他们必须做出决定，最不充分和最幼稚的决策协议，即*少数服从多数*，成为他们的默认方式。这是又一个没有看到的*速效方案*，更糟糕的是，它得到了初级SM的支持。有经验的人是少数，大多数时候都被投票淘汰。因此，大多数的决定都是没有经过深思熟虑的和无效的。
 
-**Key point**: We failed to establish a skill hierarchy (without specialist roles) and introduce adequate decision-making protocols, such as a quorum of skilled and experienced people makes decisions.
 **关键点**：我们没有成功建立一个技能等级制度（没有专家角色），也没有引入适当的决策协议，比如由一组达到法定人数的有技能和经验的人来做决定。
 
 这种情况变得与Jo Freeman在她的文章《无结构的暴政》[[15](#参考文献)]中描述的情况相似。
