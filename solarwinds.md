@@ -408,7 +408,6 @@ PM/BA通过传达迭代目标并提供大体的信息启动了迭代计划一。
 | Feature F                | 20          |      |     |      |
 {: .grid_table_with_header .beforeEstimationTable}
 
-Then, we organized the session with all stakeholders where they can invest their money into features. At the end of the session the table could look like this.
 然后，我们组织了与所有利益相关方的会议，他们可以将资金投资到特性上。在会议结束时，表格可能如下所示。
 
 <style>
