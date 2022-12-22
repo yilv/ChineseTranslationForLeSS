@@ -126,7 +126,7 @@ In practice, neither the diagnostic nor BIOS teams I spent most of my time worki
 
 <a name="figure1"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/Actual_MCS_PB_WithTitle.png" alt="Actual MCS Product Boundary">
+<img src="./img/case-studies/data-center-product-company/Actual_MCS_PB_WithTitle.png" alt="Actual MCS Product Boundary">
 <figcaption>
 Figure 1: From the perspective of the Product Management group, Nakashima divisional boundaries, and external customers the natural product boundary includes the entire system of network, compute, and storage capability.
 <br/><br/>
@@ -136,7 +136,7 @@ Even broader product boundaries are possible but are not that practical as the c
 
 <a name="figure2"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/timelineGraphFakeMonths.png" alt="MCS Agile Adoption Timeline">
+<img src="./img/case-studies/data-center-product-company/timelineGraphFakeMonths.png" alt="MCS Agile Adoption Timeline">
   <figcaption>Figure 2: With the various overlapping adoption efforts and managerial changes it is easy to lose track of the overall story arch. Hopefully, this timeline will help you keep track.</figcaption>
 </figure>
 
@@ -183,13 +183,13 @@ Tremendous financial savings in customer support costs and associated reputation
 
 <a name="figure3"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/Diag_CB_WithTitle.png" alt="Components Affected by Diagnostic Feature Set">
+<img src="./img/case-studies/data-center-product-company/Diag_CB_WithTitle.png" alt="Components Affected by Diagnostic Feature Set">
   <figcaption>Figure 3: Although the diagnostic code is largely encapsulated in a custom ISO image and some diagnostic focused code in the MCSA, the diagnostics capabilities are broadly focused and relevant to all hardware generations. Detailed knowledge of each component in the entire MCS system is often required. When a given MCS component’s firmware is missing the ability to probe it, the diagnostic team adds it.</figcaption>
 </figure>
 
 <a name="figure4"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/Diag_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for Diagnostic Team">
+<img src="./img/case-studies/data-center-product-company/Diag_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for Diagnostic Team">
 <figcaption>
 Figure 4: The diagnostic capability is narrowly focused on helping customers diagnose problems with their on-site MCS systems, particularly hardware component failures. Although the focus is narrow, the scope spans the whole MCS system.
 <br/><br/>
@@ -237,13 +237,13 @@ See the _Getting Started_ guide in _Large-Scale Scrum: More with LeSS_ for addit
 
 <a name="figure5"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/diagnosticsTeamInRoom.jpg" alt="Diagnostics Team in Team Room">
+<img src="./img/case-studies/data-center-product-company/diagnosticsTeamInRoom.jpg" alt="Diagnostics Team in Team Room">
   <figcaption>Figure 5: Here is a photo of the diagnostics Scrum development team. Pairing and swarming became more common over time, though full mob programming never quite caught on. The team had both the test and development talent needed to deliver a potentially shippable increment at the end of each Sprint. The development team used a physical task board. The meeting room we took over was a bit smaller than we would have liked.</figcaption>
 </figure>
 
 <a name="figure6"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/diagnosticsDefinitionOfDoneAfterSeveralSprints_9_2.jpg" alt="Diagnostics Definition of Done After Several Sprints">
+<img src="./img/case-studies/data-center-product-company/diagnosticsDefinitionOfDoneAfterSeveralSprints_9_2.jpg" alt="Diagnostics Definition of Done After Several Sprints">
 <figcaption>
 Figure 6: The Definition of Done used by the diagnostics team evolved to what you see here after a few Sprints. The stand-alone portion of the Increment was provided to the field service division by the end of each Sprint. Providing the MCS integrated diagnostics capabilities to the end customer required waiting for a release of the waterfall developed MCS product. This example Definition of Done along with additional context can be found in Table 9.2 of <b>Forging Change</b>.
 </figcaption>
@@ -288,7 +288,7 @@ The second key difference is the diagnostic team was seen as a showcase rather t
 
 <a name="figure7"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/transition-component-teams-slow.png" alt="Slowly Transitioning from Component Teams">
+<img src="./img/case-studies/data-center-product-company/transition-component-teams-slow.png" alt="Slowly Transitioning from Component Teams">
 <figcaption>
 Figure 7: You will find this diagram as Figure 4.11 in <b>Large-Scale Scrum: More with LeSS</b> as part of the Transitioning to Feature Teams guide. You will notice Feature Team Red in its newly formed Requirement Area consumes from the same Product Backlog as do all the component teams. Although this loosely correlates to the diagnostic team situation, the day to day reality was slightly different.  The diagnostic team was a real self-managing team free from the negative direct effects of the Contract Game. In contrast, most of the other MCS teams were subject to the Contract Game within a waterfall delivery context.
 <br/><br/>
@@ -403,19 +403,19 @@ Oddly, the expanded multi-component boundary of the LeSS teams started deep with
 
 <a name="figure8"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/Initial_BIOS_CB_WithTitle.png" alt="Initial BIOS Component Boundary">
+<img src="./img/case-studies/data-center-product-company/Initial_BIOS_CB_WithTitle.png" alt="Initial BIOS Component Boundary">
   <figcaption>Figure 8: The initial BIOS component boundary only included the custom BIOS. Even at this narrower scope, it still included hundreds of specialized code areas within the custom BIOS itself and millions of lines of C code. Few if any of the several dozen BIOS engineers initially knew more than one or two aspects of the BIOS code. 图8：初始BIOS组件边界仅包含定制的BIOS。即使在这个较窄的范围内，它仍然包含了数百个定制BIOS中的专用代码区域，以及数百万行C代码。几十位BIOS工程师中几乎没有人原本就知道BIOS代码的一个或两个以上的方面。</figcaption>
 </figure>
 
 <a name="figure9"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/Expanded_BIOS_MCB_WithTitle.png" alt="Expanded BIOS Multi-Component Boundary">
+<img src="./img/case-studies/data-center-product-company/Expanded_BIOS_MCB_WithTitle.png" alt="Expanded BIOS Multi-Component Boundary">
   <figcaption>Figure 9: The expanded BIOS multi-component boundary included everything along the BIOS configuration control path. It mapped to a natural product requirement area, and could be easily understood by a Product Owner from the Product Management group. Although never fully realized, efforts to move in this direction were made. 图9：扩展的BIOS多组件边界包含BIOS配置控制路径上的所有内容。它映射到一个自然的产品需求领域，很容易被产品管理组的产品负责人所理解。尽管它并没有完全实现，但我们是努力朝着这个方向前进的。</figcaption>
 </figure>
 
 <a name="figure10"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/BIOS_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for BIOS">
+<img src="./img/case-studies/data-center-product-company/BIOS_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for BIOS">
   <figcaption>Figure 10: The BIOS developers were originally more of a loose group of a few dozen individuals who each specialized in a narrow aspect of the BIOS customization. The BIOS system alone contained millions of lines of code in an extremely esoteric system domain. 图10：BIOS开发人员 最初是由几十个人组成的松散团队，每个人都专门从事BIOS定制的一个狭窄领域。BIOS系统里，仅仅在其一个只有内行人才懂的系统领域中，就包含了数百万行代码。</figcaption>
 </figure>
 
@@ -465,19 +465,19 @@ BIOS面向的 LeSS的导入发生在公司高管领导层的活跃变动期间�
 
 <a name="figure11"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/OriginalOrgWithOrigSVP_WithTitle.png" alt="Original Organizational Structure with Original SVP">
+<img src="./img/case-studies/data-center-product-company/OriginalOrgWithOrigSVP_WithTitle.png" alt="Original Organizational Structure with Original SVP">
   <figcaption>Figure 11: The initial Sr. VP/GM of engineering for the MCS division was extremely supportive of the agile adoption efforts. I also found active support throughout much of the organization. A large number of directors, managers, and individual contributors provided active guidance as I attempted to better understand and help the organization. Unfortunately, this Sr. VP’s tenure was very short and there was a key VP responsible for the more pure software portions of the product who was passively aggressively opposed to any real change. 图11:MCS部门最初的高级工程副总裁/总经理对敏捷导入工作给予了极大的支持。我也在整个组织中得到了积极的支持。当我试图更好地理解和帮助这个组织时，许多董事、经理和个人贡献者都提供了积极的指导。不幸的是，这位高级副总裁的任期很短，有一位关键的副总裁负责产品中更纯粹的软件部分，他消极且强烈地反对任何真正的变动。</figcaption>
 </figure>
 
 <a name="figure12"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/OrgAfterEarlyChangeOfSVP_WithTitle.png" alt="Organizational Structure After Early Change of Engineering SVP/GM">
+<img src="./img/case-studies/data-center-product-company/OrgAfterEarlyChangeOfSVP_WithTitle.png" alt="Organizational Structure After Early Change of Engineering SVP/GM">
   <figcaption>Figure 12: The initial Sr. VP/GM of engineering of the MCS Division only had his role for a few months before I arrived. Within a couple months of my arrival he was replaced with another Sr. VP. In retrospect it is obvious the new Sr. VP’s direction from the C suite was to rationalize the size of the division. The new Sr. VP was almost completely unavailable to me and unwilling to actively engage in the agile transformation efforts. Although it generally happened outside of my view, I believe I continued to receive active support and air cover from the Project Management VP. Although there were some additional organizational changes over time once the new engineering SVP took over, none were very significant to the teams attempting an agile adoption until the Hardware VP left. 图12: 在我来之前，MCS部门原先的高级副总裁（SVP）/工程总经理(GM)仅担任了几个月的职务。在我来后的几个月内，他被另一位高级副总裁（SVP）接替。回想起来，很明显，C套件的新高级副总裁(SVP)的方向是使部门规模合理化。新的高级副总裁(SVP)几乎完全不理我，也不愿意积极参与敏捷转型工作。虽然这通常发生在我的视野之外，但我相信我会继续得到项目管理副总裁（VP）的积极支持和隔空保护。尽管在新的工程高级副总裁（SVP）接管后，随着时间的推移，组织结构发生了一些额外的变化，这些变化对尝试敏捷导入的团队来说并没有太大影响，直到硬件副总裁离开。</figcaption>
 </figure>
 
 <a name="figure13"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/OrgAfterDepartureOfHWVP_WithTitle.png" alt="Organizational Structure After Depature of Hardware VP">
+<img src="./img/case-studies/data-center-product-company/OrgAfterDepartureOfHWVP_WithTitle.png" alt="Organizational Structure After Depature of Hardware VP">
   <figcaption>Figure 13: Under the cloud of upcoming and active layoffs many people began to depart the organization voluntarily. Around the same time a new extremely well funded startup began to actively recruit some of the more skillful engineers and managers in the MCS division. One of these departures was the Hardware VP who the BIOS teams had reported through. The new engineering SVP chose not to backfill the Hardware VP but instead to have all those previously reporting up through the Hardware VP report through the Software VP. As the Software VP was always passively aggressively working against the agile adoption efforts this did not bode well. Over the course of a few months half the BIOS team members were laid off, my engagement ended, and Mitya followed the Hardware VP to the same well funded startup the Hardware VP had left for. A little over a year later, Trent also left Nakashima Incorporated. 图13：在即将到来的裁员的阴影下，许多人开始自愿离职。大约在同一时间，一家资金充裕的新创业公司开始积极招聘MCS部门中一些相对来说更熟练的工程师和经理。其中一位离职者就是BIOS团队所需要汇报的硬件副总裁(VP)。新的工程高级副总裁（SVP）选择不再需要新的硬件副总裁（VP），而是让所有先前汇报给硬件副总裁（VP）的人员向软件副总裁（VP）汇报。由于软件副总裁(VP)总是消极地对抗敏捷导入工作，这并不是个好兆头。在几个月的时间里，一半的BIOS团队成员被解雇了，我的工作也结束了，米提亚跟随硬件副总裁(VP)去了那家资金充足的初创公司。一年多后，特伦特也离开了中岛公司。</figcaption>
 </figure>
 
@@ -485,7 +485,7 @@ BIOS面向的 LeSS的导入发生在公司高管领导层的活跃变动期间�
 
 <a name="figure14"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/BIOS_PeopleGeo_WithTitle.png" alt="MCS Division People By Geography">
+<img src="./img/case-studies/data-center-product-company/BIOS_PeopleGeo_WithTitle.png" alt="MCS Division People By Geography">
 <figcaption>
 Figure 14: The vast majority of the people within the MCS Division are co-located on one or two floors within a single building in their respective cities. We were careful to ensure BIOS team members were generally sitting within a few feet of their teammates. Workstations were generally friendly to swarming. Half the work occurred in lab space so many team members effectively had two working locations. With the exception of a handful of the testing specialists, everyone in the US reported through Mitya. Even the testing specialists were co-located, fully allocated to BIOS, and treated just like everyone else on the teams. There were one or two BIOS developers who were dispersed but these were the only exceptions.
 <br/><br/>
@@ -498,7 +498,7 @@ Unfortunately, we didn’t manage to officially remove specialist manager roles 
 
 <a name="figure15"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/BIOS_HW_Gen_Expansion_WithTitle.png" alt="BIOS Feature Team Expansion By Hardware Generation">
+<img src="./img/case-studies/data-center-product-company/BIOS_HW_Gen_Expansion_WithTitle.png" alt="BIOS Feature Team Expansion By Hardware Generation">
   <figcaption>Figure 15: MCS hardware generation was used as one of the component dimensions in defining the boundaries of the LeSS-oriented adoption within the BIOS component. With the supportive hardware VP and a few trips to India it is likely Mitya and I would have been able to successfully work out the politics. Unfortunately, the change in the VP layer coupled with the layoffs precluded this strategy. The information in the timeline and organizational structure diagrams is relevant to what you see in this diagram. 图15: 在面向LeSS的导入过程中，MCS硬件的更新换代被用作定义边界的组件维度之一。有了硬件副总裁的支持，再加上几次印度之行，我和米蒂亚很可能能够成功地解决政治问题。不幸的是，副总裁层的变化加上裁员，使得这一战略无法实施。您可以在该图中看到，随着时间线的移动，组织架构图也相应变化的信息。</figcaption>
 </figure>
 
@@ -767,7 +767,7 @@ _Chapter 5: Planning_ of _Practices for Scaling Lean & Agile Development_ also h
 
 <a name="figure16"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/mcsLaunchDraftProductBacklogOrderAssignment.png" alt="BIOS Component Backlog Brainstorming">
+<img src="./img/case-studies/data-center-product-company/mcsLaunchDraftProductBacklogOrderAssignment.png" alt="BIOS Component Backlog Brainstorming">
   <figcaption>Figure 16: The initial BIOS component backlog brainstorming produced a series of preliminary PBI post-its with little more than short descriptions and/or titles. Each PBI post-it was assigned an effort estimate using poker planning, and given an appropriate order in the BIOS Component Backlog. Just before leaving we captured photos of our work in preparation for transitioning the data to electronic format.</figcaption>
 </figure>
 
@@ -785,25 +785,25 @@ A variety of multi-site reference content from the LeSS books is listed in the [
 
 <a name="figure17"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/mcsSecondPassCardsOnWallRandomly.jpg" alt="BIOS Component Backlog Second Pass">
+<img src="./img/case-studies/data-center-product-company/mcsSecondPassCardsOnWallRandomly.jpg" alt="BIOS Component Backlog Second Pass">
   <figcaption>Figure 17: The brief post-it note PBIs from the initial two day launch meeting were further refined and stored electronically. These refinement efforts were done by small cross-team groups focused on particular areas of the BIOS component. It took a Sprint or more before the cross-team groups reached a point of diminishing return. Now that we had enough additional insight from the cross-team refinement efforts; we returned to a physical format to help us see the bigger picture. Here you see the story cards printed out and randomly taped to the wall in preparation for more refinement activities.</figcaption>
 </figure>
 
 <a name="figure18"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/mcsSecondPassStoryMapping.jpg" alt="BIOS Component Backlog Story Mapping">
+<img src="./img/case-studies/data-center-product-company/mcsSecondPassStoryMapping.jpg" alt="BIOS Component Backlog Story Mapping">
   <figcaption>Figure 18: The BIOS Fake Product Owner began to look for natural groupings and orderings. The end result was a bit of a mix between a story map and a snake-like ordered Component Backlog with epic groupings. This large map was slowly evolved over the course of several days. Various groupings of people from the BIOS feature teams would be pulled in for more insight as it made sense. As the wall settled down the Fake Product Owner made sure to call a meeting with every BIOS Scrum team member to conduct an overall sanity check. At this point the MVP had become evident as seen by the red arrow.</figcaption>
 </figure>
 
 <a name="figure19"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/mcsSecondPassAffinityEstimation.jpg" alt="BIOS Component Backlog Affinity Estimation">
+<img src="./img/case-studies/data-center-product-company/mcsSecondPassAffinityEstimation.jpg" alt="BIOS Component Backlog Affinity Estimation">
   <figcaption>Figure 19: While every BIOS Scrum team member was available during the large group multi-team sanity check, affinity estimation was used to re-estimate every remaining PBI within the MVP. Afterwards the cards were rearranged into a cleaner story map version, and Rally was updated to reflect the new information.</figcaption>
 </figure>
 
 <a name="figure20"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/mcsTeamHelper.jpg" alt="BIOS Team Helper">
+<img src="./img/case-studies/data-center-product-company/mcsTeamHelper.jpg" alt="BIOS Team Helper">
   <figcaption>Figure 20: Mitya ensured we had a helper to provide any masking tape we needed.</figcaption>
 </figure>
 
@@ -841,13 +841,13 @@ The second most interesting part of the inception effort was the Definition of D
 
 <a name="figure21"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/mcsLaunchDraftDefinitionOfDOne.jpg" alt="BIOS Launch Definition of Done">
+<img src="./img/case-studies/data-center-product-company/mcsLaunchDraftDefinitionOfDOne.jpg" alt="BIOS Launch Definition of Done">
   <figcaption>Figure 21: This is the initial draft Definition of Done created by the BIOS teams during their multi-day launch event.</figcaption>
 </figure>
 
 <a name="figure22"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/mcsDefinitionOfDoneAfterSeveralSprints_9_3.jpg" alt="BIOS Evolved Definition of Done">
+<img src="./img/case-studies/data-center-product-company/mcsDefinitionOfDoneAfterSeveralSprints_9_3.jpg" alt="BIOS Evolved Definition of Done">
 <figcaption>Figure 22: The Definition of Done used by the BIOS teams evolved to what you see here after a few Sprints. This example Definition of Done along with additional context can be found in Table 9.3 of <b>Forging Change</b>.</figcaption>
 </figure>
 
@@ -1032,7 +1032,7 @@ Before going on to discuss a few more details and insights from the BIOS teams, 
 
 <a name="figure23"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/chapter-10-galbraith-star-en.png" alt="Gilbrith’s Star Model">
+<img src="./img/case-studies/data-center-product-company/chapter-10-galbraith-star-en.png" alt="Gilbrith’s Star Model">
 <figcaption>Figure 23: In Scaling Lean and Agile Development, Larman and Vodde talk about organizational strategy in terms of Jay Gilbrith’s star model. Some of the greatest problems in the LeSS adoption relate to Rewards and People, and their intersection with Structure. There was a failure to flatten the formal organizational structure, coupled with insufficient attention to compensation structures which reward technical proficiency at the same level as managerial proficiency. It is useful to keep Gilbrith’s model in mind as you read through the <a href="#bios-alignment-to-less-rules">BIOS Alignment to LeSS Rules</a> section. (Figure used with permission.).</figcaption>
 </figure>
 
@@ -1208,7 +1208,7 @@ Creating a formalized set of triage guidelines was very helpful in managing thes
 
 <a name="figure24"></a>
 <figure>
-<img src="/img/case-studies/data-center-product-company/mcsTriageGuidelines_10_1.jpg" alt="BIOS Triage Guidelines">
+<img src="./img/case-studies/data-center-product-company/mcsTriageGuidelines_10_1.jpg" alt="BIOS Triage Guidelines">
   <figcaption>Figure 24: This triage guideline used by the BIOS teams establishes three basic categories: take immediate action, ask the Product Owner, and put it on the BIOS Component Backlog. The Product Owner has clearly communicated intent while empowering the Scrum Development Teams to take immediate action when appropriate. By making the guidelines explicit, the Product Owner also improves the odds of collaboratively refining the guidelines based on the collective wisdom of the teams.).</figcaption>
 </figure>
 
