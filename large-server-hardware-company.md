@@ -140,13 +140,16 @@ Even broader product boundaries are possible but are not that practical as the c
   <figcaption>Figure 2: With the various overlapping adoption efforts and managerial changes it is easy to lose track of the overall story arch. Hopefully, this timeline will help you keep track.</figcaption>
 </figure>
 
-# Demonstrate Benefits of a Scrum Team {#demonstrate-benefits-of-a-scrum-team}
+# Demonstrate Benefits of a Scrum Team 展示Scrum团队的好处 {#demonstrate-benefits-of-a-scrum-team}
 
 There was a great deal of initial skepticism within the MCS division that Scrum made sense within a hardware and firmware development effort. The thought being firmware and hardware efforts were somehow different from typical enterprise software development, and therefore not a good match for Scrum (ironic, as the original 1980s roots-of-Scrum research from Harvard involved hardware products). This perspective was reinforced by the fact that all the pre-existing ‘agile’ development efforts within MCS were not.
+在MCS部门，最初对Scrum在硬件和固件开发工作中的意义存在很大的怀疑。他们认为固件和硬件工作与典型的企业软件开发不同，因此不适合使用Scrum（具有讽刺意味的是，20世纪80年代哈佛大学的Scrum根源研究涉及硬件产品）。这一观点因MCS内所有先前存在的 "敏捷 "开发工作都不是这样而得到加强。
 
 Considering the context, it made sense to apply the incremental LeSS-adoption Guide using a _Feature Team Adoption Map_ to identify a meaningful multi-component boundary to stand-up a healthy Scrum team that could demonstrate useful results. This is to say it made sense to demonstrate the value of having a small team of people with all the skills to solve a problem, working directly with the customers who have the problem, and to have this team of people iteratively, adaptively, and incrementally solve the customer's problem.
+考虑到这种情况，应用增量的LeSS-采用指南，使用特征团队采用图来确定一个有意义的多组件边界，以建立一个健康的Scrum团队，从而展示有用的结果，是有意义的。这就是说，展示一个由拥有所有技能的人组成的小团队的价值是有意义的，他们直接与有问题的客户一起工作，并且让这个团队的人迭代地、适应性地、渐进地解决客户的问题。
 
 We hoped to gain additional political capital by demonstrating:
+我们希望通过示威获得更多的政治资本。
 
 * Scrum with firmware/hardware
 * Self-managing team
@@ -155,13 +158,21 @@ We hoped to gain additional political capital by demonstrating:
 * Impact of structure on culture
 * Improved code quality
 * Avoidance of the Contract Game
+* 有固件/硬件的Scrum
+* 自我管理的团队
+* 改善客户协作
+* 改善价值交付
+* 结构对文化的影响
+* 提高代码质量
+* 避免了合同游戏
 
-
-## Desired Characteristics of Pilot Multi-Component {#desired-characteristics-of-pilot-multi-component}
+## Desired Characteristics of Pilot Multi-Component 试验性多成分的预期特征 {#desired-characteristics-of-pilot-multi-component}
 
 To achieve the demonstration objectives above, we needed to identify the right feature set of the MCS product for a pilot Scrum team to focus on. I recognized the chances of success would be greatest if we could identify a largely isolated and _decoupled set of multiple components which mapped significantly to a natural LeSS Huge Requirement Area_ (RA) of the overall product. (Note that an RA is _not_ defined by a component or architectural boundary, but sometimes there is a significant overlap of a functional RA and a body of related code, which in this early-step case was an advantage in simplifying the adoption).
+为了实现上述示范目标，我们需要确定MCS产品的正确功能集，以便试点Scrum团队专注于此。我认识到，如果我们能够确定一套基本隔离和解耦的多个组件，并与整个产品的自然LeSS巨大需求区（RA）有明显的映射，那么成功的机会就会最大。(请注意，RA并不是由组件或架构的边界来定义的，但有时功能RA和相关代码体有很大的重叠，在这个早期步骤的案例中，这是简化采用的优势）。
 
 The following criteria delineate the group of multiple components we were looking to identify. We wanted a group of components…
+下面的标准划定了我们想要确定的多个组件的组别。我们希望有一组组件...
 
 * Passing through “front to back” of MCS
 * Appropriate to the capacity of a single team
@@ -169,17 +180,26 @@ The following criteria delineate the group of multiple components we were lookin
 * Whose successful delivery would be politically difficult to ignore
 * For which the team could be protected from delivery pressure
 * With a codebase at least moderately decoupled from the rest of the MCS system, to avoid poor practices by an army of waterfall developers
+* 通过MCS的 "从前到后 "进行传递
+* 适合于单个团队的能力
+* 为客户提供有意义的价值
+* 其成功交付在政治上难以忽视
+* 可以保护团队不受交付压力的影响
+* 至少有一个与MCS系统其他部分适度脱钩的代码库，以避免瀑布式开发大军的不良行为。
 
 Another criterion we could survive without but hoped to also find was:
+另一个我们可以没有但希望也能找到的标准是。
 
 * A group of components that could be released independently of the waterfall MCS releases; thereby providing faster feedback from real customers
+* 一组可以独立于瀑布式MCS发布的组件；从而更快地提供来自真实客户的反馈
 
-
-# Appropriate Diagnostics Feature Set Identified for Pilot Scrum team {#appropriate-diagnostics-feature-set-identified-for-pilot-scrum-team}
+# Appropriate Diagnostics Feature Set Identified for Pilot Scrum team 为试点的Scrum团队确定了适当的诊断功能集 {#appropriate-diagnostics-feature-set-identified-for-pilot-scrum-team}
 
 It took some thoughtful discussion with Trent and others within the organization to find a good candidate set of components. The conclusion? A _diagnostic feature set_ of MCS turned out to be a remarkably good choice since it satisfied every item on the list.
+我们与特伦特和组织内的其他人进行了一些深思熟虑的讨论，以找到一套好的候选组件。结论是什么？MCS的诊断功能集被证明是一个非常好的选择，因为它满足了清单上的每一个项目。
 
 Tremendous financial savings in customer support costs and associated reputational benefits helped provide political air-cover while also generating enthusiastic support from the field support division. The diagnostic feature set was the only obvious feature set meeting our criteria, yet the fit was fantastic!
+在客户支持成本方面的巨大财务节约和相关的声誉利益有助于提供政治上的掩护，同时也能从现场支持部门获得热情的支持。诊断功能集是唯一符合我们标准的明显的功能集，但它却非常合适！。
 
 <a name="figure3"></a>
 <figure>
@@ -210,35 +230,47 @@ From the initial launch onward people began to behave differently than before. A
 ## Diagnostics Team Technical Achievements {#diagnostics-team-technical-achievements}
 
 An explicit and expanding Definition of Done, effective Scrum events, a small amount of technical coaching, and avoiding the Contract Game combined to make a huge difference in technical practices.
+一个明确的、不断扩展的 "完成 "定义，有效的Scrum活动，少量的技术指导，以及避免合同游戏，这些都使技术实践产生了巨大的变化。
 
 Within four or five Sprints the following were readily observable:
+在四到五个Sprints中，以下内容是很容易观察到的。
 
 * Automated unit testing in any portions of the MCS C++ and Python code the diagnostics Scrum team touched
 * Automated unit test practices were acting as a forcing function for better crafted and less troublesome code for all of the diagnostics specific code and portions of the overall MCS codebase
 * Active development of improved and broader automated integration tests than previously existed for the MCS system
-
+* 诊断团队对MCS的C++和Python代码的任何部分进行了自动化单元测试。
+* 自动化单元测试实践作为一种强制功能，为所有诊断的特定代码和整个MCS代码库的部分提供了更好的制作和更少的麻烦代码。
+* 积极开发比以前更完善、更广泛的MCS系统的自动化集成测试。
 
 ## Diagnostics Team Launch Steps {#diagnostics-team-launch-steps}
 
 There was no mystery to our success. Steps included:
+我们的成功并不神秘。步骤包括：
 
 * Applied the LeSS guide _Temporary Fake Product Owner_ for the diagnostic multi-component to identify a personality conducive to supporting and guiding the team, who had enough positional and political influence for his decisions to be respected by the various stakeholders.
+* 将LeSS指南中的临时假产品负责人用于诊断多组件，以确定一个有利于支持和指导团队的人格，他有足够的地位和政治影响力，他的决定会得到各利益相关者的尊重。
     * This person was a _fake_ Product Owner because they still had to play the _Contract Game_, doing requirements and conforming to milestones as directed by others in the company.
+    * 这个人是一个假的产品负责人，因为他们仍然要玩合同游戏，按照公司其他人的指示做需求和遵守里程碑。
 * Assembled an eight-member development team with all the software and test engineering skills needed (or learned) to work across the various MCS subsystems required.
+* 组建了一个由八人组成的开发团队，拥有所有需要的（或学到的）软件和测试工程技能，以便在所需的各种MCS子系统中工作。
 * Took full-time possession of a mid-sized meeting room for use as the development team's co-located working space.
+* 全职拥有一间中型会议室，作为开发团队的联合工作空间。
 * I delivered a couple of days of formal classroom training for all Scrum team members, as well as key stakeholders.
+* 我为所有Scrum团队成员以及关键的利益相关者提供了几天的正式课堂培训。
 * We conducted a collaborative chartering effort consisting of a couple of days of dedicated chartering meetings, along with a variety of preliminary and follow-up meetings. This helped achieve overall alignment between and within the stakeholders and Scrum team members.
+* 我们进行了一次合作性的章程制定工作，包括几天专门的章程制定会议，以及各种初步和后续会议。这有助于实现利益相关者和Scrum团队成员之间以及他们内部的整体协调。
 * I provided active executive, process, and technical coaching for the first few Sprints before refocusing most of my efforts on the upcoming LeSS-oriented adoption in the MCS division's BIOS group.
+* 在最初的几个Sprints中，我提供了积极的执行、流程和技术指导，然后将大部分精力重新集中在即将在MCS部门的BIOS小组中进行的面向LeSS的采用上。
 
 See the _Getting Started_ guide in _Large-Scale Scrum: More with LeSS_ for additional guidance on launching teams. Although written from the perspective of launching multiple teams within a LeSS structure, it is just as applicable to launching a single pilot Scrum team.
-
+请参阅 "大规模Scrum "中的入门指南。更多关于启动团队的指导。虽然是从在LeSS结构中启动多个团队的角度写的，但它同样适用于启动一个试点Scrum团队。
 
 ## Diagnostics Team Photos and Artifacts {#diagnostics-team-photos-and-artifacts}
 
 <a name="figure5"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/diagnosticsTeamInRoom.jpg" alt="Diagnostics Team in Team Room">
-  <figcaption>Figure 5: Here is a photo of the diagnostics Scrum development team. Pairing and swarming became more common over time, though full mob programming never quite caught on. The team had both the test and development talent needed to deliver a potentially shippable increment at the end of each Sprint. The development team used a physical task board. The meeting room we took over was a bit smaller than we would have liked.</figcaption>
+  <figcaption>Figure 5: Here is a photo of the diagnostics Scrum development team. Pairing and swarming became more common over time, though full mob programming never quite caught on. The team had both the test and development talent needed to deliver a potentially shippable increment at the end of each Sprint. The development team used a physical task board. The meeting room we took over was a bit smaller than we would have liked. 图5：这是一张诊断学Scrum开发团队的照片。随着时间的推移，结对和蜂群变得越来越普遍，尽管完全的暴徒编程从未完全流行起来。该团队同时拥有测试和开发人才，以便在每个Sprint结束时提供一个潜在的可交付的增量。开发团队使用一个物理任务板。我们接手的会议室比我们希望的要小一些。</figcaption>
 </figure>
 
 <a name="figure6"></a>
@@ -341,10 +373,13 @@ Enlightened minds never again see the world the same. Similarly, improvements in
 # BIOS Management Interest {#bios-management-interest}
 
 As the diagnostics Scrum team began to gel, I began looking for another area of the MCS landscape to focus on. I again leveraged Trent's knowledge of organizational dynamics. As before, we wanted to gradually transition to feature teams while focusing on areas with fully enrolled management support. Given the effectiveness of the diagnostic Scrum team efforts, a somewhat broader scope had become more tenable. That said I was still the only coach, and there was not enough funding for additional coaching capacity at the time.
+随着诊断Scrum团队开始融合，我开始寻找MCS的另一个领域来关注。我再次利用了特伦特的组织动态知识。和以前一样，我们希望逐步过渡到特色团队，同时把重点放在有充分注册的管理层支持的领域。鉴于诊断性Scrum团队工作的有效性，更广泛的范围已经变得更加可行。尽管如此，我仍然是唯一的教练，而且当时也没有足够的资金来增加教练的能力。
 
 There was a director, Mitya Dubinksy, who although initially somewhat skeptical, expressed interest in what benefit might be possible. Over the course of a few weeks, I was able to bring Mitya further along in his thought processes. I was assisted in this effort by a peer of Mitya named Krishna Mishra. Krishna played a key role in the diagnostics pilot Scrum team effort. Krishna also happened to manage a group of engineers who frequently interacted with Mitya's group.
+有一位导演，米迪亚-杜宾克西，虽然最初有些怀疑，但他对可能的好处表示了兴趣。在几周的时间里，我能够使米迪亚在他的思想过程中进一步发展。在这一努力中，我得到了米迪亚的一位名叫克里希纳-米什拉的同行的协助。Krishna在诊断试验Scrum团队工作中发挥了关键作用。Krishna还碰巧管理着一组工程师，他们经常与Mitya的小组互动。
 
 Mitya's group was responsible for providing a customized BIOS for MCS. BIOS is the firmware used to perform hardware initialization of a compute node (blade) during the booting process. It also provides runtime services to whichever operating system happens to be running on a compute node within MCS. In the case of MCS and competing products, a custom BIOS is part of what makes it possible to remotely administer each node’s hardware settings without having to physically access the hardware. The access is particularly important when you realize the hardware is often in a distant lightly staffed server farm.
+Mitya的小组负责为MCS提供一个定制的BIOS。BIOS是用于在启动过程中对计算节点（刀片）进行硬件初始化的固件。它还为MCS内的计算节点上运行的任何操作系统提供运行时服务。在MCS和竞争产品的情况下，定制的BIOS是使远程管理每个节点的硬件设置成为可能的部分原因，而不需要实际访问硬件。当你意识到硬件通常在一个遥远的、人员稀少的服务器场时，这种访问就显得尤为重要。
 
 # BIOS Overview BIOS概览 {#bios-overview}
 
