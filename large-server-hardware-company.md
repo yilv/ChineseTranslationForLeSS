@@ -1,143 +1,139 @@
-# Synopsis 简介 {#synopsis} 
+# 概要 {#synopsis} 
 
 I strongly believe the best chance of long-term success is achieved with a broad product boundary coupled with feature teams executing within the full scope of the product. If the art of the possible excludes this choice, an incremental approach starting with _extended_ (more cross-functional) component teams and aggressively moving towards _expanded_ (more cross-component) component teams and feature teams can still be worth pursuing.
-我坚信，实现长期成功的最好机会，就是让产品拥有一个广阔的边界，并且让特性团队在这个完整的产品范围里开发。如果万不得以（原文: “the art of the possible”，译“可能性的艺术”，隐晦表达部门政治）排除了这种选择，那么，从加入更多“跨功能“开发的扩展组建团队开始，积极地向加入更多”跨组建“的扩展组建团队和特性团队迈进，这样的增量的方式仍然是值得追求的。
+我坚信宽泛的产品边界，结合在产品全范围之内运行的特性团队，是最有可能取得长期成功的。如果因可能性的艺术从而排除了这种选择，那么一种增量的方式 - 从*扩展的*（更多跨职能）组件团队开始，积极地转向*扩大的*（更多跨组件）组件团队和特性团队 - 仍然是值得追求的。
 
 Benefits of this strategy within Nakashima's Modular Compute System division included:
 在中岛公司的模块化计算系统部门，这个策略的好处包括：
 
-* <span style="color:navy">Locally improved **adaptability** and **value delivery** within the extended component boundary 在扩展组建边界内，可局部改善**适应性**和**价值交付**</span>
-* <span style="color:navy">Improved technical practices that created **improved quality**, along with improved awareness of what additional improvements could bring 改进创建**质量提升**的技术实践， 同时也提升了团队思考其它改进的意识</span>
-* <span style="color:navy">Early identification and resolution of **defects** related to the extended component 早期识别和解决与扩展组建相关的**缺陷**</span>
-* <span style="color:navy">Improved employee **collaboration, engagement, and learning** within the extended component teams 提升员工**协作、参与度**、以及在扩展组建团队中的**学习**</span>
-* <span style="color:navy">Increased awareness of **organizational impediments** and the need to make even more organizational changes 提升对**组织障碍**，以及更多组织变革的必要性的意识</span>
+* <span style="color:navy">在扩展组件边界内这个局部改善了**适应性**和**价值交付**</span>
+* <span style="color:navy">改进了带来**质量提升**的技术实践，同时也提升了团队对改进所能带来什么的认知</span>
+* <span style="color:navy">早期识别和解决与扩展组件相关的**缺陷**</span>
+* <span style="color:navy">提升了在扩展组件团队内的员工**协作、参与度和学习**</span>
+* <span style="color:navy">提升了对**组织障碍**，以及更多组织变革必要性的认知</span>
 
 I hope you will find our success inspirational and instructive. Similarly, I hope you will avoid repeating our mistakes and instead spend your energy learning as you make new ones.
-我希望我们的成功能让你感到受鼓舞，对你有启发。同样，我也希望你能避免重复我们的错误，这样你就可以把能量集中在新错误的学习上。
+我希望我们的成功能让你感受到鼓舞和启发。同样，我也希望你能避免重复我们的错误，而是把精力放在新错误的学习上。
 
-# Skimming Hints 略读提示
+# 略读提示
 
-The case study is extremely long and detailed. If you prefer to skim it very quickly I recommend reading just the following:
-这个案例特别长，并且很具体。如果你想快速浏览，我建议只读以下部分：
+这个案例特别长，并且很详细。如果你想快速浏览，我建议只读以下部分：
 
-* Synopsis section 简介章节
-* All figures and associated captions 所有图表及相关说明
-* Conclusion section 结论章节
+* 概要章节
+* 所有图表及相关说明
+* 结论章节
 
-# Overall Context of LeSS Adoption LeSS导入的总体背景 {#overall-context-of-less-adoption}
+# LeSS导入的总体背景 {#overall-context-of-less-adoption}
 
 
-## Product Overview and People Involved 产品概述及相关人员 {#product-overview-and-people-involved}
+## 产品概述及相关人员 {#product-overview-and-people-involved}
 
 Nakashima's Modular Compute System (MCS) division is focused on product development for a family of integrated hardware, software, and networking components which collectively act as a complete pre-bundled in-house data center solution. It is to some extent an on-site forklift deployment of an Amazon Web Services type platform. Typical end customers are large banks, insurance companies, mobile phone providers, and scientific research organizations.
-中岛公司的模块化计算系统（MCS）部门，专注于一系列集成硬件、软件和网络组件的产品开发，这些组件共同充当一个完整的预捆绑内部数据中心解决方案。在某种程度上，它可以说是亚马逊网络服务类型平台的现场forklift部署。典型的终端客户是大型银行、保险公司、手机供应商和科研机构。
+中岛公司的模块化计算系统（MCS）部门专注于一系列集成硬件、软件和网络组件的产品开发，这些组件共同作为一个完整预捆绑的内部数据中心解决方案。在某种程度上，它可以说是一个亚马逊网络服务类型平台的现场迁移部署。典型的终端客户是大型银行、保险公司、手机供应商和科研机构。
 
 To help provide a sense of scale, the MCS division of Nakashima alone has somewhere on the order of a few thousand people. Most of the division's staff are concentrated in the greater metropolitan areas of San Francisco, Portland, and Bengaluru.
-就规模而言，仅中岛公司的MCS部门就有小几千人。该部门的大多数员工集中在旧金山、波特兰和班加罗尔等大城市地区。
+就规模而言，仅中岛公司的MCS部门就有几千人。该部门的大多数员工集中在旧金山、波特兰和班加罗尔等大城市地区。
 
 The entirety of the MCS division is focused on product development of the MCS product. All manufacturing including circuit board fabrication, metal fabrication, assembly, and other mass-production efforts are outsourced using specifications the MCS division creates.
-整个MCS部门都聚焦于MCS产品的开发。而所有的制造工作，包括电路板制造、金属制造、组装和其他大规模生产工作，均采用MCS部门制定的规范，外包出去。
+整个MCS部门都聚焦于MCS产品的开发。而所有的制造工作，包括电路板制造、金属制造、组装和其它大规模生产工作，均采用MCS部门制定的规范被外包出去。
 
 Field support is handled by yet another division of Nakashima. The field support division focuses on providing a seamless customer support experience across all of Nakashima's products. Products supported by the field support division include a broad array of networking products such as telephone systems, video conferencing solutions, wireless networking solutions, and a host of other products that have nothing to do with MCS.
 现场支持则由中岛公司的的另一个部门负责。现场支持部门专注于为中岛公司的所有产品提供无缝的客户支持体验。现场支持部门支持的产品包括广泛的网络产品，如电话系统、视频会议解决方案、无线网络解决方案，以及许多与MCS无关的产品。
 
 In practice, there are specialists within the field support division focused on supporting the MCS product. These specialists are exceptionally well positioned to observe the on-the-ground customer reality, and how it varies across the large and diverse MCS customer base. Due to the position of the field support specialists, engineers developing the MCS product can obtain some of the most useful and unfiltered feedback available by directly collaborating with these field support specialists.
-实际上，现场支持部门里，是有专家专注于支持MCS产品的。这些专家能够观察到现场客户的真实情况，以及它在大型和多样化的MCS客户群中是如何变化的。基于此，开发MCS产品的工程师可以通过直接与这些现场支持专家合作，来获得一些最有用和未经过滤的反馈。
+实际上，现场支持部门里是有专家专注于支持MCS产品的。这些专家能够观察到现场客户的实际情况，以及存在于大且多样的MCS客户群体中的差异。基于此，开发MCS产品的工程师可以通过直接与这些现场支持专家合作，来获得一些最有用的且未经过滤的反馈。
 
 The MCS product support staff and organizational capabilities should not be confused with what you might encounter for a typical mass consumer product. Rather this is the sort of quick responding, large budget technical support that comes with actual humans on-site when the need arises. Many of the field support specialists are just as knowledgeable and well-compensated in their area of expertise as are the engineers who develop the MCS product.
-[缺失]
+MCS产品支持人员和组织能力不应与你可能在典型大众消费产品中会遇到的相混淆。这是一类快速响应、预算充裕的技术支持，当需要时就会有真正的人员到现场。许多现场支持专家在他们的专业领域里与开发MCS产品的工程师一样地知识渊博和薪酬优厚。
 
 Trent Gambale was running the project management group within the MCS division, which consisted of less than a dozen project managers who helped coordinate the overall MCS development efforts. Much of the day to day project management facets were being handled by the various engineering directors within the MCS division. My initial sponsorship within the MCS division came through Trent, with active involvement of his VP and the Senior VP/GM at the time. Trent had heard of me through my previous work in another division within Nakashima.
-特伦特·甘贝尔（Trent Gambale）负责管理MCS部门内的项目管理组，该小组由不超过十几名项目经理组成，他们帮助协调MCS的整体开发工作。日常项目管理的许多方面都由MCS部门内的各个工程总监负责。我在MCS部门的最初赞助来自特伦特，当时他的副总裁和高级副总裁/总经理都积极参与。特伦特是通过我之前在中岛公司工作的另一个部门听说我的。
+特伦特·甘贝尔（Trent Gambale）负责MCS部门内的项目管理组，该小组由不超过十几名项目经理组成，帮助协调MCS的整体开发工作。日常项目管理的许多方面都由MCS部门内的各个工程总监负责。我在MCS部门的最初赞助来自特伦特，当时他的VP（副总裁）和SVP（高级副总裁）/GM（总经理）都积极参与。特伦特是通过我之前在中岛公司另一个部门的工作听说我的。
 
-## Initial Agile Adoption Focus 敏捷初始导入的重点 {#initial-agile-adoption-focus}
+## 敏捷导入的初始重点 {#initial-agile-adoption-focus}
 
 The initial focus of the engagement was to assess a small handful of pre-existing (ostensibly) ‘agile’ teams, assist them in whatever improvements made sense, and to begin an agile adoption in other promising areas of the division we could identify.
-最初的重点是评估一些（少量）现存的（表面上的）“敏捷”团队，在任何有意义的可改进方面为他们提供帮助，并在该部门内，我们识别出一些有前途的领域，开始导入敏捷。
+最初的重点是评估少量业已存在的（表面上）“敏捷”团队，以协助他们做任何有意义的改进；并在该部门内识别出一些有希望的领域开始导入敏捷。
 
 After a few days of investigation, it became very clear all of the pre-existing ‘agile’ efforts were not. For example,
-经过几天的调研，很明显，所有这些现存的“敏捷”工作其实什么都不是。例如：
+经过几天的调研，所有这些现存的“敏捷”工作很明显其实什么都不是。例如，
 
-* Management routinely treated estimates as _commitments_.
-* There was a lack of skillful engineering practices such as automated unit testing.
-* There were no formal “inspect and adapt” events such as a retrospective.
-* Teams were far from self-managing.
-* 管理层习惯性地将估算视为承诺。
-* 缺乏成熟的工程实践，例如自动化单元测试。
-* 没有正式的“检查和适应”活动，例如回顾会议。
-* 团队远没有达到自我管理的程度。
+* 管理层习惯性地将估算视为*承诺*。
+* 缺乏熟练的工程实践，例如自动化单元测试。
+* 没有正式的“检查并适应”活动，例如回顾会议。
+* 团队远没有自我管理。
 
 Following my initial examination of the pre-existing so-called agile efforts I discussed what I had learned with Trent. We judged the most effective place to focus our energy would be on creating new proper cross-functional and cross-component Scrum teams in areas deemed most conducive to success of the change. Each team should have the skills and empowerment to work on any aspect of the various technologies involved, along with the ability to perform all aspects of development, testing, release, and any other activities involved.
-在我对现存的所谓敏捷工作进行初步检查之后，我与特伦特进行了讨论。我们认为，当下最有效的，应该是在那些被认为最有利于成功变革的领域，集中精力地去创建新的合适的跨职能和跨组件Scrum团队。每个团队在其涉及的各种技术领域，都应该拥有相应的技能和授权，同时，他们应该具务完成开发、测试、发布，以及所有其它所有涉及到的相关工作的能力。
+在我对现存的所谓敏捷工作进行初步检查之后，我与特伦特进行了讨论。我们认为，当下聚焦我们精力最有效的地方应该是，在那些被认为最有利于成功变革的领域创建新的合适的跨职能和跨组件Scrum团队。每个团队应该拥有技能和授权以工作于各种相关技术的任何方面，同时具备完成开发、测试、发布，以及其它相关活动的所有方面的能力。
 
 From my investigation of the pre-existing efforts, it had become clear the majority of the senior management had no real understanding of or exposure to healthy self-managing teams. Without that, it would be challenging to generate sufficient interest in more sustainable division-wide organizational change. Trent and I hoped a successful showcase Scrum team would help achieve greater buy-in.
-从我对现存工作的调查来看，显而易见，大多数高级管理层对健康的自我管理团队并没有真正的了解或接触。如果没有这一点，其实很难让大家对更加可持续的全部门组织变革产生足够的关注。特伦特和我希望借助一个成功的Scrum团队示例，来获得更大的支持。
+从我对现存工作的调查来看，大多数高级管理层对健康的自管理团队显然并没有真正的了解或接触。没有这一点就很难让大家对更持续的整个部门组织变革产生足够的兴趣。特伦特和我希望借助一个成功的Scrum团队示例来获得更大的支持。
 
 But our _failure to address some of the structural forces eventually unraveled much of our earlier success_. Two large structural forces contributing to the unraveling were:
-但我们未能解决一些结构性因素，最终导致了我们早期的成功。促成瓦解的两大结构性力量是：
+但我们*未能解决一些结构性问题最终瓦解了我们早期的成功*。导致瓦解的两大结构性问题是：
 
-* Failure to adequately restructure reporting relationships tempted some managers to distract team members from their work.
-* The new functionality built was ancillary to management's incentives, even though it produced tremendous savings for Nakashima as a whole.
-* 未能充分重组报告关系，导致一些经理分散了团队成员的工作注意力。
-* 新功能的建立对管理层的激励起到了辅助作用，尽管它为中岛公司整体带来了巨大的节省。
+* 未能充分重组汇报关系鼓动了一些经理分散了团队成员的工作注意力。
+* 新构建的功能对管理者激励的贡献有限，尽管它为中岛公司整体带来了巨大的节省。
 
 The _[Manifestation of Larman's First and Fifth Laws of Organizational Behavior](#bookmark=id.26in1rg)_ section covers these in more detail.
-拉曼现象里，组织行为章节的第一和第五定律对此有更详细的介绍。
+[第一条和第五条拉曼组织行为法则的表现](#manifestation-of-larmans-first-and-fifth-laws-of-organizational-behavior)章节对此有更详细的阐述。
 
 We initially established a single Scrum team focused on adding an end-to-end diagnostic capability to the MCS product. The end-to-end diagnostics showcase team is not the primary focus of this case study, although partial success in this effort helped open the door to the broader BIOS related efforts which are.
-我们最初成立了一个单独的Scrum团队，专注于为MCS产品增加端到端诊断能力。端到端诊断示例团队并不是本案例研究的主要重点，尽管这项工作的部分成功为更广泛的BIOS相关工作敲开了大门。
+我们最初成立了一个单独的Scrum团队，专注于为MCS产品增加端到端诊断能力。端到端诊断展示团队并不是本案例的主要重点，尽管这项工作的部分成功为更广泛的BIOS相关工作敲开了大门。
 
 Because the end-to-end diagnostics efforts help to illuminate and foreshadow some of the challenges encountered in the BIOS efforts, the diagnostics team efforts are described in a little more detail later on.
-由于端到端诊断工作有助于阐明和预示BIOS工作中遇到的一些挑战，因此稍后将更详细地描述诊断团队的工作。
+因为端到端诊断的工作帮助照亮和预示了BIOS工作中遇到的一些挑战，稍后也将更详细地描述诊断团队的工作。
 
-## LeSS-oriented Adoption within BIOS Group BIOS组内，面向LeSS的导入 {#less-oriented-adoption-within-bios-group}
+## 在BIOS组内面向LeSS的导入 {#less-oriented-adoption-within-bios-group}
 
 The early success of the diagnostics team along with my continued socialization within the MCS division piqued the interest and eventual enrollment of Mitya, who was the director for the U.S.-based engineers in the BIOS group. The LeSS-oriented adoption within the BIOS group spearheaded by Mitya and myself is the primary focus of this case study.
-诊断团队的早期成功以及我在MCS部门的持续社会化激发了BIOS小组美国工程师的主管米提亚的兴趣，她最终加入了该团队。由米提亚和我牵头的，面向LeSS导入的BIOS小组，是本案例研究的主要重点。
+诊断团队的早期成功以及我在MCS部门的持续交流传播激发了兴趣，并最终有了BIOS组美国工程师主管米提亚（Mitya）的加入。由米提亚和我牵头、在BIOS组内面向LeSS的导入是本案例的主要重点。
 
 The level of artificial self-inflicted complexity and the esoteric nature of the BIOS domain were such that a component boundary restricted to BIOS development alone still greatly benefited from a LeSS-oriented structure. It would help to resolve years of problematic practices.
-作为组件边界， 人为制造的复杂性程度以及BIOS领域本身深奥难懂的属性，使得BIOS开发受到了限制，但它仍然大大从面向LeSS的结构中受益。这将有助于解决多年来那些有问题的实践。
+人为自加的复杂程度以及BIOS领域本身难懂的属性，使得即使仅限于BIOS开发这样一个组件边界，仍能从LeSS结构中受益良多。LeSS结构将有助于解决多年来那些有问题的实践。
 
 The BIOS domain also provided a natural evolutionary path towards a full slice through the entire MCS system. The ability to quickly absorb a new generation of pre-production Intel CPUs into the MCS product prior to Intel’s production launch of the CPUs is critical to maintain market relevance. This includes ensuring all required BIOS functionality works correctly on the pre-production CPUs, as well as ensuring any revisions and extensions of the blade architecture are working properly from a CPU integration perspective. Additionally, this includes ensuring all CPU administration services exposed at the MCS administration user interfaces are working, and have been extended to support new functionality Intel is introducing with the pre-production CPUs.
-BIOS领域还为整个MCS系统的完整划分提供了一条自然的进化路径。在英特尔CPU生产推出之前，将新一代预生产的英特尔 CPU快速吸收到MCS产品中的能力对于保持市场相关性至关重要。这包括：要确保所有必需的BIOS功能在预生产CPU上正常工作，同时，从CPU集成的角度，要确保刀片（blade）架构的任何修订和扩展都能正常工作。此外，还需要确保MCS管理用户界面上公开的所有CPU管理服务都能正常工作，并扩展到可以支持英特尔在预生产CPU中引入新的功能。
+BIOS领域还提供了一条通向整个MCS系统完整切片的自然演进路径。在英特尔CPU生产上市之前将其新一代预生产CPU快速吸收到MCS产品中的能力对于保持市场相关性至关重要。这包括要确保所有必需的BIOS功能在预生产CPU上正常工作，同时要确保刀片（blade）架构的任何修订和扩展都能与CPU正常集成。此外，还需要确保MCS管理用户界面上公开的所有CPU管理服务都能正常工作，并得到扩展以支持英特尔在预生产CPU中引入的新功能。
 
 All of the above could be seen as a natural LeSS Huge Requirement Area for the MCS product as a whole.
-所有这些都可以被视为，以MCS产品作为一个整体而自然出现的LeSS巨型（Less-Huge）的需求领域。
+所有这些都可以被视作一个自然的以MCS为整体产品的LeSS巨型需求领域。
 
 The LeSS framework rules state each Requirement Area in a LeSS-Huge adoption should have the complete LeSS structure established “at the start”. Although Mitya and I did completely restructure the U.S.-based members of the BIOS group from the start, better senior management alignment and buy-in would have made it possible to have started with a fuller, and more appropriate vertical slice of the product.
-LeSS的框架规定，LeSS巨型（Less-Huge）导入中的每个需求领域都应“在开始时”建立完整的LeSS结构。虽然米提亚和我从一开始就对BIOS组内的美国成员进行了彻底重组，但如果能更好地让高级管理层达成一致和接纳，其实可以帮助我们更完整、更合适地垂直划分产品，并从那里开始。
+LeSS框架规定，在LeSS巨型导入中每个需求领域都应“在开始时”建立完整的LeSS结构。虽然米提亚和我从一开始就对BIOS组内的美国成员进行了彻底重组，但如果能更好地让高级管理层达成一致认同，其实可以从更完整更合适的产品垂直切片开始。
 
 We started as best we could and then incrementally began expanding the BIOS component boundary upward through the various overall component layers. The _Feature Team Adoption Map for BIOS_ in conjunction with the _Initial BIOS Component Boundary,_ and _Expanded BIOS Multi-Component Boundary_ diagrams illustrate this incremental expansion. The astute reader will notice this approach aligns with the _Feature Team Adoption Map_ guide described in _Large-Scale Scrum: More with LeSS_.
-我们尽所能有个好的开端，然后逐渐开始通过各种综合组件层往外扩展BIOS组件的边界。BIOS的功能团队导入地图以及初始BIOS组件边界和扩展BIOS多组件边界图说明了这种增量扩展。精明的读者会注意到这种方法与《大规模Scrum: More with LeSS》中描述的特性团队导入地图（Feature Team Adoption Map）指南相一致。
+我们从尽可能好的起点开始，然后逐渐沿着各种整体组件层次往外扩展BIOS组件的边界。*BIOS的特性团队导入地图*以及*初始的BIOS组件边界*和*扩大的BIOS多组件边界*这些图呈现了这种增量扩大。敏锐的读者会注意到这种方式与《大规模Scrum》书中描述的*特性团队导入地图*指南相一致。
 
 The BIOS LeSS-oriented adoption efforts were hindered by a change in the Senior VP/GM, which occurred just around the time Mitya and I began our efforts. Had we retained the same level of executive support found with the original Senior VP/GM, far broader and more sustained success would likely have been achieved.
-BIOS面向LeSS的导入工作因高级副总裁(VP)/总经理(GM)的变动而受阻，而这一变动恰好发生在米提亚和我开始努力的时候。如果我们保留了与原高级副总裁/总经理相同的行政支持水平，那么很可能会取得更广泛、更持久的成功。
+BIOS面向LeSS的导入工作因VP/GM的变动而受阻，恰好发生在米提亚和我开始变革的时候。如果能保持与原先VP/GM同等的管理层支持，那么我们很可能会取得更广泛更持久的成功。
 
 I learned a great deal from both the successes and failures of the LeSS-oriented adoption efforts within Nakashima’s MCS division. Hopefully, this case study will help guide you in your journey as you learn from our successes and even more from our failures.
-我从中岛公司MCS部门面向LeSS的导入工作的成功和失败中学到了很多。希望本案例研究能帮助您从我们的成功中学习，甚至更多地从我们的失败中学习。
+我从中岛公司MCS部门面向LeSS的导入工作的成功和失败中学到了很多。希望当你从我们的成功和失败中学习时，本案例能帮助你在旅程中有所指引。
 
-## Initial Focus on Firmware Not Hardware Development {#initial-focus-on-firmware-not-hardware-development}
+## Initial Focus on Firmware Not Hardware Development 初始重点在固件而非硬件开发 {#initial-focus-on-firmware-not-hardware-development}
 
 Historically the vast majority of the release schedule forecasting problems occurred in the firmware (e.g. BIOS, Network Interface Controller, Chassis Controller, etc.) and higher-level software (e.g.  MCS Administrator, diagnostics, etc.) development aspects of the MCS product development group. Hardware development aspects tended to be far more predictable.
+从历史上来说，大多数的版本时间表预测问题都发生在MCS产品开发组的固件（比如BIOS、网络接口控制器、机框控制器等）和更高层级的软件（比如MCS管理员、诊断等）开发部分。而硬件开发部分通常更能预测。
 
  In practice, I only spent a small amount of time in conversations with people involved with designing manufacturing specifications for the external fabricators. Although expanding the LeSS adoption to include the engineers involved in hardware design would make sense in the long-term, it was not part of my initial focus.
+实际上，我只花费了少量时间与为外部制造商设计生产规范的人员交谈。虽然把LeSS导入扩大包含进硬件设计工程师从长期来说是合理的，它并不是我的初始重点。
 
 In practice, neither the diagnostic nor BIOS teams I spent most of my time working with had much need to collaborate actively with the hardware engineers. Whenever a firmware developer had a need they would go over and talk with the hardware design engineers, it just didn't happen often. The MCS product was a relatively mature product by the time I was involved with the MCS division; as such most hardware design changes tended to be small and incremental. There was likely a potential opportunity to encourage greater innovation through more broadly cross-functional teams in the future with more tightly integrated hardware and firmware development.
+实际上，我花费大多数时间一起工作的诊断团队和BIOS团队都不需要跟硬件工程师活跃地协作。任何时候固件工程师有需要，就会去找硬件设计工程师交谈，只是不经常发生而已。我在参与MCS部门的时候MCS产品已经相对成熟；从而大多数硬件设计改动通常比较小且增量。将来有机会可以通过更宽泛的跨职能团队 - 更紧密地集成硬件和固件开发 - 来鼓励更大的创新。
 
 <a name="figure1"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/Actual_MCS_PB_WithTitle.png" alt="Actual MCS Product Boundary">
 <figcaption>
-Figure 1: From the perspective of the Product Management group, Nakashima divisional boundaries, and external customers the natural product boundary includes the entire system of network, compute, and storage capability.
+图1：从产品管理组、中岛公司的部门边界以及外部客户的视角，自然的产品边界包括网络、计算和存储能力的整个系统。
 <br/><br/>
-Even broader product boundaries are possible but are not that practical as the coupling between other systems is sufficiently standardized to be interchangeable with data center hardware and software from a variety of vendors. These other systems do play a minor role in the larger scale testing scopes, but they are not the focus of Modular Compute System testing.
+即使更为宽泛的产品边界是可能的，但并不那么现实，考虑到与其它系统的耦合已被充分标准化，来自不同供应商的数据中心硬件和软件可以互换。在更大规模测试范围中这些其它系统确实会扮演一定角色，但它们并不是MCS测试的重点。
 </figcaption>
 </figure>
 
 <a name="figure2"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/timelineGraphFakeMonths.png" alt="MCS Agile Adoption Timeline">
-  <figcaption>Figure 2: With the various overlapping adoption efforts and managerial changes it is easy to lose track of the overall story arch. Hopefully, this timeline will help you keep track.</figcaption>
+  <figcaption>图2：伴随各种重叠的导入工作和管理上的变化，容易失去对整体故事架构的跟踪。希望这个时间线能有助于理解。</figcaption>
 </figure>
 
 # Demonstrate Benefits of a Scrum Team 展示Scrum团队的好处 {#demonstrate-benefits-of-a-scrum-team}
@@ -402,7 +398,7 @@ The MCS division has somewhere on the order of a few thousand engineers all focu
 MCS部门拥有数千名工程师，他们专注于MCS产品的各个方面。在BIOS组件团队范围内，如果在改进工程实践以及交叉培训之前，就从更广泛地扩展BIOS多组件边界开始，可能会出现问题。整个MCS的工程实践是相对糟糕的，你可以期待的就好比多年来玩的合同游戏。在最初的BIOS组件边界内，有足够多的质量问题和工程陷阱，足以消耗掉我们所有的辅导精力。
 
 LeSS advises to have coaching on three levels (organizational, team, and technical) [as explained here](https://less.works/less/adoption/coaching), and I was covering all three of them. I helped Trent interview and recruit a couple of coaches in Bengaluru, yet I was the only agile coach the MCS division had in the western hemisphere. Had we not lost the original engineering SVP/GM within the first two and half months of my tenure, the coaching capacity situation would have likely been different. With the new engineering SVP/GM looking to downsize the division and not fully understanding the agile adoption effort, we were lucky to have the coaching capacity we did.
-LeSS建议在三个层面（组织、团队和技术）进行辅导，正如本文所述，我涵盖了所有三个层面。我在班加罗尔帮助特伦特面试并招募了几名教练，但我是西半球MCS部门唯一的敏捷教练。如果在我任职的前两个半月里没有失去我们原来的工程高级副总裁（SVP）/总经理(GM)，那么教练容量的局面可能会有所不同。由于新的工程高级副总裁/总经理希望缩小部门规模，而没有完全理解敏捷导入所需要的工作量，很庆幸我们的辅导精力最后是足够的。
+LeSS建议在三个层面（组织、团队和技术）进行辅导，正如本文所述，我涵盖了所有三个层面。我在班加罗尔帮助特伦特面试并招募了几名教练，但我是西半球MCS部门唯一的敏捷教练。如果在我任职的前两个半月里没有失去我们原来的工程SVP/GM，那么教练容量的局面可能会有所不同。由于新的工程SVP/GM希望缩小部门规模，而没有完全理解敏捷导入所需要的工作量，很庆幸我们的辅导精力最后是足够的。
 
 ## BIOS Expanded From the Bottom Up BIOS自下而上的扩展 {#bios-expanded-from-the-bottom-up}
 
@@ -496,24 +492,24 @@ In summary the newly structured BIOS teams:
 ## BIOS Organizational Context BIOS的组织背景 {#bios-organizational-context}
 
 The BIOS LeSS-oriented adoption occurred during a period of active churn in the executive layers. When the BIOS adoption was started the VP in charge of all the Hardware development was very supportive, as were a variety of other VPs throughout the organization. This was sufficient to make the initial adoption efforts possible and successful in the short run. As both the SVP and VP level management changed we lost much of the support needed, even though our efforts were widely regarded as successful by most people involved. Ambivalence by a new SVP along with the loss of the supportive Hardware VP coupled with massive layoffs ultimately eroded our progress. The following series of organizational chart diagrams help to highlight the situation.
-BIOS面向的 LeSS的导入发生在公司高管领导层的活跃变动期间。当开始BIOS导入时，负责所有硬件开发的副总裁（VP）非常支持，整个组织中的其他总裁（VP）也是如此。这足以使初始的导入工作在短期内成为可能并取得成功。由于高级副总裁(SVP)和副总裁(VP)级别的管理层都发生了变化，我们失去了很多所需的支持，尽管大多数相关人员普遍认为我们的工作是成功的。由于新的高级副总裁（SVP）不一致的意见，以及支持我们的硬件副总裁(VP)的流失，再加上大规模裁员，最终侵蚀了我们的进度。下面一系列组织架构图，可以让我们明显地看到当时的情况。
+BIOS面向的 LeSS的导入发生在公司高管领导层的活跃变动期间。当开始BIOS导入时，负责所有硬件开发的VP非常支持，整个组织中的其他VP也是如此。这足以使初始的导入工作在短期内成为可能并取得成功。由于SVP和VP级别的管理层都发生了变化，我们失去了很多所需的支持，尽管大多数相关人员普遍认为我们的工作是成功的。由于新的SVP不一致的意见，以及支持我们的硬件VP的流失，再加上大规模裁员，最终侵蚀了我们的进度。下面一系列组织架构图，可以让我们明显地看到当时的情况。
 
 <a name="figure11"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/OriginalOrgWithOrigSVP_WithTitle.png" alt="Original Organizational Structure with Original SVP">
-  <figcaption>Figure 11: The initial Sr. VP/GM of engineering for the MCS division was extremely supportive of the agile adoption efforts. I also found active support throughout much of the organization. A large number of directors, managers, and individual contributors provided active guidance as I attempted to better understand and help the organization. Unfortunately, this Sr. VP’s tenure was very short and there was a key VP responsible for the more pure software portions of the product who was passively aggressively opposed to any real change. 图11:MCS部门最初的高级工程副总裁/总经理对敏捷导入工作给予了极大的支持。我也在整个组织中得到了积极的支持。当我试图更好地理解和帮助这个组织时，许多董事、经理和个人贡献者都提供了积极的指导。不幸的是，这位高级副总裁的任期很短，有一位关键的副总裁负责产品中更纯粹的软件部分，他消极且强烈地反对任何真正的变动。</figcaption>
+  <figcaption>Figure 11: The initial Sr. VP/GM of engineering for the MCS division was extremely supportive of the agile adoption efforts. I also found active support throughout much of the organization. A large number of directors, managers, and individual contributors provided active guidance as I attempted to better understand and help the organization. Unfortunately, this Sr. VP’s tenure was very short and there was a key VP responsible for the more pure software portions of the product who was passively aggressively opposed to any real change. 图11：MCS部门最初的工程SVP/GM对敏捷导入工作给予了极大的支持。我也在整个组织中得到了积极的支持。当我试图更好地理解和帮助这个组织时，许多董事、经理和个人贡献者都提供了积极的指导。不幸的是，这位SVP的任期很短，有一位关键的VP负责产品中更纯粹的软件部分，他消极且强烈地反对任何真正的变动。</figcaption>
 </figure>
 
 <a name="figure12"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/OrgAfterEarlyChangeOfSVP_WithTitle.png" alt="Organizational Structure After Early Change of Engineering SVP/GM">
-  <figcaption>Figure 12: The initial Sr. VP/GM of engineering of the MCS Division only had his role for a few months before I arrived. Within a couple months of my arrival he was replaced with another Sr. VP. In retrospect it is obvious the new Sr. VP’s direction from the C suite was to rationalize the size of the division. The new Sr. VP was almost completely unavailable to me and unwilling to actively engage in the agile transformation efforts. Although it generally happened outside of my view, I believe I continued to receive active support and air cover from the Project Management VP. Although there were some additional organizational changes over time once the new engineering SVP took over, none were very significant to the teams attempting an agile adoption until the Hardware VP left. 图12: 在我来之前，MCS部门原先的高级副总裁（SVP）/工程总经理(GM)仅担任了几个月的职务。在我来后的几个月内，他被另一位高级副总裁（SVP）接替。回想起来，很明显，C套件的新高级副总裁(SVP)的方向是使部门规模合理化。新的高级副总裁(SVP)几乎完全不理我，也不愿意积极参与敏捷转型工作。虽然这通常发生在我的视野之外，但我相信我会继续得到项目管理副总裁（VP）的积极支持和隔空保护。尽管在新的工程高级副总裁（SVP）接管后，随着时间的推移，组织结构发生了一些额外的变化，这些变化对尝试敏捷导入的团队来说并没有太大影响，直到硬件副总裁离开。</figcaption>
+  <figcaption>Figure 12: The initial Sr. VP/GM of engineering of the MCS Division only had his role for a few months before I arrived. Within a couple months of my arrival he was replaced with another Sr. VP. In retrospect it is obvious the new Sr. VP’s direction from the C suite was to rationalize the size of the division. The new Sr. VP was almost completely unavailable to me and unwilling to actively engage in the agile transformation efforts. Although it generally happened outside of my view, I believe I continued to receive active support and air cover from the Project Management VP. Although there were some additional organizational changes over time once the new engineering SVP took over, none were very significant to the teams attempting an agile adoption until the Hardware VP left. 图12: 在我来之前，MCS部门原先的工程SVP/GM仅担任了几个月的职务。在我来后的几个月内，他被另一位SVP接替。回想起来，很明显，C套件的新SVP的方向是使部门规模合理化。新的SVP几乎完全不理我，也不愿意积极参与敏捷转型工作。虽然这通常发生在我的视野之外，但我相信我会继续得到项目管理VP的积极支持和隔空保护。尽管在新的工程SVP接管后，随着时间的推移，组织结构发生了一些额外的变化，这些变化对尝试敏捷导入的团队来说并没有太大影响，直到硬件VP离开。</figcaption>
 </figure>
 
 <a name="figure13"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/OrgAfterDepartureOfHWVP_WithTitle.png" alt="Organizational Structure After Depature of Hardware VP">
-  <figcaption>Figure 13: Under the cloud of upcoming and active layoffs many people began to depart the organization voluntarily. Around the same time a new extremely well funded startup began to actively recruit some of the more skillful engineers and managers in the MCS division. One of these departures was the Hardware VP who the BIOS teams had reported through. The new engineering SVP chose not to backfill the Hardware VP but instead to have all those previously reporting up through the Hardware VP report through the Software VP. As the Software VP was always passively aggressively working against the agile adoption efforts this did not bode well. Over the course of a few months half the BIOS team members were laid off, my engagement ended, and Mitya followed the Hardware VP to the same well funded startup the Hardware VP had left for. A little over a year later, Trent also left Nakashima Incorporated. 图13：在即将到来的裁员的阴影下，许多人开始自愿离职。大约在同一时间，一家资金充裕的新创业公司开始积极招聘MCS部门中一些相对来说更熟练的工程师和经理。其中一位离职者就是BIOS团队所需要汇报的硬件副总裁(VP)。新的工程高级副总裁（SVP）选择不再需要新的硬件副总裁（VP），而是让所有先前汇报给硬件副总裁（VP）的人员向软件副总裁（VP）汇报。由于软件副总裁(VP)总是消极地对抗敏捷导入工作，这并不是个好兆头。在几个月的时间里，一半的BIOS团队成员被解雇了，我的工作也结束了，米提亚跟随硬件副总裁(VP)去了那家资金充足的初创公司。一年多后，特伦特也离开了中岛公司。</figcaption>
+  <figcaption>Figure 13: Under the cloud of upcoming and active layoffs many people began to depart the organization voluntarily. Around the same time a new extremely well funded startup began to actively recruit some of the more skillful engineers and managers in the MCS division. One of these departures was the Hardware VP who the BIOS teams had reported through. The new engineering SVP chose not to backfill the Hardware VP but instead to have all those previously reporting up through the Hardware VP report through the Software VP. As the Software VP was always passively aggressively working against the agile adoption efforts this did not bode well. Over the course of a few months half the BIOS team members were laid off, my engagement ended, and Mitya followed the Hardware VP to the same well funded startup the Hardware VP had left for. A little over a year later, Trent also left Nakashima Incorporated. 图13：在即将到来的裁员的阴影下，许多人开始自愿离职。大约在同一时间，一家资金充裕的新创业公司开始积极招聘MCS部门中一些相对来说更熟练的工程师和经理。其中一位离职者就是BIOS团队所需要汇报的硬件VP。新的工程SVP选择不再需要新的硬件VP，而是让所有先前汇报给硬件VP的人员向软件VP汇报。由于软件VP总是消极地对抗敏捷导入工作，这并不是个好兆头。在几个月的时间里，一半的BIOS团队成员被解雇了，我的工作也结束了，米提亚跟随硬件VP去了那家资金充足的初创公司。一年多后，特伦特也离开了中岛公司。</figcaption>
 </figure>
 
 ## BIOS Component Boundaries and Geography BIOS的组件边界和员工的地理位置 {#bios-component-boundaries-and-geography}
@@ -534,7 +530,7 @@ Unfortunately, we didn’t manage to officially remove specialist manager roles 
 <a name="figure15"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/BIOS_HW_Gen_Expansion_WithTitle.png" alt="BIOS Feature Team Expansion By Hardware Generation">
-  <figcaption>Figure 15: MCS hardware generation was used as one of the component dimensions in defining the boundaries of the LeSS-oriented adoption within the BIOS component. With the supportive hardware VP and a few trips to India it is likely Mitya and I would have been able to successfully work out the politics. Unfortunately, the change in the VP layer coupled with the layoffs precluded this strategy. The information in the timeline and organizational structure diagrams is relevant to what you see in this diagram. 图15: 在面向LeSS的导入过程中，MCS硬件的更新换代被用作定义边界的组件维度之一。有了硬件副总裁的支持，再加上几次印度之行，我和米蒂亚很可能能够成功地解决政治问题。不幸的是，副总裁层的变化加上裁员，使得这一战略无法实施。您可以在该图中看到，随着时间线的移动，组织架构图也相应变化的信息。</figcaption>
+  <figcaption>Figure 15: MCS hardware generation was used as one of the component dimensions in defining the boundaries of the LeSS-oriented adoption within the BIOS component. With the supportive hardware VP and a few trips to India it is likely Mitya and I would have been able to successfully work out the politics. Unfortunately, the change in the VP layer coupled with the layoffs precluded this strategy. The information in the timeline and organizational structure diagrams is relevant to what you see in this diagram. 图15: 在面向LeSS的导入过程中，MCS硬件的更新换代被用作定义边界的组件维度之一。有了硬件VP的支持，再加上几次印度之行，我和米蒂亚很可能能够成功地解决政治问题。不幸的是，VP层的变化加上裁员，使得这一战略无法实施。您可以在该图中看到，随着时间线的移动，组织架构图也相应变化的信息。</figcaption>
 </figure>
 
 Due to historical reasons the reality was that each new generation of hardware had an entirely separate BIOS code base with very little factoring of common functionality into reusable sub-components.
@@ -550,13 +546,13 @@ Initial struggles were often as simple as ensuring India-based BIOS engineers we
 最初的挣扎通常很简单，比如确保印度的BIOS工程师小心翼翼地，不签入那些构建不干净的代码，并通过了基本的冒烟测试。在跨职能BIOS团队的直接控制下，额外的自动测试以及一个私有CI服务器成功地帮助美国团队检测到问题是由某个不遵循已经改进的质量标准的开发人员引入的。
 
 The success of the cross-functional BIOS teams ensured Mitya and I were in a much stronger political position to begin resolving the underlying structural issues. Mitya was delivering Nakashima-wide presentations on the improvements within the cross-functional BIOS teams at the behest of the Project Management SVP; so our success was definitely getting noticed.
-跨职能BIOS团队的成功确保了米提亚和我在开始解决潜在的结构性问题方面处于更强大的政治地位。米提亚应项目管理高级副总裁（SVP）的要求，在全中岛公司就跨职能BIOS团队内的改进进行了演讲；我们的成功显然引起了注意。
+跨职能BIOS团队的成功确保了米提亚和我在开始解决潜在的结构性问题方面处于更强大的政治地位。米提亚应项目管理SVP的要求，在全中岛公司就跨职能BIOS团队内的改进进行了演讲；我们的成功显然引起了注意。
 
 The obvious solution for the India-based BIOS people was to on-board them as one or two additional cross-functional BIOS teams. Ideally all of these structural problems would have been solved from the very beginning, yet that had not been politically viable when we started. Instead, we did what was achievable. We intentionally creatively isolated and delayed the problem, while setting ourselves up for a future political win. We not only anticipated friction from two separate operating models, we were counting on it to make meaningful structural change politically achievable in the future.
 对于印度的BIOS人员来说，显而易见的解决方案是将他们作为一个或两个额外的跨功能BIOS团队加入。理想情况下，所有这些结构性问题都会从一开始就得到解决，然而，当我们开始时，这在政治上并不可行。相反，我们做了一些可以实现的事情。我们有意创造性地孤立和拖延这个问题，同时为未来的政治胜利做好准备。我们不仅预计到了两种不同运营模式之间的摩擦，我们还指望它能在未来实现有意义的结构变革。
 
 Mitya and I were getting ready to travel to India and otherwise starting to work through the politics, about the time the supportive hardware VP resigned and the layoffs were announced. Had the hardware VP remained in place I think we would have been able to resolve the more pressing political challenges within the BIOS component boundary. We already had an India-based BIOS manager on our side, but we needed to work through some issues in the director layer.
-米提亚和我当时已经准备好了前往印度，否则就要从政治入手了，大约在支持性硬件副总裁辞职并宣布裁员的时候。如果硬件副总裁仍然在位，我认为我们将能够解决BIOS组件边界内更有压力的政治挑战。我们已经有了一个基于印度的BIOS管理者站在我们这边，但我们还需要解决董事层的一些问题。
+米提亚和我当时已经准备好了前往印度，否则就要从政治入手了，大约在支持性硬件VP辞职并宣布裁员的时候。如果硬件VP仍然在位，我认为我们将能够解决BIOS组件边界内更有压力的政治挑战。我们已经有了一个基于印度的BIOS管理者站在我们这边，但我们还需要解决董事层的一些问题。
 
 ### Separate Codebases Not Good 单独的代码库不好 {#separate-codebases-not-good}
 
@@ -609,10 +605,10 @@ The breadth and complexity of MCS coupled with a history of over-specialization,
 MCS的广度和复杂性，再加上有史以来过度的专业化，意味着很少有人了解端到端产品，也很少有测试人员以前在传统结构中花费大部分时间进行端到端测试。因此，测试人员为他们各自的BIOS团队带来的价值与传统的BIOS固件开发人员没有什么区别。
 
 The BIOS team members from a testing background still formally reported up through the Quality Assurance VP. Her support and that of the relevant QA Director was critical in enabling de facto equality within the BIOS teams. Retaining this formal reporting relationship was useful in obtaining the organizational acceptance of the radically improved quality being produced by the BIOS LeSS-oriented teams.
-BIOS团队里的有测试背景的成员仍然通过质量保证（QA）副总裁做正式汇报。她的支持和相关QA主管的支持对于在BIOS团队中实现事实上的平等至关重要。保持这种正式的汇报关系有助于获得组织对BIOS面向LeSS的团队所生产的质量得到根本改善的认可。
+BIOS团队里的有测试背景的成员仍然通过质量保证VP做正式汇报。她的支持和相关QA主管的支持对于在BIOS团队中实现事实上的平等至关重要。保持这种正式的汇报关系有助于获得组织对BIOS面向LeSS的团队所生产的质量得到根本改善的认可。
 
 Retaining a separate reporting structure for the testers  introduced a degree of systemic organizational fragility. A change in the Quality Assurance VP role could easily unravel much of the positive change that was happening. As a long-term goal, eliminating any formal testing specific distinction in the organizational structure would help avoid the risk of team members with a testing background being distracted by work unrelated to their team's Sprint Backlog.
-为测试人员保留单独的报告结构会带来一定程度的系统性组织脆弱性。质量保证副总裁角色的改变很容易瓦解正在发生的许多积极变化。作为一个长期目标，在组织架构中消除任何正式的测试特殊区分将有助于避免具有测试背景的团队成员被其它与其团队的Sprint Backlog不相干的工作转移注意力的风险。
+为测试人员保留单独的报告结构会带来一定程度的系统性组织脆弱性。质量保证VP角色的改变很容易瓦解正在发生的许多积极变化。作为一个长期目标，在组织架构中消除任何正式的测试特殊区分将有助于避免具有测试背景的团队成员被其它与其团队的Sprint Backlog不相干的工作转移注意力的风险。
 
 Chapter 3 in _Practices for Scaling Lean & Agile Development_ provides a comprehensive treatment of how to best approach testing at both a practical and strategic level.
 《大规模精益和敏捷开发实践》中的第3章全面介绍了在实践和战略的层面，如何最好地实现测试。
