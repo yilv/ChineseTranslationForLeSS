@@ -139,57 +139,42 @@ In practice, neither the diagnostic nor BIOS teams I spent most of my time worki
 # Demonstrate Benefits of a Scrum Team 展示Scrum团队的好处 {#demonstrate-benefits-of-a-scrum-team}
 
 There was a great deal of initial skepticism within the MCS division that Scrum made sense within a hardware and firmware development effort. The thought being firmware and hardware efforts were somehow different from typical enterprise software development, and therefore not a good match for Scrum (ironic, as the original 1980s roots-of-Scrum research from Harvard involved hardware products). This perspective was reinforced by the fact that all the pre-existing ‘agile’ development efforts within MCS were not.
-在MCS部门，最初对Scrum在硬件和固件开发工作中的意义存在很大的怀疑。他们认为固件和硬件工作与典型的企业软件开发不同，因此不适合使用Scrum（具有讽刺意味的是，20世纪80年代哈佛大学的Scrum根源研究涉及硬件产品）。这一观点因MCS内所有先前存在的 "敏捷 "开发工作都不是这样而得到加强。
+在MCS部门最初存在许多对Scrum是否适合硬件和固件开发工作的怀疑。他们认为固件和硬件工作与典型的企业软件开发不同，因此并不适合使用Scrum（具有讽刺意味的是，原先1980年代来自哈佛大学Scrum根源的研究就涉及硬件产品）。这一观点因事实上MCS内所有先前存在的“敏捷”开发工作都不与硬件和固件开发相关而得到加强。
 
 Considering the context, it made sense to apply the incremental LeSS-adoption Guide using a _Feature Team Adoption Map_ to identify a meaningful multi-component boundary to stand-up a healthy Scrum team that could demonstrate useful results. This is to say it made sense to demonstrate the value of having a small team of people with all the skills to solve a problem, working directly with the customers who have the problem, and to have this team of people iteratively, adaptively, and incrementally solve the customer's problem.
-考虑到这种情况，应用增量的LeSS-采用指南，使用特征团队采用图来确定一个有意义的多组件边界，以建立一个健康的Scrum团队，从而展示有用的结果，是有意义的。这就是说，展示一个由拥有所有技能的人组成的小团队的价值是有意义的，他们直接与有问题的客户一起工作，并且让这个团队的人迭代地、适应性地、渐进地解决客户的问题。
+考虑到这种情况，合理的做法会是应用增量的LeSS导入指南，使用*特性团队导入地图*来识别一个有意义的多组件边界，建立起一个健康的Scrum团队，并能展示有用的结果。这是说合理的做法是展示一个小团队的价值，他们拥有解决问题的所有技能，直接与有问题的客户工作，并且迭代地、适应地和增量地解决客户问题。
 
 We hoped to gain additional political capital by demonstrating:
-我们希望通过示威获得更多的政治资本。
+我们希望能获得额外的政治资本，通过展示：
 
-* Scrum with firmware/hardware
-* Self-managing team
-* Improved customer collaboration
-* Improved value delivery
-* Impact of structure on culture
-* Improved code quality
-* Avoidance of the Contract Game
-* 有固件/硬件的Scrum
-* 自我管理的团队
+* 固件/硬件Scrum
+* 自管理团队
 * 改善客户协作
 * 改善价值交付
 * 结构对文化的影响
 * 提高代码质量
-* 避免了合同游戏
+* 避免合同游戏
 
-## Desired Characteristics of Pilot Multi-Component 试验性多成分的预期特征 {#desired-characteristics-of-pilot-multi-component}
+## Desired Characteristics of Pilot Multi-Component 多组件试点的期望特征 {#desired-characteristics-of-pilot-multi-component}
 
 To achieve the demonstration objectives above, we needed to identify the right feature set of the MCS product for a pilot Scrum team to focus on. I recognized the chances of success would be greatest if we could identify a largely isolated and _decoupled set of multiple components which mapped significantly to a natural LeSS Huge Requirement Area_ (RA) of the overall product. (Note that an RA is _not_ defined by a component or architectural boundary, but sometimes there is a significant overlap of a functional RA and a body of related code, which in this early-step case was an advantage in simplifying the adoption).
-为了实现上述示范目标，我们需要确定MCS产品的正确功能集，以便试点Scrum团队专注于此。我认识到，如果我们能够确定一套基本隔离和解耦的多个组件，并与整个产品的自然LeSS巨大需求区（RA）有明显的映射，那么成功的机会就会最大。(请注意，RA并不是由组件或架构的边界来定义的，但有时功能RA和相关代码体有很大的重叠，在这个早期步骤的案例中，这是简化采用的优势）。
+为了实现上述展示的目标，我们需要识别出适合让试点Scrum团队专注的的MCS产品功能集。我认识到，如果我们能够识别*一组基本隔离和解耦的多个组件，它能映射到整个产品中的一个自然LeSS巨型需求领域（RA）*，那么成功的机会将会最大。(请注意，RA并*不是*由组件或架构的边界来定义的，但有时功能RA和相关代码体有很大的重叠，这在前期步骤下是一项优势，可以简化导入）。
 
 The following criteria delineate the group of multiple components we were looking to identify. We wanted a group of components…
-下面的标准划定了我们想要确定的多个组件的组别。我们希望有一组组件...
+下面的标准描述了我们寻找识别的多组件组。我们想要一组组件……
 
-* Passing through “front to back” of MCS
-* Appropriate to the capacity of a single team
-* Providing meaningful value to customers
-* Whose successful delivery would be politically difficult to ignore
-* For which the team could be protected from delivery pressure
-* With a codebase at least moderately decoupled from the rest of the MCS system, to avoid poor practices by an army of waterfall developers
-* 通过MCS的 "从前到后 "进行传递
-* 适合于单个团队的能力
+* 贯穿MCS的“前端到后端”
+* 适合单个团队的能力
 * 为客户提供有意义的价值
 * 其成功交付在政治上难以忽视
 * 可以保护团队不受交付压力的影响
-* 至少有一个与MCS系统其他部分适度脱钩的代码库，以避免瀑布式开发大军的不良行为。
+* 代码库与MCS系统其它部分至少适度解耦，以避免瀑布式开发大军的糟糕实践
 
-Another criterion we could survive without but hoped to also find was:
-另一个我们可以没有但希望也能找到的标准是。
+另一个我们可以没有但希望也能找到的标准是：
 
-* A group of components that could be released independently of the waterfall MCS releases; thereby providing faster feedback from real customers
-* 一组可以独立于瀑布式MCS发布的组件；从而更快地提供来自真实客户的反馈
+* 一组可以独立于瀑布式MCS发布的组件；从而提供来自真实客户的更快反馈
 
-# Appropriate Diagnostics Feature Set Identified for Pilot Scrum team 为试点的Scrum团队确定了适当的诊断功能集 {#appropriate-diagnostics-feature-set-identified-for-pilot-scrum-team}
+# Appropriate Diagnostics Feature Set Identified for Pilot Scrum team 为试点Scrum团队确定了适当的诊断功能集 {#appropriate-diagnostics-feature-set-identified-for-pilot-scrum-team}
 
 It took some thoughtful discussion with Trent and others within the organization to find a good candidate set of components. The conclusion? A _diagnostic feature set_ of MCS turned out to be a remarkably good choice since it satisfied every item on the list.
 我们与特伦特和组织内的其他人进行了一些深思熟虑的讨论，以找到一套好的候选组件。结论是什么？MCS的诊断功能集被证明是一个非常好的选择，因为它满足了清单上的每一个项目。
