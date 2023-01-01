@@ -363,16 +363,16 @@ There was still great benefit to what was achieved. The diagnostic functionality
 Enlightened minds never again see the world the same. Similarly, improvements ingrained in the code of a production product tend to last for decades.
 开启的头脑看到的世界永远不再一样。类似地，嵌入在生产代码中的改进也将持续数十年。
 
-# BIOS Management Interest {#bios-management-interest}
+# BIOS Management Interest BIOS管理层的兴趣 {#bios-management-interest}
 
 As the diagnostics Scrum team began to gel, I began looking for another area of the MCS landscape to focus on. I again leveraged Trent's knowledge of organizational dynamics. As before, we wanted to gradually transition to feature teams while focusing on areas with fully enrolled management support. Given the effectiveness of the diagnostic Scrum team efforts, a somewhat broader scope had become more tenable. That said I was still the only coach, and there was not enough funding for additional coaching capacity at the time.
-随着诊断Scrum团队开始融合，我开始寻找MCS的另一个领域来关注。我再次利用了特伦特的组织动态知识。和以前一样，我们希望逐步过渡到特色团队，同时把重点放在有充分注册的管理层支持的领域。鉴于诊断性Scrum团队工作的有效性，更广泛的范围已经变得更加可行。尽管如此，我仍然是唯一的教练，而且当时也没有足够的资金来增加教练的能力。
+随着诊断Scrum团队开始凝聚，我开始寻找MCS的另一个领域来关注。我再次借助了特伦特的组织动态知识。和以前一样，我们希望逐步转向特性团队，同时聚焦于有充分管理层支持的领域。鉴于诊断Scrum团队工作的有效性，稍微广泛点的范围已经变得更加可行。尽管如此，我仍然是唯一的教练，而且当时也没有足够的资金来增加辅导能力。
 
 There was a director, Mitya Dubinksy, who although initially somewhat skeptical, expressed interest in what benefit might be possible. Over the course of a few weeks, I was able to bring Mitya further along in his thought processes. I was assisted in this effort by a peer of Mitya named Krishna Mishra. Krishna played a key role in the diagnostics pilot Scrum team effort. Krishna also happened to manage a group of engineers who frequently interacted with Mitya's group.
-有一位导演，米迪亚-杜宾克西，虽然最初有些怀疑，但他对可能的好处表示了兴趣。在几周的时间里，我能够使米迪亚在他的思想过程中进一步发展。在这一努力中，我得到了米迪亚的一位名叫克里希纳-米什拉的同行的协助。Krishna在诊断试验Scrum团队工作中发挥了关键作用。Krishna还碰巧管理着一组工程师，他们经常与Mitya的小组互动。
+有一位主管，米迪亚·杜宾克西，虽然最初有些怀疑，但他对可能的收益表示了兴趣。在几周时间里，我使米迪亚的思想过程更进一步。在这一努力中，我得到了米迪亚的一位名叫克里希纳·米什拉的同事的协助。克里希纳在诊断试点Scrum团队工作中发挥了关键作用。克里希纳还碰巧管理着一组工程师，他们经常与米迪亚的小组互动。
 
 Mitya's group was responsible for providing a customized BIOS for MCS. BIOS is the firmware used to perform hardware initialization of a compute node (blade) during the booting process. It also provides runtime services to whichever operating system happens to be running on a compute node within MCS. In the case of MCS and competing products, a custom BIOS is part of what makes it possible to remotely administer each node’s hardware settings without having to physically access the hardware. The access is particularly important when you realize the hardware is often in a distant lightly staffed server farm.
-Mitya的小组负责为MCS提供一个定制的BIOS。BIOS是用于在启动过程中对计算节点（刀片）进行硬件初始化的固件。它还为MCS内的计算节点上运行的任何操作系统提供运行时服务。在MCS和竞争产品的情况下，定制的BIOS是使远程管理每个节点的硬件设置成为可能的部分原因，而不需要实际访问硬件。当你意识到硬件通常在一个遥远的、人员稀少的服务器场时，这种访问就显得尤为重要。
+米迪亚的小组负责为MCS提供一个定制BIOS。BIOS是用于在启动过程中对计算节点（刀片）进行硬件初始化的固件。它还为在MCS内的计算节点上运行的任何操作系统提供运行时服务。就MCS和其竞品而言，定制BIOS是使远程管理每个节点的硬件设置，而不需要实际访问硬件，成为可能的部分原因。当你认识到硬件通常是在一个遥远的、人员稀少的服务器群时，这种访问就显得尤为重要。
 
 # BIOS Overview BIOS概览 {#bios-overview}
 
