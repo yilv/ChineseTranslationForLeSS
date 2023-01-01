@@ -174,182 +174,194 @@ The following criteria delineate the group of multiple components we were lookin
 
 * 一组可以独立于瀑布式MCS发布的组件；从而提供来自真实客户的更快反馈
 
-# Appropriate Diagnostics Feature Set Identified for Pilot Scrum team 为试点Scrum团队确定了适当的诊断功能集 {#appropriate-diagnostics-feature-set-identified-for-pilot-scrum-team}
+# Appropriate Diagnostics Feature Set Identified for Pilot Scrum team 为试点Scrum团队识别的合适诊断特性集 {#appropriate-diagnostics-feature-set-identified-for-pilot-scrum-team}
 
 It took some thoughtful discussion with Trent and others within the organization to find a good candidate set of components. The conclusion? A _diagnostic feature set_ of MCS turned out to be a remarkably good choice since it satisfied every item on the list.
-我们与特伦特和组织内的其他人进行了一些深思熟虑的讨论，以找到一套好的候选组件。结论是什么？MCS的诊断功能集被证明是一个非常好的选择，因为它满足了清单上的每一个项目。
+我们与特伦特和组织内的其他人进行了一些深思熟虑的讨论，以找到好的候选组件集。结论是什么？MCS的*诊断特性集*结果是一个非常好的选择，因为它满足了清单上的每一个项目。
 
 Tremendous financial savings in customer support costs and associated reputational benefits helped provide political air-cover while also generating enthusiastic support from the field support division. The diagnostic feature set was the only obvious feature set meeting our criteria, yet the fit was fantastic!
-在客户支持成本方面的巨大财务节约和相关的声誉利益有助于提供政治上的掩护，同时也能从现场支持部门获得热情的支持。诊断功能集是唯一符合我们标准的明显的功能集，但它却非常合适！。
+在客户支持成本方面的巨大财务节省和相关的声誉利益有助于提供政治上的掩护，同时也能在现场支持部门产生热情的支持。诊断特性集是唯一明显符合我们标准的特性集，但它的匹配度非常棒！
 
 <a name="figure3"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/Diag_CB_WithTitle.png" alt="Components Affected by Diagnostic Feature Set">
-  <figcaption>Figure 3: Although the diagnostic code is largely encapsulated in a custom ISO image and some diagnostic focused code in the MCSA, the diagnostics capabilities are broadly focused and relevant to all hardware generations. Detailed knowledge of each component in the entire MCS system is often required. When a given MCS component’s firmware is missing the ability to probe it, the diagnostic team adds it.</figcaption>
+  <figcaption>图3：虽然诊断代码基本都封装在定制ISO镜像中，还有一些专注诊断的代码是在MCSA中，诊断能力却是被广泛关注，并与所有硬件批次相关。经常需要整个MCS系统中每个组件的详细知识。当一个给定MCS组件的固件缺乏探测它的能力时，诊断团队就会为它添加。</figcaption>
 </figure>
 
 <a name="figure4"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/Diag_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for Diagnostic Team">
 <figcaption>
-Figure 4: The diagnostic capability is narrowly focused on helping customers diagnose problems with their on-site MCS systems, particularly hardware component failures. Although the focus is narrow, the scope spans the whole MCS system.
+图4：诊断能力很窄地聚焦在帮助客户诊断他们现场MCS系统的问题，特别是硬件组件故障。虽然焦点很窄，其范围却跨越整个MCS系统。
 <br/><br/>
-More information on the usage of Feature Team Adoption maps can be found at: <a href="https://less.works/less/adoption/feature-team-adoption_map">https://less.works/less/adoption/feature-team-adoption_map</a>
+关于使用特性团队导入地图的更多信息可以在此找到：<a href="https://less.works/less/adoption/feature-team-adoption_map">https://less.works/less/adoption/feature-team-adoption_map</a>
 </figcaption>
 </figure>
 
-## Diagnostics Team Behavioral Achievements {#diagnostics-team-behavioral-achievements}
+## Diagnostics Team Behavioral Achievements 诊断团队行为成就 {#diagnostics-team-behavioral-achievements}
 
 From the initial launch onward people began to behave differently than before. After four or five Sprints changed behaviors included …
+从最初启动大家就开始在行为上跟以前有所不同。在四或五个迭代之后，改变的行为包括……
 
+* 在整个诊断Scrum团队和现场支持部门的工程师之间积极协作
+* 一个协同工作而非只有个体的团队，每个迭代增量地调整和改进他们的实践，总能产出可交付的组件增量，并和关键干系人建立了丰富直接的协作关系
+* 一份多组件的待办列表，其排序受到现场支持和另一个协作部门所产出度量的很大影响。这些度量让我们能为大多数构想的诊断能力指定一个估算的每月延迟成本。高优先级诊断能力的预期节省是*惊人的*！
 
-* Active collaboration between the entire diagnostics Scrum team and engineers in the field support division
-* A team that worked collaboratively rather than as individuals, incrementally adjusted and improved their practices each Sprint, always produced shippable component increments, and established rich direct collaborative relationships with the key stakeholders
-* A Multi-Component Backlog ordering heavily influenced by metrics the field support and another collaborating division were able to produce. These metrics made it possible to assign an estimated monthly cost of delay for most diagnostic capabilities we had conceptualized. The projected savings of the higher priority diagnostic capabilities were _staggering_!
-
-
-## Diagnostics Team Technical Achievements {#diagnostics-team-technical-achievements}
+## Diagnostics Team Technical Achievements 诊断团队技术成就 {#diagnostics-team-technical-achievements}
 
 An explicit and expanding Definition of Done, effective Scrum events, a small amount of technical coaching, and avoiding the Contract Game combined to make a huge difference in technical practices.
-一个明确的、不断扩展的 "完成 "定义，有效的Scrum活动，少量的技术指导，以及避免合同游戏，这些都使技术实践产生了巨大的变化。
+一个显式并扩展的完成定义、有效的Scrum活动、少量技术指导，以及避免合同游戏，这些加一起在技术实践上产生了巨大的变化。
 
 Within four or five Sprints the following were readily observable:
-在四到五个Sprints中，以下内容是很容易观察到的。
+在四到五个迭代中，很容易观察到如下：
 
-* Automated unit testing in any portions of the MCS C++ and Python code the diagnostics Scrum team touched
-* Automated unit test practices were acting as a forcing function for better crafted and less troublesome code for all of the diagnostics specific code and portions of the overall MCS codebase
-* Active development of improved and broader automated integration tests than previously existed for the MCS system
-* 诊断团队对MCS的C++和Python代码的任何部分进行了自动化单元测试。
-* 自动化单元测试实践作为一种强制功能，为所有诊断的特定代码和整个MCS代码库的部分提供了更好的制作和更少的麻烦代码。
-* 积极开发比以前更完善、更广泛的MCS系统的自动化集成测试。
+* 诊断团队触碰到的MCS任何部分的C++和Python代码都有自动化单元测试
+* 自动化单元测试实践，为所有诊断特定代码和整个MCS代码库的一些部分能有更精心编写的代码和更少的麻烦代码，起到了一种强制作用
+* 积极开发比以前为MCS系统存在的更完善、更广泛的自动化集成测试
 
-## Diagnostics Team Launch Steps {#diagnostics-team-launch-steps}
+## Diagnostics Team Launch Steps 诊断团队启动步骤 {#diagnostics-team-launch-steps}
 
 There was no mystery to our success. Steps included:
 我们的成功并不神秘。步骤包括：
 
-* Applied the LeSS guide _Temporary Fake Product Owner_ for the diagnostic multi-component to identify a personality conducive to supporting and guiding the team, who had enough positional and political influence for his decisions to be respected by the various stakeholders.
-* 将LeSS指南中的临时假产品负责人用于诊断多组件，以确定一个有利于支持和指导团队的人格，他有足够的地位和政治影响力，他的决定会得到各利益相关者的尊重。
-    * This person was a _fake_ Product Owner because they still had to play the _Contract Game_, doing requirements and conforming to milestones as directed by others in the company.
-    * 这个人是一个假的产品负责人，因为他们仍然要玩合同游戏，按照公司其他人的指示做需求和遵守里程碑。
-* Assembled an eight-member development team with all the software and test engineering skills needed (or learned) to work across the various MCS subsystems required.
-* 组建了一个由八人组成的开发团队，拥有所有需要的（或学到的）软件和测试工程技能，以便在所需的各种MCS子系统中工作。
-* Took full-time possession of a mid-sized meeting room for use as the development team's co-located working space.
-* 全职拥有一间中型会议室，作为开发团队的联合工作空间。
-* I delivered a couple of days of formal classroom training for all Scrum team members, as well as key stakeholders.
-* 我为所有Scrum团队成员以及关键的利益相关者提供了几天的正式课堂培训。
-* We conducted a collaborative chartering effort consisting of a couple of days of dedicated chartering meetings, along with a variety of preliminary and follow-up meetings. This helped achieve overall alignment between and within the stakeholders and Scrum team members.
-* 我们进行了一次合作性的章程制定工作，包括几天专门的章程制定会议，以及各种初步和后续会议。这有助于实现利益相关者和Scrum团队成员之间以及他们内部的整体协调。
-* I provided active executive, process, and technical coaching for the first few Sprints before refocusing most of my efforts on the upcoming LeSS-oriented adoption in the MCS division's BIOS group.
-* 在最初的几个Sprints中，我提供了积极的执行、流程和技术指导，然后将大部分精力重新集中在即将在MCS部门的BIOS小组中进行的面向LeSS的采用上。
+* 将LeSS指南*临时性伪产品负责人*应用于诊断多组件，确认了一个有利于支持和指导团队的人格，他有足够的地位和政治影响力，其决定会得到各干系人的尊重。
+    * 这个人是*伪*产品负责人，因为他们仍然要玩*合同游戏*，按照公司其他人的指示做需求并遵守里程碑。
+* 组建了一个由八人组成的开发团队，拥有所有需要的（或可以学到的）软件和测试工程技能，以在要求的各种MCS子系统中工作。
+* 完全占有一间中型会议室，作为开发团队的联合工作空间。
+* 我为所有Scrum团队成员以及关键干系人提供了两天正式的课堂培训。
+* 我们进行了一次协作的章程制定工作，包括两天专门的章程制定会议，以及各种准备和跟进会议。这有助于实现干系人和Scrum团队成员之间以及他们内部的整体对齐。
+* 在最初的几个迭代中，我提供了积极的管理、流程和技术指导，然后将大部分精力重新聚焦于即将在MCS部门BIOS组发生的面向LeSS的导入上。
 
 See the _Getting Started_ guide in _Large-Scale Scrum: More with LeSS_ for additional guidance on launching teams. Although written from the perspective of launching multiple teams within a LeSS structure, it is just as applicable to launching a single pilot Scrum team.
-请参阅 "大规模Scrum "中的入门指南。更多关于启动团队的指导。虽然是从在LeSS结构中启动多个团队的角度写的，但它同样适用于启动一个试点Scrum团队。
+更多关于启动团队的指导，请参阅《大规模Scrum》书中的*开始*指南。虽然它是从在LeSS结构中启动多团队的角度写的，同样适用于启动一个试点Scrum团队。
 
-## Diagnostics Team Photos and Artifacts {#diagnostics-team-photos-and-artifacts}
+## Diagnostics Team Photos and Artifacts 诊断团队照片和工件 {#diagnostics-team-photos-and-artifacts}
 
 <a name="figure5"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/diagnosticsTeamInRoom.jpg" alt="Diagnostics Team in Team Room">
-  <figcaption>Figure 5: Here is a photo of the diagnostics Scrum development team. Pairing and swarming became more common over time, though full mob programming never quite caught on. The team had both the test and development talent needed to deliver a potentially shippable increment at the end of each Sprint. The development team used a physical task board. The meeting room we took over was a bit smaller than we would have liked. 图5：这是一张诊断学Scrum开发团队的照片。随着时间的推移，结对和蜂群变得越来越普遍，尽管完全的暴徒编程从未完全流行起来。该团队同时拥有测试和开发人才，以便在每个Sprint结束时提供一个潜在的可交付的增量。开发团队使用一个物理任务板。我们接手的会议室比我们希望的要小一些。</figcaption>
+  <figcaption>图5：这是一张诊断Scrum开发团队的照片。随着时间的推移，结对和群聚变得越来越普遍，尽管完全的群聚编程从未真正流行起来。该团队同时拥有测试和开发人才，以便在每个迭代结束时交付一个潜在可发布的增量。开发团队使用一个物理任务板。我们占据的会议室比我们希望的要小一些。</figcaption>
 </figure>
 
 <a name="figure6"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/diagnosticsDefinitionOfDoneAfterSeveralSprints_9_2.jpg" alt="Diagnostics Definition of Done After Several Sprints">
 <figcaption>
-Figure 6: The Definition of Done used by the diagnostics team evolved to what you see here after a few Sprints. The stand-alone portion of the Increment was provided to the field service division by the end of each Sprint. Providing the MCS integrated diagnostics capabilities to the end customer required waiting for a release of the waterfall developed MCS product. This example Definition of Done along with additional context can be found in Table 9.2 of <b>Forging Change</b>.
+图6：诊断团队使用的完成定义在几个迭代之后演进成你这边看到的样子。每个迭代结束增量中的独立部分会提供给现场服务部门。而提供给终端客户MCS的集成诊断能力则需要等待一个瀑布开发的MCS产品发布。这个示例的完成定义以及额外的上下文可以从《Forging Change》书中的表格9.2找到。
 </figcaption>
 </figure>
 
-## Diagnostics Team Culturally Relevant Elements {#diagnostics-team-culturally-relevant-elements}
+## Diagnostics Team Culturally Relevant Elements 诊断团队文化相关的要素 {#diagnostics-team-culturally-relevant-elements}
 
 A few cultural observations concerning the pilot effort are listed below. Many of these cultural observations are also relevant to a better understanding of the subsequent LeSS-oriented adoption in the BIOS group.
+一些试点工作相关的文化观察被列在下面。它们中的许多也有助于更好地理解随后BIOS组面向LeSS的导入。
 
-### Manifestation of Larman's First and Fifth Laws of Organizational Behavior {#manifestation-of-larmans-first-and-fifth-laws-of-organizational-behavior}
+### Manifestation of Larman's First and Fifth Laws of Organizational Behavior 第一条和第五条拉曼组织行为法则的表现 {#manifestation-of-larmans-first-and-fifth-laws-of-organizational-behavior}
 
 The first and fifth of Larman’s Laws of Organizational Behavior are:
+第一条和第五条拉曼组织行为法则分别是：
 
-* **Organizations are implicitly optimized to avoid changing the status quo middle- and first-level manager and “specialist” positions & power structures.**
-* **(in large established orgs) Culture follows structure. And in tiny young orgs, structure follows culture.**
+* **组织隐含地被优化成会避免改变现状中的中层和初级经理以及“专家”的地位和权力结构。**
+* **（在大型成熟组织中）文化遵循结构。而在小型年轻组织中，则结构遵循文化。**
 
 All five of Larman’s Laws of Organizational Behavior can be found on [the structure page of the LeSS website at](https://less.works/less/structure/index).
+所有五条拉曼组织行为法则都可以从[LeSS网站上LeSS结构页面](https://less.works/less/structure/index)找到。
 
 Even within the small diagnostics pilot Scrum team, the first and fifth laws were clearly on display. The positive changes in effective structure and resulting culture were limited to the diagnostic team and the stakeholders with whom the diagnostic team actively collaborated. In contrast, the status quo in the majority of the middle management layer remained largely unchanged.
+即使在较小的诊断试点Scrum团队中，第一条和第五条法则也明显可见。在有效的结构和由此而来的文化上，正向变化只局限于诊断团队以及他们积极协作的干系人中。相反，大多数中层管理的现状基本没有变化。
 
 The diagnostic team’s expanded component boundary cut across many different components within the MCS system. Each of these components typically had its own set of engineers along with a manager per geographic region, rolling up into one of two VPs. The diagnostics development team was formed by having each of the relevant managers fully allocate a software or test engineer with knowledge of the relevant components. Given the delivery pressure of the overall waterfall efforts, managers were very reluctant to allocate people to the diagnostics team. They ultimately only did so at the behest of the original Sr. VP.
+诊断团队扩大的组件边界涉及MCS系统中的许多不同组件。这些组件中每一个通常都有自己的一组工程师，并在每个地理区域有一位经理，往上汇报给两位VP中的其中一位。诊断开发团队的建立是通过让每一位相关经理完全分配一位有相关模块知识的软件或测试工程师。考虑到整体瀑布开发的交付压力，经理们是挺不愿意把人分配给诊断团队的。他们最终这么做只是因为原先的SVP要求所致。
 
 Once the Scrum team was up and running, it took a great deal of political pressure as well as a formal directive from the original Sr. VP before the first and second level managers stopped attempting to task individual diagnostics development team members with unrelated work. Some of the development team members eventually had to be formally assigned to a manager related to the diagnostics effort to stop some problems.
+当Scrum团队开始运转时，通过来自原先的SVP的许多政治压力和正式指示，才使得第一第二级经理停止试图给诊断开发团队个体成员指派不相关的工作。一些开发团队成员不得不被正式指派给一位与诊断工作相关的经理，才得以终止这些问题。
 
 Just as Larman's Laws of Organizational Behavior would predict, having the Scrum development team members report to engineering managers who concurrently experienced delivery pressures from the overall MCS product was very problematic. Although the Sr. VP mitigated this problem by being supportive, the organizational chart was never fully flattened. Many of the development team members still continued to report up through one of the VPs who never fully embraced the changes. The only reporting changes involved related to which director was responsible for some of the diagnostics Scrum development team members.
+就像拉曼组织行为法则所预测的那样，让Scrum开发团队成员汇报给同时承受来自整体MCS产品交付压力的工程经理是很有问题的。虽然SVP的支持缓解了这个问题，组织结构图从未完全扁平化。许多开发团队成员仍继续往上汇报给其中一位从未完全拥抱变化的VP。唯一涉及的汇报变化是由哪位主管负责一些诊断Scrum开发团队成员。
 
-
-#### Contrast with LeSS Book Guidance {#contrast-with-less-book-guidance}
+#### Contrast with LeSS Book Guidance 与LeSS书中指南的对比 {#contrast-with-less-book-guidance}
 
 At first glance, the diagnostic pilot aligns with the _Parallel Organizations_ guide in the third LeSS book, _Large-Scale Scrum_. Regrettably, there are at least a couple of pernicious differences.
+乍一看，诊断试点与第三本LeSS书《大规模Scrum》中的*并行组织*一致。很遗憾，至少有两点有害的差异。
 
 When describing the parallel organization strategy Larman and Vodde list a few caveats. The first caveat listed is:
-
+当描述并行组织的策略时，拉曼和沃代列出了一些告诫。第一条列出的告诫是：
 
 >A parallel organization is not a pilot, and one consequence is that the line of organizational reporting must be separate from the traditional organization.
+>一个并行组织并不是一个试点，由此而来的一项后果就是它的组织汇报线独立于与传统组织。
 
 The effective team level structure of the diagnostic team was radically changed and aligned with Scrum, yet the formal organizational reporting relationships remained. This failure left the team overly vulnerable to change in the executive management layer.
+诊断团队的有效团队层面结构被显著改变以与Scrum一致，然而正式的组织汇报关系却保留了下来。这一失败让团队非常易受高层管理变动的影响。
 
 Even though the diagnostic team was never subject to the Contract Game, the diagnostic team members still reported up through middle managers who were engaged in the Contract Game for the overall waterfall efforts. As the middle managers became increasingly desperate for more development capacity to throw on the bonfire of an upcoming waterfall release they increasingly resumed their earlier behaviors of redirecting the efforts of individual diagnostic team members. Although the original engineering SVP/GM had actively protected the diagnostic team from such dysfunctions, as soon as he departed the legacy status quo began to incrementally erode the supportive context that had enabled the diagnostic team's early success.
+尽管诊断团队从未受合同游戏影响，诊断团队成员却还是汇报给参与到整体瀑布工作合同游戏中的中层经理。当中层经理为有更多开发产能投入到即将到来的瀑布发布而感到绝望时，他们越来越多回到之前重新指派诊断团队个体成员工作的行为。尽管原先的工程SVP/GM积极保护诊断团队免受其害，一旦他离开了，遗留的现状就开始侵蚀让诊断团队早期成功的支持性环境。
 
 The second key difference is the diagnostic team was seen as a showcase rather than as the first of many teams that would eventually form a parallel organization. In other words, the diagnostic effort was not seen as the first step in executing a committed collective decision by senior management to slowly migrate all of MCS development into a LeSS-oriented structure.
+第二个关键差异是诊断团队被看作是一个展示案例，而不是最终会形成一个并行组织的许多团队中的第一个。换句话说，诊断工作并没有被看作是在执行一个被高管承诺的集体决策 - 逐渐把所有MCS开发转成面向LeSS的结构 - 的第一步。
 
 <a name="figure7"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/transition-component-teams-slow.png" alt="Slowly Transitioning from Component Teams">
 <figcaption>
-Figure 7: You will find this diagram as Figure 4.11 in <b>Large-Scale Scrum: More with LeSS</b> as part of the Transitioning to Feature Teams guide. You will notice Feature Team Red in its newly formed Requirement Area consumes from the same Product Backlog as do all the component teams. Although this loosely correlates to the diagnostic team situation, the day to day reality was slightly different.  The diagnostic team was a real self-managing team free from the negative direct effects of the Contract Game. In contrast, most of the other MCS teams were subject to the Contract Game within a waterfall delivery context.
+图7：你会在《大规模Scrum》书中图4.11找到这个图，作为转向特性团队指南的一部分。你会注意到特性团队Red在新形成的需求领域中与其它所有组件团队从同一份产品待办列表中拿工作。虽然这与诊断团队的情景大致相近，日常现实却不尽相同。诊断团队是一个真正的自管理团队，不受合同游戏的负面直接影响。相反，大多数其他MCS团队则受制于瀑布交付环境中的合同游戏。
 <br/><br/>
-The diagnostic team's organizational reporting relationships were never changed so as to intersect the organizational chart above the level at which the Contract Game was being played for the waterfall teams. This failure eventually resulted in the erosion of the supportive context required for the diagnostic team to remain successful. This failure became increasingly apparent after the departure of the original engineering SVP/GM.
+诊断团队的组织汇报关系从未改变成横切组织架构图，处于受合同游戏束缚的瀑布团队的层次之上。这一失败最终导致了诊断团队成功所需要支持性环境的侵蚀。这一失败在原先的工程SVP/GM离开之后变得越发显著。
 </figcaption>
 </figure>
 
-#### Relevant References {#relevant-references}
+#### Relevant References 相关参考 {#relevant-references}
 
-The most up to date version of the [LeSS rules can be found on the LeSS website](https://less.works/less/rules/index)
+The most up to date version of the [LeSS rules can be found on the LeSS website]
+最新版的LeSS规则可以在[LeSS网站](https://less.works/less/rules/index)上找到。
 
 The following LeSS Rule seems particularly relevant:
+以下LeSS规则看起来特别相关：
 
-
-* <span style="color:firebrick">_“LeSS Rule: For the product group, establish the complete LeSS structure “at the start”; this is vital for a LeSS adoption.”_</span>
+* <span style="color:firebrick">*“LeSS规则：对产品组从一开始就建立完整的LeSS结构，这个对LeSS导入至关重要。”*</span>
 
 We clearly didn’t achieve this since only one team was set up. Although the diagnostics team level structure was created from the start, we didn’t manage to change the reporting relationships and flatten out the org chart as it pertained to the diagnostics team.
+因为只建立了一个团队，我们明显没有做到这一点。虽然从一开始就创建了诊断团队层面的结构，我们没有做到改变汇报关系，并削平与诊断团队相关的组织机构图。
 
 _Large-Scale Scrum: More with Less_ provides the following relevant guides:
+《大规模Scrum》提供了以下相关指南：
 
-* _Guide: Build Team-Based Organizations_: Pay particular focus to the parts of this guide dealing with having stable organizations over dynamic matrixed structures.
-* _Guide: LeSS Organizational Structure_: Includes the following quote: “LeSS organizations don’t have matrix structures and there are no dotted-line managers.”
-* _Guide: Transitioning to Feature Teams:_ Provides a high-level overview of various transition strategies.
-* _Guide: One Requirement Area at a Time_: Details an incremental approach to LeSS Huge adoptions.
-* _Guide: Parallel Organizations_: Details the creation of a separate organization as an adoption strategy. The caveats listed are particularly insightful.
-* _Guide: Feature Team Adoption Maps_: Provides more insight into visualizing the gradual expansion of feature team responsibility as demonstrated in [Figure 4](#figure4) above.
-* _Guide: Evolve the Definition of Done_: Explains how a Definition of Done can be used to more explicitly visualize incremental improvement and its relevance to various stakeholders.
-* _Guide: Getting Started:_ Just as applicable to launching an individual team as a set of teams.
+* *指南：构建基于团队的组织*：特别关注这个指南中论述设立稳定组织优于动态矩阵结构的部分。
+* *指南：LeSS组织结构*：包含如下引述：“LeSS组织没有矩阵结构，也没有虚线经理。”
+* *指南：转向特性团队*：提供了各种转变策略的高度概括。
+* *指南：一次一个需求领域*：详细说明了LeSS巨型导入的一个增量方式。
+* *指南：并行组织*：详细说明了作为一个导入策略的单独组织创建。列出的告诫尤其富有洞察力。
+* *指南：特性团队导入地图*：提供了更多洞察用以可视化特性团队职责的逐渐扩大，如以上[图4](#figure4)所呈现的那样。
+* *指南：演进完成的定义*：解释了完成的定义可以如何用来更显式地可视化增量改进以及与各个干系人的关联。
+* *指南：开始*：不仅适用于一组团队，同样适用于单个团队
 
-### Reflections on Executive Layer Changes {#reflections-on-executive-layer-changes}
+### Reflections on Executive Layer Changes 对于高层管理变更的反思 {#reflections-on-executive-layer-changes}
 
 Although the new SVP was extremely talented in his own way and moderately technically savvy, he lacked the engineering insight of the short-tenured chief engineer style SVP he replaced.
+尽管新的SVP以他自己的方式也是很能干的，并且具备一定的技术水平，他却缺乏他所替代的短期的总工型SVP所具有的工程洞察力。
 
 The existing senior management reporting into the SVP lacked real-world exposure to anything like a proper agile team with good software engineering practices. Without such exposure, it was difficult to obtain support for even greater change.
+现有汇报给SVP的高层管理缺乏与具备良好软件工程实践的像样敏捷团队的真实接触。没有这样的经历，就难以取得对更大变革的支持。
 
 Failure to avoid the Contract Game and a desire for self-preservation of the status quo power structures made it hard for many to appreciate or accept the improvements which were made over time. This is exactly as the first of the aforementioned _Larman’s Laws of Organizational Behavior_ predicts.
+没能避免合同游戏，以及想要自我保护现有的权力结构，使得很多人难以欣赏并接受所发生的改进。这恰恰是之前提到的第一条*拉曼组织行为法则*所预测的。
 
 Had I the wisdom and skill at the time to recognize the need for and to conduct an executive workshop comparable to a _Certified LeSS for Executives_ course focused on helping senior management to own rather than rent the change, things might have gone differently.  Had I done this when I still had the original SVP to support me, the original SVP might have been seen as making enough drastic changes to have survived the political forces at play above the divisional layer.
+如果我那时就有智慧和技能意识到需要举行一个类似*认证LeSS高管*的管理层工作坊，聚焦帮助高管来对变革形成拥有而非租借的态度，那么事情也许会有不同。如果我在还有原先的SVP支持的时候这样做，原先的SVP可能会被认为做出了足够大的改变，从而在部门层面之上的政治力量下存活下来。
 
 If nothing else, an executive workshop coupled with an informed consent workshop may have helped highlight passive aggressive behaviors by the software VP.
+如果没有别的作用，一个管理层工作坊，结合对变革知情同意的工作坊，至少有助于突显出软件VP的消极挑衅行为。
 
 Driving greater awareness of the magnitude of structural organizational change required for sustainable cultural change would run the risk of shutting down any improvement efforts before being able to make the incremental gains which were made. Yet, had the original SVP been willing to commit to a LeSS-oriented adoption after such an executive workshop it would have been even harder to reverse the adoption efforts.
+让大家更多意识到持续文化变革所需的组织结构变化量级也有风险，也可能在形成增量收益之前就停止了任何改进。然而，如果原先的SVP在一个管理层工作坊之后愿意承诺面向LeSS的导入，反转导入进程也会变得更难。
 
 By the time the new SVP showed up, the die leading to the massive layoffs and destruction of many meaningful improvements had already been cast. I just didn’t know it yet, and wouldn’t for another year.
+在新的SVP出现那时，大量裁员和破坏许多有意义改进的前景其实已经注定。我只是还不知道，在接下来一年中都不知情。
 
 There was still great benefit to what was achieved. The diagnostic functionality put in place by the pilot diagnostics team continues to save millions in return costs. It is unlikely any diagnostics capability of comparable quality would have been achievable within the legacy organizational structure. The even greater positive impact of many of the improvements in the BIOS production code, BIOS test infrastructure, and organizational norms within the BIOS teams obtained far too much momentum to ever be fully reversed.
+对于所取得的仍有很大的收益。由试点诊断团队开发的诊断功能继续节省着百万成本。在老的组织结构下不太可能实现同等质量的诊断能力。在BIOS生产代码、BIOS测试基础设施，以及BIOS团队组织规范上所做改进产生的积极影响已经大到无法完全被反转。
 
 Enlightened minds never again see the world the same. Similarly, improvements ingrained in the code of a production product tend to last for decades.
+开启的头脑看到的世界永远不再一样。类似地，嵌入在生产代码中的改进也将持续数十年。
 
 # BIOS Management Interest {#bios-management-interest}
 
