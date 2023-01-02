@@ -377,139 +377,123 @@ Mitya's group was responsible for providing a customized BIOS for MCS. BIOS is t
 # BIOS Overview BIOS概览 {#bios-overview}
 
 The custom BIOS code was easily the most challenging and specialized software development aspect of the entire overall MCS system. Much of the remaining systems were comprised of C++, Java, and Python middleware running on mature chipsets and running within stripped-down Linux operating systems on dedicated appliance hardware. Some of these systems required contending with low power and memory constraints, yet that was nothing compared to what the BIOS engineers had to deal with. In spite of all this, the BIOS group was the one with management expressing the greatest eagerness to change and improve.
-定制的BIOS代码很容易成为整个MCS系统中最具挑战的，是专门开发的软件部分。大量剩下的系统是由运行在成熟芯片组上的C++、Java和Python中间件组成的，它们运行在专用的设备硬件上的精简Linux操作系统中。其中一些系统需要在低功耗和内存限制的环境下竞争资源，但这与BIOS工程师必须处理的问题相比微不足道。尽管如此，BIOS组仍然是管理层最渴望改变和改进的组。
+定制BIOS代码很容易成为整个MCS系统中最具挑战和最专业化的软件开发部分。大部分剩余系统是由运行在成熟芯片组和在专用设备硬件的精简Linux操作系统上的C++、Java和Python中间件组成。其中一些系统需要在低功耗和内存限制的环境下竞争资源，但这与BIOS工程师必须应对的挑战相比微不足道。尽管如此，BIOS组仍然是管理层最渴望改变和改进的组。
 
 Market viability demands Nakashima develop custom BIOS releases quickly enough to keep pace with Intel's processor releases. Even with AMI providing the base of the BIOS firmware, historically poor engineering practices and lack of cross-functional multi-learning teams meant it still took a group of forty or more highly specialized hardware, software, and test engineers working on the custom MCS BIOS to keep current with Intel.
-市场生存能力要求中岛公司对定制化的BIOS有足够快的版本更新速度，以便能跟上Intel处理器的版本更新步伐。虽然AMI提供了BIOS固件的基础，但由于其历来工程实践较差，以及缺乏跨职能的多元学习团队，这意味着它仍需要一组由40个甚至更多的高度专业的硬件、软件和测试工程师为定制MCS BIOS工作，才能与Intel保持同步。
+市场生存能力要求中岛公司开发定制BIOS足够快，以跟上Intel处理器的版本。虽然AMI提供了BIOS固件的基础，但由于中岛公司历来工程实践较差，以及缺乏跨职能的多面学习团队，这意味着它仍需要一组40个甚至更多的高度专业化的硬件、软件和测试工程师为MCS定制BIOS工作，才能与Intel保持同步。
 
 Although major BIOS releases tend to correspond with an overall MCS release, smaller independent BIOS releases also happen on occasion. The smaller independent releases are generally motivated by minor Intel hardware revisions or minor updates in the AMI codebase on which the custom MCS BIOS is based.
-尽管主要的BIOS版本往往与MCS大版本相对应，但有时也会发布较小的独立的BIOS版本。较小的独立版本通常是由Intel硬件的微小修订，或者定制的MCS BIOS所基于的AMI代码库的微小更新所驱动的。
+尽管主要的BIOS版本往往与MCS大版本相对应，但有时也会发布较小的独立BIOS版本。较小的独立版本通常由Intel硬件的次要修订或者MCS定制BIOS所基于的AMI代码库的次要更新所驱动。
 
 In consideration of the eagerness for change within the BIOS management reporting line, and the lack-luster support from the Software VP, the sensible thing was to pursue the art of the possible within the influence of the Hardware VP and Quality Assurance VP. We decided to define a component boundary constrained to the custom BIOS alone, and then slowly expand the boundary as the BIOS teams matured.
-考虑到BIOS直线管理层对改变的渴望，以及缺乏软件总裁(VP)的支持，明智的做法是在硬件总裁(VP)和质量保证总裁(VP)的影响力下去追求“可能性的艺术”。我们决定定义一个仅限于定制BIOS的组件边界，然后随着BIOS团队的成熟，再慢慢扩展边界。
+考虑到BIOS直线管理层对改变的渴望，以及缺乏软件VP的支持，明智的做法是在硬件VP和质量保证VP的影响力下去追求可能性的艺术。我们决定定义一个仅限于定制BIOS的组件边界，然后随着BIOS团队的成熟再慢慢扩大边界。
 
 At a macro level the BIOS is merely one component of the overall MCS system, yet at a micro level every bit of a LeSS-oriented structure remains fully relevant. The BIOS component is itself composed of a very large set of sub-components which are beyond the scope of this document.
-在宏观层面上，BIOS仅仅是整个MCS系统的一个组成部分，但在微观层面上，面向LeSS的结构的每一点都是完全相关的。BIOS组件本身由一组非常大的子组件组成，这些子组件超出了本文的范围。
+在宏观层面上，BIOS仅仅是整个MCS系统的一个组件，但在微观层面上，面向LeSS的结构的每一点都是完全相关的。BIOS组件本身又由很大一组子组件构成，而它们超出了本文的范围。
 
 The MCS division has somewhere on the order of a few thousand engineers all focused on various aspects of the MCS product. Starting with a broader expanded BIOS multi-component boundary before first improving the engineering practices and cross-training within the scope of the BIOS component teams would have been problematic. The engineering practices throughout MCS were relatively abysmal, just as you might expect from years of playing the Contract Game. There were more than enough quality problems and engineering silos within the initial BIOS component boundary to consume all the coaching focus we had available to provide.
-MCS部门拥有数千名工程师，他们专注于MCS产品的各个方面。在BIOS组件团队范围内，如果在改进工程实践以及交叉培训之前，就从更广泛地扩展BIOS多组件边界开始，可能会出现问题。整个MCS的工程实践是相对糟糕的，你可以期待的就好比多年来玩的合同游戏。在最初的BIOS组件边界内，有足够多的质量问题和工程陷阱，足以消耗掉我们所有的辅导精力。
+MCS部门拥有数千名工程师，他们专注于MCS产品的各个方面。在BIOS组件团队范围内改进工程实践以及交叉培训之前就开始更为广泛扩大的BIOS多组件边界，可能会出现问题。整个MCS的工程实践是相对糟糕的，就像你可以从好多年来的合同游戏中所预期的那样。在最初的BIOS组件边界内已有足够多的质量问题和工程陷阱，足以消耗掉我们所有的辅导精力。
 
 LeSS advises to have coaching on three levels (organizational, team, and technical) [as explained here](https://less.works/less/adoption/coaching), and I was covering all three of them. I helped Trent interview and recruit a couple of coaches in Bengaluru, yet I was the only agile coach the MCS division had in the western hemisphere. Had we not lost the original engineering SVP/GM within the first two and half months of my tenure, the coaching capacity situation would have likely been different. With the new engineering SVP/GM looking to downsize the division and not fully understanding the agile adoption effort, we were lucky to have the coaching capacity we did.
-LeSS建议在三个层面（组织、团队和技术）进行辅导，正如本文所述，我涵盖了所有三个层面。我在班加罗尔帮助特伦特面试并招募了几名教练，但我是西半球MCS部门唯一的敏捷教练。如果在我任职的前两个半月里没有失去我们原来的工程SVP/GM，那么教练容量的局面可能会有所不同。由于新的工程SVP/GM希望缩小部门规模，而没有完全理解敏捷导入所需要的工作量，很庆幸我们的辅导精力最后是足够的。
+LeSS建议在三个层面（组织、团队和技术）进行辅导，[如此所述](https://less.works/less/adoption/coaching)，我涵盖了所有三个层面。我在班加罗尔帮助特伦特面试并招募了两名教练，但我是西半球MCS部门唯一的敏捷教练。如果在我任职的前两个半月里没有失去原先的工程SVP/GM，那么教练容量的局面可能会有所不同。由于新的工程SVP/GM希望缩小部门规模，并且没有完全理解敏捷导入所需要的工作量，我们能有这些辅导力量已属幸运。
 
 ## BIOS Expanded From the Bottom Up BIOS自下而上的扩展 {#bios-expanded-from-the-bottom-up}
 
-As explained in LeSS:
 根据LeSS所述：
 
->There are roughly two approaches to LeSS Huge adoption:
->
->1) One Requirement Area at a time
->
->2) Gradually expanding the work-scope of the team, Definition of Done and the Product Definition
->
->&mdash; [from here](https://less.works/less/less-huge/huge-adoption)
->LeSS 巨型的导入大致有两种方法：
+>LeSS巨型导入大致有两种方法：
 >
 >1) 一次一个需求领域
 >
->2)逐步扩大团队的工作范围、完成的定义，以及产品的定义
+>2) 逐渐扩大团队的工作范围、完成的定义，以及产品的定义
 >
->&mdash; [来源](https://less.works/less/less-huge/huge-adoption)
+>&mdash; [源自于此](https://less.works/less/less-huge/huge-adoption)
 
 We followed the 2nd approach, although the first one: One Requirement Area at a time would have meant more impactful organizational change.
 我们采用了第二种方法，尽管第一种方法（一次一个需求领域）意味着更具影响力的组织变革。
 
 The BIOS LeSS-oriented adoption was not directly driven by the principle of being customer-centric with a whole-product focus. Rather the mechanics of a LeSS-oriented structure were seen as a solution for solving many of the transparency, coordination, and quality issues the BIOS teams were facing.
-BIOS面向LeSS的导入并不是由以客户为中心、以整个产品为中心的原则直接驱动的。相反，面向LeSS架构的机制被视为BIOS团队正面临的许多透明度、协调性、以及质量问题的一个解决方案。
+BIOS面向LeSS的导入并不是由以客户为中心、以整个产品为中心的原则直接驱动的。而是面向LeSS结构的机制被视为BIOS团队正面临的许多透明度、协调性、以及质量问题的一个解决方案。
 
 The benefits of working towards an expanded BIOS multi-component boundary until it aligned with a natural feature set of the MCS product were not initially clear to the BIOS teams or management, yet they became so over time. The increased awareness was driven by a variety of factors including: improved transparency of the impediments caused by dealing with dependencies outside of the BIOS teams, effective retrospectives resulting in meaningful experiments within each new Sprint, and continued coaching on my part. More detail is provided in the _BIOS Component Boundary Expands_ section later on.
-我们致力于扩展BIOS多组件边界直到它与MCS产品的自然功能集达到一致。原本BIOS团队或管理层并不清楚这其中的好处，但随着时间的推移，这些好处变得越来越明显。这些意识的提高是由多种因素推动的，包括：由BIOS团队外部依赖关系所导致障碍的透明度得到了提升，有效的回顾会议在每个新Sprint中会促发出有意义的实践，还有我的持续辅导。“BIOS组件边界扩展”章节会提供了更详细信息。
+我们致力于扩展BIOS多组件边界直到它与MCS产品的自然功能集达到一致。最初BIOS团队或管理层并不清楚这其中的好处，但随着时间的推移，这些好处变得越来越明显。这些意识的提高是由多种因素推动的，包括：由BIOS团队外部依赖关系所导致障碍的透明度得到了提升，有效的回顾会议带来每个新迭代中有意义的实验，还有我的持续辅导。*BIOS组件边界扩展*章节将会提供更多细节。
 
 Oddly, the expanded multi-component boundary of the LeSS teams started deep within an esoteric component of the overall product architecture, and then slowly expanded upwards towards the user interface. Although this is an unusual and less than ideal place for a LeSS adoption to start, it was where management buy-in and interest for change was found. It is remarkable how much can be accomplished simply by enabling the creative potential of teams, even with less than ideal starting conditions.
-不太寻常的是，LeSS团队扩展多组件边界，是从整个产品架构中的一个只有内行才懂的组件开始的，然后再慢慢向上扩展到用户界面。虽然这是一个不寻常的地方，也不是导入less的理想起点，但这是管理层认可并对变革有兴趣的地方。值得注意的是，即使在不太理想的起步条件下，只要发挥团队的创造力，就能取得显著的成就。
+不太寻常的是，LeSS团队扩展多组件边界是从整个产品架构中的一个深奥的组件开始，然后再慢慢向上扩展到用户界面。虽然这不寻常，并不是导入LeSS的理想起点，但这却是管理层对变革有认同和兴趣的地方。即使在不太理想的起步条件下，只要发挥团队的创造潜能，就能取得显著的成就。
 
 <a name="figure8"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/Initial_BIOS_CB_WithTitle.png" alt="Initial BIOS Component Boundary">
-  <figcaption>Figure 8: The initial BIOS component boundary only included the custom BIOS. Even at this narrower scope, it still included hundreds of specialized code areas within the custom BIOS itself and millions of lines of C code. Few if any of the several dozen BIOS engineers initially knew more than one or two aspects of the BIOS code. 图8：初始BIOS组件边界仅包含定制的BIOS。即使在这个较窄的范围内，它仍然包含了数百个定制BIOS中的专用代码区域，以及数百万行C代码。几十位BIOS工程师中几乎没有人原本就知道BIOS代码的一个或两个以上的方面。</figcaption>
+  <figcaption>图8：初始的BIOS组件边界仅包含定制BIOS。即使在这个较窄的范围内，它仍然包含了数百个定制BIOS本身的专业代码领域，以及数百万行C代码。几十位BIOS工程师中几乎没有人开始时就了解BIOS代码的一两个方面以上。</figcaption>
 </figure>
 
 <a name="figure9"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/Expanded_BIOS_MCB_WithTitle.png" alt="Expanded BIOS Multi-Component Boundary">
-  <figcaption>Figure 9: The expanded BIOS multi-component boundary included everything along the BIOS configuration control path. It mapped to a natural product requirement area, and could be easily understood by a Product Owner from the Product Management group. Although never fully realized, efforts to move in this direction were made. 图9：扩展的BIOS多组件边界包含BIOS配置控制路径上的所有内容。它映射到一个自然的产品需求领域，很容易被产品管理组的产品负责人所理解。尽管它并没有完全实现，但我们是努力朝着这个方向前进的。</figcaption>
+  <figcaption>图9：扩展的BIOS多组件边界包含BIOS配置控制路径上的所有内容。它映射到一个自然的产品需求领域，很容易被产品管理组的产品负责人所理解。尽管没有完全实现，但我们是努力朝着这个方向前进的。</figcaption>
 </figure>
 
 <a name="figure10"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/BIOS_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for BIOS">
-  <figcaption>Figure 10: The BIOS developers were originally more of a loose group of a few dozen individuals who each specialized in a narrow aspect of the BIOS customization. The BIOS system alone contained millions of lines of code in an extremely esoteric system domain. 图10：BIOS开发人员 最初是由几十个人组成的松散团队，每个人都专门从事BIOS定制的一个狭窄领域。BIOS系统里，仅仅在其一个只有内行人才懂的系统领域中，就包含了数百万行代码。</figcaption>
+  <figcaption>图10：BIOS开发人员最初是几十个个体组成的松散团队，每个人都专门从事一个BIOS定制的狭窄方面。BIOS系统本身就包含了在一个极度深奥的系统领域中的数百万行代码。</figcaption>
 </figure>
 
-## “In-Between” BIOS Teams “中间”BIOS团队 {#in-between-bios-teams}
+## “In-Between” BIOS Teams “介于两者之间”的BIOS团队 {#in-between-bios-teams}
 
 It is a little challenging to select a good adjective for the newly formed BIOS teams.
-为新组建的BIOS团队选择一个好的名称是有点困难的。
+为新组建的BIOS团队选择一个好的形容词是有点困难的。
 
 The newly formed BIOS teams were vastly more ***cross-functional*** than the legacy BIOS teams. Each team was responsible and capable of the authorship and end-to-end testing of any BIOS changes.
-新组建的BIOS团队比传统的BIOS团队跨职能得多。每个团队都有责任和能力授权对BIOS进行创作，以及对任何改动的端到端测试。
+新组建的BIOS团队比传统BIOS团队更**跨职能**。每个团队都有责任和能力修改BIOS并端到端测试任何改动。
 
 The newly formed BIOS teams were also ***self-managing*** and ***co-located*** from the start. Though due to the layoffs and other organizational churn they were not as ***long-lived*** as Mitya and I intended.
-新组建的BIOS团队也从一开始就进行自我管理，并在同一地点工作。尽管由于裁员和其他组织变动，这些团队并没有像我和米提亚所预期的那样长存。
+新组建的BIOS团队也从一开始就**自管理**，并**在同一地点工作**。尽管由于裁员和其它组织变动，这些团队并没有像我和米提亚所期望的那样**长久**。
 
 The _Feature Team Adoption Maps_ guide in _Large-Scale Scrum_ provides several useful definitions for describing teams. Two are:
-大规模Scrum中的“功能团队导入地图指南“为描述团队提供了几个有用的定义。其中两个是：
+《大规模Scrum》书中的*特性团队导入地图*指南提供了几个有用的定义来描述团队。其中两个是：
 
->**Extended component teams**—Any team that has a limited component work scope yet is responsible for checking that their part works within the larger product is an extended component team.
+>**扩展组件团队**——任何组件工作范围有限，但仍负责检查他们这部分能否在更大产品中工作的团队，就是一个扩展组件团队。
 >
->**Feature teams**—Any team that has a whole-product focus and is involved from clarifying customer-centric features to testing them is a feature team. Feature teams also exist along a scale. They can be limited to just implementing the features stated they need. Or, when the product definition is broad enough, they can be involved with identifying and solving the customers’ real problems and thus co-creating the product on the whole system.
->
->**扩展组件团队**--任何团队，如果其组件工作范围有限，仍然负责检查其部件是否在较大产品中正常工作，那么它们就是扩展组件团队。
->
->**功能团队**--任何团队，如果它是以整个产品为中心，并且其负责的范围是包含从以客户为中心的功能澄清直到测试完成的团队，都是功能团队。功能团队也有一定规模。它们可以仅限于实现那些被需要的功能。或者，当产品定义足够广泛时，他们可以参与识别和解决客户的实际问题，从而在整个系统上共同创建产品。
+>**特性团队**——任何以整个产品为中心，并参与从澄清客户导向的特性到测试它们的团队，就是一个特性团队。特性团队也有不同的程度。他们可以仅限于实现那些被需要的特性。或者，当产品定义足够广泛时，他们可以参与识别和解决客户的实际问题，从而在整个系统上共创产品。
 
 The newly structured BIOS teams were capable of acting as _extended component teams_ from their formation. They had the capability and responsibility of performing end-to-end testing on any changes they made. The _testing_ extended from the MCS GUI (whose code they did not write), through the Chassis Controller (whose code they did not write), through the Node Controller (whose code they did not write), and finally ending in the BIOS code running on the Intel CPUs. In contrast, the _coding_ of the newly structured BIOS teams initially was only within the _Initial BIOS Component Boundary_ detailed in [Figure 8](#figure8). As you can see this aligns perfectly with the definition of an _extended component team_.
-新组建的BIOS团队从其构成而言，是有能力作为临时扩展组件团队的。他们有能力和责任对所做的任何改动执行端到端测试。测试从MCS GUI（代码不是他们写的）扩展到Chassis Controller（代码也不是他们写的），再到Node Controller（同样，代码也不是他们写的），最后以英特尔CPU上运行的BIOS代码结束。相比之下，这些新组建的BIOS团队，他们的编写的代码码最初仅在图8中详细描述的初始BIOS组件边界内。如您所见，这与扩展组件团队的定义完全一致。
+新组建的BIOS团队从其构成就有能力作为*扩展组件团队*。他们有能力和责任对所做的任何改动执行端到端测试。*测试*是从MCS图形用户界面（代码不是他们写的）扩展到机框控制器（代码也不是他们写的），再到节点控制器（同样代码也不是他们写的），最后到英特尔CPU上运行的BIOS代码。相比之下，新组建的BIOS团队*编写的代码*最初仅在[图8](#figure8)中详细描述的*初始BIOS组件边界*内。如你所见，这与*扩展组件团队*的定义完全一致。
 
 The newly structured BIOS teams failed to initially meet the definition of a _feature team_. To become _feature teams_ would require including all relevant code front-to-back. Although the BIOS teams never quite achieved this during my time with Nakashima's MCS division, they were making progress.
-新组建的BIOS团队最初未能满足功能团队的定义。要成为功能团队，需要包含从前端到后端的所有相关代码。虽然在我任职中岛公司MCS部门期间，BIOS团队从未完全实现这一目标，但他们是取得了一些进展的。
+新组建的BIOS团队最初未能满足*特性团队*的定义。要成为*特性团队*，需要包括从前端到后端的所有相关代码。虽然在我任职中岛公司MCS部门期间，BIOS团队从未完全实现这一目标，但他们取得了一些进展。
 
 In summary the newly structured BIOS teams:
 总结一下，新组建的BIOS团队：
 
-1. Started as _extended component teams_ which were _self-managing_ and _co-located_.
-2. Aimed to become _component-expanded teams_ to cover more components along the communication path between the BIOS component and the MCS GUI component.
-3. Planned to become _feature teams_ by expanding their responsibility to “everything” needed to deliver end-to-end features.
+1. 是从*自管理*和*在同一地点工作*的*扩展组件团队*开始的。
+2. 旨在成为*扩大的组件团队*来涵盖在BIOS组件和MCS图形用户界面组件之间通信路径上的更多组件。
+3. 计划通过将其职责扩大到交付端到端特性所需的“一切”，从而成为*特性团队*。
 
-1. 是从自我管理和在同一地点工作的扩展组件团队开始的。
-2. 旨在成为组件扩展团队，以使其范围涵盖BIOS组件和MCS GUI组件的通信路径上的更多组件。
-3. 计划通过将其职责扩展到交付端到端功能所需的“一切”，从而成为功能团队。
-
-## BIOS Organizational Context BIOS的组织背景 {#bios-organizational-context}
+## BIOS Organizational Context BIOS组织背景 {#bios-organizational-context}
 
 The BIOS LeSS-oriented adoption occurred during a period of active churn in the executive layers. When the BIOS adoption was started the VP in charge of all the Hardware development was very supportive, as were a variety of other VPs throughout the organization. This was sufficient to make the initial adoption efforts possible and successful in the short run. As both the SVP and VP level management changed we lost much of the support needed, even though our efforts were widely regarded as successful by most people involved. Ambivalence by a new SVP along with the loss of the supportive Hardware VP coupled with massive layoffs ultimately eroded our progress. The following series of organizational chart diagrams help to highlight the situation.
-BIOS面向的 LeSS的导入发生在公司高管领导层的活跃变动期间。当开始BIOS导入时，负责所有硬件开发的VP非常支持，整个组织中的其他VP也是如此。这足以使初始的导入工作在短期内成为可能并取得成功。由于SVP和VP级别的管理层都发生了变化，我们失去了很多所需的支持，尽管大多数相关人员普遍认为我们的工作是成功的。由于新的SVP不一致的意见，以及支持我们的硬件VP的流失，再加上大规模裁员，最终侵蚀了我们的进度。下面一系列组织架构图，可以让我们明显地看到当时的情况。
+BIOS面向LeSS的导入发生在公司高管层活跃变动期间。当开始BIOS导入时，负责所有硬件开发的VP非常支持，还有组织中其他几个VP也是如此。这足以使初始的导入工作在短期内成为可能并取得成功。当SVP和VP级别的管理层发生变化时，我们失去了很多所需的支持，尽管大多数相关人员普遍认为我们的工作是成功的。新SVP的摇摆、支持我们的硬件VP的流失，再加上大规模裁员，最终侵蚀了我们的进展。下面一系列组织架构图可以帮助突显当时的情况。
 
 <a name="figure11"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/OriginalOrgWithOrigSVP_WithTitle.png" alt="Original Organizational Structure with Original SVP">
-  <figcaption>Figure 11: The initial Sr. VP/GM of engineering for the MCS division was extremely supportive of the agile adoption efforts. I also found active support throughout much of the organization. A large number of directors, managers, and individual contributors provided active guidance as I attempted to better understand and help the organization. Unfortunately, this Sr. VP’s tenure was very short and there was a key VP responsible for the more pure software portions of the product who was passively aggressively opposed to any real change. 图11：MCS部门最初的工程SVP/GM对敏捷导入工作给予了极大的支持。我也在整个组织中得到了积极的支持。当我试图更好地理解和帮助这个组织时，许多董事、经理和个人贡献者都提供了积极的指导。不幸的是，这位SVP的任期很短，有一位关键的VP负责产品中更纯粹的软件部分，他消极且强烈地反对任何真正的变动。</figcaption>
+  <figcaption>图11：MCS部门最初的工程SVP/GM对敏捷导入工作给予了极大的支持。我也在组织中找到了积极支持。许多主管、经理和个体贡献者都在我试图更好地理解和帮助这个组织时给予我积极指导。不幸的是，这位SVP的任期很短，并且有一位关键的负责产品中更纯软件部分的VP消极且强烈地反对任何真正的变革。</figcaption>
 </figure>
 
 <a name="figure12"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/OrgAfterEarlyChangeOfSVP_WithTitle.png" alt="Organizational Structure After Early Change of Engineering SVP/GM">
-  <figcaption>Figure 12: The initial Sr. VP/GM of engineering of the MCS Division only had his role for a few months before I arrived. Within a couple months of my arrival he was replaced with another Sr. VP. In retrospect it is obvious the new Sr. VP’s direction from the C suite was to rationalize the size of the division. The new Sr. VP was almost completely unavailable to me and unwilling to actively engage in the agile transformation efforts. Although it generally happened outside of my view, I believe I continued to receive active support and air cover from the Project Management VP. Although there were some additional organizational changes over time once the new engineering SVP took over, none were very significant to the teams attempting an agile adoption until the Hardware VP left. 图12: 在我来之前，MCS部门原先的工程SVP/GM仅担任了几个月的职务。在我来后的几个月内，他被另一位SVP接替。回想起来，很明显，C套件的新SVP的方向是使部门规模合理化。新的SVP几乎完全不理我，也不愿意积极参与敏捷转型工作。虽然这通常发生在我的视野之外，但我相信我会继续得到项目管理VP的积极支持和隔空保护。尽管在新的工程SVP接管后，随着时间的推移，组织结构发生了一些额外的变化，这些变化对尝试敏捷导入的团队来说并没有太大影响，直到硬件VP离开。</figcaption>
+  <figcaption>图12: MCS部门原先的工程SVP/GM在我来之前仅担任了几个月的职务。在我来后的两个月内他就被另一位SVP接替。回想起来，很明显最高领导层给新SVP的指示是让部门规模合理化。新的SVP几乎完全不理我，也不愿意积极参与敏捷转型工作。虽然这通常发生在我的视野之外，我相信我继续得到了项目管理VP的积极支持和隔空保护。尽管在新的工程SVP接管后陆续有一些额外的组织变化，它们对尝试敏捷导入的团队来说并没有太大影响，直到硬件VP离开。</figcaption>
 </figure>
 
 <a name="figure13"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/OrgAfterDepartureOfHWVP_WithTitle.png" alt="Organizational Structure After Depature of Hardware VP">
-  <figcaption>Figure 13: Under the cloud of upcoming and active layoffs many people began to depart the organization voluntarily. Around the same time a new extremely well funded startup began to actively recruit some of the more skillful engineers and managers in the MCS division. One of these departures was the Hardware VP who the BIOS teams had reported through. The new engineering SVP chose not to backfill the Hardware VP but instead to have all those previously reporting up through the Hardware VP report through the Software VP. As the Software VP was always passively aggressively working against the agile adoption efforts this did not bode well. Over the course of a few months half the BIOS team members were laid off, my engagement ended, and Mitya followed the Hardware VP to the same well funded startup the Hardware VP had left for. A little over a year later, Trent also left Nakashima Incorporated. 图13：在即将到来的裁员的阴影下，许多人开始自愿离职。大约在同一时间，一家资金充裕的新创业公司开始积极招聘MCS部门中一些相对来说更熟练的工程师和经理。其中一位离职者就是BIOS团队所需要汇报的硬件VP。新的工程SVP选择不再需要新的硬件VP，而是让所有先前汇报给硬件VP的人员向软件VP汇报。由于软件VP总是消极地对抗敏捷导入工作，这并不是个好兆头。在几个月的时间里，一半的BIOS团队成员被解雇了，我的工作也结束了，米提亚跟随硬件VP去了那家资金充足的初创公司。一年多后，特伦特也离开了中岛公司。</figcaption>
+  <figcaption>图13：在即将到来的裁员阴影下，许多人开始自愿离职。大约在同一时间，一家资金充裕的新创公司开始积极招聘MCS部门中一些更为熟练的工程师和经理。其中一位离职者就是BIOS团队所汇报的硬件VP。新的工程SVP选择不再招新的硬件VP，而是让所有先前汇报给硬件VP的人员向软件VP汇报。由于软件VP总是消极地对抗敏捷导入工作，这不是个好兆头。在几个月的时间里，一半BIOS团队成员被解雇，我的工作也结束了，米提亚跟随硬件VP去了那家资金充足的初创公司。一年多后，特伦特也离开了中岛公司。</figcaption>
 </figure>
 
-## BIOS Component Boundaries and Geography BIOS的组件边界和员工的地理位置 {#bios-component-boundaries-and-geography}
+## BIOS Component Boundaries and Geography BIOS的组件边界和地理位置 {#bios-component-boundaries-and-geography}
 
 <a name="figure14"></a>
 <figure>
