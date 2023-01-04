@@ -549,22 +549,17 @@ An effort to begin to resolve these issues can be seen in the _BIOS Definition o
 ## BIOS Geographically Dispersed Teams BIOS地理位置分散的团队 {#bios-geographically-dispersed-teams}
 
 From a perspective of optimizing for highest level adaptiveness in the service of learning and delivering highest-level value at a global level, there should never have been as many engineers working on the product as there were. The same could be said regarding the engineers being spread across multiple locations and timezones. Yet, that is where things started from, and trying to convince the organization otherwise from the beginning would not have been successful.
-如果要优化“学习服务中最高级别的适应性，以及在全球范围内，交付最高级别的价值”，从这个角度来看，不应该有那么多的工程师在一个产品上工作。对于分布在多个地点和时区的工程师来说，情况也是如此。然而，这正是我们试图说服组织开始的地方，否则从一开始就不会成功。
+从优化最高级别的适应性以服务于学习并交付全局最高的价值这个角度来说，就不应该有那么多的工程师工作在这个产品上。就分布在多个地点和时区的工程师而言，也是如此。然而，这就是我们的起点，从一开始试图说服组织不要这样做是不会成功的。
 
 The criticality of being prepared for the Intel release date, coupled with the massive amount of copy-paste reuse in the legacy code base made for a challenging situation. Without the combined efforts of most of the US based BIOS team members there would not be enough combined knowledge to make the required changes in time, and to do so while concurrently addressing the poor engineering practices which caused the situation. In contrast, adding yet another region in a hugely different timezone just slowed things down.
-为英特尔发布日期做好准备的关键性，再加上遗留代码库中大量使用了复制粘贴，使得这一局面充满挑战。如果没有大多数美国BIOS团队成员的共同努力，就不会有足够的综合知识及时做出所需要的更改，同时包括解决导致这种情况的不良工程实践。相比之下，在一个完全不同的时区添加另一个地区只会降低速度。
+为英特尔发布日期做好准备的关键性，再加上遗留代码库中大量使用了复制粘贴，使得这一局面充满挑战。如果没有大多数美国BIOS团队成员的共同努力，就不会有足够的整体知识来及时做出所需要的更改，并同时解决导致这种情况的不良工程实践。相比之下，增加另一个处于完全不同时区的地区只会拖慢进展。
 
 A few different quotes from the LeSS books help highlight this point:
-LeSS书中的一些不同的引用有助于突显这一点：
+LeSS书中的一些不同引用有助于突显这一点：
 
->Start with a small group of great people, and only grow when it really starts to hurt.” That rarely happens. &mdash; **_Scaling Lean & Agile Development_**
+>“从一小群很棒的人开始，并且只有真正开始痛的时候才增长。”很少这样发生。&mdash; 《精益和敏捷开发大型应用指南》
 >
->Rather than debate if so many people are needed, we try to support people to improve their development with agile and lean principles so that at some point it becomes clear to the group that they have too many people in too many places. &mdash; **_Practices for Scaling Lean & Agile Development_**
->
->“从一小群很棒的人开始，并且，只有他们在真正开始受伤时才会成长。”这种情况很少发生。-大规模精益和敏捷开发
->
->与其要争论是否需要这么多人，我们试图支持人们以敏捷和精益的原则来提升他们的开发水平，以便在某一节点上，团队就可以清楚地看到，他们在太多的地方有太多的人。-大规模精益和敏捷开发的实践
-
+>不去争论是否需要这么多人，而是试图支持大家用敏捷和精益原则来提升开发水平，以便在某个时候，团队自己会清楚他们在太多的地方有着太多的人。&mdash; 《精益和敏捷开发大型应用实战》
 
 ## Quality Assurance Group Very Poorly Named 质量保证小组-一个很糟糕的名称 {#quality-assurance-group-very-poorly-named}
 
