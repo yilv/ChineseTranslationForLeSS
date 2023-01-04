@@ -499,55 +499,52 @@ BIOS面向LeSS的导入发生在公司高管层活跃变动期间。当开始BIO
 <figure>
 <img src="./img/case-studies/data-center-product-company/BIOS_PeopleGeo_WithTitle.png" alt="MCS Division People By Geography">
 <figcaption>
-Figure 14: The vast majority of the people within the MCS Division are co-located on one or two floors within a single building in their respective cities. We were careful to ensure BIOS team members were generally sitting within a few feet of their teammates. Workstations were generally friendly to swarming. Half the work occurred in lab space so many team members effectively had two working locations. With the exception of a handful of the testing specialists, everyone in the US reported through Mitya. Even the testing specialists were co-located, fully allocated to BIOS, and treated just like everyone else on the teams. There were one or two BIOS developers who were dispersed but these were the only exceptions.
+图14：MCS部门内的绝大多数人都在其各自城市的一栋建筑内同一层或两层工作。我们小心地确保BIOS团队成员基本坐在离队友几英尺的地方。工作台对群聚工作也很友好。一半工作发生在实验室，所以许多团队成员实际上有两个工作地点。除了少数测试专家外，在美国的每个人都汇报给米提亚。即使测试专家也被安排在同一地点工作，完全分配给BIOS，并和团队中其他人一样对待。有一两个BIOS开发人员分散在不同地点，但这是唯一的例外。
 <br/><br/>
-Unfortunately, we didn’t manage to officially remove specialist manager roles as part of a matrix structure. Nevertheless, managers didn’t emphasize or hold onto specialism but supported people being multi-skilled.
-图14：MCS部门内的绝大多数人都在其各自城市的一栋建筑内的同一层或两层内工作。我们小心翼翼地确保BIOS团队成员基本坐在离队友几英尺的地方。工作站也几乎都很方便移动。一半的工作发生在实验室，所以许多团队成员实际上有两个工作地点。除了少数测试专家外，所有在美国的人都汇报给米提亚。即使是测试专家也被安排在同一地点工作，完全分配给BIOS，并像对待团队中的其他人一样对待他们。有一两个BIOS的开发人员不在同一地点工作，但这是唯一的例外。
-<br/><br/>
-不幸的是，我们没有成功将专家经理的角色作为矩阵结构的一部分正式移除。尽管如此，经理们并没有强调或坚持保持人才专业化，而是为人才的多技能发展提供支持。
+不幸的是，我们没有成功将作为矩阵结构一部分的专家经理角色正式移除。尽管如此，经理们并没有强调或坚持专业化，而是支持大家发展多技能。
 </figcaption>
 </figure>
 
 <a name="figure15"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/BIOS_HW_Gen_Expansion_WithTitle.png" alt="BIOS Feature Team Expansion By Hardware Generation">
-  <figcaption>Figure 15: MCS hardware generation was used as one of the component dimensions in defining the boundaries of the LeSS-oriented adoption within the BIOS component. With the supportive hardware VP and a few trips to India it is likely Mitya and I would have been able to successfully work out the politics. Unfortunately, the change in the VP layer coupled with the layoffs precluded this strategy. The information in the timeline and organizational structure diagrams is relevant to what you see in this diagram. 图15: 在面向LeSS的导入过程中，MCS硬件的更新换代被用作定义边界的组件维度之一。有了硬件VP的支持，再加上几次印度之行，我和米蒂亚很可能能够成功地解决政治问题。不幸的是，VP层的变化加上裁员，使得这一战略无法实施。您可以在该图中看到，随着时间线的移动，组织架构图也相应变化的信息。</figcaption>
+  <figcaption>图15: MCS硬件代次在定义BIOS组件内面向LeSS导入的边界时被用作其中一个组件维度。有硬件VP的支持，再加上几次印度之行，我和米提亚有可能成功地解决政治问题。不幸的是，VP层的变化加上裁员使得这一策略无法实施。在时间线和组织架构图中的信息与你在本图中看到的是相关的。</figcaption>
 </figure>
 
 Due to historical reasons the reality was that each new generation of hardware had an entirely separate BIOS code base with very little factoring of common functionality into reusable sub-components.
-由于历史原因，现实是每一代新硬件都有一个完全独立的BIOS代码库，几乎没有将通用功能提取成可重用的子组件。
+由于历史原因，现实是每一代新硬件都有一个完全独立的BIOS代码库，几乎没有提取任何通用功能成为可重用的子组件。
 
 Interestingly this provided an opportunity to grow BIOS teams at a more sustainable pace. As previously uninvolved BIOS developers would finish working on escaped defects related to earlier production hardware generations, we would form additional cross-functional teams within the LeSS-oriented structure. The dynamics of the BIOS code base and the relationship with AMI will be explained in more detail further down.
-有趣的是，这提供了一个以更可持续的速度去发展BIOS团队的机会。由于先前未参与BIOS开发的人员即将完成前几代产品硬件缺陷修复工作，因此我们可以在面向LeSS的架构中，组建额外的跨功能团队。BIOS代码库的动态以及其与AMI的关系将在下面更详细地解释。
+有趣的是，这提供了一个以更可持续的步伐去发展BIOS团队的机会。当先前未参与的BIOS开发人员完成前几代硬件缺陷的修复工作时，我们就可以在面向LeSS的结构中组建额外的跨职能团队。BIOS代码库的动态以及其与AMI的关系将在下面更详细地解释。
 
 This provided a half-year reprieve to establish cross-functional BIOS teams with US based people who reported through Mitya before needing to more actively involve the BIOS developers and managers in India. By the time the India BIOS engineers began to work on the same BIOS code base as the US based BIOS engineers, the US based BIOS engineers had jelled enough to push back when the India-based BIOS engineers not yet on a cross-functional BIOS team failed to meet the same improved quality standards.
-在需要更积极地影响印度的BIOS开发人员和管理人员之前， 这为那些在美国向米提亚汇报的人员建立跨职能BIOS团队的提供了半年缓期。当印度BIOS工程师开始使用与美国BIOS工程师相同的BIOS代码库时，由于印度BIOS工程师尚未真正成为一个跨功能BIOS团队而导致达不到相同的质量标准时，美国BIOS工程师这时已经团结起来进行抵制。
+在需要更积极地影响印度的BIOS开发人员和经理之前，基于在美国向米提亚汇报的人员建立的跨职能BIOS团队有半年的缓冲。当印度BIOS工程师开始与美国BIOS工程师工作于同一个BIOS代码库时，美国BIOS工程师这时已经足够定型，从而能对还没未加入跨职能BIOS团队的印度工程师没达到同等质量标准的情况进行抵制。
 
 Initial struggles were often as simple as ensuring India-based BIOS engineers were being careful not to check-in code unless it built cleanly and passed basic smoke tests. Additional automated testing along with a private CI server within the cross-functional BIOS teams’ direct control helped the U.S.-based teams detect when problems were introduced by a developer not following the improved quality standards.
-最初的挣扎通常很简单，比如确保印度的BIOS工程师小心翼翼地，不签入那些构建不干净的代码，并通过了基本的冒烟测试。在跨职能BIOS团队的直接控制下，额外的自动测试以及一个私有CI服务器成功地帮助美国团队检测到问题是由某个不遵循已经改进的质量标准的开发人员引入的。
+最初的抗争通常很简单，诸如确保印度的BIOS工程师足够当心，只有在干净构建并通过基本的冒烟测试时才提交代码。额外的自动化测试，以及一个由跨职能BIOS团队直接控制的私有CI服务器，帮助美国团队在问题被某个不遵循质量标准的开发人员引入时就能检测到。
 
 The success of the cross-functional BIOS teams ensured Mitya and I were in a much stronger political position to begin resolving the underlying structural issues. Mitya was delivering Nakashima-wide presentations on the improvements within the cross-functional BIOS teams at the behest of the Project Management SVP; so our success was definitely getting noticed.
-跨职能BIOS团队的成功确保了米提亚和我在开始解决潜在的结构性问题方面处于更强大的政治地位。米提亚应项目管理SVP的要求，在全中岛公司就跨职能BIOS团队内的改进进行了演讲；我们的成功显然引起了注意。
+跨职能BIOS团队的成功让米提亚和我处于更强的政治地位，从而可以开始解决根本的结构性问题。米提亚应项目管理SVP的要求，就跨职能BIOS团队的改进在全中岛公司做了演讲；我们的成功显然引起了注意。
 
 The obvious solution for the India-based BIOS people was to on-board them as one or two additional cross-functional BIOS teams. Ideally all of these structural problems would have been solved from the very beginning, yet that had not been politically viable when we started. Instead, we did what was achievable. We intentionally creatively isolated and delayed the problem, while setting ourselves up for a future political win. We not only anticipated friction from two separate operating models, we were counting on it to make meaningful structural change politically achievable in the future.
-对于印度的BIOS人员来说，显而易见的解决方案是将他们作为一个或两个额外的跨功能BIOS团队加入。理想情况下，所有这些结构性问题都会从一开始就得到解决，然而，当我们开始时，这在政治上并不可行。相反，我们做了一些可以实现的事情。我们有意创造性地孤立和拖延这个问题，同时为未来的政治胜利做好准备。我们不仅预计到了两种不同运营模式之间的摩擦，我们还指望它能在未来实现有意义的结构变革。
+对于印度的BIOS人员来说，显而易见的解决方案是将他们作为一个或两个额外的跨功能BIOS团队加入。理想情况下，所有这些结构性问题从一开始就已经得到解决，然而当我们开始时，这在政治上并不可行。相反，我们做了能做的。我们有意创造性地隔离并拖延了这个问题，同时为未来的政治胜利做好准备。我们不仅预计到了两种不同运营模式之间的摩擦，还依靠它在将来实现有意义的结构变革。
 
 Mitya and I were getting ready to travel to India and otherwise starting to work through the politics, about the time the supportive hardware VP resigned and the layoffs were announced. Had the hardware VP remained in place I think we would have been able to resolve the more pressing political challenges within the BIOS component boundary. We already had an India-based BIOS manager on our side, but we needed to work through some issues in the director layer.
-米提亚和我当时已经准备好了前往印度，否则就要从政治入手了，大约在支持性硬件VP辞职并宣布裁员的时候。如果硬件VP仍然在位，我认为我们将能够解决BIOS组件边界内更有压力的政治挑战。我们已经有了一个基于印度的BIOS管理者站在我们这边，但我们还需要解决董事层的一些问题。
+米提亚和我当时已经准备好前往印度，如果不是支持我们的硬件VP辞职并宣布裁员的话，就要开始解决政治问题了。如果硬件VP还在，我认为我们将能够解决BIOS组件边界内更紧迫的政治挑战。我们已经有了一个印度的BIOS经理站在我们这边，但还需要解决主管层面的一些问题。
 
 ### Separate Codebases Not Good 单独的代码库不好 {#separate-codebases-not-good}
 
 Each new generation of hardware having an entirely separate BIOS code base was not a good thing. We used that fact to our advantage, yet it was far from desirable.
-每一代新硬件都有一个完全独立的BIOS代码库，这不是一件好事。我们利用这一事实为自己创造了优势，但这远不是理想的。
+每一代新硬件都有一个完全独立的BIOS代码库，这不是一件好事。我们善加利用了这一事实，但这远不是我们想要的。
 
 There was entirely too much copy-paste reuse, inadequate automated test coverage to enable developers to confidently make backward compatible changes, and a failure to use the AMI plugin layer to isolate any MCS related changes from AMI codebase changes.
-有太多的复制粘贴重用，自动化测试覆盖率不足，无法让开发人员自信地进行向后兼容的更改，以及未能使用AMI插件层将任何与MCS相关的更改与AMI代码库更改隔离开来。
+有太多的复制粘贴重用，自动化测试覆盖率不足以让开发人员自信地进行向后兼容的改动，以及未能使用AMI插件层将任何与MCS相关的改动与AMI代码库改动隔离开来。
 
 This self-inflicted overburden made it far more difficult to adapt to changes in the Intel CPUs than would otherwise have been the case. Ironically, the _ability to adapt to changes_ in Intel CPUs faster than Intel’s release cycle is extremely critical to the MCS division’s continuity of revenue and market share.
-这种自我造成的过重负担使其更难适应英特尔CPU的变化。具有讽刺意味的是，比英特尔发布周期更快地适应英特尔CPU变化的能力对MCS部门的收入和市场份额的持续性至关重要。
+这种自我造成的过重负担使其更难适应英特尔CPU的变化。具有讽刺意味的是，比英特尔发布周期更快地*适应英特尔CPU变化的能力*对MCS部门收入和市场份额的持续性至关重要。
 
 An effort to begin to resolve these issues can be seen in the _BIOS Definition of Done_ section discussed later.
-开始解决这些问题的努力可以在稍后讨论的“完成的BIOS定义”部分中看到。
+开始解决这些问题的努力可以在稍后讨论的*BIOS完成的定义*部分中看到。
 
 ## BIOS Geographically Dispersed Teams BIOS地理位置分散的团队 {#bios-geographically-dispersed-teams}
 
