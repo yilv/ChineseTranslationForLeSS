@@ -561,16 +561,16 @@ LeSS书中的一些不同引用有助于突显这一点：
 >
 >不去争论是否需要这么多人，而是试图支持大家用敏捷和精益原则来提升开发水平，以便在某个时候，团队自己会清楚他们在太多的地方有着太多的人。&mdash; 《精益和敏捷开发大型应用实战》
 
-## Quality Assurance Group Very Poorly Named 质量保证小组-一个很糟糕的名称 {#quality-assurance-group-very-poorly-named}
+## Quality Assurance Group Very Poorly Named 质量保证小组的命名很糟糕 {#quality-assurance-group-very-poorly-named}
 
 It is important to realize that quality can not be bolted on after the fact. Why? Product quality is the outcome of the entire product development system as a whole, not the responsibility of a separate quality control group. Although the formal title of the testing group was “Quality Assurance”, a more accurate title would be “Quality Control”.
-一个重要的认识是，质量问题是不能在事后被保证的。为什么？产品质量是整个产品开发系统的结果，而不是单独的质量控制小组的能负责的。虽然测试组的正式名称是“质量保证”，但更准确的名称是“质量控制”。
+意识到质量问题不能在事后被保证是很重要的。为什么？产品质量是整个产品开发系统的结果，而不是单独的质量控制小组的责任。虽然测试组的正式名称是“质量保证”，但更准确的名称应该是“质量控制”。
 
 A proper usage of quality assurance would refer to activities such as establishing test-first or test-driven development, establishing effective code review practices, putting static code analysis tooling in place, establishing continuous integration behaviors, and establishing pairing or swarming behaviors. Notice none of these practices have anything to do with trying to bolt on quality once the software development has been deemed “code-complete”, or other nonsense.
-正确使用质量保证指的应该指向建立测试优先或测试驱动开发、建立有效的代码评审实践、将静态代码分析工具放置到位、建立持续集成的行为，以及建立结对或群集编程等活动。请注意，一旦软件开发被视为“代码完成”，再企图采用这些行为保证质量，那便成为无稽之谈，再也没有意义。
+质量保证这个说法合适的使用应该是指诸如建立测试先行或测试驱动开发、建立有效的代码评审实践、实施静态代码分析工具、建立持续集成的行为，以及建立结对或群聚编程等活动。请注意，以上活动没有任何一个是在软件开发被认为“代码完成”或类似说法之后尝试保证质量。
 
 The Quality Assurance group was indeed very poorly named. Even the very naming implies a broken mental model of how to best develop high-quality products. Yet, for the sake of historical accuracy I will continue to refer to the organizational branch which contained all the testers within the legacy structure as the QA group. Please remember this distinction when reading this document.
-质量保证小组的名称实在很糟糕。甚至连命名本身都暗示着“如何最好地开发高质量产品“的思维模型已经支离破碎。然而，为了历史的准确性，我将继续将包含遗留结构中所有测试人员的组织分支称为QA组。阅读本文件时请记住这一区别。
+质量保证小组的名称实在很糟糕。甚至连命名本身就意味着对如何最好地开发高质量产品有着错误的心智模式。然而，为了历史的准确性，我将继续把包含遗留结构中所有测试人员的组织分支称为质量保证小组。阅读本文时请记得这一差别。
 
 ## BIOS Testers Brought End-to-End Knowledge BIOS测试人员带来端到端的知识 {#bios-testers-brought-end-to-end-knowledge}
 
