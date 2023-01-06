@@ -575,16 +575,16 @@ The Quality Assurance group was indeed very poorly named. Even the very naming i
 ## BIOS Testers Brought End-to-End Knowledge BIOS测试人员带来端到端的知识 {#bios-testers-brought-end-to-end-knowledge}
 
 The breadth and complexity of MCS coupled with a history of over-specialization, meant very few people understood the end-to-end product as well as the testers who had previously spent most of their time doing end-to-end testing in the legacy structure. Consequently, the testers brought just as much value to their respective BIOS teams as the traditional BIOS firmware developers.
-MCS的广度和复杂性，再加上有史以来过度的专业化，意味着很少有人了解端到端产品，也很少有测试人员以前在传统结构中花费大部分时间进行端到端测试。因此，测试人员为他们各自的BIOS团队带来的价值与传统的BIOS固件开发人员没有什么区别。
+MCS的广度和复杂性，再加上一直以来的过度专业化，意味着很少有人像测试人员那样了解端到端产品，他们以前在传统结构中花费大部分时间进行端到端测试。因此，测试人员为他们各自的BIOS团队带去的价值与传统的BIOS固件开发人员一样多。
 
 The BIOS team members from a testing background still formally reported up through the Quality Assurance VP. Her support and that of the relevant QA Director was critical in enabling de facto equality within the BIOS teams. Retaining this formal reporting relationship was useful in obtaining the organizational acceptance of the radically improved quality being produced by the BIOS LeSS-oriented teams.
-BIOS团队里的有测试背景的成员仍然通过质量保证VP做正式汇报。她的支持和相关QA主管的支持对于在BIOS团队中实现事实上的平等至关重要。保持这种正式的汇报关系有助于获得组织对BIOS面向LeSS的团队所生产的质量得到根本改善的认可。
+BIOS团队里有测试背景的成员仍然正式汇报给质量保证VP。她和相关质量保证主管的支持对于实现在BIOS团队中事实上的平等至关重要。保持这种正式的汇报关系有助于获得组织对BIOS面向LeSS团队大幅提高的质量的认可。
 
-Retaining a separate reporting structure for the testers  introduced a degree of systemic organizational fragility. A change in the Quality Assurance VP role could easily unravel much of the positive change that was happening. As a long-term goal, eliminating any formal testing specific distinction in the organizational structure would help avoid the risk of team members with a testing background being distracted by work unrelated to their team's Sprint Backlog.
-为测试人员保留单独的报告结构会带来一定程度的系统性组织脆弱性。质量保证VP角色的改变很容易瓦解正在发生的许多积极变化。作为一个长期目标，在组织架构中消除任何正式的测试特殊区分将有助于避免具有测试背景的团队成员被其它与其团队的Sprint Backlog不相干的工作转移注意力的风险。
+Retaining a separate reporting structure for the testers introduced a degree of systemic organizational fragility. A change in the Quality Assurance VP role could easily unravel much of the positive change that was happening. As a long-term goal, eliminating any formal testing specific distinction in the organizational structure would help avoid the risk of team members with a testing background being distracted by work unrelated to their team's Sprint Backlog.
+为测试人员保留单独的汇报结构会带来一定程度系统性的组织脆弱。质量保证VP角色的变动很容易就能瓦解正在发生的许多积极变化。作为一个长期目标，在组织架构中消除任何正式的专门区分测试将有助于避免具有测试背景的团队成员被其它与他们团队迭代待办列表不相干的工作转移注意力的风险。
 
 Chapter 3 in _Practices for Scaling Lean & Agile Development_ provides a comprehensive treatment of how to best approach testing at both a practical and strategic level.
-《大规模精益和敏捷开发实践》中的第3章全面介绍了在实践和战略的层面，如何最好地实现测试。
+《精益和敏捷开发大型应用实战》中的第三章全面介绍了在实践和战略层面如何最佳地对待测试。
 
 ## Expanded BIOS Multi-Component Goals and Constraints 扩展的BIOS多组件目标和限制 {#expanded-bios-multi-component-goals-and-constraints}
 
