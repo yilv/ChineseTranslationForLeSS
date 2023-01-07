@@ -617,10 +617,10 @@ Objectives within the BIOS group which supported the above goals included:
 * <span style="color:navy">致力于改进围绕MCS的BIOS组件的工匠实践。</span>
 * <span style="color:navy">尽可能避免合同游戏。</span>
 
-## BIOS Adoption Story in Diagrams Alone 图表中看到的BIOS导入的故事 {#bios-adoption-story-in-diagrams-alone}
+## BIOS Adoption Story in Diagrams Alone 仅从图中就能看到的BIOS导入故事 {#bios-adoption-story-in-diagrams-alone}
 
 Taken together the timeline diagram, the component boundary diagrams, the feature adoption maps, organizational chart, and feature team expansion by hardware generation diagrams along with every diagram’s respective caption provide a rather clear view of the overall story arch once you gain enough context to understand them.
-当您有足够的上下文来理解就可以发现，时间线图、组件边界图、功能导入图、组织图和功能团队根据硬件更新换代而扩展的图解，以及每个图的相关说明，它们一起提供了一个相当清晰的整体故事架构视角。
+当你有足够的上下文来理解时会发现，把时间线图、组件边界图、特性导入地图、组织结构图，和特性团队按硬件代次扩展图，以及每个图的相关说明放在一起提供了一个相当清晰的整体故事架构视角。
 
 ## BIOS Engineering and Cultural Challenges BIOS的工程和文化挑战 {#bios-engineering-and-cultural-challenges}
 
