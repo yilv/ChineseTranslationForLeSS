@@ -586,44 +586,35 @@ Retaining a separate reporting structure for the testers introduced a degree of 
 Chapter 3 in _Practices for Scaling Lean & Agile Development_ provides a comprehensive treatment of how to best approach testing at both a practical and strategic level.
 《精益和敏捷开发大型应用实战》中的第三章全面介绍了在实践和战略层面如何最佳地对待测试。
 
-## Expanded BIOS Multi-Component Goals and Constraints 扩展的BIOS多组件目标和限制 {#expanded-bios-multi-component-goals-and-constraints}
+## Expanded BIOS Multi-Component Goals and Constraints 扩大的BIOS多组件目标和限制 {#expanded-bios-multi-component-goals-and-constraints}
 
 Although never formally documented outside of emails, whiteboard scribbles, and verbal conversations the goals of the BIOS LeSS adoption included:
-尽管在电子邮件、白板涂鸦和口头对话之外从未正式记录，但BIOS LeSS导入的目标包括：
+尽管从未在电子邮件、白板涂鸦和口头对话之外正式记录过，但BIOS的LeSS导入目标包括：
 
-* Improve the ability to adapt the MCS BIOS to any future changes in the MCS hardware, especially the routine periodic updates to the Intel chipsets.
-* Create a culture which values technical excellence and avoids the unproductive stress created by the _Contract Game_.
-* 提高MCS BIOS适应MCS硬件未来任何变化的能力，尤其是对Intel芯片组提供例行定期更新。
-* 创造一种重视技术卓越的文化，避免由“合同游戏”带来的非生产性压力。
+* 提高MCS的BIOS适应任何MCS硬件未来变化的能力，尤其是对Intel芯片组的例行定期更新。
+* 创造一种重视技术卓越的文化，避免由*合同游戏*带来的无益压力。
 
 BIOS support for the latest Intel chipset would seldom if ever be an important point of differentiation between the MCS product and that of its competitors, yet lack of parity during an Intel release event would drastically reduce market share and revenue overnight. This fact was well understood throughout the division’s management. Consequently the following constraint was critical:
-BIOS对最新Intel芯片组的支持, 很少情况下会成为MCS产品与其竞争对手之间的重要区别点，但在Intel发布活动期间缺乏对等性可能会使我们在一夜之间大幅降低市场份额和收入。整个部门的管理层都很清楚这一事实。因此，以下约束条件至关重要：
+BIOS对最新Intel芯片组的支持很难成为MCS产品与其竞争对手之间的重要差异点，但在Intel发布期间缺乏对等的支持则会让我们在一夜之间大幅降低市场份额和收入。整个部门的管理层都很清楚这一事实。因此，以下约束条件至关重要：
 
-* The BIOS agile adoption efforts could never be allowed to be the reason the MCS product could not support a production version of an Intel CPU.
-* BIOS敏捷导入的工作永远不能成为MCS产品无法支持英特尔CPU生产版本的原因。
+* BIOS敏捷导入的工作永远不允许成为MCS产品无法支持英特尔CPU生产版本的原因。
 
 Consequently, although the BIOS adaptability goal was not at the forefront of senior management’s mind to the extent it was in Mitya’s, the importance of the goal was still implicitly well understood and valued.
-因此，尽管BIOS的适应性目标在高级管理层心目中并地位并不如在Mitya心目中的那样，但该目标的重要性仍然得到了充分理解和重视。
+因此，尽管BIOS的适应性目标在高级管理层心目中的地位并不如米提亚那样，但该目标的重要性仍然默认得到了充分理解和重视。
 
 Despite this shared understanding, the extent of the dysfunction with the traditional legacy waterfall approach was not widely accepted. The _Contract Game_, poor engineering practices, and over-specialization were observable throughout the division.
-尽管有这样的共识，但传统瀑布式开发仍然广泛存在。整个部门都仍可以看到合同游戏、糟糕的工程实践，以及过度专的业化。
+尽管有这样的共识，但传统瀑布式开发带来的紊乱程度并没有被广泛地承认。整个部门都仍可以看到*合同游戏*、糟糕的工程实践，以及过度专业化。
 
 If you reflect on the goals above, you will find they resonate very strongly with both the LeSS perfection vision found in the _Organizational Perfection Vision_ guide mentioned in _Large-Scale Scrum: More with LeSS._ You will also find they resonate strongly with the two questions in that guide for discerning a real system improvement from a local optimization.
-如果你反思上述目标，你会发现它们与《大规模Scrum:MorewithLeSS》里提及的“组织完美愿景指南”中的LeSS完美愿景非常相似。您还可以发现，它们与该指南中的两个关于“从局部优化中识别真实的系统改进“的问题也有很强的联系。
+如果你反思上述目标，你会发现它们与《大规模Scrum》书中提到的*组织完美愿景*指南中的LeSS完美愿景非常相似。你还会发现，它们与该指南从局部优化中识别真正系统改进的两个问题也有很强的关联。
 
 Objectives within the BIOS group which supported the above goals included:
-BIOS组中用于支持上述目标的Objectives包括：
+为了支持上述目标，BIOS组内的目标包括：
 
-* <span style="color:navy">Establish a single BIOS-component backlog, to make the highest-value BIOS work more visible. Baby steps towards a single product-level backlog. </span>
-* <span style="color:navy">Expand the knowledge and skills of each engineer to encompass a broader portion of the product, thereby improving the adaptiveness of each team and the overall ability to switch to and then focus on newly-discovered  highest-value work.</span>
-* <span style="color:navy">Increased “whole product focus” (a LeSS principle)  by each BIOS team while transitioning towards an expanded BIOS multi-component boundary spanning a greater portion of MCS.</span>
-* <span style="color:navy">Work to improve the craftsmanship practices around the MCS BIOS component.</span>
-* <span style="color:navy">Avoid the Contract Game as much as possible.</span>
-* 
-* <span style="color:navy">建立单个BIOS组件的backlog，以使最高价值的BIOS工作变得更加可视化。慢慢地朝着一个单独产品级别的backlog迈进。</span>
-* <span style="color:navy">扩展每个工程师的知识和技能，以涵盖产品的更广泛部分，从而提高每个团队的适应能力，以及可以切换到并专注于新发现的最高价值工作的整体能力。</span>
-* <span style="color:navy">每个BIOS团队增强了“整个产品聚焦”（一个LeSS原则）的理念，同时向扩展的BIOS多组件边界的过渡，该边界跨越了MCS的大部分。</span>
-* <span style="color:navy">致力于改进MCS BIOS组件的craftsmanship实践。</span>
+* <span style="color:navy">建立单一的BIOS组件待办列表，以使最高价值的BIOS工作更加可见。渐进地迈向一份单一的产品级别待办列表。</span>
+* <span style="color:navy">扩展每个工程师的知识和技能，以涵盖产品的更广泛部分；从而提高每个团队的适应能力，以及切换并专注于新发现的最高价值工作的整体能力。</span>
+* <span style="color:navy">在转向一个扩大的、跨越MCS更大部分的BIOS多组件边界的同时，增加每个BIOS团队的“整体产品焦点”（一个LeSS原则）。</span>
+* <span style="color:navy">致力于改进围绕MCS的BIOS组件的工匠实践。</span>
 * <span style="color:navy">尽可能避免合同游戏。</span>
 
 ## BIOS Adoption Story in Diagrams Alone 图表中看到的BIOS导入的故事 {#bios-adoption-story-in-diagrams-alone}
