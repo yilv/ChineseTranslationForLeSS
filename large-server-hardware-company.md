@@ -672,43 +672,30 @@ There was enough work to keep around forty engineers busy. With better craftsman
 Due to historical reasons, there were BIOS focused software, hardware, and test engineers spread across greater Portland, San Francisco, and Bengaluru. Any plan to scale the teams would have to solve the distributed problem. Fortunately, we were somewhat able to self-organize into co-located teams. Furthermore, the work being done by Bengaluru was somewhat independent of the efforts in Portland and San Francisco.
 由于历史原因，专注于BIOS的软件、硬件和测试工程师遍布波特兰、旧金山和班加罗尔。任何扩大团队规模的计划都必须解决地理分布的问题。幸运的是，我们在某种程度上能够自组织形成同一地点的团队。此外，班加罗尔的工作多少独立于波特兰和旧金山的工作。
 
-### Largely Innate Technical Challenges 巨大的先天技术挑战 {#largely-innate-technical-challenges}
+### Largely Innate Technical Challenges 多半先天的技术挑战 {#largely-innate-technical-challenges}
 
 Although many of the challenges the MCS BIOS teams faced had been self-inflicted, some were largely inherent to the work itself. These included:
-尽管MCS BIOS团队面临的许多挑战都是自己造成的，但有些挑战很大程度上是工作本身固有的。其中包括：
+尽管MCS的BIOS团队面临的许多挑战都是自己造成的，但有些挑战很大程度上是工作本身固有的。其中包括：
 
-* Hardware updates to the prototype chipsets and boards would arrive periodically. The typical lead time for fabricating a new board design was around six weeks. One could argue some of this was less about the physics and more about organizational impediments.
-* 原型芯片组和电路板的硬件更新会定期到达。制造新电路板设计的典型时长约为六周。有人可能会说，其中一些问题与其说是物理问题，不如说是组织障碍。
-* Prototype chipsets were just as likely to be responsible for problems as the firmware. Consequently, significant aspects of testing and troubleshooting required hands-on work in the lab.
-* 原型芯片组就像固件一样很可能是问题所在。因此，重要的测试和故障排除n需要在实验室进行实际操作。
-* The x86 BIOS toolchain is extremely old and crufty as there was insufficient economic incentive for AMI to make significant investments improving the tooling.
-* x86 BIOS工具链非常陈旧，因为AMI没有足够的经济激励来进行重大投资以改进工具。
-* Software engineering practices such as automated unit testing are generally lacking within the entire world-wide x86 BIOS development culture. This cultural history was clearly observable within the AMI codebase, which the MCS BIOS teams customized. This created the following complications:
-* 在整个全球x86 BIOS开发文化中，自动化单元测试等软件工程实践基本都是缺乏的。我们可以在MCS BIOS团队定制的AMI代码库中清楚地观察到这种文化历史。这导致了以下并发症：
-    + Any unit test tooling had to be entirely hand-rolled.
-    + Wedging an effective dependency inversion mechanism into the AMI BIOS code base was much harder than it would have been in your typical Java or C# framework.
-    + No books, articles, forum posts, example code, or other resources were available to provide unit test guidance in a BIOS context.
-    + The concept of automated unit testing, yet alone test-first or TDD practices, was completely foreign to the MCS BIOS engineers.
-    + 任何单元测试工具都必须完全人工测试。
-    + 将有效的依赖性反转机制嵌入AMI BIOS代码库比在典型的Java或C#框架中要困难得多。
-    + 没有书籍、文章、论坛帖子、示例代码或其他资源可用于在BIOS环境中提供单元测试指导。
-    + 对于MCS BIOS工程师来说，自动化单元测试的概念是完全陌生的，更不用说的测试先行或TDD实践了。
-* Everything in the world of low-level firmware development is more tedious than is typical of your average software development effort. A few examples relevant to the MCS BIOS include:
-* 低级固件开发领域的一切都比一般软件开发工作更加乏味。与MCS BIOS相关的几个例子包括：
-    + No operating system services exist because there is no operating system.
-    + Code must be cross-compiled and then flashed to the target.
-    + No TCP/IP network stack exists in early stages of the BIOS boot process, which makes it particularly difficult to communicate with the target early on. Early communication with the target device was limited to serial port communications and similar constrained mechanisms.
-    + Most firmware development engineers tend to be people with greater microelectronics engineering expertise than software engineering expertise.
+* 定期会有原型芯片组和电路板的硬件更新。制造新电路板设计通常的前置时间约为六周。有人可能会说，其中一些问题与其说是物理问题，不如说是组织障碍。
+* 原型芯片组有问题的可能性与固件同样大。因此，测试和故障排除的重要方面需要在实验室实际操作。
+* x86的BIOS工具链非常陈旧，因为AMI没有足够的经济激励来进行重大投资以改进工具。
+* 在整个全球x86的BIOS开发文化中，诸如自动化单元测试这样的软件工程实践基本都是缺乏的。我们可以在MCS的BIOS团队定制的AMI代码库中清楚地观察到这种文化历史。这导致了以下并发症：
+    + 任何单元测试工具都必须完全手工搭建。
+    + 将有效的依赖反转机制嵌入AMI的BIOS代码库比在典型的Java或C#框架中要困难得多。
+    + 没有书籍、文章、论坛帖子、示例代码或其它资源可用于指导在BIOS环境中的单元测试。
+    + 对于MCS的BIOS工程师来说，自动化单元测试的概念是完全陌生的，更不用说测试先行或TDD实践了。
+* 底层固件开发的任何事都比一般软件开发工作更加乏味。与MCS的BIOS相关的几个例子包括：
     + 不存在操作系统服务，因为没有操作系统。
     + 代码必须经过交叉编译，然后闪存到目标。
-    + 在BIOS重启流程里，不存在TCP/IP网络堆栈，这使得早期与目标设备通信特别困难。与目标设备的早期通信仅限于串行端口通信和类似的受限机制。
-    + 大多数固件开发工程师倾向于拥有比软件工程专业知识更丰富的微电子工程专业知识。
+    + 在BIOS启动流程的早期阶段还不存在TCP/IP网络栈，这使得早期与目标设备通信特别困难。与目标设备的早期通信仅限于串行端口通信和类似的受限机制。
+    + 大多数固件开发工程师，相比软件工程专业知识，通常更懂微电子工程专业知识。
 
 None of the problems listed here are insurmountable. In many cases techniques from other domains such as large web application development already provide insight into how to solve many of these problems.
-这里列出的问题没有一个是无法克服的。在许多情况下，来自其他领域的技术（如大型web应用程序开发）已经提供了如何解决这些问题的方向。
+这里列出的问题没有一个是无法克服的。在许多情况下，来自诸如大型web应用程序开发之类其它领域的技术已经提供了如何解决这些问题的方向。
 
 For example, Java and C# both have sophisticated dependency injection frameworks available off-the-shelf. _Test Driven Development for Embedded C_ by James Grenning is one example of an attempt to help improve cross-pollination of these techniques.
-例如，Java和C#都有现成的复杂依赖注入框架。詹姆斯·格伦宁（James Grenning）的嵌入式C测试驱动开发（Test-Driven Development for Embedded C）就是一个偿试帮助改进这些技术进行交叉磨合运用的例子。
+例如，Java和C#都有现成先进的依赖注入框架。詹姆斯·格伦宁的《嵌入式C测试驱动开发》就是一个尝试帮助改进这些技术交叉传播的例子。
 
 # BIOS Adoption Efforts BIOS导入工作 {#bios-adoption-efforts}
 
