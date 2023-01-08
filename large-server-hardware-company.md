@@ -595,7 +595,7 @@ Although never formally documented outside of emails, whiteboard scribbles, and 
 * 创造一种重视技术卓越的文化，避免由*合同游戏*带来的无益压力。
 
 BIOS support for the latest Intel chipset would seldom if ever be an important point of differentiation between the MCS product and that of its competitors, yet lack of parity during an Intel release event would drastically reduce market share and revenue overnight. This fact was well understood throughout the division’s management. Consequently the following constraint was critical:
-BIOS对最新Intel芯片组的支持很难成为MCS产品与其竞争对手之间的重要差异点，但在Intel发布期间缺乏对等的支持则会让我们在一夜之间大幅降低市场份额和收入。整个部门的管理层都很清楚这一事实。因此，以下约束条件至关重要：
+BIOS对最新英特尔芯片组的支持很难成为MCS产品与其竞争对手之间的重要差异点，但在英特尔发布期间缺乏对等的支持则会让我们在一夜之间大幅降低市场份额和收入。整个部门的管理层都很清楚这一事实。因此，以下约束条件至关重要：
 
 * BIOS敏捷导入的工作永远不允许成为MCS产品无法支持英特尔CPU生产版本的原因。
 
@@ -614,7 +614,7 @@ Objectives within the BIOS group which supported the above goals included:
 * <span style="color:navy">建立单一的BIOS组件待办列表，以使最高价值的BIOS工作更加可见。渐进地迈向一份单一的产品级别待办列表。</span>
 * <span style="color:navy">扩展每个工程师的知识和技能，以涵盖产品的更广泛部分；从而提高每个团队的适应能力，以及切换并专注于新发现的最高价值工作的整体能力。</span>
 * <span style="color:navy">在转向一个扩大的、跨越MCS更大部分的BIOS多组件边界的同时，增加每个BIOS团队的“整体产品焦点”（一个LeSS原则）。</span>
-* <span style="color:navy">致力于改进围绕MCS的BIOS组件的工匠实践。</span>
+* <span style="color:navy">致力于改进围绕MCS的BIOS组件的工艺实践。</span>
 * <span style="color:navy">尽可能避免合同游戏。</span>
 
 ## BIOS Adoption Story in Diagrams Alone 仅从图中就能看到的BIOS导入故事 {#bios-adoption-story-in-diagrams-alone}
@@ -630,52 +630,47 @@ Hopefully you now have a decent high level understanding of the role the customi
 ### AMI provided foundation of BIOS code AMI提供了BIOS代码的基础 {#ami-provided-foundation-of-bios-code}
 
 The custom BIOS for MCS compute nodes had been created by modifying a constantly updated codebase licensed from AMI. Typical events driving AMI to make a continual stream of BIOS codebase changes include:
-MCS计算节点所定制的BIOS是通过修改一个AMI许可的持续更新的代码库创建的。驱动AMI进行持续BIOS代码库更新的典型事件包括：
+为MCS计算节点定制的BIOS是通过修改一个AMI许可的持续更新的代码库创建的。驱动AMI进行持续BIOS代码库更新的典型事件包括：
 
-* Intel changes an aspect of the hardware to firmware interface in their prototype chipsets or reference board designs
-* AMI adds support for this or that new BIOS functionality enabled by some improved features of the prototype Intel chipset or reference board designs
-* AMI fixes a bug that AMI or one of the license partners identified
-* AMI decides to change the BIOS codebase for any reason they believe makes sense
-* 
-* Intel在其原型芯片组或参考板设计中改变了一个从硬件到固件接口的方面
-* AMI增加了对Intel芯片组原型或参考板设计的一些改进功能所启用的新BIOS功能的支持
-* AMI修复了一个它的或者它的一个许可证合作伙伴发现的错误
-* AMI决定基于他们认为合理的任何原因更改BIOS代码库
+* 英特尔在其原型芯片组或参考板设计中改变了硬件到固件接口的一个方面
+* AMI增加了由英特尔芯片组原型或参考板设计的一些改善特性所带来的新BIOS功能的支持
+* AMI修复了一个它或者其许可合作伙伴发现的错误
+* AMI基于他们认为合理的任何原因决定更改BIOS代码库
 
 With largely stable interfaces between the MCS BIOS customizations and the AMI codebase, the impact of these normal AMI updates would be minimized. Alas that was seldom the case. Although some formal plug-ability existed with the AMI codebase, most of Nakashima's BIOS customizations had historically been made deep in the AMI codebase.
-如果能让MCS BIOS定制和AMI代码库之间的接口非常稳定，那么由这些常态化的AMI更新造成的影响就可以达到最小化。可惜这种情况很少发生。尽管AMI代码库中存在一些正式的插件功能，但中岛公司的大多数BIOS定制在历史上都是在AMI代码库内进行的。
+如果MCS的BIOS定制和AMI代码库之间的接口基本稳定，那么这些常态化的AMI更新带来的影响就可以最小化。可惜这种情况很少发生。尽管AMI代码库中存在一些正式插件功能，但中岛公司的大多数BIOS定制一直都是深入到AMI代码库内部。
 
 With each new chipset the MCS BIOS engineers would attempt to _copy_ functionality from customizations used to adapt older BIOS versions to older chipsets into code for the new prototype chipsets. Similarly, the MCS BIOS engineers would attempt to keep current with any AMI code changes, merge those into their active working branch, and then manually retest. Some of the testing required hands-on work in the lab, although far more of the testing could have been automated than historically had been.
-对于每一个新芯片组，MCS BIOS工程师都会尝试将旧BIOS版本适应旧芯片组的定制功能复制到新的原型芯片组的代码中。同样，MCS BIOS工程师会尝试保持任何AMI代码更改的最新状态，将这些更改合并到他们的活动工作分支中，然后手动重新测试。有些测试需要在实验室里亲自动手，尽管有很多测试的自动化程度可能已经远超于以往。
+对于每一个新芯片组，MCS的BIOS工程师都会尝试将旧BIOS版本适应旧芯片组的定制功能*复制*到新的原型芯片组的代码中。同样，MCS的BIOS工程师会尝试与任何AMI代码改动保持更新，将它们合并到活跃的工作分支上，然后手动重新测试。有些测试仍需要在实验室里亲自动手，尽管有更多测试是可以被自动化的。
 
-### Death March Culture Driven by Intel Releases 由英特尔发布主导的死亡行军文化 {#death-march-culture-driven-by-intel-releases}
+### Death March Culture Driven by Intel Releases 英特尔发布驱动的死亡行军文化 {#death-march-culture-driven-by-intel-releases}
 
 The cadence of the market is dominated by Intel chipset release dates. Hardware integrators are given early access to prototype chipsets and reference board architectures. Ability to co-ship with Intel release dates is critical to staying viable within the market.
-市场的节奏主要取决于英特尔芯片组的发布日期。硬件集成商可以尽早获得原型芯片组和参考板架构。能够与英特尔发布日期合作对于在市场上保持竞争力至关重要。
+市场节奏被英特尔芯片组的发布日期所主导。硬件集成商可以尽早获得原型芯片组和参考板架构。能够在英特尔发布日期同时发布对于在市场上保持竞争力至关重要。
 
 The intelligent organizational design decision would be to optimize for responsiveness to changes in Intel specifications. Unfortunately, the legacy organizational response had been to throw huge numbers of people at the problem and then death march towards a release date. Quality had inevitably been perpetually sacrificed on the altar of an impending release date.
-明智的组织设计决策是通过优化来加强对英特尔规格变化的响应能力。可不幸的是，传统的组织反应则是将大量的人投入到这个问题上，然后死死亡行军奔赴向发布日期。在即将到来的发行日期面前，质量不可避免永远地被牺牲了。
+明智的组织设计决策应该是优化提高对英特尔规格变化的响应能力。可不幸的是，传统的组织反应是将大量的人投入到这个问题上，然后朝发布日期死亡行军。在即将到来的发行日期面前，质量永远都是不可避免地被牺牲。
 
-### Loss of Nakashima MCS Tribal Knowledge 失去的中岛公司的MCS部落知识 {#loss-of-nakashima-mcs-tribal-knowledge}
+### Loss of Nakashima MCS Tribal Knowledge 中岛公司MCS部落知识的丢失 {#loss-of-nakashima-mcs-tribal-knowledge}
 
 Many of the people who initially built the constituent parts of Nakashima's MCS system left Nakashima over the years. As these people left, their tribal knowledge walked out the door with them. Ideally there would be extensive automated tests at all levels of the test pyramid and well crafted readable code. At a minimum there would at least be some useful documentation detailing the overall system architecture. As you would expect of any complex product developed under the delivery pressures of a waterfall culture, very little of any of this existed.
-多年来，许多最初建MCS系统组成部分的人离开了中岛公司。当这些人离开时，他们的部落知识也随之失去了。理想情况下，在测试金字塔的所有级别都应该有广泛的自动化测试和精心制作的可读代码，或者至少会有一些有用的文档详细说明整个系统架构。但是正如您所料，在瀑布文化的交付压力下开发的任何复杂产品，这些几乎都没有。
+多年来，许多最初建MCS系统组成部分的人离开了中岛公司。当这些人离开时，他们的部落知识也随之丢失了。理想情况下，应该在测试金字塔的所有级别都有广泛的自动化测试，以及精心制作的可读代码。至少会有一些有用的文档详细说明整个系统架构。但是正如你对在瀑布文化的交付压力下开发的任何复杂产品所能期待的那样，这些几乎都没有。
 
-### Intel BIOS is highly specialized Intel BIOS的高度专业化 {#intel-bios-is-highly-specialized}
+### Intel BIOS is highly specialized 英特尔BIOS的高度专业化 {#intel-bios-is-highly-specialized}
 
 AMI estimates there are only somewhere on the order of a couple thousand engineers around the world who are familiar with BIOS customization. Many of the x86 hardware firmware interface behaviors and defacto specifications require tribal knowledge dating back to the early years of the PC revolution.
-AMI估计全世界只有几千名熟悉BIOS定制的工程师。许多x86硬件固件接口的行为和实际规范需要追溯到PC革命早期的部落知识。
+AMI估计全世界只有几千名熟悉BIOS定制的工程师。许多x86硬件固件接口行为和实际规范需要追溯到PC革命早期的部落知识。
 
 In practice, each area of customization in the MCS BIOS is the result of one or two engineers digging deep into the AMI code base and reverse engineering what they find there. In some ways this is no different than what any professional software engineer spends their day doing, the difference is just how esoteric and frequent this is within BIOS development.
-实际上，MCS BIOS中的每个定制领域都是一两个工程师深入挖掘AMI代码库并对其进行逆向工程的结果。在某个角度上来看，这与任何专业软件工程师花一天的时间做的事情其实是一样的，不同的只是BIOS开发中有多深奥和频繁。
+实际上，MCS的BIOS中的每个定制领域都是一两个工程师深入挖掘AMI代码库并对其进行逆向工程的结果。在某种程度上，这与任何专业软件工程师日常做的事情并没有什么不同，差异只在于BIOS开发中更为深奥和频繁。
 
-### Large number of engineers over three geographies 三个地区的大量工程师 {#large-number-of-engineers-over-three-geographies}
+### Large number of engineers over three geographies 分布在三个地区的大量工程师 {#large-number-of-engineers-over-three-geographies}
 
 There was enough work to keep around forty engineers busy. With better craftsmanship practices it is likely far less people would eventually be needed. That said, it was going to take a tremendous amount of work and alignment just to dig out of all the self-inflicted technical problems.
-原本有足够的工作让大约40名工程师忙碌。随着更好的工艺实践，最终需要的人可能会远远比这少。也就是说，原本的巨大的工作量和相互对齐，只是用来解决所有自己造成的技术问题。
+有足够的工作让大约四十名工程师忙碌。随着更好的工艺实践，最终需要的人可能会远比这少。虽说如此，仅解决所有自己造成的技术问题就要花费巨大的工作量和对齐。
 
 Due to historical reasons, there were BIOS focused software, hardware, and test engineers spread across greater Portland, San Francisco, and Bengaluru. Any plan to scale the teams would have to solve the distributed problem. Fortunately, we were somewhat able to self-organize into co-located teams. Furthermore, the work being done by Bengaluru was somewhat independent of the efforts in Portland and San Francisco.
-由于历史原因，有以BIOS为中心的软件、硬件和测试工程师遍布波特兰、旧金山和班加罗尔。任何扩大团队规模的计划都必须解决这个地理分布的问题。幸运的是，我们在某种程度上能够自行组织成同一地点的团队。此外，在班加罗鲁所做的工作在某种程度上独立于波特兰和旧金山的工作。
+由于历史原因，专注于BIOS的软件、硬件和测试工程师遍布波特兰、旧金山和班加罗尔。任何扩大团队规模的计划都必须解决地理分布的问题。幸运的是，我们在某种程度上能够自组织形成同一地点的团队。此外，班加罗尔的工作多少独立于波特兰和旧金山的工作。
 
 ### Largely Innate Technical Challenges 巨大的先天技术挑战 {#largely-innate-technical-challenges}
 
