@@ -448,7 +448,7 @@ The newly formed BIOS teams were vastly more ***cross-functional*** than the leg
 新组建的BIOS团队比传统BIOS团队更**跨职能**。每个团队都有责任和能力修改BIOS并端到端测试任何改动。
 
 The newly formed BIOS teams were also ***self-managing*** and ***co-located*** from the start. Though due to the layoffs and other organizational churn they were not as ***long-lived*** as Mitya and I intended.
-新组建的BIOS团队也从一开始就**自管理**，并**在同一地点工作**。尽管由于裁员和其它组织变动，这些团队并没有像我和米提亚所期望的那样**长久**。
+新组建的BIOS团队也从一开始就**自管理**，并**同处一地**。尽管由于裁员和其它组织变动，这些团队并没有像我和米提亚所期望的那样**长久**。
 
 The _Feature Team Adoption Maps_ guide in _Large-Scale Scrum_ provides several useful definitions for describing teams. Two are:
 《大规模Scrum》书中的*特性团队导入地图*指南提供了几个有用的定义来描述团队。其中两个是：
@@ -670,7 +670,7 @@ There was enough work to keep around forty engineers busy. With better craftsman
 有足够的工作让大约四十名工程师忙碌。随着更好的工艺实践，最终需要的人可能会远比这少。虽说如此，仅解决所有自己造成的技术问题就要花费巨大的工作量和对齐。
 
 Due to historical reasons, there were BIOS focused software, hardware, and test engineers spread across greater Portland, San Francisco, and Bengaluru. Any plan to scale the teams would have to solve the distributed problem. Fortunately, we were somewhat able to self-organize into co-located teams. Furthermore, the work being done by Bengaluru was somewhat independent of the efforts in Portland and San Francisco.
-由于历史原因，专注于BIOS的软件、硬件和测试工程师遍布波特兰、旧金山和班加罗尔。任何扩大团队规模的计划都必须解决地理分布的问题。幸运的是，我们在某种程度上能够自组织形成同一地点的团队。此外，班加罗尔的工作多少独立于波特兰和旧金山的工作。
+由于历史原因，专注于BIOS的软件、硬件和测试工程师遍布波特兰、旧金山和班加罗尔。任何扩大团队规模的计划都必须解决地理分布的问题。幸运的是，我们在某种程度上能够自组织形成同处一地的团队。此外，班加罗尔的工作多少独立于波特兰和旧金山的工作。
 
 ### Largely Innate Technical Challenges 多半先天的技术挑战 {#largely-innate-technical-challenges}
 
@@ -954,7 +954,7 @@ Although the Portland team was largely co-located, there were initially a few cr
 The group decided on a two week cadence. We made sure the Sprint boundary was mid-week so that I could be available to the teams and not somewhere in the stratosphere sitting on a plane.
 
 
-## BIOS Retrospective Structure Adaptation {#bios-retrospective-structure-adaptation}
+## BIOS Retrospective Structure Adaptation BIOS回顾结构调整 {#bios-retrospective-structure-adaptation}
 
 We tried several variations on a combination of cross-team and per-team retrospectives. The retrospective structure was similar in spirit to the LeSS Sprint Rules, although it varied slightly in the details.
 
@@ -1003,167 +1003,161 @@ In LeSS, the overall retrospective is intended to address broader systemic issue
 
 See _Guide: Overall Retrospective_ in _Large-Scale Scrum: More with LeSS_ for more nuance around this topic.
 
-# BIOS Alignment to LeSS Rules {#bios-alignment-to-less-rules}
+# BIOS Alignment to LeSS Rules BIOS与LeSS规则的比对 {#bios-alignment-to-less-rules}
 
 Before going on to discuss a few more details and insights from the BIOS teams, it is instructive to review alignment to the formal LeSS Rules.
+在继续探讨来自BIOS团队的更多细节和洞察之前，检查与LeSS规则的一致性具有指导意义。
 
 <a name="figure23"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/chapter-10-galbraith-star-en.png" alt="Gilbrith’s Star Model">
-<figcaption>Figure 23: In Scaling Lean and Agile Development, Larman and Vodde talk about organizational strategy in terms of Jay Gilbrith’s star model. Some of the greatest problems in the LeSS adoption relate to Rewards and People, and their intersection with Structure. There was a failure to flatten the formal organizational structure, coupled with insufficient attention to compensation structures which reward technical proficiency at the same level as managerial proficiency. It is useful to keep Gilbrith’s model in mind as you read through the <a href="#bios-alignment-to-less-rules">BIOS Alignment to LeSS Rules</a> section. (Figure used with permission.).</figcaption>
+<figcaption>图23：在《精益和敏捷开发大型应用指南》书中，拉曼和沃代基于杰伊·加尔布雷思的星型模型讲述了组织策略。LeSS导入中的一些最大的问题跟激励和人员实践、以及它们与结构的相交部分相关。我们没能扁平化正式的组织结构，并且没有足够关注建立能够同等激励技术水平和管理水平的薪酬结构。当你阅读<a href="#bios-alignment-to-less-rules">BIOS与LeSS规则比对</a>章节时，把加尔布雷思的模型记在心中会有用。</figcaption>
 </figure>
 
-## LeSS Structure Alignment {#less-structure-alignment}
+## LeSS Structure Alignment LeSS结构比对 {#less-structure-alignment}
 
-* <span style="color:firebrick">Structure the organization using real teams as the basic organizational building block.</span>
-    >Yes
+* <span style="color:firebrick">采用真正的团队作为基本模块来构建组织。</span>
+    >是的
 
-* <span style="color:firebrick">Each team is (1) self-managing, (2) cross-functional, (3) co-located, and (4) long-lived.</span>
+* <span style="color:firebrick">每个团队（1）自管理、（2）跨职能、（3）同处一地，和（4）长久。</span>
 
-    >**_self-managing:_** Every team was self-managing from day one. The teams controlled how much work they pulled into a Sprint, collaboratively tasked out each Sprint, had full control of their architectural decisions within the BIOS codebase, ran their own daily scrums, and everything else one might expect of a self-managing team.
+    >**自管理:** 每个团队从第一天开始就自管理。团队控制拉入多少工作进入迭代，每个迭代协作分工，在BIOS代码库内能完全控制架构决策，运行自己的站会，以及你会对一个自管理团队有所期望的其它事情。
     >
-    >**_cross-functional:_** Early on each team tended to have a strong affinity for certain areas of the BIOS component. Growing into being more cross-functional even within the BIOS component took each team a while. As teams further evolved they began to progressively stretch themselves outside of their original affinities.
+    >**跨职能:** 起初每个团队倾向于对BIOS组件的某个领域有很强的归属感。即使在BIOS组件内部变得更跨职能也花费了每个团队一阵子时间。随着团队进一步演进，他们开始逐渐扩展到原先归属领域之外。
     >
-    >The existence of a common BIOS Component Backlog and single Fake Product Owner created structural forces which continually encouraged increasing levels of cross-training within and across teams.
+    >一份共同的BIOS组件待办列表和单一伪PO的存在产生了结构动力，它们持续鼓励增加在团队内和团队间的交叉培训程度。
     >
-    >As the BIOS teams worked to further stretch the BIOS component boundary up through the MCSA the teams slowly became further cross-functional from an overall MCS product perspective. This never reached its full potential, yet one team with an affinity for MCSA related BIOS work was certainly on that path. This topic will be explored further in the _[BIOS Component Boundary Expanded](#bookmark=id.1mrcu09)_ section.
+    >当BIOS团队工作进一步扩展BIOS组件边界到MCSA，团队慢慢地从整体MCS产品的角度也变得更跨职能了。虽然没能实现其完全的潜力，有一个紧密从事MCSA相关BIOS工作的团队无疑是在这条路上。这个话题将在[BIOS组件边界扩展](#bios-component-boundary-expanded)章节进一步探讨。
     >
-    >**_co-located:_** Each team was mostly co-located. Since the Portland team lacked knowledge in a few areas of the BIOS codebase, the Portland team initially had one or two members based in the San Francisco area. The teams worked to aggressively do the cross-training to resolve these exception cases. As I recall the San Francisco team based members of the Portland team were able to leave the Portland team and join one of the San Francisco teams within a few sprints.
+    >**同处一地:** 每个团队总体来看都是同处一地的。因为波特兰团队缺乏BIOS代码库中一些领域的知识，最初他们有一两位成员在旧金山地区。团队工作于积极交叉培训来解决这些例外情况。我记得波特兰团队中位于旧金山的成员在几个迭代之内就可以离开并加入到旧金山的团队了。
     >
-    >**_long-lived:_** The teams largely stayed intact for months on end. The massive layoffs obviously eventually impacted the longevity. There was also a bit of self-directed shuffling of members across teams as the Portland team became less dispersed and as more BIOS developers became available for working on the in-development hardware generation of BIOS. Generally speaking the newly available team members formed up new teams, with the original three teams remaining fairly stable.
+    >**长久:** 团队基本上连续几个月保持不变。很明显大量裁员最终影响到了长久性。当波特兰团队变得不那么分散，以及更多BIOS开发人员可以加入到开发中硬件代次的BIOS工作时，发生了一些团队之间成员的自发调整。大抵上新加入的成员组成了新的团队，而原先的三个团队保持了相当的稳定。
     >
-    >So the teams were not ultimately as long-lived as I would have liked, yet they certainly were not being randomly retasked to new teams every few months.
+    >因此，虽然团队最终没有像我希望的那样长久，但他们无疑也不是每几个月就被随机分配到新的团队。
     >
-    >When looking at longevity from a multi-year timescale, there was definitely a problem. In _Scaling Lean and Agile Development_, Larman and Vodde talk about organizational strategy in terms of Jay Gilbrith’s star model. Of the various elements, the Rewards and People elements were not given sufficient attention.
+    >当从若干年的时长来看长久性，则肯定是有问题的。在《精益和敏捷开发大型应用指南》中，拉曼和沃代基于杰伊·加尔布雷思的星型模型讲述了组织策略。在各种元素中，激励和人员实践的元素没有得到足够的重视。
     >
-    >Although the pre-existing compensation structure already provided some level of incentive for engineers to continue on a technical track, the financial and cultural incentives for moving up the managerial ladder remained much stronger. Similarly, the continual pressure cooker resulting from the commitment game being played at the highest levels of the division left little time for significant learning and professional growth.
+    >虽然之前的薪资结构已经对工程师继续在技术路线上发展提供了一定程度的激励，还是有强得多的在经济和文化上对转向管理路线的激励。同样，由于部门高层仍在继续承诺游戏而导致的持续压力使得几乎没有时间来进行大量学习和职业提升。
 
-* <span style="color:firebrick">The majority of the teams are customer-focused feature teams.</span>
+* <span style="color:firebrick">大多数团队是聚焦客户的特性团队。</span>
 
-    >Although the teams were largely vertically sliced within the BIOS component boundary, the BIOS component boundary was itself a compromise. As the BIOS teams matured we worked to establish an even more vertical expanded multi-component boundary slicing through the entirety of the MCS product, although never as vertical as we might have eventually achieved.
+    >虽然团队在BIOS组件边界内基本上是垂直切分的，BIOS组件边界本身就是一个妥协。随着BIOS团队的成熟，我们尝试建立贯穿整体MCS产品的更为垂直扩展的多组件边界，尽管从未达到我们可以最终实现的程度。
 
-* <span style="color:firebrick">Scrum Masters are responsible for a well-working LeSS adoption. Their focus is towards the Teams, Product Owner, organization, and development practices.</span>
+* <span style="color:firebrick">SM们负责一个运行良好的LeSS导入。他们关注于团队、PO、组织和开发实践。</span>
 
-    >Yes
+    >是的
 
-* <span style="color:firebrick">A Scrum Master does not focus on just one team but on the overall organizational system.</span>
+* <span style="color:firebrick">SM不只是关注一个团队，而是整个组织系统。</span>
 
-    >Yes
+    >是的
 
-* <span style="color:firebrick">A Scrum Master is a dedicated full-time role.</span>
+* <span style="color:firebrick">SM是一个专门的全职角色。</span>
 
-    >Yes
+    >是的
 
-* <span style="color:firebrick">One Scrum Master can serve 1-3 teams.</span>
+* <span style="color:firebrick">一个SM可以服务1-3个团队。</span>
 
-    >I was serving 5 teams by the time all of the US based BIOS engineers had been rolled into feature teams. In practice I shared much of the load with Mitya and others we were growing into Scrum Masters.
+    >在所有美国BIOS工程师都被融进特性团队时，我服务了5个团队。实际上我跟米提亚，还有其他几位我们有意发展的SM人选，分担了许多工作。
 
-* <span style="color:firebrick">In LeSS, managers are optional, but if managers do exist their role is likely to change. Their focus shifts from managing the day-to-day product work to improving the value-delivering capability of the product development system.</span>
+* <span style="color:firebrick">LeSS不强制有管理者角色，但是如果确实存在，他们的角色可能会改变。他们的焦点从管理日常的产品工作转向改善产品开发系统的价值交付能力。</span>
 
-    >Yes. Mitya, Trent and I kept the effective structure very flat. I don't recall Mitya ever focusing on managing the day-to-day BIOS component work.
+    >是的。米提亚、特伦特和我保持了非常扁平的有效结构。我不记得米提亚曾经关注于管理日常的BIOS组件工作。
 
-* <span style="color:firebrick">Managers’ role is to improve the product development system by practicing Go See, encouraging Stop & Fix, and “experiments over conformance.”</span>
+* <span style="color:firebrick">管理者的角色是通过实践现场观察、鼓励停下来修复，以及“实验优于遵从”来改善产品开发系统。</span>
 
-    >Yes.
+    >是的。
     >
-    >Mitya and I were both sitting with the SFO based teams and would also fly to Portland from time to time. Various examples of Go See and experiments over conformance include:
+    >米提亚和我都跟旧金山的团队坐一起，并且也时常飞去波特兰。各种现场观察和实验优于遵从的例子包括：
     >
-    >* Both Mitya and I would occasionally pair program with one or more BIOS developers and/or attend design discussions when deemed beneficial.
-    >* Mitya and I would actively meet with various people up, down, and across the organization to help work through numerous organizational impediments.
-    >* I spent significant time pairing with Emmett Brown as we worked out how to create automated unit tests for BIOS code.
-    >* I spent significant time pairing with a couple developers to stand up a CI server within the BIOS team’s control.
-    >* BIOS team retrospectives consistently identified at least one experiment every Sprint which the teams took action on in the respective subsequent Sprint.
+    >* 米提亚和我都会不时跟一个或更多个BIOS开发人员结对编程，和/或在被认为有益时参加设计讨论。
+    >* 米提亚和我会积极接触组织上下及各处的人来帮助解决各种组织障碍。
+    >* 我花费了大量时间与埃米特·布朗结对来解决如何为BIOS代码创建自动化单元测试。
+    >* 我花费了大量时间与几个开发人员结对建立起一个由BIOS团队控制的持续集成服务器。
+    >* BIOS团队的回顾一直能在每个迭代确定至少一个实验，团队会在接下来的迭代中采取措施。
 
-* <span style="color:firebrick">For the product group, establish the complete LeSS structure “at the start”; this is vital for a LeSS adoption.</span>
+* <span style="color:firebrick">针对产品组，“从一开始”就建立完全的LeSS结构；这对一个LeSS导入来说至关重要。</span>
 
-    >Yes, within the scope of the extended BIOS component. No, within the broader overall MCS product scope.
+    >是的，在扩大的BIOS组件范围内。不是，在更广泛的整体MCS产品范围内。
 
-* <span style="color:firebrick">For the larger organization beyond the product group, adopt LeSS evolutionarily using Go and See to create an organization where experimentation and improvement is the norm.</span>
+* <span style="color:firebrick">针对产品组之上的更大组织，演进地导入LeSS，用现场观察来创建一个实验和改进常态化的组织。</span>
 
-    >Yes
+    >是的
 
+## LeSS Product Alignment LeSS产品比对 {#less-product-alignment}
 
+* <span style="color:firebrick">针对整个可交付的产品有一个PO和一份产品待办列表。</span>
 
-## LeSS Product Alignment {#less-product-alignment}
+    >对BIOS组件来说是的。对整个MCS产品来说则不是。
 
+* <span style="color:firebrick">PO不应该独自工作于产品待办列表梳理；她从直接与客户/用户以及其他干系人工作的多个团队那里得到支持。</span>
 
-* <span style="color:firebrick">There is one Product Owner and one Product Backlog for the complete shippable product.</span>
+    >是的
 
-    >Yes for the BIOS component. No for the overall MCS product.
+* <span style="color:firebrick">所有优先级排序都通过PO，但是澄清尽可能直接发生于团队和客户/用户以及其他干系人之间。</span>
 
-* <span style="color:firebrick">The Product Owner shouldn’t work alone on Product Backlog refinement; she is supported by the multiple Teams working directly with customers/users and other stakeholders.</span>
+    >对BIOS组件来说是的。对整个MCS产品来说则不是。
 
-    >Yes
+* <span style="color:firebrick">产品的定义应该在实际可行的情况下尽可能广泛和终端用户导向。随着时间的推移，产品的定义可以扩展。更广泛的定义会更好。</span>
 
-* <span style="color:firebrick">All prioritization goes through the Product Owner, but clarification is as much as possible directly between the Teams and customer/users and other stakeholders.</span>
+    >从尽可能扩大BIOS组件边界来说是的。从缺乏一个LeSS上下文来包含整个MCS产品来说则不是。
 
-    >Yes for the BIOS component. No for the overall MCS product.
+* <span style="color:firebrick">有一个针对整个产品的所有团队共同的完成的定义。每个团队可以通过扩展共同的定义有他们自己更强的完成的定义。</span>
 
-* <span style="color:firebrick">The definition of product should be as broad and end-user/customer centric as is practical. Over time, the definition of product might expand. Broader definitions are preferred.</span>
+    >从BIOS团队共同使用的完成的定义来说是的。从整体MCS产品来说则不是。
 
-    >Yes in terms of expanding the BIOS component boundary as broadly as possible. No in terms of the lack of a LeSS context encompassing the entire MCS product.
+* <span style="color:firebrick">完美目标是改善完成的定义以达成每个迭代有一个可交付产品（或者甚至更频繁）。</span>
 
-* <span style="color:firebrick">One Definition of Done for the whole product common for all teams. Each team can have their own stronger Definition of Done by expanding the common one.</span>
+    >从BIOS组件来说是的。有一些我们在更广泛地导入LeSS到整个MCS产品之前没法避免的完成外工作。
 
-    >Yes in terms of the common Definition of Done used by the BIOS teams. No in terms of the overall MCS product.
+## LeSS Sprint Alignment LeSS迭代比对 {#less-sprint-alignment}
 
-* <span style="color:firebrick">The perfection goal is to improve the Definition of Done so that it results in a shippable product each Sprint (or even more frequently).</span>
+* <span style="color:firebrick">有一个产品层面的迭代，而不是每个团队有不同的迭代。</span>
 
-    >Yes in terms of the BIOS component. There was a little bit of Undone work we couldn't avoid until we could extend the LeSS adoption more broadly over the entire MCS product..
+    >从BIOS扩展组件团队来说是的。
 
+* <span style="color:firebrick">每个团队同时开始和结束迭代。每个迭代都产出一个集成的整体产品。</span>
 
+    >从BIOS扩展组件团队来说是的。
 
-## LeSS Sprint Alignment {#less-sprint-alignment}
+* <span style="color:firebrick">迭代计划由两部分组成：迭代计划一对所有团队是共同的，而迭代计划二通常每个团队各自进行。针对紧密相关的条目在共享空间里做多团队迭代计划二。</span>
 
-* <span style="color:firebrick">There is one product-level Sprint, not a different Sprint for each Team.</span>
+    >从BIOS扩展组件团队来说是的。
 
-    >Yes in terms of the BIOS extended component teams.
+* <span style="color:firebrick">迭代计划一由PO和团队或团队代表参加。他们一起暂定选择每个团队这个迭代会工作的条目。团队寻找一起工作的机会，并澄清最后的问题。</span>
 
-* <span style="color:firebrick">Each Team starts and ends the Sprint at the same time. Each Sprint results in an integrated whole product.</span>
+    >从BIOS扩展组件团队来说是的。
 
-    >Yes in terms of the BIOS extended component teams.
+* <span style="color:firebrick">每个团队有他们自己的迭代待办列表。</span>
 
-* <span style="color:firebrick">Sprint Planning consists of two parts: Sprint Planning One is common for all teams while Sprint Planning Two is usually done separately for each team. Do multi-team Sprint Planning Two in a shared space for closely related items.</span>
+    >从BIOS扩展组件团队来说是的。
 
-    >Yes in terms of the BIOS extended component teams.
+* <span style="color:firebrick">迭代计划二是让团队决定他们将如何做选了的条目。这通常涉及设计和创建他们的迭代待办列表。</span>
 
-* <span style="color:firebrick">Sprint Planning One is attended by the Product Owner and Teams or Team representatives. They together tentatively select the items that each team will work on that Sprint. The Teams identify opportunities to work together and final questions are clarified.</span>
+    >从BIOS扩展组件团队来说是的。
 
-    >Yes in terms of the BIOS extended component teams.
+* <span style="color:firebrick">每个团队有他们自己的每日站会。</span>
 
-* <span style="color:firebrick">Each Team has their own Sprint Backlog.</span>
+    >从BIOS扩展组件团队来说是的。
 
-    >Yes in terms of the BIOS extended component teams.
+* <span style="color:firebrick">跨团队协调由团队决定。相对集中式协调，优先采用分布式和非正式的协调。强调直接交谈和通过代码中交流、跨团队会议、组件导师、旅行者、侦察兵，和开放空间形成的非正式网络。</span>
 
-* <span style="color:firebrick">Sprint Planning Two is for Teams to decide how they will do the selected items. This usually involves design and the creation of their Sprint Backlogs.</span>
+    >从BIOS扩展组件团队来说是的。
 
-    >Yes in terms of the BIOS extended component teams.
+* <span style="color:firebrick">产品待办列表梳理（PBR）最好多个团队来做，以增加共享学习和利用协调机会。</span>
 
-* <span style="color:firebrick">Each Team has their own Daily Scrum.</span>
+    >从BIOS扩展组件团队来说是的。
 
-    >Yes in terms of the BIOS extended component teams.
+* <span style="color:firebrick">有一个产品迭代评审；是所有团队共同的。确保合适的干系人参加并贡献有效检查并适应所需的信息。</span>
 
-* <span style="color:firebrick">Cross-team coordination is decided by the teams. Prefer decentralized and informal coordination over centralized coordination. Emphasize Just Talk and informal networks via communicate in code, cross-team meetings, component mentors, travelers, scouts, and open spaces.</span>
+    >从BIOS扩展组件团队来说是的。
 
-    >Yes in terms of the BIOS extended component teams.
+* <span style="color:firebrick">每个团队有他们自己的迭代回顾。</span>
 
-* <span style="color:firebrick">Product Backlog Refinement (PBR) is preferably done with multiple teams to increase shared learning and to exploit coordination opportunities.</span>
+    >从BIOS扩展组件团队来说最初是的。我们后来有所偏离，如之前在*BIOS回顾结构调整*章节中所述。
 
-    >Yes in terms of the BIOS extended component teams.
+* <span style="color:firebrick">在团队回顾之后举行一个整体回顾，讨论跨团队和系统性的问题，并创建改进实验。这由PO、SM、团队代表和管理者（如果有的话）参加。</span>
 
-* <span style="color:firebrick">There is one product Sprint Review; it is common for all teams. Ensure that suitable stakeholders join to contribute the information needed for effective inspection and adaptation.</span>
-
-    >Yes in terms of the BIOS extended component teams.
-
-* <span style="color:firebrick">Each Team has their own Sprint Retrospective.</span>
-
-    >Initially yes in terms of the BIOS extended component teams. We later deviated a bit as described earlier in the _BIOS Retrospective Structure Adaptation_ section.
-
-* <span style="color:firebrick">An Overall Retrospective is held after the Team Retrospectives to discuss cross-team and system-wide issues, and create improvement experiments. This is attended by Product Owner, Scrum Masters, Team representatives, and managers (if any).</span>
-
-    >Yes in terms of the BIOS extended component teams.
-
-
+    >从BIOS扩展组件团队来说是的。
 
 # BIOS Triage Rules {#bios-triage-rules}
 
