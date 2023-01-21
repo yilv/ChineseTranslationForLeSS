@@ -1159,28 +1159,32 @@ Before going on to discuss a few more details and insights from the BIOS teams, 
 
     >从BIOS扩展组件团队来说是的。
 
-# BIOS Triage Rules {#bios-triage-rules}
+# BIOS Triage Rules BIOS分流规则 {#bios-triage-rules}
 
 The BIOS teams were often distracted by demands from engineers and management working on other parts of the overall MCS system. Some of these demands required prompt action in service of the overall MCS development efforts, while other demands were best promptly rejected or perhaps moved into and prioritized within the BIOS Component Backlog.
+BIOS团队经常被来自于工作在整个MCS系统其它部分的工程师和管理者的请求所打扰。这些请求中的一些需要即刻行动以服务于整体MCS开发工作，而另一些却最好即刻拒绝，或者移入BIOS组件待办列表来排优先级。
 
 With the exception of a few test engineers, all the BIOS Scrum development team members reported directly into Mitya. The problem of functional managers distracting BIOS team members who reported to them was largely non-existent.
+除了几位测试工程师之外，所有BIOS的Scrum开发团队成员都直接汇报给米提亚。职能经理打扰汇报给他们的BIOS团队成员的问题基本上不存在。
 
 The distractions were predominately a function of the imperfect BIOS component boundary when compared to the actual MCS product boundary, and the over coupling of the MCS BIOS code with the AMI BIOS code.
+这些打扰多数情况下是因为相比真实的MCS产品边界来说并不完美的BIOS组件边界，以及MCS的BIOS代码与AMI的BIOS代码之间过于耦合。
 
 Creating a formalized set of triage guidelines was very helpful in managing these distractions until the underlying root causes could be more fully addressed. Benefits included:
+在根本原因能更完全地被解决之前，创建一组正式的分流指南很有助于管理这些干扰。好处包括：
 
-* Respecting the Product Owner's intent
-* Remaining responsive to critical unanticipated demands
-* Helping BIOS engineers say no to inappropriate demands
-* Providing transparency to everyone involved
-* Consolidating the collective wisdom of the BIOS engineers
-* Achieving alignment within the BIOS teams
-* Ability of the BIOS Scrum teams better inspect and adapt based on historical data
+* 尊重PO的意图
+* 保持对关键未预料到请求的响应
+* 帮助BIOS工程师对不适当的请求说不
+* 提供透明性给每个相关的人
+* 把BIOS工程师的集体智慧结成一体
+* 实现BIOS团队内的对齐
+* BIOS的SM们基于历史数据更好地检查并适应的能力
 
 <a name="figure24"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/mcsTriageGuidelines_10_1.jpg" alt="BIOS Triage Guidelines">
-  <figcaption>Figure 24: This triage guideline used by the BIOS teams establishes three basic categories: take immediate action, ask the Product Owner, and put it on the BIOS Component Backlog. The Product Owner has clearly communicated intent while empowering the Scrum Development Teams to take immediate action when appropriate. By making the guidelines explicit, the Product Owner also improves the odds of collaboratively refining the guidelines based on the collective wisdom of the teams.).</figcaption>
+  <figcaption>图24：这份BIOS团队使用的分流准则建立了三个基本类别：采取立刻行动，问PO和放入BIOS组件待办列表。PO清晰交流了意图，同时授权Scrum开发团队在合适时采取立刻行动。准则的显式化也让PO更有机会基于团队的集体智慧来协作地完善它们。</figcaption>
 </figure>
 
 # BIOS Unit Testing Is Possible {#bios-unit-testing-is-possible}
