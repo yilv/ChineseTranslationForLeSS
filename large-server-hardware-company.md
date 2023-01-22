@@ -614,7 +614,7 @@ Objectives within the BIOS group which supported the above goals included:
 * <span style="color:navy">建立单一的BIOS组件待办列表，以使最高价值的BIOS工作更加可见。渐进地迈向一份单一的产品级别待办列表。</span>
 * <span style="color:navy">扩展每个工程师的知识和技能，以涵盖产品的更广泛部分；从而提高每个团队的适应能力，以及切换并专注于新发现的最高价值工作的整体能力。</span>
 * <span style="color:navy">在转向一个扩大的、跨越MCS更大部分的BIOS多组件边界的同时，增加每个BIOS团队的“整体产品焦点”（一个LeSS原则）。</span>
-* <span style="color:navy">致力于改进围绕MCS的BIOS组件的工艺实践。</span>
+* <span style="color:navy">致力于改进围绕MCS的BIOS组件的匠艺实践。</span>
 * <span style="color:navy">尽可能避免合同游戏。</span>
 
 ## BIOS Adoption Story in Diagrams Alone 仅从图中就能看到的BIOS导入故事 {#bios-adoption-story-in-diagrams-alone}
@@ -667,7 +667,7 @@ In practice, each area of customization in the MCS BIOS is the result of one or 
 ### Large number of engineers over three geographies 分布在三个地区的大量工程师 {#large-number-of-engineers-over-three-geographies}
 
 There was enough work to keep around forty engineers busy. With better craftsmanship practices it is likely far less people would eventually be needed. That said, it was going to take a tremendous amount of work and alignment just to dig out of all the self-inflicted technical problems.
-有足够的工作让大约四十名工程师忙碌。随着更好的工艺实践，最终需要的人可能会远比这少。虽说如此，仅解决所有自己造成的技术问题就要花费巨大的工作量和对齐。
+有足够的工作让大约四十名工程师忙碌。随着更好的匠艺实践，最终需要的人可能会远比这少。虽说如此，仅解决所有自己造成的技术问题就要花费巨大的工作量和对齐。
 
 Due to historical reasons, there were BIOS focused software, hardware, and test engineers spread across greater Portland, San Francisco, and Bengaluru. Any plan to scale the teams would have to solve the distributed problem. Fortunately, we were somewhat able to self-organize into co-located teams. Furthermore, the work being done by Bengaluru was somewhat independent of the efforts in Portland and San Francisco.
 由于历史原因，专注于BIOS的软件、硬件和测试工程师遍布波特兰、旧金山和班加罗尔。任何扩大团队规模的计划都必须解决地理分布的问题。幸运的是，我们在某种程度上能够自组织形成同处一地的团队。此外，班加罗尔的工作多少独立于波特兰和旧金山的工作。
@@ -1072,7 +1072,7 @@ Before going on to discuss a few more details and insights from the BIOS teams, 
     >* 米提亚和我都会不时跟一个或更多个BIOS开发人员结对编程，和/或在被认为有益时参加设计讨论。
     >* 米提亚和我会积极接触组织上下及各处的人来帮助解决各种组织障碍。
     >* 我花费了大量时间与埃米特·布朗结对来解决如何为BIOS代码创建自动化单元测试。
-    >* 我花费了大量时间与几个开发人员结对建立起一个由BIOS团队控制的持续集成服务器。
+    >* 我花费了大量时间与几个开发人员结对建立起一个由BIOS团队控制的CI服务器。
     >* BIOS团队的回顾一直能在每个迭代确定至少一个实验，团队会在接下来的迭代中采取措施。
 
 * <span style="color:firebrick">针对产品组，“从一开始”就建立完全的LeSS结构；这对一个LeSS导入来说至关重要。</span>
@@ -1187,18 +1187,22 @@ Creating a formalized set of triage guidelines was very helpful in managing thes
   <figcaption>图24：这份BIOS团队使用的分流准则建立了三个基本类别：采取立刻行动，问PO和放入BIOS组件待办列表。PO清晰交流了意图，同时授权Scrum开发团队在合适时采取立刻行动。准则的显式化也让PO更有机会基于团队的集体智慧来协作地完善它们。</figcaption>
 </figure>
 
-# BIOS Unit Testing Is Possible {#bios-unit-testing-is-possible}
+# BIOS Unit Testing Is Possible BIOS的单元测试是可能的 {#bios-unit-testing-is-possible}
 
 Where there is a will, there is a way. We knew automated unit testing within BIOS was going to be extremely challenging. No TCP/IP network stack existed during early stages of development, very few of the standard C library functions are available, all code has to be cross-compiled and flashed to the target, and no existing approach to unit testing within the AMI BIOS ecosystem could be found.
+有志者事竟成。我们知道自动化单元测试在BIOS里将会非常有挑战。在开发早期还没有TCP/IP网络协议栈，只有少数标准C库函数可以用，所有代码必须被交叉编译再闪存到目标环境，以及在AMI的BIOS生态系统里找不到已有的单元测试方法。
 
 Although I spent well over a decade as a software engineer practicing test first development, I know almost nothing about BIOS and low level hardware design. Similarly, the BIOS engineers had almost no exposure to the languages, tooling, design patterns, and various craftsmanship practices seen in higher performing middle-ware teams. In many ways most of the MCS BIOS engineers are electronic engineering wizards with very narrow software engineering skills.
+虽然我作为一个软件工程师实践测试先行开发已经超过十年了，我却对BIOS和底层硬件设计知之甚少。同样，BIOS工程师几乎没有见过高水平中间件团队会使用的语言、工具、设计模式，以及各种匠艺实践。在许多方面，大多数MCS的BIOS工程师是具备很窄软件工程技能的电子工程行家。
 
 Emmett Brown was a passionate engineer who was determined to figure out how to move towards test first development for the MCS BIOS code. I worked with Emmett to help him understand the design elements required, and to show him examples of each in various higher level development ecosystems. Emmett would in turn teach me about various details of the UEFI standard, the BIOS tool-chain, and the hardware constraints involved. We would then puzzle through the challenges and consider different approaches to solving the problem.
+埃米特·布朗是一个有热情的工程师，他决心搞清楚如何让MCS的BIOS代码转向测试先行开发。我和埃米特工作来帮助他理解所需的设计元素，并展示给他每个元素在各种高层开发生态系统中的实例。相应地，埃米特则教我UEFI标准的各种细节、BIOS工具链，以及涉及的硬件限制。我们然后摸索解决这些挑战，并考虑解决问题的不同方式。
 
 It took a few weeks of work, but Emmett eventually had a working prototype in place. He used part of the UEFI standard to achieve dependency inversion, hand coded his test doubles, ported a crude C unit test framework, and built a basic transport protocol over a serial connection to get the results back to the Windows workstation or CI server which had the build toolchain orchestrating the effort.
+虽然花费了几周的工作，但是埃米特最终做出了一个可工作的原型。他采用部分UEFI标准实现了依赖反转，硬编码了他的测试替身，移植了一个简陋的C单元测试框架，并且在串口连接上构建了一个基本的传输协议，从而能将结果传回Windows工作站或者CI服务器，在那上面有构建工具链可以整体协调管理。
 
 I have heard engineers in far less technically challenging contexts developing in an imperative language provide all kinds of reasons as to why automated unit testing isn't technically possible. Don't believe them. Emmett achieved automated unit testing working way down in the primordial ooze of a complex half-instantiated circuit board in a context without any useful pre-built unit test tooling.
-
+我听到过在技术上远没这么有挑战的上下文中，用命令式语言开发的工程师，以各种理由说为什么自动化单元测试技术上不可行。别相信他们。埃米特在原始得多的、半初始化的复杂电路板环境 - 没有任何有用的预制单元测试工具 - 中实现了自动化单元测试。
 
 # BIOS Team Count Increases {#bios-team-count-increases}
 
