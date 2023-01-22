@@ -1204,16 +1204,19 @@ It took a few weeks of work, but Emmett eventually had a working prototype in pl
 I have heard engineers in far less technically challenging contexts developing in an imperative language provide all kinds of reasons as to why automated unit testing isn't technically possible. Don't believe them. Emmett achieved automated unit testing working way down in the primordial ooze of a complex half-instantiated circuit board in a context without any useful pre-built unit test tooling.
 我听到过在技术上远没这么有挑战的上下文中，用命令式语言开发的工程师，以各种理由说为什么自动化单元测试技术上不可行。别相信他们。埃米特在原始得多的、半初始化的复杂电路板环境 - 没有任何有用的预制单元测试工具 - 中实现了自动化单元测试。
 
-# BIOS Team Count Increases {#bios-team-count-increases}
+# BIOS Team Count Increases BIOS团队数量增加了  {#bios-team-count-increases}
 
 In order to keep the initial adoption scope manageable only those working on support for the newest Intel chipset and reference board design were originally included. Anyone working on bug fixes and other minor work related to the older production Intel chipsets continued to work within the legacy organizational design. Said another way, the BIOS component boundary only included the newest prototype Intel chipset.
+为了让最初导入的范围可管理，一开始只包含了工作于支持最新英特尔芯片组和参考板设计的那些人。任何工作在更老的量产英特尔芯片组的缺陷修复和其它次要工作的人则继续在传统组织设计中工作。换种说法，BIOS组件边界只包含了最新的原型英特尔芯片组。
 
 Since each major Intel release involved a separate AMI codebase, this strategy worked fairly well. By the time the work related to the legacy Intel chipsets tapered off, the first three BIOS Scrum teams had largely jelled.
+因为每个主要的英特尔版本都有一个单独的AMI代码库，这一策略工作得相当好。等到与遗留英特尔芯片组的相关工作逐渐缩小时，前三个BIOS的Scrum团队已经基本上定型了。
 
 As additional San Francisco BIOS developers became available, and so we formed two new teams working off of the single combined BIOS Component Backlog. Each new team was allowed to influence and ratify the various cross-team artifacts to help ensure their full engagement and commitment to the process. I don't recall, but I'm sure I ran anyone who still needed it through agile overview training as part of this effort.
+随着额外的旧金山BIOS开发人员可以加入，我们组建了两个新团队，从一份合并的BIOS组件待办列表中选取工作。每个新团队都被允许影响并正式批准各种跨团队工件，以帮助确保他们对流程的全情投入和承诺。我记不清了，但我相信在这个过程中碰到过一些还需敏捷概述培训的人。
 
 As we rolled in the two new BIOS Scrum teams, we effectively expanded the BIOS component boundary at the same time to include all generations of the Intel chipset.
-
+随着我们推出两个新的Scrum团队，我们实际上同时扩展了BIOS组件边界，包含了所有代次的因特尔芯片组。
 
 # BIOS Component Boundary Expanded {#bios-component-boundary-expanded}
 
