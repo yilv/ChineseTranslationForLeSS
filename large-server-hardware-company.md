@@ -1218,28 +1218,37 @@ As additional San Francisco BIOS developers became available, and so we formed t
 As we rolled in the two new BIOS Scrum teams, we effectively expanded the BIOS component boundary at the same time to include all generations of the Intel chipset.
 随着我们推出两个新的Scrum团队，我们实际上同时扩展了BIOS组件边界，包含了所有代次的因特尔芯片组。
 
-# BIOS Component Boundary Expanded {#bios-component-boundary-expanded}
+# BIOS Component Boundary Expanded BIOS组件边界扩大了 {#bios-component-boundary-expanded}
 
 At the top of the MCS system is the Modular Compute System Administrator (MCSA) which is responsible for administering the entirety of the MCS infrastructure. When the system administrator at a customer of MCS interacts with MCS, it is typically the MCSA they are interacting with.
+MCS系统的最高层是模块化计算系统管理员（MCSA），负责管理整个MCS基础设施。当一个MCS客户的系统管理员与MCS交互时，与他们交互的通常就是MCSA。
 
 Some of the enhancements in the MCS BIOS code required making small changes in the MCSA. Less commonly changes would also have to be made within the firmware running on a low power node controller running on each node.
+在MCS的BIOS代码里的一些增强需要对MCSA做些小改动。不太常见的改动也会发生在运行于低功耗节点控制器上的固件里。
 
 Initially the BIOS teams would collaborate with a few of the more senior MCSA developers for any cross-cutting functionality. The BIOS Scrum teams often found coordinating their work with the MCSA developers challenging. The MCSA developers were suffering under all the normal delivery pressures inherent in a waterfall managed project.
+最初BIOS团队会为任何横切功能与几位更资深的MCSA开发人员协作。BIOS团队经常发现与MCSA开发人员协调工作是有挑战的。MCSA开发人员正饱受所有在瀑布管理的项目中常见的交付压力。
 
 Had it been politically viable to start with a broader expanded BIOS component boundary which aligned with a natural Requirement Area of the overall MCS product to begin with none of the coordination issues above would have existed.
+如果最初开启一个更广泛的扩大的BIOS组件边界 - 它可以对应到一个自然的整体MCS产品需求领域 - 在政治上可行的话，上述的协调问题就不会存在。
 
 In consideration of the political situation the obvious solution was for the MCS BIOS developers to slowly develop the expertise to make MCSA changes themselves. As the BIOS Scrum teams matured, this need became increasingly obvious to many of the BIOS Scrum teams. I also tended to encourage them in this direction.
+考虑到政治形势，显而易见的解决方案是让MCS的BIOS开发人员逐渐具备自己做MCSA改动的专业技能。随着BIOS团队的成熟，这一需要对许多BIOS团队来说变得越来越明显。我也倾向于鼓励他们朝这个方向发展。
 
 Through a variety of conversations we were able to get buy-in from a small handful of engineers who worked within MCSA, and from another set who worked within the node controller firmware. The agreement was to have them help guide the BIOS Scrum teams in identifying when a cross-cutting change would be simple enough the BIOS Scrum could make the change themselves. The BIOS Scrum team would then do the work and have the relevant expert outside the BIOS team perform code review.
+通过各种各样的交谈，我们得到了在MCSA工作的一小撮工程师以及工作于节点控制器固件的另一组人的认同。形成的约定是让他们帮助指导BIOS团队来识别，什么时候横切改动足够简单，可以让BIOS团队自己改动。然后BIOS团队来改动，并让BIOS团队之外的相关专家来做代码评审。
 
 The San Francisco BIOS developers had been successfully collaborating with many of the San Francisco MCSA developers for years. From the perspective of the key MCSA team leads and architects, anything the BIOS teams could do to take care of some of the MCSA/BIOS integration work was seen as a welcome reprieve. So the fact the Software VP was passively aggressively working to maintain the status quo turned out not to be a significant issue in practice. As long as the MCSA/BIOS integration work got done, no one in senior management cared how it happened.
+旧金山的BIOS开发人员已经与许多旧金山的MCSA开发人员成功协作了很多年。从关键MCSA组长和架构师的角度来看，BIOS团队能够做的任何有助于一些MCSA和BIOS集成工作的事都被视作是一种受欢迎的对他们的缓解。因此，软件VP对变革消极而积极维护现状的事实在实践中并没有成为一个显著的问题。只要MCSA和BIOS的集成工作完成了，高级管理层中没人关心是如何发生的。
 
 The Node Controller developers reported up through the same director who had been involved in helping to establish the diagnostic team. So there were no significant political challenges dealing with cross-training the BIOS teams to make small changes within the Node Controller. Most of the Node Controller developers sat in the same small Portland office the Portland BIOS team did.
+节点控制器的开发人员向上汇报给同一个曾经帮助建立诊断团队的主管。因此没有什么显著的政治挑战来阻碍交叉培训BIOS团队，以便他们能做一些在节点控制器里的小改动。大多数的节点控制器开发人员与波特兰的BIOS团队同处于波特兰的小办公室中。
 
 Mitya and I reasoned the success of this approach would grow over time. We predicted it would eventually become politically difficult not to reassign one or two MCSA experts to the BIOS group. The more the BIOS Scrum teams gained the ability to work end to end across MCS, the more natural the BIOS component boundary would become. More and more of the Product Backlog Items would become something meaningful to the MCS product management group. As that happened Mitya could transition out of being the Fake Product Owner. He could then work to further improve team dynamics and help grow effective Scrum Masters to take my place.
+米提亚和我推理，这种方式的成功可以随着时间增长。我们预测，最终在政治上会变得难以不指派一两位MCSA专家到BIOS组。BIOS的Scrum团队获得越多在MCS端到端地工作的能力，BIOS组件边界就变得越自然。越来越多的产品待办条目成为对MCS产品管理组有意义的东西。当那发生时，米提亚可以脱离不再担任伪PO。然后他可以进一步改善团队动态，并帮助SM们成长以接替我的位置。
 
 But before significant action could be taken on the agreement to start stretching at least one BIOS team outside of the BIOS code base, the division began to erode around us. _[The Support System Collapses](#bookmark=id.3l18frh)_ section farther down will elaborate a bit more on the senior management changes and layoffs.
-
+但是在可以采取重大行动开始把至少一个BIOS团队延伸到BIOS代码库外部之前，部门开始在我们周围衰落。后面[支撑系统倒塌了](#the-support-system-collapses)章节将更详细一些讲述高级管理层变动和裁员。
 
 # BIOS India Team Challenges {#bios-india-team-challenges}
 
@@ -1277,7 +1286,7 @@ Mitya, Trent, and I recognized it was going to take a good bit of effort and shu
 You can see the confluence of these various elements using a combination of the _Agile Adoption Timeline_ diagram, _Organizational Structure_ diagram sequence, and _BIOS Extended Component Team Expansion By MCS Hardware Generation_ diagrams.
 
 
-# The Support System Collapses {#the-support-system-collapses}
+# The Support System Collapses 支撑系统倒塌了 {#the-support-system-collapses}
 
 Towards the end of my tenure in the Nakashima MCS division there were massive changes in the reporting structure, divisional funding, headcount, and senior management.
 
