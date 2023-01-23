@@ -1298,13 +1298,16 @@ You can see the confluence of these various elements using a combination of the 
 # The Support System Collapses 支撑系统倒塌了 {#the-support-system-collapses}
 
 Towards the end of my tenure in the Nakashima MCS division there were massive changes in the reporting structure, divisional funding, headcount, and senior management.
+到我在中岛公司MCS部门的任期即将结束时，在汇报结构、部门预算、员工数量和高级管理层方面都有了很大变化。
 
 With eroding market share and a maturing competitive landscape, the MCS revenues were shrinking. There was a decision by the C suite of Nakashima to radically downsize the MCS division. The result was to reduce divisional headcount by about half. Many people at Nakashima told me it was the largest layoff they had ever seen at Nakashima. At least half of the BIOS teams would soon be laid off.
+随着市场份额不断下降和竞争格局日趋成熟，MCS的收入也在萎缩。中岛公司的高层做出了一个激进缩减MCS部门规模的决定。结果是要减少大致一半的部门人员数量。许多中岛公司的人告诉我这是他们在中岛公司见过的最大规模裁员。BIOS团队至少有一半将很快被裁掉。
 
 Prior to the layoffs many people in the management layer were being recruited to an exceptionally well funded start-up company. This included the VP to whom Mitya originally reported. Mitya then began reporting to the Software VP who had never been fully supportive of Scrum and agile to begin with. Not too long after my departure Mitya followed his prior VP to the new startup company.
+在裁员之前，许多管理层的人被招募到一家资金特别充裕的初创公司。这包括米提亚原先汇报的VP。米提亚然后开始汇报给从一开始就没有完全支持过Srum和敏捷的软件VP。在我离开没多久之后，米提亚跟随他之前的VP去了那家新初创公司。
 
 Although I remained after the layoffs occurred it became politically untenable for Trent to renew my contract. The market rate and travel costs for an agile consultant are easily enough to pay for at least two or three engineers. Had it been up to Trent I would likely have had my contract extended, but even Trent had to obtain budgetary sign-off a couple layers up. A little over a year later Trent also left Nakashima.
-
+虽然裁员发生之后我还在，特伦特要想续约我的合同在政治上已经站不住脚。一个敏捷顾问的市场价格和差旅成本足以支付至少两到三名工程师的费用。如果由特伦特决定的话，我的合同可能会被延长，但是即使特伦特也得获取再往上两层的预算签字。一年多一点以后，特伦特也离开了中岛公司。
 
 # Conclusion {#conclusion}
 
