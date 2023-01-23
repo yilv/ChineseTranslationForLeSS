@@ -1250,41 +1250,50 @@ Mitya and I reasoned the success of this approach would grow over time. We predi
 But before significant action could be taken on the agreement to start stretching at least one BIOS team outside of the BIOS code base, the division began to erode around us. _[The Support System Collapses](#bookmark=id.3l18frh)_ section farther down will elaborate a bit more on the senior management changes and layoffs.
 但是在可以采取重大行动开始把至少一个BIOS团队延伸到BIOS代码库外部之前，部门开始在我们周围衰落。后面[支撑系统倒塌了](#the-support-system-collapses)章节将更详细一些讲述高级管理层变动和裁员。
 
-# BIOS India Team Challenges {#bios-india-team-challenges}
+# BIOS India Team Challenges BIOS的印度团队挑战 {#bios-india-team-challenges}
 
 The tremendous time zone differences between the San Francisco and India offices were always a challenge. Similarly, the different reporting lines also tended to complicate alignment issues. A few of the complexities are detailed below.
+在旧金山和印度办公室之间的巨大时差一直是个挑战。同样，不同的汇报线也倾向于让对齐问题复杂化。一些复杂性细化如下。
 
 It is instructive to reflect upon the following LeSS Framework and LeSS Huge Framework rules:
+反思以下LeSS框架和LeSS巨型框架规则具有指导意义：
 
-*  <span style="color:firebrick">_For the product group, establish the complete LeSS structure “at the start”; this is vital for a LeSS adoption._</span>
-* <span style="color:firebrick">_LeSS Huge adoptions, including the structural changes, are done with an evolutionary incremental approach._</span>
+*  <span style="color:firebrick">*对产品组“从一开始”就建立完整的LeSS结构，这个对LeSS导入至关重要。*</span>
+* <span style="color:firebrick">*LeSS巨型导入，包括其中的结构变革，则以演进式增量的方式进行。*</span>
 
 With broader senior level management buy-in some of the challenges encountered in working with the India teams could have been structurally addressed earlier on. On the other hand only so much change at any one time would have been sustainable. It is important to remember the actively enrolled original engineering SVP had left by the time the BIOS LeSS adoption was launched.
+如果有更广泛高层管理者的认同，在与印度团队工作时碰到的一些挑战有可能更早就从结构层面被解决。另一方面，在任何时候只有这么多的变化是可持续的。也有必要记得，在BIOS的LeSS导入启动时，积极认同变革的原先的工程SVP已经离开了。
 
 Throughout the BIOS agile adoption, Mitya and I made sure to broadly socialize the work we were doing. Even engineers working on the legacy support for older Intel chipsets were aware of the Definition of Done being used for the new Intel chipsets. Lead engineers from India often dialed-in from their home to attend the LeSS-oriented Sprint Reviews.
+在整个BIOS的敏捷导入过程中，米提亚和我确保让我们做的事情为人所知。即使工作在更老英特尔芯片组的遗留支持的工程师也知道新英特尔芯片组使用的完成的定义。来自印度的主管工程师经常从他们那里拨进来参加面向LeSS的迭代评审。
 
 In Figure 15 and the nearby _[BIOS Organizational Context](#bios-organizational-context)_ section I described the tactic Mitya and I took of isolating and delaying the organizational changes for the India-based BIOS developers. The ability to use the Intel chipset generation as one of the expanded multi-component boundaries and the fact India was initially focused on fixing problems related to older generations of the Intel chipset is what made this possible. This was a risky strategy in that it depended upon continuity of support from the hardware VP who left before we fully executed on our strategy, yet I can’t think of any other workable choice given our constraints. Although I might be willing to repeat this strategy in the future if there were no other option, I strongly recommend trying to get buy-in for a broader change up front if at all possible.
+在图15和附近的[BIOS组织背景](#bios-organizational-context)章节中，我描述了米提亚和我采取的隔离和延迟印度BIOS开发人员组织变革的策略。能把英特尔芯片组代次作为其中一个扩大的多组件边界，以及印度团队最初聚焦于修复更老代次英特尔芯片组的相关问题，使得这一策略可行。这是一个冒险的策略，因为它依赖于来自硬件VP的持续支持，而他在我们完全实施这一策略之前离开了；然而基于我们面临的限制，我也没能想到其它可行的选择。尽管我可能愿意在将来没有其它选项时重复这一策略，但我强烈建议如果可能的话尝试提前获得对更广泛变革的认同。
 
-
-## Coaching Support {#coaching-support}
+## Coaching Support 辅导支持 {#coaching-support}
 
 I was the only coach within the MCS division for the first year I was there. Although Trent and I traveled to India very early on, we didn't initially have sufficient coaching capacity to significantly influence things there. I delivered a few days of training and built relationships, but little else was practical.
+我在那儿的第一年里是MCS部门唯一的教练。虽然特伦特和我挺早就去了印度，我们最初并没有足够的辅导容量来显著影响那里的事情。我交付了几天的培训，建立了关系，但是不太可能做别的了。
 
 In my second year, Trent managed to get enough funding to hire a few coaches in India. Finding better seasoned agile coaches in India is even harder than finding them in the US, yet after many months of interviewing I eventually found a few. After another month or so Trent and I managed to get the co-blessing of the India managers for these coaches and wrapped up the negotiations and on-boarding.
+我在的第二年，特伦特找到足够的预算在印度招几位教练。在印度找到经验丰富的敏捷教练比在美国还难，但经历了几个月的面试之后我最终还是找到几位。在一两个月之后，特伦特和我成功得到了印度经理对这些教练的共同祝福，然后就结束谈判并开始工作。
 
-
-## Waterfall Pressures on India-Based BIOS Engineers {#waterfall-pressures-on-india-based-bios-engineers}
+## Waterfall Pressures on India-Based BIOS Engineers 印度BIOS工程师身上的瀑布压力 {#waterfall-pressures-on-india-based-bios-engineers}
 
 As work related to the legacy Intel chipsets tapered off, several BIOS engineers based in India started contributing to the BIOS codebase for the new Intel chipset. The India engineers were kept fully aware of the common Definition of Done and related norms of the LeSS-oriented BIOS teams. Unfortunately, their management was still being driven in a waterfall fashion.
+随着与遗留英特尔芯片组相关的工作逐渐缩小，一些印度的BIOS工程师开始贡献在新英特尔芯片组的BIOS代码库上。印度工程师充分知晓共同的完成定义，以及面向LeSS的BIOS团队的相关规范。不幸的是，他们的管理层仍被瀑布方式所驱动。
 
 The early San Francisco members of the BIOS Scrum teams were adamant about not letting the quality they had worked so hard to improve be allowed to erode. The San Francisco BIOS team members improved their continuous integration practices, improved their integration test automation, performed frequent review of any code changes, and had lots of heart to heart conversations with the India BIOS engineers. These tactical solutions definitely made a positive impact and partially mitigated some of the issues.
+早期的BIOS团队旧金山成员对不能让他们努力改善了的质量逐渐毁坏态度坚定。旧金山BIOS团队成员改进了他们的持续集成实践，改进了他们集成测试的自动化，对任何代码变更进行频繁评审，以及许多次与印度BIOS工程师的交心谈话。这些战术层面的解决方案无疑产生了正面影响，并部分缓解了一些问题。
 
 Mitya and I had anticipated these problems. We had intentionally designed the BIOS component boundary so as to delay the organizational battle until greater political momentum favored winning. The intentional delay had ensured qualified agile coaches were available in the India office, the US based BIOS LeSS teams had jelled, and there was significant proof of massive improvements in quality and forecast transparency within the BIOS LeSS teams.
+米提亚和我已经预料到了这些问题。我们有意设计了BIOS的组件边界，以延迟这一组织斗争直到更大的政治势头有利于获胜。有意的延迟确保了在印度办公室有合格的敏捷教练到位，BIOS在美国的LeSS团队已经成形，并有显著证据表明在BIOS的LeSS团队中质量和预测透明性都得到了大幅提升。
 
 Mitya, Trent, and I recognized it was going to take a good bit of effort and shuttle diplomacy to resolve the underlying structural issues. We were ready to drive the structural issues to crises such that we could solve them. Unfortunately, the roughly concurrent loss of the supportive hardware VP and the massive layoffs crippled our strategy.
+米提亚、特伦特和我意识到需要花费不少精力和穿梭外交来解决根本性的结构问题。我们准备好把结构问题推向危机，以便可以解决它们。不幸的是，差不多同时失去支持变革的硬件VP和大规模裁员毁坏了我们的策略。
 
 You can see the confluence of these various elements using a combination of the _Agile Adoption Timeline_ diagram, _Organizational Structure_ diagram sequence, and _BIOS Extended Component Team Expansion By MCS Hardware Generation_ diagrams.
-
+你可以把*敏捷导入时间线*图、*组织结构*图序列和*BIOS通过MCS硬件代次扩展组件团队*图组合起来看到这些不同元素的融合。
 
 # The Support System Collapses 支撑系统倒塌了 {#the-support-system-collapses}
 
