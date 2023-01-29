@@ -1309,102 +1309,105 @@ Prior to the layoffs many people in the management layer were being recruited to
 Although I remained after the layoffs occurred it became politically untenable for Trent to renew my contract. The market rate and travel costs for an agile consultant are easily enough to pay for at least two or three engineers. Had it been up to Trent I would likely have had my contract extended, but even Trent had to obtain budgetary sign-off a couple layers up. A little over a year later Trent also left Nakashima.
 虽然裁员发生之后我还在，特伦特要想续约我的合同在政治上已经站不住脚。一个敏捷顾问的市场价格和差旅成本足以支付至少两到三名工程师的费用。如果由特伦特决定的话，我的合同可能会被延长，但是即使特伦特也得获取再往上两层的预算签字。一年多一点以后，特伦特也离开了中岛公司。
 
-# Conclusion {#conclusion}
+# Conclusion 结论 {#conclusion}
 
 
-## Reflections on Deep Organizational Change {#reflections-on-deep-organizational-change}
+## Reflections on Deep Organizational Change 关于深层组织变革的思考 {#reflections-on-deep-organizational-change}
 
 In retrospect the early loss of the supportive engineering SVP coupled with the lack of long-term job safety in a culture of frequent layoffs focused on short-term quick fixes of profit margins drastically reduced the odds of long-term success in transforming the organizational structure and culture. Without these challenges I believe success within the BIOS component could have been leveraged into a broader LeSS adoption.
+回顾过去，早期失去了支持变革的工程SVP，加上在专注于短期快速修复利润率而频繁裁员的文化中缺乏长远的工作安全，大大降低了在转变组织结构和文化上获得长期成功的机会。没有这些挑战，我相信在BIOS组件内的成功可以有助于更广泛的LeSS导入。
 
 After the success of the LeSS adoption within BIOS, I believe the original engineering SVP would have helped achieve the broader enrollment of senior management that was required to go further. Instead the senior management was busy scrambling to push out the upcoming MCS release while struggling to navigate the political landscape of an impending layoff. I believe more aggressive structural changes earlier on would have been very helpful, yet I don’t think the senior management involved would have been ready to accept it without the time we took to slowly build up a record of success.
+在BIOS内的LeSS导入获得成功后，我相信原先的工程SVP会帮助取得继续下去所需的更广泛的高级管理层加入。相反，高级管理层在忙于争相推出即将发布的MCS版本，同时努力应对即将发生裁员的政治形势。我相信早期更激进的结构变革会有帮助，然而我不认为，如果没有逐渐建立成功记录的过程，参与的高管会准备好接受那样的变革。
 
 I am reminded of the parable of the sower in which a farmer casts seeds broadly over a variety of soil conditions. Although the seeds cast on shallow soil germinated and grew quickly, they soon withered under the sun for lack of deep roots. In contrast, seeds cast on deeper soil produced an abundant crop. Failure to properly prepare the soil for a LeSS adoption is likely to result in problems over the long-term, even though you will often encounter dramatic success early on. The soil for the BIOS LeSS adoption was sufficiently deep to produce some great early results, yet not quite deep enough to reach its abundant potential.
+我想起了播种者的寓言，里面有一个农民在各种土壤条件下广泛播种。尽管撒在浅层土壤里的种子发芽生长很快，但由于缺乏深层根系，它们很快就在阳光下枯萎了。相比之下，播种在较深土壤里的种子却生长出丰富的作物。如果没有为LeSS导入准备好适当的土壤，即使你经常在早期获得巨大成功，很可能也会导致长期问题。BIOS的LeSS导入的土壤足够深到产生了一些很好的早期结果，但还不够深到实现其丰富的潜力。
 
-
-## Summary of Benefits {#summary-of-benefits}
+## Summary of Benefits 收益总结 {#summary-of-benefits}
 
 The BIOS teams started as extended component teams while moving towards _expanded_ component teams and feature teams. Benefits included:
+BIOS团队开始时是扩展的组件团队，然后转向*扩大的*组件团队和特性团队。其中的收益包括：
 
-* <span style="color:navy">Locally improved **adaptability** and **value deliver**y within the extended component boundary</span>
-    + Prior Observations:
-        - Only one or two people understood a given BIOS sub-component. Code ownership and knowledge was effectively at the individual file level.
-        - Knowledge of the codebase outside of the BIOS component was almost non-existent within the BIOS engineering group.
-        - No one person was aware of the entirety of the work required to bring up a new Intel CPU generation on new blade hardware. Each BIOS firmware engineer and BIOS firmware tester only understood their small piece of the puzzle.
-    + Prior Impacts:
-        - BIOS engineers could not choose the most valuable work at any point in time, because they were restricted to their individual area of expertise.
-        - It was nearly impossible to accurately forecast completion.
-    + Subsequent Observations:
-        - Every team member was slowly becoming comfortable working on a broader number of BIOS sub-components than they previously were.
-        - Many BIOS team members were becoming increasingly skilled in testing and modifying every aspect of the overall system along the execution path between the GUI and the BIOS component.
-        - Every BIOS team member had a good overall understanding of the work required to bring up a new Intel CPU. Any member of any of the LeSS-oriented BIOS teams could explain any item on the BIOS component backlog and how it fit into the overall picture.
-        - The BIOS component backlog consistently provided an up to date view into all of the known remaining work required to ship the upcoming BIOS release.
-        - The BIOS teams accepted the natural variability of product development, and committed to _quality_ (not _scope_) as explicitly expressed in the BIOS Definition of Done.
-    + Subsequent Impacts:
-        - The LeSS-oriented BIOS teams were able to consistently focus on the most valuable work at any point in time.
-        - The BIOS teams were far more confident in their release forecasts.
-        - The BIOS teams were able to ensure a releasable level of functionality was achieved before working on lower priority functionality.
-        - The LeSS-oriented BIOS extended component teams ensured every Sprint Increment was successfully integrated and tested with the MCS system as a whole. Across a few thousand engineers, only the small Diagnostics pilot Scrum team could claim anything similar.
-* <span style="color:navy">Improved technical practices that created **improved quality**, along with improved awareness of what additional improvements could bring</span>
-    + Prior Observations:
-        - There was no common agreement on what the quality standards were.
-        - Changes in the BIOS code supplied by AMI were co-mingled with the MCS specific code in a difficult to maintain fashion. Every new generation Intel CPU effectively required starting from scratch.
-    + Prior Impacts:
-        - Adapting MCS to each new generation of Intel CPU took over a year and an army of BIOS engineers. Failure to complete this work before Intel officially released a new CPU would result in tens of millions in lost revenue.
-    + Subsequent Observations:
-        - The BIOS Definition of Done is a living quality standard embraced by each of the new BIOS teams. The Definition of Done is continually clarified and extended over time by the teams themselves.
-        - The BIOS Definition of Done has always included a commitment to ensure any MCS BIOS changes leverage the AMI plugin layer whenever possible. This sensible requirement originated within the teams, not from the coach or management.
-    + Subsequent Impacts:
-        - Improved technical practices are expected to help dramatically reduce the time required to adapt to future generations of Intel CPUs.
-        - Healthy retrospectives and a focus on quality continuously provide clarity on the next improvement.
-* <span style="color:navy">Early identification and resolution of **defects** related to the extended component</span>
-    + Prior Observations:
-        - BIOS firmware engineers would make code changes and then throw the code over the wall to the testing group. It would generally be weeks or even months before the testers would identify problems and throw them back over the wall to the BIOS firmware engineers.
-        - There was very little if any automated testing. Almost all testing was very manual.
-        - It was common practice to commit code to source control which had compilation problems.
-    + Prior Impacts:
-        - It generally took months before defects were found and resolved.
-        - BIOS engineers often wasted time chasing breaking changes introduced by another developer. Many times this was done by another developer in a distant time zone who was no longer at work when the problem was discovered.
-    + Subsequent Observations:
-        - Every BIOS team contained people with the skills and domain knowledge to both develop and test any changes.
-        - Each BIOS team typically focused on making a small number of changes at any one time. They worked as real teams rather than as individuals as they actively focused on achieving the Definition of Done for the relevant Product Backlog Item.
-        - BIOS team members actively cross-trained each other in both technical and domain knowledge. Testers became stronger developers, and developers became stronger testers.
-        - Increasing levels of automated testing, and automated build systems helped further ensure problems were discovered as early as possible.
-        - The automated builds and tests were especially helpful in identifying conflicting priorities between the legacy teams and the LeSS-oriented teams.
-    + Subsequent Impacts:
-        - Defects were found and resolved within minutes or hours rather than months. The usual months wasted in multiple months of bug squashing after a “code-freeze” were completely unnecessary.
-        - Conflicting quality incentives and goals of the overseas teams working in the legacy structure became extremely visible once the overseas teams started to work on the same codebase. With time and management continuity I believe this visibility would have made it politically viable to restructure and improve the overseas teams as well.
-* <span style="color:navy">Improved employee **collaboration, engagement, and learning** within the extended component teams</span>
-    + Prior Observations:
-        - People worked as individuals rather than team members, each person focused on their own personal assignments.
-        - The teams followed a typical engagement model in which the manager led and drove the interactions and work assignments.
-        - Growth and learning was limited to an individual’s area of responsibility and historical expertise.  Expanding one’s expertise and responsibilities into new areas required arranging and shifting assignments. This took time, and was not always practical.
-    + Prior Impacts:
-        - _“A lot of effort with limited returns.”_ – Mitya
-    + Subsequent Observations:
-        - The teams managed the work themselves, collectively and enthusiastically focusing on delivering the PBIs their team selected.
-        - Individuals and teams actively learned whatever was required to complete the PBI their team was focused on at the moment. The degree of knowledge transfer within and across teams was an order of magnitude greater than previously observed.
-    + Subsequent Impacts:
-        - In the terminology of _Leading Teams_ by Richard Hackman, BIOS teams acted as _real teams_ rather than loosely collaborating individuals. Each team had a clear team _task_, clear _boundaries_, clearly specified _authority_ to manage their own work processes, and membership _stability_ over time.
-* <span style="color:navy">Increased awareness of **organizational impediments** and the need to make even more organizational changes</span>
-    + Prior Observations:
-        - Long development cycles, late discovery of defects, frequent hand-offs cross teams, work becoming bottlenecked on a single individual, and lots of other problems were accepted as normal. There was very little awareness that things could be significantly better.
-        - Individual team members had little structural incentive to focus on adaptability or value delivery at a global level.
-        - There was very little discussion or effort taken to remove long-standing organizational impediments.
-    + Prior Impacts:
-        - There were very few productive efforts at improving adaptability and value delivery at a global level.
-    + Subsequent Observations:
-        - Regular team and overall retrospectives within the BIOS teams frequently identified organizational impediments, which the teams and management would then actively attempt to resolve.
-        - The efforts of the BIOS extended component teams to fully validate any BIOS changes increasingly drove them to challenge code ownership boundaries and expand their ability to make code changes across multiple components.
-        - The pursuit of more rigorous quality standards manifested in the BIOS Definition of Done helped highlight the conflicting structural incentives of the legacy BIOS teams.
-    + Subsequent Impacts:
-        - People were slowly waking up to what was possible, and the need for greater organizational change.
+* <span style="color:navy">在扩展组件边界内局部改进的**适应能力**和**价值交付**</span>
+    + 先前的观察：
+        - 只有一两个人知道一个给定的BIOS子组件。代码所有权和知识实际上是在个体文件层面。
+        - BIOS组件之外的代码库知识在BIOS工程部门几乎不存在。
+        - 没有人知道把新一代英特尔CPU在新的刀片硬件上运行起来所需的整个工作。每个BIOS固件工程师和测试人员只知道他们的一小块拼图。
+    + 先前的影响：
+        - BIOS工程师不能在任何时间点都选择最有价值的工作，因为他们被限制在各自的专业领域。
+        - 几乎不可能准确地预测完成情况。
+    + 后续的观察：
+        - 每个团队成员逐渐变得可以工作在比之前更多数量的BIOS子组件上。
+        - 许多BIOS团队成员逐渐变得更加有能力测试和修改沿着从GUI到BIOS组件执行路径上整个系统的每个方面。
+        - 每个BIOS团队成员都对运行一块新的英特尔CPU所需的工作有一个好的整体理解。面向LeSS的BIOS团队中任何成员都能解释在BIOS组件待办列表上的任何条目，以及它是如何与整体情况相融的。
+        - BIOS组件待办列表始终提供一个交付下一个BIOS版本所需的所有剩余工作的更新视图。
+        - BIOS团队接受产品开发的自然变化，并承诺于在BIOS完成的定义中所显式表述的*质量*（而非*范围*）。
+    + 后续的影响：
+        - 面向LeSS的BIOS团队能够在任何时间点都始终聚焦于最有价值的工作。
+        - BIOS团队对他们的发布预测更有信心。
+        - BIOS团队能够确保，在开发低优先级功能之前，已开发功能已经达到了可发布级别。
+        - 面向LeSS的BIOS扩展组件团队确保每个迭代的增量可以与MCS系统整体成功集成并测试。在几千名工程师中，只有那个诊断试点的小Scrum团队可以声称类似的情况。
+* <span style="color:navy">改进的技术实践**提高了质量**，同时提高了对其它改进可能带来好处的意识</span>
+    + 先前的观察：
+        - 对质量标准是什么没有共同的约定。
+        - AMI提供的BIOS代码改动和MCS特有的代码改动揉在一起难以维护。每一个新代次的英特尔CPU事实上都需要从零开始。
+    + 先前的影响：
+        - 让MCS适配每一个新代次的英特尔CPU都需要花费超过一年和一大群BIOS工程师。没能在英特尔官方发布新CPU之前完成这项工作将导致数千万的收入损失。
+    + 后续的观察：
+        - BIOS完成的定义是一个活的质量标准，被每一个新BIOS团队所接受。完成的定义由团队自己持续澄清和不断扩展。
+        - BIOS完成的定义一直包含了一个承诺来确保任何MCS的BIOS改动尽可能地利用AMI插件层。这一明智的要求来源于团队，而非教练或管理层。
+    + 后续的影响：
+        - 改进的技术实践预计会有助于大大缩短适配未来代次英特尔CPU所需的时间。
+        - 健康的回顾和对质量的持续关注为下一步的改进提供了清晰度。
+* <span style="color:navy">与扩展组件相关**缺陷**的尽早识别和解决</span>
+    + 先前的观察：
+        - BIOS固件工程师修改完代码，然后就扔给测试组。在测试人员识别出问题并把它们扔回给BIOS固件工程师时，通常已经过去数周甚至数月了。
+        - 很少有自动化测试。几乎所有测试都是手工的。
+        - 把有编译问题的代码提交进源代码控制是普遍的做法。
+    + 先前的影响：
+        - 在缺陷被发现并解决之前通常会花费数月时间。
+        - BIOS工程师经常浪费时间来追寻另一个开发人员引入的破坏性改动。许多次这样的改动都是由另一个在不同时区的开发人员引入的，而当问题被发现时他已经不在工作了。
+    + 后续的观察：
+        - 每个BIOS团队都包含具备开发和测试任何改动的技能和领域知识的人员。
+        - 每个BIOS团队通常在任何一个时候只专注于少量的改动。他们作为真正的团队而不是个人工作，因为他们积极聚焦于实现相关产品待办条目的完成定义。
+        - BIOS团队成员在技术和领域知识上都积极相互交叉培训。测试人员变成了更强的开发人员，而开发人员变成了更强的测试人员。
+        - 不断提高的自动化测试和自动化构建系统有助于进一步确保问题被尽早发现。
+        - 自动化构建和测试尤其有助于识别遗留团队和面向LeSS的团队之间冲突的优先级。
+    + 后续的影响：
+        - 缺陷在几分钟或几小时 - 而不是几个月 - 内就被发现并解决。通常浪费在“代码冻结”之后消除缺陷上的几个月是完全没必要的。
+        - 当海外团队开始工作在同一个代码库上时，传统结构中工作的海外团队有冲突的质量激励和目标就变得非常明显。如果给以时间和有管理连续性，我相信这种可见性将使重组和改进海外团队在政治上变得可行。
+* <span style="color:navy">在扩展组件团队中改进的员工**协作、投入和学习**</span>
+    + 先前的观察：
+        - 大家都以个人而非团队成员的身份工作，每个人只专注于自己的个人任务。
+        - 团队遵循一种典型的投入模式，由经理来领导并推动互动和工作分配。
+        - 成长和学习仅限于个人的职责领域和过往的专业知识。扩展某人的专业知识和职责需要安排和变换任务。这需要时间，并且不总是现实可行。
+    + 先前的影响：
+        - *“付出大量努力却回报有限”* –米提亚
+    + 后续的观察：
+        - 团队自己管理工作，共同热情地聚焦于交付他们团队选择的产品待办条目。
+        - 个人和团队积极学习为完成他们团队目前关注的条目所需的一切。团队内部和团队之间知识转移的程度比之前观察到的要大一个数量级。
+    + 后续的影响：
+        - 用理查德·哈克曼《高效团队：领导团队走向成功的5大黄金法则》书中的术语来说，BIOS团队是*真正的团队*，而非松散协作的一群个体。每个团队都有一个清晰的团队*任务*，清晰的*边界*，清晰指定的管理他们自己工作流程的*权力*，以及成员的*稳定性*。
+* <span style="color:navy">提升的对**组织障碍**和进行更多组织变革必要性的意识</span>
+    + 先前的观察：
+        - 开发周期长、缺陷发现晚、频繁的跨团队交接、工作在某个人这里成了瓶颈，还有很多其它问题，都被认为是正常的。对情况是可能明显好转的几乎没有意识。
+        - 个体团队成员几乎没有结构性激励来关注全局层面的适应性或价值交付。
+        - 几乎没有讨论或努力来消除长期存在的组织障碍。
+    + 先前的影响：
+        - 很少有富有成效的努力来在全局层面改善适应性和价值交付。
+    + 后续的观察：
+        - 在BIOS团队内定期的团队和整体回顾经常识别出组织障碍，对此团队和管理层会积极尝试解决。
+        - BIOS扩展组件团队为充分验证任何BIOS改动所做的努力越来越促使他们挑战代码所有权边界，并扩展他们的能力来跨多组件改动代码。
+        - 对表现在BIOS完成的定义中的更严格质量标准的追求帮助突显了传统BIOS团队有冲突的结构性激励。
+    + 后续的影响：
+        - 大家慢慢意识到什么是可能的，以及进行更大组织变革的必要性。
 
-
-## Wrapping Up {#wrapping-up}
+## Wrapping Up 总结 {#wrapping-up}
 
 I strongly believe the best chance of long-term success is achieved with a broad product boundary coupled with feature teams executing within the full scope of the product. If the art of the possible excludes this choice, an incremental approach starting with extended component teams and aggressively moving towards expanded component teams and feature teams can still be worth pursuing.
+我坚信，长期成功的最佳机会在于实现一个广泛的产品边界以及工作在产品整个范围内的特性团队。如果可能的艺术排除了这一选择，那么从扩展的组件团队开始并积极转向扩大的组件团队和特性团队的增量方式仍然是值得去做的。
 
-# Appreciations
+# Appreciations 致谢
 
 I am grateful for the extensive work and mentorship provided by Viktor Grgic and Craig Larman throughout the editorial review process.
-
+我感谢维克多·格里奇和克雷格·拉曼在整个编辑评审过程中提供的广泛工作和指导。
