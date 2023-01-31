@@ -936,23 +936,27 @@ The following recommendation from Mitya illuminates the challenging context invo
 * <span style="color:navy">I was the only person available to us with a strong enough Scrum Master skill-set to attempt such a challenging Scrum adoption. I could only do it by leaning heavily on the BIOS developers, Mitya, and others for guidance as we collectively found our way to improving things.</span>
 
 
-## BIOS Teams Self-Selected {#bios-teams-self-selected}
+## BIOS Teams Self-Selected BIOS团队自选组成 {#bios-teams-self-selected}
 
 During inception we collaboratively worked out who would be on each new team.
+在开始阶段，我们合作确定了每个新团队的成员。
 
 Having the Portland people form a single team was an easy decision for the group. There were only a half dozen or so people in Portland. This included software, hardware and test engineers. Mitya, Krishna, Trent, and I had worked to ensure this would be the case way back when we decided who we would train in Portland. I think Krishna may have helped us find an appropriate test engineer we took from a group working on another part of MCS.
+让波特兰的成员组成一个团队是个容易的决定。在波特兰只有五六个人，包含软件、硬件和测试工程师。远在决定在波特兰要培训哪些人时，米提亚、克里希纳、特伦特和我已经努力确保会是这样的情况。我认为是克里希纳帮助我们从工作于MCS另一块的部门里找到了一个合适的测试工程师。
 
 The real challenge was who would be on which of the San Francisco teams, and how many San Francisco teams there would be. We initially ended up with two. As I recall the group made an initial pass at self-designing their team compositions on the afternoon of the first launch day. After some contemplation and thought overnight, the group made a few minor adjustments to the team compositions on the second day of the launch.
+真正的挑战在于决定谁会在哪个旧金山团队，以及会有几个旧金山团队。我们最初的结果是两个。我记得，一组人在启动的第一天下午自设计团队组成取得了初步成功。经过一夜的沉思和思考，在启动的第二天大家对团队组成进行了一些微调。
 
 In a few months we would roll in a few more developers working on the edges of the BIOS component boundary and form another team or two working within the same LeSS-oriented structure.
+几个月后，我们加进了多几个可以在BIOS组件边界的边缘上工作的开发人员，并在相同的面向LeSS结构中组建了另外一两个团队。
 
 Although the Portland team was largely co-located, there were initially a few critical engineering skills they were missing. For a little while one or two San Francisco engineers were members of the Portland team. Over time I believe the Portland engineers became entirely self-sufficient.
+尽管波特兰团队基本上同处一地，但最初他们缺少一些关键的工程技能。有一段时间，有一两名旧金山工程师是波特兰团队的成员。随着时间的推移，我相信，波特兰的工程师做到了完全自给自足。
 
-
-## BIOS Cadence and Sprint Timing {#bios-cadence-and-sprint-timing}
+## BIOS Cadence and Sprint Timing BIOS节奏和迭代时间选择 {#bios-cadence-and-sprint-timing}
 
 The group decided on a two week cadence. We made sure the Sprint boundary was mid-week so that I could be available to the teams and not somewhere in the stratosphere sitting on a plane.
-
+大家决定采用两周的节奏。我们确保迭代边界在周中，以便我可以和团队一起，而不是在路上。
 
 ## BIOS Retrospective Structure Adaptation BIOS回顾结构调整 {#bios-retrospective-structure-adaptation}
 
