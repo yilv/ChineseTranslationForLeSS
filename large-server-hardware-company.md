@@ -961,51 +961,63 @@ The group decided on a two week cadence. We made sure the Sprint boundary was mi
 ## BIOS Retrospective Structure Adaptation BIOS回顾结构调整 {#bios-retrospective-structure-adaptation}
 
 We tried several variations on a combination of cross-team and per-team retrospectives. The retrospective structure was similar in spirit to the LeSS Sprint Rules, although it varied slightly in the details.
+我们在跨团队和团队各自的回顾中尝试了几种变化。这些回顾结构与LeSS迭代规则在精神上接近，尽管在细节上略有不同。
 
 From a retrospective meta-structure perspective we typically followed the advice seen in _Agile Retrospectives_ by Esther Derby and Diana Larsen. The most common techniques were simple brainstorming with dot voting, time-boxed discussions, and the use of a brief four-box retrospective on the retrospective structure itself.
+从回顾的元结构角度来看，我们通常遵循埃丝特·德比和戴安娜·拉森在《敏捷回顾》中的建议。最常用的技术是简单的头脑风暴加以点投票、固定时长的讨论，以及对回顾结构本身使用一个简短的四框回顾。
 
-
-### Initial Retrospective Structure {#initial-retrospective-structure}
+### Initial Retrospective Structure 初始回顾结构 {#initial-retrospective-structure}
 
 The initial retrospective structure was as follows:
+初始的回顾结构如下：
 
-1. Cross-team meeting to identify the highest priority cross-team discussion item
-2. Per-team retrospectives to discuss per team issues as well as the highest priority cross-team item
-3. Cross-team meeting (a LeSS Overall Retrospective) to discuss the output of the per-team meetings and to come to consensus on an approach to solving the cross-team issue
+1. 跨团队会议来识别最高优先级的跨团队讨论事项
+2. 团队各自回顾来讨论团队自身的问题和最高优先级的跨团队事项
+3. 跨团队会议（LeSS整体回顾）来讨论团队各自会议的产出，并就解决跨团队问题的方法达成共识
 
 Both cross-team meetings included all team members from every BIOS team, Mitya (the Fake Product Owner), and myself (acting Scrum Master).
+两个跨团队会议都包括了每个BIOS团队的所有成员、米提亚（伪PO），还有我自己（代理SM）。
 
 The first cross-team meeting was focused on identifying any cross-team team issue the group felt was important for the team level retrospectives to consider. The intent was to provide an opportunity for people to work out potential solutions to the cross-team issue in smaller team level discussions, such that the subsequent cross-team meeting would benefit from deeper insights that might not have surfaced in a larger group discussion.
+第一个跨团队会议聚焦于识别大家觉得重要到要让团队层面的回顾考虑的任何跨团队问题。意图是提供给大家一个机会在更小的团队层面讨论中找到跨团队问题的潜在解决方案，以便后续的跨团队会议能受益于这些在更大范围讨论中未必能显露的、更深的洞察。
 
 You will notice this is very similar to the LeSS Framework structure of team level retrospectives followed by an overall retrospective. The key difference is the team level retrospectives were sandwiched between the first and second part of an overall retrospective.
+你会注意到这和LeSS框架中团队层面回顾之后跟一个整体回顾的结构非常类似。关键的差别在于我们的团队层面回顾夹在了整体回顾的第一和第二部分之间。
 
 In practice, the team level retrospectives seemed to spend most of their time on whatever issues were identified in the first part of the overall retrospective. Had the team level retrospectives been conducted before any overall retrospective meeting as the LeSS framework prescribes I believe the team level retrospectives may have been more insightful.
+实际上，团队层面的回顾看起来花费了大多数时间在那些第一部分的整体回顾中识别出来的问题上。如果团队层面的回顾像LeSS框架指定的那样在任何整体回顾会议之前进行，我相信团队层面的回顾可能会更有洞察。
 
 Most of the problems surfaced were cross-team in nature. I don’t know if this was simply a result of context, or whether having a portion of the overall retrospective before the team level retrospectives had the effect of unintentionally distracting the teams from more challenging team level discussions.
+大多数显露的问题本质上都是跨团队的。我不知道这只是特定环境带来的结果，还是由于在团队层面回顾之前进行了一部分整体回顾，无意中分散了团队对那些更具挑战性的团队层面讨论的注意力。
 
-
-### Later Retrospective Structure {#later-retrospective-structure}
+### Later Retrospective Structure 后期回顾结构 {#later-retrospective-structure}
 
 We were generally careful to close the final cross-team retrospective with a retrospective on the retrospective itself. From this we eventually decided to change to the following retrospective structure.
+我们通常都很谨慎，在结束最后的跨团队回顾之后会对回顾本身进行一次回顾。由此我们最终决定改为以下回顾结构。
 
-1. Cross-team meeting to identify the highest priority cross-team discussion items
-2. Breakout groups for the top few dot voted issues. Break-out groups tended to cross team boundaries, with people often self-selecting to attend the breakout they were most passionate about or most needed for.
-3. Cross-team meeting to discuss output of breakout group meetings and to come to consensus on an approach to solving the cross-team issues discussed
+1. 跨团队会议来识别最高优先级的跨团队讨论事项
+2. 为前几个点投票出来的问题进行分组。分组倾向于跨团队边界，大家通常会自行选择参加他们最热衷或最需要的分组
+3. 跨团队会议来讨论分组会议的结果，并就解决跨团队问题的方法达成共识
 
 As you can see this structure was identical to the initial structure with the exception of the middle step. Rather than breaking into per-tegam retrospectives we were breaking off into working groups which cut across team boundaries, and aligned with whatever people felt most they had the most affinity with.
+如你所见，这个结构除了中间步骤之外与初始结构相同。我们没有分开进行团队各自的回顾，而是分成跨团队边界的工作组，把最相关最感兴趣的人聚在一起。
 
 In practice the Portland team generally stayed as a team during the second step. We generally conducted any cross-team events in a set of tele-presence rooms. If anyone in San Francisco felt particularly passionate about the topic the majority of the Portland folks had taken, we would use the tele-presence room for that topic. Other working groups would go elsewhere in other break out rooms with limited tele-presence capability.
+在实践中，波特兰团队通常在第二步中仍保持在一起。我们通常是在一组远程会议室中进行跨团队活动。如果旧金山有人对主要是波特兰人所选的话题特别感兴趣，我们会使用电视直播室来讨论这个话题。其他工作组则会去其它只有有限远程能力的会议室。
 
 How the retrospective working groups split up in San Francisco was often somewhat random. We would often split down the middle of a conference table, with a few people switching working groups when it made sense.
+在旧金山如何分成回顾工作组往往有些随机。我们通常会在会议桌中间分开，当有必要时再交换几个人。
 
 Given the naturally collaborative nature and relationship history of the people involved, lack of a dedicated per-team retrospective didn't seem to matter. In other groups I have worked with, per-team retrospectives often turn out to be crucial. Perhaps with time and additional teams the dynamics would have shifted such that the group would have decided to restore team level retrospectives.
+鉴于参与人员的自然协作特征和关系历史，缺乏专门的团队回顾似乎并不重要。在我合作过的其他组织中，团队各自的回顾往往是至关重要的。也许随着时间的推移和其他团队的加入，动态会发生变化，以致于大家决定恢复团队层面的回顾。
 
-
-### Larger Structural Issues Not Addressed in Overall Retrospectives {#larger-structural-issues-not-addressed-in-overall-retrospectives}
+### Larger Structural Issues Not Addressed in Overall Retrospectives 更大的结构问题并没有在整体回顾中解决 {#larger-structural-issues-not-addressed-in-overall-retrospectives}
 
 In LeSS, the overall retrospective is intended to address broader systemic issues. Although the BIOS teams actively addressed and implemented solutions to cross-team systemic issues within their control, there was little ability to address broader systemic issues. Neither the VP layer managers, nor the new SVP manager ever attended.
+在LeSS中，整体回顾旨在解决更广泛的系统性问题。尽管BIOS团队在其控制范围内积极解决并实施了跨团队系统问题的解决方案，但几乎没有能力解决更广泛的系统问题。无论是VP层管理者还是新的SVP都从来没有参加过整体回顾。
 
 See _Guide: Overall Retrospective_ in _Large-Scale Scrum: More with LeSS_ for more nuance around this topic.
+有关本主题的更多细节，请参阅《大规模Scrum》书中的*指南：整体回顾*。
 
 # BIOS Alignment to LeSS Rules BIOS与LeSS规则的比对 {#bios-alignment-to-less-rules}
 
