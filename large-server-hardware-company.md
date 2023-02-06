@@ -708,16 +708,16 @@ The major differences mostly revolved around the rather straightforward scaling 
 ## BIOS Launch Steps BIOS启动步骤 {#bios-launch-steps}
 
 Mitya and I decided to initially focus on the engineers in San Francisco and Portland first. San Francisco and Portland were mostly focused on bringing up a new Intel chipset and board design. The engineers in Bengaluru were predominantly focused on fixing problems dealing with support for a chipset which was already in production.
-Mitya和我决定首先关注旧金山和波特兰的工程师。旧金山和波特兰的会议主要集中在推出新的英特尔芯片组和电路板设计上。班加罗尔的工程师主要专注于解决支持已经投入生产的芯片组的问题。 
+米提亚和我决定首先聚焦于旧金山和波特兰的工程师。旧金山和波特兰主要专注于把新的英特尔芯片组和电路板设计运行起来。班加罗尔的工程师则主要专注于解决支持已经投入生产的芯片组的问题。
 
 I worked with Mitya to arrange training venues and to schedule Scrum training for every MCS BIOS engineer in San Francisco and Portland. We made sure to include a few closely collaborating test engineers from another group, and a few other relevant parties. If I remember correctly, this resulted in two training sessions in San Francisco and one in Portland over the course of three weeks. Mitya attended each training session in San Francisco. Mitya did not attend the Portland training, but Krishna Mishra was there providing support. Mitya did fly with me to Portland during the subsequent launch steps less than a week later.
-我和Mitya一起为旧金山和波特兰的每一位MCS BIOS工程师安排培训场地和Scrum培训。我们确保包括一些来自另一个小组的紧密合作的测试工程师，以及一些其他相关方。如果我没记错的话，在三周的时间里，我在旧金山进行了两次培训，在波特兰进行了一次。Mitya参加了在旧金山的每一次培训。Mitya没有参加波特兰的训练，但是Krishna Mishra在那里提供支持。在不到一周后的后续发射步骤中，Mitya确实和我一起飞到了波特兰。 
+我和米提亚一起为旧金山和波特兰每一位MCS的BIOS工程师安排了Scrum培训。我们确保包含了一些来自另一个小组但跟我们紧密协作的测试工程师，以及一些其他相关方。如果我没记错的话，在三周的时间里，我在旧金山进行了两场培训，在波特兰进行了一场。米提亚参加了在旧金山的每一场培训。米提亚没有参加波特兰的培训，但是克里希纳·米什拉在那里提供支持。但在不到一周后的后续启动步骤中，米提亚确实和我一起飞到了波特兰。
 
 The launch efforts were split across San Francisco and Portland. The initial two days of launch activity were conducted on a Thursday and Friday in San Francisco with the Portland BIOS team members conferenced in. The following week Mitya and I met up in Portland and continued the launch efforts with the Portland team members. This provided the Portland team members a better chance to influence, adjust, and ratify the work of the previous week. During the Portland launch efforts we frequently conferenced-in the San Francisco team members.
-发射工作分别在旧金山和波特兰进行。最初两天的启动活动于周四和周五在旧金山进行，波特兰BIOS团队成员在这里开会。接下来的一周，我和Mitya在波特兰会面，继续与波特兰团队成员一起努力。这为波特兰团队成员提供了一个更好的机会来影响、调整和批准前一周的工作。在波特兰发布期间，我们经常与旧金山的团队成员开会。 
+启动工作被拆分成跨旧金山和波特兰两地进行。最初两天的启动活动于周四和周五在旧金山进行，而波特兰的BIOS团队成员通过电话会议拨入。接下来的那周，我和米提亚则在波特兰会面，与波特兰团队成员继续启动工作。这为波特兰团队成员提供了一个更好的机会来影响、调整和核定前一周的工作。在波特兰的启动工作期间，我们经常有旧金山的团队成员拨入。
 
 During the launch activity I wrote out a list of everything we needed to achieve, making sure everyone understood the intent of each item. I then largely took a back seat allowing the group to drive as much as possible, only stepping in when required. The list included things like creating an initial BIOS component backlog, figuring out a common Definition of Done, determining individual team boundaries, and working out event scheduling.
-在发布活动期间，我列出了我们需要实现的所有东西的清单，确保每个人都理解每个项目的意图。然后，我基本上退居次要地位，让团队尽可能地发挥作用，只有在需要时才会介入。该列表包括创建初始BIOS组件待办事项，确定完成的公共定义，确定单个团队的边界，以及制定事件调度。
+在启动活动期间，我列出了我们需要实现的所有东西的清单，确保每个人都理解每项的意图。然后，我基本上往后站，尽可能让团队来驱动，只在需要时才介入。该清单包括创建初始的BIOS组件待办列表、确定一个共同的完成定义、决定各个团队的边界，以及制定事件的时间表。
 
 ## BIOS Component Backlog BIOS组件待办列表 {#bios-component-backlog}
 
