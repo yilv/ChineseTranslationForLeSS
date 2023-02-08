@@ -730,7 +730,7 @@ The structure of the initial BIOS component backlog brainstorming was fairly sta
 最初的BIOS组件待办列表头脑风暴的结构是相当标准的，不同之处在于达成的有用细节程度和对齐水平，以及做好它所需的时间。
 
 In this case the BIOS engineers were doing something they had collectively done many times before. As long as they collectively worked to pull the necessary knowledge out of each other's head, they were capable of creating a massive and detailed list of almost everything required. In retrospect I believe poor software practices such as copy-paste reuse and a reliance on manual testing meant the BIOS engineers had mostly been _re-tracing the same steps_ with every new Intel chipset.
-这里BIOS工程师只是在做一些他们以前集体做过很多次的事情。只要他们共同工作，从彼此的头脑中汲取必要的知识，他们有能力创建一份包含几乎所有需要内容的庞大而详细的列表。回想起来我相信，是诸如拷贝粘贴重用和依赖手动测试之类糟糕的软件实践导致了BIOS工程师在每一个新的英特尔芯片组上大部分时间都在*重复相同的步骤*。
+这里BIOS工程师只是在做一些他们以前集体做过很多次的事情。只要他们共同工作，从彼此的头脑中汲取必要的知识，他们有能力创建一份包含几乎所有需要内容的庞大而详细的列表。回想起来我相信，是诸如复制粘贴重用和依赖手动测试之类糟糕的软件实践导致了BIOS工程师在每一个新的英特尔芯片组上大部分时间都在*重复相同的步骤*。
 
 We would collaboratively write everything we could think of on post-it notes and place them onto the windows of a large corner conference room we had reserved. Mitya or another team member would then lead the group through each post-it. We gathered the post-it notes into sensible emergent groupings while concurrently consolidating duplicates. As the group discussed each post-it to gain consensus the participants would generate new post-its on the fly as it made sense. We would then spend a bit more time in small work groups generating new post-its before returning to a discussion session in which we consolidated everything again. This took us most of the first day. At the end of the first day we switched to some other items on the launch checklist, agreeing to let people prepare even more post-its for the next day.
 我们一起把能想到的每一样都写在便利贴上，贴在我们预定的大会议室的窗户上。然后米提亚或另一名团队成员带领团队过每一张便利贴。我们再收集便利贴放入合理涌现出的分组中，同时合并重复项。在讨论每一张便利贴以达成共识的过程中，只要合理参会者就会即时生成新的便利贴。然后我们会花多些时间以小的工作组来生成新的便利贴，再回到一个讨论环节以整合所有内容。这花了我们第一天的大部分时间。在第一天结束时，我们转向启动清单上的其它项目，约定让大家为第二天准备更多便利贴。
@@ -837,18 +837,18 @@ We didn't so much force ourselves into some artificial set of refinement time-bo
 ## BIOS Definition of Done BIOS完成的定义 {#bios-definition-of-done}
 
 The second most interesting part of the inception effort was the Definition of Done creation. The team decided to ensure as much as possible they would move away from the terrible copy-paste behaviors of the past. They decided to be sure and leverage AMI's pluggable extension points whenever possible, and to pressure AMI to add any missing required extension points. You can see this commitment manifested in the more formalized Definition of Done included below. Look for the line starting with:  “No changes outside of pluggable layer, ...”
-初始工作的第二个最有趣的部分是创建完成的定义。团队决定尽可能地避免过去可怕的复制粘贴行为。他们决定确保并尽可能利用AMI的可插拔扩展点，并向AMI施加压力，以添加任何缺少的必要扩展点。您可以在下面的更正式的“完成的定义”中看到这种承诺。寻找以“在可插拔层之外没有变化，…”开头的行。
+启动工作中第二个最有趣的部分是创建完成的定义。团队决定尽可能地避免过去糟糕的复制粘贴行为。他们决定确保可能的时候就用AMI的可插入扩展点，并向AMI施压以添加任何缺失的必要扩展点。你可以在下面更正式的完成的定义中看到这一承诺。查找以“在可插入层之外没有改动，……”开头的行。
 
 <a name="figure21"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/mcsLaunchDraftDefinitionOfDOne.jpg" alt="BIOS Launch Definition of Done">
-  <figcaption>Figure 21: This is the initial draft Definition of Done created by the BIOS teams during their multi-day launch event. 图21:这是BIOS团队在几天的启动活动中创建的完成定义的初始草案。</figcaption>
+  <figcaption>图21：这是BIOS团队在多天启动活动中创建的完成定义的初稿。</figcaption>
 </figure>
 
 <a name="figure22"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/mcsDefinitionOfDoneAfterSeveralSprints_9_3.jpg" alt="BIOS Evolved Definition of Done">
-<figcaption>Figure 22: The Definition of Done used by the BIOS teams evolved to what you see here after a few Sprints. This example Definition of Done along with additional context can be found in Table 9.3 of <b>Forging Change</b>. 图22:经过几个sprint之后，BIOS团队所使用的“完成的定义"演变成了您在这里看到的样子。此已完成定义示例以及附加上下文可在稳步前进的更改表9.3中找到。</figcaption>
+<figcaption>图22：BIOS团队所使用的完成的定义在经过几个迭代之后演变成了你在这里看到的样子。这个完成定义的示例以及附加的上下文可在《Forging Change》书中的表格9.3中找到。</figcaption>
 </figure>
 
 ## BIOS Scrum Key Roles Scrum关键角色 {#bios-scrum-key-roles}
