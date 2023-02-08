@@ -722,122 +722,117 @@ During the launch activity I wrote out a list of everything we needed to achieve
 ## BIOS Component Backlog BIOS组件待办列表 {#bios-component-backlog}
 
 The most interesting part of the launch effort revolved around the creation of the component backlog. The knowledge of what was needed to bring up the next Intel chipset was very broadly dispersed across the entire team. No one team member had a good understanding of the whole. The solution involved a couple days of brainstorming, followed by detailed refinement of individual PBIs in small working groups, and finally an incremental story mapping effort.
-启动工作中最有趣的部分围绕组件待办列表的创建。开发下一代英特尔芯片组所需的知识广泛地分散在整个团队中。没有一个团队成员对整体有很好的理解。解决方案包括几天的头脑风暴，然后在小工作组中详细细化各个产品待办列表项，最后是增量的故事映射工作。
+启动工作中最有趣的部分是围绕组件待办列表的创建。把下一代英特尔芯片组运行起来所需的知识在整个团队里分得很散。没有一个团队成员有很好的整体理解。解决方案包括：先是两天头脑风暴，然后以小的工作组进行各个产品待办条目的详细梳理，最后是增量的故事构图工作。
 
 ### Initial Component Backlog Brainstorming 初始组件待办列表头脑风暴 {#initial-component-backlog-brainstorming}
 
 The structure of the initial BIOS component backlog brainstorming was fairly standard, the difference was the level of useful detail and alignment achieved and the amount of time required to do it well.
-最初的BIOS组件待办列表头脑风暴的结构是相当标准的，不同之处在于实现的有用细节和对齐的水平以及做好它所需的时间。 
+最初的BIOS组件待办列表头脑风暴的结构是相当标准的，不同之处在于达成的有用细节程度和对齐水平，以及做好它所需的时间。
 
 In this case the BIOS engineers were doing something they had collectively done many times before. As long as they collectively worked to pull the necessary knowledge out of each other's head, they were capable of creating a massive and detailed list of almost everything required. In retrospect I believe poor software practices such as copy-paste reuse and a reliance on manual testing meant the BIOS engineers had mostly been _re-tracing the same steps_ with every new Intel chipset.
-在这种情况下，BIOS工程师正在做一些他们以前集体做过很多次的事情。只要他们共同努力，从彼此的头脑中汲取必要的知识，他们就能够列出一份几乎所有所需内容的庞大而详细的清单。回想起来，我认为糟糕的软件实践，如复制粘贴重用和对手动测试的依赖，意味着BIOS工程师在每一个新的英特尔芯片组上都要重复相同的步骤。
+这里BIOS工程师只是在做一些他们以前集体做过很多次的事情。只要他们共同工作，从彼此的头脑中汲取必要的知识，他们有能力创建一份包含几乎所有需要内容的庞大而详细的列表。回想起来我相信，是诸如拷贝粘贴重用和依赖手动测试之类糟糕的软件实践导致了BIOS工程师在每一个新的英特尔芯片组上大部分时间都在*重复相同的步骤*。
 
 We would collaboratively write everything we could think of on post-it notes and place them onto the windows of a large corner conference room we had reserved. Mitya or another team member would then lead the group through each post-it. We gathered the post-it notes into sensible emergent groupings while concurrently consolidating duplicates. As the group discussed each post-it to gain consensus the participants would generate new post-its on the fly as it made sense. We would then spend a bit more time in small work groups generating new post-its before returning to a discussion session in which we consolidated everything again. This took us most of the first day. At the end of the first day we switched to some other items on the launch checklist, agreeing to let people prepare even more post-its for the next day.
-我们会一起把我们能想到的每一样都写在便利贴上，贴在我们预定的大会议室的窗户上。Mitya或另一名团队成员将带领团队完成每一张便利贴。我们将便利贴收集到合理的紧急分组中，同时合并重复。当小组讨论每一张便利贴以达成共识时，参与者会在有意义的情况下迅速生成新的便利贴。然后，我们会花更多的时间在小工作小组中生成新的便利贴，然后再回到讨论环节，再次整合所有内容。这花了我们第一天的大部分时间。在第一天结束时，我们转向启动清单上的其他项目，同意让大家为第二天准备更多便利贴。
+我们一起把能想到的每一样都写在便利贴上，贴在我们预定的大会议室的窗户上。然后米提亚或另一名团队成员带领团队过每一张便利贴。我们再收集便利贴放入合理涌现出的分组中，同时合并重复项。在讨论每一张便利贴以达成共识的过程中，只要合理参会者就会即时生成新的便利贴。然后我们会花多些时间以小的工作组来生成新的便利贴，再回到一个讨论环节以整合所有内容。这花了我们第一天的大部分时间。在第一天结束时，我们转向启动清单上的其它项目，约定让大家为第二天准备更多便利贴。
 
 On the morning of the second day we continued the BIOS Component Backlog brainstorming activity, concluding the brainstorming around lunchtime. We then went back to finishing up other things on the launch cecklist.
-第二天早上，我们继续进行BIOS组件待办列表的头脑风暴活动，在午餐时结束了头脑风暴。然后我们继续完成启动清单上的其他事情。
+第二天早上，我们继续进行BIOS组件待办列表的头脑风暴活动，在午餐时结束了头脑风暴。然后我们继续完成启动清单上的其它事情。
 
 We had enough Component Backlog to support the first Sprint, but not yet enough to achieve the level of useful detail we desired and knew was possible. If this were a new product being developed in a more typical software engineering context, I think what we did would be wasteful. Yet in this case, we were effectively consolidating and documenting years of tribal knowledge.
-我们有足够的组件待办列表来支持第一个Sprint，但是还不足以达到我们所期望的有用的细节级别。如果这是一个在更典型的软件工程环境下开发的新产品，我认为我们所做的将会浪费。然而，在这种情况下，我们有效地巩固和记录了多年的部落知识。
+我们有足够的组件待办列表来支持第一个迭代，但是还未达到我们想要的并可能达到的有用细节程度。如果这是一个在更典型软件工程环境下开发的新产品，我认为我们所做的将会是浪费。然而在这里我们有效地整理和记录了多年的部落知识。
 
 The _Initial PBR_ guide in _Large-Scale Scrum: More with LeSS_ covers _Initial Product Backlog Refinement_ in more detail. One motivation includes:
-《Large-Scale Scrum: More with LeSS》中的初始PBR指南更详细地介绍了初始产品待办事项列表梳理成更多细节。其中一个动机包括:
+《大规模Scrum》中的*初始PBR*指南更详细地介绍了*初始产品待办列表梳理*。一个动力是：
 
->**Limited knowledge of customer-centric view**.
+>**有限的客户视角知识**。 
 >
->Even if the old items were previously expressed in a customer-centric way, the prior siloed-specialists focus on narrow tasks, and so don’t understand the full customer-centric view.
->有限的知识，以客户为中心的观点。 
->即使以前的项目是以客户为中心的方式表达的，以前的独立专家专注于狭隘的任务，因此不理解完整的以客户为中心的观点。
+>即使以前的条目是以客户视角表达的，因为之前孤立专家只关注狭窄的任务，所以仍不理解完整的客户视角。
 
 _Chapter 5: Planning_ of _Practices for Scaling Lean & Agile Development_ also has a variety of relevant experiments. The most directly relevant is _Try...Kickstart large-scale Scrum with one initial Product Backlog refinement workshop_.
-第5章:扩展精益和敏捷开发的实践规划也有各种相关的实验。最直接相关的是试着启动带有一个初始的产品待办事项列表细化研讨会的LeSS。
+《精益和敏捷开发大型应用实战》的*第5章：计划*中也有各种相关的实验。最直接相关的是*尝试……以一个初始产品待办列表梳理工作坊开启大规模Scrum*。
 
 <a name="figure16"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/mcsLaunchDraftProductBacklogOrderAssignment.png" alt="BIOS Component Backlog Brainstorming">
-  <figcaption>Figure 16: The initial BIOS component backlog brainstorming produced a series of preliminary PBI post-its with little more than short descriptions and/or titles. Each PBI post-it was assigned an effort estimate using poker planning, and given an appropriate order in the BIOS Component Backlog. Just before leaving we captured photos of our work in preparation for transitioning the data to electronic format. 图16:最初的BIOS组件待办列表头脑风暴产生了一系列初步的PBI便签，只有简短的描述和/或标题。每个PBI便利贴都使用扑克牌计划分配了工作量估计，并在BIOS组件待办列表中给出了适当的顺序。就在离开之前，我们拍摄了工作的照片，为把数据转换为电子格式做准备。</figcaption>
+  <figcaption>图16：最初的BIOS组件待办列表头脑风暴产生了一系列初步的PBI便利贴，只有简短的描述或标题。每张PBI便利贴都用计划扑克估算了工作量，并在BIOS组件待办列表中排定了合适的次序。就在离开之前，我们拍照记录下我们的工作，准备后续把这些数据转成电子格式。</figcaption>
 </figure>
 
-### Initial BIOS Component Backlog Refinement 最初的BIOS组件待办列表细化 {#initial-bios-component-backlog-refinement}
+### Initial BIOS Component Backlog Refinement 初始BIOS组件待办列表梳理  {#initial-bios-component-backlog-refinement}
 
 Over the course of the first couple Sprints I worked with different small groups of engineers who knew the most about different aspects of the initial BIOS Component Backlog created during inception. I would remind each working group of the INVEST test, and help them work through the creation of a few PBIs. Once a group got a feel for what a well sliced PBI felt like, they would continue to work through every PBI they knew enough about to refine. In most cases I stayed with them to support them as they did this. It generally took each working group an hour or two to get a hang of how to turn a one-line description into a PBI with good acceptance criteria. It then took a working group another hour or two of effort to refine the remaining relevant higher priority PBIs into well refined PBIs. The developers in these working groups generally spanned two or more of the BIOS feature teams we formed during inception.
-在最初的几个迭代过程中，我与不同的工程师小组一起工作，他们最了解初始阶段创建的BIOS组件待办列表的不同方面。我将提醒每个工作组注意INVEST测试，并帮助他们通过创建一些PBI来工作。一旦一个团队对PBI有了一个良好的的感觉，他们就会继续通过他们所了解的每一个PBI来改进。在大多数情况下，当他们这样做的时候，我会留下来支持他们。每个工作组通常需要一两个小时来掌握如何将一行描述转换为具有良好接受标准的PBI。然后，工作组又花了一两个小时的时间，将其余相关的高优先级PBI细化为精细化的PBI。这些工作组中的开发人员通常跨越了我们在初始阶段组建的两个或多个BIOS特性团队。
+在前两个迭代过程中，我与那些对启动时创建的BIOS组件待办列表的不同方面最为了解的工程师小组一起工作。我提醒每个工作组注意INVEST测试，并帮助他们工作于创建几个PBI。一旦一个组对好的PBI切分应该是怎样的有所感知，他们就会继续对他们所了解的每一个PBI进行梳理。大多数情况下，在他们进行时我会留下来支持。每个工作组通常需要一两个小时来掌握如何将一行描述转换成带良好验收标准的PBI。然后工作组会再花了一两个小时将其余相关的高优先级PBI梳理成精细的PBI。这些工作组中的开发人员通常跨越了我们在启动时组建的两个或多个BIOS特性团队。
 
 Once we felt we had enough detail in the BIOS Component Backlog, Mitya and I moved onto story mapping and affinity estimation. Mitya and I printed out the summary details of each PBI in small card format and started building out a story map in a small dedicated _information radiator_ room near where the San Francisco BIOS teams sat. Mitya and I would pull in various groups of BIOS engineers anytime it made sense, while trying to be sensitive to any demands on their time. We eventually worked out a sensible BIOS Component Backlog ordering along with the MVP for the new Intel chipset and board design. The MVP turned out to be more than half of the component backlog. With all the complexity involved it took several sessions of an hour or two each over the course of several contemplative days before the story map started to settle down.
-一旦我们觉得在BIOS组件待办列表中有了足够的细节，Mitya和我就转向了故事地图和亲和性估计。Mitya和我用小卡片格式打印出每个PBI的概要细节，并开始在旧金山BIOS团队所在地附近的一个专用的信息传播器小房间里构建故事地图。Mitya和我将在任何有感觉的时候召集各种BIOS工程师小组，同时努力对他们的时间需求保持觉察。我们最终为新的英特尔芯片组和电路板设计制定了一个合理的BIOS组件待办列表顺序。结果发现MVP超过了组件待办列表的一半。由于涉及到的复杂性，在故事地图开始稳定下来之前，我们需要在几天的深度思考中进行好几次每次一到两个小时的讨论。
+一旦我们觉得在BIOS组件待办列表中有了足够的细节，米提亚和我就转向故事构图和相似估算。米提亚和我用小卡片格式打印出每个PBI的概要细节，并开始在旧金山BIOS团队所坐区域附近的一个专用的*信息辐射器*房间里构建故事地图。米提亚和我在合适的时候拉入各个组的BIOS工程师，同时注意不过多占用他们的时间。我们最终确定了一个合理的BIOS组件待办列表排序，以及针对新的英特尔芯片组和电路板设计的MVP。结果发现MVP超过了组件待办列表的一半。由于涉及到的复杂性，我们在几天的深度思考过程中进行了多次一到两个小时的讨论，才让故事地图开始稳定下来。
 
 Towards the end of this initial refinement effort we called a larger meeting with every BIOS team member to review what we had on the wall. We used a combination of digital photos and video conferencing to enable the Portland team members to participate effectively. During this larger meeting the BIOS team members helped Mitya perform an overall sanity check of the story map. We also obtained rough effort estimates for every PBI within the MVP using affinity estimation.
-在最初的改进工作即将结束时，我们召集了一个更大的会议，每个BIOS团队成员都要回顾我们在墙上的内容。我们使用数码照片和视频会议的组合，使波特兰的团队成员能够有效地参与。在这次较大的会议中，BIOS团队成员帮助Mitya执行了故事映射的整体完整性检查。我们还使用亲和性估计获得了MVP中每个PBI的粗略工作估算。
+在初始梳理工作即将结束时，我们召集了一个包含每个BIOS团队成员的更大会议，来评审我们在墙上的内容。我们使用了数码照片和视频会议的组合让波特兰的团队成员能够有效参与进来。在这次更大规模的会议中，BIOS团队成员帮助米提亚对整个故事地图进行了完整性检查。我们还采用相似估算得到了MVP中每个PBI的粗略工作量评估。
 
 Now that we had finally captured the collective knowledge of everyone on the BIOS teams, we settled into routine on-going refinement sessions which mostly focused on a shorter term horizon of a sprint or two out.
-现在我们终于获得了BIOS团队中每个人的集体知识，我们开始了常规的持续改进会议，主要集中在一两个迭代的短期范围内。 
+既然我们终于捕获了BIOS团队中每个人的集体知识，我们就开始进入常规的梳理会议，主要集中在接下来一两个迭代的短期视野上。
 
 A variety of multi-site reference content from the LeSS books is listed in the [Multi-Site Reference Content](#multi-site-reference-content) sub-section below.
-下面的多站点参考内容小节列出了来自LeSS书籍的各种多站点参考内容。
+来自LeSS书上的各种多地参考内容列在了下面[多地参考内容](#multi-site-reference-content)小节中。
 
 <a name="figure17"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/mcsSecondPassCardsOnWallRandomly.jpg" alt="BIOS Component Backlog Second Pass">
-  <figcaption>Figure 17: The brief post-it note PBIs from the initial two day launch meeting were further refined and stored electronically. These refinement efforts were done by small cross-team groups focused on particular areas of the BIOS component. It took a Sprint or more before the cross-team groups reached a point of diminishing return. Now that we had enough additional insight from the cross-team refinement efforts; we returned to a physical format to help us see the bigger picture. Here you see the story cards printed out and randomly taped to the wall in preparation for more refinement activities. 图17:最初两天发布会议的精简便利贴PBI被进一步细化并以电子方式存储。这些改进工作是由专注于BIOS组件特定领域的小型跨团队组完成的。在跨团队组达到收益点之前，需要一个迭代或更长的时间。现在我们已经从跨团队的改进工作中获得了足够多的额外见解;我们回到了物理格式，以帮助我们看到更大的图景。在这里，您可以看到打印出来的故事卡片，并随机贴在墙上，为更多的改进活动做准备。</figcaption>
+  <figcaption>图17：来自最初两天启动会议中的便利贴简短PBI被进一步细化并以电子方式存储。这些细化工作是由跨团队小组专注于BIOS组件特定领域来完成的。一个或更多迭代之后跨团队小组的收益开始下降。既然我们已经从跨团队梳理工作中获得了足够多的额外洞察；我们就回归物理格式以帮助我们看到更大的画面。这里你可以看到打印出来的故事卡片随机贴在墙上，准备着做更多的梳理活动。</figcaption>
 </figure>
 
 <a name="figure18"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/mcsSecondPassStoryMapping.jpg" alt="BIOS Component Backlog Story Mapping">
-  <figcaption>Figure 18: The BIOS Fake Product Owner began to look for natural groupings and orderings. The end result was a bit of a mix between a story map and a snake-like ordered Component Backlog with epic groupings. This large map was slowly evolved over the course of several days. Various groupings of people from the BIOS feature teams would be pulled in for more insight as it made sense. As the wall settled down the Fake Product Owner made sure to call a meeting with every BIOS Scrum team member to conduct an overall sanity check. At this point the MVP had become evident as seen by the red arrow. 图18:BIOS伪产品负责人开始寻找自然的分组和顺序。最终结果是故事地图和带有史诗级分组的蛇形有序组件待办列表之间的混合。这幅大地图是在几天的时间里慢慢形成的。来自BIOS特性团队的不同小组的人员将被安排进来，以便在有意义的情况下获得更多的见解。当在墙上定稿之后，伪产品负责人确保召集所有BIOS Scrum团队成员开会，进行全面的完整性检查。此时，MVP已经很明显了，如红色箭头所示。</figcaption>
+  <figcaption>图18：BIOS伪PO开始寻找自然的分组和次序。最终结果是故事地图和蛇形排序并以史诗分组的组件待办列表的混合。这幅大地图是在几天的时间里慢慢形成的。来自BIOS特性团队的各组人员在合适的时候被拉进来提供更多洞察。当在墙上定稿之后，伪PO确保召集所有BIOS的Scrum团队成员开会，来做一次全面的完整性检查。此时MVP已经很明显了，如红色箭头所示。</figcaption>
 </figure>
 
 <a name="figure19"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/mcsSecondPassAffinityEstimation.jpg" alt="BIOS Component Backlog Affinity Estimation">
-  <figcaption>Figure 19: While every BIOS Scrum team member was available during the large group multi-team sanity check, affinity estimation was used to re-estimate every remaining PBI within the MVP. Afterwards the cards were rearranged into a cleaner story map version, and Rally was updated to reflect the new information. 图19:当每个BIOS Scrum团队成员在大型多团队完整性检查期间都可用时，亲和性评估被用于重新评估MVP中每个剩余的PBI。之后卡片被重新排列成一个更清晰的故事地图版本，Rally也被更新以反映新的信息。</figcaption>
+  <figcaption>图19：当在大组多团队完整性检查期间每个BIOS的Scrum团队成员都在时，采用了相似估算重新评估MVP中每个剩余的PBI。之后卡片被重新排列成一个更清晰版本的故事地图，在Rally中也相应更新以反映新的信息。</figcaption>
 </figure>
 
 <a name="figure20"></a>
 <figure>
 <img src="./img/case-studies/data-center-product-company/mcsTeamHelper.jpg" alt="BIOS Team Helper">
-  <figcaption>Figure 20: Mitya ensured we had a helper to provide any masking tape we needed. 图20:Mitya确保我们有一个帮手来提供我们需要的任何粘贴胶带。</figcaption>
+  <figcaption>图20：米提亚确保我们有一个帮手提供需要的任何胶带。</figcaption>
 </figure>
 
-#### Multi-Site Reference Content 多site开发参考内容 {#multi-site-reference-content}
+#### Multi-Site Reference Content 多地参考内容 {#multi-site-reference-content}
 
 There is a great deal of useful content related to facilitating multi-site meetings in _Practices for Scaling Lean & Agile Development: Large, Multisite & Offshore Product Development with Large-Scale Scrum_. Even the sub-title implies as much.
-在《Practices for Scaling Lean & Agile Development: Large, Multisite & Offshore Product Development with Large-Scale Scrum》一书中，有大量与促进多站点会议相关的有用内容。即使是副标题也包含了很多。 
+《精益和敏捷开发大型应用实战》书中有大量与引导多地会议相关的有用内容。甚至书的副标题都暗示了这一点。
 
 _Large-Scale Scrum: More with LeSS_ also includes a relevant narrative and a couple relevant guides.
-《Large-Scale Scrum：More with LeSS》也包括一个相关的叙述和一些指南。
+《大规模Scrum》书中也包含了一段相关叙述和两个相关指南。
 
 _Large-Scale Scrum: More with LeSS_ content includes:
-《Large-Scale Scrum：More with LeSS》包括: 
+《大规模Scrum》中的内容包括：
 
 * _Guide: Cross-Team Meetings_
 * _Guide: Multi-Site PBR_
 * _LeSS Huge Story: Multi-Site Teams_
-* 指南:跨团队会议 
-* 指南:多地点PBR（产品待办列表梳理） 
-* 巨型LeSS故事:多地点团队 
+* *指南：跨团队会议*
+* *指南：多地PBR*
+* *LeSS巨型故事：多地团队*
 
 _Chapter 12: Multisite_ in _Practices for Scaling Lean & Agile Development: Large, Multisite & Offshore Product Development with Large-Scale Scrum_ is entirely devoted to dealing with multi-site challenges. A few experiments within this chapter most directly related to the initial BIOS component backlog refinement effort include:
-第12章:扩展精益和敏捷开发的多站点实践:使用LeSS的大规模多站点离岸产品开发完全致力于处理多站点的挑战。本章中与初始BIOS组件backlog优化工作最直接相关的几个实验包括: 
+《精益和敏捷开发大型应用实战》书中第12章*多地*则完全专注于应对多地带来的挑战。在那章里与初始BIOS组件待办列表梳理工作最直接相关的几个实验包括：
 
-* Try...Seeing is believing—ubiquitous cheap video technology and video culture
-* Try...Multisite planning poker (estimation poker)
-* Try...Basic practices for multisite meetings
-* 试试看……眼见为实—无处不在的便宜视频技术和视频文化 
-* 试试看……多地点规划扑克(估计扑克) 
-* 试试看……多地点会议的基本做法
+* 尝试……眼见为实——无处不在便宜的视频技术和视频文化
+* 尝试……多地计划扑克（估算扑克）
+* 尝试……多地会议的基本实践
 
-### Reflecting on the Initial Refinement Efforts 反思最初的改进工作 {#reflecting-on-the-initial-refinement-efforts}
+### Reflecting on the Initial Refinement Efforts 对初始梳理工作的反思 {#reflecting-on-the-initial-refinement-efforts}
 
 The amount of detail and effort spent in refining the initial BIOS component backlog is certainly greater than any similar effort I have done before or since. Yet given the context I would do it again. We achieved a level of alignment, and enrollment of the BIOS engineers we would not have otherwise achieved.
-细化初始BIOS组件待办列表所花费的细节和精力肯定比我以前或以后所做的任何类似工作都要多。然而，考虑到背景，我还会这么做。我们实现了一定程度的一致性，并登记了BIOS工程师，否则我们将无法实现。
+在梳理初始BIOS组件待办列表上所花费的细节和精力无疑比我以前或以后所做的任何类似工作都要多。然而考虑到上下文，我还是会这么做。我们实现了一定程度的对齐，以及不这样做就难以达到的BIOS工程师的深入参与。
 
 The detail created is sure to be used in the future when extending the Component Backlog to account for future prototype Intel chipsets. With more use of the AMI plugin architecture the rework will be far less, so the details will vary. Yet the best place to start seeding new PBIs will be to look through what was done before.
-将来在扩展组件Backlog以考虑未来的英特尔芯片组原型时，一定会使用所创建的细节。随着AMI插件架构的更多使用，返工将会少得多，所以细节会有所不同。然而，开始播种新的PBIs的最佳地点将是回顾以前所做的事情。
+所创建的细节一定可以在将来扩展组件待办列表加入未来英特尔芯片组原型时使用。随着AMI插件架构的更多使用，返工将会少得多，所以细节也会有所不同。然而，新PBI最好的出发点还是查看以前做过的事情。
 
 We didn't so much force ourselves into some artificial set of refinement time-boxes. We determined what level of clarity and detail made the most sense in context, and then focused our energies to achieve it. Once done we switched gears and adopted cadenced cross-team refinement meetings.
-我们并没有强迫自己去做一些人为的改进时间盒。我们确定了什么程度的清晰度和细节在上下文中最有意义，然后集中精力实现它。一旦完成，我们就改变了方向，采用了有节奏的跨团队改进会议。
+我们并没有强加给自己一些人为的梳理时间盒。我们决定什么程度的清晰度和细节在我们的上下文中最为合理，然后集中精力去实现它。过后我们再改变做法，采用更有节奏的跨团队梳理会议。
 
 ## BIOS Definition of Done BIOS完成的定义 {#bios-definition-of-done}
 
