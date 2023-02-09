@@ -224,8 +224,8 @@ Within four or five Sprints the following were readily observable:
 There was no mystery to our success. Steps included:
 我们的成功并不神秘。步骤包括：
 
-* 将LeSS指南*临时性伪产品负责人*应用于诊断多组件，确认了一个有利于支持和指导团队的人格，他有足够的地位和政治影响力，其决定会得到各干系人的尊重。
-    * 这个人是*伪*产品负责人，因为他们仍然要玩*合同游戏*，按照公司其他人的指示做需求并遵守里程碑。
+* 将LeSS指南*临时伪PO*应用于诊断多组件，确认了一个有利于支持和指导团队的人格，他有足够的地位和政治影响力，其决定会得到各干系人的尊重。
+    * 这个人是*伪*PO，因为他们仍然要玩*合同游戏*，按照公司其他人的指示做需求并遵守里程碑。
 * 组建了一个由八人组成的开发团队，拥有所有需要的（或可以学到的）软件和测试工程技能，以在要求的各种MCS子系统中工作。
 * 完全占有一间中型会议室，作为开发团队的联合工作空间。
 * 我为所有Scrum团队成员以及关键干系人提供了两天正式的课堂培训。
@@ -851,119 +851,138 @@ The second most interesting part of the inception effort was the Definition of D
 <figcaption>图22：BIOS团队所使用的完成的定义在经过几个迭代之后演变成了你在这里看到的样子。这个完成定义的示例以及附加的上下文可在《Forging Change》书中的表格9.3中找到。</figcaption>
 </figure>
 
-## BIOS Scrum Key Roles Scrum关键角色 {#bios-scrum-key-roles}
+## BIOS Scrum Key Roles BIOS的Scrum关键角色 {#bios-scrum-key-roles}
 
 Trent, Mitya, and I spent a great deal of thought trying to work out the best choice of Product Owner and Scrum Masters.
-Trent、Mitya和我花了很多心思，试图找出产品负责人和Scrum master的最佳人选。
+特伦特、米提亚和我花了很多心思试图找出PO和SM的最佳人选。
 
 As I will explain in more detail, Mitya ended up being the only sensible choice of Product Owner available.
-正如我将更详细地解释的那样，Mitya最终成为产品负责人唯一明智的选择。
+正如我将更详细地解释的那样，米提亚最终成为可以找到的唯一明智的PO人选。
 
 We also came to the conclusion I would initially need to act as the Scrum Master for all the teams. No other Scrum Master choice available had the necessary experience. Had we not been so reliant on having Mitya as the Product Owner, we would likely have selected Mitya as the Scrum Master.
-我们还得出结论，我最初需要担任所有团队的Scrum Master。没有其他可用的Scrum Master具有必要的经验。如果我们不是如此依赖Mitya作为产品负责人，我们可能会选择Mitya作为Scrum Master。
+我们还得出结论，我最初需要担任所有团队的SM。没有其他可以找到的SM具备必要的经验。如果不是如此依赖米提亚作为PO，我们可能会选择米提亚作为SM。
 
 More nuanced insight into our choices of Product Owner and Scrum Master is given below. Read if you have interest, and skip over if not.
-关于产品负责人和Scrum Master的选择，下面给出了更细致的见解。如果你感兴趣就阅读，如果没有兴趣就跳过。
+关于PO和SM选择更细致的见解如下。如果你感兴趣就看，没有的话可以跳过。
 
-### Mitya as Temporary Fake Product Owner Mitya作为临时的假的产品负责人  {#mitya-as-temporary-fake-product-owner}
+### Mitya as Temporary Fake Product Owner 米提亚作为临时伪PO {#mitya-as-temporary-fake-product-owner}
 
 Mitya was the director for all of the BIOS group. Mitya, Trent, and I recognized (and all Scrum experts recognize) it is usually hugely problematic for a Product Owner to have direct line authority over the members of the development team due to the imbalanced power relationship (see below). With another personality inhabiting the role this would likely have been a significant problem. In our case Mitya is such a naturally humble servant leader the conflict was not a significant issue.
-Mitya是整个BIOS组的负责人。Mitya、Trent和我认识到(所有Scrum专家都认识到)，由于不平衡的权力关系(见下文)，产品负责人对开发团队成员拥有直接的权力通常是非常有问题的。如果角色中有另一个人格，这可能会是一个严重的问题。在我们的例子中，Mitya是一个天生谦逊的仆人领导者，冲突并不是一个重要的问题。 
+米提亚是整个BIOS组的负责人。米提亚、特伦特和我认识到（所有Scrum专家都认识到），由于不平衡的权力关系（见下文），PO对开发团队成员拥有直接的权力通常是非常有问题的。如果是另一种性格的人担任这个角色，可能会是一个严重的问题。我们这里米提亚是一个天生谦逊的仆人式领导者，因而冲突并不是一个严重的问题。
 
 Trent, Mitya, and I tried to figure out a better choice of Product Owner. In the end we realized there was no one else available who had enough component depth to be effective in the role while also having the right personality strengths. The other available candidates either had problematic personalities, or lacked sufficient knowledge of the overall MCS product and BIOS component to perform the role.
-Trent、Mitya和我试图找出一个更好的产品负责人人选。最后，我们意识到，没有其他合适的人选，既具备足够的组件深度，又具有合适的人格优势，可以在这个角色上发挥作用。其他候选人要么性格有问题，要么对整个MCS产品和BIOS组件缺乏足够的了解，无法胜任该角色。
+特伦特、米提亚和我试图找出一个更好的PO人选。最后我们意识到，没有其他合适的人选，既具备足够的组件深度以能高效工作，又具备恰当的性格优势。其他候选人要么性格有问题，要么对整个MCS产品和BIOS组件缺乏足够的了解来胜任该角色。
 
-#### Avoid Line Manager as Product Owner 避免部门经理成为产品负责人 {#avoid-line-manager-as-product-owner}
+#### Avoid Line Manager as Product Owner 避免直线经理成为PO {#avoid-line-manager-as-product-owner}
 
 Just because we got away with Mitya as both the line manager and Fake Temporary Product Owner in our specific situation, I don’t generally recommend you try the same. LeSS guidance on organizational structure explicitly avoids having team members report into the Product Owner.
-只是因为在我们的特定情况下，我们让Mitya同时担任部门经理和假临时产品负责人，所以我通常不建议你尝试同样的做法。LeSS关于组织结构的指导明确避免让团队成员向产品负责人报告。
+只是因为在特定情况下，我们让米提亚同时担任直线经理和伪临时PO还能应付过去。我通常不建议你尝试同样的做法。LeSS关于组织结构的指南明确避免让团队成员向PO汇报。
 
 The following quotes from _Large-Scale Scrum: More with LeSS_ are instructive:
-以下引用自《Large-Scale Scrum：More with LeSS》的内容很有指导意义: 
+以下引用自《大规模Scrum》的内容很有指导意义：
 
->**Peers, not peons**—If teams report to the Product Owner directly or indirectly in a hierarchical power relationship, that structure needs to change so that the teams and the Product Owner are peers collaborating. The Product Owner doesn’t treat teams like peons for tasks, but fosters a collaborative relationship. &mdash; **_Guide: Five Relationships_**
->是同伴，而不是人——如果团队直接或间接地在层级权力关系中向产品负责人报告，那么这种结构需要改变，以便团队和产品负责人成为协作的同伴。产品负责人不会把团队当成完成任务的苦力，而是培养一种协作关系。指南:五种关系 
+>**是伙伴，而不是苦工**—如果团队在层级权力关系中直接或间接地向PO汇报，那种结构需要改变，以使团队和PO成为协作的伙伴。PO不把团队当作完成任务的苦工，而是培养一种协作关系。—**指南：五种关系**
 >
->An important point in this organizational structure is that the Teams and the Product Owner are _peers_—they do not have a hierarchical relationship. We have found it important to keep the power balanced between the roles. The Teams and Product Owner should have a _cooperative_ peer relationship to together build the best possible product, and a peer structure supports this. This point is further explored in the Product Owner chapter. &mdash; **_Guide: LeSS Organizational Structure_**
->在这种组织结构中，重要的一点是团队和产品负责人是对等的——他们没有等级关系。我们发现保持角色之间的权力平衡很重要。团队和产品负责人应该有合作的对等关系，共同构建尽可能最好的产品，对等结构支持这一点。这一点将在产品负责人一章中进一步探讨。-指南:LeSS组织结构
+>在这种组织结构中，重要的一点是团队和PO是*伙伴*—他们没有等级关系。我们发现保持角色之间的权力平衡很重要。团队和PO应该是合作的伙伴关系，来共同构建尽可能最好的产品，伙伴结构支持这一点。这一点将在PO章节中进一步探讨。—**指南：LeSS组织结构**
 
-#### PO Concerns Arising from a Compromised Component Boundary {#po-concerns-arising-from-a-compromised-component-boundary}
+#### PO Concerns Arising from a Compromised Component Boundary 由组件边界受损引起的产品负责人关注点 {#po-concerns-arising-from-a-compromised-component-boundary}
 
 There were real Product Owner candidates in the product management group who we considered having as PO. Unfortunately, limits on the scope of influence of the relevant Vice President precluded expanding the component boundary far enough to result in a multi-component boundary any of these individuals had the domain knowledge to manage. It is important to remember even with an expanded BIOS multi-component boundary, the natural complexity of the MCS BIOS component as well as the overall MCS product is radically greater than the typical corporate information system.
+在产品管理组中有真正的产品负责人候选人，我们认为他们是产品负责人。不幸的是，由于相关副总裁的影响范围有限，因此无法将组件边界扩展到足以产生多组件边界的程度，这些人中的任何一个都具有管理的领域知识。重要的是要记住，即使使用扩展的BIOS多组件边界，MCS BIOS组件以及整个MCS产品的自然复杂性也远远大于典型的企业信息系统。
 
 Although we had buy-in from some of the most senior executives within the division, those executives had a multitude of other competing concerns to address. I'm fairly certain a few key divisional executives provided far more political air cover for our efforts than we will ever know. The ground level reality was it would take some time and more demonstrated success to gain enough political capital to make even more significant organizational changes on our behalf.
+尽管我们得到了部门内一些最资深高管的支持，但这些高管还有许多其他相互竞争的问题需要解决。我相当肯定的是，一些关键的部门主管为我们的努力提供了比我们所知道的多得多的政治掩护。基层的现实是，要获得足够的政治资本来代表我们进行更重大的组织变革，需要一些时间和更多的成功证明。
 
 Until more of the highly specialized BIOS engineers were themselves more comfortable working across the various BIOS sub-components, an even broader expanded BIOS multi-component boundary would have stretched the technical and teaming capabilities of the BIOS teams more rapidly than was sustainable. Therefore further expanding the BIOS component boundary early on wasn't really an option anyway. These are the kinds of reasons that also motivate the LeSS guidance to _incrementally_ expand a product definition, and to incrementally add Requirement Areas in a LeSS Huge adoption.
+在更多高度专业化的BIOS工程师能够更轻松地跨各种BIOS子组件工作之前，更广泛扩展的BIOS多组件边界将以超出可持续的速度扩展BIOS团队的技术和团队能力。因此，在早期进一步扩展BIOS组件边界并不是一个真正的选择。这些原因也促使LeSS指导逐步扩展产品定义，并在LeSS巨型采用中逐步添加了需求区域。
 
-
-#### Relevant LeSS Product Rules {#relevant-less-product-rules}
+#### Relevant LeSS Product Rules 相关的LeSS产品规则 {#relevant-less-product-rules}
 
 The following selected LeSS Framework rules are particularly relevant:
+以下选定的LeSS框架规则特别相关: 
 
 * <span style="color:firebrick">There is one Product Owner and one Product Backlog for the complete shippable product.</span>
 * <span style="color:firebrick">The Product Owner shouldn’t work alone on Product Backlog refinement; she is supported by the multiple Teams working directly with customers/users and other stakeholders.</span>
 * <span style="color:firebrick">All prioritization goes through the Product Owner, but clarification is as much as possible directly between the Teams and customer/users and other stakeholders.</span>
+* 对于完整的可交付产品，有一个产品负责人和一个产品待办事项列表。 
+* 产品负责人不应该单独对产品待办事项列表进行细化; 她由直接与客户/用户和其他利益相关者合作的多个团队提供支持。 
+* 所有的优先级都要经过产品负责人，但是在团队和客户/用户以及其他利益相关者之间尽可能直接地进行澄清。
 
-
-#### Product Ownership Not The Biggest Challenge {#product-ownership-not-the-biggest-challenge}
+#### Product Ownership Not The Biggest Challenge 产品所有权不是最大的挑战 {#product-ownership-not-the-biggest-challenge}
 
 From the perspective of the expanded BIOS multi-component, the customer problem is rather simple. The custom BIOS for each new Intel chipset has to provide the same services provided by previous generations of BIOS running on previous generations of Intel chipsets. Minor extensions of these capabilities are often required for each new chipset generation, yet they are minor in comparison to the base functionality. To some extent, the Fake Product Owner for BIOS was just an expert who worked with the teams to figure out a better way of solving the problems in the future.
+从扩展的BIOS多组件的角度来看，客户问题相当简单。每个新Intel芯片组的自定义BIOS必须提供运行在前几代Intel芯片组上的前几代BIOS所提供的相同服务。每一代新的芯片组通常都需要对这些功能进行微小的扩展，但与基本功能相比，这些扩展微不足道。在某种程度上，BIOS的伪产品负责人只是一个专家，他与团队一起找出未来解决问题的更好方法。
 
 The poor state of the code base was a consequence of historically poor engineering practices driven by the Contract Game. With constant pressure to meet unrealistic artificial “code-complete” deadlines imposed from the top, there had not been sufficient personal safety for craftsmanship. The history of massive amounts of copy-paste reuse coupled with poor automated test coverage provide two great examples of the self-inflicted wounds resulting from the Contract Game. The end result was to artificially make adapting the BIOS code base to each new generation of Intel chipset a monumental undertaking.
+代码库的糟糕状态是由契约游戏驱动的历史上糟糕的工程实践造成的。在不断的压力下，要满足不切实际的人为“完成代码”的最后期限，这是由高层强加的，没有足够的个人安全来进行工艺。大量复制-粘贴重用的历史加上糟糕的自动化测试覆盖率提供了两个由契约游戏导致的自我伤害的伟大例子。最终结果是人为地使BIOS代码库适应每一代英特尔芯片组成为一项不朽的事业。
 
 Ironically, with a more comprehensive Definition of Done and with a cross-functional team which could incrementally complete all the testing, there always had been sufficient time to do a better job. The Intel chipset release dates were real, but the waterfall stage gate dates were an artificial artifact arising from the imposition of a waterfall process.
+具有讽刺意味的是，有了一个更全面的完成定义，以及一个可以逐步完成所有测试的跨职能团队，总是有足够的时间来做得更好。英特尔芯片组的发布日期是真实的，但瀑布级阀门日期是由瀑布流程强加而产生的人工产物。
 
 The drastically improved quality being produced by the new BIOS teams would have changed this situation in time. Once the vast majority of the BIOS customizations were in a pluggable layer with better automated tests, it would likely become possible to adapt to a new Intel chipset with far less effort than in the past. Furthermore, with continued improvement efforts the BIOS teams would have fully expanded their capabilities to work all the way up through the MCS Admin layer.
+新的BIOS团队所产生的质量的大幅提高将及时改变这种情况。一旦绝大多数BIOS自定义都在可插拔层中，并具有更好的自动化测试，那么适应新的Intel芯片组就可能比过去轻松得多。此外，随着不断的改进努力，BIOS团队将完全扩展他们的能力，一直工作到MCS管理层。
 
 Once both the quality improvements and the expansion of the component boundary had progressed far enough, the new teams would have both the available time and the skillset to handle far more dynamic requirements. Until that time, the truth is the expanded BIOS multi-component goals were so clear, and succinct -- and the work involved so massive -- there wasn’t a lot of need for a Product Owner role. The truth is, this group of BIOS engineers with years of BIOS experience simply needed to charter a new path regarding how to better implement what they had already implemented many times before.
+一旦质量改进和组件边界的扩展都取得足够的进展，新的团队将有可用的时间和技能集来处理更动态的需求。在此之前，事实是扩展后的BIOS多组件目标是如此清晰和简洁——所涉及的工作是如此庞大——因此不太需要产品负责人这个角色。事实上，这群拥有多年BIOS经验的BIOS工程师只是需要开辟一条新的道路，以更好地实现他们以前已经实现过多次的东西。
 
 Once the BIOS teams had started to jell, the engineering practices had been improved, and the expanded BIOS multi-component boundary had been stretched up through the MCSA forming a natural Requirement Area of the overall MCS product, a real Product Owner from Product Management would eventually become critical.
-
+一旦BIOS团队开始融洽，工程实践得到了改进，扩展的BIOS多组件边界被延伸到MCSA，形成了整个MCS产品的自然需求区域，来自产品管理的真正的产品负责人最终将变得至关重要。
 
 #### Product Owner Selection Constraint Summary {#product-owner-selection-constraint-summary}
 
 All these reasons collectively brought us to selecting Mitya as the best mid-term choice for Product Owner. This is to say we chose to implement the _Fake Product Owner_ experiment as described in _Practices for Scaling Lean and Agile Development_ and the _Start Early or Messy with a Temporary Fake Product Owner_ guide in _Large-Scale Scrum: More with LeSS_.
+所有这些原因共同使我们选择Mitya作为产品负责人的最佳中期选择。这就是说，我们选择实施《扩展精益和敏捷开发的实践》描述的伪产品负责人实验和《Large-Scale Scrum: More with LeSS》在早期或混乱时间启动临时伪产品负责人的指南中所描述的那样。
 
 * <span style="color:navy">The overspecialization and local focus of the BIOS teams, coupled with additional complexity introduced by years of poor engineering practices required having a Fake Product Owner to start. This person would have enough specialized technical depth to make sense of the BIOS Component Backlog and also maintain the respect of the BIOS teams.</span>
 * <span style="color:navy">A Product Owner who by nature tended to empower others and avoided micromanagement was important in helping to establish a supportive context within which the BIOS teams could grow and mature.</span>
 * <span style="color:navy">Since the BIOS LeSS-oriented structure was running inside of a large waterfall context still driven by the Contract Game, it was important to have a Product Owner who had enough positional and political influence to help establish a supportive context for the BIOS teams.</span>
 * <span style="color:navy">Expanding the component boundary would help to reduce the BIOS specific knowledge necessary to understand and guide the BIOS component backlog and thereby enable other good choices of Product Owner. Until greater cross-functionality of the BIOS engineers made this possible, we would need a Fake Product Owner with a great deal of BIOS knowledge.</span>
 * <span style="color:navy">The existence of a Fake Product Owner would further isolate the BIOS teams from the customers of the overall MCS product. We would look to move away from the need for a Fake Product Owner as soon as practical.</span>
+* BIOS团队的过度专业化和本地化，加上多年较差的工程实践带来的额外复杂性，需要一个假产品负责人来启动。这个人将有足够的专业技术深度来理解BIOS组件待办列表，并保持BIOS团队的尊重。
+* 天生倾向于授权他人并避免微观管理的产品负责人对于帮助建立一个支持BIOS团队成长和成熟的环境非常重要。
+* 由于面向BIOS LeSS的结构是在一个由契约游戏驱动的大型瀑布环境中运行的，因此有一个具有足够位置和政治影响力的产品负责人来帮助为BIOS团队建立一个支持环境是很重要的。
+* 扩展组件边界将有助于减少理解和指导BIOS组件待办列表所需的BIOS特定知识，从而为P产品负责人提供其他好的选择。直到更多的跨功能的BIOS工程师使这成为可能，我们将需要一个假产品负责人与大量的BIOS知识。
+* 伪产品负责人的存在将进一步将BIOS团队与整个MCS产品的客户隔离开来。我们希望在可行的情况下尽快摆脱对伪产品负责人的需求。
 
-
-### Coach as Scrum Master {#coach-as-scrum-master}
+### Coach as Scrum Master 教练作为SM {#coach-as-scrum-master}
 
 There were not any full-time employees in the MCS division who we judged had enough experience to effectively guide the establishment of Scrum teams in as challenging a context as we were going to attempt with the BIOS teams. Any full-time employee selected would need to be gradually coached into the role.
+在MCS部门没有任何全职员工，我们认为他们有足够的经验来有效地指导Scrum团队在具有挑战性的环境中建立，就像我们将要尝试的BIOS团队一样。任何被选中的全职员工都需要逐渐接受培训。
 
 Both Trent and I felt Mitya had the right personality, relationships, organizational knowledge, and component knowledge to be an excellent Scrum Master. Unfortunately, we really needed Mitya to take on the Product Owner role until the component boundary could be further expanded.
+Trent和我都觉得Mitya具备成为一名优秀的Scrum Master所需的性格、人际关系、组织知识和组件知识。不幸的是，在组件边界进一步扩展之前，我们确实需要Mitya担任产品负责人的角色。
 
 We ultimately decided I would initially need to act as the Scrum Master. Trent and I were careful to ensure I had the bandwidth available to perform the role. I moved into an empty desk in the BIOS engineering area and spent the next several months largely devoted to launching and maturing the BIOS teams. Since I flew in every week anyway, I could travel to Portland whenever it made sense. As a practical matter Mitya and I did most things together. I would continually help Mitya and other strong natural leaders in the group grow into leading most activities themselves.
+我们最终决定最初由我来担任Scrum Master。Trent和我小心翼翼地确保我有足够的带宽来完成这个角色。我搬到了BIOS工程领域的一个空桌子上，在接下来的几个月里，我主要致力于启动和完善BIOS团队。因为我每周都坐飞机去，所以只要有必要，我就可以去波特兰。实际上，我和Mitya大部分事情都是一起做的。我会不断帮助Mitya和团队中其他有实力的天生领导者成长为大多数活动的领导者。
 
 As the BIOS teams gelled and began to mature a couple of additional natural Scrum Master candidates emerged. These were not necessarily engaged with Scrum to begin with, yet they became so over time. Mitya and I focused on growing these particular individuals into potential future Scrum Masters as we identified them.
+随着BIOS团队的团结和成熟，出现了另外几个天然的Scrum Master候选人。这些人一开始并不一定参与Scrum，但随着时间的推移，他们就变得这样。Mitya和我专注于将这些特定的人培养成潜在的未来Scrum master。
 
 The following recommendation from Mitya illuminates the challenging context involved:
+Mitya的以下建议说明了所涉及的具有挑战性的背景: 
 
+>Working with James was a transformational experience for me, and for the team. 与James共事对我和整个团队来说都是一次转型的经历。
+>
+>He took us from "No Way Scrum Can Be Done Here" to "We Can't Ever Go Back". He brought the team from Waterfall to Scrum. 他把我们从“这里不可能进行Scrum”变成了“我们再也回不去了”。他将团队从Waterfall带到Scrum。
+>
+>We are a team of Firmware engineers and firmly believed that Scrum does not belong in our field. James demonstrated that Scrum is a framework to bring focus to the Software Craftsmanship, Quality, and way of planning our work. 我们是一个固件工程师团队，坚信Scrum不属于我们的领域。James演示了Scrum是一个将重点放在软件工艺、质量和计划我们工作的方式上的框架。
+>
+>James coached me to act as a Product Owner, and coached the team past the learning curve of the Scrum framework. James指导我担任产品负责人，并指导团队通过了Scrum框架的学习曲线。
+>
+>The team found extremely useful his focus on the technical aspect of development, test, CI/CD. He introduced a number of concepts and tools to us, and worked with team members on the technical side where it was needed. 团队发现他对开发、测试、CI/CD技术方面的关注非常有用。他向我们介绍了许多概念和工具，并在需要的技术方面与团队成员合作。
+>
+>Results are very straightforward. We have been practicing Scrum for almost a year. We have much better visibility into the backlog. The team engagement is better. The initial product quality is better. 结果非常直接。我们已经练习Scrum将近一年了。我们对待办列表有了更好的可见性。团队参与度提高了。初期产品质量较好。
 
->Working with James was a transformational experience for me, and for the team.
->
->He took us from "No Way Scrum Can Be Done Here" to "We Can't Ever Go Back". He brought the team from Waterfall to Scrum.
->
->We are a team of Firmware engineers and firmly believed that Scrum does not belong in our field. James demonstrated that Scrum is a framework to bring focus to the Software Craftsmanship, Quality, and way of planning our work.
->
->James coached me to act as a Product Owner, and coached the team past the learning curve of the Scrum framework.
->
->The team found extremely useful his focus on the technical aspect of development, test, CI/CD. He introduced a number of concepts and tools to us, and worked with team members on the technical side where it was needed.
->
->Results are very straightforward. We have been practicing Scrum for almost a year. We have much better visibility into the backlog. The team engagement is better. The initial product quality is better.
-
-
-#### Scrum Master Selection Constraint Summary {#scrum-master-selection-constraint-summary}
+#### Scrum Master Selection Constraint Summary Scrum Master选择约束摘要 {#scrum-master-selection-constraint-summary}
 
 * <span style="color:navy">The exotic hardware and firmware engineering context coupled with the cultural challenges involved were too challenging for the skill-set of any full-time Scrum Master candidate available.</span>
 * <span style="color:navy">Mitya had the natural aptitude to be quickly grown into an effective Scrum Master. This option was precluded due to our need for Mitya to act as the Fake Product Owner.</span>
 * <span style="color:navy">Once it became politically and technically practical to expand the component boundary we could replace Mitya as Product Owner, transitioning Mitya or anyone else who showed promise and growth to a Scrum Master role.</span>
 * <span style="color:navy">I was the only person available to us with a strong enough Scrum Master skill-set to attempt such a challenging Scrum adoption. I could only do it by leaning heavily on the BIOS developers, Mitya, and others for guidance as we collectively found our way to improving things.</span>
-
+* 外来的硬件和固件工程环境，再加上涉及到的文化挑战，对于任何全职Scrum Master候选人来说都太具有挑战性了。 
+* Mitya天生就有能力迅速成长为一名高效的Scrum Master。由于我们需要Mitya作为伪产品负责人，因此排除了这个选项。 
+* 一旦扩展组件边界在政治上和技术上变得可行，我们就可以取代Mitya作为产品负责人，将Mitya或其他任何表现出前景和增长的人过渡到Scrum Master角色。 
+* 我是唯一一个拥有足够强大的Scrum Master技能的人，可以尝试采用这样具有挑战性的Scrum。我只能依靠BIOS开发人员Mitya和其他人的指导，因为我们共同找到了改进的方法。
 
 ## BIOS Teams Self-Selected BIOS团队自选组成 {#bios-teams-self-selected}
 
