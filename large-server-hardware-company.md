@@ -939,42 +939,38 @@ All these reasons collectively brought us to selecting Mitya as the best mid-ter
 ### Coach as Scrum Master 教练作为SM {#coach-as-scrum-master}
 
 There were not any full-time employees in the MCS division who we judged had enough experience to effectively guide the establishment of Scrum teams in as challenging a context as we were going to attempt with the BIOS teams. Any full-time employee selected would need to be gradually coached into the role.
-在MCS部门没有任何全职员工，我们认为他们有足够的经验来有效地指导Scrum团队在具有挑战性的环境中建立，就像我们将要尝试的BIOS团队一样。任何被选中的全职员工都需要逐渐接受培训。
+MCS部门里没有任何全职员工我们认为有足够的经验能在BIOS团队这样具有挑战性的环境中来有效地指导建立Scrum团队。任何被选中的全职员工都需要接受辅导以逐渐胜任该角色。
 
 Both Trent and I felt Mitya had the right personality, relationships, organizational knowledge, and component knowledge to be an excellent Scrum Master. Unfortunately, we really needed Mitya to take on the Product Owner role until the component boundary could be further expanded.
-Trent和我都觉得Mitya具备成为一名优秀的SM所需的性格、人际关系、组织知识和组件知识。不幸的是，在组件边界进一步扩展之前，我们确实需要Mitya担任PO的角色。
+特伦特和我都觉得米提亚具备成为一名优秀SM所需的性格、人际关系、组织知识以及组件知识。不幸的是，在组件边界进一步扩大之前，我们确实需要米提亚担任PO的角色。
 
 We ultimately decided I would initially need to act as the Scrum Master. Trent and I were careful to ensure I had the bandwidth available to perform the role. I moved into an empty desk in the BIOS engineering area and spent the next several months largely devoted to launching and maturing the BIOS teams. Since I flew in every week anyway, I could travel to Portland whenever it made sense. As a practical matter Mitya and I did most things together. I would continually help Mitya and other strong natural leaders in the group grow into leading most activities themselves.
-我们最终决定最初由我来担任SM。Trent和我小心翼翼地确保我有足够的带宽来完成这个角色。我搬到了BIOS工程领域的一个空桌子上，在接下来的几个月里，我主要致力于启动和完善BIOS团队。因为我每周都坐飞机去，所以只要有必要，我就可以去波特兰。实际上，我和Mitya大部分事情都是一起做的。我会不断帮助Mitya和团队中其他有实力的天生领导者成长为大多数活动的领导者。
+我们最终决定最初由我来担任SM。特伦特和我小心地确保我有足够的带宽来完成这个角色。我搬到BIOS工程区域的一个空位上，并在接下来的几个月里主要致力于启动和完善BIOS团队。因为我本来就每周飞，所以只要有必要我就可以去波特兰。实际上，我和米提亚大部分事情都是一起做的。我会不断帮助米提亚和部门里其他强有力的自然领导者成长为可以自己来带领大多数活动。
 
 As the BIOS teams gelled and began to mature a couple of additional natural Scrum Master candidates emerged. These were not necessarily engaged with Scrum to begin with, yet they became so over time. Mitya and I focused on growing these particular individuals into potential future Scrum Masters as we identified them.
-随着BIOS团队的团结和成熟，出现了另外几个天然的SM候选人。这些人一开始并不一定参与Scrum，但随着时间的推移，他们就变得这样。Mitya和我专注于将这些特定的人培养成潜在的未来SM。
+随着BIOS团队的定型和成熟，涌现出另外几个自然的SM候选人。这些人并不一定从开始就参与到Scrum中，但他们就这么随时间推移成为合适的人选。米提亚和我专注于将这些人培养成潜在的未来SM。
 
 The following recommendation from Mitya illuminates the challenging context involved:
-Mitya的以下建议说明了所涉及的具有挑战性的背景: 
+以下来自米提亚的推荐说明了具有挑战性的相关环境：
 
->Working with James was a transformational experience for me, and for the team. 与James共事对我和整个团队来说都是一次转型的经历。
+>与詹姆斯共事对我和整个团队来说都是一次转变经历。
 >
->He took us from "No Way Scrum Can Be Done Here" to "We Can't Ever Go Back". He brought the team from Waterfall to Scrum. 他把我们从“这里不可能进行Scrum”变成了“我们再也回不去了”。他将团队从Waterfall带到Scrum。
+>他把我们从“这里不可能做Scrum”带到了“我们再不能回去”。他将团队从瀑布带到Scrum。
 >
->We are a team of Firmware engineers and firmly believed that Scrum does not belong in our field. James demonstrated that Scrum is a framework to bring focus to the Software Craftsmanship, Quality, and way of planning our work. 我们是一个固件工程师团队，坚信Scrum不属于我们的领域。James演示了Scrum是一个将重点放在软件工艺、质量和计划我们工作的方式上的框架。
+>我们是一个固件工程师团队，坚信Scrum不属于我们的领域。詹姆斯向我们展示了Scrum是一个聚焦于软件工艺、质量和计划我们工作的方式上的框架。
 >
->James coached me to act as a Product Owner, and coached the team past the learning curve of the Scrum framework. James指导我担任PO，并指导团队通过了Scrum框架的学习曲线。
+>詹姆斯辅导我担任PO，并辅导团队克服采用Scrum框架带来的学习曲线。
 >
->The team found extremely useful his focus on the technical aspect of development, test, CI/CD. He introduced a number of concepts and tools to us, and worked with team members on the technical side where it was needed. 团队发现他对开发、测试、CI/CD技术方面的关注非常有用。他向我们介绍了许多概念和工具，并在需要的技术方面与团队成员合作。
+>团队发现他对开发、测试、CI/CD的技术方面的关注非常有用。他向我们介绍了许多概念和工具，并在需要的技术方面与团队成员一起工作。
 >
->Results are very straightforward. We have been practicing Scrum for almost a year. We have much better visibility into the backlog. The team engagement is better. The initial product quality is better. 结果非常直接。我们已经练习Scrum将近一年了。我们对待办列表有了更好的可见性。团队参与度提高了。初期产品质量较好。
+>结果非常明确。我们已经实践Scrum将近一年了。我们对待办列表有了更好的可见性。团队参与度提高了。初期产品质量也更好了。
 
 #### Scrum Master Selection Constraint Summary SM选择限制的总结 {#scrum-master-selection-constraint-summary}
 
-* <span style="color:navy">The exotic hardware and firmware engineering context coupled with the cultural challenges involved were too challenging for the skill-set of any full-time Scrum Master candidate available.</span>
-* <span style="color:navy">Mitya had the natural aptitude to be quickly grown into an effective Scrum Master. This option was precluded due to our need for Mitya to act as the Fake Product Owner.</span>
-* <span style="color:navy">Once it became politically and technically practical to expand the component boundary we could replace Mitya as Product Owner, transitioning Mitya or anyone else who showed promise and growth to a Scrum Master role.</span>
-* <span style="color:navy">I was the only person available to us with a strong enough Scrum Master skill-set to attempt such a challenging Scrum adoption. I could only do it by leaning heavily on the BIOS developers, Mitya, and others for guidance as we collectively found our way to improving things.</span>
-* 外来的硬件和固件工程环境，再加上涉及到的文化挑战，对于任何全职SM候选人来说都太具有挑战性了。 
-* Mitya天生就有能力迅速成长为一名高效的SM。由于我们需要Mitya作为伪PO，因此排除了这个选项。 
-* 一旦扩展组件边界在政治上和技术上变得可行，我们就可以取代Mitya作为PO，将Mitya或其他任何表现出前景和增长的人过渡到SM角色。 
-* 我是唯一一个拥有足够强大的SM技能的人，可以尝试采用这样具有挑战性的Scrum。我只能依靠BIOS开发人员Mitya和其他人的指导，因为我们共同找到了改进的方法。
+* <span style="color:navy">异类的硬件和固件工程环境，再加上涉及到的文化挑战，对于任何内部的全职SM候选人来说都太过挑战了。</span>
+* <span style="color:navy">米提亚具备迅速成长为一名高效SM的自然能力。由于我们需要米提亚作为伪PO，因此排除了这个选项。</span>
+* <span style="color:navy">一旦扩展组件边界在政治上和技术上变得可行，我们就可以取代米提亚作为PO，而将米提亚或其他表现出前景和成长的人过渡到SM角色。</span>
+* <span style="color:navy">我是唯一一个拥有足够强SM技能来尝试这样挑战的Scrum导入的人。我只能通过在共同找到改进方法的过程中依靠BIOS开发人员、米提亚和其他人的指导才能做到。</span>
 
 ## BIOS Teams Self-Selected BIOS团队自选组成 {#bios-teams-self-selected}
 
