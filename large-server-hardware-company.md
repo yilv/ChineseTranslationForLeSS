@@ -93,7 +93,7 @@ BIOS面向LeSS的导入工作因VP/GM的变动而受阻，恰好发生在米提�
 
 <a name="figure1"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/Actual_MCS_PB_WithTitle.png" alt="Actual MCS Product Boundary">
+<img src="/img/case-studies/data-center-product-company/Actual_MCS_PB_WithTitle.png" alt="Actual MCS Product Boundary">
 <figcaption>
 图1：从产品管理组、中岛公司的部门边界以及外部客户的视角，自然的产品边界包括网络、计算和存储能力的整个系统。
 <br/><br/>
@@ -103,7 +103,7 @@ BIOS面向LeSS的导入工作因VP/GM的变动而受阻，恰好发生在米提�
 
 <a name="figure2"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/timelineGraphFakeMonths.png" alt="MCS Agile Adoption Timeline">
+<img src="/img/case-studies/data-center-product-company/timelineGraphFakeMonths.png" alt="MCS Agile Adoption Timeline">
   <figcaption>图2：伴随各种重叠的导入工作和管理上的变化，容易失去对整体故事架构的跟踪。希望这个时间线能有助于理解。</figcaption>
 </figure>
 
@@ -148,13 +148,13 @@ BIOS面向LeSS的导入工作因VP/GM的变动而受阻，恰好发生在米提�
 
 <a name="figure3"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/Diag_CB_WithTitle.png" alt="Components Affected by Diagnostic Feature Set">
+<img src="/img/case-studies/data-center-product-company/Diag_CB_WithTitle.png" alt="Components Affected by Diagnostic Feature Set">
   <figcaption>图3：虽然诊断代码基本都封装在定制ISO镜像中，还有一些专注诊断的代码是在MCSA中，诊断能力却是被广泛关注，并与所有硬件批次相关。经常需要整个MCS系统中每个组件的详细知识。当一个给定MCS组件的固件缺乏探测它的能力时，诊断团队就会为它添加。</figcaption>
 </figure>
 
 <a name="figure4"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/Diag_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for Diagnostic Team">
+<img src="/img/case-studies/data-center-product-company/Diag_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for Diagnostic Team">
 <figcaption>
 图4：诊断能力很窄地聚焦在帮助客户诊断他们现场MCS系统的问题，特别是硬件组件故障。虽然焦点很窄，其范围却跨越整个MCS系统。
 <br/><br/>
@@ -198,13 +198,13 @@ BIOS面向LeSS的导入工作因VP/GM的变动而受阻，恰好发生在米提�
 
 <a name="figure5"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/diagnosticsTeamInRoom.jpg" alt="Diagnostics Team in Team Room">
+<img src="/img/case-studies/data-center-product-company/diagnosticsTeamInRoom.jpg" alt="Diagnostics Team in Team Room">
   <figcaption>图5：这是一张诊断Scrum开发团队的照片。随着时间的推移，结对和群聚变得越来越普遍，尽管完全的群聚编程从未真正流行起来。该团队同时拥有测试和开发人才，以便在每个迭代结束时交付一个潜在可发布的增量。开发团队使用一个物理任务板。我们占据的会议室比我们希望的要小一些。</figcaption>
 </figure>
 
 <a name="figure6"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/diagnosticsDefinitionOfDoneAfterSeveralSprints_9_2.jpg" alt="Diagnostics Definition of Done After Several Sprints">
+<img src="/img/case-studies/data-center-product-company/diagnosticsDefinitionOfDoneAfterSeveralSprints_9_2.jpg" alt="Diagnostics Definition of Done After Several Sprints">
 <figcaption>
 图6：诊断团队使用的完成定义在几个迭代之后演进成你这边看到的样子。每个迭代结束增量中的独立部分会提供给现场服务部门。而提供给终端客户MCS的集成诊断能力则需要等待一个瀑布开发的MCS产品发布。这个示例的完成定义以及额外的上下文可参见《Forging Change》书中的表格9.2。
 </figcaption>
@@ -247,7 +247,7 @@ BIOS面向LeSS的导入工作因VP/GM的变动而受阻，恰好发生在米提�
 
 <a name="figure7"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/transition-component-teams-slow.png" alt="Slowly Transitioning from Component Teams">
+<img src="/img/case-studies/data-center-product-company/transition-component-teams-slow.png" alt="Slowly Transitioning from Component Teams">
 <figcaption>
 图7：你会在《大规模Scrum》书中图4.11找到这个图，作为转向特性团队指南的一部分。你会注意到特性团队Red在新形成的需求领域中与其它所有组件团队从同一份产品待办列表中拿工作。虽然这与诊断团队的情景大致相近，日常现实却不尽相同。诊断团队是一个真正的自管理团队，不受合同游戏的负面直接影响。相反，大多数其他MCS团队则受制于瀑布交付环境中的合同游戏。
 <br/><br/>
@@ -342,19 +342,19 @@ BIOS面向LeSS的导入并不是由以客户为中心、以整个产品为中心
 
 <a name="figure8"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/Initial_BIOS_CB_WithTitle.png" alt="Initial BIOS Component Boundary">
+<img src="/img/case-studies/data-center-product-company/Initial_BIOS_CB_WithTitle.png" alt="Initial BIOS Component Boundary">
   <figcaption>图8：初始的BIOS组件边界仅包含定制BIOS。即使在这个较窄的范围内，它仍然包含了数百个定制BIOS本身的专业代码领域，以及数百万行C代码。几十位BIOS工程师中几乎没有人开始时就了解BIOS代码的一两个方面以上。</figcaption>
 </figure>
 
 <a name="figure9"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/Expanded_BIOS_MCB_WithTitle.png" alt="Expanded BIOS Multi-Component Boundary">
+<img src="/img/case-studies/data-center-product-company/Expanded_BIOS_MCB_WithTitle.png" alt="Expanded BIOS Multi-Component Boundary">
   <figcaption>图9：扩大的BIOS多组件边界包含BIOS配置控制路径上的所有内容。它映射到一个自然的产品需求领域，很容易被产品管理组的PO所理解。尽管没有完全实现，但我们是努力朝着这个方向前进的。</figcaption>
 </figure>
 
 <a name="figure10"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/BIOS_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for BIOS">
+<img src="/img/case-studies/data-center-product-company/BIOS_AdoptMap_WithTitle.png" alt="Feature Team Adoption Map for BIOS">
   <figcaption>图10：BIOS开发人员最初是几十个个体组成的松散团队，每个人都专门从事一个BIOS定制的狭窄方面。BIOS系统本身就包含了在一个极度深奥的系统领域中的数百万行代码。</figcaption>
 </figure>
 
@@ -388,19 +388,19 @@ BIOS面向LeSS的导入发生在公司高管层活跃变动期间。当开始BIO
 
 <a name="figure11"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/OriginalOrgWithOrigSVP_WithTitle.png" alt="Original Organizational Structure with Original SVP">
+<img src="/img/case-studies/data-center-product-company/OriginalOrgWithOrigSVP_WithTitle.png" alt="Original Organizational Structure with Original SVP">
   <figcaption>图11：MCS部门最初的工程SVP/GM对敏捷导入工作给予了极大的支持。我也在组织中找到了积极支持。许多主管、经理和个体贡献者都在我试图更好地理解和帮助这个组织时给予我积极指导。不幸的是，这位SVP的任期很短，并且有一位关键的负责产品中更纯软件部分的VP消极且强烈地反对任何真正的变革。</figcaption>
 </figure>
 
 <a name="figure12"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/OrgAfterEarlyChangeOfSVP_WithTitle.png" alt="Organizational Structure After Early Change of Engineering SVP/GM">
+<img src="/img/case-studies/data-center-product-company/OrgAfterEarlyChangeOfSVP_WithTitle.png" alt="Organizational Structure After Early Change of Engineering SVP/GM">
   <figcaption>图12: MCS部门原先的工程SVP/GM在我来之前仅担任了几个月的职务。在我来后的两个月内他就被另一位SVP接替。回想起来，很明显最高领导层给新SVP的指示是让部门规模合理化。新的SVP几乎完全不理我，也不愿意积极参与敏捷转型工作。虽然这通常发生在我的视野之外，我相信我继续得到了项目管理VP的积极支持和隔空保护。尽管在新的工程SVP接管后陆续有一些额外的组织变化，它们对尝试敏捷导入的团队来说并没有太大影响，直到硬件VP离开。</figcaption>
 </figure>
 
 <a name="figure13"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/OrgAfterDepartureOfHWVP_WithTitle.png" alt="Organizational Structure After Depature of Hardware VP">
+<img src="/img/case-studies/data-center-product-company/OrgAfterDepartureOfHWVP_WithTitle.png" alt="Organizational Structure After Depature of Hardware VP">
   <figcaption>图13：在即将到来的裁员阴影下，许多人开始自愿离职。大约在同一时间，一家资金充裕的新创公司开始积极招聘MCS部门中一些更为熟练的工程师和经理。其中一位离职者就是BIOS团队所汇报的硬件VP。新的工程SVP选择不再招新的硬件VP，而是让所有先前汇报给硬件VP的人员向软件VP汇报。由于软件VP总是消极地对抗敏捷导入工作，这不是个好兆头。在几个月的时间里，一半BIOS团队成员被解雇，我的工作也结束了，米提亚跟随硬件VP去了那家资金充足的初创公司。一年多后，特伦特也离开了中岛公司。</figcaption>
 </figure>
 
@@ -408,7 +408,7 @@ BIOS面向LeSS的导入发生在公司高管层活跃变动期间。当开始BIO
 
 <a name="figure14"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/BIOS_PeopleGeo_WithTitle.png" alt="MCS Division People By Geography">
+<img src="/img/case-studies/data-center-product-company/BIOS_PeopleGeo_WithTitle.png" alt="MCS Division People By Geography">
 <figcaption>
 图14：MCS部门内的绝大多数人都在其各自城市的一栋建筑内同一层或两层工作。我们小心地确保BIOS团队成员基本坐在离队友几英尺的地方。工作台对群聚工作也很友好。一半工作发生在实验室，所以许多团队成员实际上有两个工作地点。除了少数测试专家外，在美国的每个人都汇报给米提亚。即使测试专家也同处一地，完全分配给BIOS，并和团队中其他人一样对待。有一两个BIOS开发人员分散在不同地点，但这是唯一的例外。
 <br/><br/>
@@ -418,7 +418,7 @@ BIOS面向LeSS的导入发生在公司高管层活跃变动期间。当开始BIO
 
 <a name="figure15"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/BIOS_HW_Gen_Expansion_WithTitle.png" alt="BIOS Feature Team Expansion By Hardware Generation">
+<img src="/img/case-studies/data-center-product-company/BIOS_HW_Gen_Expansion_WithTitle.png" alt="BIOS Feature Team Expansion By Hardware Generation">
   <figcaption>图15: MCS硬件代次在定义BIOS组件内面向LeSS导入的边界时被用作其中一个组件维度。有硬件VP的支持，再加上几次印度之行，我和米提亚有可能成功地解决政治问题。不幸的是，VP层的变化加上裁员使得这一策略无法实施。在时间线和组织架构图中的信息与你在本图中看到的是相关的。</figcaption>
 </figure>
 
@@ -608,7 +608,7 @@ AMI估计全世界只有几千名熟悉BIOS定制的工程师。许多x86硬件�
 
 <a name="figure16"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/mcsLaunchDraftProductBacklogOrderAssignment.png" alt="BIOS Component Backlog Brainstorming">
+<img src="/img/case-studies/data-center-product-company/mcsLaunchDraftProductBacklogOrderAssignment.png" alt="BIOS Component Backlog Brainstorming">
   <figcaption>图16：最初的BIOS组件待办列表头脑风暴产生了一系列初步的PBI便利贴，只有简短的描述或标题。每张PBI便利贴都用计划扑克估算了工作量，并在BIOS组件待办列表中排定了合适的次序。就在离开之前，我们拍照记录下我们的工作，准备后续把这些数据转成电子格式。</figcaption>
 </figure>
 
@@ -626,25 +626,25 @@ AMI估计全世界只有几千名熟悉BIOS定制的工程师。许多x86硬件�
 
 <a name="figure17"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/mcsSecondPassCardsOnWallRandomly.jpg" alt="BIOS Component Backlog Second Pass">
+<img src="/img/case-studies/data-center-product-company/mcsSecondPassCardsOnWallRandomly.jpg" alt="BIOS Component Backlog Second Pass">
   <figcaption>图17：来自最初两天启动会议中的便利贴简短PBI被进一步细化并以电子方式存储。这些细化工作是由跨团队小组专注于BIOS组件特定领域来完成的。一个或更多迭代之后跨团队小组的收益开始下降。既然我们已经从跨团队梳理工作中获得了足够多的额外洞察；我们就回归物理格式以帮助我们看到更大的画面。这里你可以看到打印出来的故事卡片随机贴在墙上，准备着做更多的梳理活动。</figcaption>
 </figure>
 
 <a name="figure18"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/mcsSecondPassStoryMapping.jpg" alt="BIOS Component Backlog Story Mapping">
+<img src="/img/case-studies/data-center-product-company/mcsSecondPassStoryMapping.jpg" alt="BIOS Component Backlog Story Mapping">
   <figcaption>图18：BIOS伪PO开始寻找自然的分组和次序。最终结果是故事地图和蛇形排序并以史诗分组的组件待办列表的混合。这幅大地图是在几天的时间里慢慢形成的。来自BIOS特性团队的各组人员在合适的时候被拉进来提供更多洞察。当在墙上定稿之后，伪PO确保召集所有BIOS的Scrum团队成员开会，来做一次全面的完整性检查。此时MVP已经很明显了，如红色箭头所示。</figcaption>
 </figure>
 
 <a name="figure19"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/mcsSecondPassAffinityEstimation.jpg" alt="BIOS Component Backlog Affinity Estimation">
+<img src="/img/case-studies/data-center-product-company/mcsSecondPassAffinityEstimation.jpg" alt="BIOS Component Backlog Affinity Estimation">
   <figcaption>图19：当在大组多团队完整性检查期间每个BIOS的Scrum团队成员都在时，采用了相似估算重新评估MVP中每个剩余的PBI。之后卡片被重新排列成一个更清晰版本的故事地图，在Rally中也相应更新以反映新的信息。</figcaption>
 </figure>
 
 <a name="figure20"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/mcsTeamHelper.jpg" alt="BIOS Team Helper">
+<img src="/img/case-studies/data-center-product-company/mcsTeamHelper.jpg" alt="BIOS Team Helper">
   <figcaption>图20：米提亚确保我们有一个帮手提供需要的任何胶带。</figcaption>
 </figure>
 
@@ -680,13 +680,13 @@ AMI估计全世界只有几千名熟悉BIOS定制的工程师。许多x86硬件�
 
 <a name="figure21"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/mcsLaunchDraftDefinitionOfDOne.jpg" alt="BIOS Launch Definition of Done">
+<img src="/img/case-studies/data-center-product-company/mcsLaunchDraftDefinitionOfDOne.jpg" alt="BIOS Launch Definition of Done">
   <figcaption>图21：这是BIOS团队在多天启动活动中创建的完成定义的初稿。</figcaption>
 </figure>
 
 <a name="figure22"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/mcsDefinitionOfDoneAfterSeveralSprints_9_3.jpg" alt="BIOS Evolved Definition of Done">
+<img src="/img/case-studies/data-center-product-company/mcsDefinitionOfDoneAfterSeveralSprints_9_3.jpg" alt="BIOS Evolved Definition of Done">
 <figcaption>图22：BIOS团队所使用的完成的定义在经过几个迭代之后演变成了你在这里看到的样子。这个完成定义的示例以及附加的上下文可参见《Forging Change》书中的表格9.3。</figcaption>
 </figure>
 
@@ -855,7 +855,7 @@ MCS部门里没有任何全职员工我们认为有足够的经验能在BIOS团�
 
 <a name="figure23"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/chapter-10-galbraith-star-en.png" alt="Gilbrith’s Star Model">
+<img src="/img/case-studies/data-center-product-company/chapter-10-galbraith-star-en.png" alt="Gilbrith’s Star Model">
 <figcaption>图23：在《精益和敏捷开发大型应用指南》书中，拉曼和沃代基于杰伊·加尔布雷思（Jay Galbraith）的星型模型讲述了组织策略。LeSS导入中的一些最大的问题跟激励和人员实践、以及它们与结构的相交部分相关。我们没能扁平化正式的组织结构，并且没有足够关注建立能够同等激励技术水平和管理水平的薪酬结构。当你阅读<a href="#bios-alignment-to-less-rules">BIOS与LeSS规则比对</a>章节时，把加尔布雷思的模型记在心中会有用。</figcaption>
 </figure>
 
@@ -1024,7 +1024,7 @@ BIOS团队经常被来自于工作在整个MCS系统其它部分的工程师和�
 
 <a name="figure24"></a>
 <figure>
-<img src="./img/case-studies/data-center-product-company/mcsTriageGuidelines_10_1.jpg" alt="BIOS Triage Guidelines">
+<img src="/img/case-studies/data-center-product-company/mcsTriageGuidelines_10_1.jpg" alt="BIOS Triage Guidelines">
   <figcaption>图24：这份BIOS团队使用的分流准则建立了三个基本类别：采取立刻行动，问PO和放入BIOS组件待办列表。PO清晰交流了意图，同时授权Scrum开发团队在合适时采取立刻行动。准则的显式化也让PO更有机会基于团队的集体智慧来协作地完善它们。</figcaption>
 </figure>
 
