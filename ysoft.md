@@ -1,5 +1,5 @@
 <figure>
-  <img src="/img/case-studies/ysoft/ysoft-logo.png" alt="YSoft Logo">
+  <img src="img/case-studies/ysoft/ysoft-logo.png" alt="YSoft Logo">
 </figure>
 
 # Evolving Y Soft’s Organizational Design
@@ -24,7 +24,7 @@ Y Soft is a multinational software and electronic hardware company founded in 20
 Y Soft’s product development is centered in the Czech Republic with offices in Brno, Prague, Ostrava, but also Copenhagen with 120+ people within Research & Development (R&D), where most of the product development takes place.
 
 <figure>
-  <img src="/img/case-studies/ysoft/ysoft-map.png" alt="YSoft World Map">
+  <img src="img/case-studies/ysoft/ysoft-map.png" alt="YSoft World Map">
 </figure>
 
 ## Product
@@ -105,19 +105,19 @@ The results were validated in workshops and taken as preparation for the 4-day e
 The first step of the LeSS guide *Getting Started* is: educate everyone. The VP’s and Scrum Masters all joined Jürgen de Smet’s CLP to get a deeper understanding of LeSS. For all developers - and some others - potentially volunteering in the LeSS adoption, there was a Lego 4 Scrum workshop towards a LeSS organization. Jürgen made the workshop very intense, to really get the right volunteers and to know where they would sign up for. Emphasis is to understand it’s extremely important to collaborate with other teams, customers and users.
 
 <figure>
-  <img src="/img/case-studies/ysoft/less-course1.png" alt="Jurgen LeSS Course 1">
+  <img src="img/case-studies/ysoft/less-course1.png" alt="Jurgen LeSS Course 1">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/less-course2.png" alt="Jurgen LeSS Course 2">
+  <img src="img/case-studies/ysoft/less-course2.png" alt="Jurgen LeSS Course 2">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/less-course3.png" alt="Jurgen LeSS Course 3">
+  <img src="img/case-studies/ysoft/less-course3.png" alt="Jurgen LeSS Course 3">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/less-course4.png" alt="Jurgen LeSS Course 4">
+  <img src="img/case-studies/ysoft/less-course4.png" alt="Jurgen LeSS Course 4">
 </figure>
 
 More elaboration on the preparation for the preparation of the LeSS adoption can be found in [this Appendix](#appendix-b-preparation-to-the-4-day-events-that-kicked-off-the-less-adoption).
@@ -127,7 +127,7 @@ More elaboration on the preparation for the preparation of the LeSS adoption can
 Based on the results from the preparation, an Organizational Improvement Kata was organized, based on the Toyota Kata approach. The direction and challenge that was set forward was to find the optimal organizational structure for starting in the LeSS adoption after the 4-day event.
 
 <figure>
-  <img src="/img/case-studies/ysoft/toyota-kata.png" alt="Toyota Kata">
+  <img src="img/case-studies/ysoft/toyota-kata.png" alt="Toyota Kata">
 </figure>
 
 Positive about the current situation:
@@ -155,11 +155,11 @@ A selected group was working to design a future state using the Meddlers Game fr
 The same group defined together what ‘product’ could mean in the context of the new organizational setup. Define product is the second step in the LeSS guide *Getting Started*. Volunteers from the ‘educate everyone’ session were added to get feedback on the results for the organizational setup. The whole group did a *Feature Team Adoption Map* exercise. This LeSS guide *Feature Team Adoption Maps* helps to make transparent the kind of organizational change you can expect for the LeSS adoption. It’s a representation of the gradually increasing work scope of the teams on one axis and the degree of cross-functionality of teams on the other axis.  It resulted in insights on the organizational setup and to set boundaries of what is in scope for the 4-day event that starts the LeSS adoption.
 
 <figure>
-  <img src="/img/case-studies/ysoft/initial-organizational-improvement-kata.png" alt="Initial Organizational Improvement Kata">
+  <img src="img/case-studies/ysoft/initial-organizational-improvement-kata.png" alt="Initial Organizational Improvement Kata">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/feature-team-adoption-mapping.png" alt="Feature Team Adoption Mapping">
+  <img src="img/case-studies/ysoft/feature-team-adoption-mapping.png" alt="Feature Team Adoption Mapping">
 </figure>
 
 An important observation was that nobody wanted to be the Product Owner for the newly defined product.
@@ -331,13 +331,13 @@ The participants created a *system model* (causal loop diagram) and identified t
 The resulting causal loop diagram:
 
 <figure>
-  <img src="/img/case-studies/ysoft/systems-model-re-alignment.png" alt="System Model of re-alignment">
+  <img src="img/case-studies/ysoft/systems-model-re-alignment.png" alt="System Model of re-alignment">
 </figure>
 
 Zoomed in on a part of the diagram:
 
 <figure>*
-  <img src="/img/case-studies/ysoft/systems-model-re-alignment-zoomed.png" alt="System Model of re-alignment Zoomed">
+  <img src="img/case-studies/ysoft/systems-model-re-alignment-zoomed.png" alt="System Model of re-alignment Zoomed">
 </figure>
 
 The result of the workshop and the system metrics led to better understanding. They collected many of the insights for a while, but didn’t focus on shared understanding to really improve them. The metrics the participants chose to focus on were mostly ‘predictability of Sprint delivery’, ‘ratio features vs other types of PBI’s’ and ‘time to merge pull requests’. Teams used especially the first two often to check progress and identify further improvements. Note that the predictability metrics are *not* what is desired in Scrum and LeSS, because the optimization goal is to be *adaptive to discover highest customer value or delight*, which in some cases is the opposite of predictability. The need for predictability also originated from the past, where customer requests and agreements were not met for all sorts of reasons. Product marketing and the CEO wanted more predictability to be better able to make agreements with customers. There was no pressure from them to have it as soon as possible, as long as the delivery would be at the time (or earlier) they set together. Since the LeSS adoption, teams set the expected dates of delivery, in contrast to the previous project manager set deadlines. The intention of the workshop was to let the people from Y Soft find out their own metrics, and little emphasis was on the discussion of the results of metrics.
@@ -653,7 +653,7 @@ The way Y Soft promoted self-management and dealt with cross-team (and even cros
 Volunteers from teams, the Head of Product, and a representative from the agile coaches created guidelines on how to deal with macro-processes in general. A volunteering group (mostly team members, but also other relevant stakeholders or the PO if needed) designed the first and most important macro-processes. It was inspired by the LeSS Complete Picture for each topic: the group defined the principles for the topic and made rules for the topic. These rules could be real constraints (e.g. response time to applicants by HR) or made together with the volunteering group to make sure there is some uniformity for a topic. Based on the principles and rules, the volunteers designed guides to use within teams to deal with the topic. Similar to the LeSS guides to start with something and based on learning in experiments, teams could adjust to their specific situation. After the guides were finished, the macro-processes (basically the principles, rules & guides) were discussed or sent around (depending on the topic) for feedback from all teams.
 
 <figure>
-  <img src="/img/case-studies/ysoft/macro-processes.png" alt="Macro processes">
+  <img src="img/case-studies/ysoft/macro-processes.png" alt="Macro processes">
 </figure>
 
 *How the macro-processes were explained*
@@ -892,7 +892,7 @@ An external consultant organized and facilitated an initial Improvement Kata (ba
 The main goal of the initial workshop was to define and agree on the first steps towards improving the overall technical excellence within Y Soft. It started by defining the ‘Definition of Awesome’ for the overall direction of becoming a technical leader.
 
 <figure>
-  <img src="/img/case-studies/ysoft/definition-of-awesome.png" alt="Definition of Awesome">
+  <img src="img/case-studies/ysoft/definition-of-awesome.png" alt="Definition of Awesome">
 </figure>
 
 Definition of Awesome:
@@ -906,7 +906,7 @@ The teams had just done a technical excellence self-assessment, and some volunte
 The group defined three next target conditions (topics that were the most blocking) that were logical and feasible next steps towards the challenge:
 
 <figure>
-  <img src="/img/case-studies/ysoft/next-target-conditions.png" alt="Next Target Conditions">
+  <img src="img/case-studies/ysoft/next-target-conditions.png" alt="Next Target Conditions">
 </figure>
 
 For each of the next target conditions, the participants defined metrics to see the progress on the improvement for each next target condition.
@@ -960,7 +960,7 @@ In the first iteration, the groups could decide on their own how they would arch
 *Example of the results of one group*:
 
 <figure>
-  <img src="/img/case-studies/ysoft/c4-modeling-example.png" alt="C4 Modeling Example">
+  <img src="img/case-studies/ysoft/c4-modeling-example.png" alt="C4 Modeling Example">
 </figure>
 
 Participants liked the learnings and at the end they identified experiments in their own context to use the learnings in their daily work.
@@ -996,7 +996,7 @@ These were used to validate and learn with the developers how to improve. An exa
 A graphical overview of the outcomes of the evaluation of the technical health looked like this:
 
 <figure>
-  <img src="/img/case-studies/ysoft/y-soft-gource.png" alt="Y Soft Gource Output">
+  <img src="img/case-studies/ysoft/y-soft-gource.png" alt="Y Soft Gource Output">
 </figure>
 
 The following results from the initial evaluation were addressed in the preparation of the LeSS adoption:
@@ -1016,19 +1016,19 @@ The results were validated in workshops and taken as preparation for the 4-day e
 The first step of the LeSS guide *Getting Started* is: educate everyone. The VP’s and Scrum Masters all joined Jürgen de Smet’s CLP to get a deeper understanding of LeSS. For all developers - and some others - potentially volunteering in the LeSS adoption, there was a Lego 4 Scrum workshop towards a LeSS organization. Jürgen made the workshop very intense, to really get the right volunteers and to know where they would sign up for. Emphasis is to understand it’s extremely important to collaborate with other teams, customers and users.
 
 <figure>
-  <img src="/img/case-studies/ysoft/less-course1.png" alt="Jurgen LeSS Course 1">
+  <img src="img/case-studies/ysoft/less-course1.png" alt="Jurgen LeSS Course 1">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/less-course2.png" alt="Jurgen LeSS Course 2">
+  <img src="img/case-studies/ysoft/less-course2.png" alt="Jurgen LeSS Course 2">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/less-course3.png" alt="Jurgen LeSS Course 3">
+  <img src="img/case-studies/ysoft/less-course3.png" alt="Jurgen LeSS Course 3">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/less-course4.png" alt="Jurgen LeSS Course 4">
+  <img src="img/case-studies/ysoft/less-course4.png" alt="Jurgen LeSS Course 4">
 </figure>
 
 ### B.3 Initial Organizational Improvement Kata (August 2018)
@@ -1036,7 +1036,7 @@ The first step of the LeSS guide *Getting Started* is: educate everyone. The VP�
 Based on the results from the preparation, an Organizational Improvement Kata was organized, based on the Toyota Kata approach. The direction and challenge that was set forward was to find the optimal organizational structure for starting in the LeSS adoption after the 4-day event.
 
 <figure>
-  <img src="/img/case-studies/ysoft/toyota-kata.png" alt="Toyota Kata">
+  <img src="img/case-studies/ysoft/toyota-kata.png" alt="Toyota Kata">
 </figure>
 
 In this workshop, the VP’s in R&D, HR, product marketing, Business and part of C-Level explored their current organizational setup in combination with validate findings from the preparation. Note that there was no Finance representative present, which in many cases would be beneficial. Financial policies often have big influence on the organizational patterns and should be reconsidered when moving towards LeSS. The participants discovered favorable patterns and less favorable patterns and these were noted down and discussed. The results are in the pictures below.
@@ -1044,7 +1044,7 @@ In this workshop, the VP’s in R&D, HR, product marketing, Business and part of
 *Results from the Meddlers game on current situation:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/meddlers-game.jpg" alt="Meddlers Game">
+  <img src="img/case-studies/ysoft/meddlers-game.jpg" alt="Meddlers Game">
 </figure>
 
 Positive about the current situation:
@@ -1072,11 +1072,11 @@ A selected group was working to design a future state using the Meddlers Game fr
 The same group defined together what ‘product’ could mean in the context of the new organizational setup. Define product is the second step in the LeSS guide *Getting Started*. Volunteers from the ‘educate everyone’ session were added to get feedback on the results for the organizational setup. The whole group did a Feature Team Adoption Map exercise. This LeSS guide *Feature Team Adoption Maps* helps to make transparent the kind of organizational change you can expect for the LeSS adoption. It’s a representation of the gradually increasing work scope of the teams on one axis and the degree of cross-functionality of teams on the other axis.  It resulted in insights on the organizational setup and to set boundaries of what is in scope for the 4-day event that starts the LeSS adoption.
 
 <figure>
-  <img src="/img/case-studies/ysoft/initial-organizational-improvement-kata.png" alt="Initial Organizational Improvement Kata">
+  <img src="img/case-studies/ysoft/initial-organizational-improvement-kata.png" alt="Initial Organizational Improvement Kata">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/feature-team-adoption-mapping.png" alt="Feature Team Adoption Mapping">
+  <img src="img/case-studies/ysoft/feature-team-adoption-mapping.png" alt="Feature Team Adoption Mapping">
 </figure>
 
 
@@ -1089,7 +1089,7 @@ Next, we classified the needs and preparation into a backlog with categories for
 The Wiki page looked like this:
 
 <figure>
-  <img src="/img/case-studies/ysoft/less-activities-wiki.png" alt="LeSS Activities Wiki">
+  <img src="img/case-studies/ysoft/less-activities-wiki.png" alt="LeSS Activities Wiki">
 </figure>
 
 There was no official ‘change team’ that joined and worked on these steps, but a (large) group of volunteers that led the change. However, the downside is that people appeared and disappeared from the volunteering group, which made it harder to move things forward. A small group - Scrum Masters mainly - took the lead to make sure the volunteers could do the right things. People joined the volunteering group, but the expectations for them were set at the meetings instead of set in advance.
@@ -1111,7 +1111,7 @@ Additionally external support was used to organize several in-depth technical wo
 *Technical workshops:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/technical-workshops.png" alt="Technical Workshops">
+  <img src="img/case-studies/ysoft/technical-workshops.png" alt="Technical Workshops">
 </figure>
 
 One of the crucial activities that was needed in the preparation was to find a Product Owner. After searching and discussing this internally, the VP of product marketing took the role of Product Owner, as in the very first Scrum adoption at Easel in 1993. The people in his department from product marketing would help teams to get the needed customer understanding.
@@ -1125,13 +1125,13 @@ However, the communication about the LeSS adoption was failing. First, the commu
 In January of 2019, the 4-day event took place. All possible volunteers would join, including the Product Owner, management and some other supporting roles. The Head of Product explained to everyone the reason for the change in the introduction. In this section, we describe the steps of the event.
 
 <figure>
-  <img src="/img/case-studies/ysoft/opening-less-adoption-event.png" alt="Opening LeSS adoption Event">
+  <img src="img/case-studies/ysoft/opening-less-adoption-event.png" alt="Opening LeSS adoption Event">
 </figure>
 
 Screenshot of - part of - the planning for the event:
 
 <figure>
-  <img src="/img/case-studies/ysoft/ysoft-reboot-agenda.png" alt="Y Soft Reboot Event Agenda">
+  <img src="img/case-studies/ysoft/ysoft-reboot-agenda.png" alt="Y Soft Reboot Event Agenda">
 </figure>
 
 ### Day 1: initial Product Backlog Refinement (initial PBR)
@@ -1141,7 +1141,7 @@ The Product Owner shared the product vision as a starting point for initial Prod
 *Product Owner sharing vision:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/product-owner-sharing-vision.png" alt="Product Owner Sharing Vision">
+  <img src="img/case-studies/ysoft/product-owner-sharing-vision.png" alt="Product Owner Sharing Vision">
 </figure>
 
 The product vision was the starting point for the initial PBR, done together by all participants. First, engineers created a marketplace with 10 slots, so there would be around 6 people per item. People added items to the marketplace so each slot had an item (or several items) to refine in that slot. People worked in several iterations, and each iteration would go into more detail. After each iteration, people shared the results to each other in something like a LeSS Sprint Review Bazaar, but only for item analysis, not done features
@@ -1149,7 +1149,7 @@ The product vision was the starting point for the initial PBR, done together by 
 *Example of a refinement slot discussion:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/product-backlog-refinement-discussion.png" alt="Product Backlog Refinement Discussion">
+  <img src="img/case-studies/ysoft/product-backlog-refinement-discussion.png" alt="Product Backlog Refinement Discussion">
 </figure>
 
 After the Refinement iterations, groups of people did ‘mob documenting’, where they added the results of the Refinement to the Wiki and the Product Backlog. In the break, the Scrum Masters printed all items for the next step: estimation. Participants used slide & deal techniques to estimate all the items: participants placed items in categories and big categories were split further to get better estimations. The picture below shows how the items were placed on the floor and people categorized them.
@@ -1157,17 +1157,17 @@ After the Refinement iterations, groups of people did ‘mob documenting’, whe
 *Mob documenting:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/mob-documenting.png" alt="Mob Documenting">
+  <img src="img/case-studies/ysoft/mob-documenting.png" alt="Mob Documenting">
 </figure>
 
 *Estimating:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/product-backlog-estimation-1.png" alt="Product Backlog Estimation 1">
+  <img src="img/case-studies/ysoft/product-backlog-estimation-1.png" alt="Product Backlog Estimation 1">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/product-backlog-estimation-2.png" alt="Product Backlog Estimation 2">
+  <img src="img/case-studies/ysoft/product-backlog-estimation-2.png" alt="Product Backlog Estimation 2">
 </figure>
 
 ### Day 2: Creating the Definition of Done & self-design the team
@@ -1179,11 +1179,11 @@ After that, they did an ‘undone’ workshop to discover which activities can b
 *Definition of Done workshop:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/definition-of-done-workshop-1.png" alt="Definition of Done Workshop 1">
+  <img src="img/case-studies/ysoft/definition-of-done-workshop-1.png" alt="Definition of Done Workshop 1">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/definition-of-done-workshop-2.png" alt="Definition of Done Workshop 2">
+  <img src="img/case-studies/ysoft/definition-of-done-workshop-2.png" alt="Definition of Done Workshop 2">
 </figure>
 
 Then, people ‘burned’ their old teams. Teams made materials about their current teams and what it meant to them. They literally burned these materials, as a way of saying goodbye to the old teams and being able to design the new teams with a fresh mind.
@@ -1191,11 +1191,11 @@ Then, people ‘burned’ their old teams. Teams made materials about their curr
 *Burning of old teams:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/burning-old-team-1.png" alt="Burning of Old Team 1">
+  <img src="img/case-studies/ysoft/burning-old-team-1.png" alt="Burning of Old Team 1">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/burning-old-team-2.png" alt="Burning of Old Team 2">
+  <img src="img/case-studies/ysoft/burning-old-team-2.png" alt="Burning of Old Team 2">
 </figure>
 
 
@@ -1213,7 +1213,7 @@ The organizers set tables as places for a team, and people could move through th
 *Team self-design discussion:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/team-self-design-discussion.png" alt="Team Self Design Discussion">
+  <img src="img/case-studies/ysoft/team-self-design-discussion.png" alt="Team Self Design Discussion">
 </figure>
 
 ### Day 3: Team agreements & follow-up with teams
@@ -1235,7 +1235,7 @@ Additionally, teams agreed on distributed decision making models to make sure bu
 In advance, the Scrum Masters printed 100 open bugs and 100 recently closed bugs and created x- and y-axis on the floor. Teams chose ‘bug severity’ for the x-axis and ‘customer impact’ for the y-axis. Team members were asked to put the printed bugs relative to each other on the floor. After quite some bugs were added to the floor, they created some clusters. At that point, the organizers extended the x-axis and y-axis with 9 blocks, like this:
 
 <figure>
-  <img src="/img/case-studies/ysoft/bug-matrix.png" alt="Bug Matrix">
+  <img src="img/case-studies/ysoft/bug-matrix.png" alt="Bug Matrix">
 </figure>
 
 The rules that were set forward were that all bugs had to be in one category (not on the line), and bugs would be placed relative to each other within the category. The good thing about doing this on the floor is that lines can be extended to left, right, top or bottom (as long as you don’t make the initial lines too close to the wall). The left and bottom categories usually stay quite empty, so then you can move the lines a bit and the second cells from the left will be the new left cells.
@@ -1245,7 +1245,7 @@ After adding all the bugs, together teams decided how each of the 9 cells were �
 *Bug matrix:*
 
 <figure>
-  <img src="/img/case-studies/ysoft/bug-matrix-floor.png" alt="Bug Matrix Floor">
+  <img src="img/case-studies/ysoft/bug-matrix-floor.png" alt="Bug Matrix Floor">
 </figure>
 
 ### Day 4: Sprint Planning
@@ -1257,7 +1257,7 @@ Each team shared which availability they have for the upcoming Sprint (holidays,
 In the next step, each team crafted a Sprint Goal individually. Then, all Sprint Goals were collected and there was an agreement on an Overall Sprint Goal for all teams combined for the upcoming Sprint. Important to mention is that LeSS - in contrast to Scrum - doesn’t require a Sprint Goal. When useful and when there is a natural clear overall goal, it’s good to apply. But when there isn’t a natural clear overall goal (e.g. because of the heterogeneity of work across teams), then it’s better to not have a common Sprint Goal.
 
 <figure>
-  <img src="/img/case-studies/ysoft/sprint-goal.png" alt="Sprint Goal">
+  <img src="img/case-studies/ysoft/sprint-goal.png" alt="Sprint Goal">
 </figure>
 
 Each team selected the - printed - PBI’s they want to work on into their Sprint Backlog (Magic Whitepaper on the wall) in their team space in the room. In the LeSS guide *Multi-Team Sprint Planning Two*, it’s emphasized to have the Sprint Planning Two in the same room with all teams, to be able to coordinate with other teams using the ‘*just talk*’ or ‘*just scream*’ technique. Team members looked at the selection of other teams with the instruction to minimize dependencies between teams and move things from teams to other teams. In LeSS, there are no dependencies, because each Feature Team has the necessary knowledge and skills to complete an end-to-end customer-centric feature. If not, the team is expected to learn or acquire the needed knowledge and skill. The teams were new, and therefore some features didn’t have teams yet with all the knowledge and skills to deliver it end-to-end. In Sprint Planning Two, the teams coordinated between each other how to deliver the features end-to-end, with help from knowledge and skills from other teams if needed, preferably by learning them. This way, there is no dependency, because the teams together - at the same time - make sure the features get done. In hindsight, the instruction to minimize dependencies might have given the wrong perception to teams, because the focus should be on learning or acquiring the knowledge and skills, by working together with the other teams. And these are not dependencies, but simply working together to learn and get features to done. Over time, that should have eliminated the perception of having dependencies, by giving the right message.
@@ -1300,11 +1300,11 @@ We split the team design workshop in two parts on purpose. In co-located team de
 We used Miro to facilitate all steps in the workshop. The screenshots (second one not readable on purpose) below give an indication. During each step, the participants themselves were moving in Miro and adding/changing things. At maximum, 95 people were active in Miro at the same time. Most important facilitation tip: don’t have central discussions. Use other techniques for that, like taking 5 or 10 minutes after each breakout session to read the results or adding questions in sticky notes to someone else’s input.
 
 <figure>
-  <img src="/img/case-studies/ysoft/miro-team-design-1.png" alt="Team Design in Miro 1">
+  <img src="img/case-studies/ysoft/miro-team-design-1.png" alt="Team Design in Miro 1">
 </figure>
 
 <figure>
-  <img src="/img/case-studies/ysoft/miro-team-design-2.png" alt="Team Design in Miro 2">
+  <img src="img/case-studies/ysoft/miro-team-design-2.png" alt="Team Design in Miro 2">
 </figure>
 
 ### Team design workshop 2
@@ -1332,7 +1332,7 @@ The CEO kicked off the event by thanking everyone for their active participation
 After that, we had all teams together to reflect on the accomplishments and successes of the LeSS adoption that started more than a year before. It was very important to focus on the positive things. The reason to do the event was not because there were no improvements since the start of the LeSS adoption, but simply because the Head of Product - influenced by the CEO - wanted to make another big step forward. We asked team members to draw the accomplishments and successes and this was the result:
 
 <figure>
-  <img src="/img/case-studies/ysoft/accomplishments-first-less-flip.png" alt="Accomplishments from the first LeSS flip">
+  <img src="img/case-studies/ysoft/accomplishments-first-less-flip.png" alt="Accomplishments from the first LeSS flip">
 </figure>
 
 Next, we asked each team to work on their Team Canvas. We asked them to come up with a team name (and a logo if they wanted). We added space for their ‘roles’ (focused on soft skills) in their team, important team values for them, how they collaborate, and how they make sure they learn (from each other). The exercise had the purpose to focus on their new team and have a starting point for them to work together.
@@ -1340,7 +1340,7 @@ Next, we asked each team to work on their Team Canvas. We asked them to come up 
 *(small) Reflection*: there was a small insight about the team names: in the support tickets to some customers, the name of the team that solves the ticket is documented. Some team names might not be that good for external communication and there is no cohesion between the names. A possible experiment for next time is to have the teams choose a category together and select a team name belonging to that category. For example Star Wars as a category and ‘Darth Vader’ and ‘Luke Skywalker’ as team names.
 
 <figure>
-  <img src="/img/case-studies/ysoft/team-canvases.png" alt="Team Canvases">
+  <img src="img/case-studies/ysoft/team-canvases.png" alt="Team Canvases">
 </figure>
 
 *Team canvases*
@@ -1352,13 +1352,13 @@ After lunch, there was a small energizer and the topic ‘macro-processes’. Ma
 In a brainstorming round, the Agile Coaches asked the teams what the Agile Coaches should focus on to help them:
 
 <figure>
-  <img src="/img/case-studies/ysoft/help-of-coaches.png" alt="Help of the coaches">
+  <img src="img/case-studies/ysoft/help-of-coaches.png" alt="Help of the coaches">
 </figure>
 
 The Agile Coaches used this input to define what perspectives they should have to have a wider system view and what their roles should be. In a later step, the Agile Coaches decided together who would focus on what.
 
 <figure>
-  <img src="/img/case-studies/ysoft/activities-of-coaches.png" alt="Activities of the Coaches">
+  <img src="img/case-studies/ysoft/activities-of-coaches.png" alt="Activities of the Coaches">
 </figure>
 
 *Result of discussion between Agile Coaches for their focus*
@@ -1366,13 +1366,13 @@ The Agile Coaches used this input to define what perspectives they should have t
 At the end of the day, all participants checked all the administrative and other operational tasks that needed to happen, because of the change of the teams. We asked all teams to discuss together how they would solve it and add a green sticky note when they were done:
 
 <figure>
-  <img src="/img/case-studies/ysoft/team-administrative-tasks.png" alt="Teams solving administrative tasks">
+  <img src="img/case-studies/ysoft/team-administrative-tasks.png" alt="Teams solving administrative tasks">
 </figure>
 
 We did the same thing for some general activities that need to happen and asked people to volunteer to solve them:
 
 <figure>
-  <img src="/img/case-studies/ysoft/dividing-general-activities.png" alt="Dividing General Activities">
+  <img src="img/case-studies/ysoft/dividing-general-activities.png" alt="Dividing General Activities">
 </figure>
 
 The morning after, the first Sprint started with the new teams in the Sprint Planning. We asked as many people to join as possible (instead of only representatives), for two reasons:
