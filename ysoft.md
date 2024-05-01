@@ -699,60 +699,107 @@ The discussion about moving to LeSS Huge had happened a few times before. The ag
 *Reflection*: Even though in the LeSS rules it states that LeSS Huge is for ‘8’+ teams, the number of teams shouldn’t be the main reason to move to LeSS Huge (or split into two products). There is some limit for the amount of people that work together, but this limit is contextual and depends on the product, the knowledge of people, the complexity, the size of the company, and more. Second, when the whole product - which in this case is almost the whole organization - is around this number of 8 (13,  and not e.g. 50), there should be dived into the root cause why teams working together is perceived as a problem. There are probably root causes that are more important to address than only ‘too many teams working together’. However, there was no deeper root cause analysis on the problems with this at the time of deciding to move to two products, e.g. the lack of sharing a good product vision, too often changing priorities and the delay of customer feedback.
 
 ## 3. Moving to two products
+## 3. 转向两个产品
 
 Deciding on the product definition is an important aspect of *organizational design*, because of the organizational consequences related to the definition. This section discusses the product definition and the decision to move to two products. The discussion focuses on the impact of the product definition for the optimization goal *to be adaptive to discover highest customer value or delight*. This section complements the OD evaluation of the previous sections.
+因为产品定义会带来相关的组织后果，决定产品定义是*组织设计*的一个重要方面。这个章节将讨论产品定义及转向两个产品的决策。讨论会聚焦在产品定义对*适应以发现最高客户价值或愉悦*的优化目标。这个章节补充了前面章节的组织设计评估。
 
 ### 3.1 Context
+### 3.1 背景
 
 As described in the previous section, there was a consideration about moving to LeSS Huge several times. At some point, Y Soft introduced OMNI Series, which was a result of the development from the Product Backlog of SAFEQ: a hardware device to be able to connect printing devices to many kinds of environments, e.g. Microsoft 365, even when the printing device was not equipped to connect with Cloud environments. The customers of OMNI Series are the actual end customers and users of printing devices, while SAFEQ was sold as a package (embedded) on vendor’s devices including the software. That meant the customers and needs were different and as a consequence, the sales channels were different (direct sales vs. selling through a partner/vendor). The used technology was different (*note: not as much as assumed, see [inspection section](#33-inspect)*), and this made the CEO, strategist and VP of all products decide to split the two products. There was a move to two products, with a single Product Owner and a single Product Backlog per product. The teams already working on OMNI Series moved to work on the Product Backlog for OMNI Series (3 teams), and the other teams moved to work on the Product Backlog for SAFEQ (10 teams). The first Sprint for the new products started in November 2020. In this section, there is a focus on the move to two products.
 
+如前面章节所述，我们多次考虑转向LeSS巨型。在某个时候，Y Soft推出了OMNI系列，这是来自基于SAFEQ产品待办列表开发的结果：一种能够将打印设备连接到多种环境（如Microsoft 365）的硬件设备，即使打印设备未配备与云环境连接。OMNI系列的客户是打印设备的实际最终客户和用户，而SAFEQ是作为包（嵌入）在供应商的设备包括软件上销售的。这意味着客户和需求不同，因此销售渠道也不同（直销与通过合作伙伴/供应商销售）。使用的技术不同（*注：没有假设的那么多，请参阅[inspection section](#33-inspect)*），这让CEO、战略规划师和所有产品VP决定将这两个产品分开。由此我们转向两个产品，每个产品有一个产品负责人和一份产品待办列表。已经在OMNI系列上工作的团队转向工作于OMNI系列的产品待办列表（3个团队），而其他团队转向工作于SAFEQ的产品待办列表（10个团队）。新产品的第一个迭代从2020年11月开始。在本章节中，重点介绍向两个产品的转变。
+
 In summary, the CEO and a few other senior managers from e.g. marketing reasoned 1) the products have different customers and a different marketing channel and 2) the focus on both products should be higher.
 
+总的来说，CEO和一些其他来自诸如市场的高管认为：1）两个产品有不同的客户和不同的营销渠道，2）需要对这两个产品更聚焦。
+
 ### 3.2 Narrative
+### 3.2 详述
 
 The CEO and VP of sales have the ambition to grow their market share rapidly in the coming years and be a technology leader in their market. Y Soft has many market opportunities and they want to be able to respond to these. Subsequently, opportunities change often due to changing conditions (COVID-19 is the most  relevant example) and existing customers wish change as well to the existing product(s). Being able to respond to the desires of existing customers is important, considering Y Soft’s historic strength to quickly fulfill (customized) customer needs. To be able to meet these ambitions, product development needs to be able to adapt to the desired changes.
 
+CEO和销售VP有志于在未来几年迅速扩大市场份额，成为市场的技术领导者。Y Soft有很多市场机会，他们希望能够响应这些机会。之后，机会经常因条件的变化而变化（新冠疫情是最相关的例子），现有客户也希望对现有产品进行更新。考虑到Y Soft历史上一直有快速满足（定制）客户需求的优势，能够响应现有客户的诉求非常重要。为了能实现这些愿望，产品开发要能适应所需的变化。
+
 From the second event with organizational changes, there were 13 teams defined in product development. When moving to 11 & 12 teams, feedback from the teams was that they didn’t have enough focus on a certain domain and had to switch too often between priorities. In other words: cognitive overload. The reasoning in Y Soft was that a split to LeSS Huge (and later: to move to 2 products) would help teams to have focus on a certain customer domain. Therefore, the CEO wanted to move to LeSS Huge and be able to have more overview and more focus on a certain (customer) domain for the teams. Their reasoning was that working in one Requirement Area would enable a better overview and more focus on a certain domain, without losing the whole product focus and collaboration with the other teams. There is a reflection on this reasoning later in this section.
+
+从组织变革的第二次活动开始，在产品开发中定义了13个团队。当增加到11、12个团队时，来自团队的反馈是他们没法对某个领域有足够的聚焦，不得不经常在优先级之间切换。换句话说：认知过载。Y Soft的考虑是拆分为LeSS巨型（后来转向两个产品）将有助于团队聚焦于某个客户领域。因此，CEO希望转向LeSS巨型，以使团队能够对某个（客户）领域有更多的了解和聚焦。他们的考虑是工作在一个需求领域能够在某个领域获得更好的了解和聚焦，同时不失去整体产品焦点和与其他团队的协作。本章节稍后将对此考虑进行反思。
 
 When the second event took place in May 2020, simultaneously the senior management prepared an update of the company strategy. Teams already worked on some of the product development towards this updated strategy, but because of COVID-19 in March 2020, the update of the strategy - and the accompanying development - accelerated. Customers & vendors in the ‘printing’ industry obviously had different requirements, since many people started working from home. Additionally, senior management took this as a suitable time to update the company strategy and accelerate the progress towards the corresponding goals.
 
+当第二次活动于2020年5月举行时，高管同时准备了公司战略的更新。团队已经为这一更新的战略进行了一些产品开发，但由于2020年3月新冠疫情的影响，战略以及伴随着的开发的更新都加快了。因为许多人开始在家工作，“打印”行业的客户和供应商显然有了不同的需求。此外，高管将此视为更新公司战略并加快实现相应目标的合适时机。
+
 The update of the company strategy was a more explicit focus on products. The CEO communicated very clearly that Y Soft is a product company and therefore should focus on product(s). The strategy can be summarized as:
+
+公司战略的更新更明确地将重点放在了产品上。CEO非常明确地表示Y Soft是一家产品公司，因此应专注在产品上。该策略可以概括为：
 
 * Simplifying the products that are offered to customers (e.g. pricing, installation, infrastructure)
 * Enabling new customer features with new technologies
 * Offering new features to different market segments, mainly to Small & Medium Businesses (SMB’s)
 
+* 简化向客户提供的产品（例如，定价、安装、基础设施）
+* 利用新技术实现新的客户特性
+* 为不同的细分市场提供新特性，主要面向中小型企业
+
 This changed the Product Backlog significantly but also introduced the use of new technologies that were not known by the teams. As a consequence, the teams needed to learn new technologies ánd new markets to be able to pursue the new targets.
+
+这不仅大大改变了产品待办列表，还引入了使用团队不知道的新技术。因此，团队需要学习新技术和新市场才能实现新目标。
 
 Three teams already worked - mainly - on OMNI Series from the single Product Backlog, so they moved to work on the OMNI Series product. The other ten teams worked on SAFEQ already, so they moved to work on SAFEQ. When OMNI Series was introduced to the single Product Backlog (before the move to two products), teams that liked to work on the OMNI Series product, already started working on that voluntarily. The teams discussed whether it was needed that the three OMNI Series teams would still need to help out on certain standard SAFEQ work, but the teams decided it wouldn’t make much sense to do that and even in the short term it wouldn’t be necessary.
 
+三个团队已经主要在做来自于单一产品待办列表的OMNI系列相关的工作，所以他们就转到了OMNI系列产品。其他十个团队已经在做SAFEQ相关的工作，所以他们就转到了SAFEQ产品。当OMNI系列的工作被引入到单一产品待办列表时（在转向两个产品之前），想要工作在OMNI系列产品上的团队已经主动地开始在这上面工作。团队讨论了是否仍然需要三个OMNI系列团队帮助完成某些日常的SAFEQ工作，但团队认为这样做没有多大意义，即使在短期内也没有必要。
+
 #### 3.2.1 Reasoning to split into 2 products
+#### 3.2.1 考虑拆分成2个产品
 
 Y Soft’s product development has grown over time, because of Y Soft’s ambition to grow rapidly, be a technology leader, and be able to respond to market opportunities quickly. The change of strategic direction transformed the items on the Product Backlog massively (up to 70%), including fundamental changes in the use of technology. Y Soft’s reasoning to move to two products could be categorized in two categories: 1) reasoning to ‘split’ the work into smaller focus of attention (either in Requirement Areas or separate products) and 2) reasoning whether the product is one or two products from customer and market point of view.
 
+Y Soft的产品开发随着时间的推移在增长，因为Y Soft渴望快速发展，成为技术领导者，并能够快速响应市场机会。战略方向的改变极大地改变了产品待办列表上的条目（高达70%），包括使用技术的根本变化。Y Soft转向两个产品的考虑可分为两类：1）考虑将工作“拆分”成较小的关注焦点（需求领域或单独产品）；2）考虑从客户和市场的角度来看是一个还是两个产品。
+
 ##### Weak product vision and frequent change of priorities on the short term
+##### 薄弱的产品愿景和短期内优先级的频繁变更
 
 Senior management wanted to use a roadmap to keep discussing the next steps without losing long-term objectives. Before the second event with organizational changes (May of 2020), the CEO asked the Product Owner to come up with a ‘year-long roadmap’ of the product, to be able to identify upcoming needs for the product and analyze where to focus on with the organization. Creating this roadmap took almost a year. As a consequence, the Product Owner (*note: this was before the co-founder became Product Owner*) and product marketing people that supported the PO had little focus on (customer) domains while the roadmap was created. The CEO and other board members explained clearly - e.g. in Product Backlog Refinement - the direction they wanted to go with the product. However, the Product Owner wasn’t able to explain this product vision clearly to teams. He focused on - short term - customer deadlines, and missed transparency and explanation for the long-term. This resulted in a non-consistent vision of the future and (too) often a change of priorities. Additionally this prevented teams from choosing a (customer) domain to focus on.
 
+高管希望使用路线图以在不失去长期目标的情况下继续讨论下一步行动。在组织变革的第二次活动（2020年5月）之前，CEO要求产品负责人制定一个产品的“整年路线图”，以便能够识别产品的未来需求，并分析组织应聚焦在哪里。制定这个路线图花了将近一年的时间。因此，产品负责人（*注：这是在联合创始人成为产品负责人之前*）和支持他的产品市场人员在路线图被制定的过程中几乎没有关注（客户）领域。CEO和其他董事会成员清楚地解释了 - 比如在产品待办列表梳理中 - 他们想要的产品方向。然而，产品负责人无法向团队清楚地解释这个产品愿景。他专注于短期的客户截止日期，而忽略了对长期愿景的透明度和解释。这导致了对未来的愿景不一致，而且（太）经常改变优先级。此外，这还阻碍了团队选择聚焦一个（客户）领域。
+
 The change of strategic direction reinforced the inability to share a consistent product vision for the long term by the Product Owner. The Product Owner and the supporting product marketing people needed to shift their attention to different customer needs, different customer segments, and the use of new - for Y Soft mostly unknown - technology, also from a customer perspective as a result of the strategic direction. Additionally, the PO and the supporting product marketing people were busy trying to learn what features were needed, tried to be in touch with customers and vendors, but mainly had to discuss internally with e.g. sales and support what would be needed. Other people in the company - e.g. sales & support - were involved a lot in getting the work more clear and helping to decide what should be next, and joined PBR often, to help teams to get more understanding on the upcoming work. However, the unknowns reinforced the struggle of the Product Owner to create a product vision and decide on what to work on next for the Product Backlog.
 
+战略方向的改变放大了产品负责人在分享一致的长期产品愿景上的能力不足。由于新的战略方向，产品负责人和支持他的产品市场人员需要将注意力转向不同的客户需求、不同的客户细分市场，以及使用新的技术（对于Y Soft来说基本都是未知的）。此外，PO和支持他的产品市场人员忙于了解需要什么特性，试图与客户和供应商保持联系，但主要还是与内部诸如销售和支持部门讨论需要什么。公司的其他人，如销售和支持人员，参与了大量澄清工作，并帮助决定下一步应该做什么；他们经常参加PBR，以帮助团队对接下来的工作有更多了解。然而，诸多未知让产品负责人在创建产品愿景和决定产品待办列表中的下一项工作上越发挣扎。
+
 ##### Cognitive Overload for the teams
+##### 团队的认知过载
 
 Teams complained they changed focus on a specific domain every (few) Sprint(s), which made it harder for them to learn in a specific (customer) domain. Actually, it was cognitive overload, needing to learn too many different things in too short a time, which they felt as a lack of focus. Main reason for the cognitive overload was the lack of sharing a good product vision and consistency on the Product Backlog as a result. However, senior management’s assumption was that making the span of attention smaller for teams, would help teams with the cognitive overload by creating more focus for the teams. With the desire to grow and add more teams in the future, moving to LeSS Huge and later moving to two products seemed a logical step for Y Soft, because of the assumption that a smaller span of attention would increase the focus and reduce the cognitive overload as a result.
 
+团队抱怨说他们每隔（很少）几个迭代就会改变在一个特定领域上的聚焦，这让他们很难学习一个特定的（客户）领域。事实上，这是认知过载，也就是在太短的时间内需要学习太多不同的东西，让他们感到缺乏聚焦。认知过载的主要原因是缺乏对好的产品愿景的分享以及由此带来的缺乏在产品待办列表上的一致性。然而，高管的假设是，通过让团队的专注范围变小，由此为团队创造更多的聚焦，将帮助团队应对认知过载。对Y Soft来说，因为有这样的假设 - 较小的专注范围会增加聚焦从而减少认知过载，想要未来发展和增加更多团队，转向LeSS巨型并随后转向两个产品似乎是合乎逻辑的一步。
+
 The main root cause for the cognitive overload was the weak product vision and the - too often - changing priorities in the Product Backlog, described in the previous section. Teams needed to learn new types of work associated with the change of strategic direction: cloud-related activities to make sure SAFEQ would run in the cloud and OMNI Series which included both the development on a hardware device and the use of new software technologies, partially for a new market. The consequence for teams was that teams needed to learn a lot on these new technologies and understand different customer needs. By often changing priorities, teams had to learn too many different things in a too short time, cognitive overload. To be able to develop these new PBI’s, teams had to learn both from a perspective of different technologies (and different use of those technologies by customers) and a new type of device with different product features than they were used to.
+
+如之前章节所述，认知过载的主要根本原因是薄弱的产品愿景和产品待办列表中太过频繁变化的优先级。团队需要学习与战略方向变化相关的新型工作：与云相关的活动以确保SAFEQ将在云上运行，OMNI系列包括硬件设备上的开发和新软件技术的使用，部分用于新市场。结果就是团队需要学习很多关于这些新技术的知识，并了解不同的客户需求。由于经常改变优先级，团队不得不在太短的时间内学习太多不同的东西 - 认知过载。为了能够开发这些新的产品待办条目，团队必须从不同技术（以及客户对这些技术的不同使用）的角度学习，还要学习具有与他们之前接触的不同产品功能的新型设备。
 
 A smaller but relevant other factor was that teams had to get used to working closely with more other departments than before. Especially in PBR - but also in Sprint Review - many people from e.g. sales and support joined. The complication was that stakeholders didn’t have a consistent interpretation of the product vision, and when stakeholders joined they sometimes argued about the direction to follow (even within PBR). This is a consequence of the lack of sharing a good product vision. The different interpretations and the lack of clarity - because when starting development there was no direct customer feedback - it was hard for teams to understand which decisions to make in the actual development and they needed to learn and interpret many different things. A strong and consistent product vision - and less changing of priorities - could have created more clarity on what to learn to reduce the cognitive overload. Teams could have focused on specific domains or technologies to learn, which would have increased their focus and reduced the cognitive overload.
 
+一个较小但相关的其它因素是团队必须习惯于与比以前更多的其他部门密切协作。特别是在PBR中 - 但也发生在迭代评审中 - 许多来自销售和支持部门的人加入了进来。复杂的是干系人对产品愿景没有一致的解释，他们加入有时会争论要遵循的方向（甚至在PBR活动中）。这是缺乏分享好的产品愿景所导致的结果。不同的解释和缺乏清晰度 - 因为在开始开发时没有直接的客户反馈 - 让团队难以理解在实际开发中应该做出哪些决定，他们需要学习和解释许多不同的东西。一个强大且一致的产品愿景 - 以及更少的优先级变化 - 本可以让团队更清楚地了解应该学习什么，从而减少认知过载。团队本可以聚焦在特定的领域或技术上学习，通过增加聚焦来减少认知过载。
+
 ##### Having many teams & desire to add more teams in the future
+#### 有许多团队并希望在未来增加更多团队
 
 The desire to add more teams in the future was not the main reason to split into two products, but certainly a characteristic senior management took into account. They reasoned that a split into Requirement Areas/move to LeSS Huge (that was the initial idea, before moving to two products) would help in the ambition to increase the number of teams.
 
+想要在未来增加更多的团队并不是拆分成两个产品的主要原因，但高管肯定也考虑到了这一点。他们认为拆分成需求领域/转向LeSS巨型（那是在转向两个产品之前最初的想法）将帮助到追求增加团队数量的目标。
+
 At the moment of the discussion to move to two products, there were 13 teams working from the single Product Backlog. Because of the rule of thumb of having a maximum of “8” teams working from a single Product Backlog, senior management used this rule of thumb as a reason - though not the main reason - to split into two products. The valid reason to move to LeSS Huge is when the Product Owner starts to get overloaded and cannot oversee the market, stakeholders and Product Backlog anymore. The number of “8” is a common heuristic for when overload of the Product Owner starts to happen.
 
+在讨论转向两个产品时，有13个团队工作于单份产品待办列表。由于存在一个最多能有“8”个团队工作于单份产品待办列表的经验法则，高管将其作为拆分两个产品的原因（尽管不是主因）。转向LeSS巨型的合理原因应该是当产品负责人开始超负荷，无法再全面看管市场、干系人和产品待办列表。“8”这个数字只是一个对产品负责人会开始超负荷的常用经验值。
+
 ##### Different customers, markets and sales channels
+##### 不同的客户、市场和销售渠道
 
 In the end, the main reason they used to split into two products was the difference in customers, markets and sales channels between SAFEQ and OMNI Series. Senior management learned from the development of OMNI Series and SAFEQ that these products are very different from the perspective of customers, markets and sales channels (B2B vs B2C), and this resulted in the discussion whether to split into two products. The CEO, strategist and VP of all products’ additional underlying assumption was that there was almost no collaboration needed between the two products. Therefore, there would be no need and desire to share learnings between the products and as a consequence no need to optimize for cross-learning.
+
+最终，他们用来支持拆分成两个产品的主要理由是SAFEQ和OMNI系列在客户、市场和销售渠道方面的差异。高管从OMNI系列和SAFEQ的开发中了解到这些产品从客户、市场和销售渠道（B2B与B2C）的角度来看非常不同，这引发了是否拆分成两个产品的讨论。CEO、战略规划师和所有产品VP的另一个基本假设是这两个产品之间几乎不需要协作。因此，就不需要或希望在两个产品之间共享知识，从而也就不需要为交叉学习去优化。
 
 #### 3.2.2 LeSS perspective on multiple products and how to define a product
 
