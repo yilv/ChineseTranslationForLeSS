@@ -892,20 +892,33 @@ Another option would have been to move OMNI Series work to one Requirement Area.
 另一个选项是将OMNI系列工作转到一个需求领域。Y Soft的需求领域需要进一步探索和定义。当产品愿景和焦点 - 尤其是从产品负责人的角度来看 - 是需要解决的有效问题时，这一选项将有机会创建更好的产品愿景，并让更多客户反馈融入其中。作为唯一产品待办列表中的需求领域，仍然会有一个产品负责人能够决定优先级，包括OMNI系列的工作；他能够决定聚焦OMNI系列以外的其它内容，或者在OMNI系列销售非常好且客户需求很大时更多地聚焦OMNI系列。这仍将赋予设定优先级的适应性，团队也将有更多选项来协作和相互学习。此外，在有需求领域的LeSS巨型中，团队为了响应发现成果从一个领域慢慢转到另一个领域是容易适应的（虽然意识到认知过载的问题），但另一方面有两个产品的情况下，在两个产品组之间移团队至少在‘政治’上也是困难的。
 
 #### 3.2.3 Reflection on coaching and consulting
+#### 3.2.3 针对辅导和咨询的反思
 
 From the agile coaches perspective, the reflection that has been described here wasn’t included in the discussion with the CEO, the strategist and the VP of all products to move to two products. Some of these insights were taken into account and were clear at the time of the discussion, but many of these insights were learned in hindsight. As a consequence, in the discussion with senior management, the external consultant and the agile coaches failed to give a good explanation of the organizational consequences for choosing either for two products or one product with Requirement Areas. The discussion moved towards *semantics* whether the two products are actually two products or not, while the discussion should have been about the (organizational) consequences for choosing for separate products or Requirement Areas within a product. With these insights in mind, the discussion to move to two products would have been different and the outcome might have been different as well. That’s why I feel it’s important to share our learnings in this case study, to help others in similar situations.
 
+从敏捷教练的角度来看，这里描述的反思在与CEO、战略规划师和所有产品VP讨论转向两个产品时并没有包括。其中一些见解在讨论当时考虑到了而且也很清楚，但许多见解是事后才学到的。因此，外部顾问和敏捷教练在与高管的讨论中就选择两个产品还是一个产品多个需求领域未能很好地解释它们的组织后果。讨论转向了*语义*，即它们实际上是否是两个产品；而讨论应该就选择独立的两个产品还是一个产品中的需求领域所会产生的（组织）后果展开。具备这些见解，转向两个产品的讨论会有所不同，结果也可能不同。这就是为什么我觉得在这个案例研究中分享我们的经验很重要，以帮助处于类似情况的其他人。
+
 #### 3.2.4 Change of Product Owner(s)
+#### 3.2.4 产品负责人的更换
 
 With the change to two products, the CEO decided to change the Product Owner. The previous Product Owner for the - at that time still - one product was one person from the product marketing department, while his colleagues from the product marketing department helped teams in Product Backlog Refinement and other activities. The new focus on two separate products made the CEO decide to choose a Product Owner from the board of directors, for each product. The new Product Owners are better able to make (strategic) decisions about the product, because they have more mandate and discuss the strategy within the Y Soft board.  The previous Product Owner was still involved as one of the members from product marketing.
 
+伴随变成两个产品，CEO决定更换产品负责人。之前的产品负责人 - 当时仍然是一个产品 - 是产品市场部门的一个人，而他们部门的同事则会帮助团队进行产品待办列表梳理和其它活动。对两个独立产品的新关注使CEO决定从董事会中为每个产品选择一名产品负责人。新的产品负责人都能更好地对产品做出（战略）决策，因为他们有更多的授权，并在Y Soft董事会内讨论战略。前产品负责人仍然作为产品市场的成员之一参与其中。
+
 Though the Product Owner from the product marketing team had a mandate to work with teams and make decisions on priorities, it was hard for him to make strategic decisions and to access the strategic thinking from senior management. Because of this, from time to time, direction had to be changed. The new Product Owners are actively involved in discussions about the products and the strategic minds behind it as members of the board, which makes decision making easier and setting and sharing direction as well. In addition to having the co-founder as Product Owner, an experienced and well-appreciated colleague from elsewhere in the organization joined as a *supporting* PO (LeSS experiment), not making the priority decisions, but helping the Product Owner and the teams.
 
+尽管来自产品市场团队的产品负责人有被授权与团队工作并进行优先级决策，但他很难做战略决策，也很难接触到高管的战略思维。正因为如此，产品方向不得不经常改变。新产品负责人作为董事会成员积极参与有关产品及其背后战略思想的讨论，这使得决策及设定和分享产品方向更为容易。除了让联合创始人担任产品负责人外，还有一位来自组织其它地方经验丰富且备受赞赏的同事作为*支持的*PO（LeSS实验）加入，他不做优先级决策，但会帮助产品负责人和团队。
+
 #### 3.2.5 What happened?
+#### 3.2.5 发生了什么？
 
 The senior management decided to split the Product Backlog and have less teams working on a part of the Product Backlog. Their reasoning was to be able to deal with the inability of the Product Owner to have and share a good product vision and understanding of the customer and market needs. Senior management (the CEO, the strategist, the VP of all products) wanted to split the Product Backlog by moving to LeSS Huge initially, but in the end decided to split into two products because of the emerging development of OMNI Series during that period. The assumption from senior management was that with a split, the PO - and supporting product marketing people - had a better overview, better understanding of the Product Backlog and better understanding of customer and market needs. Teams would have more focus on a (customer) domain, because there would be a smaller (part of the) Product Backlog to focus on and less teams working on that smaller (part of the) Product Backlog.
 
+高管决定拆分产品待办列表，让更少团队工作于其中一部分产品待办列表。他们的理由是以此能解决产品负责人无法拥有和分享好的产品愿景以及对客户和市场需求的理解这一问题。高管（CEO、战略规划师、所有产品VP）最初是想通过转向LeSS巨型来拆分产品待办列表，但因为在此期间OMNI系列的新兴发展他们最终决定了拆成两个产品。高管的假设是通过拆分，PO和支持产PO的产品市场人员会有一个更好的总览，可以更好地了解产品待办列表，更好地了解客户和市场需求。团队将在一个（客户）领域上更多聚焦，因为需要关注的（部分）产品待办列表变小了，并且更少团队工作于那个较小的（部分）产品待办列表。
+
 Thus, there was a move to two products, with a single Product Owner for each (both board members) and a single Product Backlog for each. The teams already working on OMNI Series moved to work on the Product Backlog for OMNI Series (3 teams), and the other teams moved to work on the Product Backlog for SAFEQ (10 teams). The first Sprint for the new products started in November 2020.
+
+因此就转向了两个产品，每个产品都有一个产品负责人（都是董事会成员），每个产品都有一份产品待办列表。已经在OMNI系列上工作的团队转向工作于OMNI系列的产品待办列表（3个团队），其他团队转向工作于SAFEQ的产品待办列表（10个团队）。新拆分产品的第一个迭代在2020年11月开始。
 
 ### 3.3 Inspect
 
