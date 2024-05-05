@@ -921,26 +921,43 @@ Thus, there was a move to two products, with a single Product Owner for each (bo
 因此就转向了两个产品，每个产品都有一个产品负责人（都是董事会成员），每个产品都有一份产品待办列表。已经在OMNI系列上工作的团队转向工作于OMNI系列的产品待办列表（3个团队），其他团队转向工作于SAFEQ的产品待办列表（10个团队）。新拆分产品的第一个迭代在2020年11月开始。
 
 ### 3.3 Inspect
+### 3.3 检查
 
 #### 3.3.1 Inspection on the weak product vision
+#### 3.3.1 针对薄弱产品愿景的检查
 
 The whole organization focused on the strategic changes and all the important people of the company were available to help, which meant increasing participation of people in Product Backlog Refinement & Sprint Review. There was not a good alignment between the strategy, the product vision or roadmap and the Product Backlog. Requirements and priorities changed often and the Product Owner and supporting product marketing people couldn’t keep up with the pace that the CEO and VP of Marketing expected, which led to a weak product vision and a lack of understanding from teams on the product vision. It led to ‘just do’ what the Product Owner was told and therefore also for teams harder to understand the direction and to challenge the customer and market needs. Because actual customers were involved too late in the development, the feedback was entirely only from within the organization for a long time. Different stakeholders had different ideas and needs about the work to be done (e.g. support vs sales). This also delayed the creation of the roadmap.
 
+整个组织都关注战略改变，公司的所有重要人员都可以提供帮助，这意味着更多地参与产品待办列表梳理和迭代评审。战略、产品愿景或路线图与产品待办列表之间没有很好的对齐。需求和优先级经常发生变化，产品负责人和支持他的产品市场人员无法跟上CEO和市场VP期望的节奏，这导致产品愿景薄弱、团队对产品愿景缺乏理解。这导致了‘只是做’产品负责人被告知的事情，因此也让团队更难理解方向，更难挑战客户和市场需求。由于实际客户参与开发的时间太晚，所以在很长一段时间内反馈完全只来自组织内部。不同的干系人对要做的工作有不同的想法和需要（比如支持与销售）。这也推迟了路线图的制定。
+
 #### 3.3.2 Inspection on the cognitive overload
+#### 3.3.2 针对认知过载的检查
 
 The root causes of the frequent change of focus that teams experienced was the weak product vision and too often changing priorities on the short term, so teams felt a lack of focus. It was cognitive overload for the teams, needing to learn too many different things in too short a time, which they felt as a lack of focus. couldn’t focus on a specific (customer) domain for a period of time. Senior management did identify the too often changing priorities, but didn’t link this as the root cause for the cognitive overload. If this was addressed, teams could have been helped to have e.g. focus on a specific (customer) domain for a period of time, and focus on learning in that area. Or extra attention on the customer domain and/or architecture, by e.g. having domain workshops or architecture workshops. Attempts from the agile coaches to help the Product Owner to have more consistency on sharing for the long term failed, which didn’t help teams in their cognitive overload.
 
+团队频繁改变焦点的根本原因是产品愿景薄弱，而且短期内过于频繁地改变优先级，以至于团队感到缺乏聚焦。这对团队来说是认知过载，需要在太短的时间内学习太多不同的东西，他们觉得这是缺乏聚焦，无法在一段时间内专注于特定的（客户）领域。高管确实注意到了经常变化的优先级，但没有将它跟认知过载的根本原因关联起来。如果解决了这一问题，可以帮助团队在一段时间内聚焦在特定（客户）领域，并专注于该领域的学习。或者通过举办领域研讨会或架构研讨会等方式来对客户领域和/或架构给予额外关注。敏捷教练在帮助产品负责人更一致地分享长期愿景这方面的尝试失败了，也没能帮助到团队减轻认知过载。
+
 Once the co-founder became the PO, there was a consistent product vision, with clear priorities and a good collaboration between the PO and the teams. This improved the (feeling of) focus for teams and reduced the cognitive overload. There was more satisfaction from internal stakeholders and external customers. Teams had a better baseline to improve further and knew better where to focus on and what to learn for the long-term. This proved that the cognitive overload for teams wasn’t caused by the broadness of the product, and the root cause was removed by having a Product Owner with a strong product vision and more consistent priority decisions.
 
+当联合创始人成为PO时，就有了一致的产品愿景，也有了明确的优先级，以及PO和团队之间的良好合作。这提升了团队的聚焦（感受），并减少了认知过载。内部干系人和外部客户的满意度更高了。团队有一个更好的基线来进一步改进，并且更清楚在哪里聚焦以及长期该学习什么。这证明了团队的认知过载并不是由于产品的宽泛造成的，一位具有强大产品愿景和更一致优先级决策的产品负责人可以消除其根本原因。
+
 #### 3.3.3 Inspection on the products having different customers, markets and sales channels
+#### 3.3.3 针对产品具有不同客户、市场和销售渠道的检查
 
 First, if you use a broad product definition, would the customers & markets be so different? There would still be customers that require solutions for their printing & scanning, though these are in a different segment of the market. Customers buying OMNI Series wouldn’t need something completely different than printing & scanning solutions. From an outside perspective, these products are very similar when you zoom out, though can be perceived very differently from an inside perspective. Second, the sales channels are different. But is this a sufficient reason to split the product? OMNI Series would require selling directly to customers, creating a webshop, and having different promotion approaches. But can’t there be different sales strategies within one product? There are many broad product definitions where the product is sold to different types of customers and the use of different sales channels. Office365 might be an example where there is broad internal product thinking, while there are different sales channels, customer types and even parts of Office365 sold separately.
 
+首先，如果你用一个宽泛的产品定义，客户和市场会因此很不同吗？仍然是有客户想要打印和扫描解决方案，尽管这些客户会在不同的细分市场。购买OMNI系列的客户并不需要与打印和扫描解决方案完全不同的东西。当你从外部视角拉远来看，这些产品都非常相似，尽管从内部视角来看可以很不同。第二，销售渠道是不同的。但这是否是拆分产品的充分理由？OMNI系列将要求直接向客户销售，创建网店，并采用不同的促销方法。但是在一个产品中就不能有不同的销售策略吗？存在许多宽泛的产品定义，其中产品销售给不同类型的客户和使用不同的销售渠道。Office365可能就是一个例子 - 内部基于宽泛产品来思考，同时又有不同的销售渠道、客户类型，甚至部分产品是单独销售的。
+
 Product development was split into two products, but marketing and sales kept working in the same structure as before, as one department for both products. From product marketing some people focused on OMNI Series, but worked still in the same product marketing group. This is a contradiction to the argument that marketing & sales are very different for the two products. Product development changes the structure based on this argument, while marketing & sales keep the same structure. Apparently the differences to marketing & sales were not so big outside product development (e.g. marketing and sales), so why would it justify a split for product development?
 
+产品开发被拆成两个产品，但市场和销售仍保持着与以前相同的结构，作为一个部门兼顾两个产品。从产品市场来看，一些人专注于OMNI系列，但他们仍在同一个产品市场部门工作。这与两个产品的市场和销售非常不同的说法相矛盾。产品开发基于这一说法改变了结构，而市场和销售则保持了同样的结构。在产品开发之外（比如市场和销售）的差异显然并不大，那么它为什么能支撑对产品开发进行拆分？
+
 #### 3.3.4 Inspection on adaptiveness
+#### 3.3.4 针对适应性的检查
 
 The change of strategy led to a big change in the priorities of the Product Backlog and teams needing to learn many new technologies, but also a different approach to customers. At least three of the teams fully focused on cloud technologies from the start and developed the infrastructure, configured it, changed many customer centric functionalities, addressed security etc. And they delivered a working environment with a large part of the customer centric features in the cloud within six months. This is an existence proof that having cross-functional teams and focusing on learning really works! These teams were able to discover and understand what was needed, learned new technologies and successfully developed the product with these new technologies, while a very limited amount of the prerequisites were set up before they started working on it. People from mostly IT worked closely with the teams to set up the infrastructure and to share some experiments they did in advance with cloud technologies. We can’t imagine this would have worked with adding new teams separately without the customer and product context, which happens often in *project*-based organizations. Before these occurrences in COVID-times, Y Soft’s senior management still considered LeSS (and Scrum) as ways to improve their delivery, quality and keeping agreements with customers about delivery. The changes in strategy and changed desires from customers made the senior management realize that the LeSS organizational changes and the ability of teams to deliver customer features end-to-end enabled them to change this quickly. In short, they got the benefits of an *adaptive* (agile) organization.
+
+战略变化导致产品待办列表的优先级发生了重大变化，团队需要学习许多新技术，还需要对客户采取不同的方法。至少那三个团队从一开始就完全聚焦在云技术上，开发并配置了基础设施，改变了许多面向客户的功能，解决了安全问题等。他们在六个月内交付了一个在云上能用的环境，包含了大部分面向客户的特性。这证明了组建跨职能团队并聚焦学习确实有效！这些团队能够探索并理解需要什么，学习新技术，并用这些新技术成功开发出产品；而在他们开始工作之前仅准备了非常有限的前提条件。主要是来自IT部门的人员与团队紧密工作建立了基础设施，并分享了他们提前做的云技术相关试验。我们无法想象另行组建没有客户和产品上下文的新团队会有效，而这在基于*项目*的组织中却经常发生。在新冠疫情发生之前，Y Soft的高管仍然认为LeSS（和Scrum）是提高交付、质量，并做到信守客户交付协议的方法。战略变化和客户想法的变化使高管意识到LeSS的组织变革和团队端到端交付客户特性的能力使他们能够迅速改变。简言之，他们获得了*适应的*（敏捷的）组织这一好处。
 
 ### 3.4 Adapt
 
