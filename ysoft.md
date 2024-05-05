@@ -960,21 +960,35 @@ The change of strategy led to a big change in the priorities of the Product Back
 战略变化导致产品待办列表的优先级发生了重大变化，团队需要学习许多新技术，还需要对客户采取不同的方法。至少那三个团队从一开始就完全聚焦在云技术上，开发并配置了基础设施，改变了许多面向客户的功能，解决了安全问题等。他们在六个月内交付了一个在云上能用的环境，包含了大部分面向客户的特性。这证明了组建跨职能团队并聚焦学习确实有效！这些团队能够探索并理解需要什么，学习新技术，并用这些新技术成功开发出产品；而在他们开始工作之前仅准备了非常有限的前提条件。主要是来自IT部门的人员与团队紧密工作建立了基础设施，并分享了他们提前做的云技术相关试验。我们无法想象另行组建没有客户和产品上下文的新团队会有效，而这在基于*项目*的组织中却经常发生。在新冠疫情发生之前，Y Soft的高管仍然认为LeSS（和Scrum）是提高交付、质量，并做到信守客户交付协议的方法。战略变化和客户想法的变化使高管意识到LeSS的组织变革和团队端到端交付客户特性的能力使他们能够迅速改变。简言之，他们获得了*适应的*（敏捷的）组织这一好处。
 
 ### 3.4 Adapt
+### 3.4 适应
 
 A summary of the main adaptations that happened in moving to two products:
+以下总结了在转向两个产品过程中发生的主要调整：
 
 * Two Product Backlogs with two Product Owners
 * Board members with mandate becoming Product Owners
 
+* 两份产品待办列表，两个产品负责人
+* 充分授权的董事会成员成为产品负责人
+
 This brought the following main results:
+这带来了以下主要结果：
 
 * Less adaptiveness for the whole product and more alignment and overhead needed between the products
 * Improved product vision and direction
 * Less cognitive overload for the teams
 
+* 对于整个产品更少的适应性，在产品之间需要更多的对齐和开销
+* 改善了产品愿景和方向
+* 减少了团队的认知过载
+
 Since the move to two products, many small improvements and changes have happened. Especially regarding working together between teams, focusing on longer-term vision, improving technical excellence, and learning more customer domains.
 
+自从转向两个产品又发生了许多小的改进和变化。特别是关于团队之间一起工作，聚焦长期愿景，提升技术卓越，并学习更多客户领域。
+
 Teams between both products started working together more, having multi-team Product Backlog Refinement often about cross-product topics and have in-Sprint collaboration about cross-product topics, which are indications that a single broader product definition in a LeSS Huge adoption with Requirement Areas would have been a more consistent alternative than two products. In one Overall Retrospective, some team members wanted to better understand the overlap between the products and counted 13 shared components when they modeled the architectures out, further suggesting one broad product. This led to conversations and later the PO with the CEO decided that they would merge the two products back to one, working from one Product Backlog again with the single PO from SAFEQ (the co-founder). This proved that the assumption that the two products needed almost no collaboration was unjustified. The main impact was that teams from SAFEQ had to learn and help in the support of OMNI Series, which was relatively unknown for them. Teams from OMNI Series were still familiar with most parts of SAFEQ, which made it easier for them to deal with this. Teams found ways to collaborate and ‘buddy’ other teams to make sure all teams were able to do support for OMNI Series and SAFEQ properly.
+
+两个产品之间的团队开始更多地一起工作，经常就跨产品主题进行多团队产品待办列表梳理，并在迭代中就跨产品主题进行协作。这也表明了相比两个产品，以一个更宽泛的产品定义但包含多个需求领域作为LeSS巨型导入将会是更一致的选项。在一次整体回顾中，一些团队成员希望更好地了解产品之间的重叠部分，当把架构建模出来时他们数出了13个共享组件，进一步表明同属一个宽泛的产品。这引发了对话，后来PO与CEO决定将两个产品合并回一个产品，再次以一份产品待办列表工作，而来自SAFEQ的PO（联合创始人）则作为唯一的PO。这证明两个产品几乎不需要协作的假设并不成立。由此带来的主要影响是来自SAFEQ的团队必须学习并帮助支持OMNI系列，这对他们来说是相对未知的。来自OMNI系列的团队仍然熟悉SAFEQ的大部分内容，这使他们更容易应对。团队找到协作的方式，并与其他团队‘结对’以确保所有团队都能支持好OMNI系列和SAFEQ。
 
 ### Conclusion
 
