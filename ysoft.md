@@ -991,16 +991,25 @@ Teams between both products started working together more, having multi-team Pro
 两个产品之间的团队开始更多地一起工作，经常就跨产品主题进行多团队产品待办列表梳理，并在迭代中就跨产品主题进行协作。这也表明了相比两个产品，以一个更宽泛的产品定义但包含多个需求领域作为LeSS巨型导入将会是更一致的选项。在一次整体回顾中，一些团队成员希望更好地了解产品之间的重叠部分，当把架构建模出来时他们数出了13个共享组件，进一步表明同属一个宽泛的产品。这引发了对话，后来PO与CEO决定将两个产品合并回一个产品，再次以一份产品待办列表工作，而来自SAFEQ的PO（联合创始人）则作为唯一的PO。这证明两个产品几乎不需要协作的假设并不成立。由此带来的主要影响是来自SAFEQ的团队必须学习并帮助支持OMNI系列，这对他们来说是相对未知的。来自OMNI系列的团队仍然熟悉SAFEQ的大部分内容，这使他们更容易应对。团队找到协作的方式，并与其他团队‘结对’以确保所有团队都能支持好OMNI系列和SAFEQ。
 
 ### Conclusion
+### 结论
 
 Y Soft experienced big benefits due to the LeSS adoption. Teams were better able to see and understand the whole product, and additionally able to deliver more (and more impactful) end-to-end customer centric features than before. After the start of the LeSS adoption, teams got more in direct touch with customers and vendors, because they were working on customer-centric features instead of component requirements. Like any organization making a big change, Y Soft had its struggles too. In the first year of the LeSS adoption, sharing the ‘pains’ like doing regression testing by all teams, rotating support duty between teams and more was not always appreciated by teams, and the amount of learning was big to get a whole product focus. The CEO said once that the biggest success of the LeSS adoption is that ‘we managed to add many people and are still able to deliver more and more’, while also working together at scale.
 
+Y Soft由于导入LeSS获得了巨大的收益。团队能够更好地看到和理解整个产品，此外还能够交付比以前更多（且更有影响）的端到端客户导向的特性。在开始导入LeSS之后，团队与客户和供应商有了更多的直接联系，因为他们是开发客户导向的特性，而不是组件需求。像任何做出重大变革的组织一样，Y Soft也有自己的挣扎。在导入LeSS的第一年，团队并不总能理解分担‘痛苦’ - 比如所有团队都做回归测试，在团队之间轮换支持职责，以及更多 - 的做法；而且为了获得整体产品焦点进行的学习也是大量的。CEO曾表示导入LeSS的最大成功在于‘我们成功地增加了很多人，而且还能够交付越来越多’，同时也进行了大规模的协作。
+
 With the COVID-19 pandemic in 2020, Y Soft changed its strategy. The priorities on the Product Backlog changed approximately 70% and teams needed to learn - faster than before - new technologies and understand new market needs as a result of the change of strategy. Teams were more easily able to adapt to work with these new technologies and market, because of the increased adaptive organization. The adaptiveness of the teams would never be this fast and effective in the previous structure of the component-oriented teams working on different backlogs for several projects and stakeholders. Obviously, other variables helped in the improvements in Y Soft as well, like deciding to work without managers.
+
+随着2020年新冠疫情大流行，Y Soft改变了战略。产品待办列表的优先级改变了大约70%；战略变化的结果是团队需要比以前更快地学习新技术并了解新的市场需求。因为更高适应性的组织，团队更容易适应这些新技术和市场。在以前面向组件的团队结构中，团队工作于许多项目和干系人的不同产品待办列表，他们的适应性永远不会如此快速有效。当然还有其它变化帮助到Y Soft的改进，比如决定在没有经理的情况下工作。
 
 The uniqueness of the Y Soft LeSS adoption is the *willingness* and courage to keep inspecting and adapting the organizational design. Not just *starting* a LeSS adoption and making small improvements, but considering and executing larger changes, as described in this case study.
 
+Y Soft的LeSS导入的独特之处在于不断检查和调整组织设计的*意愿*和勇气。正如本案例研究中所述，它不是*开始*LeSS导入然后只是进行小的改进，而是考虑并执行更大的变革。
+
 ### More public info about the Y Soft LeSS adoption
+### 关于Y Soft的LeSS导入的更多公开信息
 
 More info about the Y Soft LeSS adoption can be found in several public resources:
+关于Y Soft的LeSS导入的更多信息可以从这些公开资源中找到：
 
 * July 2020 - Y Soft Meetup Event about learnings LeSS - +2h webinar - <https://www.ysofters.com/2020/07/23/y-soft-less-transformation/>
 * June 2020 - LeSS Day EU Talk - <https://youtu.be/QfYXrDF0wpk>
