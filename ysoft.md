@@ -4,14 +4,14 @@
 
 # Y SOFT的组织设计进化 Evolving Y Soft’s Organizational Design
 
-Y Soft自2019年开始实施LeSS规模化敏捷转型。与其他企业LeSS转型不同，Y Soft不仅实施了一系列重要的*组织设计*变革（OD），而且它基于学习不断<u>调整前期所做的变革</u>。 正是这种动态调整，是企业达成自适应，并让Scrum或LeSS真正运作的前提条件。组织设计常常需要通过实验来不断学习和*进化*。因此，本学习案例的主题是LeSS之旅中组织设计元素的*进化*。
+Y Soft自2019年开始实施LeSS规模化敏捷转型。与其他企业LeSS转型不同，Y Soft不仅实施了一系列重要的*组织设计*（OD）变革，而且它基于学习不断<u>调整前期所做的变革</u>。 正是这种动态调整，是企业达成自适应，并让Scrum或LeSS真正运作的前提条件。组织设计常常需要通过实验来不断学习和*进化*。因此，本学习案例的主题是LeSS之旅中组织设计元素的*进化*。
 
 Y Soft adopted LeSS in 2019. A differentiator of Y Soft’s LeSS adoption was not only making significant *organizational design* (OD) changes, but then also <u>changing the changes</u> based on learning. Such changes are a prerequisite for being adaptive and hence making Scrum or LeSS work. Learning and *evolving* in OD is often needed based on experience. Therefore, a theme of this case study is the *evolution* of their OD elements in their LeSS journey.
 
 本文每个章节都描述了LeSS实施过程中组织设计变革的一次实验。每部分结构类似，如下：
 1. 背景
 2. 详述
-3. 检查：近期组织设计变革的反思
+3. 检查：反思近期的组织设计变革
 4. 适应：调整变革
   
 
@@ -22,11 +22,11 @@ Each section describes an experiment of an OD change in the LeSS adoption. It is
 3. Inspection: reflection on recent OD changes
 4. Adaptation: changing the changes
 
-在Y Soft的LeSS实施中，我的角色（Mark - 主要作者）是现场教练，并在LeSS实施后一年（2020年1月），成为唯一的外部咨询师，指导Y Soft做LeSS实施改进。一年后（2021年春天），我的工作转变为对Scrum Master提供支持和辅导（每周1-2天），Scrum Master则主要面向产品和团队，为他们提供支持，这种职责模式一直持续到2022年夏天。本案例讲述范围从2018年LeSS准备期开始，一直到2021年底。
+我（Mark - 主要作者）在Y Soft的LeSS实施中扮演的角色是在他们LeSS实施进行了整一年之后（2020年1月）作为唯一的外部咨询师提供LeSS实施的现场指导和改进。一年多后（2021年春天），我的工作转变为对Scrum Master提供支持和辅导（每周1-2天），Scrum Master则主要面向产品和团队，为他们提供支持，这种职责模式一直持续到2022年夏天。本案例讲述范围从2018年LeSS准备期开始，一直到2021年底。
 
 My role (Mark - main author) in the LeSS adoption at Y Soft was the on-site coaching and improvement of the LeSS adoption after exactly one year (January 2020) into the LeSS adoption as the only external consultant. After over a year (Spring 2021), it became a more supporting and mentoring role (1-2 days a week) towards the Scrum Masters that support the product and the teams, until summer 2022. The scope of this case study is from the start of the preparation in 2018 until late 2021.
 
-本案例学习以有趣的次要主题-附录结束，这些附录包含了Y Soft技术改进的实验，以及一些关键的准备事件。
+本案例结束处的附录包含了一些有趣但次要的话题 - Y Soft在技术卓越上改进的相关实验，以及一些关键的准备事件。
 This study ends with interesting but secondary-topic appendices on Y Soft’s related experiments with improving technical excellence, and some key preparation events.
 
 ## Y Soft介绍 Who’s Y Soft?
@@ -35,7 +35,7 @@ Y Soft是一家跨国软件与电子设备公司，成立于2000年，经营范�
 
 Y Soft is a multinational software and electronic hardware company founded in 2000 operating worldwide. The company’s headquarters are in Brno, Czech Republic with other offices around the world. Y Soft products are enjoyed by over 29,700 customers around the world, including 44% of the Global Fortune 500 companies.
 
-Y Soft的产品开发主要集中在捷克共和国的布尔诺、布拉格和俄斯特拉发，在丹麦的哥本哈根也有一个120多人的研发队伍，大部分产品都在这里研发交付。
+Y Soft的产品开发主要集中在捷克共和国的布尔诺、布拉格和俄斯特拉发，在丹麦的哥本哈根也有一个120多人的研发队伍，大部分产品开发工作就在这几个地方。
 
 Y Soft’s product development is centered in the Czech Republic with offices in Brno, Prague, Ostrava, but also Copenhagen with 120+ people within Research & Development (R&D), where most of the product development takes place.
 
@@ -45,7 +45,7 @@ Y Soft’s product development is centered in the Czech Republic with offices in
 
 ## 产品 Product
 
-*作为这个案例学习的背景，本章节介绍了Y Soft的产品SAFEQ，该产品被<u>自2018到2021年底</u>的LeSS实施所覆盖。从那时起，Y Soft的产品投资组合发生了变化和拓展，Y Soft在2022年收购了EveryonePrint。与之相关的研发并不在本章节中体现。关于Y Soft和其产品的最新信息，请访问 ysoft.com。*
+*作为这个案例学习的背景，本章节介绍了Y Soft的产品SAFEQ，该产品被<u>自2018到2021年底</u>的LeSS实施所覆盖。自那以后，Y Soft的产品投资组合发生了变化和拓展，Y Soft在2022年收购了EveryonePrint。与之相关的研发并不在本章节中体现。关于Y Soft和其产品的最新信息，请访问 ysoft.com。*
 
 *This section describes the status of the product involving the LeSS adoption at Y Soft, YSoft SAFEQ, in the timeframe from <u>2018 to late 2021</u>, for context of this case study. Since then, Y Soft’s portfolio has changed and extended, and Y Soft acquired EveryonePrint in 2022. These developments are not taken into account in this section. For the latest information about Y Soft and its products, visit ysoft.com.*
 
@@ -57,11 +57,11 @@ SAFEQ的客户与供应商遍布全球，他们的需求也因地方/国家的�
 
 SAFEQ has customers and vendors worldwide and their requirements might be different based on local/country strategies or regulations. Therefore, there is a constant trade-off between implementing features globally or locally and choosing which of those requirements are desired to be in the long-term strategy of the product. One of the key points why vendors & customers want to collaborate with Y Soft is their adaptability and speed to deliver new and innovative features.
 
-不同的打印机供应商以及不同市场的客户需求，导致了SAFEQ产品的复杂性。此外，供应商在不同的设备上都会嵌入软件，这些设备间有时仅仅有轻微的差异，但是即使是这种轻微的差异，也会对SAFEQ的安装带来很大的影响。在本案例发生期间，大部分客户是要求本地安装的(*说明: 也是从那时起，越来越多的客户开始转向基于云的打印管理方案了*)，因此，Y Soft和供应商有较多的接触，如果需要，也会对客户提供直接安装和支持服务。这类协作一般发生在和本地客户部门之间，如果遇到客户部门无法解决的问题，也会和研发部门对接。在案例发生时刻，Y Soft正在向云端产品演进，这可以简化实施的复杂度。
+不同的打印机供应商以及不同市场的客户需求，导致了SAFEQ产品的复杂性。此外，供应商在许多不同的设备上都会嵌入该软件，这些设备间有时仅仅有轻微的差异，但是即使是这种轻微的差异，也会对SAFEQ的安装带来很大的影响。在本案例发生期间，大部分客户是要求本地安装的(*说明: 也是从那时起，越来越多的客户开始转向基于云的打印管理方案了*)，因此，Y Soft和供应商有较多的接触，如果需要，也会对客户提供直接安装和支持服务。这类协作一般发生在和本地客户部门之间，如果遇到客户部门无法解决的问题，也会和研发部门对接。在案例发生时，Y Soft正在向云端产品演进，这可以简化实施的复杂度。
 
 SAFEQ complexity comes from different features that different print vendors and customers (in different markets) need. Additionally, vendors are using software in  many - sometimes only slightly - different devices. But even small differences in devices have big consequences for the SAFEQ installation. At the time of the case study, most installations for customers are on-premise (*note: since then, more and more customers have a cloud-based print management solution*), and therefore there is a lot of contact with vendors, and if needed, customers for installation, support etc. Collaboration happens mostly with (local) customer departments, and R&D will be involved when customer departments can’t solve the problems. At the time of the case study, Y Soft is moving to a cloud-based product, which simplifies this complexity.
 
-在下面的章节中，将会逐步介绍发生在2018年中到2021年底的Y Soft的LeSS敏捷之旅。也许在这之后，会有针对某些具体步骤的后续案例学习。想了解最新进展，请回看 [Y Soft在2023柏林LeSS大会的演讲](https://less.works/conferenza/sessions/2023-less-conference-berlin-y-soft-case-study-huge-less-without-less-huge-316).
+在下面的章节中，我将会逐步介绍发生在2018年中到2021年底的Y Soft的LeSS敏捷之旅。也许还会有针对此后改变的后续案例学习。想了解最新进展，请回看[Y Soft在2023柏林LeSS大会上的演讲](https://less.works/conferenza/sessions/2023-less-conference-berlin-y-soft-case-study-huge-less-without-less-huge-316)。
 
 In the upcoming sections, the different steps of Y Soft’s LeSS journey are explained, step by step from mid 2018 until late 2021. Perhaps there will be a subsequent case study about the steps after this. More info about the latest developments, watch back the [Y Soft talk at the 2023 LeSS conference in Berlin](https://less.works/conferenza/sessions/2023-less-conference-berlin-y-soft-case-study-huge-less-without-less-huge-316).
 
