@@ -884,11 +884,19 @@ The next step was a second event that made *significant Organizational Design ch
 
 The context and narrative for these OD changes are described in the next section.
 
-## 2. Experiment 2 Organizational Design: redesigning the Feature Teams and removing the management layer
+## 2. 实验2 组织设计：重新设计特性团队并消除管理层 Experiment 2 Organizational Design: redesigning the Feature Teams and removing the management layer
 
-### 2.1 Context
+### 2.1 背景 Context
+如前面的章节所述，在进行下一次组织设计变更之前，我们组织了一场活动。活动原计划是在5月11号举行，当时已经是2020年2月，那时候新冠还没有流行。产品总监决定按原计划进行，因为 1）不清楚新冠是否真实存在 2）他们不想推迟接下来的进一步改进和其他计划。
 
 As mentioned in the previous section, a new event was set forward to start the next OD changes. The event was planned on May 11th, already in February of 2020, before the COVID-19 pandemic arrived. The Head of Product decided to still move on, because 1) it was not clear when it would have been possible in real-life and 2) they didn’t want to postpone the further improvements and steps forward.
+
+当时主要的变更是：
+* **团队重新设计**：团队需要自设计来适应“新”的团队设计。各团队自我提升来“交付更多端到端的客户价值”。然后，剩下的架构师们和基础服务团队再加入到这些团队中。
+* **团队不再配置直接经理**：经理要么成为敏捷教练，要么离开Y Soft。团队设计“宏观流程”来在没有经理的情况下能够处理比如如何招聘，绩效评估，以及处理升级等问题。
+* **替换Scrum Master为敏捷教练**：产品总监认为Scrum Master的关注范围太窄了（主要在团队上），在更大的系统和组织上的关注太少。此外，有些团队曾经跟一些Scrum Master有过不好的体验。所以产品总监决定启用敏捷教练，显而易见，他们关注更广泛的范围。一些Scrum Master成为了敏捷教练，大部分Scrum Master离开了Y Soft。在接下来的章节中，会有关于这个情况及其原因的反思。
+
+在下一个章节，将展开描述这些变更及其背后原因。
 
 The main changes that happened were:
 
@@ -898,7 +906,13 @@ The main changes that happened were:
 
 In the next section, the narrative of these changes and the reasoning behind these changes are described.
 
-### 2.2 Narrative
+### 2.2 详述 Narrative
+
+在第二轮组织设计变更中，LeSS指南“开启”中一些特定的步骤开始重复和改进。至于为什么Y Soft要做这些组织设计变更，陈列如下：
+
+* **延展团队的自管理并移除经理**<br/>CEO和产品总监认为，经理限制了团队的自我管理能力，通过他们进行了信息过滤，导致了决策的延迟。在LeSS导入的一开始，经理的角色就已经改变，他们被安排去“管理“两个跨职能团队，而不是负责某个组件或功能。经理不再对团队的结果负责。他们主要是处理人事相关的事务。然而，不同的经理工作方式不同。有些经理对升级的事务非常积极，主动在“干系人的需求”和团队的工作中协调。另外一些经理专注于支持单个团队成员并远离对团队日常工作产生影响的事情。这样的行为有时会导致团队的功能失调和自管理变弱。当经理被移除后，团队的“可预测性”和产出并未因此降低。历史上，研发部门的经理是对组织其余部分的接口和升级点。在没有明确的方式来支持团队、发布产品、需求排序、管理团队与组织其他团队合作的时候，就移除经理这个角色，对组织是有害的。当这种情况发生的时候，原因就可能是是前面说的那些前提。
+* **LeSS导入中增加功能团队，许多新人加入团队**<br/>团队内部的这些变更有几个原因：团队招聘了新人，其他部门的人加入团队，架构师们——非正式地——加入团队，以及人员离职导致团队规模的变化。此外，产品总监还在LeSS导入中增加了基础设施团队，但这个团队保持了以前的组件团队设置。他们想要更加跨职能，而其他团队想要更多与基础设施相关的技能。
+* **渴望改进团队的能力来更好地交付端到端的客户价值**<br/>团队普遍总结，在最初导入LeSS时团队的自设计中，他们过于注重在团队中拥有尽可能多的技能（功能和产品部分）。其中一个团队的初始自设计的标准没有足够清楚地说明（能够独立的交付尽量多的PBI），这是事后才发现的。这导致团队尽量“收集”横跨整个产品中所有的技能，而不是寻找为了交付端到端特性的技能集合。最终，在很多团队中，团队成员独立地工作在“任务”上，并把依赖的工作交给其他人。大家并不会把自己的技能教授给其他团队成员，因为他们的技能差异实在太大。
 
 In the second round of OD changes, certain steps of the LeSS guide *Getting Started* were repeated and improved. There were a couple of reasons for Y Soft to do these OD changes, which are listed below.
 
@@ -906,88 +920,139 @@ In the second round of OD changes, certain steps of the LeSS guide *Getting Star
 * **Functional teams added to the LeSS adoption and many new people joined the teams**<br/>There were several causes for changing within the teams: teams hired new people, people from other departments that joined teams, architects that - informally - joined teams, and people leaving led to differences in team size. Additionally, the Head of Product added the Infrastructure team to the LeSS adoption, but still in their original setup as a component team. They wanted to become more cross-functional and other teams wanted to have more skills related to infrastructure.
 * **Desire to improve the ability of teams to deliver end-to-end customer value better**<br/>The general conclusion amongst teams was that in the initial team self-design at the start of the LeSS adoption they designed too much to have as many skills (functions and parts of the product) in their teams as possible. One of the criteria for teams in the initial team self-design (‘Being able to deliver as much of PBI’s independently as possible’) wasn’t explained clearly enough, in hindsight. It led to teams ‘collecting’ as many skills as possible in their teams across the whole product, instead of looking at a good cohesion of skills to deliver features end to end. As a result, in many teams, team members were working individually on ‘tasks’ and handing over work between each other. People didn’t teach others in their teams their skills, because their skills were too different.
 
-#### 2.2.1 Preparing the second event with organizational changes
+#### 2.2.1 准备第二场组织变更活动 Preparing the second event with organizational changes
 
+产品总监决定第二次活动不能办得像初次LeSS导入时那样大，花费了4天，因为大家已经习惯了在一起亲密地工作。另外，新冠隔离也让办公室没人。在[这次的Less视频会议](https://www.youtube.com/watch?v=k6MD4kW0Xwo&t=2s) 和[这个博客](https://co-learning.eu/2020/06/11/a-full-remote-highly-collaborative-teams-self-design-workshop-with-80-people-yes/)中，分享了关于Y Soft如何远程实现团队自设计的更多细节。为了更有效率地准备会议，准备本身也分成了不同的工作坊。在解释和宣布继续会议的方式后，团队被要求代表产品总监来做自我重新设计，以更好地交付端到端客户价值。公司的Scrum Master们和刚刚入职的敏捷教练一起组织了两场工作坊来帮助团队。
 The Head of Product decided that this second event shouldn’t be as big as the 4-day event that started the LeSS adoption, because people were already used to working closely together. Additionally, COVID-19 caused a lockdown so nobody was at the office. In [this LeSS conference video](https://www.youtube.com/watch?v=k6MD4kW0Xwo&t=2s) and in [this blog](https://co-learning.eu/2020/06/11/a-full-remote-highly-collaborative-teams-self-design-workshop-with-80-people-yes/), more details are shared about how Y Soft did the team self-design remotely. To have an effective preparation, the preparation was splitted in different workshops. After the explanation and the announcement of the way forward, the teams were asked on behalf of the Head of Product to re-design themselves to be able to deliver end-to-end customer value better. The Scrum Masters and the onboarded agile coach organized two workshops to help teams do this.
 
+**团队设计工作坊 1**
 **Team design workshop 1**
 
+工作坊的目标：形成团队设计（草案）并发现团队交付端到端特性的可能性。
 Goal of this workshop: form (draft) team designs and learn about the possibility of end-to-end feature delivery by teams.
 
+团队在三个不同的地方为同一个产品工作。最大办公场所（包含50%以上的团队）中的团队已经开始计划改进现有的团队设计。在这个计划中，一些团队成员会过来帮助准备工作坊。这些团队成员提供了很重要的输入，例如目前（草案中）团队的当前状态和常见的团队大小。
 There are three sites with teams working on the product. On the biggest site (more than 50% of the teams), teams already started an initiative to improve the current team designs. From that initiative, a couple of team members helped in preparing for the workshop. Important input from these team members was e.g. the current status of the (draft) teams and the most common team size number.
 
+我们发现：因为这三个办公场所的大小不一样（工作坊之后一个地方有8个团队，而另外两个地方分别有2个和3个团队），我们本可以有区别地去准备工作坊和参与工作坊。对于最大的场所，每个人加入哪个团队的团队讨论太复杂了。对于其他两个场所，团队明显更少地参与了部分自设计的迭代。对于未来类似的情况，基于不同地点的团队规模，应该考虑如何让小地点更好地参与，并仍然让他们参与决定如何最好地优化由各团队组成的整个大团队。
 Learning: because the 3 sites differ in size (8 teams after the workshop on one site and 2 + 3 on the two other sites), we could have differentiated the way the 3 sites were preparing and participating in the workshop. The individual team discussions about who would be in which team, were complexer for the biggest site. For the two smaller sites, the involvement from teams in some parts of the self-designing iterations was significantly smaller. For similar future situations with differences in size of sites, it would be good to consider how smaller sites would participate, but still include them in deciding how the team of teams as a whole would optimize best.
 
+我们故意将团队设计工作坊分成了两个工作坊。在同地办公的团队设计中，团队成员经常在开会间隙讨论团队设计。在以前的团队设计中，我们学习到的是在两个迭代中间空出30分钟来使这一切发生。否则的话，这些讨论会在工作坊结束之后进行，并且团队也会随之改变。在远程情况下，这样在休息时间的聊天非常难以实现。于是我们在第一次和第二次工作坊之间空出来一周，这样团队成员可以反思并讨论关注点和开放性问题。
 We split the team design workshop in two workshops on purpose. In co-located team designs, team members often chat in breaks about the team design. Learning from previous team designs is to take 30 minutes breaks between iterations to let that happen. Otherwise, these discussions will happen after the workshop and teams will change afterwards. Remotely, this chat in breaks is hard to accomplish. We organized a week between the first and second workshop, so team members could reflect and discuss open issues or concerns.
 
+我们用Miro来引导工作坊所有的步骤。每一步，参与者在Miro画布上移动并增加/改变内容。最多的时候，Miro有95位参与者同时在线。最重要的引导提示：不要中心化的讨论。用其他技巧来处理，比如在分组讨论之后用5分钟或者10分钟来朗读输入的内容或者使用便利贴对其提问。
 We used Miro to facilitate all steps in the workshop. During each step, the participants themselves were moving in Miro and adding/changing things. At maximum, 95 people were active in Miro at the same time. Most important facilitation tip: don’t have central discussions. Use other techniques for that, like taking 5 or 10 minutes after each breakout session to read the results or adding questions in sticky notes to someone else’s input.
 
+在第三轮的自设计过程中，为了帮助团队反思自己交付以客户为中心的端到端特性的能力，团队对产品待办列表上的工作做了一次练习。敏捷教练和Scrum Master们在Miro白板上准备了一些史诗（注意：一个史诗就是Y Soft产品待办条目的集合，遵循用于PBL的工具）。每一个团队都可以指出他们是否能够端到端交付那个史诗，或者希望交付并从中学习。团队们在主板上评估他们可能交付的史诗并在上面贴一张绿色的便利贴（我们可以端到端交付它）或者一张橙色的便利贴（我们希望可以端到端交付它并从中学习），详见[附件](#team-design-workshop-1) 。在此之前，已经清楚说明后期不会用这个结果来看哪些团队可以交付哪些史诗。有些团队害怕这种透明会用来事后的挑战：他们为什么不愿在一些特定的史诗上工作。当然，如果团队愿意，他们自己事后可以使用这些练习的成果。
 To help the teams reflect on their ability to deliver customer-centric features end-to-end,  in the third round of the self-design, teams did an exercise on the work of the Product Backlog. A selection of the epics (*note: an ‘epic’ is a cluster of PBI’s together in Y Soft, following the tooling they use for the PBL*) were prepared on the Miro board by the Scrum Masters and agile coach in a table. Each team could indicate whether they can deliver that epic end-to-end or were willing and able to learn it. Teams evaluated the possible epics for their team and added a green sticky note (we can deliver it end-to-end) or an orange sticky note (we are able and willing to learn to deliver it end-to-end) to the main table, see [appendix](#team-design-workshop-1) for more info. In advance, it was made clear that the results wouldn’t wouldn’t be used afterwards to see which teams could deliver which epics. There was fear of some teams that this transparency would be used to challenge them later why they wouldn’t work on a certain epic. Of course, teams could use the outcomes of the exercise themselves afterwards if they wanted to.
 
+参与者最后附上一个对团队设计可能的关注点。这个输入被团队成员使用，但同时也是产品总监在第一轮和第二轮工作坊之间的工作内容。
 Participants ended with adding one possible concern for the team design. This input was used by team members, but also by the Head of Product to work on during the time between the first and the second workshop.
 
+**团队设计工作坊 2**
 **Team design workshop 2**
 
+工作坊目标：最终确认团队设计并识别未来改进持续学习的步骤
 Goal of this workshop: finalize the team design and identify follow-up steps to improve continuous learning for the future.
 
+在两个工作坊中间间隙的那一周，参与者讨论了团队设计的许多开放式结局。有些团队太大了，同时还有些人还没有加入任何团队。产品总监确认有些人没有加入团队也是可以的，不能够强迫团队接受他们不想要的团队成员。产品总监，敏捷教练和Scrum Master们对当前的状态非常了解，并通过跟合适的人沟通来帮助推进工作坊之间的事情。
 In the week between the two workshops, participants discussed many open ends of the team designs. Some teams were too big and some people didn’t have a team yet. The Head of Product addressed that it could be a valid outcome that someone wasn’t part of a team, and teams shouldn’t be forced to include members in their team they didn’t want to. The Scrum Masters, agile coach and Head of Product had a good overview on the status and helped by talking to the right people to get some things moving in between the workshops.
 
+第二场工作坊跟第一场的结构类似。人们在工作坊之间用线上合作工具来推进他们团队设计的更新。在总结状态和一个新的迭代之后，参与者收集阻碍性的关注点。这里有一个短暂的分组会议，让参与者投出唯一一个阻碍性的关注点。渴望加入其他团队的某个人生病了，所以两个团队都不想做出最终决定。他们都同意在这个人回归之后再解决这个问题，所以这两个团队重新投票的结果是：在这个行动之后，需要另一个自设计的迭代吗？大部分人的回答是不要（只有两个人想要另一个自设计的迭代。这也是团队的最终决定。
 The second workshop had a similar structure to the first one. People used the online collaboration tool in the time between the workshops to keep progress of changes in their team design. After a summary of the status and a new iteration, the participants collected blocking concerns. There was a short breakout session about the single blocking concern that was voted as blocking by the participants. One person that was desired to move to another team was sick and therefore both teams involved didn’t want to make the final decision. They agreed to solve this when this person was back, and teams voted again: ‘after this action point, is there another iteration of self-design needed?’ The answer was no by a large majority (just 2 people wanted another iteration of self-design) and the team design was final.
 
+在工作坊的结尾，人们识别了三种下一步的类别，1）当前立马解决 2）下一个新迭代解决 3） 下两个迭代解决
 At the end of the workshop, people identified three types of next steps, 1) needed to address on event, 2) needed to address in the first new Sprint, 3) needed to address in the follow-up two Sprints.
 
+更多关于准备工作坊的信息在[这个附件](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes)
 More info on the preparation workshops can be found in [this appendix](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes).
 
-#### 2.2.2 Second event with organizational design changes
+#### 2.2.2 第二次组织设计变革活动 Second event with organizational design changes
 
+组织设计变更活动的开始启动了新团队的工作且是无经理的工作。活动本身基本上是一整天的“庆祝”，也是一个的新阶段的正式开始。因为新冠，这个活动也是远程的。
 The start event for the OD changes kicked off the work in the new teams and working without managers. The event itself was mostly a day of ‘celebration’ and a formal start of a new step. Due to COVID-19, also this event was remote.
 
+CEO启动了活动，他感谢每一个人积极的参与，和对Y Soft的成功以及整个战略的重要贡献。他详细解释了公司战略中的变化，以及为什么所有团队对这些变化的理解是重要和必须的。他也谈论到了“无经理”组织，因为从那个时候开始，产品研发中的所有经理已经被移除了。团队自己取一个团队名字（如果他们想也可以加一个团队标识），并讨论对他们重要的团队价值，如何合作，如何确保（互相）学习。团队，和伙伴团队一起，解决了如何建立快速响应的团队角色来让新团队加速。
 The CEO kicked off the event by thanking everyone for their active participation and important contribution to the overall strategy and success of Y Soft. He explained more about the changes in the company strategy and the importance and need for all teams to understand this. He also talked about the ‘manager-less’ organization, because from that moment all managers in product development were removed. Teams came up with a team name (and a logo if they wanted) and discussed important team values for them, how they collaborate, and how they make sure they learn (from each other). Teams solved - with buddy teams - how to handle the fast-response team role to get new teams up to speed.
 
+没有了经理，团队构想出“宏观流程”，以前让经理负责的事务，从现在开始由团队自己负责。宏观流程的例子包括新员工入职，和招聘新员工。团队利用这个时间来选择最重要的宏观流程，建立团队间如何处理宏观流程的草案。
 Without managers, teams came up with ‘macro-processes’ that are important aspects that used to be taken care of by managers that teams have to take care of themselves from now on. Examples of macro-processes are ‘on-boarding of new employees’ or ‘hiring new employees’. Teams used the time to choose the most important macro-processes to make a draft on how to deal with the macro-processes among teams.
+
+第二天早上，新团队开始了第一个迭代的迭代计划。团队们被要求全员参与（而不是派遣代表），有两个原因：
+
+* 当团队成员还互相不了解对方的技能时，他们可以一起讨论来选择产品待办条目
+* 产品负责人（仪式前一个月）已经为即将到来的下一阶段准备了更具战略性的大纲
 
 The morning after, the first Sprint with the new teams started with Sprint Planning. Teams were asked join with the whole team (instead of only representatives), for two reasons:
 
 * For teams with people that don’t know each other’s skills well yet, they can discuss together to select PBI’s.
 * The Product Owner (starting a month the event) had a more strategic outline for the upcoming period prepared.
 
+在迭代计划之后，团队转移到他们的迭代计划2中，并按照新的设定开始合作。
 After the Sprint Planning, teams moved to their Sprint Planning 2’s and started working together in the new set up.
 
+更多关于第二部分启动仪式的信息在[这个附件](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes)。
 More info on the second start event can be found in [this appendix](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes).
 
-#### 2.2.3 Organizational Design elements
+#### 2.2.3 组织设计元素 Organizational Design elements
 
+组织设计实验中组织元素的总结和简短阐述：
 A summary and short elaboration of the OD-elements that were involved in the OD experiment:
 
+* *LeSS规则：大部分团队是以用户为中心的特性团队。*
 * *LeSS Rule: The majority of the teams are customer-focused feature teams.*
 
+通过前面的组织设计实验中的检视结果，团队尝试涵盖尽可能多样的专家，却导致合作和学习非常有限，以及团队内部过多的交接形成了瓶颈。在第二次团队自设计中，团队练习了工作在产品待办列表上，来评估他们是否可以端到端交付一个特定的一大块工作（“史诗”），或者希望交付和从中学习。这样帮助团队关注在产品待办列表中特定的部分（专门针对客户领域），而不是练习尝试拥有产品待办条目中尽可能多的技能。另外，在团队自设计中，Y Soft的架构师们正式加入到团队中。这些实践型的架构师自我发展，并向团队传授更广泛的产品知识。
 As inspected upon from the previous OD experiment, teams tried to involve as many different specialties as possible within their, which led to limited collaboration and learning, and a lot of handovers in the team with bottlenecks. In the second team self-design, teams did an exercise on the work of the Product Backlog to evaluate whether they could deliver a certain big piece of work (‘Epic’) end-to-end in their team or were willing and able to learn it. This helped the teams to focus on certain parts of the Product Backlog (specializing in customer domain), instead of trying to have skills for as many Product Backlog Items as possible. Additionally, in the team self-design, the architects that were still at Y Soft formally joined the teams. These were hands-on architects that developed themselves and taught teams the broader product.
 
+前面组织设计实验里的[这个章节](#125-organizational-design-elements) 介绍了这条LeSS规则。
 Introduction on this LeSS Rule in [this section](#125-organizational-design-elements) of the previous OD experiment.
 
+* *LeSS实验：尝试...扩展产品的定义*
 * *LeSS experiment: Try...Expanding Product Definition*
 
+最初的产品定义常常不够完美。通过扩展产品的定义——通过改进完成的定义——组织级的改进得以发生。团队学习或者增加他们不曾拥有过的技巧。这个第二次组织设计实验，在LeSS导入范围之外的基础设施团队参加了团队自我设计，技术设施团队的成员加入到特性团队中。这样，产品完成的定义得到了延伸，部分以前没定义成完成的工作进入团队。
 The initial product definition is often less than perfect. By expanding the product definition - by improving the Definition of Done - organizational improvement happens. Teams learn or add skills that they didn’t have before. In this second OD experiment, the infrastructure team that was outside the LeSS adoption joined the team self-design and people moved to the feature teams. This way the Definition of Done of the product extended and part of the undone work was included in the teams.
 
+前面组织设计实验里的[这个章节](#125-organizational-design-elements) 介绍了这个LeSS实验。
 Introduction on this LeSS Experiment in [this section](#125-organizational-design-elements) of the previous OD experiment.
 
+* *LeSS指南：在客户领域中选择专业化*
 * *LeSS guide: Prefer Specialization In Customer Domain*
 
+对特性团队的一个普遍误解是，它会导致特性团队完全放弃专业化。专业化是多维度的，不止是技术，还有客户领域。客户领域的专业化（对团队来说可能随时间而变化），常常意味着在特定技术（复数）中偶然的专业化。团队在技术上并不专业化，但需要尝试在团队中拥有非常多的专长来有能力合作在用户特性上，从而限制了团队在客户领域的专业化。在第二次组织设计实验中，团队反思了他们可以（并愿意）工作在哪种特性上，以便在特定的客户领域中专业化。
 A common misunderstanding of feature teams is that it leads to abandoning specialization altogether. Specializing is multi-dimensional, not only on technology but also on customer domain. Specializing in a customer domain (that might change over time for a team), often means *accidental specialization* in certain technology (*plural*) for the same type of features for that customer domain. The teams didn’t specialize in technology, but rather tried to have too many specialisms in their team to be able to collaborate on customer-features, limiting specialization on customer domain. In the second OD experiment, teams reflected on which types of features they were able (and willing) to work on, to specialize in a certain customer domain.
 
+* *LeSS指南：经理是非必需的*
 * *LeSS guide: Managers Are Optional*
 
+在LeSS中，经理是非必需的。经理可以发挥一个有用的角色，但大部分（大型）组织没有经理角色和位置的短缺。在一个LeSS组织中，更倾向于把责任转移给团队，而不是分配给经理这个角色。在第二次组织设计实验中，团队已经没有了经理，只有产品总监，但他并不承担大部分传统经理的责任。这些责任现在由团队承担，团队和HR紧密合作。这个指南与LeSS实验 *尝试...尽可能保持组织扁平* 相关
 In LeSS, managers are optional. Managers can perform a useful role, but most (large) organizations have no shortage of manager roles and positions. In a LeSS organization, the preference is to move responsibility to teams instead of assigning them to manager roles. From the second OD experiment, there were no managers for the people in the teams, there was only the Head of Product, but he wasn’t dealing with most of the traditional management responsibilities. These responsibilities were now for the teams, with close collaboration from the teams with HR. This guide is related to the LeSS experiment *Try...keep the organization as flat as possible*.
 
+* *LeSS实验：尝试...让HR参与*
 * *LeSS experiment: Try... Engage HR*
 
+HR实践在许多组织中是一个主要障碍，仅有一小部分成功地改变了HR的实践。传统HR实践关注在个人，而敏捷开发团队才是驱动者，这导致了系统冲突。为了培养真实团队，HR实践必须要改变，比如奖励和绩效评审。为了做到这点，让HR专家参与是非常重要的，并教育他们为什么敏捷开发会影响HR的实践。在Y Soft，HR专家（包括招聘）在第二次组织设计实验的准备中就开始与团队紧密合作。比如，招聘新成员和升职。从那开始，团队不得不与HR紧密合作，而HR也很好地参与了团队的工作并支持到了团队，比如招聘新员工。在[这个章节](#235-inspection-on-od-element-less-guide-managers-are-optional)，分享了更多关于团队如何在没有经理的情况下工作的细节。我们尝试的LeSS其中一个实验就是这个 *尝试...团队自己做招聘*。
 HR practices are a major obstacle in many organizations, only a few have succeeded in changing HR practices. Traditional HR practices focus on *individuals*, while in agile development *teams* are the driver, which causes systemic conflict. To foster real teams, HR practices need to change, like rewarding and performance review. To be able to do that, it’s important to engage HR specialists, and educate them why agile development affects HR practices. In Y Soft, HR specialists (including recruitment) started to work closely with the teams in the preparation of the second OD experiment. Teams became responsible for many prior management responsibilities and thus needed to work with HR. For example, hiring new people and promotions. From then on, they had to work closely with HR and HR was well involved in the work of the teams to be able to support them, e.g. for the recruitment of new people. In [this section](#235-inspection-on-od-element-less-guide-managers-are-optional), more details are shared about how the teams worked without managers. One of the experiments from LeSS that were tried for this is *Try...Team does the hiring*.
 
+* *LeSS实验：避免...与绩效相关的激励*
 * *LeSS experiment: Avoid... Incentives linked to performance*
 
+（个人）与绩效相关的激励是基于旧的假设，人们可以控制他们的绩效并被奖金所激励。这里的建议是“把工资和任务分开”（[来源](https://www.alfiekohn.org/punished-rewards/)）。在第一次组织设计实验中，我们曾经尝试通过奖励团队来促进团队合作。然而，这些依然是与绩效相关的激励，效果并不完美。此外，有些经理仍然对个人的绩效进行“嘉奖”，即使没有真正的奖励。从第二次组织设计实验开始，不再有与绩效相关的激励，无论是个人还是团队。当组织表现很好，所有团队拿到同等的奖金，团队可以在团队内部分配奖金。在LeSS中与这个相关的实验是 *尝试...用奖励团队代替奖励个人* 并 *避免...绩效考核*。
 (individual) Incentives linked to performance are based on old assumptions that people are in control of their performance and are motivated by rewards. Recommendations are there to *‘decouple the task from the compensation’* ([source](https://www.alfiekohn.org/punished-rewards/)). In the first OD experiment, there were attempts to give team rewards that helped team collaboration. However, these were still incentives to performance, which didn’t work perfect. Additionally, some of the managers were still ‘rewarding’ performance of individuals, even though there was no real incentive for it. From the second OD experiment forward, there were no more incentives linked to performance, individual or team. Teams could distribute bonuses within their team once in a while, when the organization had done well and all teams got equal bonuses. Relevant experiments from LeSS in this regard are *Try...Team incentives instead of individual incentives* & *Avoid... Performance appraisals*.
 
+检视LeSS原则中[组织设计原则](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html) *以小为大*：
 Inspecting at the [organization design principles](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html) from the LeSS principle *More with LeSS*:
+
+我们使用以下组织级设计原则来减少LeSS组织的规模：
+1. 从专家角色到团队：在第一次组织设计实验中，团队已经成为了组织构建的基本模块。在第二次组织设计实验中，团队自己领导并成为承担责任的基石这件事变得简单，因为团队已经习惯承担责任并共事。
+2. 从资源思维到人性思维：Y Soft的HR和产品总监，从第一次组织设计实验中学习到，要更多地关注在团队需要和人的需要上，因为团队作为组织构建的基本模块，能够把人们的感觉和他们的需要变得透明。
+3. 从“围绕技术来组织”到“围绕客户价值来组织”：在第一次组织设计实验中，这个被重新构造，并且在第二次组织实验中没有实质性地改变。但是，团队增加了对客户领域的学习，比如与大客户紧密合作，开发某些以客户为中心的特性。
+4. 从独立团队到持续跨团队协作：在导入LeSS的开始，团队关注在自己的工作上。渐渐地，他们在大特性开发中开始合作。特别是当公司战略（因为新冠而）改变，从而产品待办列表巨变时，团队需要在新的战略和新的技术上一起发现和学习。这大概是在第二次组织设计实验中，重新设计帮助团队更好地关注在这上面。
+5. 从“协调是为了集成”到“通过集成实现协调”：因为在第一次组织设计实验中，这还是一个挑战，见[这个章节](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work)。因为团队在所有产品相关的工作上变得更加负责，他们开始为了持续集成而改进前提条件和行为。在第二次组织设计实验中，团队也持续工作在改进技术卓越性和他们的集成行为上。
+6. 从项目到产品：随着时间的推移，团队不再接受来自外部的需求。这一点也没有因为第二次组织设计实验而改变，也是从第一次组织设计实验中延续下来的。
+7. 从许多小产品到少数宽泛的产品：在第二次组织设计实验中，产品的定义没有改变。但是，为了让产品的定义更宽泛，通过把基础设施团队引入到特性团队中，完成的定义也被扩展。
+
 
 We use the following organizational design principles to descale into LeSS organizations:
 
@@ -999,73 +1064,103 @@ We use the following organizational design principles to descale into LeSS organ
 6. From Projects to Products: over time, no more requests from the sideline were coming to the teams. This didn’t change because of the second OD experiment, but continued from the first OD experiment.
 7. From Many Small Products to a Few Broad Products: the product definition didn’t change for the second OD experiment. However, by adding the people from the infrastructure team into the teams, the Definition of Done extended to make the product definition broader.
 
-### 2.3 Inspect
+### 2.3 检视 Inspect
 
-#### 2.3.1 Generic inspection of the second OD experiment
+#### 2.3.1 第二次组织设计实验中的一般检视 Generic inspection of the second OD experiment
 
-The prior OD experiment involved more profound changes on the OD. Consequently, there is less to inspect on for this OD experiment. A topic worth inspecting on generically is the move from Scrum Masters to agile coaches from the second OD change forward.
+前面组织设计实验包含了组织设计上的深刻变革。因此，就减少了对这次组织设计实验的检视。通常在第二次组织设计变革中值得检视的主题是从Scrum Master到敏捷教练的转换。
+The prior OD experiment involved more profound changes on the OD. Consequently, there is less to inspect on for this OD experiment. A topic worth inspecting on c is the move from Scrum Masters to agile coaches from the second OD change forward.
 
+为什么是敏捷教练而不是Scrum Master？在特定的时间，产品总监总结道，Scrum Master的关注范围太窄了（主要在团队上），在更大的系统和组织上的关注太少。此外，有些团队因为一些原因，曾经跟一些Scrum Master有过不好的体验。所以产品总监决定启用敏捷教练，他们明显更强调关注在更大的范围上。所有的Scrum Master必须申请成为这个角色。
 Why agile coaches and not Scrum Masters? At a certain point, the Head of Product concluded that the Scrum Masters had a too narrow scope of attention (mainly on teams) and too little focus on the larger system and organization. Additionally, some teams had negative experiences with the Scrum Masters, for the same reason. That’s why the Head of Product decided to start working with agile coaches, that had explicitly more emphasis on a broader scope of attention. All Scrum Masters had to apply for this role.
 
+*反思*：对Scrum Master这个角色有一些误解，定义敏捷教练的角色主要是意味着Scrum Master的角色定义是合适的。此外，Scrum Master工作范围太窄的问题是可以预防的。Scrum  Master们在导入LeSS的开始几乎没有得到过外界的帮助，所以他们不能够关注在（系统级的）重要变量上。他们主要关注在团队上，并与产品负责人以及其他组织中的重要变量在产品待办列表（和其他相关的活动）上没有任何互动。当密集的（外部）监控和教练开始实施，以及工程副总裁（已作为敏捷教练）也成为团队中的一员后， 这些Scrum Master便有所改进。然而在其他人的眼中，伤害已经造成。在第二次组织设计（除了1之外）中，产品总监宣布组织中不再有Scrum Master的岗位之后，Scrum Master可以加入团队或者尝试在组织中找到其他的位置。在后来的阶段中，在Scrum Master们离开之前，产品总监宣布部分Scrum Master可以申请成为敏捷教练。这表示Scrum Master们已经学习并作出改进，因为在早期阶段产品总监没有宣布这件事。不幸的是，（大部分）Scrum Master并不喜欢一开始对待他们的方式，并决定离开。
 *Reflection*: there was a misconception about the role of the Scrum Master, and defining the role of the agile coach basically meant that the role of Scrum Master was defined properly. Additionally, the problem of Scrum Master having a too narrow scope should have been prevented. The Scrum Masters had almost no outside help from the start of the LeSS adoption and therefore were unable to focus on the (systemic) important variables. They mainly focused on teams, had almost no interaction on the Product Backlog (and activities related to that) with the Product Owner and other important variables in the organization. The Scrum Masters improved when more intensive (external) mentoring and coaching started and the Vice-President of Engineering became part of their group (already in the role of agile coach). However, for the perception of others the damage was done. After the clear announcement from the Head of Product that there was no place for the existing Scrum Masters after the second event (except for 1), they could go to teams or try to find another place in the organization. In a later stage - before the Scrum Masters left - the Head of Product announced that some of the Scrum Masters could apply to become agile coach. This indicated that the Scrum Masters had learned and improved, because he didn’t announce this in an earlier stage. Unfortunately, (most of) the Scrum Masters didn’t like the way they were treated with the initial announcement and decided to leave.
 
+如果Scrum Master们可以在导入LeSS的一开始就被密切地帮助过，或者在后面的阶段也可以，这种情况本可以避免。他们热切又有才华，仅仅缺乏经验和支持。Scrum Master是假定用来帮助组织级变更和解决问题的，但因为缺乏经验和支持，他们没有做这些事情。产品总监没有理解这一点，也没有帮助Scrum Master做这个。相反，是通过快速并糟糕的方案，引入一个新角色，来解决问题。敏捷教练就像Scrum Master在LeSS和Scrum里一样表现，因此在LeSS导入时并不需要敏捷教练。
 If the Scrum Masters would have been helped more intensively from the start of the LeSS adoption - or even in a later stage - this could have been prevented. They were all eager and talented, but just missed experience and support. Scrum Masters are supposed to help in organizational changes and problems, but weren’t doing that because of a lack of experience and support. The Head of Product failed to understand this and help the Scrum Masters to do this. Instead, the problem was solved by the quick and dirty solution of introducing a new role. The agile coaches are acting like the Scrum Masters should act in LeSS and Scrum, and therefore there are no agile coaches needed in a LeSS adoption.
 
+只有一个Scrum Master变成了敏捷教练，关注在技术教练上，其他所有的Scrum Master都离开了Y Soft。其中一个Scrum Master为了帮助组织而停留了一段时间。一位经理成为了敏捷教练，工程副总裁成为了敏捷教练，而其他敏捷教练是从公司外部招聘的。
 One Scrum Master became an agile coach - focused on technical coaching - and the other Scrum Masters left Y Soft. One Scrum Master stayed for a while to help. One of the managers became agile coach, the Vice-President of Engineering became agile coach and the other agile coaches were hired from outside the company.
 
+在经理被移除之前，Y Soft已经有简单的职位描述，没有在产研中区分专业。开发工程师可以在他们升职的时候晋升一个级别，但其他角色基本上跟以前的职业路径一样。跟非常像LeSS实验 *尝试...创建唯一职位名称* 并 *尝试...不同级别的通用头衔*。
 Before the managers were removed, Y Soft already had simple job descriptions that did not distinguish specialisms within R&D. Developers could basically step up a level when they were promoted, but their roles were basically the same according the career paths. Very much like the LeSS experiments *Try... create only one job title* and *Try... generic titles with levels*.
 
-#### 2.3.2 Inspection OD-element: LeSS Rule: The majority of the teams are customer-focused feature teams.
+#### 2.3.2 组织设计元素的检视：LeSS规则：大多数团队是以客户为中心的特性团队 Inspection OD-element: LeSS Rule: The majority of the teams are customer-focused feature teams.
 
+团队变革的根本原因，是可以预防的。在团队内部和团队之间，对持续学习的缺乏和对协同学习的缺乏，应该得到更多的关注，特别是来自Scrum Master的关注。在LeSS导入开始的4天活动中，太多的注意力放在每个团队拥有（几乎）全部的技能上面，所以许多团队还为成为一个真实的团队并能够做到端到端交付而挣扎。更好地支持Scrum Master也可以预防这一点。
 The root causes that led to the change of teams, could have been prevented. The lack of continuous learning and lack of collaboration on learning within and between teams, should have been given more attention, especially by Scrum Masters. In the 4-day event that started the LeSS adoption, there was too much focus on getting (almost) all the skills in each team, and therefore many teams struggled in truly working as a team and being able to deliver end-to-end. Supporting the Scrum Masters better could have helped prevent this as well.
 
+团队内部学习变得越来越跨职能和跨组件，本应该是首次导入的一部分。虽然有部分团队在这方面有所成长，大部分并没有。在这个时期，团队关注在学习支持任务，做回归测试，解决程序问题，和发布。虽然这非常重要，也是获得整个产品关注的主要因素之一，但是团队在组内合作、以及分享商业领域和组件知识上的关注度十分有限。
 Learning within the teams to become more cross-functional and cross-component, should have been more part of the adoption in the first place. Although some teams grew in this, many teams didn’t. In this period, teams focused on learning support tasks, doing regression tests, fixing bugs, and releasing. Though this was very important and one of the main factors to get whole product focus, teams had limited focus on collaboration and sharing knowledge on business domains and components within the team.
 
+在第二次组织设计变革的准备中和工作坊期间，我们关注并鼓励了团队学习。团队识别了不能够共同跨职能地交付价值的根本原因。在这次仪式中，团队识别了在团队内部和团队之间的学习领域，以防止类似的事情在未来发生。
 In the preparation for the second event with OD changes and in the workshops itself, there was focus and encouragement on team learning. The teams identified the root causes for the inability to cross-functionally deliver value together. In the event, teams identified areas for learning in their team and between teams to prevent this for the future.
 
+正式加入团队的架构师们在团队中实战，他们中的大部分也会帮助其他成员理解产品更大的范围和产品整体，特是跟产品相关的新技术部分。
 The architects that formally moved into the teams worked hands-on in the teams, and most of them focused also on helping other teams to understand the bigger picture and whole product, especially related to new technology that was involved.
 
-#### 2.3.3 Inspection on OD-element: LeSS guide: *Try...Expanding Product Definition*
+#### 2.3.3 组织设计元素的检视：LeSS指南：*尝试...扩展产品的定义* Inspection on OD-element: LeSS guide: *Try...Expanding Product Definition*
 
+在第二次组织设计实验中，曾经排除在外的基础设施团队参与了自设计并加入到了各特性团队中。这样产品完成的定义被扩展，一部分以前没定成完成的工作也包含在了这些特性团队的工作中。
 In this second OD experiment, the infrastructure team that was outside the LeSS adoption joined the team self-design and people moved to the feature teams. This way the Definition of Done of the product extended and part of the undone work was included in the teams.
 
+在LeSS导入之时，基础设施团队是在产品团队之外的一个独立的（*组件*）团队。在团队自设计中，原基础设施团队成员分别加入到了三个特性团队中，这三个特性团队都至少拥有2个基础设施团队的成员，以防止他们被其他团队成员孤立。我们没有对这个迁移做单独评估，但同时也没有过关于它的任何争议。基础设施的工作成为了产品待办条目和完成的定义的一部分，有些团队会接手更多基础设施相关的工作，因为这些工作跟他们关注的特定的（客户）领域相关，且是必需的。一种产品定义的扩展非常丝滑地发生了，因为人们很好地融入了团队并非常渴望让这一切成功。
 The infrastructure team was a separate (*component*) team outside the product for the teams that worked in the LeSS adoption. In the team self-design, the members of the former infrastructure team moved to three of the feature teams, every team having at least two people of the former infrastructure team, to prevent being isolated in the team. There was no specific evaluation of this move, but there was never an issue raised about this. Infrastructure work became part of the Product Backlog Items and the Definition of Done, and some of the teams took more infrastructure related work because of their focus on certain (customer) domains that needed infrastructure work. An extension of the product definition that worked smoothly, because the people that were involved integrated well in the teams and were eager to make it a success.
 
-#### 2.3.4 Inspection on OD-element: LeSS guide: *Prefer Specialization In Customer Domain
+#### 2.3.4 组织设计元素的检视：LeSS指南：*在客户领域选择专业化* Inspection on OD-element: LeSS guide: *Prefer Specialization In Customer Domain*
 
+大概在第二次组织设计实验的时候，发生了一个战略级的变更（因为新冠），也导致了产品待办列表的大范围变更，包括对不同技术的不同关注点。最初有三个团队，稍后有四个团队关注到了这个（客户）领域，他们跨团队紧密合作并学习了新的客户领域。这是一个在（新）客户领域中专业化的成功案例。
 Around the start of the second OD experiment, a strategic change was made (due to COVID-19) which led to large changes of the Product Backlog, involving a different focus with different technology. Three teams initially and a bit later a fourth team focused on this (customer) domain, collaborating intensively cross-team and learning the new domain. This was a good example of specialization in a (new) customer domain.
 
+然而，从某个时刻开始，这个领域成为了产品待办列表的主要部分，更多的团队需要参与进来。让其他团队参与这个新领域新技术中，需要大量的学习和协作。
 However, at some point, this domain became the prevalent part of the Product Backlog and more teams needed to be involved. It took quite some learning and collaboration to have the other teams involved in this new domain and technology.
 
-#### 2.3.5 Inspection on OD-element: LeSS guide: *Managers Are Optional*
+#### 2.3.5 组织设计元素的检视：LeSS指南： *经理是非必需的* Inspection on OD-element: LeSS guide: *Managers Are Optional*
 
+在没有硬指标的情况下来反思工作中有经理和没有经理的区别是非常困难的。事实是团队交付产品待办条目的数量和以前一样（在团队规模相同的情况下）。平均每个团队少一点，但总体数量是一样的，因为团队更小了。在几个迭代之后，交付的产品待办条目数量提升到了以前一样的水平。虽然产出（完全）不应该成为目标，这也表示了在没有经理的条件下产出没有变化，新组建的团队甚至没有过产出降低。
 It’s hard to reflect on the difference between working with and without managers with hard metrics. Fact is that the amount of PBI’s the teams delivered in their new teams was similar to their old teams (with the same amount of people). A bit less per team, but an equal amount because there were smaller teams. After a few Sprints, the number of PBI’s that had been delivered had increased. Although *output shouldn’t be a goal* (at all), it gives an indication that output doesn’t change because there are no managers, and with newly formed teams there wasn’t even a decrease.
 
+Y Soft 如何推进自我管理，如何处理曾经由经理们领导的跨团队（甚至跨部门）的主题，都非常值得学习。在Y Soft，这些主题被称为“宏观流程”（比如升级，招聘，解雇）。宏观流程是为了设计如何让所有团队在没有经理的情况下，保持这些主题的运行。一些主题，例如招聘，团队在考虑宏观流程的各种约束条件之后，自己内部决定他们怎么做。基本上，是这个团队的特殊宏观流程。
 The way Y Soft promoted self-management and dealt with cross-team (and even cross-department) topics that used to be led by managers are very interesting to learn from. These topics are called ‘macro-processes’ (e.g. escalations, hiring and firing) within Y Soft. The macro-processes were there to design how this would work for all teams and be able to keep these topics moving without managers. For some topics - like hiring - teams decided within their own team how to do it, considering the constraints from the macro-process. Basically, this would be the micro-process for the specific team.
 
+大体上，团队的志愿者，产品总监，以及敏捷教练的代表建立了如何实施宏观流程的指引。一个志愿小组（主要是团队成员，还有其他相关干系人，或者当需要的时候可以是产品负责人）设计最初的也是最重要的宏观流程。受到LeSS全景图的启发，每个主题：志愿小组定义主题的原则和规则。这些规则可以是真实的约束（比如HR对申请人的反馈时间），也可以是跟志愿小组一起确定的，以保证对一个主题的统一性。基于原则和规则，志愿者们设计了团队应对主题的指南。跟LeSS指南的开启一样，基于实验的学习，团队可以基于自己的情况做出调整。在指南完成以后，宏观流程（基于原则、规则和指南）被所有团队讨论，或发送（依赖主题是什么）给所有团队以得到回复。
 Volunteers from teams, the Head of Product, and a representative from the agile coaches created guidelines on how to deal with macro-processes in general. A volunteering group (mostly team members, but also other relevant stakeholders or the PO if needed) designed the first and most important macro-processes. It was inspired by the LeSS Complete Picture for each topic: the group defined the principles for the topic and made rules for the topic. These rules could be real constraints (e.g. response time to applicants by HR) or made together with the volunteering group to make sure there is some uniformity for a topic. Based on the principles and rules, the volunteers designed guides to use within teams to deal with the topic. Similar to the LeSS guides to start with something and based on learning in experiments, teams could adjust to their specific situation. After the guides were finished, the macro-processes (basically the principles, rules & guides) were discussed or sent around (depending on the topic) for feedback from all teams.
 
 <figure>
   <img src="img/case-studies/ysoft/macro-processes.png" alt="Macro processes">
 </figure>
 
+*宏观流程是如何被诠释的*
 *How the macro-processes were explained*
 
+设计这些宏观流程大部分是团队的责任，因为他们是设计者，也是责任人。在[这个博客](https://www.daretothinkbyg.com/en/blog/manager-less-rnd-how-to-promote-people-1)，有Y Soft 团队如何应对升职的例子。
 Designing these macro-processes created more responsibility in the teams, because they were the people that designed them and were responsible for these topics. In [this blog](https://www.daretothinkbyg.com/en/blog/manager-less-rnd-how-to-promote-people-1), there is an example of how the Y Soft teams dealt with promotions.
 
-##### 2.3.5.1 Head of Product leaving Y Soft and was not replaced
+##### 2.3.5.1 产品总监离开Y Soft且没有替代者 Head of Product leaving Y Soft and was not replaced
 
+大概一年半以后，产品总监离开了Y Soft。需要做出一个选择：招聘一位新的产品总监或者CEO担任产品总监。招聘新产品总监产生的风险是，这位新人可能想要改变一些事情，因为他以前并不是设计组织中的一员。在咨询了一部分团队成员之后，CEO决定，不再招聘产品总监，并且试图使他和团队之间没有任何经理。为了应对这个，HR在系统中拥有了一个正式的角色，例如，给新人签订合同（而不是产品总监），一个来自产研团队外部的人承担了产品总监的角色，来进行采购和管理供应商（例如，招聘外部人员加入团队），这是一个相对其他组织来说，比较限制的角色。直到这天（2023年春），Y Soft也没有新的产品总监。CEO似乎也没有因为产品总监的离开而增加工作量，因为团队承担了额外的工作（见上面章节的宏观流程），HR也跟团队一起负责HR的事务，在产研团队中的那位负责了采购和供应商管理。无论如何，CEO已经常规性地参加迭代回顾，当需要的时候有时还会参加产品待办列表的梳理，以及频繁参加迭代计划，提供业务更新。这并没有因为产品总监的离开而改变。显然，产品负责人也没有增加额外的工作，因为产品总监并没有加入到产品和产品愿景中。
 Around 1.5 years later, the Head of Product left Y Soft. A choice had to be made: hiring a new Head of Product or the CEO acts as the Head of Product. A risk of hiring a new person is that a new person might want to change things, because that person wasn’t part of the design of the organization. The CEO decided - after consultation with some team members - to work without a Head of Product and try to work without any managers between him and the teams. To deal with this, HR got a formal role in the system around e.g. offering a contract to new people (instead of the Head of Product) and one person outside the product within R&D took the role of the Head of Product to deal with procurement and suppliers (e.g. for hiring external people in the teams), which was a relatively limited role compared to most other organizations. Until this day (Spring 2023), there hasn't been hired a new Head of Product. It turned out that the CEO didn’t have additional work because of the Head of Product leaving, because of the additional responsibilities teams took (see macro-processes section above), HR being involved more in HR matters with teams and the person in R&D taking care of procurement and suppliers. The CEO joined Sprint Review regularly anyway, sometimes Product Backlog Refinement when useful and on a frequent basis he started the Sprint Planning with a business update. This didn’t change because of the Head of Product leaving. Obviously, there was no additional work for the Product Owner as well, since the Head of Product wasn’t involved in the product and vision for the product.
 
-#### 2.3.6 Inspection on OD-element: LeSS experiment: Try... Engage HR
+#### 2.3.6 组织设计元素的检视：LeSS实验：尝试...让HR参与 Inspection on OD-element: LeSS experiment: Try... Engage HR
 
+在检视前面组织设计元素的过程中，HR这个角色帮助团队应对没有经理的情况。CEO明确了他对HR的期望，以及在LeSS导入中希望HR与团队合作的结果。HR非常支持团队，跟团队一起紧密合作。当需要招聘新人时，团队与HR一起设计了宏观流程。在这些宏观流程中，他们对由谁负责和有什么约束达成了协议。比如团队需要对每一份职位申请在24小时内做出反馈，并跟申请人沟通他们的决定。HR负责发布招聘信息和搜索新的人选，团队负责面试。团队和HR都喜欢这种工作方式，根据（被聘用的和未被聘用的）申请人的反馈，招聘的质量也有所提高。
 In the inspection of the previous OD-element, the role of HR to help teams deal with working without managers came forward. The CEO set clear expectations with HR and what he expected from them for working with the teams in the LeSS adoption. HR was supportive and worked closely together with teams. For the hiring of new people, the teams designed a macro-process together with HR. In these macro-processes, they made agreements who took responsibility for what and what the constraints are. For example teams have to respond within 24 hours when a new candidate submits their application, and teams communicate to the applicant about the decision. HR does the recruitment and searches for new people that teams can interview themselves. Teams and HR like this way of working, and the quality of e.g. hiring improved based on feedback from applicants (hired and not hired).
 
-#### 2.3.7 Inspection on OD-element: LeSS experiment: Avoid... Incentives linked to performance
+#### 2.3.7 组织设计元素的检视：LeSS实验：避免...与绩效相关的激励 Inspection on OD-element: LeSS experiment: Avoid... Incentives linked to performance
 
+在第二次组织设计实验中，已经没有了与绩效相关的激励，无论是个人还是团队。当组织做得好的时候，所有团队拿到平等的奖励，跟绩效没有关系，团队可以在内部分配奖金。有些团队在团队内部实验过不同的奖金分配的方式，在某些情况下，团队奖金分配并不平等。然而，大部分团队在内部平均分配奖金。再也没有了跟绩效相关的加薪和其他奖励。到了某个时刻，CEO发现公司薪酬低于市场水平，他大幅提高了产研团队所有人的薪酬，超过了市场平均薪酬水平。从那时起，开始了跟绩效无关的定期加薪。团队内部和团队之间没有了竞争关系，大家感觉到了薪酬的平等，并知道当他们值得的时候，有相关的流程获得晋升。
 From the second OD experiment forward, there were no more incentives linked to performance, individual or team. Teams could distribute bonuses within their team once in a while, when the organization had done well and all teams got equal bonuses, not linked to performance. Some teams experimented with different ways of distributing bonuses *within* the team and in some cases teams distributed the bonus unequally. However, most teams distributed the bonus equally within the team. There were no salary increases or any other incentives linked to performance. At one point, the CEO found out that the compensations were below average compared to the market, and he increased the compensations massively for everyone in R&D to get above average. From that point on, there were regular pay raises not linked to performance. There was no competition between teams or within teams, people felt fairly compensated and knew there is a process to get promoted when they deserved it.
 
-### 2.4 Adapt
+### 2.4 适应 Adapt
+
+这次实验中主要适应的总结如下：
+* 重新设计跨职能和跨组建的团队，让他们可以单个团队交付端到端产品待办条目（不意味着：所有团队都可以端到端地完成所有产品待办条目）
+* 剩下的架构师正式加入到各特性团队中
+* 解散独立的基础设施团队，团队成员加入到常规团队中
+* Scrum Master被敏捷教练所取代
+* 移除所有经理，除了产品总监以外
+* 团队奖金跟单个团队的绩效没有联系
 
 A summary of the main adaptations that happened in this experiment:
 
@@ -1076,19 +1171,28 @@ A summary of the main adaptations that happened in this experiment:
 * Removal of all managers except for the Head of Product
 * Team bonuses without connection to performance of the single team
 
+这带来了以下主要结果：
+* 一些Scrum Master离开了，一些经理变成了敏捷教练
+* 团队自我管理提升，需要额外强调这一点
+  
 This brought the following main results:
 
 * Some Scrum Masters left and some other managers became agile coach
 * Increased self-management by the teams and additional emphasis on this
 
+从导入LeSS的一开始，许多组织设计变更就发生了，并在接下来的几年中，还有许多小的改善。这些并不显著，但Y Soft保持改进，以提升和改进团队的责任感，让他们在没有经理的条件下工作。同时也改进了与组织其他部分的合作，比如产品营销，（本地）支持和销售。
 Many OD changes happened since the start of the LeSS adoption, and many small things were improved in the course of the following years. These were less significant, but Y Soft kept improving to increase and improve the responsibility of the teams and work without managers. As well as improving the collaboration with other parts of the organizations like product marketing, (local) support and sales.
 
+CEO在LeSS导入的早期，第二次组织实验之前，表达了将SAFEQ迁移到LeSS Huge的愿望。Y Soft有增加市场份额和也许扩张市场的野心。迁移到LeSS Huge应该可以帮助他们实现这一点，包括增大团队规模。
 The CEO indicated the desire to move to LeSS Huge for SAFEQ early in their LeSS adoption, before the second OD experiment. Y Soft has the ambition to grow their market share and possibly extend markets, and the move to LeSS Huge should help to be able to grow on this, including the growth of the number of teams.
 
+比较显著的调整是Y Soft的联合创始人成为了SAFEQ的产品负责人。他非常有经验，跟（打印）供应商/合作伙伴以及大客户关系亲密，对产品了如指掌，因为他曾经就是（跟CEO一起）的初代开发工程师，对产品和代码一直都非常清楚。当他成为产品负责人后，我们对愿景的理解，对基于供应商和客户需求优先顺序的清晰度都得到了提升。因为得到了授权（他的决定也受到尊重），他不会因为组织“需要”，包括来自（打印）供应商和客户的反馈和学习，而改变方向，这会减少团队因切换客户领域而产生的认知负荷。团队没有了紧急需求，可以更加专注，即使我们有10个团队共同工作在一个产品待办列表上。一个连贯的产品愿景，清楚的优先顺序，产品负责人与团队良好的合作，改善了团队（感觉）的关注度。自从这个产品负责人，和一个组织内经验丰富的产品助理，加入到产品团队之后，内部干系人和外部客户的满意度更高了。团队有了更好的基线以方便未来的改善，更明白应该关注什么地方，以及为了长期利益应该学习什么。
 A significant adaptation was the co-founder of Y Soft becoming the PO for SAFEQ. He is experienced, has close contact with (print) vendors/partners and large customers and knows the product in and out, because he did initial development (with the CEO) and stayed close to the actual product and code. When he started as the PO, the understanding of the vision, clarity on priorities based on vendor and customer became higher. Because he has the mandate (and his decisions were respected), he wouldn’t change direction often based on “demands” from the organization, which limited the cognitive load for teams to switch between customer domains. Including adapting to feedback and learning from (print) vendors and customers. Teams didn’t have the urge anymore to have more focus, even when there were 10 teams working together on the Product Backlog. A consistent product vision, with clear priorities and a good collaboration between the PO and the teams improved the (feeling of) focus for teams. Since this PO - and a *Supporting PO* with a lot of experience in the organization - joined the product, there was more satisfaction from internal stakeholders and external customers. Teams had a better baseline to improve further and knew better where to focus on and what to learn for the long-term.
 
+在之前有关于迁移到LeSS Huge的多次讨论。敏捷教练和这个（新）产品负责人讨论把SAFEQ迁移到LeSS Huge的原因和后果。他们得出的结论是，迁移的原因是产品负责人无法理解SAFEQ的客户和市场的所有需求，进而不知道从中长期来说，应该关注在什么地方。（2021年春）讨论的时候，SAFEQ刚刚增长到了11个团队，而产品负责人表示他能够监管客户和市场的需求，以及产品待办列表的大部分主题。他提到，通过推进主题（发现和交付），以及必要时跟内部干系人和合作伙伴一起梳理的产品待办条目，团队已经成长得不错。可能他对产品、市场和重要供应商和客户的经验和知识帮助他有这个见识。如果在未来，他无法监管这些，就可以迁移到LeSS Huge中去。
 The discussion about moving to LeSS Huge had happened a few times before. The agile coaches discussed with the (new) Product Owner the reasoning and consequences of LeSS Huge for SAFEQ. They concluded that the main reason for moving to LeSS Huge would be the inability for the Product Owner to understand all customer and market needs for SAFEQ and as a corollary know where to focus on for the mid-long term. At the time of discussion (Spring 2021), SAFEQ had just grown to 11 teams, but the Product Owner concluded that he could still oversee the customer and market requests and the main topics of the Product Backlog. He mentioned that teams had grown in moving topics forward (discovery & delivery) and refined PBI’s with internal stakeholders and partners well when necessary. His experience and knowledge of the product, market and important vendors and customers probably helped in him having this overview.  If he cannot oversee it anymore in the future, a move to LeSS Huge can happen then.
 
+*反思*：尽管在LeSS规则中说过LeSS Huge是为了8个以上的团队，然而团队的数量不应该成为迁移到LeSS Huge（甚至分割成两个产品）的原因。人们能够共同合作的人数有限，但这个限制是基于上下文的，取决于产品本身，人的知识，复杂性，公司规模等等。第二，当整个产品——在这里几乎是整个组织——的规模在8个左右（比如13个，但不是50那么多），应该对为什么团队合作是一个问题的原因做深入分析。可能有更重要的根本原因需要解决，而不是“太多团队一起工作”。然而，当决定转变成两个产品的时候，并没有对这个问题做更深入的根因分析。例如，缺乏去分享好的产品愿景，频繁调整需求优先顺序，以及客户反馈的延迟。
 *Reflection*: Even though in the LeSS rules it states that LeSS Huge is for ‘8’+ teams, the number of teams shouldn’t be the main reason to move to LeSS Huge (or split into two products). There is some limit for the amount of people that work together, but this limit is contextual and depends on the product, the knowledge of people, the complexity, the size of the company, and more. Second, when the whole product - which in this case is almost the whole organization - is around this number of 8 (13,  and not e.g. 50), there should be dived into the root cause why teams working together is perceived as a problem. There are probably root causes that are more important to address than only ‘too many teams working together’. However, there was no deeper root cause analysis on the problems with this at the time of deciding to move to two products, e.g. the lack of sharing a good product vision, too often changing priorities and the delay of customer feedback.
 
 ## 3. Moving to two products
