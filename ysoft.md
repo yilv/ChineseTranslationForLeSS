@@ -11,7 +11,7 @@ Y Soft adopted LeSS in 2019. A differentiator of Y Soft’s LeSS adoption was no
 本文每个章节都描述了LeSS导入过程中组织设计变革的一次实验。每部分结构类似，如下：
 1. 背景
 2. 详述
-3. 检查：反思近期的组织设计变革
+3. 检视：反思近期的组织设计变革
 4. 适应：调整变革
   
 
@@ -101,7 +101,7 @@ Before the LeSS adoption, Y Soft experimented with a few OD elements on a small 
 
 All of these OD elements were limited, because the *organization around* the single team *didn’t change*. The team was more cross-functional, co-located and stayed long together. However, it was hard to self-manage, because they couldn’t deliver a working increment without help. And their ability to deliver end-to-end customer-centric features was only from their perspective, but not from the whole product’s perspective. However, from the small perspective they had, there were some minor benefits, work redesign and functions integrated that were organized in an ‘Undone’ unit before for their perspective. More explanation about these OD elements in the [OD elements section](#125-organizational-design-elements) of the first OD experiment.
 
-### 0.3 检查
+### 0.3 检视
 
 第一个特性团队的尝试以及进一步推广的失败，导致Y Soft的人员开始寻找外部的信息资料来弄清楚如何继续他们的Scrum导入。他们初尝了Scrum的益处，但是在没有*必要的组织变革*支撑下，他们无法收获到Scrum能够带来的全部收益。他们通过Google搜索找到了LeSS官网，并参加了当地的敏捷社区和活动，这引发了他们对LeSS的真正兴趣。特别是Jürgen De Smet在2016年布拉格敏捷大会上的演讲 [“组织是如何失控的”](https://youtu.be/QkGyVKl9CGE)，深深地吸引了他们。
 
@@ -435,7 +435,7 @@ As a corollary to the previous OD-element, LeSS defined what it means to be a te
 
 * *LeSS rule: The majority of the teams are customer-focused feature teams.*
 
-根据LeSS指南*理解特性团队*来创建特性团队，意味着围绕客户价值来组建团队，专注于客户领域而非技术领域（技术专长是在以客户为中心过程中一种偶然的专业化）。特性团队是稳定的、长期的团队，具备端到端交付以客户为中心的特性所需的知识与技能。如果并非如此，那么团队被期望去学习获取所需的知识与技能。这*并不*意味着每个团队可以*交付每个特性*。例如，一个较大的特性被分解为多个以客户为中心的部分（并非组件或技术模块），然后通常由不同的特性团队去完成交付。每个团队有能力交付这样的特性（或者通过学习获取能力来交付）。基于LeSS导入原则*采用志愿者*，当前团队通过自设计被重新组织为特性团队。另一种方式是随时间推移不断增加团队的范围和跨职能程度，比如使用*特性团队导入地图*（LeSS指南）。通过这种方式，团队随时间推移慢慢成长为特性团队。开发产品的团队在LeSS导入之初，通过自设计转变为跨职能的和以客户为中心的团队。他们不断优化以具备尽可能多的技能。更多详情，请参考[检查章节](#134-inspection-od-element-less-rule-the-majority-of-the-teams-are-customer-focused-feature-teams)。
+根据LeSS指南*理解特性团队*来创建特性团队，意味着围绕客户价值来组建团队，专注于客户领域而非技术领域（技术专长是在以客户为中心过程中一种偶然的专业化）。特性团队是稳定的、长期的团队，具备端到端交付以客户为中心的特性所需的知识与技能。如果并非如此，那么团队被期望去学习获取所需的知识与技能。这*并不*意味着每个团队可以*交付每个特性*。例如，一个较大的特性被分解为多个以客户为中心的部分（并非组件或技术模块），然后通常由不同的特性团队去完成交付。每个团队有能力交付这样的特性（或者通过学习获取能力来交付）。基于LeSS导入原则*采用志愿者*，当前团队通过自设计被重新组织为特性团队。另一种方式是随时间推移不断增加团队的范围和跨职能程度，比如使用*特性团队导入地图*（LeSS指南）。通过这种方式，团队随时间推移慢慢成长为特性团队。开发产品的团队在LeSS导入之初，通过自设计转变为跨职能的和以客户为中心的团队。他们不断优化以具备尽可能多的技能。更多详情，请参考[检视章节](#134-inspection-od-element-less-rule-the-majority-of-the-teams-are-customer-focused-feature-teams)。
 
 Creating Feature Teams according to the LeSS guide *Understanding Feature Teams*, means that the team organize around customer value and specialize in customer domain instead of technological domain (technological specialization is an accidental specialization as it follows the customer-focus). A Feature Team is a stable, long-lived team with the necessary knowledge and skills to complete an end-to-end customer-centric feature. If not, the team is expected to learn or acquire the needed knowledge and skill. This *doesn’t* mean that every team can *deliver every feature*. For example, a big feature is splitted into customer-centric parts (instead of component or technology parts) and delivered by - often - different Feature Teams. Each team can deliver that feature (or learns or acquires to do so). In the LeSS Adoption Principle *Use Volunteering*, teams can be formed by self-design to redesign the existing teams into Feature Teams. Another option is to grow the scope and cross-functionality over time, for example using the *Feature Team Adoption Map* (LeSS guide). This way, the teams over time grow to Feature Teams. The teams working for the product redesigned themselves at the start of the LeSS adoption to become cross-functional and customer-focused. They optimized to have as many skills in their team as possible. More about that in [the inspection section](#134-inspection-od-element-less-rule-the-majority-of-the-teams-are-customer-focused-feature-teams).
 
@@ -478,7 +478,7 @@ Many organizations are structured around functional specializations like test, d
 
 In Scrum, teams finish complete customer-centric Product Backlog Items each iteration. This has a big impact on the organization of work, but also at the design of the work. Important in this is to design the work with broader responsibilities for teams from a customer perspective. As a logical consequence of having *component teams*, the work design within Y Soft was focused on components, technology and functions. When starting the LeSS adoption, the work was redesigned to cover customer-centric Product Backlog Items, combining tasks (of different *components* and *functions*) in the *feature teams*.
 
-从LeSS原则“以小为大”的角度审视检查[组织设计原则](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html) 
+从LeSS原则“以小为大”的角度检视[组织设计原则](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html) 
 
 Inspecting at the [organization design principles](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html) from the LeSS principle More with LeSS:
 
@@ -508,41 +508,41 @@ We use the following organizational design principles to descale into LeSS organ
 6. From Projects to Products: for R&D there were no more projects and all work came from a single Product Backlog. Though there were projects outside R&D, they had limited impact on the teams, sometimes there were PBI’s on the Product Backlog that originated from a project. These projects were used for e.g. marketing.
 7. From Many Small Products to a Few Broad Products: instead of having *component teams* working on specific components and functional teams working on functions, the definition of the single product was redefined to one with many teams working on the same product. A good first step moving from many small products to one broad product. Outside this product, there were some other (still small) products in the company, but the product was the main product for Y Soft at the time.
 
-### 1.3 检查 Inspect
+### 1.3 检视 Inspect
 
-在这一部分，我们将对组织设计（OD）实验进行检查，重点关注OD的变化以及LeSS的实施情况。首先，我们将进行一般性检查，然后针对随LeSS实施而改变的OD元素进行具体检查。
+在这一部分，我们将对组织设计（OD）实验进行检视，重点关注OD变化以及LeSS导入。首先，我们将进行一般性检视，然后针对随LeSS导入而改变的OD元素进行具体检视。
 
 In this section, there is an inspection on the Organizational Design (OD) experiment by looking at the OD changes and the LeSS adoption. First, a generic inspection, and later an inspection on the OD-elements that were changed with the start of the LeSS adoption.
 
-#### 1.3.1 第一个组织设计实验的一般性检查 Generic inspection of the first OD experiment
+#### 1.3.1 第一个OD实验的一般性检视 Generic inspection of the first OD experiment
 
-通过LeSS实施，Y Soft获得很多收益，即使在最初动荡不适的3个月（如下）。 首先，未来全部的工作被整合为一份产品待办，并且由一位产品负责人确定优先级。尽管刚开始还不完美，但是团队确实更清楚了解了工作优先级，并且能相对容易的自行决策。其次，团队能够更好的看到和理解完整的产品，此外在交付以客户为中心的特性时，也展现出更高的端到端能力。第三，由于团队跨职能和跨组件能力提升，以及共同承担责任，等待队列和等待时间减少了。第四，瓶颈被消除，同时共享的“流程”也有所改进，如执行回归测试，修复缺陷，运维支持和产品发布。关于最后一点的更多介绍，请参考 [1.3.6](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work).
+Y Soft通过LeSS导入获得很多收益，即使在最初动荡“痛苦”的3个月（如下）。首先，未来全部的工作被整合为一份产品待办列表，并且由一位产品负责人确定优先级。尽管刚开始还不完美，但是团队确实更清楚了解了工作优先级，并且能相对容易地自行决策。其次，团队能够更好地看到和理解完整的产品，并且能交付比以前更端到端的以客户为中心特性。第三，由于团队跨职能和跨组件能力提升，以及共同承担责任，等待队列和等待时间减少了。第四，消除了瓶颈，并改进了共享的“流程”，如执行回归测试、修复缺陷、运维支持和产品发布。关于最后一点的更多介绍，请参考[1.3.6](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work)。
 
 Y Soft experienced big benefits from the LeSS adoption, even though the first 3 months were bumpy and considered ‘painful’ (see below). First, all the future work was collected in one Product Backlog and was prioritized by a single Product Owner. Though this wasn’t perfect yet, teams had more clarity about priorities and could make decisions easier themselves. Second, teams were better able to see and understand the whole product, and additionally able to deliver customer centric features more end-to-end than before. Third, there were less queues and waiting time because of the improved cross-functionality and cross-component nature of teams and the shared responsibility of teams. This is the fourth main benefit: removed bottlenecks and improvements on shared ‘processes’, like executing regression tests, solving bugs, having support duty and releasing the product. More reflection on the last point is in [this section](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work).
 
-在LeSS实施启动后，新成立的特性团队开始了第一个迭代的工作。团队开始端到端的交付完整特性。这些特性功能更加以客户为中心（尽管还不完美）。对于组织的其它部分，研发不再是一个黑盒子，因为产品待办事项和团队当前进行工作变得更加透明。Y Soft内部的利益相关者能更好的理解研发内容，并能够更好的在工作中利用这些信息，例如，在与客户沟通中（例如产品营销）。
+在启动LeSS导入后，新成立的特性团队开始了第一个迭代的工作。团队开始端到端地交付完整特性。这些特性更加以客户为中心（尽管还不完美）。对于组织的其它部分，研发不再是一个黑盒子，因为产品待办列表和团队当前进行的工作变得更加透明。Y Soft内部的利益相关者能更好地了解在被开发的内容，并能够更好地在他们的工作中使用这些信息，例如，在与客户沟通中（为比如产品营销）。
 
 After the start of the LeSS adoption, the newly formed feature teams started working in the first Sprint. Teams were delivering whole features end-to-end. These features were more customer-centric (though not perfect yet). For the rest of the organization, R&D was less of a black box, because of the higher transparency of the Product Backlog and what the teams were working on. Stakeholders within Y Soft had better understanding of what was developed and could better use this in their work, e.g. in communication with customers (for e.g. product marketing).
 
-Y Soft已经高度聚焦客户：客户需求被认真对待并优先处理，与供应商（合作伙伴，销售整合了Y Soft打印管理解决方案的打印机）紧密协作。Y Soft的员工对产品充满热情，渴望推动产品发展并向客户交付价值。在LeSS采纳开始后，团队与客户和供应商之间的直接联系更加紧密，因为他们正在开发以客户为中心的特性，而不是仅仅关注组件需求。
+Y Soft已经高度聚焦客户：客户需求被认真对待并优先处理，与供应商（销售打印机的合作伙伴，他们在打印机里嵌入了Y Soft打印管理解决方案）紧密协作。Y Soft的员工对产品充满热情，渴望推动产品发展并向客户交付价值。在LeSS导入开始后，团队与客户和供应商之间的直接联系更加紧密，因为他们现在开发以客户为中心的特性，而不是仅仅关注组件需求。
 
 Y Soft already had a high customer focus: customer requests are taken seriously, get priority and the collaboration with ‘vendors’ (the partners that sell the printers with the print management solution of Y Soft embedded) is intensive. People in Y Soft are passionate about the product and eager to move things forward and deliver value to customers. After the start of the LeSS adoption, teams got more in direct touch with customers and vendors, because they were working on customer-centric features instead of component requirements.
 
-然而，已有痛点的透明化也有不利的一面，这也是团队实施Scrum过程中非常可预见的情况：一些人把这些痛点归咎于新的工作方式和LeSS。 人们需要与他人分享知识（有些人并不喜欢这样）；需要做回归测试，但之前这不是必须的；需要共同进行产品待办事项列表的梳理细化，而之前只是部分人创建需求而已，等等。人们没有努力改进系统，而是互相指责。这杯关注“效率”和“产出”（而非“成果”）的团队经理所强化，他们推动团队快速完成工作，而不是聚焦质量和产品改进。这种推动当然是由历史上的“效率和产出”管理指标和奖金所驱动的，尽管这些指标和奖金已经被取消，但人们还没有因此改变他们的行为。然而，高层管理仍然关注所谓的“速度”，即团队在一个迭代中所完成的工作量。这种关注最初加剧了这种行为，尽管这并没有与之相关的奖金。后来，当事情逐渐稳定下来，新的产品负责人 (参考 [章节3.2.4](#324-change-of-product-owners))上任后，团队感受到的压力才慢慢减少。
+然而，已有痛点的透明化也有不利的一面，这也是团队导入Scrum过程中非常可预见的情况：一些人把这些痛点归咎于新的工作方式和LeSS。大家需要与他人分享知识（有些人并不喜欢这样）；需要做回归测试，但之前这不是必须的；需要共同进行产品待办列表的梳理细化，而之前只是部分人创建需求而已，等等。一些人没有努力改进系统，而是互相指责。一些关注“效率”和*产出*（而非*成果*）的团队经理强化了这种状况；他们推动团队快速完成工作，而不是聚焦质量和产品改进。这种推动自然是由历史上的“效率和产出”管理指标和奖金所驱动的，尽管这些指标和奖金已经被取消，但人们还没有因此改变他们的行为。然而，高层管理仍然关注所谓的“速度”，即团队在一个迭代中所完成的工作量。这种关注最初延续了这种行为，尽管这并没有与之相关的奖金。后来，当事情逐渐稳定下来，新的产品负责人 (参考 [章节3.2.4](#324-change-of-product-owners))上任后，团队感受到的压力才慢慢减少。
 
 However, the transparency of the old pains also had a downside, a very predictable one familiar to groups adopting Scrum: some people blamed the new way of working and LeSS for these pains. People needed to share their knowledge with other people for whole product knowledge (which some people didn’t like), people had to do regression testing while they didn’t have to do that before, doing Product Backlog Refinement together while before some people created requirements etc. Instead of working to improve the system, the blaming prevailed. This was reinforced by some of the managers of the teams that were focusing on “efficiency” and *output* (not *outcome*), and they pushed teams into doing the things fast, and not always focusing on quality and improving the product. And that pushing of course was driven by historic “efficiency and output” management measurement and bonuses, which were removed, but people didn’t change their behavior based on that yet. However, there was still focus of top management on so-called “velocity”, the amount of work that teams did in a Sprint. That continued this behavior initially, even though there were no bonuses attached to it. Later, when things settled down and the new Product Owner (see [this section](#324-change-of-product-owners)) came, slowly the feeling of teams to get pressured decreased.
 
-总体来说，最初的几个迭代被描述为“痛苦的”，但它们带来了大量的透明度，为持续改进工作奠定了基础。在外部支持下，产品总监和Scrum Master们持续努力深度优化产品开发过程，这是一段曲折而挑战的旅途。
+总体来说，最初的几个迭代被描述为是“痛苦的”，但它们带来了大量的透明度，为持续改进工作奠定了基础。在外部支持下，产品总监和Scrum Master们持续努力进一步优化产品开发过程，这是一段曲折而挑战的旅途。
 
 All in all, the first Sprints were described as ‘painful’, but they brought a lot of transparency to continue working on improvement. With some external support, the Head of Product and the Scrum Masters kept working on improving product development further, which was a bumpy ride.
 
-几个月后，产品开发方面似乎有了很多改进。虽然价值没有被度量，但团队的产出和可预测性方面有了明显进步。团队将这一点视为自身的重要改进，即使产出（不同于*成果*）如果不带来价值且不直接有助于适应性提升，就不那么重要。其他被视为改进的迹象还有：
+几个月后，产品开发方面似乎有了很多改进。虽然价值没有被度量，但团队的产出和可预测性方面有了明显进步。团队将这一点视为自身的重要改进，尽管产出（不同于*成果*）如果不带来价值且不直接贡献于适应性的话并不那么重要。其他被视为改进的迹象还有：
 
 * 客户和供应商直接参与了一些主要特性的开发。
 * 内部利益相关者对更好的特性开发结果表示感激。
 * 内部利益相关者与团队之间的合作更加紧密。
-* 更多的产品待梳理活动（PBR）促进互动，团队之间分享和学习的机会更多。
-* 更清晰透明的产品待办事项，更明确（且艰难的）特性优先级决策。
+* 更互动的PBR，团队之间更多的分享和学习。
+* 更清晰透明的产品待办列表，更明确（且艰难）的特性优先级决策。
 * 团队对现有的工作方式显然更加满意。
 
 After a few months, there seemed to be a lot of improvements in the product development. Though value was still not measured, the output and predictability of teams had grown massively. Teams felt this as important improvements for themselves, even though output (vs *outcome*) is not important if it doesn’t bring value and doesn’t contribute directly to adaptiveness. Some other signs that felt like improvements:
@@ -554,20 +554,20 @@ After a few months, there seemed to be a lot of improvements in the product deve
 * More transparency on the Product Backlog and more explicit - and hard - decisions taken on the priority of features.
 * Teams were visibly happier about the way of working.
 
-尽管大多数团队都感到更加满意，但在LeSS实施的第一年，Y Soft流失了大约20%的员工。这些人可能感觉是被迫改变到LeSS，而不是自愿的。由于该产品是公司的一个主要产品，员工内部调动到其他部门的选择有限。如果公司能更好地传达自愿选择参与的规则，并为员工设定好期望，也许能阻止部分员工的离职。说明：后来CEO发现员工薪资低于市场平均水平，于是他大幅提高了研发部门每个人的薪资，使其高于平均水平。一些人员提到薪酬是他们离职的原因。
+尽管大多数团队都感到更加满意，但在LeSS导入的第一年，Y Soft流失了大约20%的员工。这些人可能感觉是被迫加入到LeSS变革中，而不是自愿的。由于该产品是公司的一个主要产品，员工内部调动到其他部门的选择有限。如果公司能更好地传达自愿的真实选项，并管理好大家的期望，也许能阻止部分员工的离职。说明：后来CEO发现员工薪资低于市场平均水平，于是他大幅提高了研发部门每个人的薪资，使其高于平均水平。一些人员提到薪酬是他们离职的原因。
 
 Though most teams were happier, Y Soft lost around 20% of the people in the first year of the LeSS adoption. People might have felt forced into the change to LeSS, instead of being a volunteer. As the product is the one big product of the company, there were limited options to move to other parts of the organization. Communicating well about the real option of volunteering and setting expectations with people well, could have prevented part of the people leaving. Note: later the CEO found out that the compensations were below average compared to the market, and he increased the compensations massively for everyone in R&D to get above average. For some people leaving, compensation was the reason they mentioned.
 
 ##### 重新对齐工作坊 Re-Alignment Workshop
 
-几个月后，Y Soft意识到他们在LeSS实施方面需要帮助。他们请Jürgen De Smet组织了一系列的工作坊，以检查LeSS的实施情况，进一步改进，并为下一步向LeSS Huge的翻转做准备。第一场工作坊是重新对齐工作坊，旨在更好地了解组织系统，并能够识别哪些系统变量需要改进。CEO、产品总监、研发管理层和Scrum Master代表参加了这个工作坊。
+几个月后，Y Soft意识到他们在LeSS导入方面需要帮助。他们请Jürgen De Smet组织了一系列的工作坊，以检视LeSS导入的情况、进一步改进，并为下一步转向LeSS巨型作准备。第一场工作坊是重新对齐工作坊，旨在更好地了解组织系统，并能够识别哪些系统变量需要改进。CEO、产品总监、研发管理层和Scrum Master代表参加了这个工作坊。
 
 After a few months, Y Soft realized that they needed help with their LeSS adoption. They asked Jürgen De Smet to do a series of workshops to inspect the LeSS adoption, improve further and help prepare for a future move to LeSS Huge. The first of these workshops was a re-alignment workshop to get a better understanding of the organizational system and be able to determine which system variables to improve. The CEO, Head of Product, R&D management and Scrum Master representatives participated in this workshop.
 
-参会者们创建了一个*系统模型*（因果循环图），并识别了一些趋势指标来定期评估所采取的措施是否有助于整体系统改进。这次工作坊提出的主要评估指标包括：
+参会者们创建了一个*系统模型*（因果回路图），并识别了一些趋势指标来定期评估所采取的措施是否带来了整体系统改进。这次工作坊提出的主要评估指标包括：
 
 * 合并PR的时间
-* 特性与其他类型PBI（产品待办事项）的比例
+* 特性与其它类型PBI的比例
 * 修复构建失败的时间
 * 修复缺陷的时间
 * 每个迭代的预估商业价值
@@ -586,7 +586,7 @@ The participants created a *system model* (causal loop diagram) and identified t
 * Predictability of Sprint delivery
 * Predictability of Release delivery
 
-得出的因果回路图的如下： The resulting causal loop diagram:
+得出的因果回路图如下： The resulting causal loop diagram:
 
 <figure>
   <img src="img/case-studies/ysoft/systems-model-re-alignment.png" alt="System Model of re-alignment">
@@ -598,18 +598,18 @@ The participants created a *system model* (causal loop diagram) and identified t
   <img src="img/case-studies/ysoft/systems-model-re-alignment-zoomed.png" alt="System Model of re-alignment Zoomed">
 </figure>
 
-这次工作坊和识别出的系统评估指标让团队更好的理解组织系统。他们在一段时间内收集了许多洞见，但并未专注于分享认知从而聚焦改进。参会者选择关注的指标主要集中在“迭代交付的可预测性”、“特性与其他类型PBI的比例”以及“合并PR的时间”。而团队尤其经常使用前两个指标来检查进度，并确定改进方向。请注意，可预测性指标并*不*是Scrum和LeSS所期望的，因为优化的目标是*适应性提升以发现最高的客户价值或提升客户满意度*，这在某些情况下与可预测性是背道而驰的。对可预测性的需求也源于过去，那时因为各种原因客户需求和协议未能满足。产品营销和CEO希望提高可预测性，以便能够更好地与客户达成协议。只要交付时间满足他们共同设定的时间（或更早），他们就没有交期的压力。自采用LeSS以来，团队设定了预期的交付日期，而不是像以前那样由项目经理设定截止日期。工作坊的目的是让Y Soft的人员找出自己的指标，而对指标结果的讨论并没有给予太多重视。
+这次工作坊和识别出的系统评估指标让团队更好地理解组织系统。他们在一段时间内收集了许多洞见，但并未专注于形成共识以真正改进。参会者选择关注的指标主要集中在“迭代交付的可预测性”、“特性与其它类型PBI的比例”以及“合并PR的时间”。而团队尤其经常使用前两个指标来检视进度，并确定改进方向。请注意，可预测性指标并*不*是Scrum和LeSS所追求的，因为优化目标是*适应性提升以发现最高的客户价值或满意度*，这在某些情况下与可预测性是背道而驰的。对可预测性的需求也源于过去，那时因为各种原因客户需求和协议未能满足。产品营销和CEO希望提高可预测性，以便能够更好地与客户达成协议。只要交付时间满足他们共同设定的时间（或更早），就没有交期的压力。自从LeSS导入以来，由团队设定预期的交付日期，而不是像以前那样由项目经理设定截止日期。工作坊的目的是让Y Soft的人员找出自己的指标，而很少精力放在对指标的具体目标的讨论。
 
 The result of the workshop and the system metrics led to better understanding. They collected many of the insights for a while, but didn’t focus on shared understanding to really improve them. The metrics the participants chose to focus on were mostly ‘predictability of Sprint delivery’, ‘ratio features vs other types of PBI’s’ and ‘time to merge pull requests’. Teams used especially the first two often to check progress and identify further improvements. Note that the predictability metrics are *not* what is desired in Scrum and LeSS, because the optimization goal is to be *adaptive to discover highest customer value or delight*, which in some cases is the opposite of predictability. The need for predictability also originated from the past, where customer requests and agreements were not met for all sorts of reasons. Product marketing and the CEO wanted more predictability to be better able to make agreements with customers. There was no pressure from them to have it as soon as possible, as long as the delivery would be at the time (or earlier) they set together. Since the LeSS adoption, teams set the expected dates of delivery, in contrast to the previous project manager set deadlines. The intention of the workshop was to let the people from Y Soft find out their own metrics, and little emphasis was on the discussion of the results of metrics.
 
-产品开发系统动力学建模的结果在后续工作坊中被充分利用，该工作坊聚焦于成熟度模型及创造新的组织设计。这是一个聚焦改进的Kata工作坊，旨在确定如何逐步达成达下一个目标。
+对产品开发系统动态建模的结果被用来作为后续关于成熟度模型及创造新的组织设计的工作坊的基础。后续工作坊是一个改进Kata工作坊，旨在确定如何逐步达成下一个目标。
 
 The results from the product development system dynamics modeling were used as the foundation for the follow-up workshop on maturity models and creating a new organizational design. The follow-up workshop was an Improvement Kata workshop to identify steps to the next target condition.
 
 工程师、Scrum Master和管理层参加了为期两天的成熟度模型工作坊。这个由不同角色组成的参会者群体定义了Y Soft背景下的“成熟度”含义，并确定了哪些角色和元素与成熟度模型相关。这导致了不同类别的多个成熟度模型：
 
 * 被授权的自驱型团队
-* 产品待办事项
+* 产品待办列表
 * Scrum Masters
 * 经理
 * 技术卓越
@@ -622,14 +622,14 @@ Engineers, Scrum Masters and management participated in the two-day maturity mod
 * Managers
 * Technical excellence
 
-参会者分别为每个类别定义了领域。例如，在“被授权的自驱型团队”这一类别中，参会者定义了如“工程技能水平”和“处理客户反馈”等领域。对于每个领域，他们都描述了五个成熟度级别的定义。例如，“工程技能水平”的第三级被描述为：“通过自行设计交付功能：我们能够自行设计和交付功能。如果团队中包含新手，他们会得到适当的支持（但不会受到持续的监督或检查），并且会为他们制定发展计划。”
+参会者分别为每个类别定义了不同方面。例如，在“被授权的自驱型团队”这一类别中，参会者定义了如“工程技能水平”和“处理客户反馈”等方面。对于每个方面，他们都描述了五个成熟度级别的定义。例如，“工程技能水平”的第三级被描述为：“自行设计交付功能：我们能够自行设计和交付功能。如果团队中包含新手，他们会得到适当的支持（但不会被持续的监督或检查），并且会为他们制定发展计划。”
 
 The participants defined areas for each category. For example, for the category ‘empowered self-driven teams’, the participants defined areas like ‘engineering skill level’ and ‘process customer feedback’. For each area, they described the definition of the five maturity levels. For example the description of level 3 of ‘engineering skill level’ was described as: ‘delivering features by our design: We are able to design and deliver the feature on our own. Where the team includes novices, they are appropriately supported (but not supervised or checked constantly) and their development planned.’
 
-CEO、产品总监、研发中层管理者和一名Scrum Master讨论了得出的成熟度模型。一位外部顾问对现状（每个类别）进行了分析。在准备过程中，Scrum Master使用了之前工作坊的结果以及这项分析，选择了几个主题与CEO、产品总监和管理层进行讨论：
+CEO、产品总监、研发中层管理者和一名Scrum Master讨论了生成的成熟度模型。一位外部顾问对现状（每个类别）进行了分析。在准备过程中，Scrum Master使用了之前工作坊的结果以及这项分析，选择了几个主题与CEO、产品总监和管理层进行讨论：
 
-* 组织结构（包括LeSS Huge）
-* 产品和产品区域定义及设置（包括待办事项）
+* 组织结构（包括LeSS巨型）
+* 产品和产品领域定义及设置（包括待办列表）
 * 该结构内的角色与职责
 * 社区
 * 成为技术领导者的使能因素
@@ -646,7 +646,7 @@ The CEO, Head of Product, middle management of R&D and one Scrum Master discusse
 * Information flow and availability within the structure
 * KPI structures
 
-经过讨论后，该小组对部分主题进行了改进。其中之一是解散架构团队，并让架构师加入各个团队。这次检查有效推进了当前组织设计和LeSS实施的优化。
+该小组经过讨论后改进了部分主题。其中之一是解散架构团队，而让架构师加入各个团队。这次检视有效推动了当前组织设计和LeSS导入的改进。
 
 The group improved some of these topics after the discussion. One of the improvements was the dissolution of the architectural team, and instead architects joining the teams. This inspection led to improvements in the current OD and LeSS adoption.
 
@@ -656,7 +656,7 @@ The group improved some of these topics after the discussion. One of the improve
 
 One of the teams in Prague invited the CEO to participate for two full days to work with them. In those two days, he joined all their meetings and participated in mob programming sessions (including coding, he started developing the product himself when he founded the company) to do actual product development.
 
-他在给公司全员的博客中，关于这两天的几个亮点：
+他在给公司全员的博客中关于这两天的几个亮点：
 
 Some highlights from his blog to the whole company about these two days:
 
@@ -664,17 +664,17 @@ Some highlights from his blog to the whole company about these two days:
 
 ‘After some time, I feel I have information worth sharing with everyone.’ [...]
 
-“我很高兴接受来自布拉格研发办公室<*已移除的团队名*>团队的邀请，与他们共度了几天。我原以为重新当两天工程师不仅会很有趣，还可以帮助我解释为什么我们的效率不能进一步提升。但实际上，这次体验比我预期的还要棒，所以我决定与全世界分享我的经历和发现。”
+“我很高兴接受来自布拉格研发办公室<*已移除的团队名*>团队的邀请，与他们共度了两天。我原想重新当两天工程师不仅会很有趣，还可以帮助我解释为什么我们的效率不能进一步提升。但实际上，这次体验比我预期的还要棒，所以我决定与全世界分享我的经历和发现。”
 
 ‘I welcomed the initiative of the \<*removed team name*\> team from Prague’s R&D office to join them for a couple of days. I thought becoming an engineer (again) for two days would not only be fun, but it can also help me to explain some reasons, why we aren't more efficient. It was actually even a greater experience than I expected, so I decided to share my experience and findings with the entire world.’ [...]
 
 <u>第一天 Day 1</u>
 
-“第一天，我们正在排查某个组件（及其功能）的缺陷。在升级到该工具的新版本后，看上去似乎需要在备份前进行一些额外的配置。我们采用了‘集体编程’（Mob Programming）。团队大约有6个人，只有一台电脑，并且每15分钟，我们就会更换坐在电脑前的人。一开始，我认为这非常低效，我相当肯定，这个工作由两个人做会快得多。但两个小时后，我意识到，由于采用了这种方式，整个团队 - 之前并不熟悉我们正在排查的SAFEQ部分 - 都获得了关于它的知识和经验。就连我，之前从未见过名为（工具名）的安装工具，也能很快编写代码。我从不相信自己能这么快地做出贡献，但幸亏‘集体编程’，我学得非常快。” [...]
+“第一天，我们正在排查某个组件及其功能的缺陷。在升级到该工具的新版本后，看上去似乎需要在备份前进行一些额外的配置。我们采用了‘集体编程’（Mob Programming）。团队大约有6个人，只用一台电脑，并且每15分钟我们就会更换坐在电脑前的人。一开始，我认为这非常低效，我相当肯定这个工作由两个人做会快得多。但两个小时后，我意识到，由于采用了这种方式，整个团队 - 之前并不熟悉我们正在排查的SAFEQ部分 - 都获得了关于它的知识和经验。就连我，之前从未见过名为（工具名）的安装工具，也能很快编写代码。我从不相信自己能这么快地做出贡献，但幸亏‘集体编程’，我学得非常快。” [...]
 
 ‘The first day we were troubleshooting a defect in \<*name of component and what it does*\>. After upgrade to a new version of the tool, it seemed that some additional configuration needs to happen before the backup can be launched. We used a technique called Mob Programming. We had about 6 people in the team, one computer and each 15 minutes, we changed who is sitting behind the keyboard. At the beginning, I thought it was very inefficient and I was pretty sure, that just two people working on it would be much faster. After two hours I realized, that thanks to the technique, the whole team – who was not familiar with the part of SAFEQ we’ve been troubleshooting – gained the knowledge and experience about it. Even I, who never seen the installation tool called \<*name*\> before, was able to write code pretty fast. I would never believe that I can actually contribute this fast, but thanks to the mobbing I learnt so quick.’ [...]
 
-“真正让我高兴的是，当我向团队提出挑战，告诉他们仅仅修复一个缺陷并不能改善客户体验时，团队实际上却非常严肃地对待了这个问题，除了解决问题本身，还做出了额外的改进：一旦安装了\<*工具\>*，工具可以实现自动配置数据库。这才是我们正确的工作方式：每当修复问题时，我们应该总是问自己，如何能让客户体验更好？而且这还不是全部。团队还将\<*工具*\>的配置文件纳入规范的代码管理，这将简化未来可能得配置文件修改工作。所以，现在的代码比之前要整洁了一些。再次强调，这是一个小的、快速的改进。但是，如果我们每次修复缺陷时都做出这样小而不显著的改进，SAFEQ 将会变得越来越出众。”
+“真正让我高兴的是，当我向团队提出挑战，告诉他们仅仅修复一个缺陷并不能改善客户体验时，团队真的严肃地对待了这个问题，除了解决问题本身，还做出了额外的改进：一旦安装了\<*工具\>*，工具可以实现自动配置数据库。这才是我们正确的工作方式：每当修复问题时，我们应该总是问自己，如何能让客户体验更好？而且这还不是全部。团队还将\<*工具*\>的配置文件纳入规范的代码管理，这将让未来改动起来很容易。所以，现在的代码比之前要整洁了一些。再次强调，这是一个小的、快速的改进。但是，如果我们每次修复缺陷时都做出这样小而不显著的改进，SAFEQ 将会变得越来越出众。”
 
 ‘What really made my day was when I challenged the team, that just fixing a defect will not improve customer experience. The team actually took it seriously and added an incremental improvement: once \<*tool\>* is installed, now it will be automatically configured for the database. This is the right way, how we should work: when we are fixing something, we should always ask, how can we improve customers’ life? But that’s not all. The team also took the \<*tool*\> configuration files and put them under standard source code control, which will make it very easy for future changes. So the code is now a little bit cleaner. Again, small quick improvement. But if we do small, insignificant, improvement with every defect we fix, SAFEQ will become significantly better.’
 
@@ -682,7 +682,7 @@ Some highlights from his blog to the whole company about these two days:
 
 * 集体编程（Mob Programming）应该更频繁地用作一种学习方法，或者用于快速培训新员工。
 * 大量不同的工具会大幅降低效率。我们需要努力简化并更好地记录如何使用这些工具（尤其是那些较少使用的工具）。
-* 通过修复小错误来做出小的改进是可行的，从而不断改善SAFEQ用户和管理员的产品体验。”
+* 通过修复小错误来做出小的改进，从而不断改善SAFEQ用户和管理员的产品体验，这是可行的。”
 
 ‘To sum up my key takeaways:
 
@@ -692,19 +692,19 @@ Some highlights from his blog to the whole company about these two days:
 
 <u>第二天 Day 2</u>
 
-“我们组织了一次梳理会议。这次会议的目的是深入探讨某个\<*主题*\>，并细化它如何创造价值，需要完成哪些工作，以及工作量评估。这些信息随后将被产品营销团队用于路线图规划。主要发现是团队的业务知识不足。大家并不清楚为什么\<*主题*\>很重要。”
+“我们组织了一次梳理会议。这次会议的目的是深入探讨某个\<*话题*\>，并梳理它如何创造价值、需要完成哪些工作，以及工作量评估。这些信息随后将被产品营销团队用于路线图规划。主要发现是团队的业务知识不足。大家并不清楚为什么\<*话题*\>很重要。”
 
 ‘We started with a refinement session. The purpose of it is to dive deeper into a certain topic and refine how it delivers value, what needs to happen and estimate efforts. These inputs are later used by product marketing for roadmap planning. The main takeaway was that there is not enough business knowledge. The teams did not have a clear idea, why \<*topic*\> is important.’ [...]
 
-“当梳理会议中至少有一位参会人了解(\<*示例主题*\>)时，会议会非常高效，并且也帮助很多人熟悉具体问题。估算过程富有建设性而又高效。这是一次很好的经验。”
+“当梳理会议中至少有一位参会人了解(\<*示例主题*\>)时，会议会非常高效，并且也帮助很多人熟悉具体问题。估算过程富有建设性而又高效。这是一次很好的体验。”
 
 ‘When the refinement session had at least one knowledgeable person (\<*example topic*\>), the meeting was very productive and it also helped many people to get acquainted with the specific problem. The estimation process was constructive and efficient. Good experience.’
 
-“之后我进行了\<*部分产品*\>的回归测试。虽然这个过程有详细的文档记录，但这\<*部分产品*\>的问题依旧花费了我大约一个小时的时间。说实话，这份工作相当无聊。我把工程师定义为是那种宁愿花3个小时去做自动化，而不愿意花1小时去手工做这类事情的人……但我得赶火车回布尔诺，所以我只好手动完成了。” [...]
+“之后我进行了\<*部分产品*\>的回归测试。虽然这个过程有详细的文档记录，但相关问题依旧花费了我大约一个小时的时间。说实话，这份工作相当无聊。我把工程师定义为是那种宁愿花3个小时去做自动化，而不愿意花1小时去手工做这类事情的人……但我得赶火车回布尔诺，所以我只好手动完成了。” [...]
 
 ‘After that I took regression testing of \<*part of product*\>. The process was well documented, but troubles with <part of product> cost me about an hour. To be honest, this work was rather boring. I define an engineer as someone, who would rather spend 3 hours by automation of something, that would manually take them about one hour… But I had to catch a train back to Brno so I did it manually.’ [...]
 
-“我在火车上小憩了一会儿，梦想着有一天，我们的工程师将不再需要执行没有带来增值的简单管理工作步骤，因为即使是\<*组件名称*\> 的回归测试也将实现自动化。毕竟，整个IT行业都是关于自动化的，不是吗？”
+“我在火车上小憩了一会儿，梦想着有一天，我们的工程师将不再需要执行没有带来增值的简单管理工作步骤，因为即使是\<*组件名称*\> 的回归测试也将实现了自动化。毕竟，整个IT行业都是关于自动化的，不是吗？”
 
 ‘I took a short nap in the train dreaming about the day, when our engineers won’t need to do simple admin steps with no value add because even \<*component name*\> regression will be automated. Afterall, the whole IT industry is about automation, isn’t it?’
 
@@ -712,7 +712,7 @@ Some highlights from his blog to the whole company about these two days:
 
 * 梳理工作有了显著改善，但前提是要有相关知识背景的人参与
 * 我们对Epics如何交付价值以及它们的重要性缺乏足够的了解
-* 我们在自动化方面虽然取得了很大进步，但我们仍然在花费大量时间进行手动测试（但与一年前相比，现在的情况已经得到了显著改善）。”
+* 我们在自动化方面虽然取得了很大进步，但仍然在花费大量时间进行手动测试（但与一年前相比，现在的情况已经得到了显著改善）。”
 
 ‘Key takeaways from day 2 are:
 
@@ -720,63 +720,63 @@ Some highlights from his blog to the whole company about these two days:
 * We don’t have enough understanding how Epics deliver value and how important they are
 * We improved a lot with automation, but we are still spending significant time on manual testing (but it is now improved in order of magnitudes compared to where we’ve been a year ago).’
 
-#### 1.3.2 检查组织设计元素： LeSS规则：使用真实的团队作为基本组织建设单元来构建组织 Inspection OD-element: LeSS Rule: Structure the organization using real teams as the basic organizational building block.
+#### 1.3.2 检视组织设计元素：LeSS规则：使用真正的团队作为基本组织构建块。Inspection OD-element: LeSS Rule: Structure the organization using real teams as the basic organizational building block.
 
-从LeSS实施启动的四天活动开始，形成了一个单一的产品待办事项列表，团队直接从产品待办事项列表中挑选工作。为了让团队能够按照客户价值来选择这些工作，并了解需要学习什么（技能），产品战略和愿景需要清晰透明，然而很明显，在这一领域我们过于薄弱。例如，在产品待办事项列表梳理会（Product Backlog Refinement）中，产品负责人无法很好地解释需要什么，甚至在梳理细化过程中，有时优先级也会发生变化。Y Soft的员工习惯于在*项目*中工作，并将工作分解为不同功能任务和组件任务分配给不同的团队。从产品视角看，新工作模式对产品营销、产品负责人以及其他组织部门来说都是一个巨大的变化。以团队作为构建基础需要这样的改变，但ScrumMasters和VP低估了以团队作为构建基础和一个薄弱的产品愿景所带来的影响。
+自从启动LeSS导入的四天活动，形成了一份单一的产品待办列表，团队直接从中挑选工作。为了让团队能够按照客户价值来选择这些工作，并了解需要学习什么（技能），我们在产品战略和愿景上的薄弱变得很明显。例如，在产品待办列表梳理中，产品负责人无法很好地解释需要什么，甚至有时在梳理中优先级还会发生变化。Y Soft的员工习惯于在*项目*里工作，并将工作分解为不同职能和组件任务分配给不同的团队。从产品视角看，新工作模式对产品营销、产品负责人以及其他组织部门来说都是一个巨大的变化。以团队作为构建块需要这样的改变，但ScrumMasters和VP低估了以团队作为构建块与一个薄弱的产品愿景结合所带来的影响。
 
 From the 4-day event that started the LeSS adoption, there was a single Product Backlog and teams directly selecting work from the Product Backlog. To enable the teams to select this work following customer value and knowing what (skills) to learn, it became very transparent that the product strategy and vision was too weak. For example, during Product Backlog Refinement the Product Owner couldn’t explain well what was needed and even during refinement priority changed sometimes. People in Y Soft were used to working in *projects* and split the work into functional and component tasks for different groups. Working from a product perspective was a massive change for product marketing, the Product Owner and the rest of the organization. Having teams as building block required this, and the Scrum Masters and VP had underestimated the effect of having teams as building block and a weak product vision.
 
-许多研发部门之外的人仍然使用非正式的沟通渠道要求研发部门承接和交付相关工作，例如存在其他部门的人仍然直接联系工程师。而这得到了部分研发经理的支持，他们接受这种做法，甚至直接将这类工作带给了团队！ScrumMasters需要确保其他部门的人理解他们必须直接与产品负责人（PO）沟通协作，以便对工作优先级进行合理排序（以及为什么基于优先级，工作没有被选择），并且利益相关者必须亲自帮助团队正确理解工作的背景和价值。组织设计变革需要一段时间才能逐步运作正常。
+许多研发部门之外的人仍然使用非正式的沟通渠道要求研发部门承接和交付相关工作，例如存在其他部门的人仍然直接联系工程师。而这得到了部分研发经理的支持，他们接受这种做法，甚至直接将这类工作带给了团队！ScrumMasters需要确保其他部门的人理解他们必须直接与产品负责人（PO）沟通协作，以便对工作优先级进行合理排序（以及为什么有些工作根据优先级没有被选择），并且利益相关者必须亲自帮助团队正确理解工作的背景和价值。组织设计变革需要一段时间才能逐步运作正常。
 
 Many people outside R&D still used unofficial communication channels to get work done from R&D, e.g. people from other departments that still contacted engineers directly. This was reinforced by some of the R&D managers that accepted this and even brought this work to the teams! Scrum Masters needed to make sure others understood they had to work with the PO directly to get work prioritized (and why work was not picked up based on priority), and that stakeholders had to help teams directly to make sure teams understood the context and value. The OD change took a while to work properly.
 
-#### 1.3.3 检查组织设计元素：LeSS规则：每个团队是 (1) 自管理的，（2） 跨职能的，（3） 同在一地的，（4）长期的 Inspection OD-element: LeSS Rule: Each team is (1) self-managing, (2) cross-functional, (3) co-located, and (4) long-lived.
+#### 1.3.3 检视组织设计元素：LeSS规则：每个团队是 (1) 自管理的，（2） 跨职能的，（3） 同在一地的，（4）长期的。Inspection OD-element: LeSS Rule: Each team is (1) self-managing, (2) cross-functional, (3) co-located, and (4) long-lived.
 
-在实施LeSS之初，团队进行了自我设计，他们在同地工作，保持团结，拥有工作所需的大部分（跨）职能技能，或通过学习掌握了这些技能。然而，更加困难的是实现自我管理。工作是以客户为中心来组织的，团队拥有更多端到端的技能来完成工作。然而，他们仍然坚持被动应对的工作方式去执行工作和改进，并确保完成。由于他们拥有更多的必要技能，所以工作自然变得更加容易，然而却未看到更多的改进。
+在导入LeSS之初，团队进行了自设计，他们在同地工作、保持团结、拥有工作所需的大部分（跨）职能技能，或通过学习掌握了这些技能。然而，更加困难的是实现自管理。工作是以客户为中心来组织的，团队拥有更多端到端的技能来完成工作。然而，他们仍然坚持被动应对的方式去执行工作和改进，并确保完成。由于他们有了更多的必要技能，所以工作自然变得更加容易，然而却未看到更多的改进。
 
 The teams had self-designed themselves at the start of the LeSS adoption, they were co-located, stayed together and had most of the (cross) functional skills they needed or acquired the skills. The self-management was harder to achieve. Work was defined customer-centric and teams had more end-to-end skills to get work done. However, they still hold on to reactive behavior for work to be done, improve and make sure things get to done. Because they had more of the necessary skills, it automatically became easier, but there was not more improvement.
 
-其中一个原因是，一些基本的Scrum原则没有得到很好的践行，这是因为在Scrum和LeSS实施过程中，Scrum Master缺乏经验。这导致了较低的经验主义，以及团队内部和团队之间学习的局限性。例如，在迭代规划中，待办事项的透明度很低，团队之间的互动也很少，很难为下个迭代选出最优价值的工作项。按照轮换制，Scrum Master“主导”迭代计划会，而大多数团队的参会代表只想让迭代规划会快点结束。这样做带来的结果是，对于要交付的价值和所做的选择，透明度有限，从而导致几乎没有互动，也几乎没有对下一步应该做什么的讨论。另一个例子是迭代评审会，基本上就是各团队展示已交付的特性，没有形成反馈闭环，也没有从整个产品视角清晰展示增量。参会的内部利益相关者数量有限，未来的工作没有透明度 - 因此也没有行成检查和调整 - 从而获取下一步工作的反馈。除此之外，普遍的意识是“改进是Scrum Master的事”（一位团队成员就是这么说的），所以团队没有承担改进他们工作和协作方式的责任。Scrum Master在6个多月的时间里都没有组织过整体回顾会议！一开始，产品负责人和支持产品营销的人员承担了团队该承担的责任，既扮演了领域专家的角色，又扮演了客户的角色，这阻碍了团队搞清楚客户问题，并强化了团队原行为模式：请告诉我们应该做什么。这些因素都不利于创造条件让团队学习自我管理。
+其中一个原因是，一些基本的Scrum原则没有得到很好的践行，这是因为在Scrum和LeSS导入过程中，Scrum Master缺乏经验。这导致了较低的经验主义，以及团队内部和团队之间学习的局限性。例如，在迭代计划中待办事项的透明度很低，团队之间的互动也很少，很难为下个迭代选出最优价值的工作。轮换的Scrum Master“主导”迭代计划，而大多数团队的参会代表只想让它快点结束。这样做带来的结果是，对于要交付的价值和所做的选择透明度有限，从而导致几乎没有互动，也几乎没有对下一步应该做什么的讨论。另一个例子是迭代评审，基本上就是各团队展示已交付的特性，没有形成反馈闭环，也没有从整个产品视角清晰展示增量。参会的内部利益相关者数量有限，未来的工作没有透明度 - 因此也没有形成检视和调整 - 以获取下一步工作的反馈。除此之外，普遍的意识是“改进是Scrum Master的事”（一位团队成员就是这么说的），所以团队没有承担改进他们工作和协作方式的责任。Scrum Master在6个多月的时间里都没有组织过一次整体回顾会议！一开始，产品负责人和支持产品营销的人员承担了团队该承担的责任，既扮演了领域专家的角色，又扮演了客户的角色，这阻碍了团队搞清楚客户问题，并强化了团队原先的行为模式：请告诉我们应该做什么。这些因素都不利于创造条件让团队学习自管理。
 
 One of the reasons was that some basic Scrum principles were not implemented well, a consequence from having inexperienced Scrum Masters in Scrum and LeSS adoptions. This resulted in low empiricism and limited learning within and between teams. For example, in Sprint Planning there was low transparency on the work to be done, and little interaction between teams to come up with the best selection of value for the Sprint. A rotating Scrum Master ‘led’ the Sprint Planning and most team representatives just wanted the Sprint Planning to be over. Consequence was that there was limited transparency on the value to deliver and the choices made, which led to little interaction and almost no discussion on what best to do next. Another example was the Sprint Review, which were basically demo’s where teams shared some of the delivered features, without feedback and without transparency about the whole product Increment. Limited number of internal stakeholders joined, and there was no transparency - and thus no inspection and adaptation - on future work in order to get feedback on next steps. On top of that, the overall feeling was that ‘improvements are for Scrum Masters’ (one team member said that literally), so teams didn’t take responsibility to improve the way they worked and collaborated. The Scrum Masters didn’t organize an Overall Retrospective in over 6 months! At the start, the Product Owner and supporting Product Marketing people took responsibility from teams, by acting as both the domain experts and customers, which prevented teams from figuring out the customers’ problems and reinforced the previous behavior by teams: please tell us what to do. These factors are not helping to set the stage for teams to learn to self-manage.
 
-Scrum Master非常勤奋地帮助和推进各项工作。然而，这也导致了代偿行为，比如弥补出现的各种工作漏洞，帮助“推动”事情向前发展，从而实现特性交付和问题修复。但是，团队并没有学会自我管理，也没有为这些“漏洞”承担责任，而是继续依赖他人，从之前依赖项目经理到现在是依赖Scrum Master。通过一段时间的外部辅导帮助，Scrum Master重新聚焦并改进了Scrum和LeSS的基础原则，以提高经验主义。其中一个例子就是改进产品待办梳理（PBR），帮助团队组织PBR，以合理的方式拆分大工作项，并确保团队成为PBR的主导者，能主动邀请用户和干系人参与，让PRB真正发挥作用。
+Scrum Master非常勤奋地帮助和推进各项工作。然而，这也导致了补位行为，比如填补出现的各种工作漏洞，帮助“推动”事情向前发展以实现特性交付和问题修复。但是，团队没有因此学会自管理，没有为这些“漏洞”承担责任，而是继续依赖他人，从之前依赖项目经理到现在是依赖Scrum Master。通过一段时间的外部帮助，Scrum Master重新聚焦并改进了Scrum和LeSS的基础原则，以提高经验主义。其中一个例子就是改进产品待办列表梳理（PBR），帮助团队组织PBR，以合理的方式拆分大工作项，并确保团队成为PBR的主导者，能主动邀请用户和干系人参与，让PRB真正发挥作用。
 
 The Scrum Masters were really diligent to help and move things forward. However, this led to compensating behavior, filling in gaps that appeared and helping to ‘push’ things forward to deliver features and fix problems. However, teams didn’t learn to self-manage this way, and didn’t take responsibility for these ‘gaps’ and kept relying on others, now on Scrum Masters instead of project managers. After a while with external help, Scrum Masters refocused and improved the basics of Scrum and LeSS to improve empiricism. One example was the improvement of Product Backlog Refinement (PBR), and helping teams how to do PBR, split big pieces of work in a good way and making sure that teams were the ones to make PBR useful, taking initiative and inviting users and stakeholders.
 
-#### 1.3.4 检查组织设计元素：LeSS规则：大部分团队是以客户为中心的特性团队。Inspection OD-element: LeSS Rule: The majority of the teams are customer-focused feature teams.
+#### 1.3.4 检视组织设计元素：LeSS规则：大部分团队是以客户为中心的特性团队。Inspection OD-element: LeSS Rule: The majority of the teams are customer-focused feature teams.
 
-在LeSS实施之初的团队自我设计中，一个标准就是“独立地交付尽可能多的PBI（产品待办事项）”。这导致团队试图拥有尽可能多的不同专业的人才，而不再专注于产品的某个特定（以客户为中心）部分。一些团队开始互相学习以提升团队知识技能，例如测试人员学习编码，开发人员学习开发更多的组件。然而，也有团队仍然专注于团队内部旧有的术业专攻，这导致了大量的交接工作，要开发某些特性时的等待瓶颈，而且可以应对的“挑战”和尝试理解手头的特性功能以及能解决的问题变得有限。结果是一些团队开始使用“更新的”技术来完成特性，而其他团队则继续处理他们所“熟悉”的特性功能，这也导致这类团队总是在处理较低优先级的PBI上，因为他们对自己处理“新”技术没有信心。显然，这不利于适应并致力于最高客户价值的工作。
+* 在LeSS导入之初的团队自设计中，一个标准就是“独立地交付尽可能多的PBIs”。这导致团队试图拥有尽可能多的不同专业的人才，而不再专注于产品的某个特定（客户导向的）部分。一些团队开始互相学习以提升团队知识技能，例如测试人员学习编码，开发人员学习开发更多的组件。然而，也有团队仍然专注于团队内部旧有的术业专攻，这导致了大量的交接工作，要开发某些特性时的等待瓶颈，以及有限的“挑战”和尝试理解手头的特性和要解决的问题。结果是一些团队开始使用“更新的”技术来完成特性，而其他团队则继续处理他们所“熟悉”的特性，这也导致这类团队总是在处理较低优先级的PBI上，因为他们对自己处理“新”技术没有信心。显然，这不利于适应并致力于最高客户价值的工作。
 
 In the team self-design at the start of the LeSS adoption, one of the criteria was ‘being able to deliver as much of PBI’s independently as possible’. This led to teams trying to involve as many different specialties as possible within their team, instead of focusing on a specific - customer focused - part of the product. Some teams started learning from each other to increase knowledge within their team, e.g. testers learning to code and developers learning developing on more components. Other teams still had focus within their team on their old specialties, which led to a lot of handovers in the team, bottlenecks when wanting to work on certain features and limited ‘challenging’ and trying to understand the features at hand and the problems to solve. Consequence was that some teams started working on the ‘newer’ technologies for features, while other teams kept working on features that they ‘know’. This resulted in teams working on lower priority PBI’s, because those teams didn’t feel confident to work on the ‘newer’ technologies. Obviously, this didn’t help to adapt to work on the highest customer value.
 
-这是在LeSS实施时可能出现的“假两难推理”思维错误的一个很好的例子：错误地从一个人或团队只知道一件事的极端，转向另一个极端，即要求团队知道“一切”。在组建新团队时，聚焦客户领域的程度是非常重要的，这也会受到学习难度的影响；在一些较小且简单的产品组中，这并不是一个令人担忧的问题。尽管我们当时还没有采用LeSS Huge，但请注意，这正是LeSS Huge的动机：聚焦团队在一个相对较小的范围内，从而让团队所需的学习不会过于繁重。
+这是在LeSS导入时可能出现“错误的两分法”这一思维误区的一个很好例子：错误地从一个人或团队只知道一件事的极端，转向另一个极端，即要求团队知道“一切”。组建新团队时在客户领域上聚焦的重要程度受到学习难度的影响；在一些较小且简单的产品组中，这并不是一个顾虑。尽管我们当时还没有采用LeSS巨型，但请注意这正是LeSS巨型的动机：团队聚焦在一个相对较小的范围内，从而让团队所需的学习不会过于繁重。
 
 This is a good example of the *False Dichotomy* thinking mistake sometimes made when adopting LeSS: incorrectly going from the extreme of a person and team knowing only one thing, to the other extreme of aiming for teams to know “everything.” The degree to which customer-area focus is important when starting to form the new teams is influenced by the difficulty in learning; in some smaller and simpler product groups this is not a concern. Although we had not adopted LeSS Huge at this point, note that this is the motivation for LeSS Huge: focusing teams within a smaller scope so that the learning required is not overwhelming.
 
-#### 1.3.5 检查组织设计元素：LeSS规则：产品定义应该基于实际尽可能的宽泛和以用户/客户为中心。随着时间推移，产品定义也许会拓展，我们倾向于更宽泛的定义  Inspection OD-element: LeSS rule: The definition of product should be as broad and end-user/customer centric as is practical. Over time, the definition of product might expand. Broader definitions are preferred.
+#### 1.3.5 检视组织设计元素：LeSS规则：产品定义应该基于实际尽可能的宽泛和以用户/客户为中心。随着时间推移，产品定义也许会拓展，我们倾向于更宽泛的定义。 Inspection OD-element: LeSS rule: The definition of product should be as broad and end-user/customer centric as is practical. Over time, the definition of product might expand. Broader definitions are preferred.
 
-宽泛的产品定义给团队带来了一些初始的挑战，使得他们难以聚焦和理解整个产品。这一挑战与消除大部分“未完成”的工作并将其转移到团队中相融合，并在接下来的部门详细描述。
+宽泛的产品定义给团队具备整体产品焦点和理解带来了一些初始的挑战。这一挑战与消除大部分“完成外”的工作并将其转移到团队中（在接下来的部分详细描述）相互交织。
 
 The broad product definition brought initial challenges for teams to have whole product focus and understanding. This was combined with eliminating most of the ‘undone’ work and bring it to the teams, for which the challenges explained in the following section.
 
-对于组织的其他部们，宽泛的产品定义也是一个转变。以前，他们需要联系多个团队来完成工作。而现在，他们只需联系一位产品负责人，并在产品待办梳理过程中（PBR）与多个团队合作。总的来说，这一转变进行得相当顺利，不过也存在一些挑战，即人们有时会直接找自己熟悉的开发者而不是向唯一的产品负责人提出意见想法。
+对于组织的其他部们，宽泛的产品定义也是一个转变。以前，他们需要联系多个团队来完成工作。而现在，他们只需联系一位产品负责人，并在产品待办列表梳理中与多个团队合作。总的来说，这一转变进行得相当顺利，不过也存在一些挑战，即人们有时会直接找自己熟悉的开发者而不是向唯一的产品负责人提出意见想法。
 
 For the other parts of the organization, the broad product definition was also a shift. Before, they had to connect to multiple teams to get things done. While now, they had to contact a single Product Owner and work with multiple teams during Product Backlog Refinement. Overall, this went quite well, though there were some challenges in people approaching developers that they knew well directly instead of bringing ideas to the single Product Owner.
 
-#### 1.3.6 检查组织设计元素：LeSS实验：尝试...通过消除“未完成”的工作来消除“未完成”的单元 Inspection OD-element: LeSS experiment: Try…Eliminating the ‘Undone’ unit by eliminating ‘Undone’ work
+#### 1.3.6 检视组织设计元素：LeSS实验：尝试...通过消除“完成外”的工作来消除“完成外”的单元。Inspection OD-element: LeSS experiment: Try…Eliminating the ‘Undone’ unit by eliminating ‘Undone’ work
 
-在采用LeSS前，一直聚焦组件，许多活动分散在整个组织中。例如，执行回归测试、修复错误、其他支持类工作（所有这些都分散在多个组件团队中）以及测试和产品发布（单独的团队）。从LeSS实施开始，团队共同承担了这些活动。例如，支持和发布产品的工作是由团队轮流完成的（“轮流值日”），这也体现了LeSS的建议，即在特性团队之间轮流承担这些必要的专项任务（例如，处理发布、突发事件缺陷、改进构建系统）。团队发现他们的构建系统和自己的工程实践模式不能支持他们轻松地完成集成和部署工作。构建流水线没有针对整个产品进行优化，包含许多不同的代码分支，没有一个明确的主干，也没有简单的方法能将各个分支集成到主干。以前，团队没有形成持续快速集成的思维方式，创建了许多不同的分支，没有及时合并到主干，也没有删除过时的分支。对于使用哪个分支存在很多混淆，集成需要花费大量时间和精力。LeSS指南*持续集成*清楚地解释了持续集成（CI）是开发者的行为。为了支持这种行为，需要有配套的流程和工具，但开发者的行为和习惯仍然是能够持续集成的主要决定因素。回归测试和缺陷修复 - 除了高紧急性的错误外 - 主要是通过（自动的）选择“值日”特性团队来完成的，如果需要的话，会在迭代计划会第一部分中进行讨论。
+在导入LeSS前，一直聚焦组件，许多活动分散在整个组织中。例如，执行回归测试、修复错误、其他支持类工作（所有这些都分散在多个组件团队中）以及测试和产品发布（单独的团队）。从LeSS导入开始，团队共同承担了这些活动。例如，支持和发布产品的工作是由团队轮流完成的（“轮流值日”），这也体现了LeSS的建议，即在特性团队之间轮流承担这些必要的专项任务（例如，处理发布、突发缺陷、改进构建系统）。团队发现他们的构建系统和自己的工程实践不能支持他们轻松地完成集成和部署工作。构建流水线没有针对整个产品进行优化，包含许多不同的代码分支，没有一个明确的主干，也没有简单的方法能将各个分支集成到主干。以前，团队没有意识要快速地集成他们的改动，因此创建了许多不同的分支，没有及时合并到主干，也没有删除过时的分支。对于使用哪个分支存在很多混淆，集成需要花费大量时间和精力。LeSS指南*持续地集成*清楚地解释了持续集成（CI）是开发者的行为。为了支持这种行为，需要有配套的流程和工具，但开发者的行为和习惯仍是能做到持续集成的主要决定因素。回归测试和缺陷修复 - 除了高紧急性的错误外 - 主要是通过（自动）选择的“值日”特性团队来完成的；如果需要的话，也会在迭代计划第一部分中进行讨论。
 
 Before the LeSS adoption, there had been a component focus and many activities were scattered across the organization. Examples are the execution of regression tests, fixing bugs, other support (all spread across many component teams) and testing & releasing the product (separated team). From the start of the LeSS adoption, teams shared these activities. For example support duty and releasing the product were done by teams on turns (‘duty’), reflecting the LeSS suggestion of rotating any required focussed task (eg. handling release, surprise defects, improving the build system) across the feature teams. Teams found out that their build system and their own practices didn’t support them to be able to integrate easily and deploy their work. The build pipeline was not optimized for the whole product and consisted of many different branches, not a clear master branch, and no easy way to integrate into the master. Before, teams didn’t have the mindset to integrate their changes quickly, and created many different branches without merging to the master branch and removing obsolete branches. There was a lot of confusion on which branches to use and integration took a lot of time and effort. LeSS guide *Integrate Continuously* explains clearly that Continuous Integration (CI) is developer behavior. And to support this behavior the policies and tools should help, but the developer behavior and habits are still the main part of being able to integrate continuously. Executing regression tests and fixing bugs were - mostly, except for high urgency bugs - done by (automated) selection and if needed discussed in Sprint Planning 1.
 
-由于“未完成”的工作属于团队的责任范围，团队因此承担了更多针对这类“痛点”的职责，并加强了对更宽泛产品问题的理解。团队能够做出更多 - 通常是小的 - 改进，来完善这些工作的完成方式。例如，当开发一个新功能时，他们通常会创建自动化测试，这使得回归测试变得更容易、更快和更好。以前，这些“痛点”会导致延期交付和产品质量问题，但现在所有团队都要（可以）为此承担责任，所以情况得以显著改善。尽管这些“痛点”并没有完全消失 - 即使在采用后的两年里也没有 — 但团队已经显著减少了它们，至少没有阻碍价值的交付。目前，最大的“痛点”是团队必须承担这些“职责”并致力于解决这些“痛点”，而不是开发（客户）特性功能。不过，这种情况正在慢慢改善，至少最大的痛点已经克服。请注意，这里所说的“痛点”是团队必须完成的工作，但许多“未完成”工作的消除使产品本身“痛点”显著减少，这是组织发展（OD）变革的结果。
+由于“完成外”的工作属于团队的责任范围，团队因此承担了更多针对这类“痛点”的职责，并加强了对更宽泛产品问题的理解。团队能够对如何完成这些工作做出更多 - 通常是小的 - 改进。例如，当开发一个新特性时，他们通常会创建自动化测试，这使得回归测试变得更容易、更快和更好。以前，这些“痛点”会导致延期交付和产品质量问题，但现在所有团队都要（可以）为此承担责任，所以情况得以显著改善。尽管这些“痛点”并没有完全消失 - 即使在导入后的两年里也没有 — 但团队已经显著减少了它们，至少没有阻碍价值的交付。目前，最大的“痛点”是团队必须承担这些“职责”并致力于解决这些痛点，而不是开发（客户）特性。不过，这种情况正在慢慢改善，至少最大的痛点已经克服。请注意，这里所说的“痛点”是团队必须完成的工作，但许多“完成外”工作的消除使产品本身的痛点显著减少，这是组织设计变革的结果。
 
 Because the ‘undone’ work was the responsibility of the teams, the teams took more responsibility for these ‘pains’ and created more understanding of broader product matters by teams. Teams could do more - often small - improvements in how these things were done. For example when they develop a new feature, often they created automated tests as well, which made regression testing easier, faster and better. Before, the pains led to delays in delivery and quality problems in the product, which is significantly better now all teams (can) take responsibility for them. Though these pains aren’t completely gone - even not after 2 years in the adoption -, the teams reduced the pains significantly and it at least didn’t block the delivery of value. Most ‘pain’ right now is for teams having these ‘duties’ and working on these pains instead of developing (customer) features. Slowly, this is improving as well, but the biggest pains are at least conquered. Note that ‘pain’ as described here is the work that has to be done for teams, but the removal of many of the ‘undone’ work made the pain for the product significantly less, as a consequence of the OD change.
 
-#### 1.3.7 检查组织设计元素：LeSS实验：避免...职能单元 Inspection OD-element: LeSS experiment: Avoid...Functional units
+#### 1.3.7 检视组织设计元素：LeSS实验：避免...职能单元 Inspection OD-element: LeSS experiment: Avoid...Functional units
 
-在LeSS实施前，存在多个职能单元，在本章节中将会对其逐一检查。在团队自我设计过程中，产品总监识别出三类特定角色，他们可以要么加入团队，要么游离于团队之外（自愿参与原则）：
+在LeSS实施前，存在多个职能单元，在本章节中将会对其逐一检视。在团队自我设计过程中，产品总监识别出三类特定角色，他们可以要么加入团队，要么游离于团队之外（自愿参与原则）：
 
 * 安全专家
 * 架构师
@@ -812,7 +812,7 @@ The group of Scrum Masters worked within R&D, but acted as a functional unit. Th
 
 Considering these functional units, the best improvements resulted from the functional specialists when joining the teams. The OD change to avoid (and thus remove) functional units leads to major improvements in adaptiveness, but has serious consequences in the organization.
 
-#### 1.3.8 检查组织设计元素：LeSS实验：尝试...工作再设计 Inspection OD-element: LeSS experiment: Try...Work redesign
+#### 1.3.8 检视组织设计元素：LeSS实验：尝试...工作再设计 Inspection OD-element: LeSS experiment: Try...Work redesign
 
 在开始实施LeSS时，*特性团队*把原先属于不同*组件*和*职能*的任务整合起来，从而完成了工作的再设计，以涵盖以客户为中心的产品待办事项（PBI）。团队最初对此感到十分困难，因为他们源自组件团队，还不习惯于产品和客户的视角。在与供应商、大客户以及直接与客户和供应商打交道的内部利益相关者更紧密地合作一段时间后，团队更好地理解了客户领域的相关内容，“传话游戏”逐渐变少。以前，团队主要从项目经理或内部利益相关者那里接收工作，几乎不与真正的客户或用户互动。开始定义以客户为中心的PBI后，需要团队学习，特别是在工作项梳理和工作设计方面。随着时间的推移，团队在这些方面的表现越来越出色，组织设计（OD）变革的“工作再设计”最终带来了这一团队改进。
 
@@ -853,7 +853,7 @@ This brought the following main results:
 
 After the re-alignment workshop, the Head of Product decided to add external - more intensive - help in their LeSS adoption, mainly focused on the mentoring of their Scrum Masters. This way, the Scrum Masters could learn and be able to move things forward by themselves. This is when the main author came in.
 
-根据检查结果，一年后，Y Soft公司希望继续向前迈进。这下一步规划包括团队重组，取消研发部门经理角色，以及Scrum Master角色转变为敏捷教练，并招聘更多具有组织设计和团队教练经验的员工。Y Soft公司CEO和产品总监希望继续向前推进的原因有很多，包括：
+根据检视结果，一年后，Y Soft公司希望继续向前迈进。这下一步包括团队重组，取消研发部门经理角色，以及Scrum Master角色转变为敏捷教练，并招聘更多具有组织设计和团队教练经验的员工。Y Soft公司CEO和产品总监希望继续向前推进的原因有很多，包括：
 
 Based on the inspection, after a year Y Soft wanted to make the next big step forward. This next step involved a team redesign, removing the managers within R&D and the Scrum Masters role becoming the agile coach role and getting other people onboard with more experience in organizational design and team coaching. Y Soft CEO and Head of Product had several reasons for making the next step:
 
@@ -1199,7 +1199,7 @@ The discussion about moving to LeSS Huge had happened a few times before. The ag
 ## 3. 转向两个产品
 
 Deciding on the product definition is an important aspect of *organizational design*, because of the organizational consequences related to the definition. This section discusses the product definition and the decision to move to two products. The discussion focuses on the impact of the product definition for the optimization goal *to be adaptive to discover highest customer value or delight*. This section complements the OD evaluation of the previous sections.
-因为产品定义会带来相关的组织后果，决定产品定义是*组织设计*的一个重要方面。这章将讨论产品定义及转向两个产品的决策。讨论会聚焦在产品定义对*高度适应性以发现最高客户价值或满意度*的优化目标。这章补充了前面章节的组织设计评估。
+因为产品定义会带来相关的组织后果，决定产品定义是*组织设计*的一个重要方面。这章将讨论产品定义及转向两个产品的决策。讨论聚焦在产品定义对*适应性提升以发现最高的客户价值或满意度*这一优化目标的影响。这章补充了前面章节的组织设计评估。
 
 ### 3.1 Context
 ### 3.1 背景
@@ -1303,7 +1303,7 @@ In the end, the main reason they used to split into two products was the differe
 
 For context: this section focuses on the optimization goal of *adaptiveness to discover highest customer value or delight* that LeSS uses. For other optimization goals, *other reasoning might be consistent and working*, but since this is the optimization goal for LeSS, this section focuses on that.
 
-作为背景：本节重点讨论LeSS使用的*高度适应性以发现最高客户价值或满意度*这一优化目标。对于其它优化目标，*另外的考虑可能是与其一致和有效的*，但由于它是LeSS的优化目标，本节将重点讨论这一点。
+作为背景：本节重点讨论LeSS使用的*适应性提升以发现最高的客户价值或满意度*这一优化目标。对于其它优化目标，*另外的考虑可能是与其一致和有效的*，但由于它是LeSS的优化目标，本节将重点讨论这一点。
 
 ##### LeSS rule about product definition
 ##### 关于产品定义的LeSS规则
@@ -1332,9 +1332,9 @@ Let’s break down this rule and reflect on the (two) product definitions of Y S
     * **Simplifies organizational complexity**<br/>Splitting the products meant that teams working for one product would have different ways of collaborating than teams working for the other product, e.g. dealing with self-management (e.g. hiring) and technical practices. This would eventually lead to a divergence of organizing and collaborating between the products, and therefore a more complex organizational environment. Having one product would lead to *less organizational complexity* compared to having two products. With the introduction of OMNI Series as a separate product, the additional processes, agreements (amongst teams) and more are complicating the organization. The consideration to take into account is how much this extra complexity is, as the organization is still relatively small.<br/><br/>From [Large-Scale Scrum: More with LeSS](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710): ‘With a broad product definition all items are in the same backlog, thereby enabling fine-grained prioritization and increasing the overview in development and product.’<br/>With two products, there is less adaptiveness between the two products; e.g. when deciding to focus more to one over the other from the Product Backlog perspective. An explicit split into two products creates separate focus, less combined product decisions in development and product visions are likely to diverge over time. When taking into consideration that over time you want to broaden your product definition, a move to two products moves away from this broadening.<br/><br/>Let’s look at the ‘practical’ part from a broad product perspective, taking into account: '[...] can cause the initial product definition to be less than perfect. This opens the door for using the product definition as a tool for continuous improvement.' ([Large-Scale Scrum: More with LeSS](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710)). Interestingly, the three teams working on OMNI Series basically already focused on OMNI Series before the move to two products, aside from doing ‘mandatory work’ (handling support as the fast-response team and release duty) that was mainly related to SAFEQ. While the teams encountered mainly practical problems for SAFEQ, the incorporation of OMNI Series wasn’t considered ‘impractical’ from teams’ perspective.
     * **简化组织复杂性**<br/>拆成不同产品意味着为一个产品工作的团队与为另一个产品工作的团队会有不同的协作方式，比如处理自我管理（如招聘）和技术实践。这最终会导致产品之间在组织和协作上出现分化，从而形成更复杂的组织环境。与拆成两个产品相比，作为一个产品将*减少组织复杂性*。随着引入OMNI系列作为一个单独的产品，额外的流程、约定（团队之间）等使组织复杂化。需要考虑的是这种额外的复杂性有多大，因为组织仍然相对较小。<br/><br/>来自[《大规模Scrum：以少为多》](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710)：“通过宽泛的产品定义，所有条目都在同一个待办列表中，从而可以进行细粒度的优先级排序，并增加开发和产品的总览。”<br/>当有两个产品时，两个产品之间的适应性会变差；例如，当从产品待办列表的角度决定更多聚焦一个而不是另一个时。明确拆成两个产品会产生不同的焦点，开发中较少一起考虑的产品决策和产品愿景可能会随着时间的推移而分化。当考虑到随着时间的推移你想要扩大产品定义，转向两个产品就背离了这种扩大。<br/><br/>让我们从一个宽泛产品的角度来看‘实际可行’的部分，考虑到：“[…]可能会导致最初的产品定义不够完美。这使得用产品定义作为持续改进的工具成为可能”（[《大规模Scrum：以少为多》](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710))。有趣的是，工作在OMNI系列上的三个团队在转向两个产品之前基本上就已经聚焦在OMNI系列上了，除了做“必须的工作”（主要与SAFEQ相关，作为快速响应团队处理支持工作以及发布的职责）之外。虽然团队主要遇到在SAFEQ上的实际可行的问题，但从团队的角度来看，加入OMNI系列并不被认为是“不切实际的”。
 * **‘As [...] end-user/customer centric as is practical’**<br/>Both OMNI Series and SAFEQ are end-user/customer centric, they are recognized and understood by customers and end-users, and delivery can happen for both directly to customers. From this perspective, it’s practical to have two products. However, the question is whether it would be impractical to keep both as one product. Obviously, the sales channels (B2B vs B2C) are different as well as the market segments OMNI Series and SAFEQ focus on. However, does this validate the decision to move to two products from an end-user/customer perspective? Having a single (internal) product doesn’t mean that there can’t be different variations of the product sold with different names and identity. It doesn’t affect customers or end-users having a single product, as long as you organize the customer-centricity well and incorporate customer feedback into the Product Backlog. This would be an external narrow (e.g. different marketed products) versus an internal broad product, which gives you the whole product view, ability to adapt but still be able to distinguish to different customer types or markets. When the optimization goal is to have *adaptiveness to discover highest customer value or delight*, a broader product definition is consistent.<br/><br/>If we look at duplicate product/business functionality, customers don’t need something completely different than printing & scanning solutions, even though the offerings from the two products are for a different segment of the market. However, from a duplicate functionality perspective, several things could happen (from Large-Scale Scrum: More with LeSS). There is porting of the functionality needed from SAFEQ to OMNI Series, which requires additional coordination and code clarification, especially over time when the teams haven’t worked closely together for a longer time. Second, there is the infrastructure that is shared and organizationally included in one team outside the two products, which has introduced some associated organizational complexity mainly in the additional coordination needed.<br/><br/>Let’s look at the commonalities that restrain the product definition (from [Large-Scale Scrum: More with LeSS](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710)) for *adaptiveness towards highest customer value*: 1) vision, 2) customers or markets and 3) domain. If we look at 1) the vision, from the internal Y Soft perspective the visions are considered different between SAFEQ and OMNI Series. However, they are both there - very high level - to help customers with their printing & scanning solutions. For 2) the customers or markets, there are different segments of the market that are focused on. However, the customers still want solutions for similar problems. And this brings us to 3) domain. Both products are still around printing & scanning solutions, not something completely different.<br/><br/>If we look into the ‘practical’ part of the customer/end-user, we can argue that it would also be practical when having one product. Sales & Marketing kept working the same way in the same structure, independently from having one or two products. That would mean that it would not be impractical from a sales & marketing perspective.<br/><br/>Right now, some parts of the product are not included in the product definition, e.g. the hardware development (for both products) and the installation and support of the product for customers (for SAFEQ). From a customer/end-user perspective, the other parts could be included in the product definition in the future, when the organization learns and improves and ‘practical might evolve over time’.
-* **‘在实际可行的前提下尽量以终端用户／客户为中心’**<br/>OMNI系列和SAFEQ都是以最终用户和客户为中心的，它们被客户和最终用户所认识和理解，并且可以直接向客户交付。从这个角度来看，拆成两个产品是实际可行的。然而，问题是将两者作为一个产品是否不切实际。显然，销售渠道（B2B与B2C）以及OMNI系列和SAFEQ所聚焦的细分市场是不同的。然而，这是否从最终用户/客户的角度验证了转向两个产品的决定？作为一个（内部）产品并不意味着不能有不同型号的产品以不同名称和商标进行销售。作为一个产品不会影响客户或最终用户，只要你能组织好客户中心，并将客户反馈纳入产品待办列表中。这将是一个从外部看狭窄的（比如营销成不同的产品）与从内部看宽泛的产品，它既给你提供了整个产品视图和适应能力，又仍然能够区分不同的客户类型或市场。当优化目标是具有*高度适应性以发现最高客户价值或满意度*时，更宽泛的产品定义是与其一致的。<br/><br/>如果我们考虑重复的产品/业务功能，客户并不需要与打印和扫描解决方案完全不同的东西，即使两个产品针对不同的细分市场。然而，从重复功能的角度来看，有几件事情可能会发生（来自[《大规模Scrum：以少为多》](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710)）。需要从SAFEQ移植功能到OMNI系列，这要额外的协调和代码澄清，尤其是在团队长期没有密切协作的情况下。其次，两个产品有共享的基础设施，它在组织上属于两个产品之外的一个团队。这引入了一些相关的组织复杂性，主要在于所需的额外协调。<br/><br/>让我们看看限制产品定义*取得最高客户价值的适应性*的共同特征（来自[《大规模Scrum：以少为多》](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710))：1）愿景，2）客户或市场，3）领域。如果我们从1）愿景来看，Y Soft内部认为SAFEQ和OMNI系列的愿景是不同的。然而，从很高层次看他们都是帮助客户提供打印和扫描解决方案。对于2）客户或市场，两者确实聚焦不同的细分市场。然而，客户想要的仍然是解决类似问题的方案。这就把我们带到了3）领域。这两个产品仍然围绕着打印和扫描解决方案，并不是完全不同的东西。<br/><br/>如果深入来看客户/最终用户‘实际可行’的部分，我们可以说作为一个产品也是可行的。销售和市场部在相同的组织结构下延续了之前的工作方式，与一个还是两个产品并不相关。这意味着从销售和市场的角度来看并非不切实际。<br/><br/>目前，产品的某些部分并没包括在产品定义中，比如硬件开发（两个产品）以及提供给客户的产品安装和支持（SAFEQ）。从客户/最终用户的角度来看，当组织通过学习改进使得‘实际可行’逐渐发生变化时，在未来其它部分就可以包括在产品定义中。
+* **‘在实际可行的前提下尽量以终端用户／客户为中心’**<br/>OMNI系列和SAFEQ都是以最终用户和客户为中心的，它们被客户和最终用户所认识和理解，并且可以直接向客户交付。从这个角度来看，拆成两个产品是实际可行的。然而，问题是将两者作为一个产品是否不切实际。显然，销售渠道（B2B与B2C）以及OMNI系列和SAFEQ所聚焦的细分市场是不同的。然而，这是否从最终用户/客户的角度验证了转向两个产品的决定？作为一个（内部）产品并不意味着不能有不同型号的产品以不同名称和商标进行销售。作为一个产品不会影响客户或最终用户，只要你能组织好客户中心，并将客户反馈纳入产品待办列表中。这将是一个从外部看狭窄的（比如营销成不同的产品）与从内部看宽泛的产品，它既给你提供了整个产品视图和适应能力，又仍然能够区分不同的客户类型或市场。当优化目标是*适应性提升以发现最高的客户价值或满意度*时，更宽泛的产品定义是与其一致的。<br/><br/>如果我们考虑重复的产品/业务功能，客户并不需要与打印和扫描解决方案完全不同的东西，即使两个产品针对不同的细分市场。然而，从重复功能的角度来看，有几件事情可能会发生（来自[《大规模Scrum：以少为多》](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710)）。需要从SAFEQ移植功能到OMNI系列，这要额外的协调和代码澄清，尤其是在团队长期没有密切协作的情况下。其次，两个产品有共享的基础设施，它在组织上属于两个产品之外的一个团队。这引入了一些相关的组织复杂性，主要在于所需的额外协调。<br/><br/>让我们看看限制产品定义*取得最高客户价值的适应性*的共同特征（来自[《大规模Scrum：以少为多》](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710))：1）愿景，2）客户或市场，3）领域。如果我们从1）愿景来看，Y Soft内部认为SAFEQ和OMNI系列的愿景是不同的。然而，从很高层次看他们都是帮助客户提供打印和扫描解决方案。对于2）客户或市场，两者确实聚焦不同的细分市场。然而，客户想要的仍然是解决类似问题的方案。这就把我们带到了3）领域。这两个产品仍然围绕着打印和扫描解决方案，并不是完全不同的东西。<br/><br/>如果深入来看客户/最终用户‘实际可行’的部分，我们可以说作为一个产品也是可行的。销售和市场部在相同的组织结构下延续了之前的工作方式，与一个还是两个产品并不相关。这意味着从销售和市场的角度来看并非不切实际。<br/><br/>目前，产品的某些部分并没包括在产品定义中，比如硬件开发（两个产品）以及提供给客户的产品安装和支持（SAFEQ）。从客户/最终用户的角度来看，当组织通过学习改进使得‘实际可行’逐渐发生变化时，在未来其它部分就可以包括在产品定义中。
 * **‘Over time, definition of product might expand’**<br/> One of the reasons to move to two products was a weak product vision. The first LeSS book ([Large-Scale Scrum: More with LeSS](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710)) explains impracticalities of a broad product definition: ‘it becomes increasingly hard to express a clear and compelling product vision.’ However, the root cause of the weak product vision was NOT the broadness of the product definition.<br/><br/>One might expand the definition of product in the future, because of the desire to continuously improve towards perfection, e.g. by ‘extending done’ and adding ‘undone’ work to the product definition. Since the start of the LeSS journey, Y Soft has done this in the 4-day event that started the LeSS adoption (combining people to create cross-functional teams) and after (e.g. adding architects and on-premise infrastructure to the teams) to improve. However, by choosing to move to two products, the definition of product decreases.<br/><br/>By choosing the split into two products, basically Y Soft restrains the product definition instead of expanding it. Which is less consistent with *adaptiveness to discover highest customer value or delight*. But perhaps it is valuable for other optimization goals.
-* **‘随着时间的推移，产品的定义可能会扩大’**<br/>转向两个产品的原因之一是薄弱的产品愿景。LeSS的第一本书（[《大规模Scrum：以少为多》](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710))解释了宽泛产品定义的不切实际之处：‘越来越难以表达清晰且吸引的产品愿景’。然而，产品愿景薄弱的根本原因并不是产品定义的宽泛。<br/><br/>我们可能会在未来扩展产品的定义，因为希望不断改进以达到完美，比如通过‘扩展完成’并把‘完成外’的工作加入到产品定义中。自从开启LeSS的旅程，Y Soft已经在为期4天启动LeSS导入的活动中做到了这一点（将人员组合起来创建跨职能团队），并在之后进行改进（比如把架构师和私有基础设施加到团队）。然而，由于转向两个产品，产品的定义却缩小了。<br/><br/>通过选择拆成两个产品，Y Soft基本上是限制了产品定义，而不是扩展它；这与*高度适应性以发现最高客户价值或满意度*的优化目标不太一致。当然它可能对其它优化目标是有价值的。
+* **‘随着时间的推移，产品的定义可能会扩大’**<br/>转向两个产品的原因之一是薄弱的产品愿景。LeSS的第一本书（[《大规模Scrum：以少为多》](https://www.amazon.com/Large-Scale-Scrum-More-Addison-Wesley-Signature/dp/0321985710))解释了宽泛产品定义的不切实际之处：‘越来越难以表达清晰且吸引的产品愿景’。然而，产品愿景薄弱的根本原因并不是产品定义的宽泛。<br/><br/>我们可能会在未来扩展产品的定义，因为希望不断改进以达到完美，比如通过‘扩展完成’并把‘完成外’的工作加入到产品定义中。自从开启LeSS的旅程，Y Soft已经在为期4天启动LeSS导入的活动中做到了这一点（将人员组合起来创建跨职能团队），并在之后进行改进（比如把架构师和私有基础设施加到团队）。然而，由于转向两个产品，产品的定义却缩小了。<br/><br/>通过选择拆成两个产品，Y Soft基本上是限制了产品定义，而不是扩展它；这与*适应性提升以发现最高的客户价值或满意度*的优化目标不太一致。当然它可能对其它优化目标是有价值的。
 * **‘Broader definitions are preferred’**<br/>In the previous bullet, we discussed the decrease of the product definition by choosing to move to two products. In the discussion before deciding to move to two products, there was explicitly discussed that there is a risk that this leads to a ‘multi-product’ strategy, where innovation happens outside the product and outside the teams. In the long term, Y Soft risks ending up with several products which 1) from a broad product definition should be one (or at least less) product(s) and 2) are developed outside teams without using the integration and knowledge from your existing products well. Senior management acknowledged this risk, but mentioned that they wouldn’t let this happen and was not the direction to follow.
 * **‘倾向于更宽泛的定义’**<br/>在前一点中，我们讨论了由于选择转向两个产品而带来的产品定义缩小。在决定转向两个产品之前的讨论中，明确讨论到了有导致‘多产品’战略的风险，即创新发生在产品之外和团队之外。从长远来看，Y Soft有风险最终会产生几个产品，1）从宽泛的产品定义来看应该是一个（或至少是更少个数的）产品，2）是在没有充分利用现有产品的集成和知识的情况下在团队之外开发的。高管承认这一风险，但提到他们不会让这种情况发生，也不是应该发展的方向。
 
@@ -1357,7 +1357,7 @@ One of the reasons to have a broader product definition is to create a simpler o
 
 In LeSS, one of the crucial things is to collaborate (mainly between and within teams), and to encourage collaboration as much as possible, in contrast to the common refrain, “collaboration between developers is inefficient and difficult, so organize to avoid it.” The optimization goal of LeSS is *adaptiveness to discover highest customer value or delight*. Collaboration - and as a corollary *learning* - between teams is essential to be able to move towards this optimization goal. Having two products leads to two (different) priorities and this limits collaboration between teams, and restricts the adaptiveness.
 
-LeSS中一件至关重要的事情是协作（主要是在团队间和团队内），并鼓励尽可能多的协作，这与常见的说法“开发人员之间的协作效率低且困难，所以调整组织方式以避免它”形成了鲜明对比。LeSS的优化目标是*高度适应性以发现最高客户价值或满意度*。团队之间的协作 - 以及必然相伴的学习 - 对于实现这一优化目标至关重要。两个产品导致两个（不同的）优先级，这限制了团队之间的协作，进而限制了适应性。
+LeSS中一件至关重要的事情是协作（主要是在团队间和团队内），并鼓励尽可能多的协作，这与常见的说法“开发人员之间的协作效率低且困难，所以调整组织方式以避免它”形成了鲜明对比。LeSS的优化目标是*适应性提升以发现最高的客户价值或满意度*。团队之间的协作 - 以及必然相伴的学习 - 对于实现这一优化目标至关重要。两个产品导致两个（不同的）优先级，这限制了团队之间的协作，进而限制了适应性。
 
 In many organizations, collaboration (and learning) is often seen as costly or inefficient. In order to learn - on a product level - collaboration is essential. For a complex product, teams need to collaborate, share and learn together and teach each other to be able to work on important features from a customer perspective. The thinking that collaboration is inefficient often comes from looking only at the surface and not the underlying system and structures. The forces that make collaboration costly or inefficient are usually a consequence of the structures in the organization that make collaboration inefficient and expensive. For example waiting for others (e.g. because teams are single specialized), having unsupportive technology in the product for collaboration or decision making outside the teams and product group, which are local optimizations.
 
@@ -1372,7 +1372,7 @@ In previous sections, we concluded that there isn’t too much change - especial
 
 For the optimization goal of *adaptiveness to discover highest customer value or delight*, there are several reasons why moving to Requirement Areas instead of moving to two products is more contributing to *adaptiveness to discover highest customer value or delight*. The perceived customer value of the items for one product over the other will change over time, which will lead to one of the products working on lower (perceived) value for the customer and organization as a whole, because teams in one product will only work from the Product Backlog of that product. This will similarly happen to working from the highest (perceived) value from one Requirement Area over the other. However, when that happens, the Product Owner can decide to move team(s) to the other Requirement Area, being able to adapt relatively easily. Though there will always be some delay. Additionally, separating into two products likely comes with creating a separate product group, with a separate manager or managers and specialist positions accompanying the product. Changing the priority for one product over the other will be hard, because of these positions. While in a LeSS Huge the single Product Owner can simply choose to move teams from one Requirement Area over the other, because the Requirement Areas are not linked to the organizational structure with (a) manager(s) and other positions attached to it. This way, it is fairly easy to change direction on the whole product level compared to having two products. Additionally, when a customer request spans products and there are private code ownership boundaries per product, this will increase the lead time of a customer request that spans the products. Y Soft didn’t create a separate product group and kept the organization simple, as described in other sections.
 
-对于*高度适应性以发现最高客户价值或满意度*的优化目标，有几个原因可以解释为什么转向需求领域而不是转向两个产品会更有利。一个产品的条目被感知的客户价值相对于另一个产品的将随时间推移而变化，这将导致其中一个产品对客户和组织作为整体来说产生的价值较低，因为一个产品的团队只会根据这个产品的产品待办列表来工作。这同样会发生在一个需求领域的最高价值工作不及另一个需求区域的工作。然而，当这种情况发生时，产品负责人可以决定将团队转向另一个需求领域，调整起来相对容易。尽管总会有一些延迟。此外，拆成两个产品可能会伴随着创建各自的产品组，与产品关联的各自经理和专家职位。由于这些位置的存在，改变一个产品相对于另一个产品的优先级将很难。而在LeSS巨型中，唯一的产品负责人可以简单地选择将团队从一个需求领域转到另一个，因为需求领域没有与设置了经理和其他职位的组织结构相关联。这样一来，在整个产品层面上改变方向相比两个产品会容易许多。此外，当一个客户请求跨多个产品，并且每个产品都有私有代码所有权的边界时，这将增加跨产品客户请求的交付周期时间。Y Soft并没有创建各自的产品组，而是保持了组织的简洁，如其它部分所述。
+对于*适应性提升以发现最高的客户价值或满意度*的优化目标，有几个原因可以解释为什么转向需求领域而不是转向两个产品会更有利。一个产品的条目被感知的客户价值相对于另一个产品的将随时间推移而变化，这将导致其中一个产品对客户和组织作为整体来说产生的价值较低，因为一个产品的团队只会根据这个产品的产品待办列表来工作。这同样会发生在一个需求领域的最高价值工作不及另一个需求区域的工作。然而，当这种情况发生时，产品负责人可以决定将团队转向另一个需求领域，调整起来相对容易。尽管总会有一些延迟。此外，拆成两个产品可能会伴随着创建各自的产品组，与产品关联的各自经理和专家职位。由于这些位置的存在，改变一个产品相对于另一个产品的优先级将很难。而在LeSS巨型中，唯一的产品负责人可以简单地选择将团队从一个需求领域转到另一个，因为需求领域没有与设置了经理和其他职位的组织结构相关联。这样一来，在整个产品层面上改变方向相比两个产品会容易许多。此外，当一个客户请求跨多个产品，并且每个产品都有私有代码所有权的边界时，这将增加跨产品客户请求的交付周期时间。Y Soft并没有创建各自的产品组，而是保持了组织的简洁，如其它部分所述。
 
 ##### Alternative options
 ##### 其它选项
@@ -1418,17 +1418,17 @@ Thus, there was a move to two products, with a single Product Owner for each (bo
 因此就转向了两个产品，每个产品都有一个产品负责人（都是董事会成员），每个产品都有一份产品待办列表。已经在OMNI系列上工作的团队转向工作于OMNI系列的产品待办列表（3个团队），其他团队转向工作于SAFEQ的产品待办列表（10个团队）。新拆分产品的第一个迭代在2020年11月开始。
 
 ### 3.3 Inspect
-### 3.3 检查
+### 3.3 检视
 
 #### 3.3.1 Inspection on the weak product vision
-#### 3.3.1 针对薄弱产品愿景的检查
+#### 3.3.1 针对薄弱产品愿景的检视
 
 The whole organization focused on the strategic changes and all the important people of the company were available to help, which meant increasing participation of people in Product Backlog Refinement & Sprint Review. There was not a good alignment between the strategy, the product vision or roadmap and the Product Backlog. Requirements and priorities changed often and the Product Owner and supporting product marketing people couldn’t keep up with the pace that the CEO and VP of Marketing expected, which led to a weak product vision and a lack of understanding from teams on the product vision. It led to ‘just do’ what the Product Owner was told and therefore also for teams harder to understand the direction and to challenge the customer and market needs. Because actual customers were involved too late in the development, the feedback was entirely only from within the organization for a long time. Different stakeholders had different ideas and needs about the work to be done (e.g. support vs sales). This also delayed the creation of the roadmap.
 
 整个组织都关注战略改变，公司的所有重要人员都可以提供帮助，这意味着更多地参与产品待办列表梳理和迭代评审。战略、产品愿景或路线图与产品待办列表之间没有很好的对齐。需求和优先级经常发生变化，产品负责人和支持他的产品市场人员无法跟上CEO和市场VP期望的节奏，这导致产品愿景薄弱、团队对产品愿景缺乏理解。这导致了‘只是做’产品负责人被告知的事情，因此也让团队更难理解方向，更难挑战客户和市场需求。由于实际客户参与开发的时间太晚，所以在很长一段时间内反馈完全只来自组织内部。不同的干系人对要做的工作有不同的想法和需要（比如支持与销售）。这也推迟了路线图的制定。
 
 #### 3.3.2 Inspection on the cognitive overload
-#### 3.3.2 针对认知过载的检查
+#### 3.3.2 针对认知过载的检视
 
 The root causes of the frequent change of focus that teams experienced was the weak product vision and too often changing priorities on the short term, so teams felt a lack of focus. It was cognitive overload for the teams, needing to learn too many different things in too short a time, which they felt as a lack of focus. couldn’t focus on a specific (customer) domain for a period of time. Senior management did identify the too often changing priorities, but didn’t link this as the root cause for the cognitive overload. If this was addressed, teams could have been helped to have e.g. focus on a specific (customer) domain for a period of time, and focus on learning in that area. Or extra attention on the customer domain and/or architecture, by e.g. having domain workshops or architecture workshops. Attempts from the agile coaches to help the Product Owner to have more consistency on sharing for the long term failed, which didn’t help teams in their cognitive overload.
 
@@ -1439,7 +1439,7 @@ Once the co-founder became the PO, there was a consistent product vision, with c
 当联合创始人成为PO时，就有了一致的产品愿景，也有了明确的优先级，以及PO和团队之间的良好合作。这提升了团队的聚焦（感受），并减少了认知过载。内部干系人和外部客户的满意度更高了。团队有一个更好的基线来进一步改进，并且更清楚在哪里聚焦以及长期该学习什么。这证明了团队的认知过载并不是由于产品的宽泛造成的，一位具有强大产品愿景和更一致优先级决策的产品负责人可以消除其根本原因。
 
 #### 3.3.3 Inspection on the products having different customers, markets and sales channels
-#### 3.3.3 针对产品具有不同客户、市场和销售渠道的检查
+#### 3.3.3 针对产品具有不同客户、市场和销售渠道的检视
 
 First, if you use a broad product definition, would the customers & markets be so different? There would still be customers that require solutions for their printing & scanning, though these are in a different segment of the market. Customers buying OMNI Series wouldn’t need something completely different than printing & scanning solutions. From an outside perspective, these products are very similar when you zoom out, though can be perceived very differently from an inside perspective. Second, the sales channels are different. But is this a sufficient reason to split the product? OMNI Series would require selling directly to customers, creating a webshop, and having different promotion approaches. But can’t there be different sales strategies within one product? There are many broad product definitions where the product is sold to different types of customers and the use of different sales channels. Office365 might be an example where there is broad internal product thinking, while there are different sales channels, customer types and even parts of Office365 sold separately.
 
@@ -1450,7 +1450,7 @@ Product development was split into two products, but marketing and sales kept wo
 产品开发被拆成两个产品，但市场和销售仍保持着与以前相同的结构，作为一个部门兼顾两个产品。从产品市场来看，一些人专注于OMNI系列，但他们仍在同一个产品市场部门工作。这与两个产品的市场和销售非常不同的说法相矛盾。产品开发基于这一说法改变了结构，而市场和销售则保持了同样的结构。在产品开发之外（比如市场和销售）的差异显然并不大，那么它为什么能支撑对产品开发进行拆分？
 
 #### 3.3.4 Inspection on adaptiveness
-#### 3.3.4 针对适应性的检查
+#### 3.3.4 针对适应性的检视
 
 The change of strategy led to a big change in the priorities of the Product Backlog and teams needing to learn many new technologies, but also a different approach to customers. At least three of the teams fully focused on cloud technologies from the start and developed the infrastructure, configured it, changed many customer centric functionalities, addressed security etc. And they delivered a working environment with a large part of the customer centric features in the cloud within six months. This is an existence proof that having cross-functional teams and focusing on learning really works! These teams were able to discover and understand what was needed, learned new technologies and successfully developed the product with these new technologies, while a very limited amount of the prerequisites were set up before they started working on it. People from mostly IT worked closely with the teams to set up the infrastructure and to share some experiments they did in advance with cloud technologies. We can’t imagine this would have worked with adding new teams separately without the customer and product context, which happens often in *project*-based organizations. Before these occurrences in COVID-times, Y Soft’s senior management still considered LeSS (and Scrum) as ways to improve their delivery, quality and keeping agreements with customers about delivery. The changes in strategy and changed desires from customers made the senior management realize that the LeSS organizational changes and the ability of teams to deliver customer features end-to-end enabled them to change this quickly. In short, they got the benefits of an *adaptive* (agile) organization.
 
@@ -1500,7 +1500,7 @@ With the COVID-19 pandemic in 2020, Y Soft changed its strategy. The priorities 
 
 The uniqueness of the Y Soft LeSS adoption is the *willingness* and courage to keep inspecting and adapting the organizational design. Not just *starting* a LeSS adoption and making small improvements, but considering and executing larger changes, as described in this case study.
 
-Y Soft的LeSS导入的独特之处在于不断检查和调整组织设计的*意愿*和勇气。正如本案例研究中所述，它不是*开始*LeSS导入然后只是进行小的改进，而是考虑并执行更大的变革。
+Y Soft的LeSS导入的独特之处在于不断检视和调整组织设计的*意愿*和勇气。正如本案例研究中所述，它不是*开始*LeSS导入然后只是进行小的改进，而是考虑并执行更大的变革。
 
 ### More public info about the Y Soft LeSS adoption
 ### 关于Y Soft的LeSS导入的更多公开信息
