@@ -776,7 +776,7 @@ Because the ‘undone’ work was the responsibility of the teams, the teams too
 
 #### 1.3.7 检视组织设计元素：LeSS实验：避免...职能单元 Inspection OD-element: LeSS experiment: Avoid...Functional units
 
-在LeSS实施前，存在多个职能单元，在本章节中将会对其逐一检视。在团队自我设计过程中，产品总监识别出三类特定角色，他们可以要么加入团队，要么游离于团队之外（自愿参与原则）：
+在LeSS导入前存在多个职能单元，在本章节中将会对其逐一检视。在团队自设计过程中，产品总监识别出三类特定角色，他们可以加入团队或者游离于团队之外（采用自愿原则）：
 
 * 安全专家
 * 架构师
@@ -788,33 +788,33 @@ There were several functional units prior to the LeSS adoption, which will be in
 * Architects
 * User Interface (UI)/User eXperience (UX) specialists
 
-自从开始实施LeSS，安全专家们就决定加入（不同的）团队，并在团队之间传播安全知识，成为“常规”开发人员。他们建立了一个强大的社区，邀请所有团队派出一名代表（“安全主席”）加入该社区，以分享知识，并确保每个团队都了解基本的安全知识。产品总监和团队都认可这种方法，所有团队都至少能够在日常开发中满足安全的基本需求。团队将更复杂的问题带到社区中，或者将其移交给有安全专家的团队。团队对安全问题的紧迫感有所增强，这是跨团队传播知识的一大成果。
+自从开始导入LeSS，安全专家们就决定加入（不同的）团队，并在团队之间传播安全知识，成为“常规”开发人员。他们建立了一个强大的社区，邀请所有团队派出一名代表（“安全捍卫者”）加入该社区，以分享知识并确保每个团队都了解基本的安全知识。产品总监和团队都认可这种方法，所有团队都至少能够在日常开发中满足安全的基本需求。团队将更复杂的问题带到社区中，或者将其移交给有安全专家的团队。团队对安全问题的紧迫感有所增强，这是跨团队传播知识的一大成果。
 
 From the start of the LeSS adoption, the security specialists decided to join (different) teams and spread security knowledge across teams, being ‘regular’ developers. They set up a strong community, invited all teams to send a representative (‘security champion’) to the community, to share knowledge and make sure each team knows the basics of security. The Head of Product and teams considered this approach successful and all teams were able to address at least the basic needs in regular development on security. Teams brought more complex matters to the community or they moved it to teams with security specialists. Teams felt more sense of urgency on security, which was a great result from spreading this knowledge across teams.
 
-架构师们在初期实施LeSS时，决定不加入团队，保持为一个独立的团队。遵循LeSS的“自愿参与”原则，他们的工作是安全的（但角色并不安全和固定）。达成的协议是，架构师不能阻碍任何团队的开发进度，如果他们想对产品有影响力，就需要与团队紧密合作。一些架构师做得相当好，但也有一些架构师不喜欢这种方式，最终选择离职。一些架构师在LeSS实施过程中加入了团队，并从下一个*重要的组织设计变化*(参考 [下个章节](#2-experiment-2-organizational-design-redesigning-the-feature-teams-and-removing-the-management-layer))开始，他们正式成为团队的一员。在团队中他们的知识帮助团队更好地了解产品，而架构师也可以离实际产品更近了。这样，他们可以发挥更大的影响力，在整个组织中传播了更多的架构知识。
+架构师们在那时决定不加入团队，而是保持作为一个独立的团队。遵循LeSS*采用自愿*的导入原则，他们的工作是安全的（但角色并不安全和固定）。达成的约定是架构师不能阻碍任何团队的开发进度，如果他们想对产品有影响力，就需要与团队紧密合作。一些架构师做得相当好，但也有一些架构师不喜欢这种方式，最终选择离职。一些架构师在过程中加入了团队，并从下一个*重要的组织设计变化*(参考 [下个章节](#2-experiment-2-organizational-design-redesigning-the-feature-teams-and-removing-the-management-layer))开始，他们正式成为团队的一员。在团队中他们的知识帮助团队更好地了解产品，而架构师也可以离实际产品更近。这样，他们可以发挥更大的影响力，在整个组织中传播了更多的架构知识。
 
 The architects decided not to join teams and stayed a separated group at that time. Following the LeSS adoption principle *Use Volunteering*, there was job safety for them (but not role safety). The agreement was that they couldn’t be blocking any developments and if they wanted to have influence on the product, they needed to work closely together with teams. Some of the architects did this quite well, and some architects didn’t like to work this way and eventually left. A few of the architects joined teams along the way, and from the next *significant OD change* (see [upcoming section](#2-experiment-2-organizational-design-redesigning-the-feature-teams-and-removing-the-management-layer)) they formally became part of a team. Their knowledge in teams helped teams to better understand the product, and the architects got closer to the actual product. This way they had much more impact, because they spread their knowledge more across the organization.
 
-UI/UX专家在初期决定不加入团队。在后续阶段，他们曾经尝试加入团队，但团队和UI/UX专家自己都认为这不是一次成功的实验。在这次实验中，他们虽然名义上是在团队中工作，但实际上只是各自为战，并没有过多地参与团队工作。对于他们来说，他们的工作与团队工作重叠的部分并不多，而团队也并没有因为他们的加入而得到什么好处，因为他们主要在做与产品不直接相关的工作。这是大家的普遍结论，因此他们转到了公司的其他部门，以便在那里更好地运用他们的技能。同时，一些团队也雇佣了“前端开发人员”，这些开发员能够直接参与团队的开发工作。他们的角色对团队很有帮助，让团队能更好地解决“前端”工作。
+UI/UX专家在初期决定不加入团队。在后续阶段，他们曾经尝试加入团队，但团队和UI/UX专家自己都认为这不是一次成功的实验。在这次实验中，他们虽然名义上是在团队中工作，但实际上只是各自为战，并没有过多地参与团队工作。对于他们来说，他们的工作与团队工作重叠的部分并不多，而团队也并没有因为他们的加入而得到什么好处，因为他们主要在做与产品不直接相关的工作。这是大家的普遍结论，因此他们转到了公司内可以运用他们技能的其他部门。同时，一些团队也雇佣了“前端开发人员”，这些开发员能够直接参与团队的开发工作。他们的角色对团队很有帮助，让团队能更好地应对“前端”工作。
 
 The UI/UX specialists decided not to join teams. In a later stage, they experimented to join teams, but teams and the UI/UX specialists didn’t consider it a success. In the experiment, they were working ‘in’ a team, but basically doing their own work and not getting involved in the teams much. For them, there wasn’t much overlap with the work of the teams, and teams saw no benefit in having them in the team, because they were mostly working on non-product related work. This was the general conclusion, and they moved to other parts of the company where they could use their skills. In the meantime, some teams had hired ‘frontend developers’, who were hands-on and joined development in teams. Their role was useful for teams and helped them in addressing ‘frontend’ work better.
 
-产品负责人是产品营销团队的负责人，在组织上隶属于营销部门，不属于研发部门。产品营销团队的大多数成员都与团队紧密合作，类似于LeSS实验([《精益与敏捷开发 - 大型应用实战》](https://www.amazon.com/Practices-Scaling-Lean-Agile-Development/dp/0321636406))中的PO*代表*或*支持*PO。PO代表主要围绕“主题”来组织，这些主题通常是以客户为中心的特性，但也可能围绕某具体供应商的请求或缺陷。PO代表在产品待办事项梳理活动（PBR）中扮演主要角色，在迭代计划会和迭代评审会中也发挥着积极作用。他们与团队一起讨论特性的重要性，并帮助团队做置换权衡。然而，PO代表仍然作为一个独立的职能单元，虽然协作有所改善，但团队无法独立完成与产品营销相关的工作，并且总是需要与他们合作才能交付产品。
+产品负责人是产品营销团队的负责人，在组织上隶属于营销部门，不属于研发部门。产品营销团队的大多数成员都与团队紧密合作，类似于LeSS实验([《精益与敏捷开发 - 大型应用实战》](https://www.amazon.com/Practices-Scaling-Lean-Agile-Development/dp/0321636406))中的PO*代表*或*助理*PO。PO代表主要围绕“主题”来组织，这些主题通常是以客户为中心的特性，但也可能围绕某具体供应商的请求或缺陷。PO代表在产品待办列表梳理中扮演主要角色，在迭代计划和迭代评审中也发挥着积极作用。他们与团队一起讨论特性的重要性，并帮助团队做置换权衡。然而，PO代表仍然作为一个独立的职能单元；虽然协作有所改善，但团队无法独立完成与产品营销相关的工作，总是需要与他们合作才能交付产品。
 
 The Product Owner was the manager of the product marketing group, organizationally located within Marketing, outside R&D. Most members of the product marketing group worked closely with the teams, similar to the PO *representative* or *Supporting* PO from the LeSS experiments ([Practices for Scaling Lean and Agile Development](https://www.amazon.com/Practices-Scaling-Lean-Agile-Development/dp/0321636406)). The PO representatives organized themselves mainly around ‘topics’, often customer centric features but also e.g. around requests or bugs from specific vendors. The PO representatives took their main role in Product Backlog Refinement, but also had an active role in Sprint Planning and Sprint Review. They discussed together with teams the importance of features and helped in making trade-offs. However, they still acted as a separate functional unit and while the collaboration had improved, teams weren’t able to do the work related to product marketing themselves and always needed to work with them to get things shipped.
 
-Scrum Master团队与研发部门协同工作，但作为一个独立职能单元存在。他们非常勤奋，紧密合作。然而，这也带来了一些负面影响，即他们过于关注Scrum Masters团队本身，而较少关注Scrum Master角色的其他重要方面，特别是支持产品负责人的职责。他们对团队的主要关注点是组织和促进团队及跨团队的活动。我们与Scrum Master团队进行了一次系统建模会议，以了解当前系统和主要挑战。这使他们意识到应该关注之前未曾注意到的一些挑战。这成为他们更好地了解系统、明确要解决哪些挑战以及如何提升透明度的起点。很快，Scrum Master团队开始采取一种方法来提升他们想要解决的问题的透明度，特别是与产品相关的问题（主要是产品待办事项列表）。在得到一些支持后，Scrum Masters团队很快就开始关注主要挑战，而不是之前较小的关注点以及他们团队本身。
+Scrum Master团队与研发部门协同工作，但作为一个独立职能单元存在。他们非常勤奋并一起紧密协作。然而，这也带来了一些负面影响，即他们过于关注Scrum Masters团队本身，而较少关注Scrum Master角色的其他重要方面，特别是支持产品负责人。他们对团队的主要关注点是组织和引导团队及跨团队的活动。我们与Scrum Master团队进行了一次系统建模会议，以了解当前系统和主要挑战。这使他们意识到应该关注之前未曾注意到的一些挑战。这成为他们更好地了解系统、明确要解决哪些挑战以及如何提升透明度的起点。很快，Scrum Master团队开始采取行动来提升他们想要解决的问题的透明度，特别是与产品相关的问题（主要是产品待办列表）。借助一些支持，Scrum Masters团队很快就开始关注主要挑战，而不是之前较小的关注点以及他们团队本身。
 
 The group of Scrum Masters worked within R&D, but acted as a functional unit. They were very diligent and were closely collaborating together. A downside of that was that they were too focused on the group of Scrum Masters and less focused on other important aspects from the Scrum Master role, especially supporting the Product Owner. Their main focus to teams was to organize and facilitate team- and multi-team events. We did a system modeling session with the Scrum Master group to understand the system and the main challenges. This led them to understand that they should address certain challenges where they were not focusing on. It was a start for them to understand the system better, understanding which challenges to address and how to make these things transparent. Very soon the group started taking the approach to make topics that they wanted to address more transparent, especially around the product (mainly the Product Backlog). With some support, the group of Scrum Masters were soon focusing on the main challenges, instead of the smaller focus they had before and their own group.
 
-考虑到这些职能单元，职能领域专家加入团队后带来了最好的改进。组织设计（OD）的变革是为了避免（从而消除）职能单元，这带来了适应性的重大改进，但对组织产生了严重的后果。
+考虑这些职能单元，职能专家加入团队后带来了最好的改进。避免（从而消除）职能单元的组织设计变革带来了适应性的重大改进，但也对组织产生了重要的后果。
 
 Considering these functional units, the best improvements resulted from the functional specialists when joining the teams. The OD change to avoid (and thus remove) functional units leads to major improvements in adaptiveness, but has serious consequences in the organization.
 
 #### 1.3.8 检视组织设计元素：LeSS实验：尝试...工作再设计 Inspection OD-element: LeSS experiment: Try...Work redesign
 
-在开始实施LeSS时，*特性团队*把原先属于不同*组件*和*职能*的任务整合起来，从而完成了工作的再设计，以涵盖以客户为中心的产品待办事项（PBI）。团队最初对此感到十分困难，因为他们源自组件团队，还不习惯于产品和客户的视角。在与供应商、大客户以及直接与客户和供应商打交道的内部利益相关者更紧密地合作一段时间后，团队更好地理解了客户领域的相关内容，“传话游戏”逐渐变少。以前，团队主要从项目经理或内部利益相关者那里接收工作，几乎不与真正的客户或用户互动。开始定义以客户为中心的PBI后，需要团队学习，特别是在工作项梳理和工作设计方面。随着时间的推移，团队在这些方面的表现越来越出色，组织设计（OD）变革的“工作再设计”最终带来了这一团队改进。
+在开始导入LeSS时，*特性团队*把原先属于不同*组件*和*职能*的任务整合起来，工作被重新设计以涵盖以客户为中心的产品待办条目。团队最初对此感到挣扎，因为他们源自组件团队，还不习惯产品和客户的视角。在与供应商、大客户以及直接与客户和供应商打交道的内部利益相关者更紧密地合作一段时间后，团队更好地理解了客户领域的相关内容，“传话游戏”逐渐变少。以前，团队主要从项目经理或内部利益相关者那里接收工作，几乎不与真正的客户或用户互动。开始定义以客户为中心的PBIs就需要团队的学习，特别是在梳理和工作设计方面。随着时间的推移，团队在这些方面的表现越来越出色，组织设计变革的“工作再设计”最终带来了这一改进。
 
 When starting the LeSS adoption, the work was redesigned to cover customer-centric Product Backlog Items, combining tasks (of different *components* and *functions*) in the *feature teams*. The teams struggled with this in the beginning - coming from component teams - because they weren’t used to seeing the whole product and the customer perspective. Working more closely with vendors, large customers and internal stakeholders that work directly with customers and vendors led to better understanding of the customer domain, and less ‘whispering game’. Before, teams received their work mainly from project managers or internal stakeholders, with almost no interaction to real customers and users. Starting defining customer-centric PBI’s required learning from the teams, especially in the area of refinement and work design. Over time, the teams got better at this and the OD change to redesign the work led to this improvement eventually.
 
@@ -822,10 +822,10 @@ When starting the LeSS adoption, the work was redesigned to cover customer-centr
 
 在这个实验中的主要适应性变化总结如下：
 
-* 维护一份产品待办事项列表和一位产品负责人
+* 一位产品负责人管理的一份产品待办列表
 * 跨职能和跨组件的团队共同对整个产品负责
-* 团队共同承担整个产品的共性工作（如技术支持、缺陷修复、回归测试及发布），而不是单独保留一个“未完成”单元或团队
-* 团队实现自我管理（并在这方面不断改进）
+* 团队共同承担整个产品的共性工作（如技术支持、缺陷修复、回归测试及发布），而不是单独保留一个“完成外”单元或团队
+* 团队自管理（并在这方面不断改进）
 
 A summary of the main adaptations that happened in this experiment:
 
@@ -834,12 +834,12 @@ A summary of the main adaptations that happened in this experiment:
 * Teams shared the common work for the whole product (support duty, fixing bugs, regression testing & releasing) instead of having separate ‘undone’ units or teams
 * Teams to self-manage (and improve in this area)
 
-这些变化主要带来了下述影响和结果：
+这些变化带来了以下主要结果：
 
 * 更加注重技术卓越性
 * 过了一段时间后，更加注重整个产品的发布
-* 定义产品待办事项时更加聚焦客户，把组件和*职能*任务整合从而形成端到端的产品待办列表
-* 团队有能力选择更多的以客户为中心的产品待办事项，并在需要时与其他团队一起协作，并学习相关技能。
+* 定义产品待办条目时更加以客户为中心，把组件和*职能*任务整合从而形成端到端的产品待办条目
+* 团队有能力选择更多的以客户为中心的产品待办条目，并在需要时与其他团队一起协作来学习相关技能。
 
 
 This brought the following main results:
@@ -849,33 +849,32 @@ This brought the following main results:
 * Define Product Backlog Items more customer-centric combining component and *function* tasks in the end-to-end Product Backlog Items
 * Teams being able to pick up more customer-centric Product Backlog Items and work together with other teams to learn when needed
 
-在重新对齐工作坊之后，产品总监决定在LeSS实施过程中需要更多的外部支持帮助，主要侧重于指导他们的Scrum Master。通过这种方式，Scrum Master能够学习并具备能力去主动推进相关工作。而也恰在这个时候，本文的主要作者加入了Y Soft的LeSS实施辅导。
+在重新对齐工作坊之后，产品总监决定在LeSS导入过程中增加更多的外部帮助，主要侧重于指导他们的Scrum Master。通过这种方式，Scrum Master能够学习并具备能力去主动推进相关工作。也就是在这时本文的主要作者加入了Y Soft的LeSS辅导。
 
 After the re-alignment workshop, the Head of Product decided to add external - more intensive - help in their LeSS adoption, mainly focused on the mentoring of their Scrum Masters. This way, the Scrum Masters could learn and be able to move things forward by themselves. This is when the main author came in.
 
-根据检视结果，一年后，Y Soft公司希望继续向前迈进。这下一步包括团队重组，取消研发部门经理角色，以及Scrum Master角色转变为敏捷教练，并招聘更多具有组织设计和团队教练经验的员工。Y Soft公司CEO和产品总监希望继续向前推进的原因有很多，包括：
+根据检视结果，Y Soft在一年后希望继续向前迈进。下一步包括团队重组、取消研发部门经理角色，以及Scrum Master角色转变为敏捷教练，并招聘了在组织设计和团队辅导上更有经验的其他员工。Y Soft公司CEO和产品总监希望继续向前推进的原因有很多，包括：
 
 Based on the inspection, after a year Y Soft wanted to make the next big step forward. This next step involved a team redesign, removing the managers within R&D and the Scrum Masters role becoming the agile coach role and getting other people onboard with more experience in organizational design and team coaching. Y Soft CEO and Head of Product had several reasons for making the next step:
 
-* 扩大团队的自我管理权，减少决策延迟，提高组织的透明度。CEO决定取消产品总监与团队之间的管理层，以在组织层面提高团队内部发生事情的透明度，并通过取消管理层来减少决策所需的人数（以规避决策延迟）。
+* 扩大团队的自管理，减少决策延迟，提高组织的透明度。CEO决定取消产品总监与团队之间的管理层，以在组织层面对团队内部发生的事情有更高的透明度，并通过取消管理层来减少决策所需的人数（以规避决策延迟）。
 
 * Extend self-management of the teams, remove delays in decision making and increase organizational level transparency. The CEO decided to remove the management layer between the Head of Product and the teams, to get more transparency on things that happen within teams on organizational level and less people required for decision making (to get rid of delays in decision making) by removing the management layer.
 
-* 产品中人员（和团队）数量不断增加，各团队的规模差异很大。团队招募了新员工，并纳入了其他角色（例如架构师）。产品总监从基础设施部门为产品增加了一个全职的“团队”（仍然作为一个组件团队），基于该团队的技能，他们需要服务其他各个团队。此外，首席执行官和产品总监希望增加额外的团队（产能），因此两个新团队（完全从咨询公司聘请）开始组建。
+* 产品中人员（和团队）数量不断增加，各团队的规模差异很大。团队招募了新员工，并纳入了其他角色（例如架构师）。产品总监从基础设施部门为产品增加了一个全职的“团队”（仍然作为一个组件团队），基于该团队的技能，他们需要服务其他各个团队。此外，CEO和产品总监希望增加额外的团队（产能），因此启动了两个新团队（完全从一家咨询公司招聘）。
 
 * The amount of people (& teams) in the product has grown and the teams differ greatly in size. Teams hired new people and incorporated other roles (e.g. architects). The Head of Product added a full ‘team’ to the product from the infrastructure department (still as a component team), from which the skills needed to be divided between the teams. Additionally, the CEO and the Head of Product had the desire to add extra teams (capacity), so two new teams (fully hired from a consultancy company) started.
 
-* 团队和管理层都希望提高端到端交付以客户为中心的特性的能力。这将使团队具有更强的跨职能性，并能够承接产品的更多部分功能。一些团队意识到，他们需要提升技能范围，以便更好地端到端交付以客户为中心的特性。这些团队中的一部分又拥有过于宽泛的专业技能，他们需要一些客户领域的聚焦，以便能够*轻松地*变得更为完美并有重点的学习。在产品待办事项中有能力完成*每一项工作*，其实是不必要的。这些团队希望改变团队设计以实现优化。这导致了需要自上而下和自下而上（对于大多数人而言）双向支持，来继续向下推进。
-
+* 团队和管理层都希望提高端到端交付以客户为中心的特性的能力。这将使团队具有更高的跨职能程度，并能够承接产品更多部分的工作。一些团队意识到，他们需要提升技能范围，以便更好地端到端交付以客户为中心的特性。这些团队中的一部分却拥有过于宽泛的专业技能，他们则需要一些客户领域的聚焦，以便能够*轻松地*变得更为完美并有重点的学习。并且不是必需能够做产品待办列表中的*任意工作*。这些团队希望改变团队设计以得到优化。这导致了对继续推进既有自上而下也有自下而上（对于大多数人而言）的支持。
 
 * Both teams and management wanted to improve the ability of teams to deliver end-to-end customer centric features better. This would result in more cross-functionality in the teams and teams being able to work on more parts of the product. Some teams realized that they needed to improve their range of skills to be able to deliver end-to-end customer centric features better. Some of these teams had a too wide range of specialist skills, and they needed some customer-area focus to be able to *easily* get better and learn within a certain focus. And not necessarily focus on being able to work on *everything* in the Product Backlog. These teams wanted to change team designs to optimize this. This resulted in top-down and bottom-up (for most people) support for the step forward.
 
-下一步是第二个*重大的组织设计变革*事件，并推进了后续LeSS实施的系列活动。在把启动LeSS实施的初始4天活动称为“LeSS翻转”或“第一次翻转”之后，他们将这次事件称为“第二次翻转”。基本上，LeSS指南*从这里开始*中的相关步骤都被重复执行了。以下是组织设计变更的概述：
+下一步是第二个*重大的组织设计变革*事件，以及他们LeSS导入的后续步骤。在把启动LeSS导入的初始4天活动称为“LeSS翻转”或“第一次翻转”之后，他们将这称为“第二次翻转”。基本上重复了LeSS指南*启动*中的相关步骤。以下是组织设计变革的概述：
 
 * 团队（自我）重新设计
 * 不再有直接管理团队的经理
 
-这些组织设计变更的背景和详述将在下一节中描述。
+这些组织设计变革的背景和详述将在下一节中展开。
 
 The next step was a second event that made *significant Organizational Design changes* and next steps in their LeSS adoption. They called this ‘Flip 2’, after calling the initial 4-day event that started the LeSS adoption ‘LeSS Flip-forward’ or ‘Flip 1’. Basically, certain steps of the LeSS guide *Getting Started* were repeated. A summary of the OD changes:
 
@@ -1186,7 +1185,7 @@ Many OD changes happened since the start of the LeSS adoption, and many small th
 CEO在LeSS导入的早期，第二次组织实验之前，表达了将SAFEQ迁移到LeSS Huge的愿望。Y Soft有增加市场份额和也许扩张市场的野心。迁移到LeSS Huge应该可以帮助他们实现这一点，包括增大团队规模。
 The CEO indicated the desire to move to LeSS Huge for SAFEQ early in their LeSS adoption, before the second OD experiment. Y Soft has the ambition to grow their market share and possibly extend markets, and the move to LeSS Huge should help to be able to grow on this, including the growth of the number of teams.
 
-比较显著的调整是Y Soft的联合创始人成为了SAFEQ的产品负责人。他非常有经验，跟（打印）供应商/合作伙伴以及大客户关系亲密，对产品了如指掌，因为他曾经就是（跟CEO一起）的初代开发工程师，对产品和代码一直都非常清楚。当他成为产品负责人后，我们对愿景的理解，对基于供应商和客户需求优先顺序的清晰度都得到了提升。因为得到了授权（他的决定也受到尊重），他不会因为组织“需要”，包括来自（打印）供应商和客户的反馈和学习，而改变方向，这会减少团队因切换客户领域而产生的认知负荷。团队没有了紧急需求，可以更加专注，即使我们有10个团队共同工作在一个产品待办列表上。一个连贯的产品愿景，清楚的优先顺序，产品负责人与团队良好的合作，改善了团队（感觉）的关注度。自从这个产品负责人，和一个组织内经验丰富的产品助理，加入到产品团队之后，内部干系人和外部客户的满意度更高了。团队有了更好的基线以方便未来的改善，更明白应该关注什么地方，以及为了长期利益应该学习什么。
+比较显著的调整是Y Soft的联合创始人成为了SAFEQ的产品负责人。他非常有经验，跟（打印）供应商/合作伙伴以及大客户关系亲密，对产品了如指掌，因为他曾经就是（跟CEO一起）的初代开发工程师，对产品和代码一直都非常清楚。当他成为产品负责人后，我们对愿景的理解，对基于供应商和客户需求优先顺序的清晰度都得到了提升。因为得到了授权（他的决定也受到尊重），他不会因为组织“需要”，包括来自（打印）供应商和客户的反馈和学习，而改变方向，这会减少团队因切换客户领域而产生的认知负荷。团队没有了紧急需求，可以更加专注，即使我们有10个团队共同工作在一个产品待办列表上。一个连贯的产品愿景，清楚的优先顺序，产品负责人与团队良好的合作，改善了团队（感觉）的关注度。自从这个产品负责人，和一个组织内经验丰富的*助理PO*，加入到产品团队之后，内部干系人和外部客户的满意度更高了。团队有了更好的基线以方便未来的改善，更明白应该关注什么地方，以及为了长期利益应该学习什么。
 A significant adaptation was the co-founder of Y Soft becoming the PO for SAFEQ. He is experienced, has close contact with (print) vendors/partners and large customers and knows the product in and out, because he did initial development (with the CEO) and stayed close to the actual product and code. When he started as the PO, the understanding of the vision, clarity on priorities based on vendor and customer became higher. Because he has the mandate (and his decisions were respected), he wouldn’t change direction often based on “demands” from the organization, which limited the cognitive load for teams to switch between customer domains. Including adapting to feedback and learning from (print) vendors and customers. Teams didn’t have the urge anymore to have more focus, even when there were 10 teams working together on the Product Backlog. A consistent product vision, with clear priorities and a good collaboration between the PO and the teams improved the (feeling of) focus for teams. Since this PO - and a *Supporting PO* with a lot of experience in the organization - joined the product, there was more satisfaction from internal stakeholders and external customers. Teams had a better baseline to improve further and knew better where to focus on and what to learn for the long-term.
 
 在之前有关于迁移到LeSS Huge的多次讨论。敏捷教练和这个（新）产品负责人讨论把SAFEQ迁移到LeSS Huge的原因和后果。他们得出的结论是，迁移的原因是产品负责人无法理解SAFEQ的客户和市场的所有需求，进而不知道从中长期来说，应该关注在什么地方。（2021年春）讨论的时候，SAFEQ刚刚增长到了11个团队，而产品负责人表示他能够监管客户和市场的需求，以及产品待办列表的大部分主题。他提到，通过推进主题（发现和交付），以及必要时跟内部干系人和合作伙伴一起梳理的产品待办条目，团队已经成长得不错。可能他对产品、市场和重要供应商和客户的经验和知识帮助他有这个见识。如果在未来，他无法监管这些，就可以迁移到LeSS Huge中去。
@@ -1404,7 +1403,7 @@ With the change to two products, the CEO decided to change the Product Owner. Th
 
 Though the Product Owner from the product marketing team had a mandate to work with teams and make decisions on priorities, it was hard for him to make strategic decisions and to access the strategic thinking from senior management. Because of this, from time to time, direction had to be changed. The new Product Owners are actively involved in discussions about the products and the strategic minds behind it as members of the board, which makes decision making easier and setting and sharing direction as well. In addition to having the co-founder as Product Owner, an experienced and well-appreciated colleague from elsewhere in the organization joined as a *supporting* PO (LeSS experiment), not making the priority decisions, but helping the Product Owner and the teams.
 
-尽管来自产品市场团队的产品负责人有被授权与团队工作并进行优先级决策，但他很难做战略决策，也很难接触到高管的战略思维。正因为如此，产品方向不得不经常改变。新产品负责人作为董事会成员积极参与有关产品及其背后战略思想的讨论，这使得决策及设定和分享产品方向更为容易。除了让联合创始人担任产品负责人外，还有一位来自组织其它地方经验丰富且备受赞赏的同事作为*支持的*PO（LeSS实验）加入，他不做优先级决策，但会帮助产品负责人和团队。
+尽管来自产品市场团队的产品负责人有被授权与团队工作并进行优先级决策，但他很难做战略决策，也很难接触到高管的战略思维。正因为如此，产品方向不得不经常改变。新产品负责人作为董事会成员积极参与有关产品及其背后战略思想的讨论，这使得决策及设定和分享产品方向更为容易。除了让联合创始人担任产品负责人外，还有一位来自组织其它地方经验丰富且备受赞赏的同事作为*助理*PO（LeSS实验）加入，他不做优先级决策，但会帮助产品负责人和团队。
 
 #### 3.2.5 What happened?
 #### 3.2.5 发生了什么？
