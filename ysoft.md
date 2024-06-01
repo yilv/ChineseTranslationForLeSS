@@ -427,7 +427,7 @@ Products are created by teams, while traditional organizations are built around 
 * *LeSS rule: Each team is (1) self-managing, (2) cross-functional, (3) co-located, and (4) long-lived.*
 
 
-作为前一个OD元素的推论，LeSS定义了团队的含义。有些对团队的解释并没有体现出基于团队的组织应该带来的好处。因此，团队是自管理的、跨职能的、同在一地的和长期的。此外 - 也许不是必须的 - 每个成员应该100%都属于一个且唯一一个团队。团队需要具有（职能的）能力去产生一个可交付的的产品（并且持续提升跨职能程度）。如果你希望长期存在的团队关注他们作为一个团队如何协作，那么这些团队就需要有稳定性。研发团队重新自设计成为跨职能团队，在同一地方，这些团队长期在一起（除非自然原因，如员工离职）。随着时间推移，团队学会了更多的自管理。但是，自管理方面的改进主要发生第二个OD实验中，那里发生了更多的OD变革，更多介绍请参考[下述章节](#2-experiment-2-organizational-design-redesigning-the-feature-teams-and-removing-the-management-layer)。
+作为前一个组织设计元素的推论，LeSS定义了"团队"的含义。有些对团队的解释并没有体现出基于团队的组织应该带来的好处。因此，团队是自管理的、跨职能的、同在一地的和长期的。此外 - 也许不是必须的 - 每个成员应该100%都属于一个且唯一一个团队。团队需要具有（职能的）能力去产生一个可交付的的产品（并且持续提升跨职能程度）。如果你希望长期存在的团队关注他们作为一个团队如何协作，那么这些团队就需要有稳定性。研发团队重新自设计成为跨职能团队，在同一地方，这些团队长期在一起（除非自然原因，如员工离职）。随着时间推移，团队学会了更多的自管理。但是，自管理方面的改进主要发生第二个OD实验中，那里发生了更多的OD变革，更多介绍请参考[下述章节](#2-experiment-2-organizational-design-redesigning-the-feature-teams-and-removing-the-management-layer)。
 
 As a corollary to the previous OD-element, LeSS defined what it means to be a team. Some interpretations of a team won’t give the benefits the team-based organization should bring. Therefore teams are self-managing, cross-functional, co-located and long-lived. Additionally - perhaps unnecessary - each team member is dedicated 100% of this time to one and only one team. The teams need to have the (functional) skills to produce a shippable product (and improve the cross-functionality over time). Long-lived teams need to have stability if you want them to care about how they work as a team. The teams within R&D redesigned themselves into cross-functional teams, at one location and these teams stayed together for a long time (exceptions are natural changes like people moving). Over time, the teams learned to self-manage more. However, this improved especially in the second OD experiment, when additional OD changes were made, more about that in [upcoming sections](#2-experiment-2-organizational-design-redesigning-the-feature-teams-and-removing-the-management-layer).
 
@@ -466,7 +466,7 @@ This removed bottlenecks and created big improvements on shared ‘processes’,
 
 * *LeSS experiment: Avoid...Functional units*
 
-许多组织都是围绕职能专业来构建的，如测试、开发、架构和产品营销。这些职能单元的存在会因其有限的职能视角导致局部优化。相反则以（跨职能）团队作为组织单元。在Y Soft案例中，LeSS导入前研发部是以职能单元构建的，一些（中层）领导负责测试、开发、架构等团队。在LeSS导入的重组中，这些领导转变为（跨职能）团队的负责人。唯一的例外就是安全和架构部门，但架构师们决定（目前暂时）不加入团队。而安全专家确实加入了团队，但他们也非常积极向没有安全专家的团队传播安全知识，这有效限制了安全方面的局部优化。
+许多组织都是围绕职能专业来构建的，如测试、开发、架构和产品营销。这些职能单元的存在会因其有限的职能视角导致局部优化。相反则以（跨职能）团队作为组织单元。在Y Soft案例中，LeSS导入前研发部是以职能单元构建的，一些（中层）领导负责测试、开发、架构等团队。在LeSS导入的重组中，这些领导转变为（跨职能）团队的负责人。唯一的例外就是安全和架构部门，架构师们决定（目前暂时）不加入团队。而安全专家确实加入了团队，但他们也同时非常积极向没有安全专家的团队传播安全知识，这有效限制了安全方面的局部优化。
 
 Many organizations are structured around functional specializations like test, development, architecture and product marketing. These functional units lead to local optimization with limited perspective for the functional specialists. Instead, have the (cross-functional) teams as the organizational units. In Y Soft’s case, before the LeSS adoption, there were functional units within R&D with (middle) managers responsible for testing, development, architecture etc. In the restructuring at the time of the LeSS adoption, the managers became manager of a few (cross-functional) teams. The only exceptions were security and architecture, but the architects decided not to take part in the teams (yet). The security specialists did take place in teams, but were also very active to spread the security knowledge to teams without security specialists, which limited the local optimization for security.
 
@@ -554,7 +554,7 @@ After a few months, there seemed to be a lot of improvements in the product deve
 * More transparency on the Product Backlog and more explicit - and hard - decisions taken on the priority of features.
 * Teams were visibly happier about the way of working.
 
-尽管大多数团队都感到更加满意，但在LeSS导入的第一年，Y Soft流失了大约20%的员工。这些人可能感觉是被迫加入到LeSS变革中，而不是自愿的。由于该产品是公司的一个主要产品，员工内部调动到其他部门的选择有限。如果公司能更好地传达自愿的真实选项，并管理好大家的期望，也许能阻止部分员工的离职。说明：后来CEO发现员工薪资低于市场平均水平，于是他大幅提高了研发部门每个人的薪资，使其高于平均水平。一些人员提到薪酬是他们离职的原因。
+尽管大多数团队都感到更加满意，但在LeSS导入的第一年，Y Soft流失了大约20%的员工。这些人可能感觉是被迫加入到LeSS变革中，而不是自愿的。由于该产品是公司的一个主要产品，员工内部调动到其他部门的选择有限。如果公司能更好地传达自愿的真实选项，并管理好大家的期望，也许能阻止部分员工的离职。说明：后来CEO发现员工薪资低于市场平均水平，于是他大幅提高了研发部门每个人的薪资，使其高于平均水平。因为一些人员提到薪酬是他们离职的原因。
 
 Though most teams were happier, Y Soft lost around 20% of the people in the first year of the LeSS adoption. People might have felt forced into the change to LeSS, instead of being a volunteer. As the product is the one big product of the company, there were limited options to move to other parts of the organization. Communicating well about the real option of volunteering and setting expectations with people well, could have prevented part of the people leaving. Note: later the CEO found out that the compensations were below average compared to the market, and he increased the compensations massively for everyone in R&D to get above average. For some people leaving, compensation was the reason they mentioned.
 
