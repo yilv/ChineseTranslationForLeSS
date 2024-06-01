@@ -520,7 +520,7 @@ Y Soft通过LeSS导入获得很多收益，即使在最初动荡“痛苦”的3
 
 Y Soft experienced big benefits from the LeSS adoption, even though the first 3 months were bumpy and considered ‘painful’ (see below). First, all the future work was collected in one Product Backlog and was prioritized by a single Product Owner. Though this wasn’t perfect yet, teams had more clarity about priorities and could make decisions easier themselves. Second, teams were better able to see and understand the whole product, and additionally able to deliver customer centric features more end-to-end than before. Third, there were less queues and waiting time because of the improved cross-functionality and cross-component nature of teams and the shared responsibility of teams. This is the fourth main benefit: removed bottlenecks and improvements on shared ‘processes’, like executing regression tests, solving bugs, having support duty and releasing the product. More reflection on the last point is in [this section](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work).
 
-在启动LeSS导入后，新成立的特性团队开始了第一个迭代的工作。团队开始端到端地交付完整特性。这些特性更加以客户为中心（尽管还不完美）。对于组织的其它部分，研发不再是一个黑盒子，因为产品待办列表和团队当前进行的工作变得更加透明。Y Soft内部的利益相关者能更好地了解在被开发的内容，并能够更好地在他们的工作中使用这些信息，例如，在与客户沟通中（为比如产品营销）。
+在启动LeSS导入后，新成立的特性团队开始了第一个迭代的工作。团队开始端到端地交付完整特性。这些特性更加以客户为中心（尽管还不完美）。对于组织的其它部分，研发不再是一个黑盒子，因为产品待办列表和团队当前进行的工作变得更加透明。Y Soft内部的干系人能更好地了解在被开发的内容，并能够更好地在他们的工作中使用这些信息，例如，在与客户沟通中（为比如产品营销）。
 
 After the start of the LeSS adoption, the newly formed feature teams started working in the first Sprint. Teams were delivering whole features end-to-end. These features were more customer-centric (though not perfect yet). For the rest of the organization, R&D was less of a black box, because of the higher transparency of the Product Backlog and what the teams were working on. Stakeholders within Y Soft had better understanding of what was developed and could better use this in their work, e.g. in communication with customers (for e.g. product marketing).
 
@@ -539,8 +539,8 @@ All in all, the first Sprints were described as ‘painful’, but they brought 
 几个月后，产品开发方面似乎有了很多改进。虽然价值没有被度量，但团队的产出和可预测性方面有了明显进步。团队将这一点视为自身的重要改进，尽管产出（不同于*成果*）如果不带来价值且不直接贡献于适应性的话并不那么重要。其他被视为改进的迹象还有：
 
 * 客户和供应商直接参与了一些主要特性的开发。
-* 内部利益相关者对更好的特性开发结果表示感激。
-* 内部利益相关者与团队之间的合作更加紧密。
+* 内部干系人对更好的特性开发结果表示感激。
+* 内部干系人与团队之间的合作更加紧密。
 * 更互动的PBR，团队之间更多的分享和学习。
 * 更清晰透明的产品待办列表，更明确（且艰难）的特性优先级决策。
 * 团队对现有的工作方式显然更加满意。
@@ -726,7 +726,7 @@ Some highlights from his blog to the whole company about these two days:
 
 From the 4-day event that started the LeSS adoption, there was a single Product Backlog and teams directly selecting work from the Product Backlog. To enable the teams to select this work following customer value and knowing what (skills) to learn, it became very transparent that the product strategy and vision was too weak. For example, during Product Backlog Refinement the Product Owner couldn’t explain well what was needed and even during refinement priority changed sometimes. People in Y Soft were used to working in *projects* and split the work into functional and component tasks for different groups. Working from a product perspective was a massive change for product marketing, the Product Owner and the rest of the organization. Having teams as building block required this, and the Scrum Masters and VP had underestimated the effect of having teams as building block and a weak product vision.
 
-许多研发部门之外的人仍然使用非正式的沟通渠道要求研发部门承接和交付相关工作，例如存在其他部门的人仍然直接联系工程师。而这得到了部分研发经理的支持，他们接受这种做法，甚至直接将这类工作带给了团队！ScrumMasters需要确保其他部门的人理解他们必须直接与产品负责人（PO）沟通协作，以便对工作优先级进行合理排序（以及为什么有些工作根据优先级没有被选择），并且利益相关者必须亲自帮助团队正确理解工作的背景和价值。组织设计变革需要一段时间才能逐步运作正常。
+许多研发部门之外的人仍然使用非正式的沟通渠道要求研发部门承接和交付相关工作，例如存在其他部门的人仍然直接联系工程师。而这得到了部分研发经理的支持，他们接受这种做法，甚至直接将这类工作带给了团队！ScrumMasters需要确保其他部门的人理解他们必须直接与产品负责人（PO）沟通协作，以便对工作优先级进行合理排序（以及为什么有些工作根据优先级没有被选择），并且干系人必须亲自帮助团队正确理解工作的背景和价值。组织设计变革需要一段时间才能逐步运作正常。
 
 Many people outside R&D still used unofficial communication channels to get work done from R&D, e.g. people from other departments that still contacted engineers directly. This was reinforced by some of the R&D managers that accepted this and even brought this work to the teams! Scrum Masters needed to make sure others understood they had to work with the PO directly to get work prioritized (and why work was not picked up based on priority), and that stakeholders had to help teams directly to make sure teams understood the context and value. The OD change took a while to work properly.
 
@@ -736,7 +736,7 @@ Many people outside R&D still used unofficial communication channels to get work
 
 The teams had self-designed themselves at the start of the LeSS adoption, they were co-located, stayed together and had most of the (cross) functional skills they needed or acquired the skills. The self-management was harder to achieve. Work was defined customer-centric and teams had more end-to-end skills to get work done. However, they still hold on to reactive behavior for work to be done, improve and make sure things get to done. Because they had more of the necessary skills, it automatically became easier, but there was not more improvement.
 
-其中一个原因是，一些基本的Scrum原则没有得到很好的践行，这是因为在Scrum和LeSS导入过程中，Scrum Master缺乏经验。这导致了较低的经验主义，以及团队内部和团队之间学习的局限性。例如，在迭代计划中待办事项的透明度很低，团队之间的互动也很少，很难为下个迭代选出最优价值的工作。轮换的Scrum Master“主导”迭代计划，而大多数团队的参会代表只想让它快点结束。这样做带来的结果是，对于要交付的价值和所做的选择透明度有限，从而导致几乎没有互动，也几乎没有对下一步应该做什么的讨论。另一个例子是迭代评审，基本上就是各团队展示已交付的特性，没有形成反馈闭环，也没有从整个产品视角清晰展示增量。参会的内部利益相关者数量有限，未来的工作没有透明度 - 因此也没有形成检视和调整 - 以获取下一步工作的反馈。除此之外，普遍的意识是“改进是Scrum Master的事”（一位团队成员就是这么说的），所以团队没有承担改进他们工作和协作方式的责任。Scrum Master在6个多月的时间里都没有组织过一次整体回顾会议！一开始，产品负责人和支持产品营销的人员承担了团队该承担的责任，既扮演了领域专家的角色，又扮演了客户的角色，这阻碍了团队搞清楚客户问题，并强化了团队原先的行为模式：请告诉我们应该做什么。这些因素都不利于创造条件让团队学习自管理。
+其中一个原因是，一些基本的Scrum原则没有得到很好的践行，这是因为在Scrum和LeSS导入过程中，Scrum Master缺乏经验。这导致了较低的经验主义，以及团队内部和团队之间学习的局限性。例如，在迭代计划中待办事项的透明度很低，团队之间的互动也很少，很难为下个迭代选出最优价值的工作。轮换的Scrum Master“主导”迭代计划，而大多数团队的参会代表只想让它快点结束。这样做带来的结果是，对于要交付的价值和所做的选择透明度有限，从而导致几乎没有互动，也几乎没有对下一步应该做什么的讨论。另一个例子是迭代评审，基本上就是各团队展示已交付的特性，没有形成反馈闭环，也没有从整个产品视角清晰展示增量。参会的内部干系人数量有限，未来的工作没有透明度 - 因此也没有形成检视和调整 - 以获取下一步工作的反馈。除此之外，普遍的意识是“改进是Scrum Master的事”（一位团队成员就是这么说的），所以团队没有承担改进他们工作和协作方式的责任。Scrum Master在6个多月的时间里都没有组织过一次整体回顾会议！一开始，产品负责人和支持产品营销的人员承担了团队该承担的责任，既扮演了领域专家的角色，又扮演了客户的角色，这阻碍了团队搞清楚客户问题，并强化了团队原先的行为模式：请告诉我们应该做什么。这些因素都不利于创造条件让团队学习自管理。
 
 One of the reasons was that some basic Scrum principles were not implemented well, a consequence from having inexperienced Scrum Masters in Scrum and LeSS adoptions. This resulted in low empiricism and limited learning within and between teams. For example, in Sprint Planning there was low transparency on the work to be done, and little interaction between teams to come up with the best selection of value for the Sprint. A rotating Scrum Master ‘led’ the Sprint Planning and most team representatives just wanted the Sprint Planning to be over. Consequence was that there was limited transparency on the value to deliver and the choices made, which led to little interaction and almost no discussion on what best to do next. Another example was the Sprint Review, which were basically demo’s where teams shared some of the delivered features, without feedback and without transparency about the whole product Increment. Limited number of internal stakeholders joined, and there was no transparency - and thus no inspection and adaptation - on future work in order to get feedback on next steps. On top of that, the overall feeling was that ‘improvements are for Scrum Masters’ (one team member said that literally), so teams didn’t take responsibility to improve the way they worked and collaborated. The Scrum Masters didn’t organize an Overall Retrospective in over 6 months! At the start, the Product Owner and supporting Product Marketing people took responsibility from teams, by acting as both the domain experts and customers, which prevented teams from figuring out the customers’ problems and reinforced the previous behavior by teams: please tell us what to do. These factors are not helping to set the stage for teams to learn to self-manage.
 
@@ -814,7 +814,7 @@ Considering these functional units, the best improvements resulted from the func
 
 #### 1.3.8 检视组织设计元素：LeSS实验：尝试...工作再设计 Inspection OD-element: LeSS experiment: Try...Work redesign
 
-在开始导入LeSS时，*特性团队*把原先属于不同*组件*和*职能*的任务整合起来，工作被重新设计以涵盖以客户为中心的产品待办条目。团队最初对此感到挣扎，因为他们源自组件团队，还不习惯产品和客户的视角。在与供应商、大客户以及直接与客户和供应商打交道的内部利益相关者更紧密地合作一段时间后，团队更好地理解了客户领域的相关内容，“传话游戏”逐渐变少。以前，团队主要从项目经理或内部利益相关者那里接收工作，几乎不与真正的客户或用户互动。开始定义以客户为中心的PBIs就需要团队的学习，特别是在梳理和工作设计方面。随着时间的推移，团队在这些方面的表现越来越出色，组织设计变革的“工作再设计”最终带来了这一改进。
+在开始导入LeSS时，*特性团队*把原先属于不同*组件*和*职能*的任务整合起来，工作被重新设计以涵盖以客户为中心的产品待办条目。团队最初对此感到挣扎，因为他们源自组件团队，还不习惯产品和客户的视角。在与供应商、大客户以及直接与客户和供应商打交道的内部干系人更紧密地合作一段时间后，团队更好地理解了客户领域的相关内容，“传话游戏”逐渐变少。以前，团队主要从项目经理或内部干系人那里接收工作，几乎不与真正的客户或用户互动。开始定义以客户为中心的PBIs就需要团队的学习，特别是在梳理和工作设计方面。随着时间的推移，团队在这些方面的表现越来越出色，组织设计变革的“工作再设计”最终带来了这一改进。
 
 When starting the LeSS adoption, the work was redesigned to cover customer-centric Product Backlog Items, combining tasks (of different *components* and *functions*) in the *feature teams*. The teams struggled with this in the beginning - coming from component teams - because they weren’t used to seeing the whole product and the customer perspective. Working more closely with vendors, large customers and internal stakeholders that work directly with customers and vendors led to better understanding of the customer domain, and less ‘whispering game’. Before, teams received their work mainly from project managers or internal stakeholders, with almost no interaction to real customers and users. Starting defining customer-centric PBI’s required learning from the teams, especially in the area of refinement and work design. Over time, the teams got better at this and the OD change to redesign the work led to this improvement eventually.
 
@@ -886,16 +886,16 @@ The context and narrative for these OD changes are described in the next section
 ## 2. 实验2 组织设计：重新设计特性团队并消除管理层 Experiment 2 Organizational Design: redesigning the Feature Teams and removing the management layer
 
 ### 2.1 背景 Context
-如前面的章节所述，在进行下一次组织设计变更之前，我们组织了一场活动。活动原计划是在5月11号举行，当时已经是2020年2月，那时候新冠还没有流行。产品总监决定按原计划进行，因为 1）不清楚新冠是否真实存在 2）他们不想推迟接下来的进一步改进和其他计划。
+如前面的章节所述，我们提前安排了一场活动来开启下一次组织设计变革。我们已经在2020年2月 - 那时候新冠还没有流行 - 就计划了在5月11号举行该活动。产品总监决定按计划进行，因为 1）并不清楚什么时候能回归线下 2）他们不想推迟进一步改进和往前走。
 
 As mentioned in the previous section, a new event was set forward to start the next OD changes. The event was planned on May 11th, already in February of 2020, before the COVID-19 pandemic arrived. The Head of Product decided to still move on, because 1) it was not clear when it would have been possible in real-life and 2) they didn’t want to postpone the further improvements and steps forward.
 
-当时主要的变更是：
-* **团队重新设计**：团队需要自设计来适应“新”的团队设计。各团队自我提升来“交付更多端到端的客户价值”。然后，剩下的架构师们和基础服务团队再加入到这些团队中。
-* **团队不再配置直接经理**：经理要么成为敏捷教练，要么离开Y Soft。团队设计“宏观流程”来在没有经理的情况下能够处理比如如何招聘，绩效评估，以及处理升级等问题。
-* **替换Scrum Master为敏捷教练**：产品总监认为Scrum Master的关注范围太窄了（主要在团队上），在更大的系统和组织上的关注太少。此外，有些团队曾经跟一些Scrum Master有过不好的体验。所以产品总监决定启用敏捷教练，显而易见，他们关注更广泛的范围。一些Scrum Master成为了敏捷教练，大部分Scrum Master离开了Y Soft。在接下来的章节中，会有关于这个情况及其原因的反思。
+发生的主要改变是：
+* **团队重新设计**：大家自设计形成了“新”的团队结构。团队优化了自身结构以“交付更多端到端的客户价值”。另外，剩下的架构师们和基础服务团队也加入到团队中。
+* **团队不再配置直接经理**：经理要么成为了敏捷教练，要么离开了Y Soft。团队设计了“宏观流程”来在没有经理的情况下处理比如招聘、绩效评估，以及升级等问题。
+* **替换Scrum Master为敏捷教练**：产品总监认为Scrum Master的关注范围太窄了（主要在团队上），在更大的系统和组织上的关注太少。此外，有些团队曾经跟一些Scrum Master有过不好的体验。所以产品总监决定引入敏捷教练，他们是明确需要关注更广泛范围的。一些Scrum Master成为了敏捷教练，大部分Scrum Master离开了Y Soft。在接下来的章节中，会有关于这个情况及其原因的反思。
 
-在下一个章节，将展开描述这些变更及其背后原因。
+在下一个章节，将展开描述这些改变及其背后的考虑。
 
 The main changes that happened were:
 
@@ -907,11 +907,11 @@ In the next section, the narrative of these changes and the reasoning behind the
 
 ### 2.2 详述 Narrative
 
-在第二轮组织设计变更中，LeSS指南“开启”中一些特定的步骤开始重复和改进。至于为什么Y Soft要做这些组织设计变更，陈列如下：
+在第二轮组织设计改变中重复并改进了LeSS指南*启动*中的某些步骤。至于为什么Y Soft要做这些组织设计改变，陈列如下：
 
-* **延展团队的自管理并移除经理**<br/>CEO和产品总监认为，经理限制了团队的自我管理能力，通过他们进行了信息过滤，导致了决策的延迟。在LeSS导入的一开始，经理的角色就已经改变，他们被安排去“管理“两个跨职能团队，而不是负责某个组件或功能。经理不再对团队的结果负责。他们主要是处理人事相关的事务。然而，不同的经理工作方式不同。有些经理对升级的事务非常积极，主动在“干系人的需求”和团队的工作中协调。另外一些经理专注于支持单个团队成员并远离对团队日常工作产生影响的事情。这样的行为有时会导致团队的功能失调和自管理变弱。当经理被移除后，团队的“可预测性”和产出并未因此降低。历史上，研发部门的经理是对组织其余部分的接口和升级点。在没有明确的方式来支持团队、发布产品、需求排序、管理团队与组织其他团队合作的时候，就移除经理这个角色，对组织是有害的。当这种情况发生的时候，原因就可能是是前面说的那些前提。
-* **LeSS导入中增加功能团队，许多新人加入团队**<br/>团队内部的这些变更有几个原因：团队招聘了新人，其他部门的人加入团队，架构师们——非正式地——加入团队，以及人员离职导致团队规模的变化。此外，产品总监还在LeSS导入中增加了基础设施团队，但这个团队保持了以前的组件团队设置。他们想要更加跨职能，而其他团队想要更多与基础设施相关的技能。
-* **渴望改进团队的能力来更好地交付端到端的客户价值**<br/>团队普遍总结，在最初导入LeSS时团队的自设计中，他们过于注重在团队中拥有尽可能多的技能（功能和产品部分）。其中一个团队的初始自设计的标准没有足够清楚地说明（能够独立的交付尽量多的PBI），这是事后才发现的。这导致团队尽量“收集”横跨整个产品中所有的技能，而不是寻找为了交付端到端特性的技能集合。最终，在很多团队中，团队成员独立地工作在“任务”上，并把依赖的工作交给其他人。大家并不会把自己的技能教授给其他团队成员，因为他们的技能差异实在太大。
+* **扩大团队的自管理并移除经理**<br/>CEO和产品总监认为，经理限制了团队的自我管理能力，导致了决策的延迟以及通向团队的信息过滤。在LeSS导入的一开始，经理的角色就已经改变，他们被安排去“管理“两个跨职能团队，而不是负责某个组件或职能。经理不再对团队的结果负责。他们主要是处理人事相关的事务。然而，不同的经理工作方式不同。有些经理在处理冲突升级上非常积极，主动协调“干系人的需求”和团队的工作。另外一些经理专注于支持单个团队成员，而避免对团队日常工作产生影响。这样的行为有时会导致团队的功能失调和自管理变弱。当经理被移除后，团队的“可预测性”和产出并未因此降低。历史上，研发部门的经理是对组织其余部分的接口和冲突升级点。在没有明确的方式来支持团队、发布产品、需求排序、管理团队与组织其他团队合作的时候，移除经理角色对组织会是有害的。当它能发生的时候，是因为前面说的那些前提。
+* **有职能团队加入到LeSS导入中，许多新人加入到团队**<br/>团队内部的这些改变有几个原因：团队招聘了新人、其他部门的人加入到团队、架构师们非正式地加入到团队，以及人员离职导致团队规模的变化。此外，产品总监还在LeSS导入中增加了基础设施团队，但这个团队保持了以前的组件团队设置。他们想要变得更加跨职能，而其他团队想要具备更多与基础设施相关的技能。
+* **渴望改进团队的能力以更好地交付端到端的客户价值**<br/>团队普遍总结，在最初导入LeSS时团队的自设计中，他们过于注重在团队中拥有尽可能多的技能（职能和产品模块）。事后看来，团队初始自设计时的其中一个标准（能够独立地交付尽量多的PBIs）没有被足够清楚地说明。这导致团队尽量“收集”跨整个产品所有的技能，而不是看相聚合的技能集合以交付端到端特性。最终，在很多团队中，团队成员独立地工作在“任务”上，并互相交接工作。大家并不会把自己的技能教授给其他团队成员，因为他们的技能差异实在太大。
 
 In the second round of OD changes, certain steps of the LeSS guide *Getting Started* were repeated and improved. There were a couple of reasons for Y Soft to do these OD changes, which are listed below.
 
@@ -968,7 +968,7 @@ More info on the preparation workshops can be found in [this appendix](#appendix
 
 #### 2.2.2 第二次组织设计变革活动 Second event with organizational design changes
 
-组织设计变更活动的开始启动了新团队的工作且是无经理的工作。活动本身基本上是一整天的“庆祝”，也是一个的新阶段的正式开始。因为新冠，这个活动也是远程的。
+组织设计变革活动的开始启动了新团队的工作且是无经理的工作。活动本身基本上是一整天的“庆祝”，也是一个的新阶段的正式开始。因为新冠，这个活动也是远程的。
 The start event for the OD changes kicked off the work in the new teams and working without managers. The event itself was mostly a day of ‘celebration’ and a formal start of a new step. Due to COVID-19, also this event was remote.
 
 CEO启动了活动，他感谢每一个人积极的参与，和对Y Soft的成功以及整个战略的重要贡献。他详细解释了公司战略中的变化，以及为什么所有团队对这些变化的理解是重要和必须的。他也谈论到了“无经理”组织，因为从那个时候开始，产品研发中的所有经理已经被移除了。团队自己取一个团队名字（如果他们想也可以加一个团队标识），并讨论对他们重要的团队价值，如何合作，如何确保（互相）学习。团队，和伙伴团队一起，解决了如何建立快速响应的团队角色来让新团队加速。
@@ -1179,7 +1179,7 @@ This brought the following main results:
 * Some Scrum Masters left and some other managers became agile coach
 * Increased self-management by the teams and additional emphasis on this
 
-从导入LeSS的一开始，许多组织设计变更就发生了，并在接下来的几年中，还有许多小的改善。这些并不显著，但Y Soft保持改进，以提升和改进团队的责任感，让他们在没有经理的条件下工作。同时也改进了与组织其他部分的合作，比如产品营销，（本地）支持和销售。
+从导入LeSS的一开始，许多组织设计改变就发生了，并在接下来的几年中，还有许多小的改善。这些并不显著，但Y Soft保持改进，以提升和改进团队的责任感，让他们在没有经理的条件下工作。同时也改进了与组织其他部分的合作，比如产品营销，（本地）支持和销售。
 Many OD changes happened since the start of the LeSS adoption, and many small things were improved in the course of the following years. These were less significant, but Y Soft kept improving to increase and improve the responsibility of the teams and work without managers. As well as improving the collaboration with other parts of the organizations like product marketing, (local) support and sales.
 
 CEO在LeSS导入的早期，第二次组织实验之前，表达了将SAFEQ迁移到LeSS Huge的愿望。Y Soft有增加市场份额和也许扩张市场的野心。迁移到LeSS Huge应该可以帮助他们实现这一点，包括增大团队规模。
@@ -1674,7 +1674,7 @@ The results were validated in workshops and taken as preparation for the 4-day e
 
 ### B.2 全员培训 （2018年8月） Educate everyone (August 2018)
 
-LeSS指南*从这里开始*的第一步：全员培训。VP和Scrum Master全都参加了Jürgen de Smet的CLP课程，从而更深刻的理解LeSS。对全部工程师，以及一些潜在的LeSS实施志愿者，我们组织了一轮面向LeSS组织的乐高Scrum工作坊（Lego 4 Scrum）。为了挑选出合适的志愿者，以及确定适合他们参与的领域，Jürgen把工作坊组织得十分激烈。重点是让大家理解与其他团队、与客户以及用户的协作是极其重要的。
+LeSS指南*启动*的第一步：全员培训。VP和Scrum Master全都参加了Jürgen de Smet的CLP课程，从而更深刻的理解LeSS。对全部工程师，以及一些潜在的LeSS实施志愿者，我们组织了一轮面向LeSS组织的乐高Scrum工作坊（Lego 4 Scrum）。为了挑选出合适的志愿者，以及确定适合他们参与的领域，Jürgen把工作坊组织得十分激烈。重点是让大家理解与其他团队、与客户以及用户的协作是极其重要的。
 
 The first step of the LeSS guide *Getting Started* is: educate everyone. The VP’s and Scrum Masters all joined Jürgen de Smet’s CLP to get a deeper understanding of LeSS. For all developers - and some others - potentially volunteering in the LeSS adoption, there was a Lego 4 Scrum workshop towards a LeSS organization. Jürgen made the workshop very intense, to really get the right volunteers and to know where they would sign up for. Emphasis is to understand it’s extremely important to collaborate with other teams, customers and users.
 
@@ -1758,7 +1758,7 @@ Improvements for the current situation:
 
 A selected group was working to design a future state using the Meddlers Game from Management 3.0. They  explored options to elevate the favorable patterns discovered and eliminate most (not to say all) less favorable patterns.
 
-在组织重新设计后，继续由这个小组决定产品是什么。定义产品是LeSS指南*从这里开始*的第二步。通过“全员培训”的志愿者们被添加到组织设计的反馈链中，可以收到组织设计结果。这个小组成员一起做了一个*特性团队实施地图*练习。LeSS指南*特性团队实施地图*有助于可视化LeSS实施过程中组织变革的演进路径。*特性团队实施地图*在一个轴上展示团队工作范围逐渐变大，在另一个轴上展示团队跨职能的程度逐步加深。这帮助团队获得更深刻的组织设计洞见，也有助于大家确定4天LeSS启动活动的边界范围。
+在组织重新设计后，继续由这个小组决定产品是什么。定义产品是LeSS指南*启动*的第二步。通过“全员培训”的志愿者们被添加到组织设计的反馈链中，可以收到组织设计结果。这个小组成员一起做了一个*特性团队实施地图*练习。LeSS指南*特性团队实施地图*有助于可视化LeSS实施过程中组织变革的演进路径。*特性团队实施地图*在一个轴上展示团队工作范围逐渐变大，在另一个轴上展示团队跨职能的程度逐步加深。这帮助团队获得更深刻的组织设计洞见，也有助于大家确定4天LeSS启动活动的边界范围。
 
 The same group defined together what ‘product’ could mean in the context of the new organizational setup. Define product is the second step in the LeSS guide *Getting Started*. Volunteers from the ‘educate everyone’ session were added to get feedback on the results for the organizational setup. The whole group did a Feature Team Adoption Map exercise. This LeSS guide *Feature Team Adoption Maps* helps to make transparent the kind of organizational change you can expect for the LeSS adoption. It’s a representation of the gradually increasing work scope of the teams on one axis and the degree of cross-functionality of teams on the other axis.  It resulted in insights on the organizational setup and to set boundaries of what is in scope for the 4-day event that starts the LeSS adoption.
 
