@@ -299,7 +299,7 @@ In January of 2019, the 4-day event took place. All possible volunteers would jo
 
 ##### 第一天：初始PBR（Product Backlog Refinement/产品待办列表梳理） Day 1: initial Product Backlog Refinement (initial PBR)
 
-作为初始产品待办列表梳理的第一步，产品负责人分享了产品愿景。LeSS指南*初始PBR*是确保让团队有一份产品待办列表，里面有足够的已经理解的产品待办条目可以开始工作。在开始导入LeSS时做梳理非常重要，因为通常现有的所谓“产品待办列表”遵循旧的组织结构，往往是职能或者组件导向的，而不是客户导向的。在特性团队模式下，产品待办条目（PBIs）会是客户导向的，因此原“产品待办列表”经常会失效，但是可以作为初始PBR的输入。在说明初始PBR非常重要的众多其它原因中，最关键的是通过PBR能确保团队充分理解产品待办条目，而不是由某个人、某个团队或其他人写下每个条目，并假设其他人都能正确理解这些条目。
+作为初始产品待办列表梳理的第一步，产品负责人分享了产品愿景。LeSS指南*初始PBR*是确保让团队有一份产品待办列表，里面有足够的已经理解的产品待办条目可以开始工作。在开始导入LeSS时做梳理非常重要，因为通常现有的所谓“产品待办列表”遵循旧的组织结构，往往是职能或者组件导向的，而不是客户导向的。在特性团队模式下，产品待办条目会是客户导向的，因此原“产品待办列表”经常会失效，但是可以作为初始PBR的输入。在说明初始PBR非常重要的众多其它原因中，最关键的是通过PBR能确保团队充分理解产品待办条目，而不是由某个人、某个团队或其他人写下每个条目，并假设其他人都能正确理解这些条目。
 
 The Product Owner shared the product vision as a starting point for initial Product Backlog Refinement. The LeSS guide *Initial PBR* is to make sure that teams have a Product Backlog with enough understood items to start working. It’s important to do at the start of a LeSS adoption, because usually the so-called “Product Backlogs” that exist follow the old structure, often functional or component focused instead of customer-focused. With feature teams, the Product Backlog Items (PBI’s) will be customer-focused and therefore the old “Product Backlogs” will often not be useful, but can be a good source for the initial PBR. Among several other reasons why initial PBR is important, it’s needed to make sure teams understand the PBI’s, instead of having PBI’s written down by one person, team or someone else and assuming others understand it.
 
@@ -329,7 +329,7 @@ Then, people ‘burned’ their old teams. Teams made materials about their curr
 在这之后，团队自设计工作坊开始了。LeSS导入原则之一是*采用志愿者*模式鼓励吸引人们参与，这让大家有被授权的感觉。其中重要的一个部分是自设计团队，也就是让大家自己决定未来团队是什么样子。自设计团队的标准包括：
 * 团队位于在同一地点
 * 团队规模在6到10人
-* 能够尽可能多地独立交付PBIs
+* 能够尽可能多地独立交付产品待办条目
 * 团队成员能力和性格的多样性
 
 Then, the team self-design workshop started. One of the LeSS adoption principles is *Use volunteering*, to engage people and it gives people the feeling of being empowered. An important part of this is to self-design the teams, meaning to let people decide themselves how the team looks like. The criteria for the self-design for the teams were:
@@ -383,7 +383,7 @@ More elaboration on the activities of the 4-day event can be found in [this Appe
 
 On the last day of the event, teams did their first Sprint Planning One in the new setup, following the LeSS guide *Sprint Planning One*. Jürgen explained the purpose of the Sprint Planning and the guidelines of the Sprint Planning. The Product Owner opened the Sprint Planning by explaining the priorities from his perspective.
 
-每个团队分享了他们在下一个迭代的可用时间安排（假期、会议等），以及他们需要完成的已经在进行中的工作。此外，他们补充了要解决的缺陷。然后，有一个集市让团队就自己挑选的PBIs跟大家分享他们下一个迭代的选择与设计。这些PBIs都被打印出来，以便团队可以方便抓取选择，并和其他团队讨论谁会选哪个PBI。
+每个团队分享了他们在下一个迭代的可用时间安排（假期、会议等），以及他们需要完成的已经在进行中的工作。此外，他们补充了要解决的缺陷。然后，有一个集市让团队就自己挑选的产品待办条目跟大家分享他们下一个迭代的选择与设计。这些产品待办条目都被打印出来，以便团队可以方便抓取选择，并和其他团队讨论谁会选哪个PBI。
 
 Each team shared which availability they had for the upcoming Sprint (holidays, meetings etc.) and the things they needed to finish that were already in progress. Additionally, they added bugs to solve. Then, there was a bazaar for teams to share their selection and design of their Sprint, for the PBI’s they picked themselves. These PBI’s were printed so teams could grab them to select and discuss with other teams who would pick which PBI.
 
@@ -391,7 +391,7 @@ Each team shared which availability they had for the upcoming Sprint (holidays, 
 
 In the next step, each team crafted a Sprint Goal individually. Then, all Sprint Goals were collected and there was an agreement on an Overall Sprint Goal for all teams combined for the upcoming Sprint. Important to mention is that LeSS - in contrast to Scrum - doesn’t require a Sprint Goal. When useful and when there is a natural clear overall goal, it’s good to apply. But when there isn’t a natural clear overall goal (e.g. because of the heterogeneity of work across teams), then it’s better to not have a common Sprint Goal.
 
-在同一个房间内，每个团队选择（打印好的）他们想要做的PBIs放到位于他们自己团队空间里的迭代待办列表中（墙上的魔贴白纸）。在LeSS指南*多团队迭代计划二*中，强调所有团队应该在同一个房间内进行迭代计划二，以便能够通过“直接沟通”或“直接呼叫”的方式来与其他团队进行协作。
+在同一个房间内，每个团队选择（打印好的）他们想要做的产品待办条目放到位于他们自己团队空间里的迭代待办列表中（墙上的魔贴白纸）。在LeSS指南*多团队迭代计划二*中，强调所有团队应该在同一个房间内进行迭代计划二，以便能够通过“直接沟通”或“直接呼叫”的方式来与其他团队进行协作。
 
 Each team selected the - printed - PBI’s they want to work on into their Sprint Backlog (magic whitepaper on the wall) in their team space in the room. In the LeSS guide *Multi-Team Sprint Planning Two*, it’s emphasized to have the Sprint Planning Two in the same room with all teams, to be able to coordinate with other teams using the *‘just talk’* or ‘just scream’ technique.
 
@@ -746,7 +746,7 @@ The Scrum Masters were really diligent to help and move things forward. However,
 
 #### 1.3.4 检视组织设计元素：LeSS规则：大部分团队是以客户为中心的特性团队。Inspection OD-element: LeSS Rule: The majority of the teams are customer-focused feature teams.
 
-* 在LeSS导入之初的团队自设计中，一个标准就是“独立地交付尽可能多的PBIs”。这导致团队试图拥有尽可能多的不同专业的人才，而不再专注于产品的某个特定（客户导向的）部分。一些团队开始互相学习以提升团队知识技能，例如测试人员学习编码，开发人员学习开发更多的组件。然而，也有团队仍然专注于团队内部旧有的术业专攻，这导致了大量的交接工作，要开发某些特性时的等待瓶颈，以及有限的“挑战”和尝试理解手头的特性和要解决的问题。结果是一些团队开始使用“更新的”技术来完成特性，而其他团队则继续处理他们所“熟悉”的特性，这也导致这类团队总是在处理较低优先级的PBI上，因为他们对自己处理“新”技术没有信心。显然，这不利于适应并致力于最高客户价值的工作。
+* 在LeSS导入之初的团队自设计中，一个标准就是“独立地交付尽可能多的产品待办条目”。这导致团队试图拥有尽可能多的不同专业的人才，而不再专注于产品的某个特定（客户导向的）部分。一些团队开始互相学习以提升团队知识技能，例如测试人员学习编码，开发人员学习开发更多的组件。然而，也有团队仍然专注于团队内部旧有的术业专攻，这导致了大量的交接工作，要开发某些特性时的等待瓶颈，以及有限的“挑战”和尝试理解手头的特性和要解决的问题。结果是一些团队开始使用“更新的”技术来完成特性，而其他团队则继续处理他们所“熟悉”的特性，这也导致这类团队总是在处理较低优先级的PBI上，因为他们对自己处理“新”技术没有信心。显然，这不利于适应并致力于最高客户价值的工作。
 
 In the team self-design at the start of the LeSS adoption, one of the criteria was ‘being able to deliver as much of PBI’s independently as possible’. This led to teams trying to involve as many different specialties as possible within their team, instead of focusing on a specific - customer focused - part of the product. Some teams started learning from each other to increase knowledge within their team, e.g. testers learning to code and developers learning developing on more components. Other teams still had focus within their team on their old specialties, which led to a lot of handovers in the team, bottlenecks when wanting to work on certain features and limited ‘challenging’ and trying to understand the features at hand and the problems to solve. Consequence was that some teams started working on the ‘newer’ technologies for features, while other teams kept working on features that they ‘know’. This resulted in teams working on lower priority PBI’s, because those teams didn’t feel confident to work on the ‘newer’ technologies. Obviously, this didn’t help to adapt to work on the highest customer value.
 
@@ -814,7 +814,7 @@ Considering these functional units, the best improvements resulted from the func
 
 #### 1.3.8 检视组织设计元素：LeSS实验：尝试...工作再设计 Inspection OD-element: LeSS experiment: Try...Work redesign
 
-在开始导入LeSS时，*特性团队*把原先属于不同*组件*和*职能*的任务整合起来，工作被重新设计以涵盖以客户为中心的产品待办条目。团队最初对此感到挣扎，因为他们源自组件团队，还不习惯产品和客户的视角。在与供应商、大客户以及直接与客户和供应商打交道的内部干系人更紧密地合作一段时间后，团队更好地理解了客户领域的相关内容，“传话游戏”逐渐变少。以前，团队主要从项目经理或内部干系人那里接收工作，几乎不与真正的客户或用户互动。开始定义以客户为中心的PBIs就需要团队的学习，特别是在梳理和工作设计方面。随着时间的推移，团队在这些方面的表现越来越出色，组织设计变革的“工作再设计”最终带来了这一改进。
+在开始导入LeSS时，*特性团队*把原先属于不同*组件*和*职能*的任务整合起来，工作被重新设计以涵盖以客户为中心的产品待办条目。团队最初对此感到挣扎，因为他们源自组件团队，还不习惯产品和客户的视角。在与供应商、大客户以及直接与客户和供应商打交道的内部干系人更紧密地合作一段时间后，团队更好地理解了客户领域的相关内容，“传话游戏”逐渐变少。以前，团队主要从项目经理或内部干系人那里接收工作，几乎不与真正的客户或用户互动。开始定义以客户为中心的产品待办条目就需要团队的学习，特别是在梳理和工作设计方面。随着时间的推移，团队在这些方面的表现越来越出色，组织设计变革的“工作再设计”最终带来了这一改进。
 
 When starting the LeSS adoption, the work was redesigned to cover customer-centric Product Backlog Items, combining tasks (of different *components* and *functions*) in the *feature teams*. The teams struggled with this in the beginning - coming from component teams - because they weren’t used to seeing the whole product and the customer perspective. Working more closely with vendors, large customers and internal stakeholders that work directly with customers and vendors led to better understanding of the customer domain, and less ‘whispering game’. Before, teams received their work mainly from project managers or internal stakeholders, with almost no interaction to real customers and users. Starting defining customer-centric PBI’s required learning from the teams, especially in the area of refinement and work design. Over time, the teams got better at this and the OD change to redesign the work led to this improvement eventually.
 
@@ -911,7 +911,7 @@ In the next section, the narrative of these changes and the reasoning behind the
 
 * **扩大团队的自管理并移除经理**<br/>CEO和产品总监认为，经理限制了团队的自我管理能力，导致了决策的延迟以及通向团队的信息过滤。在LeSS导入的一开始，经理的角色就已经改变，他们被安排去“管理“两个跨职能团队，而不是负责某个组件或职能。经理不再对团队的结果负责。他们主要是处理人事相关的事务。然而，不同的经理工作方式不同。有些经理在处理冲突升级上非常积极，主动协调“干系人的需求”和团队的工作。另外一些经理专注于支持单个团队成员，而避免对团队日常工作产生影响。这样的行为有时会导致团队的功能失调和自管理变弱。当经理被移除后，团队的“可预测性”和产出并未因此降低。历史上，研发部门的经理是对组织其余部分的接口和冲突升级点。在没有明确的方式来支持团队、发布产品、需求排序、管理团队与组织其他团队合作的时候，移除经理角色对组织会是有害的。当它能发生的时候，是因为前面说的那些前提。
 * **有职能团队加入到LeSS导入中，许多新人加入到团队**<br/>团队内部的这些改变有几个原因：团队招聘了新人、其他部门的人加入到团队、架构师们非正式地加入到团队，以及人员离职导致团队规模的变化。此外，产品总监还在LeSS导入中增加了基础设施团队，但这个团队保持了以前的组件团队设置。他们想要变得更加跨职能，而其他团队想要具备更多与基础设施相关的技能。
-* **渴望改进团队的能力以更好地交付端到端的客户价值**<br/>团队普遍总结，在最初导入LeSS时团队的自设计中，他们过于注重在团队中拥有尽可能多的技能（职能和产品模块）。事后看来，团队初始自设计时的其中一个标准（能够独立地交付尽量多的PBIs）没有被足够清楚地说明。这导致团队尽量“收集”跨整个产品所有的技能，而不是看相聚合的技能集合以交付端到端特性。最终，在很多团队中，团队成员独立地工作在“任务”上，并互相交接工作。大家并不会把自己的技能教授给其他团队成员，因为他们的技能差异实在太大。
+* **渴望改进团队的能力以更好地交付端到端的客户价值**<br/>团队普遍总结，在最初导入LeSS时团队的自设计中，他们过于注重在团队中拥有尽可能多的技能（职能和产品模块）。事后看来，团队初始自设计时的其中一个标准（能够独立地交付尽量多的产品待办条目）没有被足够清楚地说明。这导致团队尽量“收集”跨整个产品所有的技能，而不是看相聚合的技能集合以交付端到端特性。最终，在很多团队中，团队成员独立地工作在“任务”上，并互相交接工作。大家并不会把自己的技能教授给其他团队成员，因为他们的技能差异实在太大。
 
 In the second round of OD changes, certain steps of the LeSS guide *Getting Started* were repeated and improved. There were a couple of reasons for Y Soft to do these OD changes, which are listed below.
 
@@ -968,29 +968,29 @@ More info on the preparation workshops can be found in [this appendix](#appendix
 
 #### 2.2.2 第二次组织设计变革活动 Second event with organizational design changes
 
-组织设计变革活动的开始启动了新团队的工作且是无经理的工作。活动本身基本上是一整天的“庆祝”，也是一个的新阶段的正式开始。因为新冠，这个活动也是远程的。
+组织设计变革活动不仅启动了新团队的工作，而且不再有经理。活动本身基本上是一整天的“庆祝”，也是一个新阶段的正式开始。因为新冠，这个活动也是远程的。
 The start event for the OD changes kicked off the work in the new teams and working without managers. The event itself was mostly a day of ‘celebration’ and a formal start of a new step. Due to COVID-19, also this event was remote.
 
-CEO启动了活动，他感谢每一个人积极的参与，和对Y Soft的成功以及整个战略的重要贡献。他详细解释了公司战略中的变化，以及为什么所有团队对这些变化的理解是重要和必须的。他也谈论到了“无经理”组织，因为从那个时候开始，产品研发中的所有经理已经被移除了。团队自己取一个团队名字（如果他们想也可以加一个团队标识），并讨论对他们重要的团队价值，如何合作，如何确保（互相）学习。团队，和伙伴团队一起，解决了如何建立快速响应的团队角色来让新团队加速。
+CEO开场了这次活动，他感谢每一个人的积极参与，和对Y Soft的成功以及整个战略的重要贡献。他详细解释了公司战略上的变化，以及为什么所有团队对这些变化的理解是重要和必须的。他也谈论到了“无经理”组织，因为从此以后产品研发中的所有经理都被去掉了。团队自己取一个团队名字（如果他们想，也可以加一个团队标识），并讨论对他们来说重要的团队价值、如何合作，以及如何确保（互相）学习。团队和伙伴团队一起解决了如何承担快速响应团队的角色，以让新团队尽快运转起来。
 The CEO kicked off the event by thanking everyone for their active participation and important contribution to the overall strategy and success of Y Soft. He explained more about the changes in the company strategy and the importance and need for all teams to understand this. He also talked about the ‘manager-less’ organization, because from that moment all managers in product development were removed. Teams came up with a team name (and a logo if they wanted) and discussed important team values for them, how they collaborate, and how they make sure they learn (from each other). Teams solved - with buddy teams - how to handle the fast-response team role to get new teams up to speed.
 
-没有了经理，团队构想出“宏观流程”，以前让经理负责的事务，从现在开始由团队自己负责。宏观流程的例子包括新员工入职，和招聘新员工。团队利用这个时间来选择最重要的宏观流程，建立团队间如何处理宏观流程的草案。
+没有了经理，团队设计了“宏观流程”，以使自己能接手之前经理负责的事务。宏观流程的例子包括新员工入职或招聘新员工。团队利用这个时间就最重要的宏观流程形成了一个团队间如何处理它们的草案。
 Without managers, teams came up with ‘macro-processes’ that are important aspects that used to be taken care of by managers that teams have to take care of themselves from now on. Examples of macro-processes are ‘on-boarding of new employees’ or ‘hiring new employees’. Teams used the time to choose the most important macro-processes to make a draft on how to deal with the macro-processes among teams.
 
-第二天早上，新团队开始了第一个迭代的迭代计划。团队们被要求全员参与（而不是派遣代表），有两个原因：
+第二天早上，新团队的第一个迭代从迭代计划开始。团队们被要求全员参与（而不是派遣代表），有两个原因：
 
 * 当团队成员还互相不了解对方的技能时，他们可以一起讨论来选择产品待办条目
-* 产品负责人（仪式前一个月）已经为即将到来的下一阶段准备了更具战略性的大纲
+* 产品负责人（活动前一个月刚开始工作）已经为即将到来的下一阶段准备了更具战略性的大纲
 
 The morning after, the first Sprint with the new teams started with Sprint Planning. Teams were asked join with the whole team (instead of only representatives), for two reasons:
 
 * For teams with people that don’t know each other’s skills well yet, they can discuss together to select PBI’s.
 * The Product Owner (starting a month the event) had a more strategic outline for the upcoming period prepared.
 
-在迭代计划之后，团队转移到他们的迭代计划2中，并按照新的设定开始合作。
+在迭代计划一之后，团队转向他们的迭代计划二，并按照新团队设置开始一起工作。
 After the Sprint Planning, teams moved to their Sprint Planning 2’s and started working together in the new set up.
 
-更多关于第二部分启动仪式的信息在[这个附件](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes)。
+更多关于第二次启动活动的信息在[这个附录](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes)。
 More info on the second start event can be found in [this appendix](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes).
 
 #### 2.2.3 组织设计元素 Organizational Design elements
