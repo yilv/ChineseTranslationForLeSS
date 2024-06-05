@@ -514,7 +514,7 @@ We use the following organizational design principles to descale into LeSS organ
 
 In this section, there is an inspection on the Organizational Design (OD) experiment by looking at the OD changes and the LeSS adoption. First, a generic inspection, and later an inspection on the OD-elements that were changed with the start of the LeSS adoption.
 
-#### 1.3.1 第一个OD实验的一般性检视 Generic inspection of the first OD experiment
+#### 1.3.1 第一个组织设计实验的一般性检视 Generic inspection of the first OD experiment
 
 Y Soft通过LeSS导入获得很多收益，即使在最初动荡“痛苦”的3个月（如下）。首先，未来全部的工作被整合为一份产品待办列表，并且由一位产品负责人确定优先级。尽管刚开始还不完美，但是团队确实更清楚了解了工作优先级，并且能相对容易地自行决策。其次，团队能够更好地看到和理解完整的产品，并且能交付比以前更端到端的以客户为中心特性。第三，由于团队跨职能和跨组件能力提升，以及共同承担责任，等待队列和等待时间减少了。第四，消除了瓶颈，并改进了共享的“流程”，如执行回归测试、修复缺陷、运维支持和产品发布。关于最后一点的更多介绍，请参考[1.3.6](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work)。
 
@@ -560,7 +560,7 @@ Though most teams were happier, Y Soft lost around 20% of the people in the firs
 
 ##### 重新对齐工作坊 Re-Alignment Workshop
 
-几个月后，Y Soft意识到他们在LeSS导入方面需要帮助。他们请Jürgen De Smet组织了一系列的工作坊，以检视LeSS导入的情况、进一步改进，并为下一步转向LeSS巨型作准备。第一场工作坊是重新对齐工作坊，旨在更好地了解组织系统，并能够识别哪些系统变量需要改进。CEO、产品总监、研发管理层和Scrum Master代表参加了这个工作坊。
+几个月后，Y Soft意识到他们在LeSS导入方面需要帮助。他们请Jürgen De Smet组织了一系列的工作坊，以检视LeSS导入的情况、进一步改进，并为下一步转向LeSS Huge作准备。第一场工作坊是重新对齐工作坊，旨在更好地了解组织系统，并能够识别哪些系统变量需要改进。CEO、产品总监、研发管理层和Scrum Master代表参加了这个工作坊。
 
 After a few months, Y Soft realized that they needed help with their LeSS adoption. They asked Jürgen De Smet to do a series of workshops to inspect the LeSS adoption, improve further and help prepare for a future move to LeSS Huge. The first of these workshops was a re-alignment workshop to get a better understanding of the organizational system and be able to determine which system variables to improve. The CEO, Head of Product, R&D management and Scrum Master representatives participated in this workshop.
 
@@ -628,7 +628,7 @@ The participants defined areas for each category. For example, for the category 
 
 CEO、产品总监、研发中层管理者和一名Scrum Master讨论了生成的成熟度模型。一位外部顾问对现状（每个类别）进行了分析。在准备过程中，Scrum Master使用了之前工作坊的结果以及这项分析，选择了几个主题与CEO、产品总监和管理层进行讨论：
 
-* 组织结构（包括LeSS巨型）
+* 组织结构（包括LeSS Huge）
 * 产品和产品领域定义及设置（包括待办列表）
 * 该结构内的角色与职责
 * 社区
@@ -750,7 +750,7 @@ The Scrum Masters were really diligent to help and move things forward. However,
 
 In the team self-design at the start of the LeSS adoption, one of the criteria was ‘being able to deliver as much of PBI’s independently as possible’. This led to teams trying to involve as many different specialties as possible within their team, instead of focusing on a specific - customer focused - part of the product. Some teams started learning from each other to increase knowledge within their team, e.g. testers learning to code and developers learning developing on more components. Other teams still had focus within their team on their old specialties, which led to a lot of handovers in the team, bottlenecks when wanting to work on certain features and limited ‘challenging’ and trying to understand the features at hand and the problems to solve. Consequence was that some teams started working on the ‘newer’ technologies for features, while other teams kept working on features that they ‘know’. This resulted in teams working on lower priority PBI’s, because those teams didn’t feel confident to work on the ‘newer’ technologies. Obviously, this didn’t help to adapt to work on the highest customer value.
 
-这是在LeSS导入时可能出现“错误的两分法”这一思维误区的一个很好例子：错误地从一个人或团队只知道一件事的极端，转向另一个极端，即要求团队知道“一切”。组建新团队时在客户领域上聚焦的重要程度受到学习难度的影响；在一些较小且简单的产品组中，这并不是一个顾虑。尽管我们当时还没有采用LeSS巨型，但请注意这正是LeSS巨型的动机：团队聚焦在一个相对较小的范围内，从而让团队所需的学习不会过于繁重。
+这是在LeSS导入时可能出现“错误的两分法”这一思维误区的一个很好例子：错误地从一个人或团队只知道一件事的极端，转向另一个极端，即要求团队知道“一切”。组建新团队时在客户领域上聚焦的重要程度受到学习难度的影响；在一些较小且简单的产品组中，这并不是一个顾虑。尽管我们当时还没有采用LeSS Huge，但请注意这正是LeSS Huge的动机：团队聚焦在一个相对较小的范围内，从而让团队所需的学习不会过于繁重。
 
 This is a good example of the *False Dichotomy* thinking mistake sometimes made when adopting LeSS: incorrectly going from the extreme of a person and team knowing only one thing, to the other extreme of aiming for teams to know “everything.” The degree to which customer-area focus is important when starting to form the new teams is influenced by the difficulty in learning; in some smaller and simpler product groups this is not a concern. Although we had not adopted LeSS Huge at this point, note that this is the motivation for LeSS Huge: focusing teams within a smaller scope so that the learning required is not overwhelming.
 
@@ -907,7 +907,7 @@ In the next section, the narrative of these changes and the reasoning behind the
 
 ### 2.2 详述 Narrative
 
-在第二轮组织设计改变中重复并改进了LeSS指南*启动*中的某些步骤。至于为什么Y Soft要做这些组织设计改变，陈列如下：
+在第二次组织设计改变中重复并改进了LeSS指南*启动*中的某些步骤。至于为什么Y Soft要做这些组织设计改变，陈列如下：
 
 * **扩大团队的自管理并移除经理**<br/>CEO和产品总监认为，经理限制了团队的自我管理能力，导致了决策的延迟以及通向团队的信息过滤。在LeSS导入的一开始，经理的角色就已经改变，他们被安排去“管理“两个跨职能团队，而不是负责某个组件或职能。经理不再对团队的结果负责。他们主要是处理人事相关的事务。然而，不同的经理工作方式不同。有些经理在处理冲突升级上非常积极，主动协调“干系人的需求”和团队的工作。另外一些经理专注于支持单个团队成员，而避免对团队日常工作产生影响。这样的行为有时会导致团队的功能失调和自管理变弱。当经理被移除后，团队的“可预测性”和产出并未因此降低。历史上，研发部门的经理是对组织其余部分的接口和冲突升级点。在没有明确的方式来支持团队、发布产品、需求排序、管理团队与组织其他团队合作的时候，移除经理角色对组织会是有害的。当它能发生的时候，是因为前面说的那些前提。
 * **有职能团队加入到LeSS导入中，许多新人加入到团队**<br/>团队内部的这些改变有几个原因：团队招聘了新人、其他部门的人加入到团队、架构师们非正式地加入到团队，以及人员离职导致团队规模的变化。此外，产品总监还在LeSS导入中增加了基础设施团队，但这个团队保持了以前的组件团队设置。他们想要变得更加跨职能，而其他团队想要具备更多与基础设施相关的技能。
@@ -919,33 +919,33 @@ In the second round of OD changes, certain steps of the LeSS guide *Getting Star
 * **Functional teams added to the LeSS adoption and many new people joined the teams**<br/>There were several causes for changing within the teams: teams hired new people, people from other departments that joined teams, architects that - informally - joined teams, and people leaving led to differences in team size. Additionally, the Head of Product added the Infrastructure team to the LeSS adoption, but still in their original setup as a component team. They wanted to become more cross-functional and other teams wanted to have more skills related to infrastructure.
 * **Desire to improve the ability of teams to deliver end-to-end customer value better**<br/>The general conclusion amongst teams was that in the initial team self-design at the start of the LeSS adoption they designed too much to have as many skills (functions and parts of the product) in their teams as possible. One of the criteria for teams in the initial team self-design (‘Being able to deliver as much of PBI’s independently as possible’) wasn’t explained clearly enough, in hindsight. It led to teams ‘collecting’ as many skills as possible in their teams across the whole product, instead of looking at a good cohesion of skills to deliver features end to end. As a result, in many teams, team members were working individually on ‘tasks’ and handing over work between each other. People didn’t teach others in their teams their skills, because their skills were too different.
 
-#### 2.2.1 准备第二场组织变更活动 Preparing the second event with organizational changes
+#### 2.2.1 准备第二次组织变革活动 Preparing the second event with organizational changes
 
-产品总监决定第二次活动不能办得像初次LeSS导入时那样大，花费了4天，因为大家已经习惯了在一起亲密地工作。另外，新冠隔离也让办公室没人。在[这次的Less视频会议](https://www.youtube.com/watch?v=k6MD4kW0Xwo&t=2s) 和[这个博客](https://co-learning.eu/2020/06/11/a-full-remote-highly-collaborative-teams-self-design-workshop-with-80-people-yes/)中，分享了关于Y Soft如何远程实现团队自设计的更多细节。为了更有效率地准备会议，准备本身也分成了不同的工作坊。在解释和宣布继续会议的方式后，团队被要求代表产品总监来做自我重新设计，以更好地交付端到端客户价值。公司的Scrum Master们和刚刚入职的敏捷教练一起组织了两场工作坊来帮助团队。
+产品总监决定第二次活动不应该像初次LeSS导入时花4天那样多，因为大家已经习惯了一起紧密工作。另外，新冠隔离也让办公室没人。在[这个LeSS会议视频](https://www.youtube.com/watch?v=k6MD4kW0Xwo&t=2s)和[这篇博客](https://co-learning.eu/2020/06/11/a-full-remote-highly-collaborative-teams-self-design-workshop-with-80-people-yes/)中，分享了关于Y Soft如何远程实现团队自设计的更多细节。为了更有效地准备会议，准备本身也分成了不同的工作坊。在解释和宣布后续进行方式后，团队被要求代替产品总监来做自我重新设计，以更好地交付端到端客户价值。公司的Scrum Master们和刚刚入职的敏捷教练一起组织了两场工作坊来帮助团队重新设计。
 The Head of Product decided that this second event shouldn’t be as big as the 4-day event that started the LeSS adoption, because people were already used to working closely together. Additionally, COVID-19 caused a lockdown so nobody was at the office. In [this LeSS conference video](https://www.youtube.com/watch?v=k6MD4kW0Xwo&t=2s) and in [this blog](https://co-learning.eu/2020/06/11/a-full-remote-highly-collaborative-teams-self-design-workshop-with-80-people-yes/), more details are shared about how Y Soft did the team self-design remotely. To have an effective preparation, the preparation was splitted in different workshops. After the explanation and the announcement of the way forward, the teams were asked on behalf of the Head of Product to re-design themselves to be able to deliver end-to-end customer value better. The Scrum Masters and the onboarded agile coach organized two workshops to help teams do this.
 
 **团队设计工作坊 1**
 **Team design workshop 1**
 
-工作坊的目标：形成团队设计（草案）并发现团队交付端到端特性的可能性。
+工作坊的目标：形成团队设计（草案）并了解团队交付端到端特性的可能性。
 Goal of this workshop: form (draft) team designs and learn about the possibility of end-to-end feature delivery by teams.
 
-团队在三个不同的地方为同一个产品工作。最大办公场所（包含50%以上的团队）中的团队已经开始计划改进现有的团队设计。在这个计划中，一些团队成员会过来帮助准备工作坊。这些团队成员提供了很重要的输入，例如目前（草案中）团队的当前状态和常见的团队大小。
+在三个地方有团队为这个产品工作。位于最大办公场所（包含50%以上的团队）的团队已经开始自发改进现有的团队设计。一些团队成员自发帮助准备了工作坊。他们提供了重要的输入，例如（草案中）团队的当前状态和最常见的团队规模人数。
 There are three sites with teams working on the product. On the biggest site (more than 50% of the teams), teams already started an initiative to improve the current team designs. From that initiative, a couple of team members helped in preparing for the workshop. Important input from these team members was e.g. the current status of the (draft) teams and the most common team size number.
 
-我们发现：因为这三个办公场所的大小不一样（工作坊之后一个地方有8个团队，而另外两个地方分别有2个和3个团队），我们本可以有区别地去准备工作坊和参与工作坊。对于最大的场所，每个人加入哪个团队的团队讨论太复杂了。对于其他两个场所，团队明显更少地参与了部分自设计的迭代。对于未来类似的情况，基于不同地点的团队规模，应该考虑如何让小地点更好地参与，并仍然让他们参与决定如何最好地优化由各团队组成的整个大团队。
+我们学习到：因为这三个办公场所的大小不一样（工作坊之后一个地方有8个团队，而另外两个地方分别有2个和3个团队），我们本可以有区别地去准备和参与工作坊。对于最大的场所，关于谁加入哪个团队的各自团队讨论太过复杂了。对于其他两个更小的场所，他们的团队在部分自设计迭代中的参与明显要少很多。对于未来类似的情况 - 不同地点的团队规模不一，应该考虑让小地点参与的方式，但仍然要在决定如何最好地优化整个大团队时包含他们。
 Learning: because the 3 sites differ in size (8 teams after the workshop on one site and 2 + 3 on the two other sites), we could have differentiated the way the 3 sites were preparing and participating in the workshop. The individual team discussions about who would be in which team, were complexer for the biggest site. For the two smaller sites, the involvement from teams in some parts of the self-designing iterations was significantly smaller. For similar future situations with differences in size of sites, it would be good to consider how smaller sites would participate, but still include them in deciding how the team of teams as a whole would optimize best.
 
-我们故意将团队设计工作坊分成了两个工作坊。在同地办公的团队设计中，团队成员经常在开会间隙讨论团队设计。在以前的团队设计中，我们学习到的是在两个迭代中间空出30分钟来使这一切发生。否则的话，这些讨论会在工作坊结束之后进行，并且团队也会随之改变。在远程情况下，这样在休息时间的聊天非常难以实现。于是我们在第一次和第二次工作坊之间空出来一周，这样团队成员可以反思并讨论关注点和开放性问题。
+我们有意将团队设计工作坊分成了两场。在同地的团队设计过程中，团队成员经常会在开会间隙讨论团队设计。从以前的团队设计中我们学习到的是在两个迭代中间空出30分钟就能让这发生。没有这个间隙的话，这些讨论就会在工作坊结束之后进行，团队也会随之改变。在远程情况下，这样在间隙的聊天非常难以实现。于是我们在第一场和第二场工作坊之间空出来一周，这样团队成员可以反思并讨论未决的问题和顾虑。
 We split the team design workshop in two workshops on purpose. In co-located team designs, team members often chat in breaks about the team design. Learning from previous team designs is to take 30 minutes breaks between iterations to let that happen. Otherwise, these discussions will happen after the workshop and teams will change afterwards. Remotely, this chat in breaks is hard to accomplish. We organized a week between the first and second workshop, so team members could reflect and discuss open issues or concerns.
 
-我们用Miro来引导工作坊所有的步骤。每一步，参与者在Miro画布上移动并增加/改变内容。最多的时候，Miro有95位参与者同时在线。最重要的引导提示：不要中心化的讨论。用其他技巧来处理，比如在分组讨论之后用5分钟或者10分钟来朗读输入的内容或者使用便利贴对其提问。
+我们用Miro来引导工作坊所有的步骤。每一步，参会者在Miro画布上移动并增加/改变内容。最多的时候，Miro有95位参会者同时在线。最重要的引导提示：不要集中讨论。用其它方式来替代，比如在分组讨论之后用5分钟或者10分钟来读输入的内容或者使用便利贴对其提问。
 We used Miro to facilitate all steps in the workshop. During each step, the participants themselves were moving in Miro and adding/changing things. At maximum, 95 people were active in Miro at the same time. Most important facilitation tip: don’t have central discussions. Use other techniques for that, like taking 5 or 10 minutes after each breakout session to read the results or adding questions in sticky notes to someone else’s input.
 
-在第三轮的自设计过程中，为了帮助团队反思自己交付以客户为中心的端到端特性的能力，团队对产品待办列表上的工作做了一次练习。敏捷教练和Scrum Master们在Miro白板上准备了一些史诗（注意：一个史诗就是Y Soft产品待办条目的集合，遵循用于PBL的工具）。每一个团队都可以指出他们是否能够端到端交付那个史诗，或者希望交付并从中学习。团队们在主板上评估他们可能交付的史诗并在上面贴一张绿色的便利贴（我们可以端到端交付它）或者一张橙色的便利贴（我们希望可以端到端交付它并从中学习），详见[附件](#team-design-workshop-1) 。在此之前，已经清楚说明后期不会用这个结果来看哪些团队可以交付哪些史诗。有些团队害怕这种透明会用来事后的挑战：他们为什么不愿在一些特定的史诗上工作。当然，如果团队愿意，他们自己事后可以使用这些练习的成果。
+为了帮助团队反思自己交付以客户为中心的端到端特性的能力，团队在第三轮的自设计过程中对产品待办列表上的工作做了一次练习。敏捷教练和Scrum Master们在Miro白板上准备了一些史诗（注意：一个史诗就是Y Soft产品待办条目的集合，这里参照了所用PBL工具的说法）。每一个团队都可以指出他们是否能够端到端交付那个史诗，或者是否有意愿交付并能学习它。团队们在主板上评估他们可能交付的史诗并在上面贴一张绿色的便利贴（我们可以端到端交付它）或者一张橙色的便利贴（我们希望可以端到端交付它并从中学习），详见[附录](#team-design-workshop-1) 。我们提前说清楚了后期不会用这个结果来看哪些团队可以交付哪些史诗。有些团队害怕这种透明会在事后被用来挑战他们：为什么不愿在一些特定的史诗上工作。当然，如果团队想，他们自己事后可以使用这些练习的结果。
 To help the teams reflect on their ability to deliver customer-centric features end-to-end,  in the third round of the self-design, teams did an exercise on the work of the Product Backlog. A selection of the epics (*note: an ‘epic’ is a cluster of PBI’s together in Y Soft, following the tooling they use for the PBL*) were prepared on the Miro board by the Scrum Masters and agile coach in a table. Each team could indicate whether they can deliver that epic end-to-end or were willing and able to learn it. Teams evaluated the possible epics for their team and added a green sticky note (we can deliver it end-to-end) or an orange sticky note (we are able and willing to learn to deliver it end-to-end) to the main table, see [appendix](#team-design-workshop-1) for more info. In advance, it was made clear that the results wouldn’t wouldn’t be used afterwards to see which teams could deliver which epics. There was fear of some teams that this transparency would be used to challenge them later why they wouldn’t work on a certain epic. Of course, teams could use the outcomes of the exercise themselves afterwards if they wanted to.
 
-参与者最后附上一个对团队设计可能的关注点。这个输入被团队成员使用，但同时也是产品总监在第一轮和第二轮工作坊之间的工作内容。
+结束时参会者添加一点可能的对团队设计的顾虑。这个输入被团队成员使用，同时也是产品总监在第一场和第二场工作坊之间需要工作的内容。
 Participants ended with adding one possible concern for the team design. This input was used by team members, but also by the Head of Product to work on during the time between the first and the second workshop.
 
 **团队设计工作坊 2**
@@ -954,16 +954,16 @@ Participants ended with adding one possible concern for the team design. This in
 工作坊目标：最终确认团队设计并识别未来改进持续学习的步骤
 Goal of this workshop: finalize the team design and identify follow-up steps to improve continuous learning for the future.
 
-在两个工作坊中间间隙的那一周，参与者讨论了团队设计的许多开放式结局。有些团队太大了，同时还有些人还没有加入任何团队。产品总监确认有些人没有加入团队也是可以的，不能够强迫团队接受他们不想要的团队成员。产品总监，敏捷教练和Scrum Master们对当前的状态非常了解，并通过跟合适的人沟通来帮助推进工作坊之间的事情。
+在两场工作坊之间的那一周，参会者讨论了团队设计的许多开放式结局。有些团队太大了，有些人则还没有加入任何团队。产品总监接受有些人可以不加入团队，不能够强迫团队接受他们不想要的团队成员。产品总监、敏捷教练和Scrum Master们对当前的状态有整体了解，并通过跟合适的人沟通来在两场工作坊之间帮助推进一些事情。
 In the week between the two workshops, participants discussed many open ends of the team designs. Some teams were too big and some people didn’t have a team yet. The Head of Product addressed that it could be a valid outcome that someone wasn’t part of a team, and teams shouldn’t be forced to include members in their team they didn’t want to. The Scrum Masters, agile coach and Head of Product had a good overview on the status and helped by talking to the right people to get some things moving in between the workshops.
 
-第二场工作坊跟第一场的结构类似。人们在工作坊之间用线上合作工具来推进他们团队设计的更新。在总结状态和一个新的迭代之后，参与者收集阻碍性的关注点。这里有一个短暂的分组会议，让参与者投出唯一一个阻碍性的关注点。渴望加入其他团队的某个人生病了，所以两个团队都不想做出最终决定。他们都同意在这个人回归之后再解决这个问题，所以这两个团队重新投票的结果是：在这个行动之后，需要另一个自设计的迭代吗？大部分人的回答是不要（只有两个人想要另一个自设计的迭代。这也是团队的最终决定。
+第二场工作坊跟第一场的结构类似。在两场工作坊之间大家用线上合作工具来更新他们团队设计的进展。在总结状态和一个新的迭代之后，参会者来收集阻塞问题。对于参会者投出的唯一阻塞问题有一个短暂的分组会议。有一位想加入其他团队的同事生病了，所以两个团队都不想做出最终决定。他们都同意在这个人回归之后再解决这个问题，之后团队重新投票：在这个措施之后，还需要另一个自设计的迭代吗？大部分人的回答是不需要（只有两个人想要另一个自设计的迭代），这也成了最终的团队设计。
 The second workshop had a similar structure to the first one. People used the online collaboration tool in the time between the workshops to keep progress of changes in their team design. After a summary of the status and a new iteration, the participants collected blocking concerns. There was a short breakout session about the single blocking concern that was voted as blocking by the participants. One person that was desired to move to another team was sick and therefore both teams involved didn’t want to make the final decision. They agreed to solve this when this person was back, and teams voted again: ‘after this action point, is there another iteration of self-design needed?’ The answer was no by a large majority (just 2 people wanted another iteration of self-design) and the team design was final.
 
-在工作坊的结尾，人们识别了三种下一步的类别，1）当前立马解决 2）下一个新迭代解决 3） 下两个迭代解决
+在工作坊的结尾，大家对下一步行动做了三种分类，1）需要当前立马解决 2）需要在第一个新迭代内解决 3）需要在下两个迭代内解决。
 At the end of the workshop, people identified three types of next steps, 1) needed to address on event, 2) needed to address in the first new Sprint, 3) needed to address in the follow-up two Sprints.
 
-更多关于准备工作坊的信息在[这个附件](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes)
+更多关于准备工作坊的信息在[这个附录](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes)。
 More info on the preparation workshops can be found in [this appendix](#appendix-d-preparation-and-start-event-of-the-second-experiment-of-od-changes).
 
 #### 2.2.2 第二次组织设计变革活动 Second event with organizational design changes
@@ -1037,19 +1037,19 @@ HR practices are a major obstacle in many organizations, only a few have succeed
 * *LeSS实验：避免...与绩效相关的激励*
 * *LeSS experiment: Avoid... Incentives linked to performance*
 
-（个人）与绩效相关的激励是基于旧的假设，人们可以控制他们的绩效并被奖金所激励。这里的建议是“把工资和任务分开”（[来源](https://www.alfiekohn.org/punished-rewards/)）。在第一次组织设计实验中，我们曾经尝试通过奖励团队来促进团队合作。然而，这些依然是与绩效相关的激励，效果并不完美。此外，有些经理仍然对个人的绩效进行“嘉奖”，即使没有真正的奖励。从第二次组织设计实验开始，不再有与绩效相关的激励，无论是个人还是团队。当组织表现很好，所有团队拿到同等的奖金，团队可以在团队内部分配奖金。在LeSS中与这个相关的实验是 *尝试...用奖励团队代替奖励个人* 并 *避免...绩效考核*。
+（个人）与绩效相关的激励是基于旧的假设，人们可以控制他们的绩效并被奖金所激励。这里的建议是“把工资和任务分开”（[来源](https://www.alfiekohn.org/punished-rewards/)）。在第一个组织设计实验中，我们曾经尝试通过奖励团队来促进团队合作。然而，这些依然是与绩效相关的激励，效果并不完美。此外，有些经理仍然对个人的绩效进行“嘉奖”，即使没有真正的奖励。从第二次组织设计实验开始，不再有与绩效相关的激励，无论是个人还是团队。当组织表现很好，所有团队拿到同等的奖金，团队可以在团队内部分配奖金。在LeSS中与这个相关的实验是 *尝试...用奖励团队代替奖励个人* 并 *避免...绩效考核*。
 (individual) Incentives linked to performance are based on old assumptions that people are in control of their performance and are motivated by rewards. Recommendations are there to *‘decouple the task from the compensation’* ([source](https://www.alfiekohn.org/punished-rewards/)). In the first OD experiment, there were attempts to give team rewards that helped team collaboration. However, these were still incentives to performance, which didn’t work perfect. Additionally, some of the managers were still ‘rewarding’ performance of individuals, even though there was no real incentive for it. From the second OD experiment forward, there were no more incentives linked to performance, individual or team. Teams could distribute bonuses within their team once in a while, when the organization had done well and all teams got equal bonuses. Relevant experiments from LeSS in this regard are *Try...Team incentives instead of individual incentives* & *Avoid... Performance appraisals*.
 
 检视LeSS原则中[组织设计原则](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html) *以小为大*：
 Inspecting at the [organization design principles](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html) from the LeSS principle *More with LeSS*:
 
 我们使用以下组织级设计原则来减少LeSS组织的规模：
-1. 从专家角色到团队：在第一次组织设计实验中，团队已经成为了组织构建的基本模块。在第二次组织设计实验中，团队自己领导并成为承担责任的基石这件事变得简单，因为团队已经习惯承担责任并共事。
-2. 从资源思维到人性思维：Y Soft的HR和产品总监，从第一次组织设计实验中学习到，要更多地关注在团队需要和人的需要上，因为团队作为组织构建的基本模块，能够把人们的感觉和他们的需要变得透明。
-3. 从“围绕技术来组织”到“围绕客户价值来组织”：在第一次组织设计实验中，这个被重新构造，并且在第二次组织实验中没有实质性地改变。但是，团队增加了对客户领域的学习，比如与大客户紧密合作，开发某些以客户为中心的特性。
+1. 从专家角色到团队：在第一个组织设计实验中，团队已经成为了组织构建的基本模块。在第二次组织设计实验中，团队自己领导并成为承担责任的基石这件事变得简单，因为团队已经习惯承担责任并共事。
+2. 从资源思维到人性思维：Y Soft的HR和产品总监，从第一个组织设计实验中学习到，要更多地关注在团队需要和人的需要上，因为团队作为组织构建的基本模块，能够把人们的感觉和他们的需要变得透明。
+3. 从“围绕技术来组织”到“围绕客户价值来组织”：在第一个组织设计实验中，这个被重新构造，并且在第二次组织实验中没有实质性地改变。但是，团队增加了对客户领域的学习，比如与大客户紧密合作，开发某些以客户为中心的特性。
 4. 从独立团队到持续跨团队协作：在导入LeSS的开始，团队关注在自己的工作上。渐渐地，他们在大特性开发中开始合作。特别是当公司战略（因为新冠而）改变，从而产品待办列表巨变时，团队需要在新的战略和新的技术上一起发现和学习。这大概是在第二次组织设计实验中，重新设计帮助团队更好地关注在这上面。
-5. 从“协调是为了集成”到“通过集成实现协调”：因为在第一次组织设计实验中，这还是一个挑战，见[这个章节](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work)。因为团队在所有产品相关的工作上变得更加负责，他们开始为了持续集成而改进前提条件和行为。在第二次组织设计实验中，团队也持续工作在改进技术卓越性和他们的集成行为上。
-6. 从项目到产品：随着时间的推移，团队不再接受来自外部的需求。这一点也没有因为第二次组织设计实验而改变，也是从第一次组织设计实验中延续下来的。
+5. 从“协调是为了集成”到“通过集成实现协调”：因为在第一个组织设计实验中，这还是一个挑战，见[这个章节](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work)。因为团队在所有产品相关的工作上变得更加负责，他们开始为了持续集成而改进前提条件和行为。在第二次组织设计实验中，团队也持续工作在改进技术卓越性和他们的集成行为上。
+6. 从项目到产品：随着时间的推移，团队不再接受来自外部的需求。这一点也没有因为第二次组织设计实验而改变，也是从第一个组织设计实验中延续下来的。
 7. 从许多小产品到少数宽泛的产品：在第二次组织设计实验中，产品的定义没有改变。但是，为了让产品的定义更宽泛，通过把基础设施团队引入到特性团队中，完成的定义也被扩展。
 
 
@@ -1205,7 +1205,7 @@ Deciding on the product definition is an important aspect of *organizational des
 
 As described in the previous section, there was a consideration about moving to LeSS Huge several times. At some point, Y Soft introduced OMNI Series, which was a result of the development from the Product Backlog of SAFEQ: a hardware device to be able to connect printing devices to many kinds of environments, e.g. Microsoft 365, even when the printing device was not equipped to connect with Cloud environments. The customers of OMNI Series are the actual end customers and users of printing devices, while SAFEQ was sold as a package (embedded) on vendor’s devices including the software. That meant the customers and needs were different and as a consequence, the sales channels were different (direct sales vs. selling through a partner/vendor). The used technology was different (*note: not as much as assumed, see [inspection section](#33-inspect)*), and this made the CEO, strategist and VP of all products decide to split the two products. There was a move to two products, with a single Product Owner and a single Product Backlog per product. The teams already working on OMNI Series moved to work on the Product Backlog for OMNI Series (3 teams), and the other teams moved to work on the Product Backlog for SAFEQ (10 teams). The first Sprint for the new products started in November 2020. In this section, there is a focus on the move to two products.
 
-如前面章节所述，我们多次考虑转向LeSS巨型。在某个时候，Y Soft推出了OMNI系列，这是来自基于SAFEQ产品待办列表开发的结果：一种能够将打印设备连接到多种环境（如Microsoft 365）的硬件设备，即使打印设备未配备与云环境连接。OMNI系列的客户是打印设备的实际最终客户和用户，而SAFEQ是作为包（嵌入）在供应商的设备包括软件上销售的。这意味着客户和需求不同，因此销售渠道也不同（直销与通过合作伙伴/供应商销售）。使用的技术不同（*注：没有假设的那么多，请参阅[inspection section](#33-inspect)*），这让CEO、战略规划师和所有产品VP决定将这两个产品分开。由此我们转向两个产品，每个产品有一个产品负责人和一份产品待办列表。已经在OMNI系列上工作的团队转向工作于OMNI系列的产品待办列表（3个团队），而其他团队转向工作于SAFEQ的产品待办列表（10个团队）。新产品的第一个迭代从2020年11月开始。在本章中，重点介绍向两个产品的转变。
+如前面章节所述，我们多次考虑转向LeSS Huge。在某个时候，Y Soft推出了OMNI系列，这是来自基于SAFEQ产品待办列表开发的结果：一种能够将打印设备连接到多种环境（如Microsoft 365）的硬件设备，即使打印设备未配备与云环境连接。OMNI系列的客户是打印设备的实际最终客户和用户，而SAFEQ是作为包（嵌入）在供应商的设备包括软件上销售的。这意味着客户和需求不同，因此销售渠道也不同（直销与通过合作伙伴/供应商销售）。使用的技术不同（*注：没有假设的那么多，请参阅[inspection section](#33-inspect)*），这让CEO、战略规划师和所有产品VP决定将这两个产品分开。由此我们转向两个产品，每个产品有一个产品负责人和一份产品待办列表。已经在OMNI系列上工作的团队转向工作于OMNI系列的产品待办列表（3个团队），而其他团队转向工作于SAFEQ的产品待办列表（10个团队）。新产品的第一个迭代从2020年11月开始。在本章中，重点介绍向两个产品的转变。
 
 In summary, the CEO and a few other senior managers from e.g. marketing reasoned 1) the products have different customers and a different marketing channel and 2) the focus on both products should be higher.
 
@@ -1220,7 +1220,7 @@ CEO和销售VP有志于在未来几年迅速扩大市场份额，成为市场的
 
 From the second event with organizational changes, there were 13 teams defined in product development. When moving to 11 & 12 teams, feedback from the teams was that they didn’t have enough focus on a certain domain and had to switch too often between priorities. In other words: cognitive overload. The reasoning in Y Soft was that a split to LeSS Huge (and later: to move to 2 products) would help teams to have focus on a certain customer domain. Therefore, the CEO wanted to move to LeSS Huge and be able to have more overview and more focus on a certain (customer) domain for the teams. Their reasoning was that working in one Requirement Area would enable a better overview and more focus on a certain domain, without losing the whole product focus and collaboration with the other teams. There is a reflection on this reasoning later in this section.
 
-从组织变革的第二次活动开始，在产品开发中定义了13个团队。当增加到11、12个团队时，来自团队的反馈是他们没法对某个领域有足够的聚焦，不得不经常在优先级之间切换。换句话说：认知过载。Y Soft的考虑是拆分为LeSS巨型（后来转向两个产品）将有助于团队聚焦于某个客户领域。因此，CEO希望转向LeSS巨型，以使团队能够对某个（客户）领域有更多的了解和聚焦。他们的考虑是工作在一个需求领域能够在某个领域获得更好的了解和聚焦，同时不失去整体产品焦点和与其他团队的协作。本章稍后将对此考虑进行反思。
+从组织变革的第二次活动开始，在产品开发中定义了13个团队。当增加到11、12个团队时，来自团队的反馈是他们没法对某个领域有足够的聚焦，不得不经常在优先级之间切换。换句话说：认知过载。Y Soft的考虑是拆分为LeSS Huge（后来转向两个产品）将有助于团队聚焦于某个客户领域。因此，CEO希望转向LeSS Huge，以使团队能够对某个（客户）领域有更多的了解和聚焦。他们的考虑是工作在一个需求领域能够在某个领域获得更好的了解和聚焦，同时不失去整体产品焦点和与其他团队的协作。本章稍后将对此考虑进行反思。
 
 When the second event took place in May 2020, simultaneously the senior management prepared an update of the company strategy. Teams already worked on some of the product development towards this updated strategy, but because of COVID-19 in March 2020, the update of the strategy - and the accompanying development - accelerated. Customers & vendors in the ‘printing’ industry obviously had different requirements, since many people started working from home. Additionally, senior management took this as a suitable time to update the company strategy and accelerate the progress towards the corresponding goals.
 
@@ -1269,7 +1269,7 @@ The change of strategic direction reinforced the inability to share a consistent
 
 Teams complained they changed focus on a specific domain every (few) Sprint(s), which made it harder for them to learn in a specific (customer) domain. Actually, it was cognitive overload, needing to learn too many different things in too short a time, which they felt as a lack of focus. Main reason for the cognitive overload was the lack of sharing a good product vision and consistency on the Product Backlog as a result. However, senior management’s assumption was that making the span of attention smaller for teams, would help teams with the cognitive overload by creating more focus for the teams. With the desire to grow and add more teams in the future, moving to LeSS Huge and later moving to two products seemed a logical step for Y Soft, because of the assumption that a smaller span of attention would increase the focus and reduce the cognitive overload as a result.
 
-团队抱怨说他们每隔（很少）几个迭代就会改变在一个特定领域上的聚焦，这让他们很难学习一个特定的（客户）领域。事实上，这是认知过载，也就是在太短的时间内需要学习太多不同的东西，让他们感到缺乏聚焦。认知过载的主要原因是缺乏对好的产品愿景的分享以及由此带来的缺乏在产品待办列表上的一致性。然而，高管的假设是，通过让团队的专注范围变小，由此为团队创造更多的聚焦，将帮助团队应对认知过载。对Y Soft来说，因为有这样的假设 - 较小的专注范围会增加聚焦从而减少认知过载，想要未来发展和增加更多团队，转向LeSS巨型并随后转向两个产品似乎是合乎逻辑的一步。
+团队抱怨说他们每隔（很少）几个迭代就会改变在一个特定领域上的聚焦，这让他们很难学习一个特定的（客户）领域。事实上，这是认知过载，也就是在太短的时间内需要学习太多不同的东西，让他们感到缺乏聚焦。认知过载的主要原因是缺乏对好的产品愿景的分享以及由此带来的缺乏在产品待办列表上的一致性。然而，高管的假设是，通过让团队的专注范围变小，由此为团队创造更多的聚焦，将帮助团队应对认知过载。对Y Soft来说，因为有这样的假设 - 较小的专注范围会增加聚焦从而减少认知过载，想要未来发展和增加更多团队，转向LeSS Huge并随后转向两个产品似乎是合乎逻辑的一步。
 
 The main root cause for the cognitive overload was the weak product vision and the - too often - changing priorities in the Product Backlog, described in the previous section. Teams needed to learn new types of work associated with the change of strategic direction: cloud-related activities to make sure SAFEQ would run in the cloud and OMNI Series which included both the development on a hardware device and the use of new software technologies, partially for a new market. The consequence for teams was that teams needed to learn a lot on these new technologies and understand different customer needs. By often changing priorities, teams had to learn too many different things in a too short time, cognitive overload. To be able to develop these new PBI’s, teams had to learn both from a perspective of different technologies (and different use of those technologies by customers) and a new type of device with different product features than they were used to.
 
@@ -1284,11 +1284,11 @@ A smaller but relevant other factor was that teams had to get used to working cl
 
 The desire to add more teams in the future was not the main reason to split into two products, but certainly a characteristic senior management took into account. They reasoned that a split into Requirement Areas/move to LeSS Huge (that was the initial idea, before moving to two products) would help in the ambition to increase the number of teams.
 
-想要在未来增加更多的团队并不是拆分成两个产品的主要原因，但高管肯定也考虑到了这一点。他们认为拆分成需求领域/转向LeSS巨型（那是在转向两个产品之前最初的想法）将帮助到追求增加团队数量的目标。
+想要在未来增加更多的团队并不是拆分成两个产品的主要原因，但高管肯定也考虑到了这一点。他们认为拆分成需求领域/转向LeSS Huge（那是在转向两个产品之前最初的想法）将帮助到追求增加团队数量的目标。
 
 At the moment of the discussion to move to two products, there were 13 teams working from the single Product Backlog. Because of the rule of thumb of having a maximum of “8” teams working from a single Product Backlog, senior management used this rule of thumb as a reason - though not the main reason - to split into two products. The valid reason to move to LeSS Huge is when the Product Owner starts to get overloaded and cannot oversee the market, stakeholders and Product Backlog anymore. The number of “8” is a common heuristic for when overload of the Product Owner starts to happen.
 
-在讨论转向两个产品时，有13个团队工作于单份产品待办列表。由于存在一个最多能有“8”个团队工作于单份产品待办列表的经验法则，高管将其作为拆分两个产品的原因（尽管不是主因）。转向LeSS巨型的合理原因应该是当产品负责人开始超负荷，无法再全面看管市场、干系人和产品待办列表。“8”这个数字只是一个对产品负责人会开始超负荷的常用经验值。
+在讨论转向两个产品时，有13个团队工作于单份产品待办列表。由于存在一个最多能有“8”个团队工作于单份产品待办列表的经验法则，高管将其作为拆分两个产品的原因（尽管不是主因）。转向LeSS Huge的合理原因应该是当产品负责人开始超负荷，无法再全面看管市场、干系人和产品待办列表。“8”这个数字只是一个对产品负责人会开始超负荷的常用经验值。
 
 ##### Different customers, markets and sales channels
 ##### 不同的客户、市场和销售渠道
@@ -1371,7 +1371,7 @@ In previous sections, we concluded that there isn’t too much change - especial
 
 For the optimization goal of *adaptiveness to discover highest customer value or delight*, there are several reasons why moving to Requirement Areas instead of moving to two products is more contributing to *adaptiveness to discover highest customer value or delight*. The perceived customer value of the items for one product over the other will change over time, which will lead to one of the products working on lower (perceived) value for the customer and organization as a whole, because teams in one product will only work from the Product Backlog of that product. This will similarly happen to working from the highest (perceived) value from one Requirement Area over the other. However, when that happens, the Product Owner can decide to move team(s) to the other Requirement Area, being able to adapt relatively easily. Though there will always be some delay. Additionally, separating into two products likely comes with creating a separate product group, with a separate manager or managers and specialist positions accompanying the product. Changing the priority for one product over the other will be hard, because of these positions. While in a LeSS Huge the single Product Owner can simply choose to move teams from one Requirement Area over the other, because the Requirement Areas are not linked to the organizational structure with (a) manager(s) and other positions attached to it. This way, it is fairly easy to change direction on the whole product level compared to having two products. Additionally, when a customer request spans products and there are private code ownership boundaries per product, this will increase the lead time of a customer request that spans the products. Y Soft didn’t create a separate product group and kept the organization simple, as described in other sections.
 
-对于*适应性提升以发现最高的客户价值或满意度*的优化目标，有几个原因可以解释为什么转向需求领域而不是转向两个产品会更有利。一个产品的条目被感知的客户价值相对于另一个产品的将随时间推移而变化，这将导致其中一个产品对客户和组织作为整体来说产生的价值较低，因为一个产品的团队只会根据这个产品的产品待办列表来工作。这同样会发生在一个需求领域的最高价值工作不及另一个需求区域的工作。然而，当这种情况发生时，产品负责人可以决定将团队转向另一个需求领域，调整起来相对容易。尽管总会有一些延迟。此外，拆成两个产品可能会伴随着创建各自的产品组，与产品关联的各自经理和专家职位。由于这些位置的存在，改变一个产品相对于另一个产品的优先级将很难。而在LeSS巨型中，唯一的产品负责人可以简单地选择将团队从一个需求领域转到另一个，因为需求领域没有与设置了经理和其他职位的组织结构相关联。这样一来，在整个产品层面上改变方向相比两个产品会容易许多。此外，当一个客户请求跨多个产品，并且每个产品都有私有代码所有权的边界时，这将增加跨产品客户请求的交付周期时间。Y Soft并没有创建各自的产品组，而是保持了组织的简洁，如其它部分所述。
+对于*适应性提升以发现最高的客户价值或满意度*的优化目标，有几个原因可以解释为什么转向需求领域而不是转向两个产品会更有利。一个产品的条目被感知的客户价值相对于另一个产品的将随时间推移而变化，这将导致其中一个产品对客户和组织作为整体来说产生的价值较低，因为一个产品的团队只会根据这个产品的产品待办列表来工作。这同样会发生在一个需求领域的最高价值工作不及另一个需求区域的工作。然而，当这种情况发生时，产品负责人可以决定将团队转向另一个需求领域，调整起来相对容易。尽管总会有一些延迟。此外，拆成两个产品可能会伴随着创建各自的产品组，与产品关联的各自经理和专家职位。由于这些位置的存在，改变一个产品相对于另一个产品的优先级将很难。而在LeSS Huge中，唯一的产品负责人可以简单地选择将团队从一个需求领域转到另一个，因为需求领域没有与设置了经理和其他职位的组织结构相关联。这样一来，在整个产品层面上改变方向相比两个产品会容易许多。此外，当一个客户请求跨多个产品，并且每个产品都有私有代码所有权的边界时，这将增加跨产品客户请求的交付周期时间。Y Soft并没有创建各自的产品组，而是保持了组织的简洁，如其它部分所述。
 
 ##### Alternative options
 ##### 其它选项
@@ -1385,7 +1385,7 @@ One of these options is doing what teams were already doing: teams focusing on s
 
 Another option would have been to move OMNI Series work to one Requirement Area. The Requirement Areas for Y Soft have to be explored and defined further. When the product vision and focus - especially from a Product Owner perspective - are valid problems to solve, this option would have given the chance to create a better product vision and involve more customer feedback into that. With Requirement Areas for a single Product Backlog, still one Product Owner could decide on the priorities - including those for OMNI Series - and decide to focus on something else than OMNI Series or focus more on OMNI Series when OMNI Series would be selling really well and the customer demand would be big. This would still give the adaptiveness to set priorities, and teams would have more options to collaborate and learn from each other. Furthermore, in LeSS Huge with Requirement Areas, it is easily adaptive for teams to slowly move from one area to another (while being aware of the cognitive overload issues), in response to discovery, but on the other hand with two products it is at the very least ‘politically’ difficult to move teams between two product groups.
 
-另一个选项是将OMNI系列工作转到一个需求领域。Y Soft的需求领域需要进一步探索和定义。当产品愿景和焦点 - 尤其是从产品负责人的角度来看 - 是需要解决的有效问题时，这一选项将有机会创建更好的产品愿景，并让更多客户反馈融入其中。作为唯一产品待办列表中的需求领域，仍然会有一个产品负责人能够决定优先级，包括OMNI系列的工作；他能够决定聚焦OMNI系列以外的其它内容，或者在OMNI系列销售非常好且客户需求很大时更多地聚焦OMNI系列。这仍将赋予设定优先级的适应性，团队也将有更多选项来协作和相互学习。此外，在有需求领域的LeSS巨型中，团队为了响应发现成果从一个领域慢慢转到另一个领域是容易适应的（虽然意识到认知过载的问题），但另一方面有两个产品的情况下，在两个产品组之间移团队至少在‘政治’上也是困难的。
+另一个选项是将OMNI系列工作转到一个需求领域。Y Soft的需求领域需要进一步探索和定义。当产品愿景和焦点 - 尤其是从产品负责人的角度来看 - 是需要解决的有效问题时，这一选项将有机会创建更好的产品愿景，并让更多客户反馈融入其中。作为唯一产品待办列表中的需求领域，仍然会有一个产品负责人能够决定优先级，包括OMNI系列的工作；他能够决定聚焦OMNI系列以外的其它内容，或者在OMNI系列销售非常好且客户需求很大时更多地聚焦OMNI系列。这仍将赋予设定优先级的适应性，团队也将有更多选项来协作和相互学习。此外，在有需求领域的LeSS Huge中，团队为了响应发现成果从一个领域慢慢转到另一个领域是容易适应的（虽然意识到认知过载的问题），但另一方面有两个产品的情况下，在两个产品组之间移团队至少在‘政治’上也是困难的。
 
 #### 3.2.3 Reflection on coaching and consulting
 #### 3.2.3 针对辅导和咨询的反思
@@ -1410,7 +1410,7 @@ Though the Product Owner from the product marketing team had a mandate to work w
 
 The senior management decided to split the Product Backlog and have less teams working on a part of the Product Backlog. Their reasoning was to be able to deal with the inability of the Product Owner to have and share a good product vision and understanding of the customer and market needs. Senior management (the CEO, the strategist, the VP of all products) wanted to split the Product Backlog by moving to LeSS Huge initially, but in the end decided to split into two products because of the emerging development of OMNI Series during that period. The assumption from senior management was that with a split, the PO - and supporting product marketing people - had a better overview, better understanding of the Product Backlog and better understanding of customer and market needs. Teams would have more focus on a (customer) domain, because there would be a smaller (part of the) Product Backlog to focus on and less teams working on that smaller (part of the) Product Backlog.
 
-高管决定拆分产品待办列表，让更少团队工作于其中一部分产品待办列表。他们的理由是以此能解决产品负责人无法拥有和分享好的产品愿景以及对客户和市场需求的理解这一问题。高管（CEO、战略规划师、所有产品VP）最初是想通过转向LeSS巨型来拆分产品待办列表，但因为在此期间OMNI系列的新兴发展他们最终决定了拆成两个产品。高管的假设是通过拆分，PO和支持产PO的产品市场人员会有一个更好的总览，可以更好地了解产品待办列表，更好地了解客户和市场需求。团队将在一个（客户）领域上更多聚焦，因为需要关注的（部分）产品待办列表变小了，并且更少团队工作于那个较小的（部分）产品待办列表。
+高管决定拆分产品待办列表，让更少团队工作于其中一部分产品待办列表。他们的理由是以此能解决产品负责人无法拥有和分享好的产品愿景以及对客户和市场需求的理解这一问题。高管（CEO、战略规划师、所有产品VP）最初是想通过转向LeSS Huge来拆分产品待办列表，但因为在此期间OMNI系列的新兴发展他们最终决定了拆成两个产品。高管的假设是通过拆分，PO和支持产PO的产品市场人员会有一个更好的总览，可以更好地了解产品待办列表，更好地了解客户和市场需求。团队将在一个（客户）领域上更多聚焦，因为需要关注的（部分）产品待办列表变小了，并且更少团队工作于那个较小的（部分）产品待办列表。
 
 Thus, there was a move to two products, with a single Product Owner for each (both board members) and a single Product Backlog for each. The teams already working on OMNI Series moved to work on the Product Backlog for OMNI Series (3 teams), and the other teams moved to work on the Product Backlog for SAFEQ (10 teams). The first Sprint for the new products started in November 2020.
 
@@ -1484,7 +1484,7 @@ Since the move to two products, many small improvements and changes have happene
 
 Teams between both products started working together more, having multi-team Product Backlog Refinement often about cross-product topics and have in-Sprint collaboration about cross-product topics, which are indications that a single broader product definition in a LeSS Huge adoption with Requirement Areas would have been a more consistent alternative than two products. In one Overall Retrospective, some team members wanted to better understand the overlap between the products and counted 13 shared components when they modeled the architectures out, further suggesting one broad product. This led to conversations and later the PO with the CEO decided that they would merge the two products back to one, working from one Product Backlog again with the single PO from SAFEQ (the co-founder). This proved that the assumption that the two products needed almost no collaboration was unjustified. The main impact was that teams from SAFEQ had to learn and help in the support of OMNI Series, which was relatively unknown for them. Teams from OMNI Series were still familiar with most parts of SAFEQ, which made it easier for them to deal with this. Teams found ways to collaborate and ‘buddy’ other teams to make sure all teams were able to do support for OMNI Series and SAFEQ properly.
 
-两个产品之间的团队开始更多地一起工作，经常就跨产品主题进行多团队产品待办列表梳理，并在迭代中就跨产品主题进行协作。这也表明了相比两个产品，以一个更宽泛的产品定义但包含多个需求领域作为LeSS巨型导入将会是更一致的选项。在一次整体回顾中，一些团队成员希望更好地了解产品之间的重叠部分，当把架构建模出来时他们数出了13个共享组件，进一步表明同属一个宽泛的产品。这引发了对话，后来PO与CEO决定将两个产品合并回一个产品，再次以一份产品待办列表工作，而来自SAFEQ的PO（联合创始人）则作为唯一的PO。这证明两个产品几乎不需要协作的假设并不成立。由此带来的主要影响是来自SAFEQ的团队必须学习并帮助支持OMNI系列，这对他们来说是相对未知的。来自OMNI系列的团队仍然熟悉SAFEQ的大部分内容，这使他们更容易应对。团队找到协作的方式，并与其他团队‘结对’以确保所有团队都能支持好OMNI系列和SAFEQ。
+两个产品之间的团队开始更多地一起工作，经常就跨产品主题进行多团队产品待办列表梳理，并在迭代中就跨产品主题进行协作。这也表明了相比两个产品，以一个更宽泛的产品定义但包含多个需求领域作为LeSS Huge导入将会是更一致的选项。在一次整体回顾中，一些团队成员希望更好地了解产品之间的重叠部分，当把架构建模出来时他们数出了13个共享组件，进一步表明同属一个宽泛的产品。这引发了对话，后来PO与CEO决定将两个产品合并回一个产品，再次以一份产品待办列表工作，而来自SAFEQ的PO（联合创始人）则作为唯一的PO。这证明两个产品几乎不需要协作的假设并不成立。由此带来的主要影响是来自SAFEQ的团队必须学习并帮助支持OMNI系列，这对他们来说是相对未知的。来自OMNI系列的团队仍然熟悉SAFEQ的大部分内容，这使他们更容易应对。团队找到协作的方式，并与其他团队‘结对’以确保所有团队都能支持好OMNI系列和SAFEQ。
 
 ### Conclusion
 ### 结论
