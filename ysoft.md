@@ -494,7 +494,7 @@ We use the following organizational design principles to descale into LeSS organ
 
 4. 从独立团队到持续的跨团队协作：LeSS实施促进了跨团队协作和现状的透明度。在LeSS启动后有了越来越多的协作，但是真正的和更为持续的协作需要时间去学习。
 
-5. 从“协调以集成”到“通过集成实现协调”：这的确是个挑战，具体可参考[1.3.6章节](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work)。因为团队对全部产品相关的工作负责，他们开始不断改进前提条件和行为以持续地集成。
+5. 从协调以集成到通过集成实现协调：这的确是个挑战，具体可参考[1.3.6章节](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work)。因为团队对全部产品相关的工作负责，他们开始不断改进前提条件和行为以持续地集成。
 
 6. 从项目到产品：对研发来讲，不再有项目的概念，全部工作都来自于一份产品待办列表。尽管在研发外部仍旧有一些项目，但这些项目对研发影响有限。有时产品待办列表中的待办条目源自某些外部项目，如营销领域的项目。
 
@@ -942,7 +942,7 @@ We split the team design workshop in two workshops on purpose. In co-located tea
 我们用Miro来引导工作坊所有的步骤。每一步，参会者在Miro画布上移动并增加/改变内容。最多的时候，Miro有95位参会者同时在线。最重要的引导提示：不要集中讨论。用其它方式来替代，比如在分组讨论之后用5分钟或者10分钟来读输入的内容或者使用便利贴对其提问。
 We used Miro to facilitate all steps in the workshop. During each step, the participants themselves were moving in Miro and adding/changing things. At maximum, 95 people were active in Miro at the same time. Most important facilitation tip: don’t have central discussions. Use other techniques for that, like taking 5 or 10 minutes after each breakout session to read the results or adding questions in sticky notes to someone else’s input.
 
-为了帮助团队反思自己交付以客户为中心的端到端特性的能力，团队在第三轮的自设计过程中对产品待办列表上的工作做了一次练习。敏捷教练和Scrum Master们在Miro白板上准备了一些史诗（注意：一个史诗就是Y Soft产品待办条目的集合，这里参照了所用PBL工具的说法）。每一个团队都可以指出他们是否能够端到端交付那个史诗，或者是否有意愿交付并能学习它。团队们在主板上评估他们可能交付的史诗并在上面贴一张绿色的便利贴（我们可以端到端交付它）或者一张橙色的便利贴（我们希望可以端到端交付它并从中学习），详见[附录](#team-design-workshop-1) 。我们提前说清楚了后期不会用这个结果来看哪些团队可以交付哪些史诗。有些团队害怕这种透明会在事后被用来挑战他们：为什么不愿在一些特定的史诗上工作。当然，如果团队想，他们自己事后可以使用这些练习的结果。
+为了帮助团队反思自己交付以客户为中心的端到端特性的能力，团队在第三轮的自设计过程中对产品待办列表上的工作做了一次练习。敏捷教练和Scrum Master们在Miro白板上准备了一些史诗（注意：一个史诗就是Y Soft产品待办条目的集合，这里参照了所用PBL工具的说法）。每一个团队都可以指出他们是否能够端到端交付那个史诗，或者是否有意愿交付并能够学习它。团队们在主板上评估他们可能交付的史诗并在上面贴一张绿色的便利贴（我们可以端到端交付它）或者一张橙色的便利贴（我们希望可以端到端交付它并从中学习），详见[附录](#team-design-workshop-1) 。我们提前说清楚了后期不会用这个结果来看哪些团队可以交付哪些史诗。有些团队害怕这种透明会在事后被用来挑战他们：为什么不愿在一些特定的史诗上工作。当然，如果团队想，他们自己事后可以使用这些练习的结果。
 To help the teams reflect on their ability to deliver customer-centric features end-to-end,  in the third round of the self-design, teams did an exercise on the work of the Product Backlog. A selection of the epics (*note: an ‘epic’ is a cluster of PBI’s together in Y Soft, following the tooling they use for the PBL*) were prepared on the Miro board by the Scrum Masters and agile coach in a table. Each team could indicate whether they can deliver that epic end-to-end or were willing and able to learn it. Teams evaluated the possible epics for their team and added a green sticky note (we can deliver it end-to-end) or an orange sticky note (we are able and willing to learn to deliver it end-to-end) to the main table, see [appendix](#team-design-workshop-1) for more info. In advance, it was made clear that the results wouldn’t wouldn’t be used afterwards to see which teams could deliver which epics. There was fear of some teams that this transparency would be used to challenge them later why they wouldn’t work on a certain epic. Of course, teams could use the outcomes of the exercise themselves afterwards if they wanted to.
 
 结束时参会者添加一点可能的对团队设计的顾虑。这个输入被团队成员使用，同时也是产品总监在第一场和第二场工作坊之间需要工作的内容。
@@ -995,62 +995,62 @@ More info on the second start event can be found in [this appendix](#appendix-d-
 
 #### 2.2.3 组织设计元素 Organizational Design elements
 
-组织设计实验中组织元素的总结和简短阐述：
+组织设计实验中涉及组织元素的总结和简短阐述：
 A summary and short elaboration of the OD-elements that were involved in the OD experiment:
 
 * *LeSS规则：大部分团队是以用户为中心的特性团队。*
 * *LeSS Rule: The majority of the teams are customer-focused feature teams.*
 
-通过前面的组织设计实验中的检视结果，团队尝试涵盖尽可能多样的专家，却导致合作和学习非常有限，以及团队内部过多的交接形成了瓶颈。在第二次团队自设计中，团队练习了工作在产品待办列表上，来评估他们是否可以端到端交付一个特定的一大块工作（“史诗”），或者希望交付和从中学习。这样帮助团队关注在产品待办列表中特定的部分（专门针对客户领域），而不是练习尝试拥有产品待办条目中尽可能多的技能。另外，在团队自设计中，Y Soft的架构师们正式加入到团队中。这些实践型的架构师自我发展，并向团队传授更广泛的产品知识。
+如从前面的组织设计实验所检视到的那样，团队尝试涵盖尽可能多样的专家，却导致合作和学习非常有限，以及团队内部过多的交接形成了瓶颈。在第二次团队自设计中，团队围绕产品待办列表上的工作做了练习，来评估他们是否可以端到端交付某项大块工作（“史诗”），或者有意愿并能够学习它。这样帮助团队关注在产品待办列表中特定的部分（在客户领域上专业化），而不是尝试拥有能做尽可能多产品待办条目的技能。另外，在团队自设计中，Y Soft的架构师们正式加入到团队中。这些是自己能动手开发的架构师，他们向团队传授了更广泛的产品知识。
 As inspected upon from the previous OD experiment, teams tried to involve as many different specialties as possible within their, which led to limited collaboration and learning, and a lot of handovers in the team with bottlenecks. In the second team self-design, teams did an exercise on the work of the Product Backlog to evaluate whether they could deliver a certain big piece of work (‘Epic’) end-to-end in their team or were willing and able to learn it. This helped the teams to focus on certain parts of the Product Backlog (specializing in customer domain), instead of trying to have skills for as many Product Backlog Items as possible. Additionally, in the team self-design, the architects that were still at Y Soft formally joined the teams. These were hands-on architects that developed themselves and taught teams the broader product.
 
-前面组织设计实验里的[这个章节](#125-organizational-design-elements) 介绍了这条LeSS规则。
+前面组织设计实验里的[这个章节](#125-organizational-design-elements)介绍了这条LeSS规则。
 Introduction on this LeSS Rule in [this section](#125-organizational-design-elements) of the previous OD experiment.
 
 * *LeSS实验：尝试...扩展产品的定义*
 * *LeSS experiment: Try...Expanding Product Definition*
 
-最初的产品定义常常不够完美。通过扩展产品的定义——通过改进完成的定义——组织级的改进得以发生。团队学习或者增加他们不曾拥有过的技巧。这个第二次组织设计实验，在LeSS导入范围之外的基础设施团队参加了团队自我设计，技术设施团队的成员加入到特性团队中。这样，产品完成的定义得到了延伸，部分以前没定义成完成的工作进入团队。
+最初的产品定义常常不够完美。通过扩展产品的定义 - 通过改进完成的定义 - 组织级的改进得以发生。团队学习或者增加了他们不曾拥有过的技能。在第二个组织设计实验中，之前在LeSS导入范围之外的基础设施团队也参加了团队自设计，其成员加入到特性团队中。这样，产品完成的定义得到了延伸，部分完成外的工作被包含进了团队里。
 The initial product definition is often less than perfect. By expanding the product definition - by improving the Definition of Done - organizational improvement happens. Teams learn or add skills that they didn’t have before. In this second OD experiment, the infrastructure team that was outside the LeSS adoption joined the team self-design and people moved to the feature teams. This way the Definition of Done of the product extended and part of the undone work was included in the teams.
 
-前面组织设计实验里的[这个章节](#125-organizational-design-elements) 介绍了这个LeSS实验。
+前面组织设计实验里的[这个章节](#125-organizational-design-elements)介绍了这个LeSS实验。
 Introduction on this LeSS Experiment in [this section](#125-organizational-design-elements) of the previous OD experiment.
 
-* *LeSS指南：在客户领域中选择专业化*
+* *LeSS指南：倾向在客户领域上专业化*
 * *LeSS guide: Prefer Specialization In Customer Domain*
 
-对特性团队的一个普遍误解是，它会导致特性团队完全放弃专业化。专业化是多维度的，不止是技术，还有客户领域。客户领域的专业化（对团队来说可能随时间而变化），常常意味着在特定技术（复数）中偶然的专业化。团队在技术上并不专业化，但需要尝试在团队中拥有非常多的专长来有能力合作在用户特性上，从而限制了团队在客户领域的专业化。在第二次组织设计实验中，团队反思了他们可以（并愿意）工作在哪种特性上，以便在特定的客户领域中专业化。
+对特性团队的一个普遍误解是，它会导致特性团队完全放弃专业化。专业化是多维度的，不止是技术，还有客户领域。在客户领域上专业化（领域对一个团队来说可能随时间而变化）常常意味着在某些技术上*偶然的专业化*。团队并没有在技术上专业化，而是尝试在他们团队中拥有太多的专业以便能够围绕客户特性协作，从而限制了团队在客户领域上专业化。在第二个组织设计实验中，团队反思了他们能够（并愿意）工作在哪类特性上，以便在某个客户领域上专业化。
 A common misunderstanding of feature teams is that it leads to abandoning specialization altogether. Specializing is multi-dimensional, not only on technology but also on customer domain. Specializing in a customer domain (that might change over time for a team), often means *accidental specialization* in certain technology (*plural*) for the same type of features for that customer domain. The teams didn’t specialize in technology, but rather tried to have too many specialisms in their team to be able to collaborate on customer-features, limiting specialization on customer domain. In the second OD experiment, teams reflected on which types of features they were able (and willing) to work on, to specialize in a certain customer domain.
 
 * *LeSS指南：经理是非必需的*
 * *LeSS guide: Managers Are Optional*
 
-在LeSS中，经理是非必需的。经理可以发挥一个有用的角色，但大部分（大型）组织没有经理角色和位置的短缺。在一个LeSS组织中，更倾向于把责任转移给团队，而不是分配给经理这个角色。在第二次组织设计实验中，团队已经没有了经理，只有产品总监，但他并不承担大部分传统经理的责任。这些责任现在由团队承担，团队和HR紧密合作。这个指南与LeSS实验 *尝试...尽可能保持组织扁平* 相关
+在LeSS中，经理是非必需的。经理可以发挥一个有用的角色，但大部分（大型）组织不缺经理角色和位置。LeSS组织更倾向于把职责给团队，而不是给经理角色。在第二个组织设计实验中，对团队中的人员来说已经没有了经理；只有产品总监，但他并不承担大部分传统经理的职责。这些职责现在由团队承担，与HR紧密合作。这个指南与LeSS实验*尝试...保持组织尽可能扁平*相关。
 In LeSS, managers are optional. Managers can perform a useful role, but most (large) organizations have no shortage of manager roles and positions. In a LeSS organization, the preference is to move responsibility to teams instead of assigning them to manager roles. From the second OD experiment, there were no managers for the people in the teams, there was only the Head of Product, but he wasn’t dealing with most of the traditional management responsibilities. These responsibilities were now for the teams, with close collaboration from the teams with HR. This guide is related to the LeSS experiment *Try...keep the organization as flat as possible*.
 
-* *LeSS实验：尝试...让HR参与*
+* *LeSS实验：尝试...让HR参与进来*
 * *LeSS experiment: Try... Engage HR*
 
-HR实践在许多组织中是一个主要障碍，仅有一小部分成功地改变了HR的实践。传统HR实践关注在个人，而敏捷开发团队才是驱动者，这导致了系统冲突。为了培养真实团队，HR实践必须要改变，比如奖励和绩效评审。为了做到这点，让HR专家参与是非常重要的，并教育他们为什么敏捷开发会影响HR的实践。在Y Soft，HR专家（包括招聘）在第二次组织设计实验的准备中就开始与团队紧密合作。比如，招聘新成员和升职。从那开始，团队不得不与HR紧密合作，而HR也很好地参与了团队的工作并支持到了团队，比如招聘新员工。在[这个章节](#235-inspection-on-od-element-less-guide-managers-are-optional)，分享了更多关于团队如何在没有经理的情况下工作的细节。我们尝试的LeSS其中一个实验就是这个 *尝试...团队自己做招聘*。
+HR实践在许多组织中是一个主要障碍，仅有一小部分成功地改变了HR实践。传统HR实践关注在个人，而在敏捷开发中团队才是主导者，这导致了系统冲突。为了培育出真正的团队，HR实践必须要改变，比如奖励和绩效评审。为了做到这点，让HR专家参与进来是非常重要的，向他们解释为什么敏捷开发会影响HR实践。在Y Soft，HR专家（包括招聘）在第二个组织设计实验的准备中就开始与团队紧密合作。比如，招聘新成员和升职。从那时起，团队必须与HR紧密合作，而HR也很好地参与了团队的工作并支持到了团队，比如招聘新员工。在[这个章节](#235-inspection-on-od-element-less-guide-managers-are-optional)，分享了更多关于团队如何在没有经理的情况下工作的细节。我们尝试的其中一个LeSS实验就是*尝试...团队自己做招聘*。
 HR practices are a major obstacle in many organizations, only a few have succeeded in changing HR practices. Traditional HR practices focus on *individuals*, while in agile development *teams* are the driver, which causes systemic conflict. To foster real teams, HR practices need to change, like rewarding and performance review. To be able to do that, it’s important to engage HR specialists, and educate them why agile development affects HR practices. In Y Soft, HR specialists (including recruitment) started to work closely with the teams in the preparation of the second OD experiment. Teams became responsible for many prior management responsibilities and thus needed to work with HR. For example, hiring new people and promotions. From then on, they had to work closely with HR and HR was well involved in the work of the teams to be able to support them, e.g. for the recruitment of new people. In [this section](#235-inspection-on-od-element-less-guide-managers-are-optional), more details are shared about how the teams worked without managers. One of the experiments from LeSS that were tried for this is *Try...Team does the hiring*.
 
-* *LeSS实验：避免...与绩效相关的激励*
+* *LeSS实验：避免...奖金与绩效挂钩*
 * *LeSS experiment: Avoid... Incentives linked to performance*
 
-（个人）与绩效相关的激励是基于旧的假设，人们可以控制他们的绩效并被奖金所激励。这里的建议是“把工资和任务分开”（[来源](https://www.alfiekohn.org/punished-rewards/)）。在第一个组织设计实验中，我们曾经尝试通过奖励团队来促进团队合作。然而，这些依然是与绩效相关的激励，效果并不完美。此外，有些经理仍然对个人的绩效进行“嘉奖”，即使没有真正的奖励。从第二次组织设计实验开始，不再有与绩效相关的激励，无论是个人还是团队。当组织表现很好，所有团队拿到同等的奖金，团队可以在团队内部分配奖金。在LeSS中与这个相关的实验是 *尝试...用奖励团队代替奖励个人* 并 *避免...绩效考核*。
+（个人）奖金与绩效挂钩是基于旧的假设 - 人们可以控制他们的绩效并被奖金所激励。这里的建议是“把报酬和任务分开”（[来源](https://www.alfiekohn.org/punished-rewards/)）。在第一个组织设计实验中，我们曾经尝试通过奖励团队来促进团队合作。然而，这些依然是对绩效的奖金，效果并不完美。此外，有些经理仍然对个人绩效进行“奖励”，即使没有真正的奖金。从第二个组织设计实验开始，不再有与绩效挂钩的奖金，无论是个人还是团队。当组织表现好时，所有团队都拿到同等的奖金，团队可以在内部分配这些奖金。相关的LeSS实验是*尝试...用奖励团队代替奖励个人*和*避免...绩效考核*。
 (individual) Incentives linked to performance are based on old assumptions that people are in control of their performance and are motivated by rewards. Recommendations are there to *‘decouple the task from the compensation’* ([source](https://www.alfiekohn.org/punished-rewards/)). In the first OD experiment, there were attempts to give team rewards that helped team collaboration. However, these were still incentives to performance, which didn’t work perfect. Additionally, some of the managers were still ‘rewarding’ performance of individuals, even though there was no real incentive for it. From the second OD experiment forward, there were no more incentives linked to performance, individual or team. Teams could distribute bonuses within their team once in a while, when the organization had done well and all teams got equal bonuses. Relevant experiments from LeSS in this regard are *Try...Team incentives instead of individual incentives* & *Avoid... Performance appraisals*.
 
-检视LeSS原则中[组织设计原则](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html) *以小为大*：
+检视来自LeSS原则*以少为多*中的[组织设计原则](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html)：
 Inspecting at the [organization design principles](https://less.works/blog/2020/03/02/more-with-less-seven-tools-for-simplifying-organizations.html) from the LeSS principle *More with LeSS*:
 
-我们使用以下组织级设计原则来减少LeSS组织的规模：
-1. 从专家角色到团队：在第一个组织设计实验中，团队已经成为了组织构建的基本模块。在第二次组织设计实验中，团队自己领导并成为承担责任的基石这件事变得简单，因为团队已经习惯承担责任并共事。
-2. 从资源思维到人性思维：Y Soft的HR和产品总监，从第一个组织设计实验中学习到，要更多地关注在团队需要和人的需要上，因为团队作为组织构建的基本模块，能够把人们的感觉和他们的需要变得透明。
-3. 从“围绕技术来组织”到“围绕客户价值来组织”：在第一个组织设计实验中，这个被重新构造，并且在第二次组织实验中没有实质性地改变。但是，团队增加了对客户领域的学习，比如与大客户紧密合作，开发某些以客户为中心的特性。
-4. 从独立团队到持续跨团队协作：在导入LeSS的开始，团队关注在自己的工作上。渐渐地，他们在大特性开发中开始合作。特别是当公司战略（因为新冠而）改变，从而产品待办列表巨变时，团队需要在新的战略和新的技术上一起发现和学习。这大概是在第二次组织设计实验中，重新设计帮助团队更好地关注在这上面。
-5. 从“协调是为了集成”到“通过集成实现协调”：因为在第一个组织设计实验中，这还是一个挑战，见[这个章节](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work)。因为团队在所有产品相关的工作上变得更加负责，他们开始为了持续集成而改进前提条件和行为。在第二次组织设计实验中，团队也持续工作在改进技术卓越性和他们的集成行为上。
-6. 从项目到产品：随着时间的推移，团队不再接受来自外部的需求。这一点也没有因为第二次组织设计实验而改变，也是从第一个组织设计实验中延续下来的。
-7. 从许多小产品到少数宽泛的产品：在第二次组织设计实验中，产品的定义没有改变。但是，为了让产品的定义更宽泛，通过把基础设施团队引入到特性团队中，完成的定义也被扩展。
+我们使用以下组织设计原则来简化成LeSS组织：
+1. 从专家角色到团队：在第一个组织设计实验中，团队已经成为了组织构建块。在第二个组织设计实验中，团队自己来牵头；团队已经习惯承担责任和一起工作。
+2. 从资源思维到人才思维：Y Soft的HR和产品总监，从第一个组织设计实验中学习到要更多地关注在团队需要和人的需要上，因为团队作为组织构建块把大家的感受和他们的需要变得透明了。
+3. 从围绕技术的组织到围绕客户价值的组织：在第一个组织设计实验中我们重新构造了组织，在第二个组织实验中本质上没有改变。但是，团队增加了对客户领域的学习，比如就某些以客户为中心的特性与大客户紧密合作。
+4. 从独立团队到持续的跨团队协作：在导入LeSS的开始，团队关注在自己的工作上。他们开始越来越多在大特性开发中合作。特别是当公司战略改变（因为新冠）并导致产品待办列表改变了许多时，团队需要在新的战略和技术上一起发现和学习。这是在第二个组织设计实验前后，重新设计帮助团队更好地聚焦在这上面。
+5. 从协调以集成到通过集成实现协调：自从第一个组织设计实验以来，这还是一个挑战，见[这个章节](#136-inspection-od-element-less-experiment-tryeliminating-the-undone-unit-by-eliminating-undone-work)。因为团队开始负责所有产品相关的工作，他们开始改进持续地集成所需的前提条件和行为。在第二个组织设计实验中，团队也继续工作在改进技术卓越和他们的集成行为上。
+6. 从项目到产品：随着时间的推移，已经不再有私下给到团队的需求。这一点也没有因为第二个组织设计实验而改变，而是从第一个组织设计实验中延续了下来。
+7. 从多个小产品到少数宽泛的大产品：在第二个组织设计实验中，产品的定义没有改变。但是，通过把基础设施团队引入到特性团队中，完成的定义被扩展了。
 
 
 We use the following organizational design principles to descale into LeSS organizations:
@@ -1065,7 +1065,7 @@ We use the following organizational design principles to descale into LeSS organ
 
 ### 2.3 检视 Inspect
 
-#### 2.3.1 第二次组织设计实验中的一般检视 Generic inspection of the second OD experiment
+#### 2.3.1 第二个组织设计实验的一般检视 Generic inspection of the second OD experiment
 
 前面组织设计实验包含了组织设计上的深刻变革。因此，就减少了对这次组织设计实验的检视。通常在第二次组织设计变革中值得检视的主题是从Scrum Master到敏捷教练的转换。
 The prior OD experiment involved more profound changes on the OD. Consequently, there is less to inspect on for this OD experiment. A topic worth inspecting on c is the move from Scrum Masters to agile coaches from the second OD change forward.
@@ -1101,7 +1101,7 @@ The architects that formally moved into the teams worked hands-on in the teams, 
 
 #### 2.3.3 组织设计元素的检视：LeSS指南：*尝试...扩展产品的定义* Inspection on OD-element: LeSS guide: *Try...Expanding Product Definition*
 
-在第二次组织设计实验中，曾经排除在外的基础设施团队参与了自设计并加入到了各特性团队中。这样产品完成的定义被扩展，一部分以前没定成完成的工作也包含在了这些特性团队的工作中。
+在第二个组织设计实验中，曾经排除在外的基础设施团队参与了自设计并加入到了各特性团队中。这样产品完成的定义被扩展，一部分以前没定成完成的工作也包含在了这些特性团队的工作中。
 In this second OD experiment, the infrastructure team that was outside the LeSS adoption joined the team self-design and people moved to the feature teams. This way the Definition of Done of the product extended and part of the undone work was included in the teams.
 
 在LeSS导入之时，基础设施团队是在产品团队之外的一个独立的（*组件*）团队。在团队自设计中，原基础设施团队成员分别加入到了三个特性团队中，这三个特性团队都至少拥有2个基础设施团队的成员，以防止他们被其他团队成员孤立。我们没有对这个迁移做单独评估，但同时也没有过关于它的任何争议。基础设施的工作成为了产品待办条目和完成的定义的一部分，有些团队会接手更多基础设施相关的工作，因为这些工作跟他们关注的特定的（客户）领域相关，且是必需的。一种产品定义的扩展非常丝滑地发生了，因为人们很好地融入了团队并非常渴望让这一切成功。
@@ -1109,7 +1109,7 @@ The infrastructure team was a separate (*component*) team outside the product fo
 
 #### 2.3.4 组织设计元素的检视：LeSS指南：*在客户领域选择专业化* Inspection on OD-element: LeSS guide: *Prefer Specialization In Customer Domain*
 
-大概在第二次组织设计实验的时候，发生了一个战略级的变更（因为新冠），也导致了产品待办列表的大范围变更，包括对不同技术的不同关注点。最初有三个团队，稍后有四个团队关注到了这个（客户）领域，他们跨团队紧密合作并学习了新的客户领域。这是一个在（新）客户领域中专业化的成功案例。
+大概在第二个组织设计实验的时候，发生了一个战略级的变更（因为新冠），也导致了产品待办列表的大范围变更，包括对不同技术的不同关注点。最初有三个团队，稍后有四个团队关注到了这个（客户）领域，他们跨团队紧密合作并学习了新的客户领域。这是一个在（新）客户领域中专业化的成功案例。
 Around the start of the second OD experiment, a strategic change was made (due to COVID-19) which led to large changes of the Product Backlog, involving a different focus with different technology. Three teams initially and a bit later a fourth team focused on this (customer) domain, collaborating intensively cross-team and learning the new domain. This was a good example of specialization in a (new) customer domain.
 
 然而，从某个时刻开始，这个领域成为了产品待办列表的主要部分，更多的团队需要参与进来。让其他团队参与这个新领域新技术中，需要大量的学习和协作。
@@ -1148,7 +1148,7 @@ In the inspection of the previous OD-element, the role of HR to help teams deal 
 
 #### 2.3.7 组织设计元素的检视：LeSS实验：避免...与绩效相关的激励 Inspection on OD-element: LeSS experiment: Avoid... Incentives linked to performance
 
-在第二次组织设计实验中，已经没有了与绩效相关的激励，无论是个人还是团队。当组织做得好的时候，所有团队拿到平等的奖励，跟绩效没有关系，团队可以在内部分配奖金。有些团队在团队内部实验过不同的奖金分配的方式，在某些情况下，团队奖金分配并不平等。然而，大部分团队在内部平均分配奖金。再也没有了跟绩效相关的加薪和其他奖励。到了某个时刻，CEO发现公司薪酬低于市场水平，他大幅提高了产研团队所有人的薪酬，超过了市场平均薪酬水平。从那时起，开始了跟绩效无关的定期加薪。团队内部和团队之间没有了竞争关系，大家感觉到了薪酬的平等，并知道当他们值得的时候，有相关的流程获得晋升。
+在第二个组织设计实验中，已经没有了与绩效相关的激励，无论是个人还是团队。当组织做得好的时候，所有团队拿到平等的奖励，跟绩效没有关系，团队可以在内部分配奖金。有些团队在团队内部实验过不同的奖金分配的方式，在某些情况下，团队奖金分配并不平等。然而，大部分团队在内部平均分配奖金。再也没有了跟绩效相关的加薪和其他奖励。到了某个时刻，CEO发现公司薪酬低于市场水平，他大幅提高了产研团队所有人的薪酬，超过了市场平均薪酬水平。从那时起，开始了跟绩效无关的定期加薪。团队内部和团队之间没有了竞争关系，大家感觉到了薪酬的平等，并知道当他们值得的时候，有相关的流程获得晋升。
 From the second OD experiment forward, there were no more incentives linked to performance, individual or team. Teams could distribute bonuses within their team once in a while, when the organization had done well and all teams got equal bonuses, not linked to performance. Some teams experimented with different ways of distributing bonuses *within* the team and in some cases teams distributed the bonus unequally. However, most teams distributed the bonus equally within the team. There were no salary increases or any other incentives linked to performance. At one point, the CEO found out that the compensations were below average compared to the market, and he increased the compensations massively for everyone in R&D to get above average. From that point on, there were regular pay raises not linked to performance. There was no competition between teams or within teams, people felt fairly compensated and knew there is a process to get promoted when they deserved it.
 
 ### 2.4 适应 Adapt
