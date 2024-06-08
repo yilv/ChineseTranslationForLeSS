@@ -1087,16 +1087,16 @@ Before the managers were removed, Y Soft already had simple job descriptions tha
 
 #### 2.3.2 组织设计元素的检视：LeSS规则：大多数团队是以客户为中心的特性团队 Inspection OD-element: LeSS Rule: The majority of the teams are customer-focused feature teams.
 
-团队变革的根本原因，是可以预防的。在团队内部和团队之间，对持续学习的缺乏和对协同学习的缺乏，应该得到更多的关注，特别是来自Scrum Master的关注。在LeSS导入开始的4天活动中，太多的注意力放在每个团队拥有（几乎）全部的技能上面，所以许多团队还为成为一个真实的团队并能够做到端到端交付而挣扎。更好地支持Scrum Master也可以预防这一点。
+导致团队需要重组的根本原因是可以预防的。在团队内部和团队之间缺乏持续学习和协同学习的问题应该得到更多的关注，特别是来自Scrum Master的关注。在LeSS导入开始的4天活动中，太多的注意力被放在每个团队需要拥有（几乎）全部技能上，许多团队因此一直为成为一个真正的团队并能够端到端交付而挣扎。更好地支持Scrum Master也可以预防这一点。
 The root causes that led to the change of teams, could have been prevented. The lack of continuous learning and lack of collaboration on learning within and between teams, should have been given more attention, especially by Scrum Masters. In the 4-day event that started the LeSS adoption, there was too much focus on getting (almost) all the skills in each team, and therefore many teams struggled in truly working as a team and being able to deliver end-to-end. Supporting the Scrum Masters better could have helped prevent this as well.
 
-团队内部学习变得越来越跨职能和跨组件，本应该是首次导入的一部分。虽然有部分团队在这方面有所成长，大部分并没有。在这个时期，团队关注在学习支持任务，做回归测试，解决程序问题，和发布。虽然这非常重要，也是获得整个产品关注的主要因素之一，但是团队在组内合作、以及分享商业领域和组件知识上的关注度十分有限。
+在团队内部学习变得越来越跨职能和跨组件本应该是首次导入的一部分。虽然有部分团队在这方面有所成长，大部分团队并没有。在这个时期，团队关注在学习做支持任务、做回归测试、修复缺陷和发布上。虽然这些都很重要，并且也是获得整体产品焦点的主要因素之一，但是团队在组内合作以及分享业务领域和组件知识上的关注度有限。
 Learning within the teams to become more cross-functional and cross-component, should have been more part of the adoption in the first place. Although some teams grew in this, many teams didn’t. In this period, teams focused on learning support tasks, doing regression tests, fixing bugs, and releasing. Though this was very important and one of the main factors to get whole product focus, teams had limited focus on collaboration and sharing knowledge on business domains and components within the team.
 
-在第二次组织设计变革的准备中和工作坊期间，我们关注并鼓励了团队学习。团队识别了不能够共同跨职能地交付价值的根本原因。在这次仪式中，团队识别了在团队内部和团队之间的学习领域，以防止类似的事情在未来发生。
+在第二次组织设计变革的准备过程和工作坊期间，我们关注并鼓励了团队学习。团队识别了不能够共同跨职能地交付价值的根本原因。在这次活动中，团队识别了在团队内部和团队之间需要学习的领域，以防止类似情况在未来发生。
 In the preparation for the second event with OD changes and in the workshops itself, there was focus and encouragement on team learning. The teams identified the root causes for the inability to cross-functionally deliver value together. In the event, teams identified areas for learning in their team and between teams to prevent this for the future.
 
-正式加入团队的架构师们在团队中实战，他们中的大部分也会帮助其他成员理解产品更大的范围和产品整体，特是跟产品相关的新技术部分。
+正式加入团队的架构师们在团队中动手参与实战，他们中的大部分也会帮助其他成员理解全貌和产品整体，特别是跟新技术相关的部分。
 The architects that formally moved into the teams worked hands-on in the teams, and most of them focused also on helping other teams to understand the bigger picture and whole product, especially related to new technology that was involved.
 
 #### 2.3.3 组织设计元素的检视：LeSS指南：*尝试...扩展产品的定义* Inspection on OD-element: LeSS guide: *Try...Expanding Product Definition*
