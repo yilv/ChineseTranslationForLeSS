@@ -1101,10 +1101,10 @@ The architects that formally moved into the teams worked hands-on in the teams, 
 
 #### 2.3.3 组织设计元素的检视：LeSS指南：*尝试...扩展产品的定义* Inspection on OD-element: LeSS guide: *Try...Expanding Product Definition*
 
-在第二个组织设计实验中，曾经排除在外的基础设施团队参与了自设计并加入到了各特性团队中。这样产品完成的定义被扩展，一部分以前没定成完成的工作也包含在了这些特性团队的工作中。
+在第二个组织设计实验中，曾经排除在外的基础设施团队参与了自设计并加入到了各特性团队中。这样一来产品完成的定义被扩展，一部分以前的完成外工作也包含进了特性团队中。
 In this second OD experiment, the infrastructure team that was outside the LeSS adoption joined the team self-design and people moved to the feature teams. This way the Definition of Done of the product extended and part of the undone work was included in the teams.
 
-在LeSS导入之时，基础设施团队是在产品团队之外的一个独立的（*组件*）团队。在团队自设计中，原基础设施团队成员分别加入到了三个特性团队中，这三个特性团队都至少拥有2个基础设施团队的成员，以防止他们被其他团队成员孤立。我们没有对这个迁移做单独评估，但同时也没有过关于它的任何争议。基础设施的工作成为了产品待办条目和完成的定义的一部分，有些团队会接手更多基础设施相关的工作，因为这些工作跟他们关注的特定的（客户）领域相关，且是必需的。一种产品定义的扩展非常丝滑地发生了，因为人们很好地融入了团队并非常渴望让这一切成功。
+基础设施团队是在导入LeSS的产品团队之外的一个独立的（*组件*）团队。在团队自设计中，原基础设施团队成员分别加入到了三个特性团队中，这三个特性团队都至少拥有两个基础设施团队的成员，以防止他们被其他团队成员孤立。我们没有对这个变化做单独评估，但也没有过关于它的任何争议。基础设施工作成为了产品待办条目和完成的定义的一部分，有些团队会接手更多基础设施相关的工作，因为这些工作对他们聚焦的某个（客户）领域来说是必需的。产品定义的扩展很自然就发生了，因为相关的人都很好地融入了团队并渴望让这一变化能够成功。
 The infrastructure team was a separate (*component*) team outside the product for the teams that worked in the LeSS adoption. In the team self-design, the members of the former infrastructure team moved to three of the feature teams, every team having at least two people of the former infrastructure team, to prevent being isolated in the team. There was no specific evaluation of this move, but there was never an issue raised about this. Infrastructure work became part of the Product Backlog Items and the Definition of Done, and some of the teams took more infrastructure related work because of their focus on certain (customer) domains that needed infrastructure work. An extension of the product definition that worked smoothly, because the people that were involved integrated well in the teams and were eager to make it a success.
 
 #### 2.3.4 组织设计元素的检视：LeSS指南：*在客户领域选择专业化* Inspection on OD-element: LeSS guide: *Prefer Specialization In Customer Domain*
