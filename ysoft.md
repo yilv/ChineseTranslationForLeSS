@@ -892,7 +892,7 @@ As mentioned in the previous section, a new event was set forward to start the n
 
 发生的主要改变是：
 * **团队重新设计**：大家自设计形成了“新”的团队结构。团队优化了自身结构以“交付更多端到端的客户价值”。另外，剩下的架构师们和基础服务团队也加入到团队中。
-* **团队不再配置直接经理**：经理要么成为了敏捷教练，要么离开了Y Soft。团队设计了“宏观流程”来在没有经理的情况下处理比如招聘、绩效评估，以及升级等问题。
+* **团队不再配置直接经理**：经理要么成为了敏捷教练，要么离开了Y Soft。团队设计了“宏观流程”来在没有经理的情况下处理比如招聘、绩效评估，以及升职等问题。
 * **替换Scrum Master为敏捷教练**：产品总监认为Scrum Master的关注范围太窄了（主要在团队上），在更大的系统和组织上的关注太少。此外，有些团队曾经跟一些Scrum Master有过不好的体验。所以产品总监决定引入敏捷教练，他们是明确需要关注更广泛范围的。一些Scrum Master成为了敏捷教练，大部分Scrum Master离开了Y Soft。在接下来的章节中，会有关于这个情况及其原因的反思。
 
 在下一个章节，将展开描述这些改变及其背后的考虑。
@@ -1117,13 +1117,13 @@ However, at some point, this domain became the prevalent part of the Product Bac
 
 #### 2.3.5 组织设计元素的检视：LeSS指南： *经理是非必需的* Inspection on OD-element: LeSS guide: *Managers Are Optional*
 
-在没有硬指标的情况下来反思工作中有经理和没有经理的区别是非常困难的。事实是团队交付产品待办条目的数量和以前一样（在团队规模相同的情况下）。平均每个团队少一点，但总体数量是一样的，因为团队更小了。在几个迭代之后，交付的产品待办条目数量提升到了以前一样的水平。虽然产出（完全）不应该成为目标，这也表示了在没有经理的条件下产出没有变化，新组建的团队甚至没有过产出降低。
+很难基于硬性指标来反思有经理和没有经理的不同。事实是团队交付产品待办条目的数量和以前一样（在团队规模相同的情况下）。平均每个团队少一点，但总体数量是一样的，因为团队规模变小了。在几个迭代之后，交付的产品待办条目数量提升到了和以前一样的水平。虽然*产出完全不应该成为目标*，但这也表明了在没有经理的情况下产出并没有变化，新组建的团队甚至没有过产出降低的阶段。
 It’s hard to reflect on the difference between working with and without managers with hard metrics. Fact is that the amount of PBI’s the teams delivered in their new teams was similar to their old teams (with the same amount of people). A bit less per team, but an equal amount because there were smaller teams. After a few Sprints, the number of PBI’s that had been delivered had increased. Although *output shouldn’t be a goal* (at all), it gives an indication that output doesn’t change because there are no managers, and with newly formed teams there wasn’t even a decrease.
 
-Y Soft 如何推进自我管理，如何处理曾经由经理们领导的跨团队（甚至跨部门）的主题，都非常值得学习。在Y Soft，这些主题被称为“宏观流程”（比如升级，招聘，解雇）。宏观流程是为了设计如何让所有团队在没有经理的情况下，保持这些主题的运行。一些主题，例如招聘，团队在考虑宏观流程的各种约束条件之后，自己内部决定他们怎么做。基本上，是这个团队的特殊宏观流程。
+Y Soft如何推进自我管理、如何应对曾经由经理们领导的跨团队（甚至跨部门）主题，都非常值得学习。在Y Soft，这些主题被称为“宏观流程”（比如升职、招聘、解雇）。宏观流程用以设计如何让所有团队在没有经理的情况下保持运行。针对一些主题，例如招聘，团队在考虑宏观流程的约束后，自己内部决定怎么做。这其实就是特定团队的微观流程。
 The way Y Soft promoted self-management and dealt with cross-team (and even cross-department) topics that used to be led by managers are very interesting to learn from. These topics are called ‘macro-processes’ (e.g. escalations, hiring and firing) within Y Soft. The macro-processes were there to design how this would work for all teams and be able to keep these topics moving without managers. For some topics - like hiring - teams decided within their own team how to do it, considering the constraints from the macro-process. Basically, this would be the micro-process for the specific team.
 
-大体上，团队的志愿者，产品总监，以及敏捷教练的代表建立了如何实施宏观流程的指引。一个志愿小组（主要是团队成员，还有其他相关干系人，或者当需要的时候可以是产品负责人）设计最初的也是最重要的宏观流程。受到LeSS全景图的启发，每个主题：志愿小组定义主题的原则和规则。这些规则可以是真实的约束（比如HR对申请人的反馈时间），也可以是跟志愿小组一起确定的，以保证对一个主题的统一性。基于原则和规则，志愿者们设计了团队应对主题的指南。跟LeSS指南的开启一样，基于实验的学习，团队可以基于自己的情况做出调整。在指南完成以后，宏观流程（基于原则、规则和指南）被所有团队讨论，或发送（依赖主题是什么）给所有团队以得到回复。
+团队的志愿者、产品总监，以及敏捷教练的代表一起创建了如何实施宏观流程的指导原则。一个志愿小组（主要是团队成员，还有其他相关干系人或者如果需要也包括PO）设计最初的也是最重要的宏观流程。受到LeSS全景图的启发，每个主题：志愿小组为它定义原则，并创建相应规则。这些规则可以是实际存在的约束（比如HR对申请人的响应时间），也可以是志愿小组一起确定用以保证对一个主题有一些一致性。基于原则和规则，志愿者们设计了在团队内用来应对主题的指南。跟LeSS指南先有一些做法然后基于实验进行学习类似，团队可以根据自己的情况做出调整。在指南完成以后，宏观流程（基于原则、规则和指南）被所有团队讨论，或（取决于主题是什么）发送给所有团队征集反馈。
 Volunteers from teams, the Head of Product, and a representative from the agile coaches created guidelines on how to deal with macro-processes in general. A volunteering group (mostly team members, but also other relevant stakeholders or the PO if needed) designed the first and most important macro-processes. It was inspired by the LeSS Complete Picture for each topic: the group defined the principles for the topic and made rules for the topic. These rules could be real constraints (e.g. response time to applicants by HR) or made together with the volunteering group to make sure there is some uniformity for a topic. Based on the principles and rules, the volunteers designed guides to use within teams to deal with the topic. Similar to the LeSS guides to start with something and based on learning in experiments, teams could adjust to their specific situation. After the guides were finished, the macro-processes (basically the principles, rules & guides) were discussed or sent around (depending on the topic) for feedback from all teams.
 
 <figure>
@@ -1133,12 +1133,12 @@ Volunteers from teams, the Head of Product, and a representative from the agile 
 *宏观流程是如何被诠释的*
 *How the macro-processes were explained*
 
-设计这些宏观流程大部分是团队的责任，因为他们是设计者，也是责任人。在[这个博客](https://www.daretothinkbyg.com/en/blog/manager-less-rnd-how-to-promote-people-1)，有Y Soft 团队如何应对升职的例子。
+设计这些宏观流程让团队有了更多职责，因为他们是设计者并要负责这些主题。[这个博客](https://www.daretothinkbyg.com/en/blog/manager-less-rnd-how-to-promote-people-1)中有Y Soft团队如何应对升职的例子。
 Designing these macro-processes created more responsibility in the teams, because they were the people that designed them and were responsible for these topics. In [this blog](https://www.daretothinkbyg.com/en/blog/manager-less-rnd-how-to-promote-people-1), there is an example of how the Y Soft teams dealt with promotions.
 
 ##### 2.3.5.1 产品总监离开Y Soft且没有替代者 Head of Product leaving Y Soft and was not replaced
 
-大概一年半以后，产品总监离开了Y Soft。需要做出一个选择：招聘一位新的产品总监或者CEO担任产品总监。招聘新产品总监产生的风险是，这位新人可能想要改变一些事情，因为他以前并不是设计组织中的一员。在咨询了一部分团队成员之后，CEO决定，不再招聘产品总监，并且试图使他和团队之间没有任何经理。为了应对这个，HR在系统中拥有了一个正式的角色，例如，给新人签订合同（而不是产品总监），一个来自产研团队外部的人承担了产品总监的角色，来进行采购和管理供应商（例如，招聘外部人员加入团队），这是一个相对其他组织来说，比较限制的角色。直到这天（2023年春），Y Soft也没有新的产品总监。CEO似乎也没有因为产品总监的离开而增加工作量，因为团队承担了额外的工作（见上面章节的宏观流程），HR也跟团队一起负责HR的事务，在产研团队中的那位负责了采购和供应商管理。无论如何，CEO已经常规性地参加迭代回顾，当需要的时候有时还会参加产品待办列表的梳理，以及频繁参加迭代计划，提供业务更新。这并没有因为产品总监的离开而改变。显然，产品负责人也没有增加额外的工作，因为产品总监并没有加入到产品和产品愿景中。
+大概一年半以后，产品总监离开了Y Soft。需要做出一个选择：招聘一位新的产品总监或者由CEO担任产品总监。招聘新产品总监产生的风险是，这位新人可能想要改变一些事情，因为他并没有参与现有的组织设计。在咨询了一部分团队成员之后，CEO决定不再招聘产品总监，而是试图在他和团队之间不再设置任何经理。为了应对这种情况，HR在系统中拥有了一个正式的角色来处理一些事情，例如，给新人签订合同（而不是产品总监来做）；有一个来自产研团队外部的人代替产品总监管理采购和供应商（例如，招聘外部人员加入团队），这部分工作相对其他组织来说比较有限。直到今天（2023年春），Y Soft也没有再招新的产品总监。CEO似乎也没有因为产品总监的离开而增加工作量，因为团队承担了额外的工作（见上面章节的宏观流程），HR跟团队一起负责人事事务，有一个人管理采购和供应商。不管怎么说，CEO常规性地参加迭代评审，有用时也会参加产品待办列表梳理，并经常在迭代计划开始时提供业务更新。这些并没有因为产品总监的离开而改变。显然，产品负责人也没有增加额外的工作，因为产品总监之前也并没有参与到产品和产品愿景中。
 Around 1.5 years later, the Head of Product left Y Soft. A choice had to be made: hiring a new Head of Product or the CEO acts as the Head of Product. A risk of hiring a new person is that a new person might want to change things, because that person wasn’t part of the design of the organization. The CEO decided - after consultation with some team members - to work without a Head of Product and try to work without any managers between him and the teams. To deal with this, HR got a formal role in the system around e.g. offering a contract to new people (instead of the Head of Product) and one person outside the product within R&D took the role of the Head of Product to deal with procurement and suppliers (e.g. for hiring external people in the teams), which was a relatively limited role compared to most other organizations. Until this day (Spring 2023), there hasn't been hired a new Head of Product. It turned out that the CEO didn’t have additional work because of the Head of Product leaving, because of the additional responsibilities teams took (see macro-processes section above), HR being involved more in HR matters with teams and the person in R&D taking care of procurement and suppliers. The CEO joined Sprint Review regularly anyway, sometimes Product Backlog Refinement when useful and on a frequent basis he started the Sprint Planning with a business update. This didn’t change because of the Head of Product leaving. Obviously, there was no additional work for the Product Owner as well, since the Head of Product wasn’t involved in the product and vision for the product.
 
 #### 2.3.6 组织设计元素的检视：LeSS实验：尝试...让HR参与 Inspection on OD-element: LeSS experiment: Try... Engage HR
