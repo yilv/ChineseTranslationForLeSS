@@ -1153,13 +1153,13 @@ From the second OD experiment forward, there were no more incentives linked to p
 
 ### 2.4 适应 Adapt
 
-这次实验中主要适应的总结如下：
-* 重新设计跨职能和跨组建的团队，让他们可以单个团队交付端到端产品待办条目（不意味着：所有团队都可以端到端地完成所有产品待办条目）
+在这个实验中的主要适应性变化总结如下：
+* 重新设计跨职能和跨组件的团队，以便单个团队能够交付端到端产品待办条目（不意味着：*所有团队都可以端到端地完成所有产品待办条目*）
 * 剩下的架构师正式加入到各特性团队中
 * 解散独立的基础设施团队，团队成员加入到常规团队中
 * Scrum Master被敏捷教练所取代
 * 移除所有经理，除了产品总监以外
-* 团队奖金跟单个团队的绩效没有联系
+* 团队奖金不关联到单个团队的绩效
 
 A summary of the main adaptations that happened in this experiment:
 
@@ -1172,26 +1172,26 @@ A summary of the main adaptations that happened in this experiment:
 
 这带来了以下主要结果：
 * 一些Scrum Master离开了，一些经理变成了敏捷教练
-* 团队自我管理提升，需要额外强调这一点
+* 提升了团队自我管理，并给予了额外重视
   
 This brought the following main results:
 
 * Some Scrum Masters left and some other managers became agile coach
 * Increased self-management by the teams and additional emphasis on this
 
-从导入LeSS的一开始，许多组织设计改变就发生了，并在接下来的几年中，还有许多小的改善。这些并不显著，但Y Soft保持改进，以提升和改进团队的责任感，让他们在没有经理的条件下工作。同时也改进了与组织其他部分的合作，比如产品营销，（本地）支持和销售。
+从导入LeSS开始发生了许多组织设计改变，在接下来的几年里还有许多小的改善。这些改变没那么显著，但Y Soft持续改进来增加提升团队的责任感，以及在没有经理情况下开展工作。同时也改进了与组织其他部分的合作，比如产品营销、（本地）支持和销售。
 Many OD changes happened since the start of the LeSS adoption, and many small things were improved in the course of the following years. These were less significant, but Y Soft kept improving to increase and improve the responsibility of the teams and work without managers. As well as improving the collaboration with other parts of the organizations like product marketing, (local) support and sales.
 
-CEO在LeSS导入的早期，第二次组织实验之前，表达了将SAFEQ迁移到LeSS Huge的愿望。Y Soft有增加市场份额和也许扩张市场的野心。迁移到LeSS Huge应该可以帮助他们实现这一点，包括增大团队规模。
+CEO在LeSS导入的早期，在第二个组织设计实验之前，表达了想要将SAFEQ转向LeSS Huge。Y Soft有增加市场份额和可能的话扩张市场的雄心。转向LeSS Huge应该可以帮助他们扩张，包括扩大团队规模。
 The CEO indicated the desire to move to LeSS Huge for SAFEQ early in their LeSS adoption, before the second OD experiment. Y Soft has the ambition to grow their market share and possibly extend markets, and the move to LeSS Huge should help to be able to grow on this, including the growth of the number of teams.
 
-比较显著的调整是Y Soft的联合创始人成为了SAFEQ的产品负责人。他非常有经验，跟（打印）供应商/合作伙伴以及大客户关系亲密，对产品了如指掌，因为他曾经就是（跟CEO一起）的初代开发工程师，对产品和代码一直都非常清楚。当他成为产品负责人后，我们对愿景的理解，对基于供应商和客户需求优先顺序的清晰度都得到了提升。因为得到了授权（他的决定也受到尊重），他不会因为组织“需要”，包括来自（打印）供应商和客户的反馈和学习，而改变方向，这会减少团队因切换客户领域而产生的认知负荷。团队没有了紧急需求，可以更加专注，即使我们有10个团队共同工作在一个产品待办列表上。一个连贯的产品愿景，清楚的优先顺序，产品负责人与团队良好的合作，改善了团队（感觉）的关注度。自从这个产品负责人，和一个组织内经验丰富的*助理PO*，加入到产品团队之后，内部干系人和外部客户的满意度更高了。团队有了更好的基线以方便未来的改善，更明白应该关注什么地方，以及为了长期利益应该学习什么。
+比较显著的调整是Y Soft的联合创始人成为了SAFEQ的产品负责人。他非常有经验，跟（打印）供应商/合作伙伴以及大客户关系亲密，对产品了如指掌，因为他（跟CEO一起）开发了最初的产品，并一直贴近产品和代码。当他成为产品负责人后，我们对愿景的理解和对基于供应商和客户的优先级清晰度都得到了提高。因为得到了授权（他的决定受到尊重），他不会基于来自组织的“要求”而改变方向，从而减少了团队因切换客户领域带来的认知负荷。这也包括响应来自（打印）供应商和客户的反馈和学习。团队没有了紧急需求，可以更加专注，即使我们有10个团队共同工作在一份产品待办列表上。一个连贯的产品愿景，清楚的优先顺序，产品负责人与团队良好的合作，改善了团队（感觉上）的聚焦。自从这个产品负责人 - 和一个组织内经验丰富的*助理PO* - 加入到产品团队之后，内部干系人和外部客户的满意度更高了。团队有了更好的基线来进一步改善，更明白应该聚焦在哪里，以及长期要学习什么。
 A significant adaptation was the co-founder of Y Soft becoming the PO for SAFEQ. He is experienced, has close contact with (print) vendors/partners and large customers and knows the product in and out, because he did initial development (with the CEO) and stayed close to the actual product and code. When he started as the PO, the understanding of the vision, clarity on priorities based on vendor and customer became higher. Because he has the mandate (and his decisions were respected), he wouldn’t change direction often based on “demands” from the organization, which limited the cognitive load for teams to switch between customer domains. Including adapting to feedback and learning from (print) vendors and customers. Teams didn’t have the urge anymore to have more focus, even when there were 10 teams working together on the Product Backlog. A consistent product vision, with clear priorities and a good collaboration between the PO and the teams improved the (feeling of) focus for teams. Since this PO - and a *Supporting PO* with a lot of experience in the organization - joined the product, there was more satisfaction from internal stakeholders and external customers. Teams had a better baseline to improve further and knew better where to focus on and what to learn for the long-term.
 
-在之前有关于迁移到LeSS Huge的多次讨论。敏捷教练和这个（新）产品负责人讨论把SAFEQ迁移到LeSS Huge的原因和后果。他们得出的结论是，迁移的原因是产品负责人无法理解SAFEQ的客户和市场的所有需求，进而不知道从中长期来说，应该关注在什么地方。（2021年春）讨论的时候，SAFEQ刚刚增长到了11个团队，而产品负责人表示他能够监管客户和市场的需求，以及产品待办列表的大部分主题。他提到，通过推进主题（发现和交付），以及必要时跟内部干系人和合作伙伴一起梳理的产品待办条目，团队已经成长得不错。可能他对产品、市场和重要供应商和客户的经验和知识帮助他有这个见识。如果在未来，他无法监管这些，就可以迁移到LeSS Huge中去。
+之前有过多次关于转向LeSS Huge的讨论。敏捷教练和（新）产品负责人讨论了把SAFEQ转向LeSS Huge的原因和后果。他们得出的结论是，转向LeSS Huge的主要原因是产品负责人不再能理解SAFEQ所有客户和市场的需要，进而不知道从中长期来说应该聚焦在什么地方。（2021年春）讨论的时候，SAFEQ刚刚增长到了11个团队，而产品负责人表示他能够管理客户和市场需求，以及产品待办列表中的主要主题。他提到团队已经成长为能够推进主题（探索和交付），以及必要时跟内部干系人和合作伙伴一起梳理产品待办条目。他对产品、市场和重要供应商和客户的经验和知识可能帮助了他具备这个见识。如果在未来他无法再管理这么大范围，可以到时再转向LeSS Huge。
 The discussion about moving to LeSS Huge had happened a few times before. The agile coaches discussed with the (new) Product Owner the reasoning and consequences of LeSS Huge for SAFEQ. They concluded that the main reason for moving to LeSS Huge would be the inability for the Product Owner to understand all customer and market needs for SAFEQ and as a corollary know where to focus on for the mid-long term. At the time of discussion (Spring 2021), SAFEQ had just grown to 11 teams, but the Product Owner concluded that he could still oversee the customer and market requests and the main topics of the Product Backlog. He mentioned that teams had grown in moving topics forward (discovery & delivery) and refined PBI’s with internal stakeholders and partners well when necessary. His experience and knowledge of the product, market and important vendors and customers probably helped in him having this overview.  If he cannot oversee it anymore in the future, a move to LeSS Huge can happen then.
 
-*反思*：尽管在LeSS规则中说过LeSS Huge是为了8个以上的团队，然而团队的数量不应该成为迁移到LeSS Huge（甚至分割成两个产品）的原因。人们能够共同合作的人数有限，但这个限制是基于上下文的，取决于产品本身，人的知识，复杂性，公司规模等等。第二，当整个产品——在这里几乎是整个组织——的规模在8个左右（比如13个，但不是50那么多），应该对为什么团队合作是一个问题的原因做深入分析。可能有更重要的根本原因需要解决，而不是“太多团队一起工作”。然而，当决定转变成两个产品的时候，并没有对这个问题做更深入的根因分析。例如，缺乏去分享好的产品愿景，频繁调整需求优先顺序，以及客户反馈的延迟。
+*反思*：尽管LeSS规则说LeSS Huge是针对8个以上的团队，然而团队的数量不应该成为转向LeSS Huge（或者拆成两个产品）的原因。多少人能够工作在一起会有限制，但这个限制是基于上下文的，取决于产品、人员的知识、复杂度、公司规模等。第二，当整个产品 - 在这里几乎是整个组织 - 的规模是在8个左右（是13个，而不是50个那么多），应该对为什么所有团队一起工作是个问题的原因做深入分析。可能有更重要的根本原因需要解决，而不只是因为“太多团队一起工作”。然而，当决定转向两个产品的时候，并没有对这个问题做更深入的根因分析，例如，缺乏对好的产品愿景的分享、太频繁改变需求优先级，以及延迟的客户反馈。
 *Reflection*: Even though in the LeSS rules it states that LeSS Huge is for ‘8’+ teams, the number of teams shouldn’t be the main reason to move to LeSS Huge (or split into two products). There is some limit for the amount of people that work together, but this limit is contextual and depends on the product, the knowledge of people, the complexity, the size of the company, and more. Second, when the whole product - which in this case is almost the whole organization - is around this number of 8 (13,  and not e.g. 50), there should be dived into the root cause why teams working together is perceived as a problem. There are probably root causes that are more important to address than only ‘too many teams working together’. However, there was no deeper root cause analysis on the problems with this at the time of deciding to move to two products, e.g. the lack of sharing a good product vision, too often changing priorities and the delay of customer feedback.
 
 ## 3. Moving to two products
