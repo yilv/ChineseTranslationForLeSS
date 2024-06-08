@@ -1107,12 +1107,12 @@ In this second OD experiment, the infrastructure team that was outside the LeSS 
 基础设施团队是在导入LeSS的产品团队之外的一个独立的（*组件*）团队。在团队自设计中，原基础设施团队成员分别加入到了三个特性团队中，这三个特性团队都至少拥有两个基础设施团队的成员，以防止他们被其他团队成员孤立。我们没有对这个变化做单独评估，但也没有过关于它的任何争议。基础设施工作成为了产品待办条目和完成的定义的一部分，有些团队会接手更多基础设施相关的工作，因为这些工作对他们聚焦的某个（客户）领域来说是必需的。产品定义的扩展很自然就发生了，因为相关的人都很好地融入了团队并渴望让这一变化能够成功。
 The infrastructure team was a separate (*component*) team outside the product for the teams that worked in the LeSS adoption. In the team self-design, the members of the former infrastructure team moved to three of the feature teams, every team having at least two people of the former infrastructure team, to prevent being isolated in the team. There was no specific evaluation of this move, but there was never an issue raised about this. Infrastructure work became part of the Product Backlog Items and the Definition of Done, and some of the teams took more infrastructure related work because of their focus on certain (customer) domains that needed infrastructure work. An extension of the product definition that worked smoothly, because the people that were involved integrated well in the teams and were eager to make it a success.
 
-#### 2.3.4 组织设计元素的检视：LeSS指南：*在客户领域选择专业化* Inspection on OD-element: LeSS guide: *Prefer Specialization In Customer Domain*
+#### 2.3.4 组织设计元素的检视：LeSS指南：*在客户领域上专业化* Inspection on OD-element: LeSS guide: *Prefer Specialization In Customer Domain*
 
-大概在第二个组织设计实验的时候，发生了一个战略级的变更（因为新冠），也导致了产品待办列表的大范围变更，包括对不同技术的不同关注点。最初有三个团队，稍后有四个团队关注到了这个（客户）领域，他们跨团队紧密合作并学习了新的客户领域。这是一个在（新）客户领域中专业化的成功案例。
+大概是在开始第二个组织设计实验的时候，发生了一次战略变化（因为新冠），也导致了产品待办列表的大范围变更，包括对不同技术的聚焦改变。最初有三个团队，稍后有第四个团队，聚焦到了这个（客户）领域，他们跨团队紧密合作来学习了这一新的客户领域。这是一个在（新）客户领域上专业化的成功案例。
 Around the start of the second OD experiment, a strategic change was made (due to COVID-19) which led to large changes of the Product Backlog, involving a different focus with different technology. Three teams initially and a bit later a fourth team focused on this (customer) domain, collaborating intensively cross-team and learning the new domain. This was a good example of specialization in a (new) customer domain.
 
-然而，从某个时刻开始，这个领域成为了产品待办列表的主要部分，更多的团队需要参与进来。让其他团队参与这个新领域新技术中，需要大量的学习和协作。
+然而，从某个时刻开始，这个领域成为了产品待办列表的主要部分，需要更多的团队参与进来。让其他团队参与到这个新领域和技术中则花了大量学习和协作。
 However, at some point, this domain became the prevalent part of the Product Backlog and more teams needed to be involved. It took quite some learning and collaboration to have the other teams involved in this new domain and technology.
 
 #### 2.3.5 组织设计元素的检视：LeSS指南： *经理是非必需的* Inspection on OD-element: LeSS guide: *Managers Are Optional*
