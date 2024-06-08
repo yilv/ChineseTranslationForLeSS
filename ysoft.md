@@ -1065,24 +1065,24 @@ We use the following organizational design principles to descale into LeSS organ
 
 ### 2.3 检视 Inspect
 
-#### 2.3.1 第二个组织设计实验的一般检视 Generic inspection of the second OD experiment
+#### 2.3.1 第二个组织设计实验的一般性检视 Generic inspection of the second OD experiment
 
-前面组织设计实验包含了组织设计上的深刻变革。因此，就减少了对这次组织设计实验的检视。通常在第二次组织设计变革中值得检视的主题是从Scrum Master到敏捷教练的转换。
+前一个组织设计实验包含了在组织设计上更加影响深远的变革。因此，这次组织设计实验中需要检视的东西就变少了。在第二次组织设计变革中一个值得检视的主题是从Scrum Master到敏捷教练的转换。
 The prior OD experiment involved more profound changes on the OD. Consequently, there is less to inspect on for this OD experiment. A topic worth inspecting on c is the move from Scrum Masters to agile coaches from the second OD change forward.
 
-为什么是敏捷教练而不是Scrum Master？在特定的时间，产品总监总结道，Scrum Master的关注范围太窄了（主要在团队上），在更大的系统和组织上的关注太少。此外，有些团队因为一些原因，曾经跟一些Scrum Master有过不好的体验。所以产品总监决定启用敏捷教练，他们明显更强调关注在更大的范围上。所有的Scrum Master必须申请成为这个角色。
+为什么是敏捷教练而不是Scrum Master？产品总监在某个时刻得出如下结论：Scrum Master的关注范围太窄了（主要在团队上），在更大的系统和组织上的关注太少。此外，一些团队因为同样的原因跟Scrum Master有过不好的体验。所以产品总监决定启用敏捷教练，他们有明确强调要关注在更广的范围上。所有的Scrum Master必须申请才可能成为敏捷教练。
 Why agile coaches and not Scrum Masters? At a certain point, the Head of Product concluded that the Scrum Masters had a too narrow scope of attention (mainly on teams) and too little focus on the larger system and organization. Additionally, some teams had negative experiences with the Scrum Masters, for the same reason. That’s why the Head of Product decided to start working with agile coaches, that had explicitly more emphasis on a broader scope of attention. All Scrum Masters had to apply for this role.
 
-*反思*：对Scrum Master这个角色有一些误解，定义敏捷教练的角色主要是意味着Scrum Master的角色定义是合适的。此外，Scrum Master工作范围太窄的问题是可以预防的。Scrum  Master们在导入LeSS的开始几乎没有得到过外界的帮助，所以他们不能够关注在（系统级的）重要变量上。他们主要关注在团队上，并与产品负责人以及其他组织中的重要变量在产品待办列表（和其他相关的活动）上没有任何互动。当密集的（外部）监控和教练开始实施，以及工程副总裁（已作为敏捷教练）也成为团队中的一员后， 这些Scrum Master便有所改进。然而在其他人的眼中，伤害已经造成。在第二次组织设计（除了1之外）中，产品总监宣布组织中不再有Scrum Master的岗位之后，Scrum Master可以加入团队或者尝试在组织中找到其他的位置。在后来的阶段中，在Scrum Master们离开之前，产品总监宣布部分Scrum Master可以申请成为敏捷教练。这表示Scrum Master们已经学习并作出改进，因为在早期阶段产品总监没有宣布这件事。不幸的是，（大部分）Scrum Master并不喜欢一开始对待他们的方式，并决定离开。
+*反思*：对Scrum Master这个角色有一些误解，定义敏捷教练的角色基本意味着Scrum Master的角色定义是合适的。此外，Scrum Master工作范围太窄的问题是可以预防的。Scrum  Master们在导入LeSS的开始几乎没有得到外界的帮助，因此没能关注在（系统性的）重要变量上。他们主要关注在团队上，与产品负责人在产品待办列表（以及与之相关的活动）上没有任何互动。当更密集的（外部）辅导和教练开始实施，以及工程VP（作为敏捷教练角色）也成为Scrum Master组内成员后，Scrum Master就有了改进。然而在其他人的眼中，伤害已经造成。在第二次组织设计中，产品总监宣布组织中不再有Scrum Master的岗位，Scrum Master可以加入团队或者尝试在组织中找到其他的位置。在晚些时候 - 仍在Scrum Master们离开之前 - 产品总监宣布一些Scrum Master可以申请成为敏捷教练。这表示Scrum Master们已经学习并作出改进，因为产品总监在更早的时候并没有这样宣布。不幸的是，（大部分）Scrum Master不喜欢一开始他们被对待的方式，因此决定离开。
 *Reflection*: there was a misconception about the role of the Scrum Master, and defining the role of the agile coach basically meant that the role of Scrum Master was defined properly. Additionally, the problem of Scrum Master having a too narrow scope should have been prevented. The Scrum Masters had almost no outside help from the start of the LeSS adoption and therefore were unable to focus on the (systemic) important variables. They mainly focused on teams, had almost no interaction on the Product Backlog (and activities related to that) with the Product Owner and other important variables in the organization. The Scrum Masters improved when more intensive (external) mentoring and coaching started and the Vice-President of Engineering became part of their group (already in the role of agile coach). However, for the perception of others the damage was done. After the clear announcement from the Head of Product that there was no place for the existing Scrum Masters after the second event (except for 1), they could go to teams or try to find another place in the organization. In a later stage - before the Scrum Masters left - the Head of Product announced that some of the Scrum Masters could apply to become agile coach. This indicated that the Scrum Masters had learned and improved, because he didn’t announce this in an earlier stage. Unfortunately, (most of) the Scrum Masters didn’t like the way they were treated with the initial announcement and decided to leave.
 
-如果Scrum Master们可以在导入LeSS的一开始就被密切地帮助过，或者在后面的阶段也可以，这种情况本可以避免。他们热切又有才华，仅仅缺乏经验和支持。Scrum Master是假定用来帮助组织级变更和解决问题的，但因为缺乏经验和支持，他们没有做这些事情。产品总监没有理解这一点，也没有帮助Scrum Master做这个。相反，是通过快速并糟糕的方案，引入一个新角色，来解决问题。敏捷教练就像Scrum Master在LeSS和Scrum里一样表现，因此在LeSS导入时并不需要敏捷教练。
+如果在导入LeSS的一开始 - 或者甚至在晚些时候 - 我们密切地帮助Scrum Master们，这种情况本可以避免。他们热切又有才华，仅仅是缺乏经验和支持。Scrum Master应该可以帮助组织变革和解决问题，但因为缺乏经验和支持，他们没有做这些事情。产品总监没有理解这一点，也没有帮助Scrum Master来做这些事情。相反，我们通过引入了新角色这一快速但糟糕的方案来解决问题。敏捷教练其实就像是在LeSS和Scrum里的Scrum Master，因此在LeSS导入时并不需要敏捷教练。
 If the Scrum Masters would have been helped more intensively from the start of the LeSS adoption - or even in a later stage - this could have been prevented. They were all eager and talented, but just missed experience and support. Scrum Masters are supposed to help in organizational changes and problems, but weren’t doing that because of a lack of experience and support. The Head of Product failed to understand this and help the Scrum Masters to do this. Instead, the problem was solved by the quick and dirty solution of introducing a new role. The agile coaches are acting like the Scrum Masters should act in LeSS and Scrum, and therefore there are no agile coaches needed in a LeSS adoption.
 
-只有一个Scrum Master变成了敏捷教练，关注在技术教练上，其他所有的Scrum Master都离开了Y Soft。其中一个Scrum Master为了帮助组织而停留了一段时间。一位经理成为了敏捷教练，工程副总裁成为了敏捷教练，而其他敏捷教练是从公司外部招聘的。
+有一个Scrum Master变成了敏捷教练 - 关注在技术辅导上，而其他Scrum Master都离开了Y Soft。有一个Scrum Master多待了一段时间来帮助大家。一位经理成为了敏捷教练，工程VP成为了敏捷教练，而其他敏捷教练是从公司外部招聘的。
 One Scrum Master became an agile coach - focused on technical coaching - and the other Scrum Masters left Y Soft. One Scrum Master stayed for a while to help. One of the managers became agile coach, the Vice-President of Engineering became agile coach and the other agile coaches were hired from outside the company.
 
-在经理被移除之前，Y Soft已经有简单的职位描述，没有在产研中区分专业。开发工程师可以在他们升职的时候晋升一个级别，但其他角色基本上跟以前的职业路径一样。跟非常像LeSS实验 *尝试...创建唯一职位名称* 并 *尝试...不同级别的通用头衔*。
+在经理被移除之前，Y Soft已经采用简单的职位描述，没有在研发中区分专业。开发工程师在他们升职的时候会晋升一个级别，但他们的角色基本上跟以前的职业路径一样。跟LeSS实验*尝试...创建唯一职位名称*和*尝试...通用名称带不同级别*非常像。
 Before the managers were removed, Y Soft already had simple job descriptions that did not distinguish specialisms within R&D. Developers could basically step up a level when they were promoted, but their roles were basically the same according the career paths. Very much like the LeSS experiments *Try... create only one job title* and *Try... generic titles with levels*.
 
 #### 2.3.2 组织设计元素的检视：LeSS规则：大多数团队是以客户为中心的特性团队 Inspection OD-element: LeSS Rule: The majority of the teams are customer-focused feature teams.
@@ -1827,7 +1827,7 @@ Additionally external support was used to organize several in-depth technical wo
   <img src="img/case-studies/ysoft/technical-workshops.png" alt="Technical Workshops">
 </figure>
 
-在准备工作中，一项最重要的活动是寻找产品负责人。通过内部搜索与沟通，产品营销副总裁（VP）担任了产品负责人的角色，这与1993年Easel首次实施Scrum类似。他所负责部门的产品营销人员可以帮助团队获得必要的客户理解。
+在准备工作中，一项最重要的活动是寻找产品负责人。通过内部搜索与沟通，产品营销VP担任了产品负责人的角色，这与1993年Easel首次实施Scrum类似。他所负责部门的产品营销人员可以帮助团队获得必要的客户理解。
 
 One of the crucial activities that was needed in the preparation was to find a Product Owner. After searching and discussing this internally, the VP of product marketing took the role of Product Owner, as in the very first Scrum adoption at Easel in 1993. The people in his department from product marketing would help teams to get the needed customer understanding.
 
@@ -1835,7 +1835,7 @@ One of the crucial activities that was needed in the preparation was to find a P
 
 To engage people in the preparation steps, the Scrum Masters organized Open Spaces & Lean Coffees, where people could share the progress and address their struggles, fears or questions. *Open Space* is one of the LeSS guides for learning & coordination regularly to have participants self-organize in.
 
-然而，LeSS实施的沟通工作是失败的。首先，沟通主要在志愿者内部进行，利用Wiki工具。这导致对未参与志愿者活动的人来说透明度很低。其次，人们忽视了Scrum Master发送的更新邮件。结果是，Scrum Master和负责变革的VP不得不花费大量时间精力去通知每个人，让大家对四天活动的保持信息一致。从这四天活动开始，负责变革的VP成为该产品的产品总监，也是这个产品唯一剩余的副总裁。
+然而，LeSS实施的沟通工作是失败的。首先，沟通主要在志愿者内部进行，利用Wiki工具。这导致对未参与志愿者活动的人来说透明度很低。其次，人们忽视了Scrum Master发送的更新邮件。结果是，Scrum Master和负责变革的VP不得不花费大量时间精力去通知每个人，让大家对四天活动的保持信息一致。从这四天活动开始，负责变革的VP成为该产品的产品总监，也是这个产品唯一剩余的VP。
 
 However, the communication about the LeSS adoption was failing. First, the communication was mainly done between the volunteers and with the use of Wiki. This led to low transparency to others that weren’t involved in the volunteering activities. And second, people ignored the mails that the Scrum Masters sent with updates. Consequence was that Scrum Masters and the VP that led the change had much more work to inform everyone and get them on the same page for the 4-day event. The VP that led the change became the Head of Product from the 4-day event on, as the only remaining VP for the product.
 
